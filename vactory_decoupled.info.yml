@@ -1,0 +1,27 @@
+name: Decoupled Vactory
+type: profile
+description: 'Vactory is an enhanced decoupled Drupal distribution with a lot of necessities.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+project: vactory-decoupled
+distribution:
+  name: Vactory
+  install:
+    theme: vartheme_admin
+version: 8.x-8.x-dev
+install:
+  - system
+  - action
+  - user
+  - node
+  - block
+  - datetime
+  - help
+  - image
+  - views
+  - file
+themes:
+  - claro
+
+interface translation project: vactory
+interface translation server pattern: profiles/vactory/translations/%language.po
