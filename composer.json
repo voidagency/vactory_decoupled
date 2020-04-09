@@ -108,7 +108,7 @@
     "drupal/views_bulk_operations": "^3.6",
     "drupal/views_data_export": "^1.0@beta",
     "drupal/viewsreference": "^1.4",
-    "drupal/webform": "^5.9",
+    "drupal/webform": "^5.9"
   },
   "config": {
     "process-timeout": 0
