@@ -3,25 +3,106 @@ type: profile
 description: 'Vactory is an enhanced decoupled Drupal distribution with a lot of necessities.'
 core: 8.x
 core_version_requirement: ^8 || ^9
-project: vactory-decoupled
+project: vactory_decoupled
 distribution:
   name: Vactory
-  install:
-    theme: vartheme_admin
-version: 8.x-8.x-dev
+version: VERSION
 install:
-  - system
-  - action
-  - user
   - node
+  - history
   - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - menu_link_content
   - datetime
+  - editor
   - help
   - image
-  - views
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - shortcut
+  - toolbar
+  - field_ui
   - file
+  - views
+  - views_ui
+  - automated_cron
+  - language
+  - locale
+  - content_translation
+  - config_translation
+  - media
+  - media_library
+  - link
+  - telephone
+  - text
+  - datetime_range
+  - admin_toolbar
+  - admin_toolbar_tools
+  - admin_toolbar_tools
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_links_access_filter
+  - ctools
+  - features
+  - user_registrationpassword
+  - block_field
+  - jquery_colorpicker
+  - field_group
+  - address
+  - entity_reference_revisions
+  - improved_multi_select
+  - mailsystem
+  - swiftmailer
+  - crop
+  - file_entity
+  - focal_point
+  - menu_item_extras
+  - editor_advanced_link
+  - backup_migrate
+  - block_class
+  - coffee
+  - menu_link_attributes
+  - nocurrent_pass
+  - pathauto
+  - persistent_login
+  - ultimate_cron
+  - paragraphs
+  - search_api
+  - search_api_db
+  - search_api_exclude_entity
+  - metatag
+  - metatag_facebook
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - captcha
+  - recaptcha
+  - viewsreference
+  - entityqueue
+  - auto_entityqueue
+  - login_security
+  - better_passwords
+  - flood_unblock
+  - linkit
+  - link_target
+  - token
+  - merge_translations
+  - block_blacklist
+  - seckit
+  - smart_trim
+
 themes:
   - claro
 
 interface translation project: vactory
 interface translation server pattern: profiles/vactory/translations/%language.po
+
+keep_english: true
