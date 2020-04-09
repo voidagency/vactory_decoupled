@@ -50,7 +50,7 @@
     "drupal/ctools": "^3.2.0",
     "drupal/devel": "^2.1.0",
     "drupal/email_registration": "1.0.0-rc7",
-    "drupal/entity": "1.0.0-rc3",
+    "drupal/entity": "1.0.0",
     "drupal/entity_reference_revisions": "^1.7.0",
     "drupal/entityqueue": "^1.0.0-beta5",
     "drupal/auto_entityqueue": "^1.0.0",
