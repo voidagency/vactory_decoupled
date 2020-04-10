@@ -36,6 +36,7 @@
     }
   },
   "require": {
+    "composer/installers": "^1.2",
     "cweagans/composer-patches": "^1.6",
     "drupal/address": "^1.8",
     "drupal/admin_toolbar": "^2.2",
@@ -67,7 +68,7 @@
     "drupal/focal_point": "^1.4",
     "drupal/improved_multi_select": "^1.7",
     "drupal/inline_entity_form": "^1.0@RC",
-    "drupal/jquery_colorpicker": "^1.4",
+    "drupal/jquery_colorpicker": "^2.0",
     "drupal/link_attributes": "^1.10",
     "drupal/link_target": "^1.2",
     "drupal/linkit": "^4.3",
@@ -113,8 +114,6 @@
     "process-timeout": 0
   },
   "scripts": {
-    "install-vactory": "scripts/development/build-contenta_jsonapi.sh",
-    "start-vactory": "scripts/development/start-contenta_jsonapi.sh",
     "post-package-install": [
       "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
     ],
