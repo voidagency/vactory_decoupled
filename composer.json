@@ -96,7 +96,6 @@
     "drupal/search_api": "^1.16",
     "drupal/search_api_exclude_entity": "^1.0",
     "drupal/seckit": "^1.2",
-    "drupal/security_review": "1.x-dev",
     "drupal/shield": "^1.4",
     "drupal/smart_trim": "^1.2",
     "drupal/swiftmailer": "^1.0@beta",
