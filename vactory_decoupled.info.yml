@@ -14,7 +14,6 @@ install:
   - block_content
   - breakpoint
   - ckeditor
-  - color
   - config
   - comment
   - menu_link_content
@@ -55,6 +54,7 @@ install:
   - features
   - user_registrationpassword
   - block_field
+  - colorapi
   - jquery_colorpicker
   - field_group
   - address
