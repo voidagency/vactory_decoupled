@@ -1,0 +1,9 @@
+uuid: e189164f-b9bf-4ccf-9fa9-e0672f07971d
+langcode: fr
+status: true
+dependencies: {  }
+id: video
+label: Video
+description: 'A <em>Video</em> file is a moving visual recording.'
+mimetypes:
+  - 'video/*'

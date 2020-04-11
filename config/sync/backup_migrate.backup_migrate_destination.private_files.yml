@@ -1,0 +1,10 @@
+uuid: 4796acc3-ee95-4942-8172-79aabc61e313
+langcode: fr
+status: true
+dependencies: {  }
+id: private_files
+label: 'Private Files Directory'
+type: Directory
+config:
+  name: 'Private Files Directory'
+  directory: 'private://backup_migrate/'

@@ -1,0 +1,11 @@
+uuid: c80d42d1-4a87-4759-8231-39edaf69444d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media_delete_action
+label: 'Delete media'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

@@ -1,0 +1,11 @@
+uuid: 729fddec-e6e9-4232-81f0-4a1558cc7e54
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node_unpublish_action
+label: 'Unpublish content'
+type: node
+plugin: 'entity:unpublish_action:node'
+configuration: {  }

@@ -1,0 +1,16 @@
+uuid: e6fb8073-4004-409d-8e39-ef817332bc33
+langcode: fr
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view files'
+  - 'view media'

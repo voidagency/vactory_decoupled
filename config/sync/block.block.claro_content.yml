@@ -1,0 +1,20 @@
+uuid: 3f07fcf9-42cd-4fc3-a4b6-46104547de45
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro
+id: claro_content
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

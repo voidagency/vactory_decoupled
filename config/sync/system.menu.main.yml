@@ -1,0 +1,8 @@
+uuid: e04fc027-fa7f-4207-911c-d8202b28b263
+langcode: fr
+status: true
+dependencies: {  }
+id: main
+label: 'Main navigation'
+description: 'Site section links'
+locked: true
