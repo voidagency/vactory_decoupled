@@ -1,0 +1,12 @@
+uuid: e5103896-a07b-45d5-aa7a-ef28310b651c
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DdTDQh7bJZoitocbIafnn-Fj5stRfKHMqxdVwpvXAHs
+id: vactory_paragraph_tab
+label: 'Paragraph tab'
+icon_uuid: null
+icon_default: null
+description: 'Created to serve Multiple templates paragraph type.'
+behavior_plugins: {  }

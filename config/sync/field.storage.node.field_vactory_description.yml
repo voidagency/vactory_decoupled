@@ -1,0 +1,21 @@
+uuid: 5f1aed93-348b-4418-9f56-1bc1e241e087
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: X0Sk7ijmcKVNfziGnl34yCUgC6vbW17UVci5-e-fVMk
+id: node.field_vactory_description
+field_name: field_vactory_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

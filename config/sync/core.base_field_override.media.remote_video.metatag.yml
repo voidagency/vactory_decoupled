@@ -1,0 +1,18 @@
+uuid: f36dfe57-5c2a-43e2-9be6-10dd96245c3e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.metatag
+field_name: metatag
+entity_type: media
+bundle: remote_video
+label: 'Balises meta (Meta tags)'
+description: 'Les balises méta de l''entité.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,23 @@
+uuid: 39a3ea91-b19c-4bd0-a060-84060d808768
+langcode: fr
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - menu_link_content
+    - paragraphs
+_core:
+  default_config_hash: EUAfV4TXkgFwsmCvXhlutJUXfM0w-QPRT2GihYeJZfY
+id: menu_link_content.field_menu_paragraphs
+field_name: field_menu_paragraphs
+entity_type: menu_link_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

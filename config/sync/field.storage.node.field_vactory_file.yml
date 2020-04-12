@@ -1,0 +1,25 @@
+uuid: 96db3008-1756-4924-9b34-4409cd812495
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - node
+_core:
+  default_config_hash: BcesABP8X26Vfzg7WgdemM3IoasJmrbCTu0MVNYB978
+id: node.field_vactory_file
+field_name: field_vactory_file
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

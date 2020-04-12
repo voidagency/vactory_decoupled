@@ -1,0 +1,22 @@
+uuid: 7c6a4e39-2818-4035-8807-c11233e814f9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+    - node
+_core:
+  default_config_hash: l33BQE6zleozNb_Hg0FbQDklCyijeph5pYDTB8nLkjc
+id: node.field_vactory_media_file
+field_name: field_vactory_media_file
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

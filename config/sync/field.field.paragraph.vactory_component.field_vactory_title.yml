@@ -1,0 +1,21 @@
+uuid: 67718516-a939-4b86-9119-126b83d86de6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vactory_title
+    - paragraphs.paragraphs_type.vactory_component
+_core:
+  default_config_hash: yMA_mB_VfGpL6fHX5GEI1r7Smi_RsdkB1pLOKBSWixI
+id: paragraph.vactory_component.field_vactory_title
+field_name: field_vactory_title
+entity_type: paragraph
+bundle: vactory_component
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

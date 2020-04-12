@@ -1,0 +1,20 @@
+uuid: 553c9d14-598b-4f15-abf8-9390141b2c4a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.name
+field_name: name
+entity_type: media
+bundle: video
+label: Nom
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

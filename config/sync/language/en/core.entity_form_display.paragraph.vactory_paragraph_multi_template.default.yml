@@ -1,0 +1,9 @@
+third_party_settings:
+  field_group:
+    group_apparence:
+      label: Apparence
+content:
+  field_vactory_paragraph_tab:
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs

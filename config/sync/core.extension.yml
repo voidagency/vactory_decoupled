@@ -1,4 +1,5 @@
 module:
+  address: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
@@ -27,6 +28,7 @@ module:
   crop: 0
   ctools: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
@@ -104,6 +106,12 @@ module:
   update: 0
   user: 0
   user_registrationpassword: 0
+  vactory_core: 0
+  vactory_dynamic_field: 0
+  vactory_dynamic_field_bootstrap: 0
+  vactory_dynamic_field_sliders: 0
+  vactory_field: 0
+  vactory_paragraphs: 0
   vendor_stream_wrapper: 0
   views_ui: 0
   viewsreference: 0

@@ -1,0 +1,21 @@
+uuid: 8bc94fc0-0079-4375-9503-71e1f7a139dd
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_field
+    - menu_link_content
+_core:
+  default_config_hash: KxbZdMTk_NEeMI30Ktk7wBA-aWr8RZSgHZeZnOsI71A
+id: menu_link_content.field_injected_block
+field_name: field_injected_block
+entity_type: menu_link_content
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

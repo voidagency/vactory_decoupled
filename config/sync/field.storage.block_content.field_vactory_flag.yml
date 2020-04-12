@@ -1,0 +1,20 @@
+uuid: 36d9b653-8617-4d01-9fdf-b6a0441e9b51
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: 9Xck1qboLpb4rv7HBrnpCHWJ-1oroGYQjK4njCakAA4
+id: block_content.field_vactory_flag
+field_name: field_vactory_flag
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

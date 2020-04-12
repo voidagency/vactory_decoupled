@@ -1,0 +1,45 @@
+uuid: 73a4eeb4-4789-483a-8b4b-7f1cc69e3d0c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.vactory_paragraph_block.field_vactory_block
+    - field.field.paragraph.vactory_paragraph_block.field_vactory_body
+    - field.field.paragraph.vactory_paragraph_block.field_vactory_title
+    - paragraphs.paragraphs_type.vactory_paragraph_block
+  module:
+    - block_field
+    - text
+_core:
+  default_config_hash: DeJBMitcj2DFfB8UKZq1CcEJRsjoJuWaYvOJyaER7VU
+id: paragraph.vactory_paragraph_block.default
+targetEntityType: paragraph
+bundle: vactory_paragraph_block
+mode: default
+content:
+  field_vactory_block:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_vactory_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vactory_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  paragraph_background_image: true
+  paragraph_container: true
+  search_api_excerpt: true

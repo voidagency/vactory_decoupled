@@ -1,0 +1,22 @@
+uuid: 539ce137-3ca6-4907-b7df-ac8053ba7090
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: GoR74kvMrW5yv9Jhc5tImk_QtN6POS98JLpjXeZnP5w
+id: node.field_vactory_date
+field_name: field_vactory_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

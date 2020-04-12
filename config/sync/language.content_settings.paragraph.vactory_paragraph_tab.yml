@@ -1,0 +1,18 @@
+uuid: 0cb9a59c-a71b-4b25-9ff7-6d304cbf7a4a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.vactory_paragraph_tab
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: paragraph.vactory_paragraph_tab
+target_entity_type_id: paragraph
+target_bundle: vactory_paragraph_tab
+default_langcode: site_default
+language_alterable: false

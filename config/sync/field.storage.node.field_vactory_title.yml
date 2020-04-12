@@ -1,0 +1,23 @@
+uuid: 6e115aad-018d-4b30-960e-30d3a4a0a28e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KMgTbp_CdFzeokinVwlw8Y46riPdWPXtxXLKH9bO30A
+id: node.field_vactory_title
+field_name: field_vactory_title
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
