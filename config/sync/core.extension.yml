@@ -31,6 +31,7 @@ module:
   datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
+  easy_install: 0
   editor: 0
   editor_advanced_link: 0
   email_registration: 0
@@ -86,6 +87,7 @@ module:
   quickedit: 0
   rdf: 0
   recaptcha: 0
+  scheduler: 0
   schemata: 0
   schemata_json_schema: 0
   search: 0

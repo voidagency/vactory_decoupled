@@ -20,8 +20,6 @@ display:
           label: 'نوع المحتوى'
         name:
           label: المؤلف
-        changed:
-          label: التحديث
         operations:
           label: عمليات
       filters:
