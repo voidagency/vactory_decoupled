@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains vactory_locator.module.
+ */
+
+use Drupal\Core\Messenger\MessengerInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function vactory_locator_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the vactory_locator module.
+    case 'help.page.vactory_locator':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Map locator.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_migration_plugins_alter().
+ */
+function vactory_locator_migration_plugins_alter(array &$migrations) {
+  if (
+    isset($migrations['locator_items']) &&
+    isset($migrations['locator_items']['source']['plugin']) &&
+    $migrations['locator_items']['source']['plugin'] == 'csv'
+  ) {
+    // Change path of csv file used as source in locator_items migration.
+    // The file uploaded by the config
+    // form here admin/config/system/locator-csv-import.
+    $src_csv_file = \Drupal::service('config.factory')
+      ->getEditable('locator_migration.settings')
+      ->get('csv_file_path');
+    if ($src_csv_file) {
+      $migrations['locator_items']['source']['path'] = $src_csv_file;
+    }
+    else {
+      \Drupal::messenger()
+        ->addMessage(t("The csv source file hasn't configured yet for <b>locator_items</b> migrate go to <em>/admin/config/system/locator-csv-import</em> to upload new file. Otherwise the <b>locator_items</b> migrate will use <b>locator_migrate/locator_items.csv</b> from vactory_locator module."), MessengerInterface::TYPE_WARNING);
+    }
+  }
+}
