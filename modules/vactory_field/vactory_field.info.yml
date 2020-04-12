@@ -10,6 +10,7 @@ dependencies:
   - block_field
   - block_content
   - datetime
+  - datetime_range
   - file
   - image
   - link

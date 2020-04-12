@@ -7,9 +7,6 @@
 
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\Component\Utility\Html;
-use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
  * Implements hook_entity_base_field_info().
@@ -74,7 +71,7 @@ function vactory_paragraphs_entity_base_field_info(EntityTypeInterface $entity_t
         'weight' => 45,
       ]);
 
-    $fields['paragraph_background_color'] = BaseFieldDefinition::create('jquery_colorpicker')
+    $fields['paragraph_background_color'] = BaseFieldDefinition::create('colorapi_color_field')
       ->setLabel(t('Color'))
       ->setDescription(t('Set a background color.'))
       ->setRevisionable(TRUE)
@@ -82,7 +79,7 @@ function vactory_paragraphs_entity_base_field_info(EntityTypeInterface $entity_t
       ->setDisplayOptions('form', [
         'type'   => 'jquery_colorpicker',
         'weight' => 45,
-      ])->setDefaultValue('ff0000')
+      ])
       ->setDisplayConfigurable('form', TRUE);
 
     $fields['paragraph_background_parallax'] = BaseFieldDefinition::create('boolean')

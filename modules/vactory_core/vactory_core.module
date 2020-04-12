@@ -129,11 +129,6 @@ function vactory_core_form_alter(&$form, FormStateInterface &$form_state, $form_
     $form['display']['display_submitted']['#default_value'] = FALSE;
   }
 
-  // Dropdown XSS.
-  if ($form_id === 'lang_dropdown_form') {
-    $current_url = Url::fromRoute('<current>')->toString();
-    $form['#action'] = Xss::filter($current_url);
-  }
 }
 
 /**
