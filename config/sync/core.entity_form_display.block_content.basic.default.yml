@@ -12,6 +12,14 @@ targetEntityType: block_content
 bundle: basic
 mode: default
 content:
+  block_machine_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   body:
     type: text_textarea_with_summary
     weight: -4
