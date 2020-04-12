@@ -78,7 +78,7 @@ function vactory_decoupled_module_install(array &$install_state)
   $instances = array_map(function ($extension_name) use ($optional_modules_manager) {
     return $optional_modules_manager->createInstance($extension_name);
   }, $extensions);
-  array_walk($instances, function (AbstractOptionalModule $instance) use ($form_values) {
+  array_walk($instances, function ($instance) use ($form_values) {
     $instance->submitForm($form_values);
   });
 }
