@@ -49,6 +49,8 @@ module:
   improved_multi_select: 0
   jquery_colorpicker: 0
   jsonapi: 0
+  jsonapi_boost: 0
+  jsonapi_extras: 0
   language: 0
   link: 0
   link_target: 0
@@ -99,6 +101,7 @@ module:
   vendor_stream_wrapper: 0
   views_ui: 0
   viewsreference: 0
+  warmer: 0
   workflows: 0
   menu_link_content: 1
   pathauto: 1

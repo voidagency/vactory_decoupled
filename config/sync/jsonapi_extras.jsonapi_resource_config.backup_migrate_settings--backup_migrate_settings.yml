@@ -1,0 +1,35 @@
+uuid: 2ce9d02d-9ba5-46c4-9cdd-781f4a5a7610
+langcode: fr
+status: true
+dependencies:
+  module:
+    - backup_migrate
+id: backup_migrate_settings--backup_migrate_settings
+disabled: true
+path: backup_migrate_settings/backup_migrate_settings
+resourceType: backup_migrate_settings--backup_migrate_settings
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false
