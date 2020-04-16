@@ -117,16 +117,16 @@ resourceFields:
       id: ''
     disabled: false
   metatag:
+    disabled: true
     fieldName: metatag
     publicName: metatag
     enhancer:
       id: ''
-    disabled: false
   path:
     fieldName: path
     publicName: path
     enhancer:
-      id: ''
+      id: vactory_link
     disabled: false
   publish_on:
     fieldName: publish_on
@@ -198,7 +198,7 @@ resourceFields:
     fieldName: field_vactory_meta_tags
     publicName: field_vactory_meta_tags
     enhancer:
-      id: ''
+      id: vactory_metatag
     disabled: false
   field_vactory_taxonomy_1:
     fieldName: field_vactory_taxonomy_1

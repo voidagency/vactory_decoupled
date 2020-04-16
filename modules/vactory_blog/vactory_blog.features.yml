@@ -14,7 +14,6 @@ excluded:
   - core.base_field_override.media.image.status
   - core.base_field_override.media.image.thumbnail
   - core.base_field_override.media.image.uid
-  - core.base_field_override.node.blog.promote
   - core.base_field_override.taxonomy_term.tags.changed
   - core.base_field_override.taxonomy_term.tags.description
   - core.base_field_override.taxonomy_term.tags.metatag
