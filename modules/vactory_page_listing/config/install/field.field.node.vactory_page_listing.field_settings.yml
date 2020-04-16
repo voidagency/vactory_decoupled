@@ -9,8 +9,8 @@ field_name: field_settings
 entity_type: node
 bundle: vactory_page_listing
 label: Settings
-description: ''
-required: true
+description: "Add extra parameters in JSON Format : \r\n<code>\r\n{\r\n \"taxonomy\": 4,\r\n \"limit\": 6\r\n}\r\n</code>"
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

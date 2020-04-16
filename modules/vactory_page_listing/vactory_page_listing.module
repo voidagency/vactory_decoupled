@@ -20,4 +20,5 @@ function vactory_page_listing_form_alter(array &$form, FormStateInterface $form_
 
   $access = \Drupal::currentUser()->hasPermission('administer page listing settings');
   $form['field_settings']['#access'] = $access;
+  $form['field_view_id']['#access'] = $access;
 }

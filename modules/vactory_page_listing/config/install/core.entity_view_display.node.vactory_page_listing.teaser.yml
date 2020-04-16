@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.vactory_page_listing.field_settings
     - field.field.node.vactory_page_listing.field_vactory_meta_tags
+    - field.field.node.vactory_page_listing.field_view_id
     - node.type.vactory_page_listing
   module:
     - user
@@ -21,5 +22,6 @@ content:
 hidden:
   field_settings: true
   field_vactory_meta_tags: true
+  field_view_id: true
   langcode: true
   search_api_excerpt: true

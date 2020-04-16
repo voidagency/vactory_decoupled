@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.vactory_page_listing.field_settings
     - field.field.node.vactory_page_listing.field_vactory_meta_tags
+    - field.field.node.vactory_page_listing.field_view_id
     - node.type.vactory_page_listing
   module:
     - metatag
@@ -26,6 +27,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
+    region: content
+  field_view_id:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 100
