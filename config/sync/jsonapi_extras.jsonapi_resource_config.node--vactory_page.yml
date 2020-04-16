@@ -1,13 +1,13 @@
-uuid: fc2dfbfd-4e90-4dd2-a9ec-4d122a3c120f
+uuid: 2d259a35-a672-45f4-990b-b4aca69c1aea
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.vactory_page_listing
-id: node--vactory_page_listing
+    - node.type.vactory_page
+id: node--vactory_page
 disabled: false
-path: node/vactory_page_listing
-resourceType: node--vactory_page_listing
+path: node/vactory_page
+resourceType: node--vactory_page
 resourceFields:
   nid:
     fieldName: nid
@@ -177,9 +177,15 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  field_settings:
-    fieldName: field_settings
-    publicName: field_settings
+  comment:
+    fieldName: comment
+    publicName: comment
+    enhancer:
+      id: ''
+    disabled: false
+  field_exclude_from_search:
+    fieldName: field_exclude_from_search
+    publicName: field_exclude_from_search
     enhancer:
       id: ''
     disabled: false
@@ -189,9 +195,9 @@ resourceFields:
     enhancer:
       id: vactory_metatag
     disabled: false
-  field_view_id:
-    fieldName: field_view_id
-    publicName: field_view_id
+  field_vactory_paragraphs:
+    fieldName: field_vactory_paragraphs
+    publicName: field_vactory_paragraphs
     enhancer:
       id: ''
     disabled: false

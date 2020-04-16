@@ -1,17 +1,17 @@
-uuid: fc2dfbfd-4e90-4dd2-a9ec-4d122a3c120f
+uuid: 0364a7ea-54a9-4a34-bea2-31f1a2993b94
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.vactory_page_listing
-id: node--vactory_page_listing
+    - paragraphs.paragraphs_type.vactory_paragraph_tab
+id: paragraph--vactory_paragraph_tab
 disabled: false
-path: node/vactory_page_listing
-resourceType: node--vactory_page_listing
+path: paragraph/vactory_paragraph_tab
+resourceType: paragraph--vactory_paragraph_tab
 resourceFields:
-  nid:
-    fieldName: nid
-    publicName: nid
+  id:
+    fieldName: id
+    publicName: id
     enhancer:
       id: ''
     disabled: false
@@ -21,9 +21,9 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  vid:
-    fieldName: vid
-    publicName: vid
+  revision_id:
+    fieldName: revision_id
+    publicName: revision_id
     enhancer:
       id: ''
     disabled: false
@@ -39,39 +39,9 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  revision_timestamp:
-    fieldName: revision_timestamp
-    publicName: revision_timestamp
-    enhancer:
-      id: ''
-    disabled: false
-  revision_uid:
-    fieldName: revision_uid
-    publicName: revision_uid
-    enhancer:
-      id: ''
-    disabled: false
-  revision_log:
-    fieldName: revision_log
-    publicName: revision_log
-    enhancer:
-      id: ''
-    disabled: false
   status:
     fieldName: status
     publicName: status
-    enhancer:
-      id: ''
-    disabled: false
-  uid:
-    fieldName: uid
-    publicName: uid
-    enhancer:
-      id: ''
-    disabled: false
-  title:
-    fieldName: title
-    publicName: title
     enhancer:
       id: ''
     disabled: false
@@ -81,21 +51,27 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  changed:
-    fieldName: changed
-    publicName: changed
+  parent_id:
+    fieldName: parent_id
+    publicName: parent_id
     enhancer:
       id: ''
     disabled: false
-  promote:
-    fieldName: promote
-    publicName: promote
+  parent_type:
+    fieldName: parent_type
+    publicName: parent_type
     enhancer:
       id: ''
     disabled: false
-  sticky:
-    fieldName: sticky
-    publicName: sticky
+  parent_field_name:
+    fieldName: parent_field_name
+    publicName: parent_field_name
+    enhancer:
+      id: ''
+    disabled: false
+  behavior_settings:
+    fieldName: behavior_settings
+    publicName: behavior_settings
     enhancer:
       id: ''
     disabled: false
@@ -117,51 +93,39 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  metatag:
-    disabled: true
-    fieldName: metatag
-    publicName: metatag
-    enhancer:
-      id: ''
-  path:
-    fieldName: path
-    publicName: path
-    enhancer:
-      id: vactory_link
-    disabled: false
-  publish_on:
-    fieldName: publish_on
-    publicName: publish_on
+  paragraph_identifier:
+    fieldName: paragraph_identifier
+    publicName: paragraph_identifier
     enhancer:
       id: ''
     disabled: false
-  unpublish_on:
-    fieldName: unpublish_on
-    publicName: unpublish_on
+  paragraph_container:
+    fieldName: paragraph_container
+    publicName: paragraph_container
     enhancer:
       id: ''
     disabled: false
-  menu_link:
-    fieldName: menu_link
-    publicName: menu_link
+  paragraph_css_class:
+    fieldName: paragraph_css_class
+    publicName: paragraph_css_class
     enhancer:
       id: ''
     disabled: false
-  node_class:
-    fieldName: node_class
-    publicName: node_class
+  paragraph_background_image:
+    fieldName: paragraph_background_image
+    publicName: paragraph_background_image
     enhancer:
       id: ''
     disabled: false
-  node_summary:
-    fieldName: node_summary
-    publicName: node_summary
+  paragraph_background_color:
+    fieldName: paragraph_background_color
+    publicName: paragraph_background_color
     enhancer:
       id: ''
     disabled: false
-  node_body_class:
-    fieldName: node_body_class
-    publicName: node_body_class
+  paragraph_background_parallax:
+    fieldName: paragraph_background_parallax
+    publicName: paragraph_background_parallax
     enhancer:
       id: ''
     disabled: false
@@ -177,21 +141,21 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  field_settings:
-    fieldName: field_settings
-    publicName: field_settings
+  content_translation_changed:
+    fieldName: content_translation_changed
+    publicName: content_translation_changed
     enhancer:
       id: ''
     disabled: false
-  field_vactory_meta_tags:
-    fieldName: field_vactory_meta_tags
-    publicName: field_vactory_meta_tags
+  field_tab_templates:
+    fieldName: field_tab_templates
+    publicName: field_tab_templates
     enhancer:
-      id: vactory_metatag
+      id: vactory_dynamic_field
     disabled: false
-  field_view_id:
-    fieldName: field_view_id
-    publicName: field_view_id
+  field_vactory_title:
+    fieldName: field_vactory_title
+    publicName: field_vactory_title
     enhancer:
       id: ''
     disabled: false
