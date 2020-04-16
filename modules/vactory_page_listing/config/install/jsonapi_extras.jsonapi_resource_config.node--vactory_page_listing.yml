@@ -117,11 +117,11 @@ resourceFields:
       id: ''
     disabled: false
   metatag:
+    disabled: true
     fieldName: metatag
     publicName: metatag
     enhancer:
       id: ''
-    disabled: false
   path:
     fieldName: path
     publicName: path
@@ -143,24 +143,6 @@ resourceFields:
   menu_link:
     fieldName: menu_link
     publicName: menu_link
-    enhancer:
-      id: ''
-    disabled: false
-  node_banner_image:
-    fieldName: node_banner_image
-    publicName: node_banner_image
-    enhancer:
-      id: ''
-    disabled: false
-  node_banner_mobile_image:
-    fieldName: node_banner_mobile_image
-    publicName: node_banner_mobile_image
-    enhancer:
-      id: ''
-    disabled: false
-  node_banner_title:
-    fieldName: node_banner_title
-    publicName: node_banner_title
     enhancer:
       id: ''
     disabled: false
@@ -194,15 +176,21 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
+  field_settings:
+    fieldName: field_settings
+    publicName: field_settings
+    enhancer:
+      id: ''
+    disabled: false
   field_vactory_meta_tags:
     fieldName: field_vactory_meta_tags
     publicName: field_vactory_meta_tags
     enhancer:
       id: vactory_metatag
     disabled: false
-  field_vactory_views:
-    fieldName: field_vactory_views
-    publicName: field_vactory_views
+  field_view_id:
+    fieldName: field_view_id
+    publicName: field_view_id
     enhancer:
       id: ''
     disabled: false
