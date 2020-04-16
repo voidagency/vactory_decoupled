@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: 1_SXQaTkxzgPtVBa7Bwuzl4YjtW9dSx23NbjTAAQULk
 id: node.field_vactory_fax
 field_name: field_vactory_fax
 entity_type: node

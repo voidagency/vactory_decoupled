@@ -2,8 +2,6 @@ uuid: 26328c6f-d865-480e-b375-43721a763acd
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: gf2_MQ3TkBJorq66T2xU82QMShG9wuX9e4WQZwLa2G4
 id: vactory_component
 label: Template
 icon_uuid: null

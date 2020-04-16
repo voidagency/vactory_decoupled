@@ -11,8 +11,6 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '1'
-_core:
-  default_config_hash: 8v3yT3bhgxawHvbO9n46FPwttmxUy6sJKoTww4W8kos
 id: paragraph.vactory_component
 target_entity_type_id: paragraph
 target_bundle: vactory_component

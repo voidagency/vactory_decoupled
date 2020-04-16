@@ -11,8 +11,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
-_core:
-  default_config_hash: IbNs2RnpuAJrcFaW8l67yJvZQpXJCXHoaIDR9nuqBtk
 id: paragraph.vactory_paragraph_multi_template.default
 targetEntityType: paragraph
 bundle: vactory_paragraph_multi_template

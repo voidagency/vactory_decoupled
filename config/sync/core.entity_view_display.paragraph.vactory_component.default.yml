@@ -8,8 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.vactory_component
   module:
     - vactory_dynamic_field
-_core:
-  default_config_hash: _e23oV4W77p6vBVoTzghYVtU0UfBwyloSRlCfTZLShI
 id: paragraph.vactory_component.default
 targetEntityType: paragraph
 bundle: vactory_component

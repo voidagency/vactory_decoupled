@@ -1,0 +1,2 @@
+label: Settings
+description: "Add extra parameters in JSON Format : \r\n<code>\r\n{\r\n \"taxonomy\": 4,\r\n \"limit\": 6\r\n}\r\n</code>"

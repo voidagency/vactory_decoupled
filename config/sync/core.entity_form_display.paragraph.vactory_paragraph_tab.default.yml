@@ -29,8 +29,6 @@ third_party_settings:
         required_fields: true
       label: Apparence
       region: hidden
-_core:
-  default_config_hash: 3IiIYijzTNdrimGxF-IFd-otSD4t6La0kIDpwIoFBjQ
 id: paragraph.vactory_paragraph_tab.default
 targetEntityType: paragraph
 bundle: vactory_paragraph_tab

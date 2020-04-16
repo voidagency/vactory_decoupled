@@ -11,8 +11,6 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-_core:
-  default_config_hash: fNBWEhxDOQiZ5A0TK3ns7FPfQ2iExQsCupfGa6YTsPU
 id: node.vactory_page
 target_entity_type_id: node
 target_bundle: vactory_page

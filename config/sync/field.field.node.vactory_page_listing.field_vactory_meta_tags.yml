@@ -1,0 +1,21 @@
+uuid: ee4982da-43a0-4b71-b716-7df454ba18ee
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_meta_tags
+    - node.type.vactory_page_listing
+  module:
+    - metatag
+id: node.vactory_page_listing.field_vactory_meta_tags
+field_name: field_vactory_meta_tags
+entity_type: node
+bundle: vactory_page_listing
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

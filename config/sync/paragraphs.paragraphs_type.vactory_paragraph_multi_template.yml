@@ -2,8 +2,6 @@ uuid: 972bb7d4-d4d0-436c-b12a-515fa048621a
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: OSOu9S1TAD_SC69yZ47sFzU3S9ue3OH7yL0w7WiuFJw
 id: vactory_paragraph_multi_template
 label: 'Template multiple'
 icon_uuid: null

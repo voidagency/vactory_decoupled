@@ -14,8 +14,6 @@ dependencies:
     - paragraphs
     - path
     - search_api_exclude_entity
-_core:
-  default_config_hash: WhDjnvRLT_4scWS4BZNFZDBGl03yiPJ_OrPX6rr5eiM
 id: node.vactory_page.default
 targetEntityType: node
 bundle: vactory_page
@@ -86,6 +84,12 @@ content:
     weight: 15
     region: content
     third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
@@ -122,6 +126,12 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
     third_party_settings: {  }
   url_redirects:
     weight: 50

@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: ku9J83uEhrdclOoE8TZTuXBiYrFvaxFPFYfcxh7r7eM
 id: node.field_vactory_telephone
 field_name: field_vactory_telephone
 entity_type: node

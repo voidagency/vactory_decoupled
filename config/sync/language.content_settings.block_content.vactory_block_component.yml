@@ -11,8 +11,6 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-_core:
-  default_config_hash: D2tSJXapZO1oiNuoDv2ntM86UxteExEi2mF2b_DxdF0
 id: block_content.vactory_block_component
 target_entity_type_id: block_content
 target_bundle: vactory_block_component

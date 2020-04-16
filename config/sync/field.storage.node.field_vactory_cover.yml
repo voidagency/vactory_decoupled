@@ -6,8 +6,6 @@ dependencies:
     - file
     - image
     - node
-_core:
-  default_config_hash: eLS1DmgNkstV2_CCmUdzuuiiIkg7oJYk9eQTvcb8__U
 id: node.field_vactory_cover
 field_name: field_vactory_cover
 entity_type: node

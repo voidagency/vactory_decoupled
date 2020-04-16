@@ -5,8 +5,6 @@ dependencies:
   module:
     - media
     - node
-_core:
-  default_config_hash: zYu0L20aGXciLiGBo1mSWauorJAVKiId5SXfjZWU6bk
 id: node.field_vactory_media_document
 field_name: field_vactory_media_document
 entity_type: node

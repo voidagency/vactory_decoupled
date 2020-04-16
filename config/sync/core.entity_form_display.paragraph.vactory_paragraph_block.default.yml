@@ -33,8 +33,6 @@ third_party_settings:
         required_fields: true
       label: Appearance
       region: content
-_core:
-  default_config_hash: nW1GnSrWjw7bOecTwx9Es7Fn0RteKTooQXvRm2IIBZU
 id: paragraph.vactory_paragraph_block.default
 targetEntityType: paragraph
 bundle: vactory_paragraph_block

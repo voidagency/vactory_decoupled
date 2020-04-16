@@ -5,8 +5,6 @@ dependencies:
   module:
     - menu_link_content
     - text
-_core:
-  default_config_hash: rr54HnuPz5Xa1n8AgIn9fy4QInYf15Z768gznvP4RUw
 id: menu_link_content.field_menu_text_long
 field_name: field_menu_text_long
 entity_type: menu_link_content

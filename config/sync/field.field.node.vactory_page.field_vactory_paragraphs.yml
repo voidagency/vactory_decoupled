@@ -10,8 +10,6 @@ dependencies:
     - paragraphs.paragraphs_type.vactory_paragraph_multi_template
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: lEMKxv0lzPd8GfCEe9l0nkDqXyUj3VZ4pjZUr1d16GI
 id: node.vactory_page.field_vactory_paragraphs
 field_name: field_vactory_paragraphs
 entity_type: node

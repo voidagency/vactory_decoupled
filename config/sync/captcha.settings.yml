@@ -1,5 +1,5 @@
 enabled_default: 0
-default_challenge: captcha/Math
+default_challenge: recaptcha/reCAPTCHA
 description: 'Cette question sert à vérifier si vous êtes un visiteur humain ou non afin d''éviter les soumissions de pourriel (spam) automatisées.'
 administration_mode: false
 allow_on_admin_pages: false

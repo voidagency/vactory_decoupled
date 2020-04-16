@@ -7,8 +7,6 @@ dependencies:
     - field.field.block_content.vactory_block_component.field_dynamic_block_components
   module:
     - vactory_dynamic_field
-_core:
-  default_config_hash: dv0kPl77B0EOCmF0wqXxxGZJ5sFA7N1dJ5WIQyh7KYc
 id: block_content.vactory_block_component.default
 targetEntityType: block_content
 bundle: vactory_block_component

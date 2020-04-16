@@ -1,0 +1,19 @@
+uuid: f09ac194-6bfb-4897-9285-509be990f29e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view_id
+    - node.type.vactory_page_listing
+id: node.vactory_page_listing.field_view_id
+field_name: field_view_id
+entity_type: node
+bundle: vactory_page_listing
+label: 'View ID'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

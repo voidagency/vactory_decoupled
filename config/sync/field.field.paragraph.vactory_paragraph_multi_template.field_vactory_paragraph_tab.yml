@@ -8,8 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.vactory_paragraph_tab
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: EjEiCoG44lj1z9xBD7WaHqKkJXfidx_suTjhQXyjNdw
 id: paragraph.vactory_paragraph_multi_template.field_vactory_paragraph_tab
 field_name: field_vactory_paragraph_tab
 entity_type: paragraph

@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: vam73QWAl89iTZiihwiSnf6YmTZC-4_KFMRtO_WuzoA
 id: pathauto_content_pattern
 label: 'Pathauto Content Pattern'
 type: 'canonical_entities:node'

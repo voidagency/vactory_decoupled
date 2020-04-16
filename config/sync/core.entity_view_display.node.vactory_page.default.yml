@@ -10,8 +10,6 @@ dependencies:
     - node.type.vactory_page
   module:
     - user
-_core:
-  default_config_hash: VlMBRyE7Hy07kd1qhJ0Fu7AgJKEVpB4l8YjX3hpWS3A
 id: node.vactory_page.default
 targetEntityType: node
 bundle: vactory_page

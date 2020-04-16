@@ -35,8 +35,6 @@ third_party_settings:
         required_fields: true
       label: Apparence
       region: content
-_core:
-  default_config_hash: mjhP65IJ5uUi5C3Ad4V2lRmjAlqxriRHvTAbg9ig_2Y
 id: paragraph.vactory_paragraph_multi_template.default
 targetEntityType: paragraph
 bundle: vactory_paragraph_multi_template

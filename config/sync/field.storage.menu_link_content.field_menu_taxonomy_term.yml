@@ -5,8 +5,6 @@ dependencies:
   module:
     - menu_link_content
     - taxonomy
-_core:
-  default_config_hash: 8X0yY16wubhjTs3jPNGMa8mOe8tejI5ebVPfVlIoBpQ
 id: menu_link_content.field_menu_taxonomy_term
 field_name: field_menu_taxonomy_term
 entity_type: menu_link_content

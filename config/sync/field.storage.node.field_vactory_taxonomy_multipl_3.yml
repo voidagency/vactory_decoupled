@@ -5,8 +5,6 @@ dependencies:
   module:
     - node
     - taxonomy
-_core:
-  default_config_hash: QacWKMlYRZF6NBGtm1mpl-qCyokJLsD-0fSVqruoOLQ
 id: node.field_vactory_taxonomy_multipl_3
 field_name: field_vactory_taxonomy_multipl_3
 entity_type: node

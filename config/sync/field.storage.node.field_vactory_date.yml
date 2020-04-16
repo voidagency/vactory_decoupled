@@ -5,8 +5,6 @@ dependencies:
   module:
     - datetime
     - node
-_core:
-  default_config_hash: GoR74kvMrW5yv9Jhc5tImk_QtN6POS98JLpjXeZnP5w
 id: node.field_vactory_date
 field_name: field_vactory_date
 entity_type: node

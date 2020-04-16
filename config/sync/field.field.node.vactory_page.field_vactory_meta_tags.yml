@@ -7,8 +7,6 @@ dependencies:
     - node.type.vactory_page
   module:
     - metatag
-_core:
-  default_config_hash: rwBbAAwPI-qICVj5E7zieW1AWviLcFbvNxUTFmDdIgE
 id: node.vactory_page.field_vactory_meta_tags
 field_name: field_vactory_meta_tags
 entity_type: node

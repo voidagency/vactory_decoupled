@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: xotJj2XyDgdCFNmDl1gCx_zxedzXNlhaYFQsUFHW3p8
 id: node.field_vactory_flag
 field_name: field_vactory_flag
 entity_type: node

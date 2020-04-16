@@ -8,8 +8,6 @@ dependencies:
   module:
     - node
     - user
-_core:
-  default_config_hash: Kjqf5d4F134C3zua0tXV7LA3m5OEeS_Fowa2dP9kk2I
 id: moderated_content
 label: 'Contenu modéré'
 module: views
@@ -45,7 +43,7 @@ display:
           submit_button: Filtrer
           reset_button: true
           reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -460,7 +458,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false

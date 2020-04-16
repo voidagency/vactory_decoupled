@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: KMgTbp_CdFzeokinVwlw8Y46riPdWPXtxXLKH9bO30A
 id: node.field_vactory_title
 field_name: field_vactory_title
 entity_type: node

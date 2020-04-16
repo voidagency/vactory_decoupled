@@ -10,8 +10,6 @@ dependencies:
   module:
     - block_field
     - text
-_core:
-  default_config_hash: DeJBMitcj2DFfB8UKZq1CcEJRsjoJuWaYvOJyaER7VU
 id: paragraph.vactory_paragraph_block.default
 targetEntityType: paragraph
 bundle: vactory_paragraph_block

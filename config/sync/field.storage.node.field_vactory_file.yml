@@ -5,8 +5,6 @@ dependencies:
   module:
     - file
     - node
-_core:
-  default_config_hash: BcesABP8X26Vfzg7WgdemM3IoasJmrbCTu0MVNYB978
 id: node.field_vactory_file
 field_name: field_vactory_file
 entity_type: node

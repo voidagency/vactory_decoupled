@@ -2,8 +2,6 @@ uuid: 5edb4fe3-dbe2-478a-91f6-772746d269a0
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: mFoRVX9oJfx0JqHpIRud7_FC7covF901cqXOI1VEfvs
 id: vactory_block_component
 label: Template
 revision: 1

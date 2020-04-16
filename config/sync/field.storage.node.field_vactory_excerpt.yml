@@ -5,8 +5,6 @@ dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: z15cXfj2TRT5wj8KBOY7ZF9D8szww9j0xMT3ZlsVp4M
 id: node.field_vactory_excerpt
 field_name: field_vactory_excerpt
 entity_type: node

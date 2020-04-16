@@ -6,8 +6,6 @@ dependencies:
     - node
     - scheduler
     - user
-_core:
-  default_config_hash: 72DaOXTPi--s-2ge-SRzJzYnqnoD2SAKPkUKXOvpxlU
 id: scheduler_scheduled_content
 label: 'Scheduled content'
 module: views
@@ -37,7 +35,7 @@ display:
           submit_button: Filtrer
           reset_button: true
           reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -569,7 +567,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false

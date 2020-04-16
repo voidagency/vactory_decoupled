@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.vactory_paragraph_block
   module:
     - block_field
-_core:
-  default_config_hash: _2mL1A4NCUtEzlncS8k6QGrKKCQLPKLGnWt4j6kcbLo
 id: paragraph.vactory_paragraph_block.field_vactory_block
 field_name: field_vactory_block
 entity_type: paragraph

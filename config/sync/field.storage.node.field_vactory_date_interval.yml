@@ -5,8 +5,6 @@ dependencies:
   module:
     - datetime_range
     - node
-_core:
-  default_config_hash: y9i_cA_2xwLTan87hesT5emKr5sSH01vykXEVisPoG4
 id: node.field_vactory_date_interval
 field_name: field_vactory_date_interval
 entity_type: node

@@ -6,8 +6,6 @@ dependencies:
     - file
     - image
     - menu_link_content
-_core:
-  default_config_hash: WyP6zVaJz-NDNcH-xVGuW-sd_bS68i0yV9i3kQxecRI
 id: menu_link_content.field_menu_image
 field_name: field_menu_image
 entity_type: menu_link_content

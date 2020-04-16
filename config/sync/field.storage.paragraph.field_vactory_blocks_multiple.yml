@@ -5,8 +5,6 @@ dependencies:
   module:
     - block_field
     - paragraphs
-_core:
-  default_config_hash: azGJNQEOIfB_f2VbNZS4FIwt8jP9kbETZZE4HcFxB4U
 id: paragraph.field_vactory_blocks_multiple
 field_name: field_vactory_blocks_multiple
 entity_type: paragraph

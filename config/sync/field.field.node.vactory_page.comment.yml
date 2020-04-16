@@ -7,8 +7,6 @@ dependencies:
     - node.type.vactory_page
   module:
     - comment
-_core:
-  default_config_hash: QxYEiNBozmxgfhigFsGixBcLkWGrhiYlRj1ZqdV1OOs
 id: node.vactory_page.comment
 field_name: comment
 entity_type: node

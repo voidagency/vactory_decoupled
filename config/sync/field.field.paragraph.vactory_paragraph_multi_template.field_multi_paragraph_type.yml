@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.vactory_paragraph_multi_template
   module:
     - options
-_core:
-  default_config_hash: nwCbzE2AOomDb5x5puzwiI6O5hw5lmVKQ2zlTapr-6Y
 id: paragraph.vactory_paragraph_multi_template.field_multi_paragraph_type
 field_name: field_multi_paragraph_type
 entity_type: paragraph

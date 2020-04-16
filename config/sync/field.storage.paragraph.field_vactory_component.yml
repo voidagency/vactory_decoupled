@@ -5,8 +5,6 @@ dependencies:
   module:
     - paragraphs
     - vactory_dynamic_field
-_core:
-  default_config_hash: O4UCElH_sO3g3g9IrMZoNmeaGj8luar9afieh5yrHJE
 id: paragraph.field_vactory_component
 field_name: field_vactory_component
 entity_type: paragraph

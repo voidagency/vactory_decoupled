@@ -6,8 +6,6 @@ dependencies:
     - block_content
     - file
     - image
-_core:
-  default_config_hash: HJIw91pVkwb09TK0rGsYsJa2MIfgfxFKDKmN2syMHTA
 id: block_content.field_vactory_image
 field_name: field_vactory_image
 entity_type: block_content

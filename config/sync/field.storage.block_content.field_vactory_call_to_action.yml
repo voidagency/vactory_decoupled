@@ -5,8 +5,6 @@ dependencies:
   module:
     - block_content
     - link
-_core:
-  default_config_hash: GNA4kVjf02hFp_iOE8BrWDjLz1OG8y_4Xp3mXVLp4Lk
 id: block_content.field_vactory_call_to_action
 field_name: field_vactory_call_to_action
 entity_type: block_content

@@ -5,8 +5,6 @@ dependencies:
   module:
     - file
     - node
-_core:
-  default_config_hash: oPB2bf4na-4ILdPffqMc2maNYmL2rRqyn7XL6i16kDA
 id: node.field_vactory_document
 field_name: field_vactory_document
 entity_type: node

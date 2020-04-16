@@ -2,8 +2,6 @@ uuid: 87817785-a447-493f-81b6-2ead5194ecff
 langcode: fr
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: dJnH-i5CMCoDZ4efjldM-F3H8txBe3_r7GPBbNN380s
 id: vactory_paragraph_block
 label: Bloc
 icon_uuid: null

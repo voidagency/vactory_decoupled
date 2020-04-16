@@ -5,8 +5,6 @@ dependencies:
   module:
     - link
     - node
-_core:
-  default_config_hash: SEQiy18AJZUWqAhBvVB3bY7WmcEYrKCILEIb0V0Mhbc
 id: node.field_vactory_call_to_action
 field_name: field_vactory_call_to_action
 entity_type: node

@@ -6,8 +6,6 @@ dependencies:
     - block_content
     - file
     - image
-_core:
-  default_config_hash: 910mEzUgdF3YY3k1ytIxEEVJSuMCiCCx35UFCaIjUhQ
 id: block_content.field_vactory_cover
 field_name: field_vactory_cover
 entity_type: block_content
