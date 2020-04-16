@@ -8,9 +8,9 @@ use Drupal\Core\Form\FormStateInterface;
  * News.
  *
  * @VactoryOptionalModule(
- *   id = "vactory_news",
- *   label = @Translation("News"),
- *   description = @Translation("The news module adds a content model and default content"),
+ *   id = "vactory_blog",
+ *   label = @Translation("Blog"),
+ *   description = @Translation("The blog module adds a content model and default content"),
  *   type = "module",
  *   weight = 10,
  *   standardlyEnabled = true,
@@ -25,9 +25,9 @@ class News extends AbstractOptionalModule {
 
         $form = parent::buildForm($form, $form_state);
 
-        $form['vactory_news']['project_info'] = [
+        $form['vactory_blog']['project_info'] = [
             '#type' => 'item',
-            '#description' => $this->t("The news module adds a content model and default content"),
+            '#description' => $this->t("The blog module adds a content model and default content"),
         ];
 
         return $form;
