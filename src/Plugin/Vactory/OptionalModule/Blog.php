@@ -5,7 +5,7 @@ namespace Drupal\vactory_decoupled\Plugin\Vactory\OptionalModule;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * News.
+ * Blog.
  *
  * @VactoryOptionalModule(
  *   id = "vactory_blog",
@@ -16,7 +16,7 @@ use Drupal\Core\Form\FormStateInterface;
  *   standardlyEnabled = true,
  * )
  */
-class News extends AbstractOptionalModule {
+class Blog extends AbstractOptionalModule {
 
     /**
      * {@inheritdoc}
