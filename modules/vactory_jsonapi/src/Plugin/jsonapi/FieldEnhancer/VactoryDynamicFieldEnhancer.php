@@ -18,7 +18,7 @@ use Drupal\Component\Utility\UrlHelper;
  *
  * @ResourceFieldEnhancer(
  *   id = "vactory_dynamic_field",
- *   label = @Translation("Dynamic Field"),
+ *   label = @Translation("Vactory Dynamic Field"),
  *   description = @Translation("Unserialize dynamic field data.")
  * )
  */

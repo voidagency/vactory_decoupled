@@ -4,7 +4,6 @@ namespace Drupal\vactory_jsonapi\Plugin\jsonapi\FieldEnhancer;
 
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\Core\Path\AliasStorage;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Url;
 use Drupal\jsonapi_extras\Plugin\ResourceFieldEnhancerBase;
@@ -16,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @ResourceFieldEnhancer(
  *   id = "vactory_link",
- *   label = @Translation("Vactory for link (link field only)"),
+ *   label = @Translation("Vactory Link"),
  *   description = @Translation("Use for internal link field.")
  * )
  */
@@ -89,6 +88,7 @@ class VactoryLinkEnhancer extends ResourceFieldEnhancerBase implements Container
       }
 
       $data['alias'] = str_replace('/backend', '', $data['alias']);
+      $data['alias'] =  '/' .$this->language . $data['alias'];
     }
 
     return $data;

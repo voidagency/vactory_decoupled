@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @ResourceFieldEnhancer(
  *   id = "vactory_metatag",
- *   label = @Translation("Vactory for metatag (metatag field only)"),
+ *   label = @Translation("Vactory Metatags"),
  *   description = @Translation("Use for internal metatag field.")
  * )
  */

@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @ResourceFieldEnhancer(
  *   id = "vactory_cross_content",
- *   label = @Translation("VCC (Cross Content field only)"),
+ *   label = @Translation("Vactory VCC"),
  *   description = @Translation("Use for internal Vcc field.")
  * )
  */

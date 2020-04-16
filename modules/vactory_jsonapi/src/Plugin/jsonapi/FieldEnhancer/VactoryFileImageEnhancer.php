@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @ResourceFieldEnhancer(
  *   id = "vactory_file_image",
- *   label = @Translation("Vactory for images (files field only)"),
+ *   label = @Translation("Vactory Image"),
  *   description = @Translation("Use for internal media field.")
  * )
  */
