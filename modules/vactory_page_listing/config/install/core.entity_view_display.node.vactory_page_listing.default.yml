@@ -1,0 +1,37 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_page_listing.field_settings
+    - field.field.node.vactory_page_listing.field_vactory_meta_tags
+    - node.type.vactory_page_listing
+  module:
+    - metatag
+    - user
+id: node.vactory_page_listing.default
+targetEntityType: node
+bundle: vactory_page_listing
+mode: default
+content:
+  field_settings:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_vactory_meta_tags:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

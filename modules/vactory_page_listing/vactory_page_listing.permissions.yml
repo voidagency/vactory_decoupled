@@ -1,0 +1,4 @@
+administer page listing settings:
+  title: 'Administer page listing settings'
+  description: 'Allow to access to the hidden settings field in page listing nodes.'
+  restrict access: true

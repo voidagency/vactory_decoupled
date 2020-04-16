@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains vactory_page_listing.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function vactory_page_listing_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  if (
+    $form_id !== 'node_vactory_page_listing_form' &&
+    $form_id !== 'node_vactory_page_listing_edit_form'
+  ) {
+    return;
+  }
+
+  $access = \Drupal::currentUser()->hasPermission('administer page listing settings');
+  $form['field_settings']['#access'] = $access;
+}

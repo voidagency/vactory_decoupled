@@ -1,0 +1,23 @@
+name: 'Page Listing'
+description: 'Provides Page Listing type de contenu and related configuration.'
+type: module
+core: 8.x
+package: Vactory
+dependencies:
+  - content_translation
+  - field
+  - jsonapi_extras
+  - language
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - user
+  - views
+  - viewsreference
+core_incompatible: false

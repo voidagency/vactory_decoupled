@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_listing_page_pattern
+label: 'Pathauto Content Listing Page Pattern'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  86a82048-d9fd-44b2-8062-a9c0e2220333:
+    id: node_type
+    bundles:
+      vactory_page_listing: vactory_page_listing
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 86a82048-d9fd-44b2-8062-a9c0e2220333
+selection_logic: and
+weight: -5
+relationships: {  }

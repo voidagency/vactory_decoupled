@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for vactory_jsonapi module.
+ */
+
+use Drupal\Core\Entity\ContentEntityFormInterface;
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Site\Settings;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_form_alter().
+ */
+function vactory_jsonapi_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+  $form_object = $form_state->getFormObject();
+  if (!($form_object instanceof ContentEntityFormInterface)) {
+    return;
+  }
+  $entity = $form_object->getEntity();
+  $op = $form_object->getOperation();
+
+  if (!($entity instanceof ContentEntityInterface)) {
+    return;
+  }
+
+  if (in_array($op, ['edit', 'add', 'default'], TRUE)) {
+    unset($form['actions']['preview']);
+  }
+
+  $frontend_url = Settings::get('FRONTEND_URL', FALSE);
+  if (!$frontend_url || empty($frontend_url)) {
+    return;
+  }
+
+  if ($op === 'edit') {
+    $form_langcode = $form_object->getFormLangcode($form_state);
+    $form['actions']['front_preview'] = [
+      '#type' => 'link',
+      '#title' => t('Preview'),
+      '#weight' => 20,
+      '#url' => Url::fromUri($frontend_url, [
+        'query' => [
+          '_lng' => $form_langcode,
+          'nid' => $entity->id(),
+          'content_type' => $entity->bundle()
+        ]
+      ]),
+      '#attributes' => [
+        'id' => 'frontend-preview-button',
+        'class' => ['action-link', 'action-link', 'action-link--icon-show'],
+        'target' => '_blank'
+      ],
+    ];
+    $form['#attached']['library'][] = 'vactory_jsonapi/preview_button';
+  }
+
+}

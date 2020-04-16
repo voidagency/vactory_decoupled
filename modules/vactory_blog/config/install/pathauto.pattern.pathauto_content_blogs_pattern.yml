@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_blogs_pattern
+label: 'Pathauto Content Blogs Pattern'
+type: 'canonical_entities:node'
+pattern: '/blogs/[node:title]'
+selection_criteria:
+  4e1ebade-3a44-441d-bfc4-f51a02b5c377:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4e1ebade-3a44-441d-bfc4-f51a02b5c377
+selection_logic: and
+weight: -5
+relationships: {  }
