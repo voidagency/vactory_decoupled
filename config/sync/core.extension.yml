@@ -108,6 +108,8 @@ module:
   update: 0
   user: 0
   user_registrationpassword: 0
+  vactory_core: 0
+  vactory_dynamic_field: 0
   vactory_dynamic_field_bootstrap: 0
   vactory_dynamic_field_sliders: 0
   vactory_field: 0
