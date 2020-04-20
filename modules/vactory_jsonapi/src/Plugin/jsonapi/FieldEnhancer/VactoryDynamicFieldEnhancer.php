@@ -87,6 +87,7 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
       $widget_id = $data['widget_id'];
       $widget_data = json_decode($data['widget_data'], TRUE);
       $settings = $this->platformProvider->loadSettings($widget_id);
+
       $content = [];
 
       // Handle extra fields.
@@ -117,7 +118,6 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
       if (array_key_exists('extra_field', $content) && is_array($content['extra_field'])) {
         $this->applyFormatters(['extra_fields'], $settings, $content['extra_field']);
       }
-
 
       $content['template'] = $widget_id;
 
@@ -157,16 +157,17 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
       if ($info && isset($info['type'])) {
         // Manage external/internal links.
         if ($info['type'] === 'url_extended') {
-          if (!empty($value) && !UrlHelper::isExternal($value)) {
+
+          if (!empty($value['url']) && !UrlHelper::isExternal($value['url'])) {
             $front_uri = $this->siteConfig->get('page.front');
-            if ($front_uri === $value) {
-              $value = Url::fromRoute('<front>')->toString();
+            if ($front_uri === $value['url']) {
+              $value['url'] = Url::fromRoute('<front>')->toString();
             }
             else {
-              $value = Url::fromUserInput($value)
+              $value['url'] = Url::fromUserInput($value['url'])
                 ->toString();
             }
-            $value = str_replace('/backend', '', $value);
+            $value['url'] = str_replace('/backend', '', $value['url']);
           }
         }
 
