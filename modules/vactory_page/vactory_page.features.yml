@@ -1,0 +1,14 @@
+bundle: vactory
+excluded:
+  - captcha.captcha_point.node_page_form
+  - language.content_settings.paragraph.vactory_component
+  - language.content_settings.paragraph.vactory_paragraph_block
+  - language.content_settings.paragraph.vactory_paragraph_multi_template
+  - field.storage.node.field_exclude_from_search
+  - field.storage.node.field_vactory_paragraphs
+  - jsonapi_extras.jsonapi_resource_config.paragraph--vactory_component
+  - jsonapi_extras.jsonapi_resource_config.search_page--search_page
+  - paragraphs.paragraphs_type.vactory_component
+  - paragraphs.paragraphs_type.vactory_paragraph_block
+  - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+required: true
