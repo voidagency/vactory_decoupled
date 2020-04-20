@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_news_pattern
+label: "Pathauto Content News Pattern\t"
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria:
+  e674f1c8-a176-4286-8ae0-663acfc30416:
+    id: node_type
+    bundles:
+      vactory_news: vactory_news
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e674f1c8-a176-4286-8ae0-663acfc30416
+selection_logic: and
+weight: -5
+relationships: {  }

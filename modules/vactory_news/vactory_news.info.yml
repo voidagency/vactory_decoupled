@@ -1,0 +1,23 @@
+name: News
+description: 'Provides News content type and related configuration. Manage your news content.'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - datetime
+  - field
+  - jsonapi_extras
+  - language
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false
