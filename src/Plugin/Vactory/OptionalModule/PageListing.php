@@ -5,18 +5,18 @@ namespace Drupal\vactory_decoupled\Plugin\Vactory\OptionalModule;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * News.
+ * Page Listing.
  *
  * @VactoryOptionalModule(
- *   id = "vactory_locator",
- *   label = @Translation("Locator"),
- *   description = @Translation("The locator module adds an entity model and default content for maps"),
+ *   id = "vactory_page_listing",
+ *   label = @Translation("Page Listing"),
+ *   description = @Translation("The page listing module adds a content model and default content"),
  *   type = "module",
  *   weight = 10,
- *   standardlyEnabled = false,
+ *   standardlyEnabled = true,
  * )
  */
-class Locator extends AbstractOptionalModule {
+class PageListing extends AbstractOptionalModule {
 
     /**
      * {@inheritdoc}
@@ -25,9 +25,9 @@ class Locator extends AbstractOptionalModule {
 
         $form = parent::buildForm($form, $form_state);
 
-        $form['vactory_locator']['project_info'] = [
+        $form['vactory_page_listing']['project_info'] = [
             '#type' => 'item',
-            '#description' => $this->t("The locator module adds an entity model and default content for maps"),
+            '#description' => $this->t("The page listing module adds a content model and default content"),
         ];
 
         return $form;

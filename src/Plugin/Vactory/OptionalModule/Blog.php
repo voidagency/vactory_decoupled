@@ -13,7 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
  *   description = @Translation("The blog module adds a content model and default content"),
  *   type = "module",
  *   weight = 10,
- *   standardlyEnabled = true,
+ *   standardlyEnabled = false,
  * )
  */
 class Blog extends AbstractOptionalModule {
