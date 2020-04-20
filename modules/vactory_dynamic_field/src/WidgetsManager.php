@@ -181,6 +181,9 @@ class WidgetsManager extends DefaultPluginManager implements WidgetsManagerInter
     $widgets_alter = $widgets;
     unset($widgets_alter['Froala']);
     unset($widgets_alter['Content']);
+    if (!isset($widgets['Froala'])) {
+      $widgets['Froala'] = [];
+    }
     $widgets_alter['Content'] = array_merge($widgets['Content'], $widgets['Froala']);
 
     foreach ($widgets_alter as $catgeory => &$items) {
