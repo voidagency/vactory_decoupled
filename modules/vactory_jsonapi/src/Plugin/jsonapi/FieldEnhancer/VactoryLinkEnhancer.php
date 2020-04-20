@@ -89,6 +89,7 @@ class VactoryLinkEnhancer extends ResourceFieldEnhancerBase implements Container
 
       $data['alias'] = str_replace('/backend', '', $data['alias']);
       $data['alias'] =  '/' .$this->language . $data['alias'];
+      $data['langcode'] =  $this->language;
     }
 
     return $data;
