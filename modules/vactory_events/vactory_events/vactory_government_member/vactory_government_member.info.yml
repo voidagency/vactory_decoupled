@@ -1,0 +1,17 @@
+name: 'Government Member'
+description: 'Provides Government Member content type and related configuration. Manage your government member content.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - jsonapi_extras
+  - language
+  - menu_ui
+  - node
+  - path
+  - scheduler
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.0
+package: Vactory

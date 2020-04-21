@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Events - Categorie'
+vid: events_category
+description: ''
+weight: 0
