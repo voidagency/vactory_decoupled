@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_email
+    - node.type.vactory_government_member
+id: node.vactory_government_member.field_vactory_email
+field_name: field_vactory_email
+entity_type: node
+bundle: vactory_government_member
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
