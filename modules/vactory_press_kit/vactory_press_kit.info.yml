@@ -6,6 +6,7 @@ dependencies:
   - content_translation
   - datetime
   - field
+  - file
   - image
   - jsonapi_extras
   - language

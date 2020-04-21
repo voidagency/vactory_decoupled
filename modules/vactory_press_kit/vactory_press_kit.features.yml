@@ -1,2 +1,15 @@
 bundle: vactory
+excluded:
+  - language.content_settings.media.document
+  - field.storage.node.field_vactory_media
+  - field.storage.node.field_vactory_media_file
+  - core.base_field_override.media.document.changed
+  - core.base_field_override.media.document.created
+  - core.base_field_override.media.document.metatag
+  - core.base_field_override.media.document.name
+  - core.base_field_override.media.document.path
+  - core.base_field_override.media.document.status
+  - core.base_field_override.media.document.thumbnail
+  - core.base_field_override.media.document.uid
+  - media.type.document
 required: true
