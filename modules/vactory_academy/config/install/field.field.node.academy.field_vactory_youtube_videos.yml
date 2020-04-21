@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_youtube_videos
+    - node.type.academy
+id: node.academy.field_vactory_youtube_videos
+field_name: field_vactory_youtube_videos
+entity_type: node
+bundle: academy
+label: Videos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

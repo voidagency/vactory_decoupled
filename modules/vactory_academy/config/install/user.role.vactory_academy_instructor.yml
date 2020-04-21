@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: vactory_academy_instructor
+label: Instructor
+weight: 6
+is_admin: null
