@@ -1,0 +1,28 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_taxonomy_1
+    - node.type.press_release
+    - taxonomy.vocabulary.press_release_theme
+id: node.press_release.field_vactory_taxonomy_1
+field_name: field_vactory_taxonomy_1
+entity_type: node
+bundle: press_release
+label: Thème
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      press_release_theme: press_release_theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
