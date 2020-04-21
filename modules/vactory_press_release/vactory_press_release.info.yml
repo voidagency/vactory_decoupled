@@ -1,0 +1,24 @@
+name: 'Press Release'
+description: 'Provides Press Release type de contenu and related configuration. Gérez le contenu de vos communiqués de presse.'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - datetime
+  - field
+  - jsonapi_extras
+  - language
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+  - vactory_press_kit
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false
