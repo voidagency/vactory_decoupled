@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_academy_language
+    - node.type.academy
+id: node.academy.field_vactory_academy_language
+field_name: field_vactory_academy_language
+entity_type: node
+bundle: academy
+label: Language
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

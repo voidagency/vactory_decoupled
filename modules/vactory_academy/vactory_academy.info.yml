@@ -1,0 +1,28 @@
+name: Academy
+description: 'Provides Academy content type and related configuration. Manage your Academy content.'
+type: module
+core: 8.x
+dependencies:
+  - comment
+  - content_translation
+  - datetime
+  - entity_reference_revisions
+  - field
+  - field_group
+  - jsonapi_extras
+  - language
+  - media
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - paragraphs
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_academy_pattern
+label: 'Pathauto Content Academy Pattern'
+type: 'canonical_entities:node'
+pattern: '/academy-courses/[node:title]'
+selection_criteria:
+  2376ab2b-dc8f-4561-b90d-b6e3f315842d:
+    id: node_type
+    bundles:
+      academy: academy
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2376ab2b-dc8f-4561-b90d-b6e3f315842d
+selection_logic: and
+weight: -5
+relationships: {  }
