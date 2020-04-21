@@ -30,7 +30,7 @@ resourceFields:
     fieldName: langcode
     publicName: langcode
     enhancer:
-      id: ''
+      id: vactory_langcode
     disabled: false
   type:
     fieldName: type
@@ -117,16 +117,16 @@ resourceFields:
       id: ''
     disabled: false
   metatag:
+    disabled: true
     fieldName: metatag
     publicName: metatag
     enhancer:
       id: ''
-    disabled: false
   path:
     fieldName: path
     publicName: path
     enhancer:
-      id: ''
+      id: vactory_link
     disabled: false
   publish_on:
     fieldName: publish_on
@@ -200,9 +200,9 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  field_vactory_media:
-    fieldName: field_vactory_media
-    publicName: field_vactory_media
+  field_vactory_media_image:
+    fieldName: field_vactory_media_image
+    publicName: field_vactory_media_image
     enhancer:
       id: ''
     disabled: false
