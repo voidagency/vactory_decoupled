@@ -1,0 +1,20 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_date_interval
+    - node.type.events
+  module:
+    - datetime_range
+id: node.events.field_vactory_date_interval
+field_name: field_vactory_date_interval
+entity_type: node
+bundle: events
+label: 'Intervalle de dates'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
