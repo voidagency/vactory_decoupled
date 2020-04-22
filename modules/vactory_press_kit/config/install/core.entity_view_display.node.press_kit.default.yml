@@ -1,0 +1,76 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.press_kit.field_vactory_date
+    - field.field.node.press_kit.field_vactory_excerpt
+    - field.field.node.press_kit.field_vactory_media
+    - field.field.node.press_kit.field_vactory_media_file
+    - field.field.node.press_kit.field_vactory_meta_tags
+    - field.field.node.press_kit.field_vactory_taxonomy_1
+    - node.type.press_kit
+  module:
+    - datetime
+    - metatag
+    - text
+    - user
+id: node.press_kit.default
+targetEntityType: node
+bundle: press_kit
+mode: default
+content:
+  field_vactory_date:
+    weight: 2
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_vactory_excerpt:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vactory_media:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_vactory_media_file:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_vactory_meta_tags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_vactory_taxonomy_1:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true
