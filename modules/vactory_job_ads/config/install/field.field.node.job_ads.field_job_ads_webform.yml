@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_ads_webform
+    - node.type.job_ads
+    - webform.webform.job_application
+  module:
+    - webform
+id: node.job_ads.field_job_ads_webform
+field_name: field_job_ads_webform
+entity_type: node
+bundle: job_ads
+label: 'Job ads webform'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 83196c3b-7abe-4947-88f9-249719457cbc
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

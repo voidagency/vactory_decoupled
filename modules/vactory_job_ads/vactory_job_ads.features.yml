@@ -1,0 +1,8 @@
+bundle: vactory
+excluded:
+  - field.storage.node.field_vactory_description
+  - field.storage.node.field_vactory_taxonomy_3
+  - field.storage.node.field_vactory_address
+  - field.storage.node.field_vactory_email
+  - field.storage.node.field_vactory_telephone
+required: true

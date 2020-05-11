@@ -1,0 +1,49 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_ads.body
+    - field.field.node.job_ads.field_job_ads_webform
+    - field.field.node.job_ads.field_vactory_address
+    - field.field.node.job_ads.field_vactory_description
+    - field.field.node.job_ads.field_vactory_email
+    - field.field.node.job_ads.field_vactory_meta_tags
+    - field.field.node.job_ads.field_vactory_taxonomy_1
+    - field.field.node.job_ads.field_vactory_taxonomy_2
+    - field.field.node.job_ads.field_vactory_taxonomy_3
+    - field.field.node.job_ads.field_vactory_telephone
+    - node.type.job_ads
+  module:
+    - text
+    - user
+id: node.job_ads.teaser
+targetEntityType: node
+bundle: job_ads
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_job_ads_webform: true
+  field_vactory_address: true
+  field_vactory_description: true
+  field_vactory_email: true
+  field_vactory_meta_tags: true
+  field_vactory_taxonomy_1: true
+  field_vactory_taxonomy_2: true
+  field_vactory_taxonomy_3: true
+  field_vactory_telephone: true
+  langcode: true
+  search_api_excerpt: true

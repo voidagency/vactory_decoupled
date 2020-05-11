@@ -1,0 +1,110 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.job_ads.body
+    - field.field.node.job_ads.field_job_ads_webform
+    - field.field.node.job_ads.field_vactory_address
+    - field.field.node.job_ads.field_vactory_description
+    - field.field.node.job_ads.field_vactory_email
+    - field.field.node.job_ads.field_vactory_meta_tags
+    - field.field.node.job_ads.field_vactory_taxonomy_1
+    - field.field.node.job_ads.field_vactory_taxonomy_2
+    - field.field.node.job_ads.field_vactory_taxonomy_3
+    - field.field.node.job_ads.field_vactory_telephone
+    - node.type.job_ads
+  module:
+    - metatag
+    - text
+    - user
+    - webform
+id: node.job_ads.default
+targetEntityType: node
+bundle: job_ads
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_job_ads_webform:
+    weight: 110
+    label: hidden
+    settings:
+      label: Apply
+      dialog: ''
+      attributes: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_link
+    region: content
+  field_vactory_address:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vactory_description:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_vactory_email:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_vactory_meta_tags:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_vactory_taxonomy_1:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_vactory_taxonomy_2:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_vactory_taxonomy_3:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_vactory_telephone:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true
