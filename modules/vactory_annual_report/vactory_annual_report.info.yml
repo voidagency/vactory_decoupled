@@ -1,0 +1,24 @@
+name: 'Annual report'
+description: 'Provides Annual report content type and related configuration. Manage your Annual Reports content.'
+type: module
+core: 8.x
+dependencies:
+  - colorapi
+  - entity_reference_revisions
+  - field
+  - jquery_colorpicker
+  - jsonapi_extras
+  - language
+  - menu_ui
+  - node
+  - options
+  - paragraphs
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false
