@@ -1,5 +1,0 @@
-bundle: vactory
-excluded:
-  - field.storage.node.field_vactory_date
-  - field.storage.node.field_vactory_excerpt
-required: true
