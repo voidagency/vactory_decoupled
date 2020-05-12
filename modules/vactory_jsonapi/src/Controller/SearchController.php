@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Drupal\vactory_jsonapi\Controller;
-
 
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Controller\ControllerBase;
@@ -10,19 +8,19 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Language\LanguageManagerInterface;
 use Drupal\Core\Url;
 use Drupal\metatag\MetatagManagerInterface;
-use Drupal\search_api\Plugin\views\query\SearchApiQuery;
+//use Drupal\search_api\Plugin\views\query\SearchApiQuery;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Drupal\search_api\Entity\Index;
-
+//use Drupal\search_api\Entity\Index;
 
 /**
  * Class SearchController
  *
  * @package Drupal\vactory_jsonapi\Controller
  */
-class SearchController extends ControllerBase {
+class SearchController extends ControllerBase
+{
 
   /**
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
@@ -55,7 +53,8 @@ class SearchController extends ControllerBase {
   public function __construct(EntityTypeManagerInterface $entityTypeManager,
                               LanguageManagerInterface $languageManager,
                               ConfigFactoryInterface $configFactory,
-                              MetatagManagerInterface $metatagManager) {
+                              MetatagManagerInterface $metatagManager)
+  {
     $this->entityTypeManager = $entityTypeManager;
     $this->languageManager = $languageManager;
     $this->configFactory = $configFactory;
@@ -67,7 +66,8 @@ class SearchController extends ControllerBase {
    *
    * @return \Drupal\Core\Controller\ControllerBase|static
    */
-  public static function create(ContainerInterface $container) {
+  public static function create(ContainerInterface $container)
+  {
     return new static(
       $container->get('entity_type.manager'),
       $container->get('language_manager'),
@@ -84,7 +84,8 @@ class SearchController extends ControllerBase {
    *
    * @return \Symfony\Component\HttpFoundation\JsonResponse
    */
-  public function index(Request $request) {
+  public function index(Request $request)
+  {
     $search_api_fulltext = $request->query->get('q');
     $pager = $request->query->get('pager');
     $includeSummary = $request->query->get('summary');
@@ -94,9 +95,9 @@ class SearchController extends ControllerBase {
     if (empty($search_api_fulltext)) {
       return new JsonResponse([
         'resources' => [],
-        'count'   => 0,
-        'metatags'  => $this->getMetatag(),
-        'status'  => 400
+        'count' => 0,
+        'metatags' => $this->getMetatag(),
+        'status' => 400
       ]);
     }
     $results = $this->getIndexResults($search_api_fulltext, $pager, $includeSummary, $limit);
@@ -115,11 +116,12 @@ class SearchController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function getIndexResults($searchTerm, $pager = 0, $includeSummary = 0, $limit = 10) {
+  public function getIndexResults($searchTerm, $pager = 0, $includeSummary = 0, $limit = 10)
+  {
     $index = $this->entityTypeManager->getStorage('search_api_index');
     $language = $this->languageManager->getCurrentLanguage()->getId();
     $search_api_index = $index->load('default_content_index');
-    $pager = max([0, $pager - 1 ]);
+    $pager = max([0, $pager - 1]);
     $limit = $limit < 0 || $limit > 50 ? 10 : $limit;
 
     $query = $search_api_index->query([
@@ -132,7 +134,7 @@ class SearchController extends ControllerBase {
     $query->sort('search_api_relevance', 'DESC');
 
     $results = $query->execute();
-    return $this->normalizer($results->getResultItems(), $includeSummary,$results->getResultCount());
+    return $this->normalizer($results->getResultItems(), $includeSummary, $results->getResultCount());
   }
 
   /**
@@ -143,7 +145,9 @@ class SearchController extends ControllerBase {
    *
    * @return \Symfony\Component\HttpFoundation\JsonResponse
    */
-  public function normalizer($data, $includeSummary = 0, $count = 0) {
+  public function normalizer($data, $includeSummary = 0, $count = 0)
+  {
+    $use_node_summary = $this->configFactory->get('vactory_search.settings')->get('use_node_summary');
     $front_uri = $this->configFactory->get('system.site')->get('page.front');
     $front_url = Url::fromUri('internal:' . $front_uri)->toString();
     $front_url = str_replace('/backend', '', $front_url);
@@ -151,36 +155,48 @@ class SearchController extends ControllerBase {
 //    Final results will be available in this array.
     $formated_results = [];
 
-    $response = array_map(function($element) use (&$formated_results, $front_url, $includeSummary){
-    $needed = ['url', 'title', 'type'];
-    if (intval($includeSummary) == '1') {
-      array_push($needed, 'node_summary');
-    }
-    $flatData = [];
-    foreach ($element->getFields(TRUE) as $key => $item) {
-      if (in_array($key, $needed)) {
-        $rawValues = $item->getValues();
-        $rawValues = reset($rawValues);
-        $rawValues = str_replace('/backend', '', $rawValues);
+    $response = array_map(function ($element) use (&$formated_results, $front_url, $includeSummary, $use_node_summary) {
+      $needed = ['url', 'title', 'type'];
 
-        if ($key === 'url' && strval($rawValues) === $front_url) {
-          $flatData[$key] = '/' . $this->languageManager->getCurrentLanguage()->getId();
-          continue;
+      if ($use_node_summary) {
+        $needed = ['url', 'title', 'type', 'node_summary'];
+      }
+
+      if (intval($includeSummary) == '1') {
+        array_push($needed, 'node_summary');
+      }
+      $flatData = [];
+      foreach ($element->getFields(TRUE) as $key => $item) {
+        if (in_array($key, $needed)) {
+          $rawValues = $item->getValues();
+          $rawValues = reset($rawValues);
+          $rawValues = str_replace('/backend', '', $rawValues);
+
+          if ($key === 'url' && strval($rawValues) === $front_url) {
+            $flatData[$key] = '/' . $this->languageManager->getCurrentLanguage()->getId();
+            continue;
+          }
+          $flatData[$key] = strval($rawValues);
         }
-        $flatData[$key] = strval($rawValues);
+      }
+      $flatData['excerpt'] = $element->getExcerpt();
+
+      $formated_results[] = $flatData;
+      return $flatData;
+    }, $data);
+
+    if ($use_node_summary) {
+      foreach ($formated_results as &$item) {
+        $item['excerpt'] = $item['node_summary'];
+        unset($item['node_summary']);
       }
     }
-    $flatData['excerpt'] = $element->getExcerpt();
-
-    $formated_results[] = $flatData;
-    return $flatData;
-    }, $data);
 
     return new JsonResponse([
       'resources' => $formated_results,
-      'count'     => $count,
-      'metatags'  => $this->getMetatag(),
-      'status'    => 200
+      'count' => $count,
+//      'metatags' => $this->getMetatag(),
+      'status' => 200
     ]);
   }
 
@@ -189,7 +205,8 @@ class SearchController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function getMetatag() {
+  public function getMetatag()
+  {
     $entity = $this->entityTypeManager->getStorage('view')->load('vactory_search');
     $metatags = metatag_get_default_tags($entity);
 
