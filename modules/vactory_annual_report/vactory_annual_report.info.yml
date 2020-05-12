@@ -4,11 +4,14 @@ type: module
 core: 8.x
 dependencies:
   - colorapi
+  - content_translation
   - entity_reference_revisions
   - field
+  - field_group
   - jquery_colorpicker
   - jsonapi_extras
   - language
+  - media_library
   - menu_ui
   - node
   - options
