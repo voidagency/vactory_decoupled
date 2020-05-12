@@ -87,6 +87,7 @@ class Breadcrumb {
     $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
     $query = $this->connection->select('path_alias', 'base_table');
     $query->condition('base_table.status', 1);
+    $query->condition('base_table.path', '%/node/%', 'LIKE');
     $query->condition('base_table.langcode', $language);
     $query->fields('base_table', ['langcode', 'path', 'alias']);
 

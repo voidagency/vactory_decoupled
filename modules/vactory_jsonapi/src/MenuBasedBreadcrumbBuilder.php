@@ -224,12 +224,10 @@ class MenuBasedBreadcrumbBuilder {
         /* @var \Drupal\menu_item_extras\Entity\MenuItemExtrasMenuLinkContent $menuLink */
         $menuLink = $this->menuLinkContentStorage->load($entity_id);
         $menuLink = $this->entityRepository->getTranslationFromContext($menuLink, $langcode);
-        $uri = $menuLink->get('field_dam_link')->first()->getValue()['uri'];
-
         /* @var \Drupal\Core\Url $link */
-        $link = Url::fromUri($uri, [
-          'language' => $language,
-        ]);
+        $link = $menuLink->getUrlObject();
+        $link->setOption('language', $language);
+        // @todo: homepage link > compare with site settings node and remove /hompage.
 
         $links[] = Link::fromTextAndUrl($menuLink->label(), $link);
       }
