@@ -1,0 +1,22 @@
+name: 'Job Ads'
+description: 'Provides Job Ads content type and related configuration. Manage your Job Ads content.'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - field
+  - jsonapi_extras
+  - language
+  - menu_ui
+  - metatag
+  - node
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+  - webform
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false

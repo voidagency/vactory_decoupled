@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Job Ads - Contract'
+vid: job_ads_contract
+description: 'Taxonomy for Vactory Job Ads Contract'
+weight: 0

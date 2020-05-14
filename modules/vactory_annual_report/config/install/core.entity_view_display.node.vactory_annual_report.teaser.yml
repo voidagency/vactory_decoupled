@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_annual_report.body
+    - field.field.node.vactory_annual_report.field_ar_background_color
+    - field.field.node.vactory_annual_report.field_ar_element_width
+    - field.field.node.vactory_annual_report.field_ar_layout
+    - field.field.node.vactory_annual_report.field_vactory_excerpt
+    - field.field.node.vactory_annual_report.field_vactory_media_image
+    - field.field.node.vactory_annual_report.field_vactory_paragraphs
+    - field.field.node.vactory_annual_report.field_vactory_taxonomy_1
+    - field.field.node.vactory_annual_report.field_vactory_taxonomy_2
+    - node.type.vactory_annual_report
+  module:
+    - text
+    - user
+id: node.vactory_annual_report.teaser
+targetEntityType: node
+bundle: vactory_annual_report
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ar_background_color: true
+  field_ar_element_width: true
+  field_ar_layout: true
+  field_vactory_excerpt: true
+  field_vactory_media_image: true
+  field_vactory_paragraphs: true
+  field_vactory_taxonomy_1: true
+  field_vactory_taxonomy_2: true
+  langcode: true
+  search_api_excerpt: true
