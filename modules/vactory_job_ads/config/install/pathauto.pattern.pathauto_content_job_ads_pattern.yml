@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_job_ads_pattern
+label: 'Pathauto Content Job Ads Pattern'
+type: 'canonical_entities:node'
+pattern: '/jobs/[node:title]'
+selection_criteria:
+  01fc9196-c402-40b4-8aaf-56deeb68ca6c:
+    id: node_type
+    bundles:
+      job_ads: job_ads
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 01fc9196-c402-40b4-8aaf-56deeb68ca6c
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,28 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vactory_taxonomy_1
+    - node.type.job_ads
+    - taxonomy.vocabulary.job_ads_city
+id: node.job_ads.field_vactory_taxonomy_1
+field_name: field_vactory_taxonomy_1
+entity_type: node
+bundle: job_ads
+label: Ville
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_ads_city: job_ads_city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
