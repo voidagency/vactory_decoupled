@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_annual_report_pattern_
+label: "Pathauto Content Annual Report Pattern\t"
+type: 'canonical_entities:node'
+pattern: '/annual_report/[node:title]'
+selection_criteria:
+  fae1b1b6-04a6-4298-ae20-3504d7a6cbf9:
+    id: node_type
+    bundles:
+      vactory_annual_report: vactory_annual_report
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fae1b1b6-04a6-4298-ae20-3504d7a6cbf9
+selection_logic: and
+weight: -5
+relationships: {  }

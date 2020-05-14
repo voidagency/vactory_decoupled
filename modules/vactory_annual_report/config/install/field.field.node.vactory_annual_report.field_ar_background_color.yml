@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ar_background_color
+    - node.type.vactory_annual_report
+  module:
+    - colorapi
+id: node.vactory_annual_report.field_ar_background_color
+field_name: field_ar_background_color
+entity_type: node
+bundle: vactory_annual_report
+label: 'Background color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    name: 'Background color'
+    color: '#FFFFFF'
+default_value_callback: ''
+settings: {  }
+field_type: colorapi_color_field
