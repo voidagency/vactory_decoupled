@@ -1,0 +1,16 @@
+name: 'Ancre'
+multiple: TRUE
+category: 'Call to action'
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: 'Titre'
+    options:
+      '#required': TRUE
+  paragraphId:
+    type: text
+    label: 'Paragraph ID'
+    options:
+      '#required': TRUE
+
