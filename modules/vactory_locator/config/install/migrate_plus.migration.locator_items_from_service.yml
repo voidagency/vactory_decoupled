@@ -1,0 +1,131 @@
+status: true
+dependencies: {  }
+langcode: fr
+id: view published locator entity entities
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: default
+label: 'Import - Map items'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  headers:
+    Accept: 'application/json; charset=utf-8'
+    Content-Type: application/json
+  urls:
+    - 'http://104.197.11.192/geoserver/geoloc_getPOI.php?action=getAgencesByTypeMarketing&typeMarketing=1'
+  item_selector: agence
+  fields:
+    -
+      name: ID
+      label: Id
+      selector: /id
+    -
+      name: Type
+      label: Type
+      selector: /type
+    -
+      name: TITLE
+      label: title
+      selector: /nom
+    -
+      name: ADDRESS
+      label: Address
+      selector: /adresse
+    -
+      name: Horaire1
+      label: Horaire1
+      selector: /horaire1
+    -
+      name: Horaire2
+      label: Horaire2
+      selector: /horaire2
+    -
+      name: Horaire3
+      label: Horaire3
+      selector: /horaire3
+    -
+      name: Horaire4
+      label: Horaire4
+      selector: /horaire4
+    -
+      name: Horaire5
+      label: Horaire5
+      selector: /horaire5
+    -
+      name: Horaire6
+      label: Horaire6
+      selector: /horaire6
+    -
+      name: LATITUDE
+      label: LATITUDE
+      selector: /latitude
+    -
+      name: LONGITUDE
+      label: LONGITUDE
+      selector: /longitude
+    -
+      name: TEL
+      label: TEL
+      selector: /telephone1
+    -
+      name: TEL2
+      label: 'TEL 2'
+      selector: /telephone2
+    -
+      name: FAX
+      label: FAX
+      selector: /fax
+    -
+      name: CITYID
+      label: 'Ville Id'
+      selector: /ville
+    -
+      name: DISTANCE
+      label: Distance
+      selector: /distance
+  ids:
+    ID:
+      type: string
+process:
+  type:
+    plugin: default_value
+    default_value: vactory_locator
+  field_locator_info:
+    -
+      plugin: locator_geaography_info
+      source:
+        - LATITUDE
+        - LONGITUDE
+  name: TITLE
+  langcode:
+    plugin: default_value
+    default_value: und
+  uid:
+    plugin: default_value
+    default_value: 1
+  user_id:
+    plugin: default_value
+    default_value: 1
+  field_locator_adress/country_code:
+    -
+      plugin: default_value
+      default_value: MA
+  field_locator_adress/langcode:
+    -
+      plugin: default_value
+      default_value: und
+  field_locator_adress/address_line1: ADDRESS
+  field_locator_adress/locality:
+    - plugin: locator_city_info
+      source:
+        - CITYID
+  field_locator_phone: TEL
+  field_locator_phone_2: TEL2
+  field_locator_fax: FAX
+destination:
+  plugin: 'entity:locator_entity'
+migration_dependencies: null
