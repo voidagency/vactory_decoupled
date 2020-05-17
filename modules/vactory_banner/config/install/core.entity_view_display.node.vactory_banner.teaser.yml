@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_banner.field_banner_template
+    - node.type.vactory_banner
+  module:
+    - user
+id: node.vactory_banner.teaser
+targetEntityType: node
+bundle: vactory_banner
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_banner_template: true
+  langcode: true
+  search_api_excerpt: true
