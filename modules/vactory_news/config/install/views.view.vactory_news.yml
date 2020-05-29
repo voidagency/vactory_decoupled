@@ -49,7 +49,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 2
+          items_per_page: 3
           offset: 0
       style:
         type: default
@@ -272,6 +272,13 @@ display:
       block_description: 'Three Columns'
       block_category: News
       display_description: ''
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+      defaults:
+        pager: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -285,15 +292,21 @@ display:
     display_plugin: block
     id: block_two_columns
     display_title: 'Two Columns'
-    position: 1
+    position: 2
     display_options:
       display_extenders: {  }
-      block_description: 'Two Columns'
-      block_category: News
+      display_description: ''
       title: 'Two Columns'
       defaults:
         title: false
-      display_description: ''
+        pager: false
+      block_description: 'Two Columns'
+      block_category: News
+      pager:
+        type: some
+        options:
+          items_per_page: 2
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
