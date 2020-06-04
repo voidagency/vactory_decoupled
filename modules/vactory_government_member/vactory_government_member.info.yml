@@ -4,8 +4,10 @@ type: module
 core: 8.x
 dependencies:
   - field
+  - image
   - jsonapi_extras
   - language
+  - media
   - media_library
   - menu_ui
   - node
@@ -14,6 +16,7 @@ dependencies:
   - taxonomy
   - text
   - user
+  - views
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
