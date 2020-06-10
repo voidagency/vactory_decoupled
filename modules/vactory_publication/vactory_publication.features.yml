@@ -1,0 +1,5 @@
+bundle: vactory
+excluded:
+  - field.storage.node.field_vactory_call_to_action
+  - field.storage.node.field_vactory_media_file
+required: true

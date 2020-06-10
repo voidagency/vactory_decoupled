@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_publication_pattern
+label: 'Pathauto Content Publication Pattern'
+type: 'canonical_entities:node'
+pattern: '/publications/[node:title]'
+selection_criteria:
+  dd233155-9ccf-4543-981c-9a7772da15a5:
+    id: node_type
+    bundles:
+      publication: publication
+    negate: false
+    context_mapping:
+      node: node
+    uuid: dd233155-9ccf-4543-981c-9a7772da15a5
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,26 @@
+name: Publication
+description: 'Provides Publication content type and related configuration. Manage your publications content.'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - datetime
+  - field
+  - jsonapi_extras
+  - language
+  - link
+  - media
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+  - views
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false
