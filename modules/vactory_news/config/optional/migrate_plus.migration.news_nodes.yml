@@ -6,8 +6,8 @@ class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
-migration_group: News
-label: 'Import News Nodes'
+migration_group: vactory_news
+label: 'Nodes'
 source:
   plugin: csv
   delimiter: ','
@@ -23,7 +23,7 @@ source:
       name: NAME
       label: 'Name'
     2:
-      name: THEME
+      name: THEME_ID
       label: 'THEME'
     3:
       name: EXCERPT
@@ -46,14 +46,15 @@ process:
   title: NAME
   body: BODY
   field_vactory_excerpt: EXCERPT
-  field_vactory_taxonomy_1/target_id':
-    plugin: migration
+  field_vactory_taxonomy_1:
+    plugin: migration_lookup
     migration: news_term_theme
-    source: THEME
+    source: THEME_ID
   field_vactory_media_image:
-    plugin: file_remote_url
+    plugin: file_import
     source: IMAGE
-#    destination: 'constants/file_destination'
+    skip_on_missing_source: true
+    destination: 'constants/file_destination'
 #    title:
 #      plugin: default_value
 #      default_value: "Title"
@@ -62,4 +63,6 @@ process:
 #      default_value: "Alt"
 destination:
   plugin: entity:node
-migration_dependencies: {  }
+migration_dependencies:
+  required:
+    - news_term_theme
