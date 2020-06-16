@@ -14,19 +14,19 @@ use Drupal\views\Views;
 /**
  * Implements hook_df_jsonapi_output_alter().
  */
-function vactory_academy_df_jsonapi_output_alter(&$content)
+function vactory_blog_df_jsonapi_output_alter(&$content)
 {
   $display_id = "block_three_columns";
 
-  if ($content['template'] === 'vactory_academy:two-columns') {
+  if ($content['template'] === 'vactory_blog:two-columns') {
     $display_id = "block_two_columns";
   }
 
   if (
-    $content['template'] === 'vactory_academy:three-columns' ||
-    $content['template'] === 'vactory_academy:two-columns'
+    $content['template'] === 'vactory_blog:three-columns' ||
+    $content['template'] === 'vactory_blog:two-columns'
   ) {
-    $name = "vactory_academy";
+    $name = "vactory_blog";
 
     $taxonomy_id = $content['components'][0]['taxonomy'];
 
@@ -48,11 +48,11 @@ function vactory_academy_df_jsonapi_output_alter(&$content)
     $view->preExecute();
     $view->execute();
     $result = $view->result;
-
+    
     $nodes = [];
     foreach ($result as $row) {
-	    $node = $row->_entity;
-	    $node = \Drupal::service('entity.repository')
+      $node = $row->_entity;
+      $node = \Drupal::service('entity.repository')
         ->getTranslationFromContext($node);
       $imgCover = null;
       if(isset($node->get('field_vactory_media_image')->getValue()[0]['target_id'])){
@@ -68,10 +68,9 @@ function vactory_academy_df_jsonapi_output_alter(&$content)
         $imgCover['file_name'] = $file1->label();
         $imgCover['base_url'] = $image_app_base_url;
       }
-      
+
       $theme = $node->get('field_vactory_taxonomy_1')->entity->label();
-      
-      
+
 
       array_push($nodes, [
         "key" => $node->uuid(),
@@ -79,14 +78,11 @@ function vactory_academy_df_jsonapi_output_alter(&$content)
         "url" => $node->toUrl()->toString(),
         "image" => $imgCover,
         "category" => $theme,
-        "instructor" => $node->get('field_vactory_instructor')->entity->label(),
         "excerpt" => $node->get('field_vactory_excerpt')->getValue(),
-        "date" => $node->get('field_vactory_date')->getValue(),
-        "duration" => $node->get('field_vactory_academy_duration')->getValue(),
       ]);
     }
 
     $content['data'] = $nodes;
   }
 
-}
+} 
