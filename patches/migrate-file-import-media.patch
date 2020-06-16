@@ -1,0 +1,38 @@
+Index: src/Plugin/migrate/process/FileImport.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Plugin/migrate/process/FileImport.php	(revision 5f4fc3fa598676ad42cd42ecf624af5bca5df8b3)
++++ src/Plugin/migrate/process/FileImport.php	(date 1592351587894)
+@@ -4,6 +4,7 @@
+ 
+ use Drupal\Core\File\FileSystemInterface;
+ use Drupal\Core\StreamWrapper\StreamWrapperManagerInterface;
++use Drupal\media\Entity\Media;
+ use Drupal\migrate\MigrateException;
+ use Drupal\migrate\MigrateExecutableInterface;
+ use Drupal\migrate\MigrateSkipProcessException;
+@@ -245,7 +246,21 @@
+         'status' => FILE_STATUS_PERMANENT,
+       ]);
+       $file->save();
+-      return $id_only ? $file->id() : ['target_id' => $file->id()];
++
++      // Create media entity with saved file.
++      $image_media = Media::create([
++        'bundle' => 'image',
++        'uid' => $uid,
++        'status' => 1,
++        'field_image' => [
++          'target_id' => $file->id(),
++          'alt' => t('Placeholder image'),
++          'title' => t('Placeholder image'),
++        ],
++      ]);
++      $image_media->save();
++
++      return $id_only ? $image_media->id() : ['target_id' => $image_media->id()];
+     }
+ 
+     throw new MigrateException("File $source could not be imported to $destination");
