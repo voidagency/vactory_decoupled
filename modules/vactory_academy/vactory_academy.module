@@ -51,7 +51,9 @@ function vactory_academy_df_jsonapi_output_alter(&$content)
 
     $nodes = [];
     foreach ($result as $row) {
-      $node = $row->_entity;
+	    $node = $row->_entity;
+	    $node = \Drupal::service('entity.repository')
+        ->getTranslationFromContext($node);
       $imgCover = null;
       if(isset($node->get('field_vactory_media_image')->getValue()[0]['target_id'])){
         $mid1 = $node->get('field_vactory_media_image')
