@@ -42,7 +42,7 @@
                 "Issue #3099611: Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
             },
             "drupal/migrate_file": {
-                "Use media instead of file": "patches/migrate-file-import-media.patch"
+                "Use media instead of file": "https://raw.githubusercontent.com/voidagency/vactory_decoupled/1.0.0/patches/migrate-file-import-media.patch"
             }
         }
     },
