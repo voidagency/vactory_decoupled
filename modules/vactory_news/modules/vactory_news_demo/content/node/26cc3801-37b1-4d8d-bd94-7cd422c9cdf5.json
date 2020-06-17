@@ -1,0 +1,249 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/news\/news-1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/2\/edit?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/3?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "26cc3801-37b1-4d8d-bd94-7cd422c9cdf5"
+        }
+    ],
+    "vid": [
+        {
+            "value": 1
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_news"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-17T20:28:24+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/2\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fcb78dda-30db-43b2-b7ff-a725f231c94b"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/3?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/vactory_news_theme"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "95e44038-b0cb-4026-ae92-b408005ce5b0"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "News 1",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-17T20:26:26+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-17T20:28:24+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "News 1 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/news\/news-1",
+                "description": "I'm baby normcore PBR&B la croix subway tile iPhone, franzen mustache chicharrones mlkshk air plant. Green juice fam YOLO chambray williamsburg cornhole. Portland man braid franzen helvetica, tousled la croix sartorial fanny pack green juice snackwave taxidermy. Flexitarian you probably haven't heard of them pug direct trade man braid, slow-carb keytar. Roof party cronut XOXO blog, letterpress irony narwhal fam typewriter quinoa succulents lyft flexitarian thundercats subway tile."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/news-1",
+            "pid": 1,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "News 1",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>I'm baby normcore <strong>PBR&amp;B<\/strong> la croix subway tile iPhone, franzen mustache chicharrones mlkshk air plant. Green juice fam YOLO chambray williamsburg cornhole. Portland man braid franzen helvetica, tousled la croix sartorial fanny pack green juice snackwave taxidermy. Flexitarian you probably haven't heard of them pug direct trade man braid, slow-carb keytar. Roof party cronut XOXO blog, letterpress irony narwhal fam typewriter quinoa succulents lyft flexitarian thundercats subway tile.<\/p>\r\n\r\n<p>Ennui echo park snackwave twee, banh mi copper mug slow-carb waistcoat mumblecore tbh. Sustainable try-hard listicle, cray bicycle rights helvetica yr swag. Narwhal iceland migas woke cronut vinyl pinterest. Single-origin coffee hot chicken cardigan cold-pressed, tousled chicharrones mustache chambray jianbing.<\/p>\r\n\r\n<p>Affogato keytar irony, next level seitan cardigan chambray kombucha you probably haven't heard of them four loko YOLO biodiesel pabst. Direct trade +1 kinfolk occupy sriracha iPhone cliche mixtape portland lyft. Irony polaroid aesthetic PBR&amp;B, offal mlkshk normcore hexagon biodiesel lo-fi beard. Kinfolk art party affogato, readymade stumptown raw denim locavore. Squid before they sold out hella prism fanny pack mlkshk.<\/p>\r\n\r\n<p>Banjo kale chips hashtag readymade kitsch. Brooklyn flexitarian trust fund, helvetica mlkshk tote bag selfies health goth. 8-bit 90's semiotics hammock photo booth direct trade gochujang. Kombucha pok pok kale chips YOLO food truck sriracha tumblr you probably haven't heard of them actually sartorial cliche kickstarter vegan normcore iceland. Echo park listicle enamel pin, church-key meggings lo-fi freegan synth irony.<\/p>\r\n\r\n<p>Yr cronut glossier dreamcatcher, messenger bag pug authentic shaman mustache. Cred keffiyeh master cleanse organic cliche tacos, 8-bit disrupt celiac pinterest gluten-free cornhole kinfolk. Lomo letterpress lo-fi, la croix direct trade polaroid forage meh helvetica sustainable humblebrag. Vaporware messenger bag ennui, bespoke you probably haven't heard of them wayfarers gentrify chicharrones authentic art party glossier. Migas adaptogen kinfolk, wayfarers selfies jianbing letterpress chambray godard single-origin coffee whatever brunch <a href=\"https:\/\/google.com\">cray<\/a> occupy.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Dummy text? More like dummy thicc text, amirite?<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>I'm baby normcore <strong>PBR&amp;B<\/strong> la croix subway tile iPhone, franzen mustache chicharrones mlkshk air plant. Green juice fam YOLO chambray williamsburg cornhole. Portland man braid franzen helvetica, tousled la croix sartorial fanny pack green juice snackwave taxidermy. Flexitarian you probably haven't heard of them pug direct trade man braid, slow-carb keytar. Roof party cronut XOXO blog, letterpress irony narwhal fam typewriter quinoa succulents lyft flexitarian thundercats subway tile.<\/p>\n<p>Ennui echo park snackwave twee, banh mi copper mug slow-carb waistcoat mumblecore tbh. Sustainable try-hard listicle, cray bicycle rights helvetica yr swag. Narwhal iceland migas woke cronut vinyl pinterest. Single-origin coffee hot chicken cardigan cold-pressed, tousled chicharrones mustache chambray jianbing.<\/p>\n<p>Affogato keytar irony, next level seitan cardigan chambray kombucha you probably haven't heard of them four loko YOLO biodiesel pabst. Direct trade +1 kinfolk occupy sriracha iPhone cliche mixtape portland lyft. Irony polaroid aesthetic PBR&amp;B, offal mlkshk normcore hexagon biodiesel lo-fi beard. Kinfolk art party affogato, readymade stumptown raw denim locavore. Squid before they sold out hella prism fanny pack mlkshk.<\/p>\n<p>Banjo kale chips hashtag readymade kitsch. Brooklyn flexitarian trust fund, helvetica mlkshk tote bag selfies health goth. 8-bit 90's semiotics hammock photo booth direct trade gochujang. Kombucha pok pok kale chips YOLO food truck sriracha tumblr you probably haven't heard of them actually sartorial cliche kickstarter vegan normcore iceland. Echo park listicle enamel pin, church-key meggings lo-fi freegan synth irony.<\/p>\n<p>Yr cronut glossier dreamcatcher, messenger bag pug authentic shaman mustache. Cred keffiyeh master cleanse organic cliche tacos, 8-bit disrupt celiac pinterest gluten-free cornhole kinfolk. Lomo letterpress lo-fi, la croix direct trade polaroid forage meh helvetica sustainable humblebrag. Vaporware messenger bag ennui, bespoke you probably haven't heard of them wayfarers gentrify chicharrones authentic art party glossier. Migas adaptogen kinfolk, wayfarers selfies jianbing letterpress chambray godard single-origin coffee whatever brunch <a href=\"https:\/\/google.com\">cray<\/a> occupy.<\/p>\n<p>\u00a0<\/p>\n<p>Dummy text? More like dummy thicc text, amirite?<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-17",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "<p>Ennui echo park snackwave twee, banh mi copper mug slow-carb waistcoat mumblecore tbh. Sustainable try-hard listicle, cray bicycle rights helvetica yr swag. Narwhal iceland migas woke cronut vinyl pinterest.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Ennui echo park snackwave twee, banh mi copper mug slow-carb waistcoat mumblecore tbh. Sustainable try-hard listicle, cray bicycle rights helvetica yr swag. Narwhal iceland migas woke cronut vinyl pinterest.<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

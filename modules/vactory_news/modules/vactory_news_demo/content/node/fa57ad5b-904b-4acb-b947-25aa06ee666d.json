@@ -1,0 +1,249 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/news\/news-4?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/5\/edit?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/3?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "fa57ad5b-904b-4acb-b947-25aa06ee666d"
+        }
+    ],
+    "vid": [
+        {
+            "value": 4
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_news"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-17T20:31:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/5\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6a81e32b-650c-4239-ab83-6aa704745324"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/3?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/vactory_news_theme"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "95e44038-b0cb-4026-ae92-b408005ce5b0"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "News 4",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-17T20:30:34+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-17T20:31:41+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "News 4 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/news\/news-4",
+                "description": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.\nPraesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/news-4",
+            "pid": 4,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "News 4",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.<\/p>\r\n\r\n<p>Praesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi.<\/p>\r\n\r\n<p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Suspendisse feugiat. Ut tincidunt tincidunt erat. Suspendisse feugiat.<\/p>\r\n\r\n<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In consectetuer turpis ut velit. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Fusce vulputate eleifend sapien. Vivamus laoreet.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.<\/p>\n<p>Praesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi.<\/p>\n<p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Suspendisse feugiat. Ut tincidunt tincidunt erat. Suspendisse feugiat.<\/p>\n<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In consectetuer turpis ut velit. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Fusce vulputate eleifend sapien. Vivamus laoreet.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-17",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "<p>Praesent nec nisl a purus blandit viverra. Phasellus tempus. Nam at tortor in tellus interdum sagittis. Curabitur nisi. Praesent blandit laoreet nibh.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Praesent nec nisl a purus blandit viverra. Phasellus tempus. Nam at tortor in tellus interdum sagittis. Curabitur nisi. Praesent blandit laoreet nibh.<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}
