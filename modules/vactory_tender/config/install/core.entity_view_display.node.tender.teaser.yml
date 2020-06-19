@@ -1,9 +1,10 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.tender.body
+    - field.field.node.tender.field_tender
     - field.field.node.tender.field_vactory_date
     - field.field.node.tender.field_vactory_excerpt
     - field.field.node.tender.field_vactory_media_document
@@ -32,6 +33,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_tender: true
   field_vactory_date: true
   field_vactory_excerpt: true
   field_vactory_media_document: true

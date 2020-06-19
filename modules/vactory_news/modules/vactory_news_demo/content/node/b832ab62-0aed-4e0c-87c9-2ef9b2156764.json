@@ -1,0 +1,249 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/news\/news-5?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/6\/edit?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/3?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b832ab62-0aed-4e0c-87c9-2ef9b2156764"
+        }
+    ],
+    "vid": [
+        {
+            "value": 5
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_news"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-17T20:32:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/6\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0a495181-7f15-4cc3-b7c9-65e4509f2fbc"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/3?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/vactory_news_theme"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "95e44038-b0cb-4026-ae92-b408005ce5b0"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "News 5",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-17T20:31:46+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-17T20:32:49+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "News 5 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/news\/news-5",
+                "description": "I'm baby meggings hot chicken letterpress franzen, mixtape mumblecore stumptown yr. Kogi disrupt gentrify swag, locavore lo-fi keffiyeh pug health goth seitan fashion axe bespoke waistcoat tofu. Intelligentsia godard master cleanse vape tumblr. Jianbing plaid artisan, gentrify forage meggings vexillologist af banjo actually. Adaptogen la croix chicharrones, slow-carb chia austin small batch flannel plaid post-ironic twee kickstarter. Migas polaroid chia, DIY put a bird on it activated charcoal kogi marfa semiotics."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/news-5",
+            "pid": 5,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "News 5",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>I'm baby meggings hot chicken letterpress franzen, mixtape mumblecore stumptown yr. Kogi disrupt gentrify swag, locavore lo-fi keffiyeh pug health goth seitan fashion axe bespoke waistcoat tofu. Intelligentsia godard master cleanse vape tumblr. Jianbing plaid artisan, gentrify forage meggings vexillologist af banjo actually. Adaptogen la croix chicharrones, slow-carb chia austin small batch flannel plaid post-ironic twee kickstarter. Migas polaroid chia, DIY put a bird on it activated charcoal kogi marfa semiotics.<\/p>\r\n\r\n<p>Health goth activated charcoal migas literally, roof party hexagon live-edge tattooed vegan raclette ugh actually. Asymmetrical pabst PBR&amp;B DIY. 3 wolf moon ugh cronut chicharrones gentrify iPhone palo santo scenester kitsch messenger bag dreamcatcher. Tumeric swag bitters green juice poutine narwhal.<\/p>\r\n\r\n<p>Twee artisan cardigan, kickstarter lo-fi ethical keffiyeh vape post-ironic tumeric disrupt selvage. Vaporware cray cloud bread, freegan wayfarers raclette PBR&amp;B woke heirloom butcher jianbing stumptown actually kickstarter. Chicharrones cloud bread artisan subway tile, street art VHS food truck bespoke air plant literally affogato coloring book squid austin tumeric. Mumblecore pickled twee crucifix viral ethical tacos hell of fam. Pitchfork yuccie 3 wolf moon air plant seitan photo booth aesthetic glossier typewriter cray.<\/p>\r\n\r\n<p>Mustache seitan iceland, mlkshk pickled poutine gochujang waistcoat hashtag jianbing. Hot chicken tofu truffaut, kitsch 8-bit gochujang chia mustache kickstarter paleo synth. Locavore next level stumptown mixtape asymmetrical. Raclette tumeric twee put a bird on it. Forage selfies plaid farm-to-table, meh single-origin coffee pabst pok pok thundercats gastropub. Etsy food truck narwhal neutra sartorial kombucha hashtag 8-bit vexillologist ramps shoreditch.<\/p>\r\n\r\n<p>Sustainable craft beer green juice affogato. Kickstarter wolf semiotics succulents polaroid sriracha vinyl. Heirloom cloud bread gastropub, pork belly taxidermy seitan iceland. Prism snackwave drinking vinegar sustainable. Tote bag listicle blue bottle tbh. Twee freegan direct trade glossier narwhal pinterest sartorial hell of.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>I'm baby meggings hot chicken letterpress franzen, mixtape mumblecore stumptown yr. Kogi disrupt gentrify swag, locavore lo-fi keffiyeh pug health goth seitan fashion axe bespoke waistcoat tofu. Intelligentsia godard master cleanse vape tumblr. Jianbing plaid artisan, gentrify forage meggings vexillologist af banjo actually. Adaptogen la croix chicharrones, slow-carb chia austin small batch flannel plaid post-ironic twee kickstarter. Migas polaroid chia, DIY put a bird on it activated charcoal kogi marfa semiotics.<\/p>\n<p>Health goth activated charcoal migas literally, roof party hexagon live-edge tattooed vegan raclette ugh actually. Asymmetrical pabst PBR&amp;B DIY. 3 wolf moon ugh cronut chicharrones gentrify iPhone palo santo scenester kitsch messenger bag dreamcatcher. Tumeric swag bitters green juice poutine narwhal.<\/p>\n<p>Twee artisan cardigan, kickstarter lo-fi ethical keffiyeh vape post-ironic tumeric disrupt selvage. Vaporware cray cloud bread, freegan wayfarers raclette PBR&amp;B woke heirloom butcher jianbing stumptown actually kickstarter. Chicharrones cloud bread artisan subway tile, street art VHS food truck bespoke air plant literally affogato coloring book squid austin tumeric. Mumblecore pickled twee crucifix viral ethical tacos hell of fam. Pitchfork yuccie 3 wolf moon air plant seitan photo booth aesthetic glossier typewriter cray.<\/p>\n<p>Mustache seitan iceland, mlkshk pickled poutine gochujang waistcoat hashtag jianbing. Hot chicken tofu truffaut, kitsch 8-bit gochujang chia mustache kickstarter paleo synth. Locavore next level stumptown mixtape asymmetrical. Raclette tumeric twee put a bird on it. Forage selfies plaid farm-to-table, meh single-origin coffee pabst pok pok thundercats gastropub. Etsy food truck narwhal neutra sartorial kombucha hashtag 8-bit vexillologist ramps shoreditch.<\/p>\n<p>Sustainable craft beer green juice affogato. Kickstarter wolf semiotics succulents polaroid sriracha vinyl. Heirloom cloud bread gastropub, pork belly taxidermy seitan iceland. Prism snackwave drinking vinegar sustainable. Tote bag listicle blue bottle tbh. Twee freegan direct trade glossier narwhal pinterest sartorial hell of.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-17",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "<p>Sustainable craft beer green juice affogato. Kickstarter wolf semiotics succulents polaroid sriracha vinyl. Heirloom cloud bread gastropub, pork belly taxidermy seitan iceland.&nbsp;<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Sustainable craft beer green juice affogato. Kickstarter wolf semiotics succulents polaroid sriracha vinyl. Heirloom cloud bread gastropub, pork belly taxidermy seitan iceland.\u00a0<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

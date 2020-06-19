@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
+use Drupal\Core\Url;
+use Drupal\media\Entity\Media;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_df_jsonapi_output_alter().
+ */
+function vactory_publication_df_jsonapi_output_alter(&$content)
+{
+  $display_id = "block_three_columns";
+
+  if ($content['template'] === 'vactory_publication:two-columns') {
+    $display_id = "block_two_columns";
+  }
+
+  if (
+    $content['template'] === 'vactory_publication:three-columns' ||
+    $content['template'] === 'vactory_publication:two-columns'
+  ) {
+    $name = "vactory_publication";
+
+    $taxonomy_id = $content['components'][0]['taxonomy'];
+
+    $image_app_base_url = Url::fromUserInput('/app-image/')
+      ->setAbsolute()->toString();
+    $lqipImageStyle = \Drupal\image\Entity\ImageStyle::load('lqip');
+
+    $view = Views::getView($name);
+    if (!$view || !$view->access($display_id)) {
+      $content['data'] = [];
+      return;
+    }
+
+    $view->setDisplay($display_id);
+    if (!empty($taxonomy_id)) {
+      $view->setArguments([$taxonomy_id]);
+    }
+
+    $view->preExecute();
+    $view->execute();
+    $result = $view->result;
+
+    $nodes = [];
+    foreach ($result as $row) {
+      $node = $row->_entity;
+      $node = \Drupal::service('entity.repository')
+        ->getTranslationFromContext($node);
+      $imgCover = null;
+      if(isset($node->get('field_vactory_media_image')->getValue()[0]['target_id'])){
+        $mid1 = $node->get('field_vactory_media_image')->getValue()[0]['target_id'];
+        $file1 = Media::load($mid1);
+        $file1_uri = $file1->thumbnail->entity->getFileUri();
+        $imgCover = [];
+        $imgCover['_default'] = file_create_url($file1_uri);
+        $imgCover['_lqip'] = $lqipImageStyle->buildUrl($file1_uri);
+        $imgCover['uri'] = StreamWrapperManager::getTarget($file1_uri);
+        $imgCover['fid'] = $file1->thumbnail->entity->fid->value;
+        $imgCover['file_name'] = $file1->label();
+        $imgCover['base_url'] = $image_app_base_url;
+      }
+      $document = null;
+      if(isset($node->get('field_vactory_media_file')->getValue()[0]['target_id'])){
+        $mid2 = $node->get('field_vactory_media_file')->getValue()[0]['target_id'];
+        $file2 = Media::load($mid2);
+        $file2_uri = $file2->field_media_document->entity->getFileUri();
+        $document = [];
+        $document['_default'] = file_create_url($file2_uri);
+      }
+
+      $theme = $node->get('field_vactory_taxonomy_1')->entity->label();
+
+      array_push($nodes, [
+        "key" => $node->uuid(),
+        "title" => $node->label(),
+        "url" => $node->toUrl()->toString(),
+        "image" => $imgCover,
+        "category" => $theme,
+        "excerpt" => $node->get('field_vactory_excerpt')->getValue(),
+        "date" => $node->get('field_vactory_date')->getValue(),
+        "file" => $document
+      ]);
+    }
+
+    $content['data'] = $nodes;
+  }
+
+} 
