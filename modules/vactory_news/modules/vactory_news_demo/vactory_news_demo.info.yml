@@ -1,9 +1,9 @@
 name: 'News - Default content demo'
 type: module
 hidden: TRUE
-description: 'Default content new'
+description: 'News default content.'
 package: Vactory
-core_version_requirement: ^8.7.7 || ^9
+core: 8.x
 dependencies:
   - default_content:default_content
 default_content:
