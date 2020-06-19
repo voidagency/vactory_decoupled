@@ -11,7 +11,7 @@ label: 'Taxonomy - Theme'
 source:
   plugin: csv
   delimiter: ','
-  path: profiles/contrib/vactory_decoupled/modules/vactory_news/migrate_artifacts/themes.csv
+  path: profiles/contrib/vactory_decoupled/modules/vactory_news/modules/vactory_news_migrate/artifacts/themes.csv
   header_row_count: 1
   ids:
     - ID

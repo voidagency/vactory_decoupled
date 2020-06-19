@@ -11,7 +11,7 @@ label: 'Nodes'
 source:
   plugin: csv
   delimiter: ','
-  path: profiles/contrib/vactory_decoupled/modules/vactory_news/migrate_artifacts/nodes.csv
+  path: profiles/contrib/vactory_decoupled/modules/vactory_news/modules/vactory_news_migrate/artifacts/nodes.csv
   header_row_count: 1
   ids:
     - ID
