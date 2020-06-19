@@ -1,4 +1,4 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ id: node.vactory_news.body
 field_name: body
 entity_type: node
 bundle: vactory_news
-label: Body
+label: Corps
 description: ''
 required: false
 translatable: true

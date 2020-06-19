@@ -12,6 +12,7 @@ dependencies:
     - metatag
     - paragraphs
     - path
+    - scheduler
     - search_api_exclude_entity
 id: node.vactory_page.default
 targetEntityType: node
@@ -69,6 +70,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  node_banner:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

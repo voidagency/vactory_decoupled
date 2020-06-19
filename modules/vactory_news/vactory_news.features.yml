@@ -2,4 +2,6 @@ bundle: vactory
 excluded:
   - field.storage.node.field_vactory_date
   - field.storage.node.field_vactory_excerpt
+  - field.storage.node.field_vactory_taxonomy_1
+  - core.base_field_override.node.vactory_news.promote
 required: true

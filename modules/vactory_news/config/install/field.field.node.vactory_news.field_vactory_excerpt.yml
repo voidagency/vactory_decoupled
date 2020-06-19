@@ -1,4 +1,4 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ id: node.vactory_news.field_vactory_excerpt
 field_name: field_vactory_excerpt
 entity_type: node
 bundle: vactory_news
-label: Excerpt
+label: Extrait
 description: ''
 required: false
 translatable: true
