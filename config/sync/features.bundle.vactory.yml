@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 name: Vactory
 machine_name: vactory
-description: 'Auto-generated bundle from package Vactory'
+description: 'Vactory Bundle Features'
 assignments:
   alter:
     core: true
@@ -17,6 +17,8 @@ assignments:
       config:
         comment_type: comment_type
         node_type: node_type
+        file_type: file_type
+        media_type: media_type
       content:
         user: user
     enabled: true
@@ -40,12 +42,13 @@ assignments:
   exclude:
     types:
       config:
+        base_field_override: base_field_override
         features_bundle: features_bundle
     curated: true
     module:
       installed: true
-      profile: true
-      namespace: true
+      profile: false
+      namespace: false
       namespace_any: false
     enabled: true
     weight: -5
@@ -79,7 +82,7 @@ assignments:
         migration: migration
         shortcut_set: shortcut_set
         tour: tour
-    enabled: true
+    enabled: false
     weight: 10
   site:
     types:
