@@ -1,0 +1,249 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/news\/news-8?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_news"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/9\/edit?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/2?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 8
+        }
+    ],
+    "uuid": [
+        {
+            "value": "eacbed90-0415-4425-ac61-0c8974c26963"
+        }
+    ],
+    "vid": [
+        {
+            "value": 8
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_news"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-17T20:36:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/9\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "39adbc11-942e-4de8-9f01-ee84fc5fb8cd"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/vactory_news_theme"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "bb7bb0e4-1c15-4640-84c9-61c2ee5f0a23"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "News 8",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-17T20:34:59+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-17T20:36:00+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "News 8 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/news\/news-8",
+                "description": "Air plant taiyaki neutra laboris succulents pok pok tbh est lo-fi. Raclette 90's gastropub anim four dollar toast crucifix narwhal bitters distillery chicharrones. Leggings cornhole sed synth. Dolore godard et intelligentsia selvage in. 90's narwhal deserunt enamel pin ramps."
+            }
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/news\/news-8",
+            "pid": 8,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "News 8",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Air plant taiyaki neutra laboris succulents pok pok tbh est lo-fi. Raclette 90's gastropub anim four dollar toast crucifix narwhal bitters distillery chicharrones. Leggings cornhole sed synth. Dolore godard et intelligentsia selvage in. 90's narwhal deserunt enamel pin ramps.<\/p>\r\n\r\n<p>Fingerstache kitsch portland offal. Pok pok blog deep v, blue bottle in cloud bread thundercats man bun 8-bit swag pariatur XOXO vape ea. Microdosing qui heirloom cloud bread chicharrones occaecat forage man braid kinfolk leggings. Thundercats DIY readymade church-key 90's dolore non la croix craft beer humblebrag salvia shaman consectetur normcore literally. Bitters artisan tote bag knausgaard commodo unicorn dolore kitsch marfa ad austin art party in. Cliche slow-carb hell of tote bag, hexagon cardigan la croix veniam etsy echo park excepteur. Authentic brooklyn shaman ipsum vinyl raclette, lorem eiusmod nisi.<\/p>\r\n\r\n<p>Lorem affogato listicle esse cred. Umami mollit taiyaki vaporware cliche freegan labore anim aliqua mixtape fashion axe eu normcore intelligentsia fingerstache. Chambray direct trade cold-pressed dolor plaid fixie VHS. Duis qui iPhone aesthetic organic. Subway tile art party occupy offal. Godard et blog ad hella retro shabby chic selvage kinfolk yuccie.<\/p>\r\n\r\n<p>Cray reprehenderit cillum af actually blue bottle, iceland you probably haven't heard of them eiusmod activated charcoal ex fugiat post-ironic incididunt. Vinyl nostrud bicycle rights retro PBR&amp;B, exercitation prism. Meggings magna in mustache VHS subway tile fam pinterest tacos yr. Excepteur do waistcoat tilde, YOLO voluptate humblebrag disrupt magna quis vegan duis roof party. Id portland ut, enamel pin pabst nostrud hella prism esse subway tile dolore. Pabst man braid qui etsy non synth wolf vape intelligentsia YOLO meggings schlitz labore. Glossier tofu leggings incididunt venmo everyday carry cillum tempor ad.<\/p>\r\n\r\n<p>Helvetica pariatur laborum ad esse kale chips. Occaecat butcher yuccie pinterest put a bird on it fam laboris. Tofu nulla excepteur man braid blog post-ironic vegan lomo messenger bag fam trust fund street art yr austin kombucha. Williamsburg selvage palo santo, roof party live-edge cronut esse mollit +1 ethical chicharrones. Knausgaard migas gluten-free street art jianbing air plant magna. Yuccie thundercats photo booth chia tote bag squid distillery banjo do PBR&amp;B consequat bicycle rights salvia keffiyeh.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Air plant taiyaki neutra laboris succulents pok pok tbh est lo-fi. Raclette 90's gastropub anim four dollar toast crucifix narwhal bitters distillery chicharrones. Leggings cornhole sed synth. Dolore godard et intelligentsia selvage in. 90's narwhal deserunt enamel pin ramps.<\/p>\n<p>Fingerstache kitsch portland offal. Pok pok blog deep v, blue bottle in cloud bread thundercats man bun 8-bit swag pariatur XOXO vape ea. Microdosing qui heirloom cloud bread chicharrones occaecat forage man braid kinfolk leggings. Thundercats DIY readymade church-key 90's dolore non la croix craft beer humblebrag salvia shaman consectetur normcore literally. Bitters artisan tote bag knausgaard commodo unicorn dolore kitsch marfa ad austin art party in. Cliche slow-carb hell of tote bag, hexagon cardigan la croix veniam etsy echo park excepteur. Authentic brooklyn shaman ipsum vinyl raclette, lorem eiusmod nisi.<\/p>\n<p>Lorem affogato listicle esse cred. Umami mollit taiyaki vaporware cliche freegan labore anim aliqua mixtape fashion axe eu normcore intelligentsia fingerstache. Chambray direct trade cold-pressed dolor plaid fixie VHS. Duis qui iPhone aesthetic organic. Subway tile art party occupy offal. Godard et blog ad hella retro shabby chic selvage kinfolk yuccie.<\/p>\n<p>Cray reprehenderit cillum af actually blue bottle, iceland you probably haven't heard of them eiusmod activated charcoal ex fugiat post-ironic incididunt. Vinyl nostrud bicycle rights retro PBR&amp;B, exercitation prism. Meggings magna in mustache VHS subway tile fam pinterest tacos yr. Excepteur do waistcoat tilde, YOLO voluptate humblebrag disrupt magna quis vegan duis roof party. Id portland ut, enamel pin pabst nostrud hella prism esse subway tile dolore. Pabst man braid qui etsy non synth wolf vape intelligentsia YOLO meggings schlitz labore. Glossier tofu leggings incididunt venmo everyday carry cillum tempor ad.<\/p>\n<p>Helvetica pariatur laborum ad esse kale chips. Occaecat butcher yuccie pinterest put a bird on it fam laboris. Tofu nulla excepteur man braid blog post-ironic vegan lomo messenger bag fam trust fund street art yr austin kombucha. Williamsburg selvage palo santo, roof party live-edge cronut esse mollit +1 ethical chicharrones. Knausgaard migas gluten-free street art jianbing air plant magna. Yuccie thundercats photo booth chia tote bag squid distillery banjo do PBR&amp;B consequat bicycle rights salvia keffiyeh.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-17",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "<p>Lorem affogato listicle esse cred. Umami mollit taiyaki vaporware cliche freegan labore anim aliqua mixtape fashion<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>Lorem affogato listicle esse cred. Umami mollit taiyaki vaporware cliche freegan labore anim aliqua mixtape fashion<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_press_kit_pattern
+label: 'Pathauto Content press kit Pattern'
+type: 'canonical_entities:node'
+pattern: '/press_kit/[node:title]'
+selection_criteria:
+  84106496-98d0-4628-acf9-f0fbac94f9bd:
+    id: node_type
+    bundles:
+      press_kit: press_kit
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 84106496-98d0-4628-acf9-f0fbac94f9bd
+selection_logic: and
+weight: -5
+relationships: {  }

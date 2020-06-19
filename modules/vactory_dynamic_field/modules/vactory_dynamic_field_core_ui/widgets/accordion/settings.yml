@@ -1,0 +1,27 @@
+name: 'Accordion'
+multiple: TRUE
+category: 'Grouping'
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: 'Title'
+    options:
+      '#required': TRUE
+  description:
+    type: text_format
+    label: 'Description'
+    options:
+      '#format': 'full_html'
+      '#required': TRUE
+extra_fields:
+  title:
+    type: text
+    label: "Titre"
+  intro:
+    type: text_format
+    label: 'Introduction'
+    options:
+      '#format': 'full_html'
+      '#required': TRUE
+

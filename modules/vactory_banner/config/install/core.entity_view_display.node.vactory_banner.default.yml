@@ -1,0 +1,29 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_banner.field_banner_template
+    - node.type.vactory_banner
+  module:
+    - user
+    - vactory_dynamic_field
+id: node.vactory_banner.default
+targetEntityType: node
+bundle: vactory_banner
+mode: default
+content:
+  field_banner_template:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: field_wysiwyg_dynamic_formatter
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

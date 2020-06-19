@@ -1,0 +1,4 @@
+bundle: vactory
+excluded:
+  - field.storage.node.field_vactory_date_interval
+required: true

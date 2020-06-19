@@ -1,0 +1,143 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+use Drupal\node\Entity\NodeType;
+use Drupal\node\NodeTypeInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function vactory_banner_form_node_form_alter(&$form, &$form_state, $form_id)
+{
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  $type = $form_state->getFormObject()->getEntity();
+  $node_type = NodeType::load($type->bundle());
+  $default_banner_id = (!empty($type->get('node_banner')->getString())) ? $type->get('node_banner')->getString() : $node_type->getThirdPartySetting('vactory_banner', 'banner');
+  $form_ids = ['node_vactory_banner_edit_form', 'node_vactory_banner_form'];
+
+  // Banner group.
+  $form['node_banner_group'] = [
+    '#type' => 'details',
+    '#title' => t('Banner settings'),
+    '#description' => t('Create banner for this node.'),
+    '#group' => 'advanced',
+    '#open' => FALSE,
+  ];
+
+  $form['node_banner']['#group'] = 'node_banner_group';
+  $form['node_banner_disabled']['#group'] = 'node_banner_group';
+
+  if (!$default_banner_id) {
+    $form['node_banner_group']['#access'] = FALSE;
+  }
+
+  if ($default_banner_id) {
+    $form['node_banner']['widget']['#default_value'] = $default_banner_id;
+  }
+
+  if (in_array($form_id, $form_ids)) {
+    // Hide page description as it is not used by this content type.
+    $form['node_summary']['#access'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for \Drupal\node\NodeTypeForm.
+ *
+ * Adds banner options to the node type form.
+ */
+function vactory_banner_form_node_type_form_alter(&$form, FormStateInterface $form_state)
+{
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  $type = $form_state->getFormObject()->getEntity();
+
+  $default_banner_id = $type->getThirdPartySetting('vactory_banner', 'banner');
+  $default_banner = Node::load($default_banner_id);
+
+  $form['banner'] = [
+    '#type' => 'details',
+    '#title' => t('Banner settings'),
+    '#group' => 'additional_settings',
+  ];
+
+  $form['banner']['default'] = [
+    '#type' => 'entity_autocomplete',
+    '#target_type' => 'node',
+    '#title' => t('Default banner'),
+    '#description' => t('Choose the banner item to be the default for a new node in the content authoring form.'),
+    '#default_value' => $default_banner,
+    '#selection_settings' => array(
+      'target_bundles' => array('vactory_banner'),
+    ),
+  ];
+
+  $form['#entity_builders'][] = 'vactory_banner_form_node_type_form_builder';
+}
+
+/**
+ * Entity builder for the node type form with banner options.
+ */
+function vactory_banner_form_node_type_form_builder($entity_type, NodeTypeInterface $type, &$form, FormStateInterface $form_state)
+{
+  $type->setThirdPartySetting('vactory_banner', 'banner', $form_state->getValue('default'));
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function vactory_banner_entity_base_field_info(EntityTypeInterface $entity_type)
+{
+  $fields = [];
+  if ($entity_type->id() === 'node') {
+    $fields['node_banner'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Banner'))
+      ->setDescription(t('The banner to be used for this node.'))
+      ->setSetting('target_type', 'node')
+      ->setSetting('handler_settings', ['target_bundles' => ['vactory_banner' => 'vactory_banner']])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', FALSE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayOptions('form', [
+        'type' => 'options_select',
+        'weight' => 0,
+      ]);
+
+    $fields['node_banner_disabled'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Désactiver'))
+      ->setDefaultValue(FALSE)
+      ->setDisplayOptions('form', [
+        'type' => 'boolean_checkbox',
+        'settings' => [
+          'display_label' => TRUE,
+        ],
+        'weight' => 34,
+      ])
+      ->setDisplayOptions('view', [
+        'region' => 'hidden',
+      ])
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setTranslatable(false)
+      ->setDisplayConfigurable('form', FALSE);
+
+    $fields['internal_node_banner'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Banner'))
+      ->setDescription(t('The banner to be used for this node.'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_banner\Field\InternalBannerEntityFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+  }
+  return $fields;
+}
+

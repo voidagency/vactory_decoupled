@@ -1,0 +1,5 @@
+bundle: vactory
+excluded:
+  - field.storage.node.field_vactory_description
+  - field.storage.node.field_vactory_taxonomy_3
+required: true

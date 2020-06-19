@@ -1,0 +1,5 @@
+id: vactory_news
+label: 'News (CSV source)'
+description: 'A container for migrating News'
+source_type: 'CSV resource'
+shared_configuration: null

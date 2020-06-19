@@ -1,0 +1,14 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: gouvernance_thumbnail
+label: 'Gouvernance - Thumbnail'
+effects:
+  a8ac7224-500c-46f6-a62b-2a598c3b1030:
+    uuid: a8ac7224-500c-46f6-a62b-2a598c3b1030
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 240
+      anchor: center-center

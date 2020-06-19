@@ -76,7 +76,7 @@ class VactoryDynamicFormatter extends FormatterBase {
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $request = \Drupal::request();
-    $amp_context = \Drupal::service('router.amp_context');
+//    $amp_context = \Drupal::service('router.amp_context');
 
     if ($request->isXmlHttpRequest()) {
       return [];
@@ -96,7 +96,8 @@ class VactoryDynamicFormatter extends FormatterBase {
       $widgets_path = $platformProvider->getWidgetsPath($widget_id);
 
       // Current template to find.
-      $content['template'] = (int) $template_id;
+//      $content['template'] = (int) $template_id;
+      $content['template'] = $template_id;
       // Placeholder Image.
       $content['image_placeholder'] = VACTORY_DYNAMIC_FIELD_V_IMAGE_PLACEHOLDER;
       // Is content auto populate.
@@ -105,7 +106,8 @@ class VactoryDynamicFormatter extends FormatterBase {
       $content['has_static_tpl'] = FALSE;
       // Check if the amp template exist.
       $content['has_amp_tpl'] = file_exists($widgets_path . '/' . $content['template'] . '/template.amp.html.twig');
-      $content['is_amp_page'] = $amp_context->isAmpRoute();
+//      $content['is_amp_page'] = $amp_context->isAmpRoute();
+      $content['is_amp_page'] = FALSE;
       // Add is dummy to check.
       if (isset($widget_data['auto-populate']) && $widget_data['auto-populate'] === TRUE) {
         $content['is_dummy'] = TRUE;

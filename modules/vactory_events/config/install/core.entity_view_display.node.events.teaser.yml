@@ -1,0 +1,41 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events.body
+    - field.field.node.events.field_vactory_date_interval
+    - field.field.node.events.field_vactory_excerpt
+    - field.field.node.events.field_vactory_media_image
+    - field.field.node.events.field_vactory_taxonomy_1
+    - field.field.node.events.field_vactory_taxonomy_2
+    - node.type.events
+  module:
+    - text
+    - user
+id: node.events.teaser
+targetEntityType: node
+bundle: events
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_vactory_date_interval: true
+  field_vactory_excerpt: true
+  field_vactory_media_image: true
+  field_vactory_taxonomy_1: true
+  field_vactory_taxonomy_2: true
+  langcode: true
+  search_api_excerpt: true

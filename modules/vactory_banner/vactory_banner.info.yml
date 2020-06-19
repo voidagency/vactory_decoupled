@@ -1,0 +1,18 @@
+name: Banner
+description: 'Provides Banner type de contenu and related configuration. Manage your Banners content.'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - field
+  - jsonapi_extras
+  - language
+  - menu_ui
+  - node
+  - path
+  - scheduler
+  - user
+  - vactory_dynamic_field
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false

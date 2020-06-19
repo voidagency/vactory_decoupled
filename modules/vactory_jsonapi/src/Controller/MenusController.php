@@ -101,6 +101,7 @@ class MenusController extends ControllerBase {
     if (empty($tree)) {
       return new JsonResponse([
         'items' => [],
+        'json' => json_encode([]),
       ]);
     }
 
@@ -120,6 +121,7 @@ class MenusController extends ControllerBase {
     if (empty($menu['#items'])) {
       return new JsonResponse([
         'items' => [],
+        'json' => json_encode([]),
       ]);
     }
 
@@ -127,6 +129,7 @@ class MenusController extends ControllerBase {
 
     $data = [
       'items' => array_values($this->menuItems),
+      'json' => json_encode(array_values($this->menuItems)),
     ];
 
     return new JsonResponse($data);

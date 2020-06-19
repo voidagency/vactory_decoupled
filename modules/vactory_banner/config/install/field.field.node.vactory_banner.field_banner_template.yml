@@ -1,0 +1,26 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_template
+    - node.type.vactory_banner
+  module:
+    - vactory_dynamic_field
+id: node.vactory_banner.field_banner_template
+field_name: field_banner_template
+entity_type: node
+bundle: vactory_banner
+label: Template
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vactory_banner: 0
+    vactory_bootstrap: 0
+    vactory_core_ui: 0
+    vactory_dynamic_sliders: 0
+    vactory_testimonials: 0
+field_type: field_wysiwyg_dynamic

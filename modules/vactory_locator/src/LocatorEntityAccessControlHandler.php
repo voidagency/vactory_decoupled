@@ -24,7 +24,7 @@ class LocatorEntityAccessControlHandler extends EntityAccessControlHandler {
         if (!$entity->isPublished()) {
           return AccessResult::allowedIfHasPermission($account, 'view unpublished locator entity entities');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published locator entity entities');
+        return AccessResult::allowedIfHasPermission($account, 'access content');
 
       case 'update':
         return AccessResult::allowedIfHasPermission($account, 'edit locator entity entities');

@@ -1,0 +1,19 @@
+name: 'Two Columns'
+multiple: FALSE
+category: 'Events'
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: 'Description'
+    options:
+      '#format': 'basic_html'
+  taxonomy:
+    type: text
+    label: 'Theme'
+  link:
+    type: url_extended
+    label: 'Lien'
