@@ -5,7 +5,7 @@ dependencies:
   config:
     - comment.type.comment
 id: comment--comment
-disabled: true
+disabled: false
 path: comment/comment
 resourceType: comment--comment
 resourceFields:
