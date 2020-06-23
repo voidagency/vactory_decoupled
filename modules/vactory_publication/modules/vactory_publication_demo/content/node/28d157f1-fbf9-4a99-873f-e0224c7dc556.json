@@ -1,0 +1,328 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/publications\/publication-8?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/publication"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/field_vactory_media_file": [
+            {
+                "href": "http:\/\/default\/fr\/media\/12\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/5\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/6?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 23
+        }
+    ],
+    "uuid": [
+        {
+            "value": "28d157f1-fbf9-4a99-873f-e0224c7dc556"
+        }
+    ],
+    "vid": [
+        {
+            "value": 21
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "publication"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-23T12:25:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/field_vactory_media_file": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/12\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "33ba65ee-9739-41b0-866c-418bb28c5b55"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/5\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6a81e32b-650c-4239-ab83-6aa704745324"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/publication\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/publication_theme"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4f0f7e12-71fd-4de0-819a-d5713c50c05a"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Publication 8"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "publication 8",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T12:24:10+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-23T12:25:32+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "publication 8 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/publications\/publication-8",
+                "description": "En fonction de cela, vous aurez \u00e0\u00a0choisir entre\u00a0t\u00e9l\u00e9charger un\u00a0logiciel de traitement de texte\u00a0gratuit ou payant. Combien co\u00fbte un logiciel de traitement de texte ? Les prix peuvent varier mais, \u00e0 titre d\u2019exemple, la suite Microsoft peut \u00eatre r\u00e9gl\u00e9e 160 euros pour une utilisation \u00e0 vie (ce qui exclut les mises \u00e0 jour)."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "publication 8 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/publications\/publication-8"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "En fonction de cela, vous aurez \u00e0\u00a0choisir entre\u00a0t\u00e9l\u00e9charger un\u00a0logiciel de traitement de texte\u00a0gratuit ou payant. Combien co\u00fbte un logiciel de traitement de texte ? Les prix peuvent varier mais, \u00e0 titre d\u2019exemple, la suite Microsoft peut \u00eatre r\u00e9gl\u00e9e 160 euros pour une utilisation \u00e0 vie (ce qui exclut les mises \u00e0 jour)."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/publications\/publication-8",
+            "pid": 44,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Publication 8",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>En fonction de cela, vous aurez \u00e0&nbsp;<strong>choisir entre<\/strong>&nbsp;t\u00e9l\u00e9charger un&nbsp;<a href=\"https:\/\/www.superprof.fr\/blog\/les-applications-pour-rediger-sur-ordinateur\/\">logiciel de traitement de texte<\/a><strong>&nbsp;gratuit ou payant<\/strong>. Combien co\u00fbte un logiciel de traitement de texte ? Les prix peuvent varier mais, \u00e0 titre d\u2019exemple, la suite Microsoft peut \u00eatre r\u00e9gl\u00e9e 160 euros pour une utilisation \u00e0 vie (ce qui exclut les mises \u00e0 jour).<\/p>\r\n\r\n<p>Cependant,&nbsp;<strong>attention \u00e0 votre syst\u00e8me d\u2019exploitation<\/strong>&nbsp;: toutes les versions des logiciels de traitement de texte ne sont pas compatibles avec tous. Par exemple, les Mac OS ont un logiciel pr\u00e9-install\u00e9, le Pages, mais OS X ne prend pas en charge l\u2019ancienne version de Word,<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>En fonction de cela, vous aurez \u00e0\u00a0<strong>choisir entre<\/strong>\u00a0t\u00e9l\u00e9charger un\u00a0<a href=\"https:\/\/www.superprof.fr\/blog\/les-applications-pour-rediger-sur-ordinateur\/\">logiciel de traitement de texte<\/a><strong>\u00a0gratuit ou payant<\/strong>. Combien co\u00fbte un logiciel de traitement de texte ? Les prix peuvent varier mais, \u00e0 titre d\u2019exemple, la suite Microsoft peut \u00eatre r\u00e9gl\u00e9e 160 euros pour une utilisation \u00e0 vie (ce qui exclut les mises \u00e0 jour).<\/p>\n<p>Cependant,\u00a0<strong>attention \u00e0 votre syst\u00e8me d\u2019exploitation<\/strong>\u00a0: toutes les versions des logiciels de traitement de texte ne sont pas compatibles avec tous. Par exemple, les Mac OS ont un logiciel pr\u00e9-install\u00e9, le Pages, mais OS X ne prend pas en charge l\u2019ancienne version de Word,<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "1990-01-01",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Ces fonctions sont relativement basiques et r\u00e9pondent \u00e0 des besoins simples. Ainsi, la premi\u00e8re \u00e9tape pour choisir votre Logiciel de traitement de texte, c\u2019est bien de d\u00e9finir votre usage et vos besoins.",
+            "format": "plain_text",
+            "processed": "<p>Ces fonctions sont relativement basiques et r\u00e9pondent \u00e0 des besoins simples. Ainsi, la premi\u00e8re \u00e9tape pour choisir votre Logiciel de traitement de texte, c\u2019est bien de d\u00e9finir votre usage et vos besoins.<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}
