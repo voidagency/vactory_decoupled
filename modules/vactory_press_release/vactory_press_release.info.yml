@@ -3,6 +3,7 @@ description: 'Provides Press Release type de contenu and related configuration. 
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - content_translation
   - datetime
   - field
@@ -19,6 +20,7 @@ dependencies:
   - text
   - user
   - vactory_press_kit
+  - views
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
