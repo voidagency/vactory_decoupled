@@ -3,6 +3,7 @@ description: 'Provides Academy content type and related configuration. Manage yo
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - comment
   - content_translation
   - datetime
@@ -23,6 +24,7 @@ dependencies:
   - taxonomy
   - text
   - user
+  - views
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
