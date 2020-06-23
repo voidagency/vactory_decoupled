@@ -1,0 +1,334 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/academy-courses\/devenez-developpeur-java?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/academy"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/18\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/7?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 22
+        }
+    ],
+    "uuid": [
+        {
+            "value": "682ede2c-df40-453e-87a0-1feac9f0d1e9"
+        }
+    ],
+    "vid": [
+        {
+            "value": 19
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "academy"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-22T11:13:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/18\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6c4fe2fc-5b6f-44fd-9a6c-90a3ed59d275"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/7?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/academy_themes"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "001d6150-efc4-4396-9007-70e3272eee57"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Academy content created"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Devenez d\u00e9veloppeur Java",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-22T11:10:40+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-22T11:13:50+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Devenez d\u00e9veloppeur Java | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/academy-courses\/devenez-developpeur-java",
+                "description": "Vous voulez devenir D\u00c9VELOPPEUR JAVA et vous ne savez pas PAR QUOI COMMENCER ?\nVous \u00eates au bon endroit !\n\u00a0\nApprenez \u00e0 programmer\u00a0avec Java avec ce\u00a0cours de r\u00e9f\u00e9rence\u00a0:\n\nSimple,\u00a0rapide, ludique et pratique avec de nombreux\u00a0exercices auto-corrig\u00e9s\n\n\nCouvre\u00a0l'ensemble des concepts indispensable pour r\u00e9aliser votre premi\u00e8re application Java\n\n\nPr\u00e9sent\u00e9 par un professionnel et enseignant de pr\u00e8s de\u00a020 ans d'exp\u00e9rience\n\n\u00a0"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Devenez d\u00e9veloppeur Java | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/academy-courses\/devenez-developpeur-java"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Vous voulez devenir D\u00c9VELOPPEUR JAVA et vous ne savez pas PAR QUOI COMMENCER ?\nVous \u00eates au bon endroit !\n\u00a0\nApprenez \u00e0 programmer\u00a0avec Java avec ce\u00a0cours de r\u00e9f\u00e9rence\u00a0:\n\nSimple,\u00a0rapide, ludique et pratique avec de nombreux\u00a0exercices auto-corrig\u00e9s\n\n\nCouvre\u00a0l'ensemble des concepts indispensable pour r\u00e9aliser votre premi\u00e8re application Java\n\n\nPr\u00e9sent\u00e9 par un professionnel et enseignant de pr\u00e8s de\u00a020 ans d'exp\u00e9rience\n\n\u00a0"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/academy-courses\/devenez-developpeur-java",
+            "pid": 19,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Devenez d\u00e9veloppeur Java",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Vous voulez devenir D\u00c9VELOPPEUR JAVA et vous ne savez pas PAR QUOI COMMENCER ?<\/p>\r\n\r\n<p><strong>Vous \u00eates au bon endroit !<\/strong><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Apprenez \u00e0 programmer&nbsp;avec Java avec ce&nbsp;<strong>cours de r\u00e9f\u00e9rence<\/strong>&nbsp;:<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Simple,&nbsp;rapide, ludique et pratique avec de nombreux&nbsp;<strong>exercices auto-corrig\u00e9s<\/strong><\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Couvre&nbsp;l'ensemble des concepts indispensable pour r\u00e9aliser votre premi\u00e8re application Java<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Pr\u00e9sent\u00e9 par un professionnel et enseignant de pr\u00e8s de&nbsp;20 ans d'exp\u00e9rience<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Vous serez<strong>&nbsp;guid\u00e9 pas \u00e0 pas<\/strong>&nbsp;sur le chemin de la&nbsp;<strong>r\u00e9ussite&nbsp;<\/strong>gr\u00e2ce \u00e0 une progression p\u00e9dagogique efficace.<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Chaque chapitre traite d'un et un seul concept : un cours clair et pr\u00e9cis<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Chaque concept&nbsp;fait le plus souvent l'objet d'un atelier&nbsp;d\u00e9di\u00e9 : mettez vos nouvelles connaissances en pratique imm\u00e9diatement !<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>Inclut des tonnes de contenus additionnels !<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Animations<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vid\u00e9os YouTube<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Documents et pages web compl\u00e9mentaires...<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>Fond\u00e9 sur Java 8,&nbsp;il fait&nbsp;cependant l'\u00e9conomie des concepts complexes introduits dans cette version et non indispensable&nbsp;pour les d\u00e9butants, comme la programmation fonctionnelle par exemple. L'int\u00e9gralit\u00e9 du cours est compatible avec Java 9 et 10.<\/p>\r\n\r\n<p>Suivez les&nbsp;<strong>45 ateliers<\/strong>&nbsp;de l'application \"fil rouge\" sur le th\u00e8me de l'espace et de la conqu\u00eate spatiale.<\/p>\r\n\r\n<p>Le cours s'inscrit dans un&nbsp;<strong>cursus complet<\/strong>&nbsp;de formation pour d\u00e9veloppeurs Java :<\/p>\r\n\r\n<ol>\r\n\t<li>\r\n\t<p>Devenez d\u00e9veloppeur Java (<strong>ce cours<\/strong>)<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Travaux pratiques Java<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Librairies Java et Intro Maven<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Java EE : Devenez d\u00e9veloppeur d'applications Web Java<\/p>\r\n\t<\/li>\r\n<\/ol>\r\n",
+            "format": "full_html",
+            "processed": "<p>Vous voulez devenir D\u00c9VELOPPEUR JAVA et vous ne savez pas PAR QUOI COMMENCER ?<\/p>\n<p><strong>Vous \u00eates au bon endroit !<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>Apprenez \u00e0 programmer\u00a0avec Java avec ce\u00a0<strong>cours de r\u00e9f\u00e9rence<\/strong>\u00a0:<\/p>\n<ul><li>\n<p>Simple,\u00a0rapide, ludique et pratique avec de nombreux\u00a0<strong>exercices auto-corrig\u00e9s<\/strong><\/p>\n<\/li>\n<li>\n<p>Couvre\u00a0l'ensemble des concepts indispensable pour r\u00e9aliser votre premi\u00e8re application Java<\/p>\n<\/li>\n<li>\n<p>Pr\u00e9sent\u00e9 par un professionnel et enseignant de pr\u00e8s de\u00a020 ans d'exp\u00e9rience<\/p>\n<\/li>\n<\/ul><p>\u00a0<\/p>\n<p>Vous serez<strong>\u00a0guid\u00e9 pas \u00e0 pas<\/strong>\u00a0sur le chemin de la\u00a0<strong>r\u00e9ussite\u00a0<\/strong>gr\u00e2ce \u00e0 une progression p\u00e9dagogique efficace.<\/p>\n<ul><li>\n<p>Chaque chapitre traite d'un et un seul concept : un cours clair et pr\u00e9cis<\/p>\n<\/li>\n<li>\n<p>Chaque concept\u00a0fait le plus souvent l'objet d'un atelier\u00a0d\u00e9di\u00e9 : mettez vos nouvelles connaissances en pratique imm\u00e9diatement !<\/p>\n<\/li>\n<\/ul><p>Inclut des tonnes de contenus additionnels !<\/p>\n<ul><li>\n<p>Animations<\/p>\n<\/li>\n<li>\n<p>Vid\u00e9os YouTube<\/p>\n<\/li>\n<li>\n<p>Documents et pages web compl\u00e9mentaires...<\/p>\n<\/li>\n<\/ul><p>Fond\u00e9 sur Java 8,\u00a0il fait\u00a0cependant l'\u00e9conomie des concepts complexes introduits dans cette version et non indispensable\u00a0pour les d\u00e9butants, comme la programmation fonctionnelle par exemple. L'int\u00e9gralit\u00e9 du cours est compatible avec Java 9 et 10.<\/p>\n<p>Suivez les\u00a0<strong>45 ateliers<\/strong>\u00a0de l'application \"fil rouge\" sur le th\u00e8me de l'espace et de la conqu\u00eate spatiale.<\/p>\n<p>Le cours s'inscrit dans un\u00a0<strong>cursus complet<\/strong>\u00a0de formation pour d\u00e9veloppeurs Java :<\/p>\n<ol><li>\n<p>Devenez d\u00e9veloppeur Java (<strong>ce cours<\/strong>)<\/p>\n<\/li>\n<li>\n<p>Travaux pratiques Java<\/p>\n<\/li>\n<li>\n<p>Librairies Java et Intro Maven<\/p>\n<\/li>\n<li>\n<p>Java EE : Devenez d\u00e9veloppeur d'applications Web Java<\/p>\n<\/li>\n<\/ol>",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 0,
+            "cid": 0,
+            "last_comment_timestamp": 1592824430,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_duration": [
+        {
+            "value": "12 h",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_language": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-22",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Apprendre le langage Java facilement, 45 exercices corrig\u00e9s inclus",
+            "format": "plain_text",
+            "processed": "<p>Apprendre le langage Java facilement, 45 exercices corrig\u00e9s inclus<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_youtube_videos": [
+        {
+            "value": "https:\/\/www.udemy.com\/course\/cours-complet-de-programmation-java-pour-debutants\/"
+        }
+    ]
+}
