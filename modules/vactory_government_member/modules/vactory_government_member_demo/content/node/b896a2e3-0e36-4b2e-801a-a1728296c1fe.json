@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/governments-blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/governments\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 63
+            "value": 98
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T22:54:08+00:00",
+            "value": "2020-06-24T23:59:26+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "fcdfe926-5a69-4249-b249-85eb751c02bc"
                     }
                 ],
-                "target_revision_id": "15"
+                "target_revision_id": "21"
             },
             {
                 "_links": {
@@ -125,7 +125,7 @@
                         "value": "0b9d9901-8262-4652-8119-56f24c19782b"
                     }
                 ],
-                "target_revision_id": "16"
+                "target_revision_id": "22"
             }
         ]
     },
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T22:54:08+00:00",
+            "value": "2020-06-24T23:59:26+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Governments - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/governments-blocs"
+                "canonical_url": "http:\/\/default\/fr\/governments\/blocs"
             }
         }
     ],
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/governments-blocs"
+                "href": "http:\/\/default\/fr\/governments\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/governments-blocs",
+            "alias": "\/governments\/blocs",
             "pid": 73,
             "langcode": "fr",
             "lang": "fr"

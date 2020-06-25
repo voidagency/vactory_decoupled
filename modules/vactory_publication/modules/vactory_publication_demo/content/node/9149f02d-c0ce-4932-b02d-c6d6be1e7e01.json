@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/publications-blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/publications\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 25
+            "value": 75
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T12:52:31+00:00",
+            "value": "2020-06-24T23:16:23+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "a8b58bdb-6410-4231-b6ff-289453012638"
                     }
                 ],
-                "target_revision_id": "3"
+                "target_revision_id": "17"
             },
             {
                 "_links": {
@@ -125,7 +125,7 @@
                         "value": "7fac3c6f-86b0-45bd-a581-8e257452c444"
                     }
                 ],
-                "target_revision_id": "4"
+                "target_revision_id": "18"
             }
         ]
     },
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T12:52:31+00:00",
+            "value": "2020-06-24T23:16:23+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Publications - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/publications-blocs"
+                "canonical_url": "http:\/\/default\/fr\/publications\/blocs"
             }
         }
     ],
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/publications-blocs"
+                "href": "http:\/\/default\/fr\/publications\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/publications-blocs",
+            "alias": "\/publications\/blocs",
             "pid": 48,
             "langcode": "fr",
             "lang": "fr"
