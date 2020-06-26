@@ -1,0 +1,163 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/taxonomy\/term\/16?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/events_cities"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/events_cities\/parent": [
+            null
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/events_cities\/content_translation_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "tid": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "45050026-a9d4-4ea0-90de-cc7f8384d85f"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 16
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "events_cities"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2020-06-23T14:19:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "name": [
+        {
+            "value": "Khouribga",
+            "lang": "fr"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/events_cities\/parent": [
+            null
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/events_cities\/content_translation_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "changed": [
+        {
+            "value": "2020-06-23T14:19:40+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Khouribga | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/taxonomy\/term\/16"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Khouribga | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/16"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_created": [
+        {
+            "value": "2020-06-23T14:19:40+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

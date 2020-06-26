@@ -1,0 +1,139 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+        }
+    },
+    "id": [
+        {
+            "value": 6
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9b4f488d-27b2-4dca-ba8c-aef088d24baa"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 14
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_component"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T14:40:40+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "39"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_vactory_paragraphs"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "paragraph_container": [
+        {
+            "value": "narrow_width",
+            "lang": "fr"
+        }
+    ],
+    "paragraph_background_color": [
+        {
+            "name": "",
+            "color": {
+                "hexadecimal": "#FFFFFF",
+                "rgb": {
+                    "red": 255,
+                    "green": 255,
+                    "blue": "255"
+                }
+            },
+            "lang": "fr"
+        }
+    ],
+    "paragraph_background_parallax": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2020-06-23T15:10:56+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_vactory_component": [
+        {
+            "widget_id": "vactory_events:two-columns",
+            "widget_data": "[{\"title\":\"Nos 2 derni\\u00e8re Events\",\"description\":{\"value\":\"<p>Hello World!<\\\/p>\\r\\n\",\"format\":\"basic_html\"},\"taxonomy\":\"\",\"link\":{\"title\":\"Voir toute les Events\",\"url\":\"\\\/node\\\/38\",\"attributes\":{\"class\":\"\",\"id\":\"\",\"target\":\"_blank\",\"rel\":\"\"}}}]",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_title": [
+        {
+            "value": "Events - Two Columns",
+            "lang": "fr"
+        }
+    ]
+}

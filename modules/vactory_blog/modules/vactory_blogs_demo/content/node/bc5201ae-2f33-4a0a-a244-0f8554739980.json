@@ -1,0 +1,322 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/blogs\/blog-8?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/blog"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/4\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 47
+        }
+    ],
+    "uuid": [
+        {
+            "value": "bc5201ae-2f33-4a0a-a244-0f8554739980"
+        }
+    ],
+    "vid": [
+        {
+            "value": 45
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "blog"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-23T15:02:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/4\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "451082e6-1d03-4193-b078-13df227cabbe"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/blog_category"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b1797e68-02d8-413f-991a-f82ad0dcf92c"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b44bf8a-ad52-471b-87b2-096021ba3a21"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Blog 8"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Blog 8",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T15:01:23+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-23T15:02:17+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Blog 8 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/blogs\/blog-8",
+                "description": "Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Blog 8 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/blogs\/blog-8"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/blogs\/blog-8",
+            "pid": 68,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Blog 8",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts. As a result, despite any verification of current facts, ratings and forecasts can be affected by future events or conditions that were not anticipated at the time a rating or forecast was issued or affirmed.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts. As a result, despite any verification of current facts, ratings and forecasts can be affected by future events or conditions that were not anticipated at the time a rating or forecast was issued or affirmed.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Users of Fitch's ratings and reports should understand that neither an enhanced factual investigation nor any third-party verification can ensure that all of the information Fitch relies on in connection with a rating or a report will be accurate and complete",
+            "format": "plain_text",
+            "processed": "<p>Users of Fitch&#039;s ratings and reports should understand that neither an enhanced factual investigation nor any third-party verification can ensure that all of the information Fitch relies on in connection with a rating or a report will be accurate and complete<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}
