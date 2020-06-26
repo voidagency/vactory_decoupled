@@ -23,9 +23,15 @@
                 "lang": "fr"
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "href": "http:\/\/default\/fr\/media\/24\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
             {
-                "href": "http:\/\/default\/fr\/media\/12\/edit?_format=hal_json",
+                "href": "http:\/\/default\/fr\/media\/47\/edit?_format=hal_json",
                 "lang": "fr"
             }
         ],
@@ -48,7 +54,7 @@
     ],
     "vid": [
         {
-            "value": 13
+            "value": 49
         }
     ],
     "langcode": [
@@ -64,7 +70,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-22T10:50:02+00:00",
+            "value": "2020-06-24T14:11:24+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -122,11 +128,29 @@
                 "lang": "fr"
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/24\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b8b5d5a-26cf-4065-89f2-03dbed8ca455"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/fr\/media\/12\/edit?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/media\/47\/edit?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
@@ -134,7 +158,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "74251a5c-5998-4b65-bde4-f00f81894a90"
+                        "value": "5edad764-10a9-4737-992c-82fd511fcc89"
                     }
                 ],
                 "lang": "fr"
@@ -161,7 +185,7 @@
     },
     "revision_log": [
         {
-            "value": "Academy content created"
+            "value": "edit content"
         }
     ],
     "status": [
@@ -185,7 +209,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-22T10:50:02+00:00",
+            "value": "2020-06-24T14:11:24+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }

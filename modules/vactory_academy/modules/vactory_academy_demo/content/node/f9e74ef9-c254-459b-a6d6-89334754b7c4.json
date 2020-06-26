@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/cours?_format=hal_json"
+            "href": "http:\/\/default\/fr\/academy?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page_listing"
@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 23
+            "value": 59
         }
     ],
     "langcode": [
@@ -46,7 +46,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-22T11:42:37+00:00",
+            "value": "2020-06-24T14:53:39+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -89,7 +89,7 @@
     },
     "revision_log": [
         {
-            "value": "Academy page listing added"
+            "value": "edit url"
         }
     ],
     "status": [
@@ -113,7 +113,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-22T11:42:37+00:00",
+            "value": "2020-06-24T14:53:39+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -136,17 +136,11 @@
             "lang": "fr"
         }
     ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "fr"
-        }
-    ],
     "metatag": [
         {
             "value": {
                 "title": "Cours | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/cours"
+                "canonical_url": "http:\/\/default\/fr\/academy"
             }
         }
     ],
@@ -163,14 +157,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/cours"
+                "href": "http:\/\/default\/fr\/academy"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/cours",
+            "alias": "\/academy",
             "pid": 23,
             "langcode": "fr",
             "lang": "fr"

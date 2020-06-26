@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/academy-blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/academy\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 24
+            "value": 60
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-22T11:48:51+00:00",
+            "value": "2020-06-24T14:54:19+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "e170368b-f2fe-43dd-964d-5b8ed7c20354"
                     }
                 ],
-                "target_revision_id": "3"
+                "target_revision_id": "9"
             },
             {
                 "_links": {
@@ -125,13 +125,13 @@
                         "value": "0946da49-dab8-4b9d-8ca7-ee490f32a41b"
                     }
                 ],
-                "target_revision_id": "4"
+                "target_revision_id": "10"
             }
         ]
     },
     "revision_log": [
         {
-            "value": "Academy blocs added"
+            "value": "edit URL"
         }
     ],
     "status": [
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-22T11:48:51+00:00",
+            "value": "2020-06-24T14:54:19+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Academy - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/academy-blocs"
+                "canonical_url": "http:\/\/default\/fr\/academy\/blocs"
             }
         }
     ],
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/academy-blocs"
+                "href": "http:\/\/default\/fr\/academy\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/academy-blocs",
+            "alias": "\/academy\/blocs",
             "pid": 24,
             "langcode": "fr",
             "lang": "fr"
