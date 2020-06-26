@@ -1,0 +1,133 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+        }
+    },
+    "id": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "7fac3c6f-86b0-45bd-a581-8e257452c444"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 18
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_component"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T12:51:10+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "27"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_vactory_paragraphs"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "paragraph_container": [
+        {
+            "value": "narrow_width",
+            "lang": "fr"
+        }
+    ],
+    "paragraph_background_color": [
+        {
+            "name": "",
+            "color": {
+                "hexadecimal": "#FFFFFF",
+                "rgb": {
+                    "red": 255,
+                    "green": 255,
+                    "blue": "255"
+                }
+            },
+            "lang": "fr"
+        }
+    ],
+    "paragraph_background_parallax": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2020-06-23T12:52:31+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_vactory_component": [
+        {
+            "widget_id": "vactory_academy:two-columns",
+            "widget_data": "[{\"title\":\"Nos 2 derni\\u00e8re Publications\",\"description\":{\"value\":\"<p>Hello World!<\\\/p>\\r\\n\",\"format\":\"basic_html\"},\"taxonomy\":\"\",\"link\":{\"title\":\"Voir toute les Publications\",\"url\":\"\\\/node\\\/26\",\"attributes\":{\"class\":\"\",\"id\":\"\",\"target\":\"_blank\",\"rel\":\"\"}}}]",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_title": [
+        {
+            "value": "Publication - Two Columns",
+            "lang": "fr"
+        }
+    ]
+}
