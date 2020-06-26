@@ -19,7 +19,6 @@ dependencies:
   - taxonomy
   - text
   - user
-  - vactory_press_kit
   - views
 version: 8.x-1.0
 package: Vactory
