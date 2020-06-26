@@ -1,0 +1,8 @@
+name: 'Events - Default content demo'
+type: module
+hidden: TRUE
+description: 'Events default content.'
+package: Vactory
+core: 8.x
+dependencies:
+  - default_content:default_content

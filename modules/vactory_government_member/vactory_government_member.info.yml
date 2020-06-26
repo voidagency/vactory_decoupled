@@ -3,6 +3,7 @@ description: 'Provides Government Member content type and related configuration.
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - field
   - image
   - jsonapi_extras
