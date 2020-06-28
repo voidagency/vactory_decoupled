@@ -19,7 +19,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_media": [
             {
-                "href": "http:\/\/default\/fr\/media\/41\/edit?_format=hal_json",
+                "href": "http:\/\/default\/fr\/media\/71\/edit?_format=hal_json",
                 "lang": "fr"
             }
         ],
@@ -48,7 +48,7 @@
     ],
     "vid": [
         {
-            "value": 41
+            "value": 77
         }
     ],
     "langcode": [
@@ -64,7 +64,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T16:14:10+00:00",
+            "value": "2020-06-24T15:35:34+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -108,7 +108,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/fr\/media\/41\/edit?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/media\/71\/edit?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
@@ -116,7 +116,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "3a304acc-0db3-4469-8d94-2312993b62cd"
+                        "value": "4d1f82a5-833c-47b6-bd45-923f9b34639f"
                     }
                 ],
                 "lang": "fr"
@@ -161,7 +161,7 @@
     },
     "revision_log": [
         {
-            "value": "Press kit 5"
+            "value": "edit content"
         }
     ],
     "status": [
@@ -185,7 +185,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T16:14:10+00:00",
+            "value": "2020-06-24T15:35:34+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }

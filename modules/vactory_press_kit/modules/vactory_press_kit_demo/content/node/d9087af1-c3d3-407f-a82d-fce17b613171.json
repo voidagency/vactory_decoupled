@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/press-release-blocs-0?_format=hal_json"
+            "href": "http:\/\/default\/fr\/press-kit\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 48
+            "value": 71
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T17:22:37+00:00",
+            "value": "2020-06-24T15:21:27+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "ec3dfa95-c73a-44d8-89c1-c6aceb073c73"
                     }
                 ],
-                "target_revision_id": "7"
+                "target_revision_id": "11"
             },
             {
                 "_links": {
@@ -125,13 +125,13 @@
                         "value": "c4b4a4df-5b2f-49d0-80a2-dc4e12ac91a1"
                     }
                 ],
-                "target_revision_id": "8"
+                "target_revision_id": "12"
             }
         ]
     },
     "revision_log": [
         {
-            "value": "Press release blocs"
+            "value": "edit url"
         }
     ],
     "status": [
@@ -142,7 +142,7 @@
     ],
     "title": [
         {
-            "value": "Press release - Blocs",
+            "value": "Press kit - Blocs",
             "lang": "fr"
         }
     ],
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T17:22:37+00:00",
+            "value": "2020-06-24T15:21:27+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -187,8 +187,8 @@
     "metatag": [
         {
             "value": {
-                "title": "Press release - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/press-release-blocs-0"
+                "title": "Press kit - Blocs | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/press-kit\/blocs"
             }
         }
     ],
@@ -197,7 +197,7 @@
             "tag": "meta",
             "attributes": {
                 "name": "title",
-                "content": "Press release - Blocs | Vactory"
+                "content": "Press kit - Blocs | Vactory"
             },
             "lang": "fr"
         },
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/press-release-blocs-0"
+                "href": "http:\/\/default\/fr\/press-kit\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/press-release-blocs-0",
+            "alias": "\/press-kit\/blocs",
             "pid": 48,
             "langcode": "fr",
             "lang": "fr"
@@ -225,7 +225,7 @@
     ],
     "node_summary": [
         {
-            "value": "Press release blocs",
+            "value": "Press kit blocs",
             "lang": "fr"
         }
     ],

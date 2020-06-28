@@ -3,8 +3,10 @@ description: 'Provides Press Kit type de contenu and related configuration. Gér
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - content_translation
   - datetime
+  - entityqueue
   - field
   - file
   - image
@@ -21,6 +23,7 @@ dependencies:
   - taxonomy
   - text
   - user
+  - views
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
