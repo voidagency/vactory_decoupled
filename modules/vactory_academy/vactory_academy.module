@@ -68,10 +68,8 @@ function vactory_academy_df_jsonapi_output_alter(&$content)
         $imgCover['file_name'] = $file1->label();
         $imgCover['base_url'] = $image_app_base_url;
       }
-      
+
       $theme = $node->get('field_vactory_taxonomy_1')->entity->label();
-      
-      
 
       array_push($nodes, [
         "key" => $node->uuid(),
@@ -79,7 +77,7 @@ function vactory_academy_df_jsonapi_output_alter(&$content)
         "url" => $node->toUrl()->toString(),
         "image" => $imgCover,
         "category" => $theme,
-        "instructor" => $node->get('field_vactory_instructor')->entity->label(),
+//        "instructor" => $node->get('field_vactory_instructor')->entity->label(),
         "excerpt" => $node->get('field_vactory_excerpt')->getValue(),
         "date" => $node->get('field_vactory_date')->getValue(),
         "duration" => $node->get('field_vactory_academy_duration')->getValue(),

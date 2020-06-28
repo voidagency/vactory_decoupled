@@ -1,0 +1,322 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/node\/55?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_government_member"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/16\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/23?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 55
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4c6a4657-63c6-4fd3-9d95-10570934fdee"
+        }
+    ],
+    "vid": [
+        {
+            "value": 91
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_government_member"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-24T23:56:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/16\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "48697d42-a8ca-4dfd-8e50-f186d69078f1"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/23?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/vactory_governance_role"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "980aaca0-1026-4d94-8698-5bf91b610276"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Government 4"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Government 4",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T16:12:51+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-24T23:56:36+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Government 4 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/node\/55",
+                "description": "The current IT platform is robust and largely built around Manar, a local third-party system, allowing timely and effective access to portfolio and trade information. Long-term projects aimed at enhancing technological connectivity with third parties and clients and upgrading data management and related reporting capabilities has continued over the past few years and are now integrated into the company's digital strategy. Other projects being currently considered are artificial intelligence within the middle and back-office departments."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Government 4 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/node\/55"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "The current IT platform is robust and largely built around Manar, a local third-party system, allowing timely and effective access to portfolio and trade information. Long-term projects aimed at enhancing technological connectivity with third parties and clients and upgrading data management and related reporting capabilities has continued over the past few years and are now integrated into the company's digital strategy. Other projects being currently considered are artificial intelligence within the middle and back-office departments."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Government 4",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>The current IT platform is robust and largely built around Manar, a local third-party system, allowing timely and effective access to portfolio and trade information. Long-term projects aimed at enhancing technological connectivity with third parties and clients and upgrading data management and related reporting capabilities has continued over the past few years and are now integrated into the company's digital strategy. Other projects being currently considered are artificial intelligence within the middle and back-office departments.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>The current IT platform is robust and largely built around Manar, a local third-party system, allowing timely and effective access to portfolio and trade information. Long-term projects aimed at enhancing technological connectivity with third parties and clients and upgrading data management and related reporting capabilities has continued over the past few years and are now integrated into the company's digital strategy. Other projects being currently considered are artificial intelligence within the middle and back-office departments.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_address": [
+        {
+            "value": "hay El Oulfa, rue 176 n\u00b028, Grp I Casablanca",
+            "format": "plain_text",
+            "processed": "<p>hay El Oulfa, rue 176 n\u00b028, Grp I Casablanca<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_email": [
+        {
+            "value": "Role4@gmail.com",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_fax": [
+        {
+            "value": " 05 22 93 08 28",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_name": [
+        {
+            "value": "Roe 4",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_telephone": [
+        {
+            "value": " 06 22 93 08 28",
+            "lang": "fr"
+        }
+    ]
+}
