@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/press-release-blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/press-release\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 36
+            "value": 72
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T15:23:53+00:00",
+            "value": "2020-06-24T15:22:03+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "97f5274d-edc4-44b7-82eb-bcbcbae22e44"
                     }
                 ],
-                "target_revision_id": "5"
+                "target_revision_id": "13"
             },
             {
                 "_links": {
@@ -125,13 +125,13 @@
                         "value": "376b7c5b-cea2-4cf4-8a1a-bda5b70575ad"
                     }
                 ],
-                "target_revision_id": "6"
+                "target_revision_id": "14"
             }
         ]
     },
     "revision_log": [
         {
-            "value": "Press release - Blocs"
+            "value": "edit url"
         }
     ],
     "status": [
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T15:23:53+00:00",
+            "value": "2020-06-24T15:22:03+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Press release - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/press-release-blocs"
+                "canonical_url": "http:\/\/default\/fr\/press-release\/blocs"
             }
         }
     ],
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/press-release-blocs"
+                "href": "http:\/\/default\/fr\/press-release\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/press-release-blocs",
+            "alias": "\/press-release\/blocs",
             "pid": 36,
             "langcode": "fr",
             "lang": "fr"

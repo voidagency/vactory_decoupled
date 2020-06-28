@@ -6,6 +6,7 @@ dependencies:
   - allowed_formats
   - content_translation
   - datetime
+  - entityqueue
   - field
   - jsonapi_extras
   - language
@@ -19,6 +20,7 @@ dependencies:
   - taxonomy
   - text
   - user
+  - vactory_press_kit
   - views
 version: 8.x-1.0
 package: Vactory
