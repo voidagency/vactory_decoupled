@@ -8,6 +8,7 @@ dependencies:
   - content_translation
   - datetime
   - entity_reference_revisions
+  - entityqueue
   - field
   - field_group
   - jsonapi_extras
