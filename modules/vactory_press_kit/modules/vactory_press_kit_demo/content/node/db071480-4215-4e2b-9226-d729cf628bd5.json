@@ -1,0 +1,288 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/press_kit\/press-kit-7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/press_kit"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_media": [
+            {
+                "href": "http:\/\/default\/fr\/media\/43\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_media_file": [
+            {
+                "href": "http:\/\/default\/fr\/media\/24\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/13?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 46
+        }
+    ],
+    "uuid": [
+        {
+            "value": "db071480-4215-4e2b-9226-d729cf628bd5"
+        }
+    ],
+    "vid": [
+        {
+            "value": 43
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "press_kit"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-23T16:48:12+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_media": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/43\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ed0a066a-fd1a-4913-8332-4b8b81c4303d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_media_file": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/24\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b8b5d5a-26cf-4065-89f2-03dbed8ca455"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/press_kit\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/13?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/press_kit_theme"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "94ff8e19-4c31-4322-b91f-7d6d457557a9"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Press kit 7"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Press kit 7",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T16:33:45+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-23T16:48:12+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Press kit 7 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/press_kit\/press-kit-7"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Press kit 7 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/press_kit\/press-kit-7"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/press_kit\/press-kit-7",
+            "pid": 43,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Press kit 7",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-25",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "The Annual General Meeting resolved to adopt the income statement and balance sheet, consolidated income statement and balance sheet for 2019. Furthermore, it was resolved that the Company's results shall be carried forward and thus no dividend will be distributed. The Annual General Meeting also resolved to discharge the members of the",
+            "format": "plain_text",
+            "processed": "<p>The Annual General Meeting resolved to adopt the income statement and balance sheet, consolidated income statement and balance sheet for 2019. Furthermore, it was resolved that the Company&#039;s results shall be carried forward and thus no dividend will be distributed. The Annual General Meeting also resolved to discharge the members of the<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

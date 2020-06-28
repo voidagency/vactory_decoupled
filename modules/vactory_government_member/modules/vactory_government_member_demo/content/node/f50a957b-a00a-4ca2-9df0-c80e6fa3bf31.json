@@ -1,0 +1,322 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/node\/53?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_government_member"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/14\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/24?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 53
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f50a957b-a00a-4ca2-9df0-c80e6fa3bf31"
+        }
+    ],
+    "vid": [
+        {
+            "value": 89
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_government_member"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-24T23:55:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/14\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9e67a0d2-834c-4f64-a88e-d823549c80ea"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_government_member\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/24?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/vactory_governance_role"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Government 2"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Government 2",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T16:10:13+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-24T23:55:21+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Government 2 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/node\/53",
+                "description": "Wafa Gestion's 'Excellent (mar)' rating is based on the following category scores: Investment Process: Excellent\nInvestment Resources: Excellent\nRisk Management: Excellent\nInvestment Performance: Consistent (from Strong) Company and Client Servicing: Excellent\nRobust Investment Process\nIt is Fitch's view that Wafa Gestion's investment processes are well-designed and implemented in a disciplined manner. Wafa Gestion follows mainly traditional, benchmark-oriented fixed-income strategies"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Government 2 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/node\/53"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Wafa Gestion's 'Excellent (mar)' rating is based on the following category scores: Investment Process: Excellent\nInvestment Resources: Excellent\nRisk Management: Excellent\nInvestment Performance: Consistent (from Strong) Company and Client Servicing: Excellent\nRobust Investment Process\nIt is Fitch's view that Wafa Gestion's investment processes are well-designed and implemented in a disciplined manner. Wafa Gestion follows mainly traditional, benchmark-oriented fixed-income strategies"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Government 2",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Wafa Gestion's 'Excellent (mar)' rating is based on the following category scores: Investment Process: Excellent<br \/>\r\nInvestment Resources: Excellent<br \/>\r\nRisk Management: Excellent<\/p>\r\n\r\n<p>Investment Performance: Consistent (from Strong) Company and Client Servicing: Excellent<\/p>\r\n\r\n<p>Robust Investment Process<br \/>\r\nIt is Fitch's view that Wafa Gestion's investment processes are well-designed and implemented in a disciplined manner. Wafa Gestion follows mainly traditional, benchmark-oriented fixed-income strategies<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Wafa Gestion's 'Excellent (mar)' rating is based on the following category scores: Investment Process: Excellent<br \/>\nInvestment Resources: Excellent<br \/>\nRisk Management: Excellent<\/p>\n<p>Investment Performance: Consistent (from Strong) Company and Client Servicing: Excellent<\/p>\n<p>Robust Investment Process<br \/>\nIt is Fitch's view that Wafa Gestion's investment processes are well-designed and implemented in a disciplined manner. Wafa Gestion follows mainly traditional, benchmark-oriented fixed-income strategies<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_address": [
+        {
+            "value": "bd Jabal Alatlas, lotiss. La\u00efmoune Casablanca",
+            "format": "plain_text",
+            "processed": "<p>bd Jabal Alatlas, lotiss. La\u00efmoune Casablanca<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_email": [
+        {
+            "value": "Role2@gmail.com",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_fax": [
+        {
+            "value": "05 22 89 66 11",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_name": [
+        {
+            "value": "Role 2",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_telephone": [
+        {
+            "value": "06 22 89 66 11",
+            "lang": "fr"
+        }
+    ]
+}
