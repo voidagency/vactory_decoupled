@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/events-blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/events\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 52
+            "value": 110
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T15:10:56+00:00",
+            "value": "2020-06-25T00:18:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "73750f5a-4f54-4777-ad18-0fce3e8f6d9a"
                     }
                 ],
-                "target_revision_id": "13"
+                "target_revision_id": "23"
             },
             {
                 "_links": {
@@ -125,7 +125,7 @@
                         "value": "9b4f488d-27b2-4dca-ba8c-aef088d24baa"
                     }
                 ],
-                "target_revision_id": "14"
+                "target_revision_id": "24"
             }
         ]
     },
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T15:10:56+00:00",
+            "value": "2020-06-25T00:18:57+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Events - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/events-blocs"
+                "canonical_url": "http:\/\/default\/fr\/events\/blocs"
             }
         }
     ],
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/events-blocs"
+                "href": "http:\/\/default\/fr\/events\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/events-blocs",
+            "alias": "\/events\/blocs",
             "pid": 60,
             "langcode": "fr",
             "lang": "fr"

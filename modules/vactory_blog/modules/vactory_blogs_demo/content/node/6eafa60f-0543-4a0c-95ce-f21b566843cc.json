@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/blogs-blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/blogs\/blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 51
+            "value": 86
         }
     ],
     "langcode": [
@@ -54,7 +54,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T15:09:47+00:00",
+            "value": "2020-06-24T23:48:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -109,7 +109,7 @@
                         "value": "51bd53b9-7a13-4039-9709-2c88a83d984b"
                     }
                 ],
-                "target_revision_id": "11"
+                "target_revision_id": "19"
             },
             {
                 "_links": {
@@ -125,7 +125,7 @@
                         "value": "7b65edf4-3cbc-4075-84c4-9ffe0f3a3bd4"
                     }
                 ],
-                "target_revision_id": "12"
+                "target_revision_id": "20"
             }
         ]
     },
@@ -155,7 +155,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T15:09:47+00:00",
+            "value": "2020-06-24T23:48:57+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Blogs - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/blogs-blocs"
+                "canonical_url": "http:\/\/default\/fr\/blogs\/blocs"
             }
         }
     ],
@@ -205,14 +205,14 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/blogs-blocs"
+                "href": "http:\/\/default\/fr\/blogs\/blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/blogs-blocs",
+            "alias": "\/blogs\/blocs",
             "pid": 72,
             "langcode": "fr",
             "lang": "fr"
