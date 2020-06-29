@@ -19,7 +19,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
             {
-                "href": "http:\/\/default\/fr\/media\/4\/edit?_format=hal_json",
+                "href": "http:\/\/default\/fr\/media\/20\/edit?_format=hal_json",
                 "lang": "fr"
             }
         ],
@@ -48,7 +48,7 @@
     ],
     "vid": [
         {
-            "value": 45
+            "value": 83
         }
     ],
     "langcode": [
@@ -64,7 +64,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-23T15:02:17+00:00",
+            "value": "2020-06-24T23:46:56+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -108,7 +108,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/fr\/media\/4\/edit?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/media\/20\/edit?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
@@ -116,7 +116,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "451082e6-1d03-4193-b078-13df227cabbe"
+                        "value": "d820e8f8-1d43-4fbb-98d7-e717fe7534d1"
                     }
                 ],
                 "lang": "fr"
@@ -185,7 +185,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-23T15:02:17+00:00",
+            "value": "2020-06-24T23:46:56+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }

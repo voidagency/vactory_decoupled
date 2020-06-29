@@ -4,6 +4,8 @@ type: module
 core: 8.x
 dependencies:
   - content_translation
+  - entityqueue
+  - features
   - field
   - image
   - jsonapi_extras
@@ -19,7 +21,7 @@ dependencies:
   - taxonomy
   - text
   - user
-  - features
+  - views
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
