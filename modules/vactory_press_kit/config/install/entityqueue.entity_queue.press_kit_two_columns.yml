@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+  config:
+    - node.type.press_kit
 id: press_kit_two_columns
 label: 'Press Kit - Two Columns'
 handler: simple

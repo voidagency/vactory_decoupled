@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+  config:
+    - node.type.vactory_government_member
 id: gouvernance_slider
 label: 'Gouvernance - Slider'
 handler: simple

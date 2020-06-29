@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+  config:
+    - node.type.blog
 id: blog_threecolumns
 label: 'Blog - ThreeColumns'
 handler: simple

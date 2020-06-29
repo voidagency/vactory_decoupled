@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+  config:
+    - node.type.press_release
 id: press_release_three_columns
 label: 'Press Release - Three Columns'
 handler: simple
