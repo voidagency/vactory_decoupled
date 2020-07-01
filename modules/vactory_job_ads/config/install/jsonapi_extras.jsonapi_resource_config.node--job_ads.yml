@@ -78,7 +78,9 @@ resourceFields:
     fieldName: created
     publicName: created
     enhancer:
-      id: ''
+      id: date_time_from_string
+      settings:
+        dateTimeFormat: Y-m-d
     disabled: false
   changed:
     fieldName: changed
@@ -122,6 +124,12 @@ resourceFields:
     publicName: metatag
     enhancer:
       id: ''
+  metatag_normalized:
+    fieldName: metatag_normalized
+    publicName: metatag_normalized
+    enhancer:
+      id: ''
+    disabled: false
   path:
     fieldName: path
     publicName: path
@@ -143,6 +151,24 @@ resourceFields:
   menu_link:
     fieldName: menu_link
     publicName: menu_link
+    enhancer:
+      id: ''
+    disabled: false
+  node_banner:
+    fieldName: node_banner
+    publicName: node_banner
+    enhancer:
+      id: ''
+    disabled: false
+  node_banner_disabled:
+    fieldName: node_banner_disabled
+    publicName: node_banner_disabled
+    enhancer:
+      id: ''
+    disabled: false
+  internal_node_banner:
+    fieldName: internal_node_banner
+    publicName: internal_node_banner
     enhancer:
       id: ''
     disabled: false

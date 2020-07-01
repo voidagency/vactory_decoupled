@@ -3,7 +3,9 @@ description: 'Provides Job Ads content type and related configuration. Manage yo
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - content_translation
+  - entityqueue
   - field
   - jsonapi_extras
   - language
@@ -16,6 +18,7 @@ dependencies:
   - taxonomy
   - text
   - user
+  - views
   - webform
 version: 8.x-1.0
 package: Vactory
