@@ -8,12 +8,12 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
                 "lang": "fr"
             }
         ],
@@ -41,7 +41,7 @@
     ],
     "vid": [
         {
-            "value": 7
+            "value": 104
         }
     ],
     "langcode": [
@@ -57,7 +57,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-17T20:34:55+00:00",
+            "value": "2020-07-01T18:02:42+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -66,7 +66,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -74,7 +74,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ]
             }
@@ -83,7 +83,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -91,7 +91,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ],
                 "lang": "fr"
@@ -133,6 +133,11 @@
             }
         ]
     },
+    "revision_log": [
+        {
+            "value": "edit"
+        }
+    ],
     "status": [
         {
             "value": true,
@@ -154,7 +159,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-17T20:34:55+00:00",
+            "value": "2020-07-01T18:02:42+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,14 +193,40 @@
             "value": {
                 "title": "News 7 | Vactory",
                 "canonical_url": "http:\/\/default\/fr\/news\/news-7",
-                "description": "Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.\nIn ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.\nCras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aliquam erat volutpat. Nam commodo suscipit quam. Phasellus ullamcorper ipsum rutrum nunc. Cras non dolor."
+                "description": "<p>Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.<\/p>\n<p>In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.<\/p>"
             }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "News 7 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/news\/news-7"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "<p>Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.<\/p>\n<p>In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.<\/p>"
+            },
+            "lang": "fr"
         }
     ],
     "path": [
         {
             "alias": "\/news\/news-7",
-            "pid": 7,
+            "pid": 6,
             "langcode": "fr",
             "lang": "fr"
         }
@@ -225,9 +256,9 @@
     ],
     "body": [
         {
-            "value": "<p>Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.<\/p>\r\n\r\n<p>In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.<\/p>\r\n\r\n<p>Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aliquam erat volutpat. Nam commodo suscipit quam. Phasellus ullamcorper ipsum rutrum nunc. Cras non dolor.<\/p>\r\n\r\n<p>Curabitur suscipit suscipit tellus. Curabitur ullamcorper ultricies nisi. Sed a libero. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.<\/p>\r\n\r\n<p>Quisque malesuada placerat nisl. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.<\/p>\r\n",
-            "format": "basic_html",
-            "processed": "<p>Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.<\/p>\n<p>In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.<\/p>\n<p>Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aliquam erat volutpat. Nam commodo suscipit quam. Phasellus ullamcorper ipsum rutrum nunc. Cras non dolor.<\/p>\n<p>Curabitur suscipit suscipit tellus. Curabitur ullamcorper ultricies nisi. Sed a libero. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.<\/p>\n<p>Quisque malesuada placerat nisl. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.<\/p>\n",
+            "value": "<p>&lt;p&gt;Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aliquam erat volutpat. Nam commodo suscipit quam. Phasellus ullamcorper ipsum rutrum nunc. Cras non dolor.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Curabitur suscipit suscipit tellus. Curabitur ullamcorper ultricies nisi. Sed a libero. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Quisque malesuada placerat nisl. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.&lt;\/p&gt;<br \/>\r\n&nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>&lt;p&gt;Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aliquam erat volutpat. Nam commodo suscipit quam. Phasellus ullamcorper ipsum rutrum nunc. Cras non dolor.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Curabitur suscipit suscipit tellus. Curabitur ullamcorper ultricies nisi. Sed a libero. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Quisque malesuada placerat nisl. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.&lt;\/p&gt;<br \/>\n\u00a0<\/p>\n",
             "summary": "",
             "lang": "fr"
         }
@@ -240,8 +271,8 @@
     ],
     "field_vactory_excerpt": [
         {
-            "value": "<p>Fusce ac felis sit amet ligula pharetra condimentum. Phasellus nec sem in justo pellentesque facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Cras varius. Phasellus a est.<\/p>\r\n",
-            "format": "basic_html",
+            "value": "Fusce ac felis sit amet ligula pharetra condimentum. Phasellus nec sem in justo pellentesque facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Cras varius. Phasellus a est.\r\n",
+            "format": "plain_text",
             "processed": "<p>Fusce ac felis sit amet ligula pharetra condimentum. Phasellus nec sem in justo pellentesque facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Cras varius. Phasellus a est.<\/p>\n",
             "lang": "fr"
         }

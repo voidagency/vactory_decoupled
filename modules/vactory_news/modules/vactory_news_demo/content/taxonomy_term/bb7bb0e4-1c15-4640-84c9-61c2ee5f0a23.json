@@ -8,12 +8,6 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/vactory_news_theme\/parent": [
             null
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/vactory_news_theme\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
-                "lang": "fr"
-            }
         ]
     },
     "tid": [
@@ -28,7 +22,7 @@
     ],
     "revision_id": [
         {
-            "value": 2
+            "value": 4
         }
     ],
     "langcode": [
@@ -68,24 +62,6 @@
     "_embedded": {
         "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/vactory_news_theme\/parent": [
             null
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/vactory_news_theme\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
-                    }
-                ],
-                "lang": "fr"
-            }
         ]
     },
     "changed": [
@@ -113,6 +89,24 @@
                 "title": "Finnance | Vactory",
                 "canonical_url": "http:\/\/default\/fr\/taxonomy\/term\/2"
             }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Finnance | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/2"
+            },
+            "lang": "fr"
         }
     ],
     "path": [

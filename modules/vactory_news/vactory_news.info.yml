@@ -6,6 +6,7 @@ dependencies:
   - allowed_formats
   - content_translation
   - datetime
+  - entityqueue
   - field
   - jsonapi_extras
   - language
