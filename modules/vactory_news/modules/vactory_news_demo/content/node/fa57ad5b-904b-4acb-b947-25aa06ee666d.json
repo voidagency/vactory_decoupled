@@ -8,12 +8,12 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
                 "lang": "fr"
             }
         ],
@@ -41,7 +41,7 @@
     ],
     "vid": [
         {
-            "value": 4
+            "value": 101
         }
     ],
     "langcode": [
@@ -57,7 +57,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-17T20:31:41+00:00",
+            "value": "2020-07-01T18:01:19+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -66,7 +66,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -74,7 +74,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ]
             }
@@ -83,7 +83,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -91,7 +91,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ],
                 "lang": "fr"
@@ -133,6 +133,11 @@
             }
         ]
     },
+    "revision_log": [
+        {
+            "value": "edit"
+        }
+    ],
     "status": [
         {
             "value": true,
@@ -154,7 +159,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-17T20:31:41+00:00",
+            "value": "2020-07-01T18:01:19+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -192,10 +197,36 @@
             }
         }
     ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "News 4 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/news\/news-4"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.\nPraesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi."
+            },
+            "lang": "fr"
+        }
+    ],
     "path": [
         {
             "alias": "\/news\/news-4",
-            "pid": 4,
+            "pid": 5,
             "langcode": "fr",
             "lang": "fr"
         }
@@ -225,8 +256,8 @@
     ],
     "body": [
         {
-            "value": "<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.<\/p>\r\n\r\n<p>Praesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi.<\/p>\r\n\r\n<p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Suspendisse feugiat. Ut tincidunt tincidunt erat. Suspendisse feugiat.<\/p>\r\n\r\n<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In consectetuer turpis ut velit. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Fusce vulputate eleifend sapien. Vivamus laoreet.<\/p>\r\n",
-            "format": "basic_html",
+            "value": "<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.<\/p>\r\n\r\n<p>Praesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi.<\/p>\r\n\r\n<p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Suspendisse feugiat. Ut tincidunt tincidunt erat. Suspendisse feugiat.<\/p>\r\n\r\n<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In consectetuer turpis ut velit. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Fusce vulputate eleifend sapien. Vivamus laoreet.<\/p>",
+            "format": "full_html",
             "processed": "<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.<\/p>\n<p>Praesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi.<\/p>\n<p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Suspendisse feugiat. Ut tincidunt tincidunt erat. Suspendisse feugiat.<\/p>\n<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In consectetuer turpis ut velit. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Fusce vulputate eleifend sapien. Vivamus laoreet.<\/p>\n",
             "summary": "",
             "lang": "fr"
@@ -240,8 +271,8 @@
     ],
     "field_vactory_excerpt": [
         {
-            "value": "<p>Praesent nec nisl a purus blandit viverra. Phasellus tempus. Nam at tortor in tellus interdum sagittis. Curabitur nisi. Praesent blandit laoreet nibh.<\/p>\r\n",
-            "format": "basic_html",
+            "value": "Praesent nec nisl a purus blandit viverra. Phasellus tempus. Nam at tortor in tellus interdum sagittis. Curabitur nisi. Praesent blandit laoreet nibh.",
+            "format": "plain_text",
             "processed": "<p>Praesent nec nisl a purus blandit viverra. Phasellus tempus. Nam at tortor in tellus interdum sagittis. Curabitur nisi. Praesent blandit laoreet nibh.<\/p>\n",
             "lang": "fr"
         }
