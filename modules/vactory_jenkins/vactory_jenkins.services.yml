@@ -1,0 +1,10 @@
+services:
+  vactory_jenkins.trigger:
+    class: Drupal\vactory_jenkins\Trigger
+    arguments: ['@config.factory', '@http_client', '@current_user', '@string_translation', '@messenger', '@logger.factory', '@vactory_jenkins.deploylogger', '@entity_type.manager', '@cache_tags.invalidator', '@event_dispatcher']
+  vactory_jenkins.deploylogger:
+    class: Drupal\vactory_jenkins\DeployLogger
+    arguments: ['@config.factory', '@logger.channel.vactory_jenkins_logger', '@state', '@database']
+  logger.channel.vactory_jenkins_logger:
+    parent: logger.channel_base
+    arguments: ['vactory_jenkins_logger']

@@ -1,0 +1,3 @@
+trigger jenkins deployments:
+  title: 'Trigger deployments to jenkins.'
+  restrict access: true

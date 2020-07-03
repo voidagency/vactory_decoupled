@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Contains vactory_jenkins.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\Node;
+
+///**
+// * Implements hook_cron().
+// */
+//function vactory_jenkins_cron() {
+//  vactory_jenkins_get_trigger_service()->deployFrontendCron();
+//}
+
+/**
+ * Implements hook_entity_update().
+ */
+function vactory_jenkins_entity_update(EntityInterface $entity) {
+  if ($entity instanceof Node && \Drupal::currentUser()->isAuthenticated()) {
+    if (!$entity->isNew() && vactory_jenkins_get_logger_service()->isEntityTypeLoggable($entity)) {
+      vactory_jenkins_get_logger_service()->logEntityUpdated($entity);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function vactory_jenkins_entity_insert(EntityInterface $entity) {
+  if ($entity instanceof Node && \Drupal::currentUser()->isAuthenticated()) {
+    if (vactory_jenkins_get_logger_service()->isEntityTypeLoggable($entity)) {
+      vactory_jenkins_get_logger_service()->logEntityCreated($entity);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function vactory_jenkins_entity_delete(EntityInterface $entity) {
+  if ($entity instanceof Node && \Drupal::currentUser()->isAuthenticated()) {
+    if (vactory_jenkins_get_logger_service()->isEntityTypeLoggable($entity)) {
+      vactory_jenkins_get_logger_service()->logEntityDeleted($entity);
+    }
+  }
+}
+
+/**
+ * Get the trigger service.
+ *
+ * @return \Drupal\vactory_jenkins\Trigger
+ *   The trigger service.
+ */
+function vactory_jenkins_get_trigger_service() {
+  return \Drupal::service('vactory_jenkins.trigger');
+}
+
+/**
+ * Get the deploy logger service.
+ *
+ * @return \Drupal\vactory_jenkins\DeployLogger
+ *   The deploy logger service.
+ */
+function vactory_jenkins_get_logger_service() {
+  return \Drupal::service('vactory_jenkins.deploylogger');
+}
