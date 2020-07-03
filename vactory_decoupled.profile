@@ -21,9 +21,9 @@ function vactory_decoupled_install_tasks_alter(&$tasks, $install_state)
  */
 function vactory_decoupled_install_tasks(&$install_state)
 {
-  $tasks['_vactory_decoupled_enable_cors'] = [
-    'display_name' => t('Enable CORS by default'),
-  ];
+//  $tasks['_vactory_decoupled_enable_cors'] = [
+//    'display_name' => t('Enable CORS by default'),
+//  ];
 
   $tasks['vactory_decoupled_module_configure_form'] = [
     'display_name' => t('Configure additional modules'),
