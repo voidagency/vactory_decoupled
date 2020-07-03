@@ -3,6 +3,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
+  allowed_formats: 0
   auto_entityqueue: 0
   automated_cron: 0
   backup_migrate: 0
@@ -29,8 +30,8 @@ module:
   ctools: 0
   datetime: 0
   datetime_range: 0
-  default_content: 0
   dblog: 0
+  default_content: 0
   dynamic_page_cache: 0
   easy_install: 0
   editor: 0
@@ -104,6 +105,7 @@ module:
   seckit: 0
   serialization: 0
   shortcut: 0
+  simple_sitemap: 0
   swiftmailer: 0
   system: 0
   taxonomy: 0

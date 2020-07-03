@@ -36,13 +36,14 @@
         },
         "patches": {
             "drupal/core": {
-                "Issue #2996114: Argument 2 passed to {closure}() must be an instance of ResourceType, NULL given": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch"
+                "Issue #2996114: Argument 2 passed to {closure}() must be an instance of ResourceType, NULL given": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch",
+                "[regression] Impossible to filter for resources with an empty relationship object in JSON:API 2.x": "https://www.drupal.org/files/issues/2020-03-24/3025372-33.patch"
             },
             "drupal/migrate_tools": {
                 "Issue #3099611: Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
             },
             "drupal/migrate_file": {
-                "Use media instead of file": "https://raw.githubusercontent.com/voidagency/vactory_decoupled/1.0.x/patches/migrate-file-import-media.patch"
+                "Use media instead of file": "https://gist.githubusercontent.com/Bahlaouane-Hamza/75c4390bc95a9a4cd4776aa8da49434b/raw/72a7c96a5d39bab68d64c397df190e50ba9e35a7/migrate-file-import-media.patch"
             },
             "drupal/default_content": {
                 "#2698425: Do not reimport existing entities": "https://www.drupal.org/files/issues/2020-02-05/2698425--accept-content-updates--122.patch"
@@ -55,6 +56,9 @@
             },
             "drupal/file_entity": {
                 "File rest upload PluginNotFoundException": "https://www.drupal.org/files/issues/2018-07-11/file-rest-upload-pluginnotfoundexception-error-2959947-8.patch"
+            },
+            "drupal/coffee": {
+                "Issue #3128583: Could not load data": "https://gist.githubusercontent.com/Bahlaouane-Hamza/64899f332eb63cb701d5ed6473aa6442/raw/e8fec693f1f462c47e3de3f8cc85fefc8628c4ce/coffee-subfolder-3128583.patch"
             }
         }
     },
@@ -63,6 +67,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal/address": "^1.8",
         "drupal/admin_toolbar": "^2.2",
+        "drupal/allowed_formats": "^1.2",
         "drupal/auto_entityqueue": "^1.0",
         "drupal/backup_migrate": "^4.1",
         "drupal/better_passwords": "^1.0@beta",
@@ -122,6 +127,7 @@
         "drupal/search_api": "^1.17.0",
         "drupal/search_api_exclude_entity": "^1.0",
         "drupal/seckit": "^1.2",
+        "drupal/simple_sitemap": "^3.7",
         "drupal/shield": "^1.4",
         "drupal/smart_trim": "^1.2",
         "drupal/swiftmailer": "^1.0@beta",

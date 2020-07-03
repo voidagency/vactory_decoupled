@@ -1,0 +1,329 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/events\/event-2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/events"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/14\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/9?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/15?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 29
+        }
+    ],
+    "uuid": [
+        {
+            "value": "36c522e2-5226-429e-926d-284d52bbe196"
+        }
+    ],
+    "vid": [
+        {
+            "value": 100
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "events"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-25T00:13:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/14\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9e67a0d2-834c-4f64-a88e-d823549c80ea"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/9?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/events_category"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "14d8b861-af97-4980-8269-e360546e842d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/15?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/events_cities"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "32360ab0-4850-4191-8497-5abb13ad497e"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Event 2"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Event 2",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T14:23:52+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-25T00:13:47+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Event 2 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/events\/event-2",
+                "description": "Les m\u00e9moires encore appel\u00e9es unit\u00e9s de stockage, est un dispositif \u00e9lectronique qui permet d'enregistrer, de conserver et de restituer les informations, chaque m\u00e9moire est caract\u00e9ris\u00e9e par sa capacit\u00e9 maximale et son temps d'acc\u00e8s.\nLa capacit\u00e9 de la m\u00e9moire est la taille ou le volume d'information que contient cette m\u00e9moire.\n\u00a0"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Event 2 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/events\/event-2"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Les m\u00e9moires encore appel\u00e9es unit\u00e9s de stockage, est un dispositif \u00e9lectronique qui permet d'enregistrer, de conserver et de restituer les informations, chaque m\u00e9moire est caract\u00e9ris\u00e9e par sa capacit\u00e9 maximale et son temps d'acc\u00e8s.\nLa capacit\u00e9 de la m\u00e9moire est la taille ou le volume d'information que contient cette m\u00e9moire.\n\u00a0"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/events\/event-2",
+            "pid": 50,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Event 2",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Les m\u00e9moires encore appel\u00e9es unit\u00e9s de stockage, est un dispositif \u00e9lectronique qui permet d'enregistrer, de conserver et de restituer les informations, chaque m\u00e9moire est caract\u00e9ris\u00e9e par sa capacit\u00e9 maximale et son temps d'acc\u00e8s.<br \/>\r\nLa capacit\u00e9 de la m\u00e9moire est la taille ou le volume d'information que contient cette m\u00e9moire.<br \/>\r\n&nbsp;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Les m\u00e9moires encore appel\u00e9es unit\u00e9s de stockage, est un dispositif \u00e9lectronique qui permet d'enregistrer, de conserver et de restituer les informations, chaque m\u00e9moire est caract\u00e9ris\u00e9e par sa capacit\u00e9 maximale et son temps d'acc\u00e8s.<br \/>\nLa capacit\u00e9 de la m\u00e9moire est la taille ou le volume d'information que contient cette m\u00e9moire.<br \/>\n\u00a0<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date_interval": [
+        {
+            "value": "1999-01-01",
+            "end_value": "2012-01-01",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Ce sont ceux qui utilise l'information dans un domaine autre que l'information, exemple: les agents de t\u00e9l\u00e9communication, les ing\u00e9nieurs syst\u00e8me, les ing\u00e9nieurs r\u00e9seaux, les ing\u00e9nieurs logiciels, les administrateurs de base de donn\u00e9es, les enseignants.",
+            "format": "plain_text",
+            "processed": "<p>Ce sont ceux qui utilise l&#039;information dans un domaine autre que l&#039;information, exemple: les agents de t\u00e9l\u00e9communication, les ing\u00e9nieurs syst\u00e8me, les ing\u00e9nieurs r\u00e9seaux, les ing\u00e9nieurs logiciels, les administrateurs de base de donn\u00e9es, les enseignants.<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

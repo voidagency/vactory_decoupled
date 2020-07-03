@@ -1,0 +1,320 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/jobs\/tech-lead?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/job_ads"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/17?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/23?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_3": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/26?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 61
+        }
+    ],
+    "uuid": [
+        {
+            "value": "741c1bb3-6b3d-418d-8caa-a189d045c47a"
+        }
+    ],
+    "vid": [
+        {
+            "value": 92
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_ads"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-30T12:27:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/17?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_city"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "007b8e0d-1b21-4abd-ae2c-8b59d42902ea"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/23?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_contract"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "33d38729-0ee2-4c40-9c33-e926bfa9c8aa"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_3": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/26?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_profession"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c83e5a7e-3c74-4148-9440-95359a8d6ad4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "demo content"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Tech Lead",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-30T12:21:54+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-30T12:27:39+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Tech Lead | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/jobs\/tech-lead",
+                "description": "Si vous \u00eates un(e) ing\u00e9nieur(e) plein(e) de talents, geek dans l'\u00e2me, White Hat dans l'esprit, et que vous souhaitez rejoindre une tr\u00e8s prometteuse startup marocaine, alors continuez \u00e0 lire ceci !\nNous sommes une jeune entreprise Casablancaise, sp\u00e9cialis\u00e9e dans\u00a0le d\u00e9veloppement de solutions innovantes\u00a0autour des donn\u00e9es (collecte, stockage, et analyse). Nous donnons libre cours \u00e0 notre imagination et cr\u00e9ativit\u00e9 afin de concevoir et mettre en place des syst\u00e8mes \u00e0 la pointe de la technologie."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Tech Lead | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/jobs\/tech-lead"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Si vous \u00eates un(e) ing\u00e9nieur(e) plein(e) de talents, geek dans l'\u00e2me, White Hat dans l'esprit, et que vous souhaitez rejoindre une tr\u00e8s prometteuse startup marocaine, alors continuez \u00e0 lire ceci !\nNous sommes une jeune entreprise Casablancaise, sp\u00e9cialis\u00e9e dans\u00a0le d\u00e9veloppement de solutions innovantes\u00a0autour des donn\u00e9es (collecte, stockage, et analyse). Nous donnons libre cours \u00e0 notre imagination et cr\u00e9ativit\u00e9 afin de concevoir et mettre en place des syst\u00e8mes \u00e0 la pointe de la technologie."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/jobs\/tech-lead",
+            "pid": 74,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Tech Lead",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Si vous \u00eates un(e) ing\u00e9nieur(e) plein(e) de talents, geek dans l'\u00e2me, White Hat dans l'esprit, et que vous souhaitez rejoindre une tr\u00e8s prometteuse startup marocaine, alors continuez \u00e0 lire ceci !<\/p>\r\n\r\n<p>Nous sommes une jeune entreprise Casablancaise, sp\u00e9cialis\u00e9e dans<strong>&nbsp;le d\u00e9veloppement de solutions innovantes<\/strong>&nbsp;autour des donn\u00e9es (collecte, stockage, et analyse). Nous donnons libre cours \u00e0 notre imagination et cr\u00e9ativit\u00e9 afin de concevoir et mettre en place des syst\u00e8mes \u00e0 la pointe de la technologie.<\/p>\r\n\r\n<p>Dans le cadre du d\u00e9veloppement d'un logiciel de collecte et d'analyse de donn\u00e9es \u00e0 l'\u00e9chelle internationale, nous sommes \u00e0 la recherche d'un(e)<strong>&nbsp;ing\u00e9nieur(e) senior avec un minimum de 3 ans d'exp\u00e9rience<\/strong>, qui r\u00e9pond aux crit\u00e8res suivants :<\/p>\r\n\r\n<ul>\r\n\t<li>Expertise en technologie Java\/J2EE<\/li>\r\n\t<li>Expertise en technologies Web : HTML \/ Javascript \/ CSS<\/li>\r\n\t<li>Administration des syst\u00e8mes Linux<\/li>\r\n\t<li>Gestion de projet et sens des responsabilit\u00e9s<\/li>\r\n\t<li>Passionn\u00e9 de nouvelles technologies, specialitement, la big data, data mining, data scraping<\/li>\r\n<\/ul>\r\n\r\n<p><u>Ce qui fera la diff\u00e9rence :<\/u><\/p>\r\n\r\n<ul>\r\n\t<li>Ma\u00eetrise des environnements de virtualisation Docker ou Kubernetes<\/li>\r\n\t<li>Exp\u00e9rience en DevOps<\/li>\r\n\t<li>Exp\u00e9rience en Selenium WebDriver<\/li>\r\n\t<li>White Hat<\/li>\r\n\t<li>Perfectionniste.<\/li>\r\n<\/ul>\r\n",
+            "format": "full_html",
+            "processed": "<p>Si vous \u00eates un(e) ing\u00e9nieur(e) plein(e) de talents, geek dans l'\u00e2me, White Hat dans l'esprit, et que vous souhaitez rejoindre une tr\u00e8s prometteuse startup marocaine, alors continuez \u00e0 lire ceci !<\/p>\n<p>Nous sommes une jeune entreprise Casablancaise, sp\u00e9cialis\u00e9e dans<strong>\u00a0le d\u00e9veloppement de solutions innovantes<\/strong>\u00a0autour des donn\u00e9es (collecte, stockage, et analyse). Nous donnons libre cours \u00e0 notre imagination et cr\u00e9ativit\u00e9 afin de concevoir et mettre en place des syst\u00e8mes \u00e0 la pointe de la technologie.<\/p>\n<p>Dans le cadre du d\u00e9veloppement d'un logiciel de collecte et d'analyse de donn\u00e9es \u00e0 l'\u00e9chelle internationale, nous sommes \u00e0 la recherche d'un(e)<strong>\u00a0ing\u00e9nieur(e) senior avec un minimum de 3 ans d'exp\u00e9rience<\/strong>, qui r\u00e9pond aux crit\u00e8res suivants :<\/p>\n<ul><li>Expertise en technologie Java\/J2EE<\/li>\n<li>Expertise en technologies Web : HTML \/ Javascript \/ CSS<\/li>\n<li>Administration des syst\u00e8mes Linux<\/li>\n<li>Gestion de projet et sens des responsabilit\u00e9s<\/li>\n<li>Passionn\u00e9 de nouvelles technologies, specialitement, la big data, data mining, data scraping<\/li>\n<\/ul><p><u>Ce qui fera la diff\u00e9rence :<\/u><\/p>\n<ul><li>Ma\u00eetrise des environnements de virtualisation Docker ou Kubernetes<\/li>\n<li>Exp\u00e9rience en DevOps<\/li>\n<li>Exp\u00e9rience en Selenium WebDriver<\/li>\n<li>White Hat<\/li>\n<li>Perfectionniste.<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_address": [
+        {
+            "value": "159 Bd artdunord, Casablanca",
+            "format": "plain_text",
+            "processed": "<p>159 Bd artdunord, Casablanca<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_description": [
+        {
+            "value": "Expertise en technologie Java\/J2EE\r\nExpertise en technologies Web : HTML \/ Javascript \/ CSS\r\nAdministration des syst\u00e8mes Linux",
+            "format": "plain_text",
+            "processed": "<p>Expertise en technologie Java\/J2EE<br \/>\nExpertise en technologies Web : HTML \/ Javascript \/ CSS<br \/>\nAdministration des syst\u00e8mes Linux<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_email": [
+        {
+            "value": "digiGR@gmail.com",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_telephone": [
+        {
+            "value": "0522000000",
+            "lang": "fr"
+        }
+    ]
+}

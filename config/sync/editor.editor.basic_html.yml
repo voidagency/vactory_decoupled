@@ -17,6 +17,8 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
+            - Strike
         -
           name: Linking
           items:
@@ -28,12 +30,6 @@ settings:
           items:
             - BulletedList
             - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - DrupalMediaLibrary
         -
           name: 'Block Formatting'
           items:

@@ -137,6 +137,11 @@ function vactory_core_form_alter(&$form, FormStateInterface &$form_state, $form_
 function vactory_core_form_node_form_alter(&$form, FormStateInterface $form_state) {
   unset($form['promote']);
   unset($form['sticky']);
+
+  // Make revision log required.
+  if (isset($form['revision_log'])) {
+    $form['revision_log']['widget'][0]['value']['#required'] = TRUE;
+  }
 }
 
 /**

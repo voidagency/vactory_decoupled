@@ -1,0 +1,77 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
+use Drupal\Core\Url;
+use Drupal\media\Entity\Media;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_df_jsonapi_output_alter().
+ */
+function vactory_job_ads_df_jsonapi_output_alter(&$content)
+{
+  $display_id = "block_three_columns";
+
+  if ($content['template'] === 'vactory_job_ads:two-columns') {
+    $display_id = "block_two_columns";
+  }
+
+  if (
+    $content['template'] === 'vactory_job_ads:three-columns' ||
+    $content['template'] === 'vactory_job_ads:two-columns'
+  ) {
+    $name = "vactory_job_ads";
+
+    $taxonomy_id = $content['components'][0]['taxonomy'];
+
+    $image_app_base_url = Url::fromUserInput('/app-image/')
+      ->setAbsolute()->toString();
+    $lqipImageStyle = \Drupal\image\Entity\ImageStyle::load('lqip');
+
+    $view = Views::getView($name);
+    if (!$view || !$view->access($display_id)) {
+      $content['data'] = [];
+      return;
+    }
+
+    $view->setDisplay($display_id);
+    if (!empty($taxonomy_id)) {
+      $view->setArguments([$taxonomy_id]);
+    }
+
+    $view->preExecute();
+    $view->execute();
+    $result = $view->result;
+
+    $nodes = [];
+    foreach ($result as $row) {
+      $node = $row->_entity;
+      $node = \Drupal::service('entity.repository')
+        ->getTranslationFromContext($node);
+      $city = $node->get('field_vactory_taxonomy_1')->entity->label();
+      $contract = $node->get('field_vactory_taxonomy_2')->entity->label();
+      $profession = $node->get('field_vactory_taxonomy_3')->entity->label();
+      $date = intval($node->get('created')->value);
+      $converted = \Drupal::service('date.formatter')->format($date, 'html_date');
+
+      array_push($nodes, [
+        "key" => $node->uuid(),
+        "title" => $node->label(),
+        "url" => $node->toUrl()->toString(),
+        "city" => $city,
+	"profession" => $profession,
+	"date" => $converted,
+        "profileDescription" => $node->get('field_vactory_description')->getValue(),
+      ]);
+    }
+
+    $content['data'] = $nodes;
+  }
+
+}

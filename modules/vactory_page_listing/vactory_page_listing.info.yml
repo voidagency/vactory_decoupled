@@ -5,6 +5,7 @@ core: 8.x
 package: Vactory
 dependencies:
   - content_translation
+  - features
   - field
   - jsonapi_extras
   - language
@@ -20,5 +21,4 @@ dependencies:
   - user
   - views
   - viewsreference
-  - features
 core_incompatible: false

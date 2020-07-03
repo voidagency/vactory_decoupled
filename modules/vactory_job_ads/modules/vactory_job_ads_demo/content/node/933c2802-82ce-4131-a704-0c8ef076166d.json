@@ -1,0 +1,320 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/jobs\/engineering-product-leader?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/job_ads"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/23?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_3": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/26?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 63
+        }
+    ],
+    "uuid": [
+        {
+            "value": "933c2802-82ce-4131-a704-0c8ef076166d"
+        }
+    ],
+    "vid": [
+        {
+            "value": 94
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_ads"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-30T12:40:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_city"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/23?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_contract"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "33d38729-0ee2-4c40-9c33-e926bfa9c8aa"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_3": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/26?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_profession"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "c83e5a7e-3c74-4148-9440-95359a8d6ad4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "demo content"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Engineering Product Leader",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-30T12:37:27+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-30T12:40:19+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Engineering Product Leader | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/jobs\/engineering-product-leader",
+                "description": "We are hiring for Rabat Engineering Center an\u00a0Engineering Product Leader\u00a0to lead new project & launches. Looking for an experienced Engineer, ideally with an Embedded Systems background, fluent English speaking and electronic knowledge.\u00a0\u00a0\nMain missions:"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Engineering Product Leader | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/jobs\/engineering-product-leader"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "We are hiring for Rabat Engineering Center an\u00a0Engineering Product Leader\u00a0to lead new project & launches. Looking for an experienced Engineer, ideally with an Embedded Systems background, fluent English speaking and electronic knowledge.\u00a0\u00a0\nMain missions:"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/jobs\/engineering-product-leader",
+            "pid": 76,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Engineering Product Leader",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>We are hiring for Rabat Engineering Center an<strong>&nbsp;Engineering Product Leader<\/strong>&nbsp;to lead new project &amp; launches. Looking for an experienced Engineer, ideally with an Embedded Systems background, fluent English speaking and electronic knowledge.&nbsp;&nbsp;<\/p>\r\n\r\n<p><u><strong>Main missions:<\/strong><\/u><\/p>\r\n\r\n<ul>\r\n\t<li>Developing and delivering cost competitive designs on time, on budget, on quality target, meeting the customer requirements (Flawless Product Development and Launch).&nbsp;<\/li>\r\n\t<li>Leading the Product Engineering for RFQs and awarded projects through development, launch and serial production following LPMP and APQP.&nbsp;&nbsp;<\/li>\r\n<\/ul>\r\n",
+            "format": "full_html",
+            "processed": "<p>We are hiring for Rabat Engineering Center an<strong>\u00a0Engineering Product Leader<\/strong>\u00a0to lead new project &amp; launches. Looking for an experienced Engineer, ideally with an Embedded Systems background, fluent English speaking and electronic knowledge.\u00a0\u00a0<\/p>\n<p><u><strong>Main missions:<\/strong><\/u><\/p>\n<ul><li>Developing and delivering cost competitive designs on time, on budget, on quality target, meeting the customer requirements (Flawless Product Development and Launch).\u00a0<\/li>\n<li>Leading the Product Engineering for RFQs and awarded projects through development, launch and serial production following LPMP and APQP.\u00a0\u00a0<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_address": [
+        {
+            "value": "222 Bd Yasamin, Rabat",
+            "format": "plain_text",
+            "processed": "<p>222 Bd Yasamin, Rabat<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_description": [
+        {
+            "value": "Engineering customer interface. \r\nEngineering project timing and execution\r\nLeading technical evaluation of product changes (ECR, PCR,\u2026). ",
+            "format": "plain_text",
+            "processed": "<p>Engineering customer interface.<br \/>\nEngineering project timing and execution<br \/>\nLeading technical evaluation of product changes (ECR, PCR,\u2026).<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_email": [
+        {
+            "value": "autogroup@email.ma",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_telephone": [
+        {
+            "value": "020000000",
+            "lang": "fr"
+        }
+    ]
+}

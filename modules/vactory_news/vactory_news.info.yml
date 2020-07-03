@@ -3,8 +3,10 @@ description: 'Provides News content type and related configuration. Manage your 
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - content_translation
   - datetime
+  - entityqueue
   - field
   - jsonapi_extras
   - language

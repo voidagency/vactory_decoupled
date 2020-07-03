@@ -9,7 +9,7 @@ use Drupal\vactory_dynamic_field\VactoryDynamicFieldPluginBase;
  *
  * @PlatformProvider(
  *   id = "vactory_blog",
- *   title = @Translation("Core Blog")
+ *   title = @Translation("Blog")
  * )
  */
 class VactoryBlog extends VactoryDynamicFieldPluginBase {

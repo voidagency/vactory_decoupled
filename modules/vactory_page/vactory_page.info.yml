@@ -15,6 +15,7 @@ dependencies:
   - paragraphs
   - path
   - pathauto
+  - scheduler
   - search
   - search_api_exclude_entity
   - user

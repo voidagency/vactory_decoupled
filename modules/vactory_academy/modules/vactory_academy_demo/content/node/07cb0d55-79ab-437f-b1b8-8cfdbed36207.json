@@ -1,0 +1,358 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/academy-courses\/maitrisez-votre-dslr-et-mirrorless-en-mode-video?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/academy"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "href": "http:\/\/default\/fr\/media\/28\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/49\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/8?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 18
+        }
+    ],
+    "uuid": [
+        {
+            "value": "07cb0d55-79ab-437f-b1b8-8cfdbed36207"
+        }
+    ],
+    "vid": [
+        {
+            "value": 51
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "academy"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-24T14:17:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/28\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "66f4aa12-4b93-4b03-8407-452e9a278b52"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/49\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "1ddf33b0-2d95-4223-999e-3a14e0b8c9a2"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/8?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/academy_themes"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "edit content"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Ma\u00eetrisez votre DSLR et Mirrorless en mode vid\u00e9o",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-22T10:54:16+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-24T14:17:21+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Ma\u00eetrisez votre DSLR et Mirrorless en mode vid\u00e9o | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/academy-courses\/maitrisez-votre-dslr-et-mirrorless-en-mode-video",
+                "description": "Vous \u00eates photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vid\u00e9o ?\nVous avez peut-\u00eatre envie de commencer \u00e0 faire de la vid\u00e9o plus s\u00e9rieusement ?\u00a0De\u00a0r\u00e9aliser\u00a0des reportages de mariage, des corporates et films d\u2019entreprise\u00a0ou encore, \u00a0des clip vid\u00e9o d\u2019artistes?"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Ma\u00eetrisez votre DSLR et Mirrorless en mode vid\u00e9o | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/academy-courses\/maitrisez-votre-dslr-et-mirrorless-en-mode-video"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Vous \u00eates photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vid\u00e9o ?\nVous avez peut-\u00eatre envie de commencer \u00e0 faire de la vid\u00e9o plus s\u00e9rieusement ?\u00a0De\u00a0r\u00e9aliser\u00a0des reportages de mariage, des corporates et films d\u2019entreprise\u00a0ou encore, \u00a0des clip vid\u00e9o d\u2019artistes?"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/academy-courses\/maitrisez-votre-dslr-et-mirrorless-en-mode-video",
+            "pid": 15,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Ma\u00eetrisez votre DSLR et Mirrorless en mode vid\u00e9o",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p><strong><strong>Vous \u00eates photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vid\u00e9o ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Vous avez peu<\/strong><strong>t-<\/strong><strong>\u00eatre envie de commencer \u00e0 faire de la vid\u00e9o plus s\u00e9rieusement ?&nbsp;<\/strong><strong>De<\/strong><strong>&nbsp;r\u00e9alise<\/strong><strong>r<\/strong><strong>&nbsp;des reportages de mariage, des corporates et films d\u2019entreprise&nbsp;<\/strong><strong>ou encore, &nbsp;<\/strong><strong>des clip vid\u00e9o d\u2019artistes?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Cette formation est&nbsp;<\/strong><strong>faite<\/strong><strong>&nbsp;pour vous !<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Je suis photographe depuis plus de 20 ans, et d<\/strong><strong>\u00e8<\/strong><strong>s que le premier appareil photo nous \u00e0 permis de filmer, je me suis lanc\u00e9 dans l\u2019aventure.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Je partagerai donc avec vous ici, mon exp\u00e9rience, et&nbsp;<\/strong><strong>d\u00e9mystifierai<\/strong><strong>&nbsp;pour vous toutes les notions sp\u00e9cifiques \u00e0 la vid\u00e9o.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Qu\u2019est-ce que la cadence d\u2019enregistrement ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>La r\u00e9solution en vid\u00e9o ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Le bitrate ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>La compression Long GOP, IPB ou ALL-I ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Qu\u2019est ce qu\u2019un profil d\u2019images \u201c plat \u201c ou flat profile en anglais ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Quels accessoires utiliser en vid\u00e9o ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>La vid\u00e9o&nbsp;<\/strong><strong>a<\/strong><strong>&nbsp;<\/strong><strong>s<\/strong><strong>es sp\u00e9cificit\u00e9s et nous verrons tout cela ensemble.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Toutes ces notions et bien d\u2019autres encore seront pass\u00e9es en revu<\/strong><strong>e<\/strong><strong>&nbsp;dans cette formation, et toutes ces notions vous suivront encore longtemps \u2026&nbsp;<\/strong><strong>av<\/strong><strong>ec l\u2019appareil&nbsp;<\/strong><strong>photo&nbsp;<\/strong><strong>que vous utilisez aujourd\u2019hui ou celui que vous aurez dans un an, ou cinq ans.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Un groupe Facebook ferm\u00e9, r\u00e9serv<\/strong><strong>\u00e9<\/strong><strong>&nbsp;aux apprenants ayant suivis cette formation sera ouvert, nous pourrons nous y retrouver pour y discuter, \u00e9chang<\/strong><strong>er<\/strong><strong>&nbsp;des id\u00e9es, poser des questions pr\u00e9cises sur des projets que vous pourriez avoir, poster nos vid\u00e9os \u2026 bre<\/strong><strong>f<\/strong><strong>, alle<\/strong><strong>r<\/strong><strong>&nbsp;plus loin, ensemble.<\/strong><\/strong><\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p><strong><strong>Vous \u00eates photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vid\u00e9o ?<\/strong><\/strong><\/p>\n<p><strong><strong>Vous avez peu<\/strong><strong>t-<\/strong><strong>\u00eatre envie de commencer \u00e0 faire de la vid\u00e9o plus s\u00e9rieusement ?\u00a0<\/strong><strong>De<\/strong><strong>\u00a0r\u00e9alise<\/strong><strong>r<\/strong><strong>\u00a0des reportages de mariage, des corporates et films d\u2019entreprise\u00a0<\/strong><strong>ou encore, \u00a0<\/strong><strong>des clip vid\u00e9o d\u2019artistes?<\/strong><\/strong><\/p>\n<p><strong><strong>Cette formation est\u00a0<\/strong><strong>faite<\/strong><strong>\u00a0pour vous !<\/strong><\/strong><\/p>\n<p><strong><strong>Je suis photographe depuis plus de 20 ans, et d<\/strong><strong>\u00e8<\/strong><strong>s que le premier appareil photo nous \u00e0 permis de filmer, je me suis lanc\u00e9 dans l\u2019aventure.<\/strong><\/strong><\/p>\n<p><strong><strong>Je partagerai donc avec vous ici, mon exp\u00e9rience, et\u00a0<\/strong><strong>d\u00e9mystifierai<\/strong><strong>\u00a0pour vous toutes les notions sp\u00e9cifiques \u00e0 la vid\u00e9o.<\/strong><\/strong><\/p>\n<p><strong><strong>Qu\u2019est-ce que la cadence d\u2019enregistrement ?<\/strong><\/strong><\/p>\n<p><strong><strong>La r\u00e9solution en vid\u00e9o ?<\/strong><\/strong><\/p>\n<p><strong><strong>Le bitrate ?<\/strong><\/strong><\/p>\n<p><strong><strong>La compression Long GOP, IPB ou ALL-I ?<\/strong><\/strong><\/p>\n<p><strong><strong>Qu\u2019est ce qu\u2019un profil d\u2019images \u201c plat \u201c ou flat profile en anglais ?<\/strong><\/strong><\/p>\n<p><strong><strong>Quels accessoires utiliser en vid\u00e9o ?<\/strong><\/strong><\/p>\n<p><strong><strong>La vid\u00e9o\u00a0<\/strong><strong>a<\/strong><strong>\u00a0<\/strong><strong>s<\/strong><strong>es sp\u00e9cificit\u00e9s et nous verrons tout cela ensemble.<\/strong><\/strong><\/p>\n<p><strong><strong>Toutes ces notions et bien d\u2019autres encore seront pass\u00e9es en revu<\/strong><strong>e<\/strong><strong>\u00a0dans cette formation, et toutes ces notions vous suivront encore longtemps \u2026\u00a0<\/strong><strong>av<\/strong><strong>ec l\u2019appareil\u00a0<\/strong><strong>photo\u00a0<\/strong><strong>que vous utilisez aujourd\u2019hui ou celui que vous aurez dans un an, ou cinq ans.<\/strong><\/strong><\/p>\n<p><strong><strong>Un groupe Facebook ferm\u00e9, r\u00e9serv<\/strong><strong>\u00e9<\/strong><strong>\u00a0aux apprenants ayant suivis cette formation sera ouvert, nous pourrons nous y retrouver pour y discuter, \u00e9chang<\/strong><strong>er<\/strong><strong>\u00a0des id\u00e9es, poser des questions pr\u00e9cises sur des projets que vous pourriez avoir, poster nos vid\u00e9os \u2026 bre<\/strong><strong>f<\/strong><strong>, alle<\/strong><strong>r<\/strong><strong>\u00a0plus loin, ensemble.<\/strong><\/strong><\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 0,
+            "cid": 0,
+            "last_comment_timestamp": 1592823521,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_duration": [
+        {
+            "value": "3 h 30 min",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_language": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-23",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Cr\u00e9ez vos vid\u00e9os en filmant avec votre appareil photo reflex, mirrorless, gr\u00e2ce \u00e0 ce guide complet pour d\u00e9butant!",
+            "format": "plain_text",
+            "processed": "<p>Cr\u00e9ez vos vid\u00e9os en filmant avec votre appareil photo reflex, mirrorless, gr\u00e2ce \u00e0 ce guide complet pour d\u00e9butant!<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_youtube_videos": [
+        {
+            "value": "https:\/\/www.udemy.com\/course\/maitrisez-votre-appareil-photo-en-mode-video\/"
+        }
+    ]
+}

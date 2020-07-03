@@ -8,7 +8,7 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
@@ -34,7 +34,7 @@
     ],
     "vid": [
         {
-            "value": 8
+            "value": 9
         }
     ],
     "langcode": [
@@ -50,7 +50,7 @@
     ],
     "revision_created": [
         {
-            "value": "2020-06-17T20:34:34+00:00",
+            "value": "2020-06-21T18:38:57+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -64,7 +64,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -72,7 +72,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ]
             }
@@ -146,6 +146,24 @@
     "revision_translation_affected": [
         {
             "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "| Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr"
+            },
             "lang": "fr"
         }
     ]

@@ -1,4 +1,4 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ id: node.vactory_news.field_vactory_taxonomy_1
 field_name: field_vactory_taxonomy_1
 entity_type: node
 bundle: vactory_news
-label: Theme
+label: Thème
 description: ''
 required: true
 translatable: true

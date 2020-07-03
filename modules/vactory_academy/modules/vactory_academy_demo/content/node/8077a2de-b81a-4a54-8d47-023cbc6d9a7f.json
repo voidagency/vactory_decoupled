@@ -1,0 +1,358 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/academy-courses\/photographie-bases-completes-pour-debutants?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/academy"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "href": "http:\/\/default\/fr\/media\/24\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/47\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/8?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 16
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8077a2de-b81a-4a54-8d47-023cbc6d9a7f"
+        }
+    ],
+    "vid": [
+        {
+            "value": 49
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "academy"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-24T14:11:24+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/24\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b8b5d5a-26cf-4065-89f2-03dbed8ca455"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/47\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5edad764-10a9-4737-992c-82fd511fcc89"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/8?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/academy_themes"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "edit content"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Photographie : Bases compl\u00e8tes pour d\u00e9butants",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-22T10:40:29+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-24T14:11:24+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Photographie : Bases compl\u00e8tes pour d\u00e9butants | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/academy-courses\/photographie-bases-completes-pour-debutants",
+                "description": "Cette formation s'adresse \u00e0 vous si vous vous reconnaissez dans l'une des quatre cat\u00e9gories ci-dessous :\n\nVous \u00eates d\u00e9butant\u2022e\u00a0et n'avez jamais pris le temps de comprendre le fonctionnement d'un appareil photo\n\n\nVous faites d\u00e9j\u00e0 un peu de photo mais\u00a0sans v\u00e9ritable bases th\u00e9oriques\u00a0et souhaitez am\u00e9liorer vos photos\n\n\nVous \u00eates passionn\u00e9\u2022e avec avez\u00a0quelques bases parfois fragiles\u00a0et souhaitez\u00a0valider vos connaissances"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Photographie : Bases compl\u00e8tes pour d\u00e9butants | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/academy-courses\/photographie-bases-completes-pour-debutants"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Cette formation s'adresse \u00e0 vous si vous vous reconnaissez dans l'une des quatre cat\u00e9gories ci-dessous :\n\nVous \u00eates d\u00e9butant\u2022e\u00a0et n'avez jamais pris le temps de comprendre le fonctionnement d'un appareil photo\n\n\nVous faites d\u00e9j\u00e0 un peu de photo mais\u00a0sans v\u00e9ritable bases th\u00e9oriques\u00a0et souhaitez am\u00e9liorer vos photos\n\n\nVous \u00eates passionn\u00e9\u2022e avec avez\u00a0quelques bases parfois fragiles\u00a0et souhaitez\u00a0valider vos connaissances"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/academy-courses\/photographie-bases-completes-pour-debutants",
+            "pid": 13,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Photographie : Bases compl\u00e8tes pour d\u00e9butants",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Cette formation s'adresse \u00e0 vous si vous vous reconnaissez dans l'une des quatre cat\u00e9gories ci-dessous :<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Vous \u00eates d\u00e9butant<\/strong>\u2022<strong>e<\/strong>&nbsp;et n'avez jamais pris le temps de comprendre le fonctionnement d'un appareil photo<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vous faites d\u00e9j\u00e0 un peu de photo mais&nbsp;<strong>sans v\u00e9ritable bases th\u00e9oriques&nbsp;<\/strong>et souhaitez am\u00e9liorer vos photos<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vous \u00eates passionn\u00e9\u2022e avec avez&nbsp;<strong>quelques bases parfois fragiles<\/strong>&nbsp;et souhaitez&nbsp;<strong>valider vos connaissances<\/strong><\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vous faites de la vid\u00e9o mais n'avez&nbsp;<strong>pas de bases en photographie<\/strong>&nbsp;et cela vous freine<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>Durant cette formation, vous apprendrez \u00e0&nbsp;<strong>vous servir de votre propre appareil photo<\/strong>&nbsp;\u00e0 travers un&nbsp;<strong>programme complet<\/strong>, pens\u00e9 et structur\u00e9 dans le but de&nbsp;<strong>vous donner rapidement les outils<\/strong>&nbsp;n\u00e9cessaires \u00e0 la r\u00e9alisation de photos de plus en plus belles et pertinentes.<\/p>\r\n\r\n<p>Vous aurez l'occasion de&nbsp;<strong>mettre en pratique<\/strong>&nbsp;les notions th\u00e9oriques abord\u00e9es \u00e0 travers diff\u00e9rents&nbsp;<strong>exercices simples et efficaces&nbsp;<\/strong>afin de vous permettre de&nbsp;<strong>comprendre par vous-m\u00eame<\/strong>&nbsp;chaque notion.<\/p>\r\n\r\n<p>A la fin de cette formation vous saurez&nbsp;<strong>comment manipuler votre propre bo\u00eetier&nbsp;<\/strong>afin de le param\u00e9trer de la bonne fa\u00e7on quel que soit le sujet que vous souhaitez photographier et du rendu esth\u00e9tique que vous souhaitez obtenir.<\/p>\r\n\r\n<p>Vous comprendrez et saurez param\u00e9trer les \u00e9l\u00e9ments suivants :<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>l'exposition dans tous les modes de base<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>l'ouverture du diaphragme et la profondeur de champ<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>La vitesse d'obturation et le mouvement<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>la balance des blancs<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>le mode manuel<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>les ISO<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>les collimateurs de mise au point<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>les objectifs et leurs caract\u00e9ristiques<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>ou encore les modes de mesure<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>...<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>Nous parlerons \u00e9galement d'histoire de la photographie afin de mieux cerner l'origine et le fonctionnement d'un appareil photo.<\/p>\r\n\r\n<p><strong><em>Votre appareil photo n'attend que vous !<\/em><\/strong><\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Cette formation s'adresse \u00e0 vous si vous vous reconnaissez dans l'une des quatre cat\u00e9gories ci-dessous :<\/p>\n<ul><li>\n<p><strong>Vous \u00eates d\u00e9butant<\/strong>\u2022<strong>e<\/strong>\u00a0et n'avez jamais pris le temps de comprendre le fonctionnement d'un appareil photo<\/p>\n<\/li>\n<li>\n<p>Vous faites d\u00e9j\u00e0 un peu de photo mais\u00a0<strong>sans v\u00e9ritable bases th\u00e9oriques\u00a0<\/strong>et souhaitez am\u00e9liorer vos photos<\/p>\n<\/li>\n<li>\n<p>Vous \u00eates passionn\u00e9\u2022e avec avez\u00a0<strong>quelques bases parfois fragiles<\/strong>\u00a0et souhaitez\u00a0<strong>valider vos connaissances<\/strong><\/p>\n<\/li>\n<li>\n<p>Vous faites de la vid\u00e9o mais n'avez\u00a0<strong>pas de bases en photographie<\/strong>\u00a0et cela vous freine<\/p>\n<\/li>\n<\/ul><p>Durant cette formation, vous apprendrez \u00e0\u00a0<strong>vous servir de votre propre appareil photo<\/strong>\u00a0\u00e0 travers un\u00a0<strong>programme complet<\/strong>, pens\u00e9 et structur\u00e9 dans le but de\u00a0<strong>vous donner rapidement les outils<\/strong>\u00a0n\u00e9cessaires \u00e0 la r\u00e9alisation de photos de plus en plus belles et pertinentes.<\/p>\n<p>Vous aurez l'occasion de\u00a0<strong>mettre en pratique<\/strong>\u00a0les notions th\u00e9oriques abord\u00e9es \u00e0 travers diff\u00e9rents\u00a0<strong>exercices simples et efficaces\u00a0<\/strong>afin de vous permettre de\u00a0<strong>comprendre par vous-m\u00eame<\/strong>\u00a0chaque notion.<\/p>\n<p>A la fin de cette formation vous saurez\u00a0<strong>comment manipuler votre propre bo\u00eetier\u00a0<\/strong>afin de le param\u00e9trer de la bonne fa\u00e7on quel que soit le sujet que vous souhaitez photographier et du rendu esth\u00e9tique que vous souhaitez obtenir.<\/p>\n<p>Vous comprendrez et saurez param\u00e9trer les \u00e9l\u00e9ments suivants :<\/p>\n<ul><li>\n<p>l'exposition dans tous les modes de base<\/p>\n<\/li>\n<li>\n<p>l'ouverture du diaphragme et la profondeur de champ<\/p>\n<\/li>\n<li>\n<p>La vitesse d'obturation et le mouvement<\/p>\n<\/li>\n<li>\n<p>la balance des blancs<\/p>\n<\/li>\n<li>\n<p>le mode manuel<\/p>\n<\/li>\n<li>\n<p>les ISO<\/p>\n<\/li>\n<li>\n<p>les collimateurs de mise au point<\/p>\n<\/li>\n<li>\n<p>les objectifs et leurs caract\u00e9ristiques<\/p>\n<\/li>\n<li>\n<p>ou encore les modes de mesure<\/p>\n<\/li>\n<li>\n<p>...<\/p>\n<\/li>\n<\/ul><p>Nous parlerons \u00e9galement d'histoire de la photographie afin de mieux cerner l'origine et le fonctionnement d'un appareil photo.<\/p>\n<p><strong><em>Votre appareil photo n'attend que vous !<\/em><\/strong><\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 0,
+            "cid": 0,
+            "last_comment_timestamp": 1592823002,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_duration": [
+        {
+            "value": "3 h 30 min",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_language": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-22",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "D\u00e9couvrez ou red\u00e9couvrez les bases compl\u00e8tes de la photographie. Que vous soyez totalement d\u00e9butant ou d\u00e9j\u00e0 pratiquant.",
+            "format": "plain_text",
+            "processed": "<p>D\u00e9couvrez ou red\u00e9couvrez les bases compl\u00e8tes de la photographie. Que vous soyez totalement d\u00e9butant ou d\u00e9j\u00e0 pratiquant.<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_youtube_videos": [
+        {
+            "value": "https:\/\/www.udemy.com\/course\/apprendre-la-photo\/"
+        }
+    ]
+}

@@ -1,0 +1,320 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/jobs\/chef-de-projet-sirh?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/job_ads"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/17?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_3": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/25?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 57
+        }
+    ],
+    "uuid": [
+        {
+            "value": "924f29ce-7975-4b34-bd78-35205f77d8c1"
+        }
+    ],
+    "vid": [
+        {
+            "value": 88
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_ads"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-30T12:13:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/17?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_city"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "007b8e0d-1b21-4abd-ae2c-8b59d42902ea"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_contract"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dbbc13d2-cdf2-40c3-a53e-edb6274fdc83"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/job_ads\/field_vactory_taxonomy_3": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/25?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/job_ads_profession"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "a5b8e36e-3dc7-4f14-9108-a15d815e37cf"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "demo content"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Chef de Projet SIRH",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-30T12:10:48+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-30T12:13:19+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Chef de Projet SIRH | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/jobs\/chef-de-projet-sirh",
+                "description": "Missions :\nLe chef de projet prendra en charge l\u2019\u00e9tape de cadrage du projet de\u00a0la mise en place d\u2019un outil SIRH. Il va assurer l\u2019interface avec les filiales, l\u2019\u00e9diteur et la maitrise d\u2019\u0153uvre.\nIl sera amen\u00e9 \u00e0\u00a0:"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Chef de Projet SIRH | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/jobs\/chef-de-projet-sirh"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Missions :\nLe chef de projet prendra en charge l\u2019\u00e9tape de cadrage du projet de\u00a0la mise en place d\u2019un outil SIRH. Il va assurer l\u2019interface avec les filiales, l\u2019\u00e9diteur et la maitrise d\u2019\u0153uvre.\nIl sera amen\u00e9 \u00e0\u00a0:"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/jobs\/chef-de-projet-sirh",
+            "pid": 70,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Chef de Projet SIRH",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p><u><strong>Missions :<\/strong><\/u><\/p>\r\n\r\n<ul>\r\n\t<li>Le chef de projet prendra en charge l\u2019\u00e9tape de cadrage du projet de&nbsp;<strong>la mise en place d\u2019un outil SIRH<\/strong>. Il va assurer l\u2019interface avec les filiales, l\u2019\u00e9diteur et la maitrise d\u2019\u0153uvre.<\/li>\r\n<\/ul>\r\n\r\n<p><u>Il sera amen\u00e9 \u00e0&nbsp;:<\/u><\/p>\r\n\r\n<ul>\r\n\t<li>Fournir l\u2019expertise m\u00e9tier SIRH et gestion de paie<\/li>\r\n\t<li>Mener les ateliers de cadrage avec les filiales, l\u2019architecture et les diff\u00e9rentes parties prenantes sur les projets SIRH<\/li>\r\n\t<li>\u00c9tudier le besoin des filiales et leurs fournir le conseil et l\u2019expertise n\u00e9cessaire pour prendre les d\u00e9cisions<\/li>\r\n\t<li>Assurer la r\u00e9daction des documents projets selon la m\u00e9thodologie de gestion de projet groupe<\/li>\r\n\t<li>Analyser les contraintes techniques et identifier les solutions possibles<\/li>\r\n<\/ul>\r\n",
+            "format": "full_html",
+            "processed": "<p><u><strong>Missions :<\/strong><\/u><\/p>\n<ul><li>Le chef de projet prendra en charge l\u2019\u00e9tape de cadrage du projet de\u00a0<strong>la mise en place d\u2019un outil SIRH<\/strong>. Il va assurer l\u2019interface avec les filiales, l\u2019\u00e9diteur et la maitrise d\u2019\u0153uvre.<\/li>\n<\/ul><p><u>Il sera amen\u00e9 \u00e0\u00a0:<\/u><\/p>\n<ul><li>Fournir l\u2019expertise m\u00e9tier SIRH et gestion de paie<\/li>\n<li>Mener les ateliers de cadrage avec les filiales, l\u2019architecture et les diff\u00e9rentes parties prenantes sur les projets SIRH<\/li>\n<li>\u00c9tudier le besoin des filiales et leurs fournir le conseil et l\u2019expertise n\u00e9cessaire pour prendre les d\u00e9cisions<\/li>\n<li>Assurer la r\u00e9daction des documents projets selon la m\u00e9thodologie de gestion de projet groupe<\/li>\n<li>Analyser les contraintes techniques et identifier les solutions possibles<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_address": [
+        {
+            "value": "289 Quartier les bifidus, Casablanca",
+            "format": "plain_text",
+            "processed": "<p>289 Quartier les bifidus, Casablanca<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_description": [
+        {
+            "value": "Bonne connaissance des outils SIRH et gestion de paie\r\nExp\u00e9riences r\u00e9ussies dans l\u2019impl\u00e9mentation d\u2019outil SIRH en mode multi sites\r\nExpertise en gestion de projet d\u2019impl\u00e9mentation d\u2019outil SIRH",
+            "format": "plain_text",
+            "processed": "<p>Bonne connaissance des outils SIRH et gestion de paie<br \/>\nExp\u00e9riences r\u00e9ussies dans l\u2019impl\u00e9mentation d\u2019outil SIRH en mode multi sites<br \/>\nExpertise en gestion de projet d\u2019impl\u00e9mentation d\u2019outil SIRH<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_email": [
+        {
+            "value": "kutafuta@hotmail.com",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_telephone": [
+        {
+            "value": "0600000000",
+            "lang": "fr"
+        }
+    ]
+}
