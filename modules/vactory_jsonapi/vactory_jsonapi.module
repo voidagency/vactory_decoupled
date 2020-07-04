@@ -12,6 +12,7 @@ use Drupal\Core\Site\Settings;
 use Drupal\Core\Url;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_form_alter().
@@ -25,7 +26,7 @@ function vactory_jsonapi_form_alter(&$form, FormStateInterface $form_state, $for
   $entity = $form_object->getEntity();
   $op = $form_object->getOperation();
 
-  if (!($entity instanceof ContentEntityInterface)) {
+  if (!($entity instanceof ContentEntityInterface) || !($entity instanceof Node)) {
     return;
   }
 
@@ -33,24 +34,25 @@ function vactory_jsonapi_form_alter(&$form, FormStateInterface $form_state, $for
     unset($form['actions']['preview']);
   }
 
-  $frontend_url = Settings::get('FRONTEND_URL', FALSE);
+  $frontend_url = Settings::get('BASE_FRONTEND_URL', FALSE);
   if (!$frontend_url || empty($frontend_url)) {
     return;
   }
 
   if ($op === 'edit') {
-    $form_langcode = $form_object->getFormLangcode($form_state);
+    $siteConfig = \Drupal::config('system.site');
+    $front_uri = $siteConfig->get('page.front');
+    $nodeURL = $entity->url();
+
+    if ($front_uri === '/node/' . $entity->id()) {
+      $nodeURL = Url::fromRoute('<front>')->toString() ;
+    }
+
     $form['actions']['front_preview'] = [
       '#type' => 'link',
       '#title' => t('Preview'),
       '#weight' => 20,
-      '#url' => Url::fromUri($frontend_url, [
-        'query' => [
-          '_lng' => $form_langcode,
-          'nid' => $entity->id(),
-          'content_type' => $entity->bundle()
-        ]
-      ]),
+      '#url' => Url::fromUri($frontend_url . $nodeURL . '/__preview'),
       '#attributes' => [
         'id' => 'frontend-preview-button',
         'class' => ['action-link', 'action-link', 'action-link--icon-show'],
