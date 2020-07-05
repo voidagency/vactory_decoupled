@@ -13,6 +13,7 @@ use Drupal\Core\Url;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\node\Entity\Node;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Implements hook_form_alter().
@@ -40,28 +41,41 @@ function vactory_jsonapi_form_alter(&$form, FormStateInterface $form_state, $for
   }
 
   if ($op === 'edit') {
-    $siteConfig = \Drupal::config('system.site');
-    $front_uri = $siteConfig->get('page.front');
-    $nodeURL = $entity->url();
-
-    if ($front_uri === '/node/' . $entity->id()) {
-      $nodeURL = Url::fromRoute('<front>')->toString() ;
-    }
-
-    $form['actions']['front_preview'] = [
-      '#type' => 'link',
-      '#title' => t('Preview'),
+    // Add another option to go to the Gatsby page after saving.
+    $form['actions']['save_view_gatsby'] = [
+      '#type' => 'submit',
+      '#value' => t('Save and view page'),
+      '#submit' => ['::submitForm', '::save'],
+      '#access' => TRUE,
       '#weight' => 20,
-      '#url' => Url::fromUri($frontend_url . $nodeURL . '/__preview'),
-      '#attributes' => [
-        'id' => 'frontend-preview-button',
-        'class' => ['action-link', 'action-link', 'action-link--icon-show'],
-        'target' => '_blank'
-      ],
     ];
-    $form['#attached']['library'][] = 'vactory_jsonapi/preview_button';
+
+    // Add a submit handler to redirect to the Gatsby page.
+    $form['actions']['save_view_gatsby']['#submit'][] = 'gatsby_node_form_submit';
+  }
+}
+
+/**
+ * Submit handler for viewing the Gatsby page.
+ */
+function gatsby_node_form_submit(&$form, FormStateInterface $form_state) {
+  $path = $form_state->getValue('path');
+  $url = !empty($path[0]['alias']) ? '/' .$path[0]['langcode'] . $path[0]['alias'] : $path[0]['source'];
+  $nid = $form_state->getValue('nid');
+  $siteConfig = \Drupal::config('system.site');
+  $front_uri = $siteConfig->get('page.front');
+  $frontend_url = Settings::get('BASE_FRONTEND_URL', FALSE);
+
+  if ($front_uri === '/node/' . $nid) {
+    $url = Url::fromRoute('<front>')->toString() ;
   }
 
+  // Redirect to the alias if it exists, otherwise use the node URL.
+  if (isset($url)) {
+    $gatsby_url = Url::fromUri($frontend_url . $url . '/__preview')->toString();
+    $response = new RedirectResponse($gatsby_url);
+    $response->send();
+  }
 }
 
 /**
