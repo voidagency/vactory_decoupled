@@ -40,6 +40,18 @@ function vactory_jsonapi_form_alter(&$form, FormStateInterface $form_state, $for
     return;
   }
 
+  $type = $form_state->getFormObject()->getEntity()->bundle();
+  // @todo: make an interface for this.
+  $disabledTypes = Settings::get('PREVIEW_DISABLED_TYPES', [
+    'vactory_page_listing',
+    'vactory_government_member',
+    'vactory_banner'
+  ]);
+
+  if (in_array($type, $disabledTypes)) {
+    return;
+  }
+
   if ($op === 'edit') {
     // Add another option to go to the Gatsby page after saving.
     $form['actions']['save_view_gatsby'] = [
