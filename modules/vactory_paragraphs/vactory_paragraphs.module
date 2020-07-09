@@ -94,6 +94,19 @@ function vactory_paragraphs_entity_base_field_info(EntityTypeInterface $entity_t
         'weight'   => 45,
       ])
       ->setDisplayConfigurable('form', TRUE);
+
+    $fields['paragraph_section'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Header State'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('form', [
+        'type'     => 'string_textfield',
+        'settings' => [
+          'display_label' => TRUE,
+        ],
+        'weight'   => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE);
   }
 
   return $fields;

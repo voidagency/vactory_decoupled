@@ -23,6 +23,7 @@ third_party_settings:
         - paragraph_css_class
         - paragraph_background_color
         - paragraph_background_image
+        - paragraph_section
         - paragraph_background_parallax
       parent_name: ''
       weight: 7
@@ -78,8 +79,7 @@ content:
     type: jquery_colorpicker
     weight: 5
     region: content
-    settings:
-      color: FFFFFF
+    settings: {  }
     third_party_settings: {  }
   paragraph_background_image:
     type: media_library_widget
@@ -92,7 +92,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   paragraph_container:
@@ -117,11 +117,19 @@ content:
     weight: 1
     region: content
     third_party_settings: {  }
+  paragraph_section:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 7
+    region: content
+    third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   status: true

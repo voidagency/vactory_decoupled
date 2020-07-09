@@ -15,11 +15,11 @@ third_party_settings:
       children:
         - paragraph_container
         - paragraph_css_class
-        - paragraph_background_color
         - paragraph_background_image
+        - paragraph_background_color
         - paragraph_background_parallax
       parent_name: ''
-      weight: 5
+      weight: 7
       format_type: details
       format_settings:
         id: ''
@@ -57,10 +57,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   paragraph_background_color: true
@@ -68,4 +68,5 @@ hidden:
   paragraph_background_parallax: true
   paragraph_container: true
   paragraph_css_class: true
+  paragraph_section: true
   status: true
