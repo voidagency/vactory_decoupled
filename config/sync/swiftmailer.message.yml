@@ -1,6 +1,6 @@
-format: text/plain
+format: text/html
 filter_format: plain_text
-respect_format: true
+respect_format: false
 convert_mode: false
 character_set: UTF-8
 langcode: fr
