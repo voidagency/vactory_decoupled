@@ -59,6 +59,9 @@
             },
             "drupal/coffee": {
                 "Issue #3128583: Could not load data": "https://gist.githubusercontent.com/Bahlaouane-Hamza/64899f332eb63cb701d5ed6473aa6442/raw/e8fec693f1f462c47e3de3f8cc85fefc8628c4ce/coffee-subfolder-3128583.patch"
+            },
+            "drupal/user_registrationpassword": {
+                "#3079693: Mail body should preserve markup.": "https://www.drupal.org/files/issues/2019-09-07/3079693-mail-body-preserve-markup.patch"
             }
         }
     },
