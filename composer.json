@@ -144,6 +144,7 @@
         "drupal/swiftmailer": "^1.0@beta",
         "drupal/taxonomy_import": "^1.0",
         "drupal/token": "^1.7.0",
+        "drupal/twig_tweak": "^2.6",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/user_registrationpassword": "^1.0.0-alpha4",
         "drupal/views_bulk_edit": "^2.4",
