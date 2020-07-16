@@ -37,7 +37,9 @@
         "patches": {
             "drupal/core": {
                 "Issue #2996114: Argument 2 passed to {closure}() must be an instance of ResourceType, NULL given": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch",
-                "[regression] Impossible to filter for resources with an empty relationship object in JSON:API 2.x": "https://www.drupal.org/files/issues/2020-03-24/3025372-33.patch"
+                "[regression] Impossible to filter for resources with an empty relationship object in JSON:API 2.x": "https://www.drupal.org/files/issues/2020-03-24/3025372-33.patch",
+                "Issue#3072076: JSON:API returns a CacheableResponseInterface instance for non-cacheable methods; causes unnecessary exceptions.": "https://www.drupal.org/files/issues/2019-08-27/3072076-20.patch",
+                "Filter editor_file_reference should produce absolute URLs": "https://gist.githubusercontent.com/Bahlaouane-Hamza/fd1279d9816588f157b592cdde84603f/raw/601af98ba1f8781bd400fd191ba1b1c5464457a4/filter_editor_file_reference-use-absolute-src.patch"
             },
             "drupal/migrate_tools": {
                 "Issue #3099611: Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
@@ -49,7 +51,8 @@
                 "#2698425: Do not reimport existing entities": "https://www.drupal.org/files/issues/2020-02-05/2698425--accept-content-updates--122.patch"
             },
             "drupal/simple_oauth": {
-                "Auth revoke on profile update": "https://www.drupal.org/files/issues/simple_oauth-auth-revoke-2946882-11.patch"
+                "Auth revoke on profile update": "https://www.drupal.org/files/issues/simple_oauth-auth-revoke-2946882-11.patch",
+                "Disable status message: An external client application is requesting access - MAJ": "https://gist.githubusercontent.com/Bahlaouane-Hamza/b68ec4306bf953496c4063c8df1b8b96/raw/caa03490e55c136020ec615bef79d869b1a7721a/simple-oauth-status-message-external-client-app.patch"
             },
             "drupal/metatag": {
                 "Issue #2945817: Support JSON API, REST, GraphQL and custom normalizations": "https://www.drupal.org/files/issues/2020-02-29/2945817-93.patch"
@@ -62,6 +65,9 @@
             },
             "drupal/user_registrationpassword": {
                 "#3079693: Mail body should preserve markup.": "https://gist.githubusercontent.com/Bahlaouane-Hamza/a2e174d726c91613bd213ceb5b8fd6e4/raw/373f2fe9bc1e6c206d484ff88c654fc29da25c13/3079693-mail-body-preserve-markup.patch"
+            },
+            "drupal/entityqueue": {
+                "#3150981 Simple queue loses labels, cannot add new ones. Unusable on multi-lingual sites.": "https://www.drupal.org/files/issues/2020-06-15/remove-item-translation-3150981-10.patch"
             }
         }
     },
@@ -78,6 +84,7 @@
         "drupal/block_class": "^1.1",
         "drupal/block_field": "^1.0.0-rc1",
         "drupal/captcha": "^1.1.0",
+        "drupal/change_pwd_page": "^1.0",
         "drupal/coffee": "^1.0.0",
         "drupal/config_update": "^1.7",
         "drupal/core": "^8.8.5",
@@ -130,6 +137,7 @@
         "drupal/search_api": "^1.17.0",
         "drupal/search_api_exclude_entity": "^1.0",
         "drupal/seckit": "^1.2",
+        "drupal/simple_oauth": "^4.5",
         "drupal/simple_sitemap": "^3.7",
         "drupal/shield": "^1.4",
         "drupal/smart_trim": "^1.2",
