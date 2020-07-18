@@ -3,9 +3,129 @@ type: profile
 description: 'Vactory is an enhanced decoupled Drupal distribution with a lot of necessities.'
 core: 8.x
 
+dependencies:
+  - address
+  - admin_toolbar
+  - admin_toolbar_links_access_filter
+  - admin_toolbar_tools
+  - allowed_formats
+  - auto_entityqueue
+  - automated_cron
+  - backup_migrate
+  - better_passwords
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - coffee
+  - comment
+  - config
+  - config_translation
+  - crop
+  - change_pwd_page
+  - ctools
+  - datetime
+  - datetime_range
+  - dblog
+  - default_content
+  - dynamic_page_cache
+  - easy_install
+  - editor
+  - editor_advanced_link
+  - email_registration
+  - entityqueue
+  - features
+  - features_ui
+  - field
+  - field_group
+  - field_ui
+  - file
+  - file_entity
+  - filter
+  - focal_point
+  - hal
+  - help
+  - history
+  - image
+  - improved_multi_select
+  - jsonapi
+  - jsonapi_boost
+  - jsonapi_extras
+  - language
+  - link
+  - link_target
+  - linkit
+  - locale
+  - login_security
+  - mailsystem
+  - media
+  - media_library
+  - menu_link_attributes
+  - menu_ui
+  - metatag
+  - metatag_facebook
+  - metatag_open_graph
+  - metatag_twitter_cards
+  - nocurrent_pass
+  - node
+  - openapi
+  - openapi_jsonapi
+  - openapi_ui
+  - openapi_ui_redoc
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - recaptcha
+  - scheduler
+  - schemata
+  - schemata_json_schema
+  - search
+  - search_api
+  - search_api_db
+  - search_api_exclude_entity
+  - seckit
+  - serialization
+  - shortcut
+  - simple_sitemap
+  - simple_oauth
+  - swiftmailer
+  - system
+  - taxonomy
+  - text
+  - token
+  - toolbar
+  - twig_tweak
+  - ultimate_cron
+  - update
+  - user
+  - user_registrationpassword
+  - views_ui
+  - warmer
+  - menu_link_content
+  - pathauto
+  - content_translation
+  - views
+  - paragraphs
+
+install:
+  - vactory_core
+  - vactory_jsonapi
+  - vactory_search
+  - vactory_user
+  - vactory_page
+  - vactory_page_listing
+
+themes:
+  - stable
+  - classy
+  - claro
+  - vactory_theme
+
 distribution:
   name: Vactory Decoupled
   install:
     theme: seven
+  langcode: fr
 
-config_install: true
+keep_english: true
