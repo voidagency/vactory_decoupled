@@ -1,8 +1,34 @@
-name: vactory_jsonapi
+name: 'JSON:API'
 type: module
-description: Enhance jsonapi module to our needs.
+description: 'Enhance jsonapi module to our needs.'
 package: Vactory
 core: 8.x
 dependencies:
+  - backup_migrate
+  - captcha
+  - comment
+  - crop
+  - editor
+  - features
+  - field
+  - file_entity
+  - filter
+  - image
   - jsonapi
   - jsonapi_extras
+  - language
+  - linkit
+  - menu_link_content
+  - metatag
+  - paragraphs
+  - path_alias
+  - pathauto
+  - search
+  - search_api
+  - shortcut
+  - system
+  - taxonomy
+  - ultimate_cron
+  - vactory_core
+  - views
+version: 8.x-1.0
