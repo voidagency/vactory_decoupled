@@ -1,6 +1,5 @@
-bundle: vactory
+bundle: default
 excluded:
   - field.storage.node.field_vactory_date
   - field.storage.node.field_vactory_excerpt
   - field.storage.node.field_vactory_taxonomy_1
-required: true

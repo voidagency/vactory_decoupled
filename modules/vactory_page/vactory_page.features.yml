@@ -1,4 +1,4 @@
-bundle: vactory
+bundle: default
 excluded:
   - captcha.captcha_point.node_page_form
   - language.content_settings.paragraph.vactory_component
@@ -11,4 +11,3 @@ excluded:
   - paragraphs.paragraphs_type.vactory_component
   - paragraphs.paragraphs_type.vactory_paragraph_block
   - paragraphs.paragraphs_type.vactory_paragraph_multi_template
-required: true
