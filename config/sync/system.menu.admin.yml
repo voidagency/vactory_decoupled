@@ -1,8 +1,0 @@
-uuid: eb0686af-417b-4e36-ad9e-80e8b8d86cee
-langcode: fr
-status: true
-dependencies: {  }
-id: admin
-label: Administration
-description: 'Administrative task links'
-locked: true
