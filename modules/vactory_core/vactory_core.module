@@ -147,8 +147,8 @@ function vactory_core_form_node_form_alter(&$form, FormStateInterface $form_stat
   unset($form['sticky']);
 
   // Make revision log required.
-  // @todo: check isNew
-  if (isset($form['revision_log'])) {
+  $node = $form_state->getFormObject()->getEntity();
+  if (isset($form['revision_log']) && !$node->isNew()) {
     $form['revision_log']['widget'][0]['value']['#required'] = TRUE;
   }
 
@@ -301,19 +301,6 @@ function vactory_core_entity_base_field_info(EntityTypeInterface $entity_type) {
         'weight' => 45,
       ])
       ->setDisplayConfigurable('form', TRUE);
-
-//    $fields['paragraph_background_parallax'] = BaseFieldDefinition::create('boolean')
-//      ->setLabel(t('Activer parallax'))
-//      ->setRevisionable(TRUE)
-//      ->setTranslatable(TRUE)
-//      ->setDisplayOptions('form', [
-//        'type'     => 'boolean_checkbox',
-//        'settings' => [
-//          'display_label' => TRUE,
-//        ],
-//        'weight'   => 45,
-//      ])
-//      ->setDisplayConfigurable('form', TRUE);
 
     $fields['paragraph_section'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Header State'))

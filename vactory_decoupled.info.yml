@@ -107,6 +107,7 @@ dependencies:
   - content_translation
   - views
   - paragraphs
+  - webform
 
 install:
   - vactory_core

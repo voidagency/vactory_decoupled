@@ -122,12 +122,6 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  paragraph_background_parallax:
-    fieldName: paragraph_background_parallax
-    publicName: paragraph_background_parallax
-    enhancer:
-      id: ''
-    disabled: false
   content_translation_source:
     fieldName: content_translation_source
     publicName: content_translation_source

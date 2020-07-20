@@ -16,7 +16,6 @@ third_party_settings:
         - paragraph_css_class
         - paragraph_background_image
         - paragraph_background_color
-        - paragraph_background_parallax
       parent_name: ''
       weight: 7
       format_type: details
@@ -64,7 +63,6 @@ hidden:
   created: true
   paragraph_background_color: true
   paragraph_background_image: true
-  paragraph_background_parallax: true
   paragraph_container: true
   paragraph_css_class: true
   paragraph_section: true
