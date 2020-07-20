@@ -26,6 +26,7 @@ dependencies:
   - search
   - search_api
   - shortcut
+  - simple_oauth
   - system
   - taxonomy
   - ultimate_cron
