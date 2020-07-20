@@ -112,6 +112,7 @@ dependencies:
 install:
   - vactory_core
   - vactory_jsonapi
+  - vactory_jenkins
   - vactory_search
   - vactory_user
   - vactory_page
