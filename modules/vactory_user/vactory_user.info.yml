@@ -1,10 +1,9 @@
-name: 'User'
+name: User
 type: module
 description: 'Handle user forms & profiles.'
 package: Vactory
 core: 8.x
 dependencies:
-  - vactory_core
   - better_passwords
   - content_translation
   - email_registration
@@ -17,4 +16,5 @@ dependencies:
   - text
   - user
   - user_registrationpassword
+  - vactory_core
 version: 8.x-1.0
