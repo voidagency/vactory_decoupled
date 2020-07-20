@@ -115,6 +115,8 @@ install:
   - vactory_user
   - vactory_page
   - vactory_page_listing
+  - vactory_banner
+  - vactory_vcc
 
 themes:
   - stable
