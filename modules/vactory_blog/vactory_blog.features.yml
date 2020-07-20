@@ -1,4 +1,4 @@
-bundle: default
+bundle: vactory
 excluded:
   - language.content_settings.media.image
   - language.content_settings.taxonomy_term.tags

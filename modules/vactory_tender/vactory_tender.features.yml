@@ -1,4 +1,4 @@
-bundle: default
+bundle: vactory
 excluded:
   - field.storage.node.field_vactory_media_document
   - field.storage.node.field_vactory_name

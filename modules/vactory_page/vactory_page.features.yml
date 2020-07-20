@@ -1,4 +1,4 @@
-bundle: default
+bundle: vactory
 excluded:
   - language.content_settings.paragraph.vactory_component
   - language.content_settings.paragraph.vactory_paragraph_multi_template
