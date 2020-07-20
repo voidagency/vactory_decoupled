@@ -3,7 +3,6 @@ description: 'Provides Page content type and related configuration. Manage your 
 type: module
 core: 8.x
 dependencies:
-  - vactory_core
   - captcha
   - comment
   - content_translation
@@ -21,5 +20,6 @@ dependencies:
   - search_api_exclude_entity
   - simple_sitemap
   - user
+  - vactory_core
 version: 8.x-1.0
 package: Vactory
