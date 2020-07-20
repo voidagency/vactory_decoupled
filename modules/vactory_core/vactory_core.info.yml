@@ -5,6 +5,8 @@ package: Vactory
 core: 8.x
 dependencies:
   - backup_migrate
+  - block
+  - block_content
   - captcha
   - ckeditor
   - coffee
@@ -16,6 +18,7 @@ dependencies:
   - dblog
   - editor
   - entity_reference_revisions
+  - entityqueue
   - features
   - field
   - field_group
@@ -33,6 +36,7 @@ dependencies:
   - media
   - media_library
   - menu_link_attributes
+  - menu_link_content
   - menu_ui
   - metatag
   - node
@@ -49,6 +53,7 @@ dependencies:
   - search_api_exclude_entity
   - seckit
   - serialization
+  - shortcut
   - simple_sitemap
   - swiftmailer
   - system
