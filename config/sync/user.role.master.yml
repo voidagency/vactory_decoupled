@@ -1,9 +1,0 @@
-uuid: 92e0cc10-2669-404d-906c-719d94611d4a
-langcode: en
-status: true
-dependencies: {  }
-id: master
-label: Master
-weight: 3
-is_admin: null
-permissions: {  }

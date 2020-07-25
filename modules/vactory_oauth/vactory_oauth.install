@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for vactory_oauth.
+ */
+
+use Drupal\consumers\Entity\Consumer;
+
+/**
+ * Implements hook_install().
+ */
+function vactory_oauth_install() {
+  $consumer = Consumer::load(1);
+  if ($consumer) {
+    $consumer
+      ->set('label', 'Localhost Consumer')
+      ->set('description', 'This is the default consumer.')
+      ->set('third_party', FALSE)
+      ->set('pkce', TRUE)
+      ->set('roles', ['openid'])
+      ->set('redirect', 'http://localhost:8000/signin-callback/')
+      ->save();
+  }
+}

@@ -80,7 +80,6 @@
         "drupal/auto_entityqueue": "^1.0",
         "drupal/backup_migrate": "^4.1",
         "drupal/better_passwords": "^1.0@beta",
-        "drupal/block_blacklist": "^1.1.0",
         "drupal/block_class": "^1.1",
         "drupal/block_field": "^1.0.0-rc1",
         "drupal/captcha": "^1.1.0",
@@ -107,7 +106,6 @@
         "drupal/focal_point": "^1.4",
         "drupal/improved_multi_select": "^1.7",
         "drupal/inline_entity_form": "^1.0@RC",
-        "drupal/jquery_colorpicker": "^2.0",
         "drupal/link_attributes": "^1.10",
         "drupal/link_target": "^1.2",
         "drupal/linkit": "^4.3",
@@ -124,13 +122,10 @@
         "drupal/migrate_plus": "^5.1.0",
         "drupal/migrate_source_csv": "^3.4.0",
         "drupal/migrate_tools": "^4.5",
-        "drupal/module_filter": "^3.1",
-        "drupal/modules_weight": "^1.8",
         "drupal/nocurrent_pass": "^1.0",
         "drupal/paragraphs": "^1.12.0",
         "drupal/password_policy": "^3.0@beta",
         "drupal/pathauto": "^1.8.0",
-        "drupal/persistent_login": "^1.3.0",
         "drupal/rate": "^1.0@alpha",
         "drupal/recaptcha": "^2.5",
         "drupal/scheduler": "^1.3.0",
@@ -153,7 +148,6 @@
         "drupal/views_bulk_edit": "^2.4",
         "drupal/views_bulk_operations": "^3.6",
         "drupal/views_data_export": "^1.0@beta",
-        "drupal/viewsreference": "^1.4",
         "drupal/webform": "^5.16.0",
         "drupal/jsonapi_extras": "^3.14",
         "drupal/jsonapi_boost": "^1.0",
@@ -162,7 +156,8 @@
         "drupal/openapi_ui": "^1.0@rc",
         "drupal/openapi_ui_redoc": "^1.0@rc",
         "drupal/warmer": "^1.2.0",
-        "symfony/finder": "~3.4"
+        "symfony/finder": "~3.4",
+        "steverhoades/oauth2-openid-connect-server": "^1.2"
     },
     "config": {
         "process-timeout": 0

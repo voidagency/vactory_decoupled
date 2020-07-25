@@ -147,8 +147,28 @@ function vactory_core_form_node_form_alter(&$form, FormStateInterface $form_stat
   unset($form['sticky']);
 
   // Make revision log required.
-  if (isset($form['revision_log'])) {
+  $node = $form_state->getFormObject()->getEntity();
+  if (isset($form['revision_log']) && !$node->isNew()) {
     $form['revision_log']['widget'][0]['value']['#required'] = TRUE;
+  }
+
+  // Node CSS class.
+  $form['node_class_group'] = [
+    '#type'        => 'details',
+    '#title'       => t('CSS Class settings'),
+    '#description' => t('Assign CSS classes to the node.'),
+    '#group'       => 'advanced',
+    '#open'        => FALSE,
+    '#access'      => \Drupal::currentUser()
+      ->hasPermission('administer field css class'),
+    '#attributes'  => ['class' => ['node-class-form']],
+  ];
+  $form['node_class']['#group'] = 'node_class_group';
+  $form['node_body_class']['#group'] = 'node_class_group';
+
+  // Path field.
+  if (isset($form['path']['widget'][0])) {
+    $form['path']['widget'][0]['#open'] = FALSE;
   }
 }
 
@@ -157,6 +177,49 @@ function vactory_core_form_node_form_alter(&$form, FormStateInterface $form_stat
  */
 function vactory_core_entity_base_field_info(EntityTypeInterface $entity_type) {
   $fields = [];
+
+  if ($entity_type->id() === 'node') {
+
+    $fields['node_class'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('CSS class(es)'))
+      ->setDisplayOptions('form', [
+        'type'   => 'string_textfield',
+        'weight' => 35,
+      ])
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE)
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE);
+
+    $fields['node_summary'] = BaseFieldDefinition::create('string_long')
+      ->setLabel(t('Page description'))
+      ->setDescription(t('Briefly describe your page.'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDefaultValue('')
+      ->setRequired(TRUE)
+      ->setDisplayOptions('form', [
+        'type'     => 'string_textarea',
+        'weight'   => 1,
+        'settings' => [
+          'rows' => 4,
+        ],
+      ])
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+
+    $fields['node_body_class'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Body CSS class(es)'))
+      ->setDescription(t('Enter a set of classes (<b>separated with spaces</b>) to add it to body class attribute.'))
+      ->setDisplayOptions('form', [
+        'type'   => 'string_textfield',
+        'weight' => 36,
+      ])
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE)
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE);
+  }
 
   if ($entity_type->id() === 'block_content') {
     $fields['block_machine_name'] = BaseFieldDefinition::create('string')
@@ -171,17 +234,86 @@ function vactory_core_entity_base_field_info(EntityTypeInterface $entity_type) {
       ->addConstraint('UniqueField', []);
   }
 
-  if ($entity_type->id() === 'menu_link_content') {
-    $fields['menu_role_show_role'] = BaseFieldDefinition::create('entity_reference')
-      ->setName('menu_per_role__show_role')
-      ->setTargetEntityTypeId('menu_link_content')
-      ->setLabel(t('Roles able to see the menu link'))
-      ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
-      ->setSetting('target_type', 'user_role')
+  if ($entity_type->id() === 'paragraph') {
+
+    $fields['paragraph_identifier'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Paragraph ID'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
       ->setDisplayOptions('form', [
-        'type'   => 'options_buttons',
-        'weight' => 0,
+        'type'     => 'string_textfield',
+        'settings' => [
+          'display_label' => TRUE,
+        ],
+        'weight'   => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE);
+
+    // @See vactory_paragraphs/templates/paragraph--vactory-paragraph-block.html.twig
+    $fields['paragraph_container'] = BaseFieldDefinition::create('list_string')
+      ->setLabel(t('Width'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setRequired(TRUE)
+      ->setDefaultValue('narrow_width')
+      ->setSetting('allowed_values', [
+        'full_width'   => 'Full Width',
+        'narrow_width' => 'Narrow Width',
+        'no_container' => 'No Container',
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setDisplayOptions('form', [
+        'type'   => 'options_select',
+        'weight' => -10,
       ]);
+
+    $fields['paragraph_css_class'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('CSS class(es)'))
+      ->setDisplayOptions('form', [
+        'type'   => 'string_textfield',
+        'weight' => 35,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setTranslatable(TRUE);
+
+    $fields['paragraph_background_image'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Image'))
+      ->setDescription(t('Set a background image.'))
+      ->setSetting('target_type', 'media')
+      ->setSetting('handler_settings', ['target_bundles' => ['image' => 'image']])
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setDisplayOptions('form', [
+        'type'   => 'media_library_widget',
+        'weight' => 45,
+      ]);
+
+    $fields['paragraph_background_color'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Color'))
+      ->setDescription(t('Set a background color.'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('form', [
+        'type'   => 'string_textfield',
+        'weight' => 45,
+      ])
+      ->setDisplayConfigurable('form', TRUE);
+
+    $fields['paragraph_section'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Header State'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('form', [
+        'type'     => 'string_textfield',
+        'settings' => [
+          'display_label' => TRUE,
+        ],
+        'weight'   => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE);
   }
 
   return $fields;

@@ -1,8 +1,68 @@
-name: 'Core'
+name: Core
 type: module
 description: 'Core engine containing helpers & overrides.'
-package: Vactory Core
+package: Vactory
 core: 8.x
 dependencies:
-  - block_field
-
+  - backup_migrate
+  - block
+  - block_content
+  - captcha
+  - ckeditor
+  - coffee
+  - comment
+  - content_translation
+  - crop
+  - datetime
+  - datetime_range
+  - dblog
+  - editor
+  - entity_reference_revisions
+  - entityqueue
+  - features
+  - field
+  - field_group
+  - file
+  - file_entity
+  - filter
+  - image
+  - improved_multi_select
+  - language
+  - link
+  - linkit
+  - locale
+  - login_security
+  - mailsystem
+  - media
+  - media_library
+  - menu_link_attributes
+  - menu_link_content
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - paragraphs
+  - path
+  - path_alias
+  - pathauto
+  - recaptcha
+  - scheduler
+  - search
+  - search_api
+  - search_api_db
+  - search_api_exclude_entity
+  - seckit
+  - serialization
+  - shortcut
+  - simple_sitemap
+  - swiftmailer
+  - system
+  - taxonomy
+  - text
+  - ultimate_cron
+  - user
+  - vactory_dynamic_field
+  - vactory_dynamic_field_core_ui
+  - views
+  - warmer
+version: 8.x-1.0

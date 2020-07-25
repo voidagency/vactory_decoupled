@@ -15,3 +15,4 @@ dependencies:
   - taxonomy
   - telephone
   - vactory_google_map_field
+version: 8.x-1.0

@@ -3,6 +3,7 @@ description: 'Provides Blog type de contenu and related configuration. Gérez le
 type: module
 core: 8.x
 dependencies:
+  - vactory_core
   - content_translation
   - entityqueue
   - features

@@ -2,4 +2,3 @@ bundle: vactory
 excluded:
   - field.storage.node.field_vactory_youtube_videos
   - field.storage.node.field_vactory_media_document
-required: true

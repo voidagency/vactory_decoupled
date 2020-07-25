@@ -1,0 +1,14 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'grant simple_oauth codes'
+  - 'post comments'
+  - 'view files'
+  - 'view media'

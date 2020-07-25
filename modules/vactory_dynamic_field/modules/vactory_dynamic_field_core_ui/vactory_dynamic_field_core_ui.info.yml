@@ -1,7 +1,7 @@
 name: Vactory Dynamic Field Core UI
 type: module
 description: Wysiwyg Dynamic Field Core UI.
-package: Vactory Dynamic
+package: Vactory
 core: 8.x
 dependencies:
   - vactory_dynamic_field

@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
     - node
-    - vactory_field
+    - vactory_core
     - search_api
     - search_api_exclude_entity
   config:
@@ -36,7 +36,7 @@ field_settings:
     type: text
     dependencies:
       module:
-        - vactory_field
+        - vactory_core
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item

@@ -1,0 +1,9 @@
+name: Vactory Oauth
+type: module
+description: Enhance simple_oauth module to our needs.
+package: Vactory
+core: 8.x
+dependencies:
+  - user
+  - consumers
+  - simple_oauth

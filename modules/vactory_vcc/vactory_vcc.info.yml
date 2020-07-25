@@ -3,6 +3,7 @@ description: 'Similair content.'
 type: module
 core: 8.x
 dependencies:
+  - vactory_core
   - content_translation
   - field
   - jsonapi_extras

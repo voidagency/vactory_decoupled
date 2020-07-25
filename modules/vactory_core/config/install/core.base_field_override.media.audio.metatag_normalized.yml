@@ -1,0 +1,19 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.audio
+  module:
+    - metatag
+id: media.audio.metatag_normalized
+field_name: metatag_normalized
+entity_type: media
+bundle: audio
+label: 'Metatags normalized'
+description: 'Les balises méta de l''entité.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_normalized

@@ -21,7 +21,7 @@ function vactory_user_preprocess_page(&$variables)
   $site_config = \Drupal::config('system.site');
   $account = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
   $logo = $isRTL ? 'logo-rtl.png' : 'logo-ltr.png';
-  $logo_path = file_create_url($theme_path . '/' . $logo);
+  $logo_path = file_url_transform_relative(file_create_url($theme_path . '/' . $logo));
   $frontend_url = Settings::get('BASE_FRONTEND_URL');
 
   $variables['user'] = $account;
@@ -36,21 +36,29 @@ function vactory_user_preprocess_page(&$variables)
  */
 function vactory_user_form_alter(&$form, FormStateInterface $form_state, $form_id)
 {
-  if ($form_id === 'user_register_form') {
-    $terms_url = '';
+  $admin_route = \Drupal::service('router.admin_context')->isAdminRoute();
+  if ($form_id === 'user_register_form' && !$admin_route) {
+    $title = t("J'accepte les conditions générales d'utilisation du site");
 
     // @todo: interface settings.
     if (Settings::get('PAGE_CONDITION_GENERAL_URL')) {
-      $terms_url = Settings::get('PAGE_CONDITION_GENERAL_URL');
+      $title = t("J'accepte les <a href='@link' target='_blank'>conditions générales</a> d'utilisation du site", [
+        '@link' => Settings::get('PAGE_CONDITION_GENERAL_URL'),
+      ]);
     }
 
     $form['tos'] = [
       '#type' => 'checkbox',
-      '#title' => t("J'accepte les <a href='@link' target='_blank'>conditions générales</a> d'utilisation du site", [
-        '@link' => $terms_url,
-      ]),
+      '#title' => $title,
       '#required' => TRUE,
       '#default_value' => TRUE,
     ];
   }
+
+  if ($form_id === 'user_login_form') {
+    if (isset($form['name']['#attributes']['autofocus'])) {
+      unset($form['name']['#attributes']['autofocus']);
+    }
+  }
+
 }
