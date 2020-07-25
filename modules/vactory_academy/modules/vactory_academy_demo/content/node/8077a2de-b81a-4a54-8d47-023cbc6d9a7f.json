@@ -35,6 +35,12 @@
                 "lang": "fr"
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_paragraphs": [
+            {
+                "href": "",
+                "lang": "fr"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
             {
                 "href": "http:\/\/default\/fr\/taxonomy\/term\/8?_format=hal_json",
@@ -54,7 +60,7 @@
     ],
     "vid": [
         {
-            "value": 49
+            "value": 163
         }
     ],
     "langcode": [
@@ -70,7 +76,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-24T14:11:24+00:00",
+            "value": "2020-07-16T00:29:16+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -164,6 +170,25 @@
                 "lang": "fr"
             }
         ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_paragraphs": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f37beddb-0e6e-402a-a82c-38a6f19746c4"
+                    }
+                ],
+                "lang": "fr",
+                "target_revision_id": "52"
+            }
+        ],
         "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
             {
                 "_links": {
@@ -185,7 +210,7 @@
     },
     "revision_log": [
         {
-            "value": "edit content"
+            "value": "paragraphs"
         }
     ],
     "status": [
@@ -209,7 +234,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-24T14:11:24+00:00",
+            "value": "2020-07-16T00:29:16+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -292,6 +317,58 @@
             "lang": "fr"
         }
     ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "isifeddi",
+                "first_name": "Ilyas",
+                "last_name": "Sifeddine",
+                "profession": "Formateur",
+                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
+                "picture": {
+                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
+                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
+                    "uri": "pictures\/2020-07\/pic.png",
+                    "fid": "79",
+                    "file_name": "pic.png",
+                    "base_url": "http:\/\/default\/app-image\/"
+                }
+            },
+            "uid": {
+                "id": "1",
+                "name": "isifeddi",
+                "first_name": "Ilyas",
+                "last_name": "Sifeddine",
+                "profession": "Formateur",
+                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
+                "picture": {
+                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
+                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
+                    "uri": "pictures\/2020-07\/pic.png",
+                    "fid": "79",
+                    "file_name": "pic.png",
+                    "base_url": "http:\/\/default\/app-image\/"
+                }
+            },
+            "field_vactory_instructor": {
+                "id": "1",
+                "name": "isifeddi",
+                "first_name": "Ilyas",
+                "last_name": "Sifeddine",
+                "profession": "Formateur",
+                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
+                "picture": {
+                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
+                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
+                    "uri": "pictures\/2020-07\/pic.png",
+                    "fid": "79",
+                    "file_name": "pic.png",
+                    "base_url": "http:\/\/default\/app-image\/"
+                }
+            }
+        }
+    ],
     "content_translation_source": [
         {
             "value": "und",
@@ -352,7 +429,7 @@
     ],
     "field_vactory_youtube_videos": [
         {
-            "value": "https:\/\/www.udemy.com\/course\/apprendre-la-photo\/"
+            "value": "https:\/\/www.youtube.com\/watch?v=a6lQZaLPsr0"
         }
     ]
 }

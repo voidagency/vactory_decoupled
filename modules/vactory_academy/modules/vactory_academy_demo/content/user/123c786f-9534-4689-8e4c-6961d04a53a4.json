@@ -5,7 +5,12 @@
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-        }
+        },
+        "http:\/\/drupal.org\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "href": "http:\/\/default\/fr\/file\/79?_format=hal_json"
+            }
+        ]
     },
     "uid": [
         {
@@ -56,13 +61,13 @@
     ],
     "changed": [
         {
-            "value": "2020-06-22T10:40:23+00:00",
+            "value": "2020-07-15T08:52:19+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "access": [
         {
-            "value": "2020-06-24T15:41:41+00:00",
+            "value": "2020-07-19T22:07:16+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -113,5 +118,48 @@
             },
             "lang": "fr"
         }
-    ]
+    ],
+    "field_about": [
+        {
+            "value": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis."
+        }
+    ],
+    "field_first_name": [
+        {
+            "value": "Ilyas"
+        }
+    ],
+    "field_last_name": [
+        {
+            "value": "Sifeddine"
+        }
+    ],
+    "field_profession": [
+        {
+            "value": "Formateur"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/user\/user\/user_picture": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/file\/79?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f4d9e1ba-cdbe-47e1-a852-e82239713e57"
+                    }
+                ],
+                "alt": "",
+                "title": "",
+                "width": "1080",
+                "height": "1080"
+            }
+        ]
+    }
 }

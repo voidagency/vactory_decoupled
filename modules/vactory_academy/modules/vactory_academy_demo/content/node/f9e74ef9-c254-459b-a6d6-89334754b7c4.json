@@ -181,6 +181,42 @@
             "lang": "fr"
         }
     ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "isifeddi",
+                "first_name": "Ilyas",
+                "last_name": "Sifeddine",
+                "profession": "Formateur",
+                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
+                "picture": {
+                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
+                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
+                    "uri": "pictures\/2020-07\/pic.png",
+                    "fid": "79",
+                    "file_name": "pic.png",
+                    "base_url": "http:\/\/default\/app-image\/"
+                }
+            },
+            "uid": {
+                "id": "1",
+                "name": "isifeddi",
+                "first_name": "Ilyas",
+                "last_name": "Sifeddine",
+                "profession": "Formateur",
+                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
+                "picture": {
+                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
+                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
+                    "uri": "pictures\/2020-07\/pic.png",
+                    "fid": "79",
+                    "file_name": "pic.png",
+                    "base_url": "http:\/\/default\/app-image\/"
+                }
+            }
+        }
+    ],
     "content_translation_source": [
         {
             "value": "und",
