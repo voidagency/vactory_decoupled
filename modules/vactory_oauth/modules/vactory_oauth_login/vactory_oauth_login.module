@@ -1,0 +1,106 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Site\Settings;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+   * Implements hook_user_login().
+ */
+function vactory_oauth_login_user_login(AccountInterface $account) {
+  if (isset($account->user_is_new) && $account->user_is_new) {
+    // User is just registered.
+    vactory_oauth_login_perform_redirect('registration', $account);
+  }
+  elseif (\Drupal::service('current_route_match')
+      ->getRouteName() === 'user.reset.login') {
+    // User used an one-time login link.
+    vactory_oauth_login_perform_redirect('one-time-login', $account);
+  }
+  else {
+    vactory_oauth_login_perform_redirect('login', $account);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for user_form().
+ */
+function vactory_oauth_login_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  $form['actions']['submit']['#submit'][] = 'vactory_oauth_login_form_user_register_form_submit';
+}
+
+/**
+ * Submit handler for form 'user_form'.
+ *
+ * Performs a redirect if all of the following is true:
+ * - There is a login destination rule configured for the 'One-time login link'
+ *   trigger.
+ * - The user used an one-time login url.
+ * - The user just submitted the user profile form.
+ */
+function vactory_oauth_login_form_user_register_form_submit(array &$form, FormStateInterface $form_state) {
+  $form_state->setRedirect('user.login');
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for user_form().
+ */
+function vactory_oauth_login_form_user_form_alter(array &$form, FormStateInterface $form_state) {
+  if (isset($_GET['pass-reset-token'])) {
+    // If the query parameter 'pass-reset-token' is set, it is assumed that the
+    // user just used a one-time login url.
+    // If we add the $form_state['redirect'] here it will be overriden by
+    // \Drupal\user\Form\UserLoginForm::submitForm(). So we add a submit handler
+    // instead and will set the redirect later. Our submit handler will be
+    // executed after the execution of the submit handler of the user login
+    // form. This is because form_submit() functions are appended to the form
+    // before hook_form_alter() is invoked.
+    $form['actions']['submit']['#submit'][] = 'vactory_oauth_login_form_user_form_submit';
+  }
+}
+
+/**
+ * Submit handler for form 'user_form'.
+ *
+ * Performs a redirect if all of the following is true:
+ * - There is a login destination rule configured for the 'One-time login link'
+ *   trigger.
+ * - The user used an one-time login url.
+ * - The user just submitted the user profile form.
+ */
+function vactory_oauth_login_form_user_form_submit(array &$form, FormStateInterface $form_state) {
+  $account = $form_state->getFormObject()->getEntity();
+  vactory_oauth_login_perform_redirect('one-time-login', $account);
+}
+
+/**
+ * Evaluate rules and perform redirect.
+ *
+ * This function is intended to be used by external modules.
+ *
+ * @param string $trigger
+ *   Action of login destination rule.
+ * @param \Drupal\Core\Session\AccountInterface $account
+ *   User Account.
+ */
+function vactory_oauth_login_perform_redirect($trigger, AccountInterface $account) {
+  $roles = $account->getRoles();
+  $destination = Settings::get('BASE_FRONTEND_URL');
+
+  // Only redirect users with only 1 role (authenticated).
+  if (
+    $destination &&
+    count($roles) === 1 && in_array("authenticated", $roles)
+  ) {
+    $destination .= '/signin/';
+    $response = new RedirectResponse($destination);
+    $response->send();
+  }
+}

@@ -1,0 +1,8 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: openid
+label: OpenID
+weight: 6
+is_admin: null
+permissions: {  }

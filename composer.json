@@ -156,7 +156,8 @@
         "drupal/openapi_ui": "^1.0@rc",
         "drupal/openapi_ui_redoc": "^1.0@rc",
         "drupal/warmer": "^1.2.0",
-        "symfony/finder": "~3.4"
+        "symfony/finder": "~3.4",
+        "steverhoades/oauth2-openid-connect-server": "^1.2"
     },
     "config": {
         "process-timeout": 0

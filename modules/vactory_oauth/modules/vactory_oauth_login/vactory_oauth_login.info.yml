@@ -1,0 +1,7 @@
+name: Vactory Oauth Login
+type: module
+description: Customizes the destination the user is redirected to after login/logout/registration/one-time login.
+package: Vactory
+core: 8.x
+dependencies:
+  - vactory_oauth

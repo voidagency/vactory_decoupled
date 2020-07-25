@@ -119,6 +119,8 @@ install:
   - vactory_page_listing
   - vactory_banner
   - vactory_vcc
+  - vactory_oauth
+  - vactory_oauth_login
 
 themes:
   - stable

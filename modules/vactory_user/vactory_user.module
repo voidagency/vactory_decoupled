@@ -21,7 +21,7 @@ function vactory_user_preprocess_page(&$variables)
   $site_config = \Drupal::config('system.site');
   $account = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
   $logo = $isRTL ? 'logo-rtl.png' : 'logo-ltr.png';
-  $logo_path = file_create_url($theme_path . '/' . $logo);
+  $logo_path = file_url_transform_relative(file_create_url($theme_path . '/' . $logo));
   $frontend_url = Settings::get('BASE_FRONTEND_URL');
 
   $variables['user'] = $account;
@@ -54,4 +54,11 @@ function vactory_user_form_alter(&$form, FormStateInterface $form_state, $form_i
       '#default_value' => TRUE,
     ];
   }
+
+  if ($form_id === 'user_login_form') {
+    if (isset($form['name']['#attributes']['autofocus'])) {
+      unset($form['name']['#attributes']['autofocus']);
+    }
+  }
+
 }
