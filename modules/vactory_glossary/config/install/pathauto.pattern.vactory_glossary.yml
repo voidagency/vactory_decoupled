@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: vactory_glossary
+label: 'Pathauto Content Glossary Pattern'
+type: 'canonical_entities:node'
+pattern: '/glossary/[node:title]'
+selection_criteria:
+  5e79ae34-a23b-4d60-8a8d-71cbd969aa69:
+    id: node_type
+    bundles:
+      glossary: glossary
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5e79ae34-a23b-4d60-8a8d-71cbd969aa69
+selection_logic: and
+weight: -5
+relationships: {  }

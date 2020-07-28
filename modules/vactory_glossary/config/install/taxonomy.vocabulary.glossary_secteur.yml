@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Glossary - Secteur'
+vid: glossary_secteur
+description: 'Taxonomy for Glossary'
+weight: 0
