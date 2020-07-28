@@ -26,6 +26,7 @@ dependencies:
   - text
   - user
   - views
+  - vactory_rate
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
