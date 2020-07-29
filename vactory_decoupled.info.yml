@@ -91,7 +91,6 @@ dependencies:
   - simple_sitemap
   - social_api
   - social_auth
-  - social_auth_facebook
   - swiftmailer
   - system
   - taxonomy
