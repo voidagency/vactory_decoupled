@@ -87,8 +87,11 @@ dependencies:
   - seckit
   - serialization
   - shortcut
-  - simple_sitemap
   - simple_oauth
+  - simple_sitemap
+  - social_api
+  - social_auth
+  - social_auth_facebook
   - swiftmailer
   - system
   - taxonomy
