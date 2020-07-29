@@ -19,7 +19,7 @@
     ],
     "revision_id": [
         {
-            "value": 9
+            "value": 2
         }
     ],
     "langcode": [
@@ -67,6 +67,12 @@
         }
     ],
     "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
         {
             "value": true,
             "lang": "fr"

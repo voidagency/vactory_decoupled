@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/academy?_format=hal_json"
+            "href": "http:\/\/default\/fr\/cours?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page_listing"
@@ -30,7 +30,7 @@
     ],
     "vid": [
         {
-            "value": 59
+            "value": 4
         }
     ],
     "langcode": [
@@ -63,7 +63,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
                     }
                 ]
             }
@@ -80,7 +80,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
                     }
                 ],
                 "lang": "fr"
@@ -136,11 +136,17 @@
             "lang": "fr"
         }
     ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
     "metatag": [
         {
             "value": {
                 "title": "Cours | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/academy"
+                "canonical_url": "http:\/\/default\/fr\/cours"
             }
         }
     ],
@@ -157,15 +163,15 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/academy"
+                "href": "http:\/\/default\/fr\/cours"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/academy",
-            "pid": 23,
+            "alias": "\/cours",
+            "pid": 4,
             "langcode": "fr",
             "lang": "fr"
         }
@@ -185,35 +191,21 @@
         {
             "revision_uid": {
                 "id": "1",
-                "name": "isifeddi",
-                "first_name": "Ilyas",
-                "last_name": "Sifeddine",
-                "profession": "Formateur",
-                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
-                "picture": {
-                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
-                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
-                    "uri": "pictures\/2020-07\/pic.png",
-                    "fid": "79",
-                    "file_name": "pic.png",
-                    "base_url": "http:\/\/default\/app-image\/"
-                }
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
             },
             "uid": {
                 "id": "1",
-                "name": "isifeddi",
-                "first_name": "Ilyas",
-                "last_name": "Sifeddine",
-                "profession": "Formateur",
-                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
-                "picture": {
-                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
-                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
-                    "uri": "pictures\/2020-07\/pic.png",
-                    "fid": "79",
-                    "file_name": "pic.png",
-                    "base_url": "http:\/\/default\/app-image\/"
-                }
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
             }
         }
     ],
