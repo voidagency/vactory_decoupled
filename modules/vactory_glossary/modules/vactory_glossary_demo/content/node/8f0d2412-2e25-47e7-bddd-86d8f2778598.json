@@ -1,0 +1,255 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/ar\/glossary\/fwayd?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/glossary"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "ar"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/26?_format=hal_json",
+                "lang": "ar"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 112
+        }
+    ],
+    "uuid": [
+        {
+            "value": "8f0d2412-2e25-47e7-bddd-86d8f2778598"
+        }
+    ],
+    "vid": [
+        {
+            "value": 60
+        }
+    ],
+    "langcode": [
+        {
+            "value": "ar",
+            "lang": "ar"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "glossary"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-07-28T15:45:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
+                    }
+                ],
+                "lang": "ar"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/26?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/glossary_secteur"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "011bbfbd-3f20-4a5a-a002-7ac88081321a"
+                    }
+                ],
+                "lang": "ar"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "\u0641\u0648\u0627\u0626\u062f"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "ar"
+        }
+    ],
+    "title": [
+        {
+            "value": "\u0641\u0648\u0627\u0626\u062f",
+            "lang": "ar"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-07-28T15:34:57+00:00",
+            "lang": "ar",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-07-28T15:45:45+00:00",
+            "lang": "ar",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "ar"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "ar"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "ar"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "ar"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "\u0641\u0648\u0627\u0626\u062f | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/node\/112"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "\u0641\u0648\u0627\u0626\u062f | Vactory"
+            },
+            "lang": "ar"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/node\/112"
+            },
+            "lang": "ar"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/glossary\/fwayd",
+            "pid": 60,
+            "langcode": "ar",
+            "lang": "ar"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "\u0641\u0648\u0627\u0626\u062f",
+            "lang": "ar"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "ar"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "ar"
+        }
+    ],
+    "field_body": [
+        {
+            "value": "\u0645\u0628\u0644\u063a \u0645\u0646 \u0627\u0644\u0645\u0627\u0644 \u064a\u062d\u0635\u0644 \u0639\u0644\u064a\u0647 \u0627\u0644\u0645\u064f\u0642\u0631\u0636 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644 \u0627\u0644\u0645\u0648\u0636\u0648\u0639\u0629 \u0631\u0647\u0646 \u0625\u0634\u0627\u0631\u0629 \u0627\u0644\u0645\u0642\u062a\u0631\u0636",
+            "format": "restricted_html",
+            "processed": "<p>\u0645\u0628\u0644\u063a \u0645\u0646 \u0627\u0644\u0645\u0627\u0644 \u064a\u062d\u0635\u0644 \u0639\u0644\u064a\u0647 \u0627\u0644\u0645\u064f\u0642\u0631\u0636 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644 \u0627\u0644\u0645\u0648\u0636\u0648\u0639\u0629 \u0631\u0647\u0646 \u0625\u0634\u0627\u0631\u0629 \u0627\u0644\u0645\u0642\u062a\u0631\u0636<\/p>\n"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+name: 'Glossary - Default content demo'
+type: module
+hidden: TRUE
+description: 'Glossary default content.'
+package: Vactory
+core: 8.x
+dependencies:
+  - default_content:default_content

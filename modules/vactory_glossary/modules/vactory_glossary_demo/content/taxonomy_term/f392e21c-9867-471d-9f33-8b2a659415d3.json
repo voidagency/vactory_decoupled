@@ -1,0 +1,139 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/taxonomy\/term\/27?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/glossary_secteur"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/glossary_secteur\/parent": [
+            null
+        ]
+    },
+    "tid": [
+        {
+            "value": 27
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f392e21c-9867-471d-9f33-8b2a659415d3"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 5
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "vid": [
+        {
+            "target_id": "glossary_secteur"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2020-07-13T01:16:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "name": [
+        {
+            "value": "secteur2",
+            "lang": "fr"
+        }
+    ],
+    "weight": [
+        {
+            "value": 0
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/glossary_secteur\/parent": [
+            null
+        ]
+    },
+    "changed": [
+        {
+            "value": "2020-07-13T01:16:09+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "secteur2 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/taxonomy\/term\/27"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "secteur2 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/27"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_created": [
+        {
+            "value": "2020-07-13T01:16:09+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}
