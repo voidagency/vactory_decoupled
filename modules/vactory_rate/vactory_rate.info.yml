@@ -1,0 +1,7 @@
+name: Vactory rate
+description: Custom rating module.
+core: 8.x
+package: Vactory
+dependencies:
+  - rate
+type: module
