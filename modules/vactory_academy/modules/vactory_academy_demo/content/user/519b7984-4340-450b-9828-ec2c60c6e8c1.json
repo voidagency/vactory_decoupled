@@ -40,12 +40,12 @@
     ],
     "name": [
         {
-            "value": "sifeddine"
+            "value": "john.doe"
         }
     ],
     "mail": [
         {
-            "value": "sifeddineilyass@gmail.com"
+            "value": "john.doe@void.fr"
         }
     ],
     "timezone": [
@@ -84,7 +84,7 @@
     ],
     "init": [
         {
-            "value": "sifeddineilyass@gmail.com"
+            "value": "john.doe@void.fr"
         }
     ],
     "roles": [
@@ -103,7 +103,7 @@
             "tag": "meta",
             "attributes": {
                 "name": "title",
-                "content": "sifeddine | Vactory"
+                "content": "John Doe | Vactory"
             },
             "lang": "en"
         },
@@ -131,12 +131,12 @@
     ],
     "field_first_name": [
         {
-            "value": "ILYAS"
+            "value": "John"
         }
     ],
     "field_last_name": [
         {
-            "value": "SIFEDDINE"
+            "value": "Doe"
         }
     ],
     "field_profession": [
