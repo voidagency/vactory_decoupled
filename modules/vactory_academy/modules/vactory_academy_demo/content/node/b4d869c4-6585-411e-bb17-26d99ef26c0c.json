@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/fr\/academy\/blocs?_format=hal_json"
+            "href": "http:\/\/default\/fr\/academy-blocs?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
@@ -38,7 +38,7 @@
     ],
     "vid": [
         {
-            "value": 60
+            "value": 2
         }
     ],
     "langcode": [
@@ -71,7 +71,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
                     }
                 ]
             }
@@ -88,7 +88,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
                     }
                 ],
                 "lang": "fr"
@@ -109,7 +109,7 @@
                         "value": "e170368b-f2fe-43dd-964d-5b8ed7c20354"
                     }
                 ],
-                "target_revision_id": "9"
+                "target_revision_id": "2"
             },
             {
                 "_links": {
@@ -125,7 +125,7 @@
                         "value": "0946da49-dab8-4b9d-8ca7-ee490f32a41b"
                     }
                 ],
-                "target_revision_id": "10"
+                "target_revision_id": "3"
             }
         ]
     },
@@ -188,7 +188,7 @@
         {
             "value": {
                 "title": "Academy - Blocs | Vactory",
-                "canonical_url": "http:\/\/default\/fr\/academy\/blocs"
+                "canonical_url": "http:\/\/default\/fr\/academy-blocs"
             }
         }
     ],
@@ -205,15 +205,15 @@
             "tag": "link",
             "attributes": {
                 "rel": "canonical",
-                "href": "http:\/\/default\/fr\/academy\/blocs"
+                "href": "http:\/\/default\/fr\/academy-blocs"
             },
             "lang": "fr"
         }
     ],
     "path": [
         {
-            "alias": "\/academy\/blocs",
-            "pid": 24,
+            "alias": "\/academy-blocs",
+            "pid": 2,
             "langcode": "fr",
             "lang": "fr"
         }
@@ -233,35 +233,21 @@
         {
             "revision_uid": {
                 "id": "1",
-                "name": "isifeddi",
-                "first_name": "Ilyas",
-                "last_name": "Sifeddine",
-                "profession": "Formateur",
-                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
-                "picture": {
-                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
-                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
-                    "uri": "pictures\/2020-07\/pic.png",
-                    "fid": "79",
-                    "file_name": "pic.png",
-                    "base_url": "http:\/\/default\/app-image\/"
-                }
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
             },
             "uid": {
                 "id": "1",
-                "name": "isifeddi",
-                "first_name": "Ilyas",
-                "last_name": "Sifeddine",
-                "profession": "Formateur",
-                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
-                "picture": {
-                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic.png",
-                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic.png",
-                    "uri": "pictures\/2020-07\/pic.png",
-                    "fid": "79",
-                    "file_name": "pic.png",
-                    "base_url": "http:\/\/default\/app-image\/"
-                }
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
             }
         }
     ],
@@ -281,7 +267,7 @@
         {
             "status": 0,
             "cid": 0,
-            "last_comment_timestamp": 1592826531,
+            "last_comment_timestamp": 1593010459,
             "last_comment_name": null,
             "last_comment_uid": 1,
             "comment_count": 0,

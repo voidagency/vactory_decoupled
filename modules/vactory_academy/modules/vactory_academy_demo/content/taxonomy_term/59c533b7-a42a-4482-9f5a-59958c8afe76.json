@@ -8,12 +8,6 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/academy_themes\/parent": [
             null
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/academy_themes\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
-                "lang": "fr"
-            }
         ]
     },
     "tid": [
@@ -28,7 +22,7 @@
     ],
     "revision_id": [
         {
-            "value": 6
+            "value": 2
         }
     ],
     "langcode": [
@@ -68,24 +62,6 @@
     "_embedded": {
         "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/academy_themes\/parent": [
             null
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/taxonomy_term\/academy_themes\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
-                    }
-                ],
-                "lang": "fr"
-            }
         ]
     },
     "changed": [

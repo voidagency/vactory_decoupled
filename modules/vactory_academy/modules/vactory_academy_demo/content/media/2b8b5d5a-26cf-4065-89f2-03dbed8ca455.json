@@ -13,7 +13,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/document\/thumbnail": [
             {
-                "href": "http:\/\/default\/fr\/file\/24?_format=hal_json"
+                "href": "http:\/\/default\/fr\/file\/80?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/document\/field_media_document": [
@@ -34,7 +34,7 @@
     ],
     "vid": [
         {
-            "value": 24
+            "value": 20
         }
     ],
     "langcode": [
@@ -50,7 +50,7 @@
     ],
     "revision_created": [
         {
-            "value": "2020-06-23T14:54:35+00:00",
+            "value": "2020-07-21T14:21:52+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -72,7 +72,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
                     }
                 ]
             }
@@ -81,7 +81,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/fr\/file\/24?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/file\/80?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
@@ -89,7 +89,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "e4d7f0ad-7501-48ca-8863-9f62f19f61b4"
+                        "value": "d2b4712e-98f2-4a63-aef8-4a6273ad3856"
                     }
                 ],
                 "alt": "",
