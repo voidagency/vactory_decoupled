@@ -80,7 +80,6 @@ dependencies:
   - scheduler
   - schemata
   - schemata_json_schema
-  - search
   - search_api
   - search_api_db
   - search_api_exclude_entity
