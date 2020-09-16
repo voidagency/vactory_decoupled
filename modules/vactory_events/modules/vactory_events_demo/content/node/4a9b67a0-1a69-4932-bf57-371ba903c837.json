@@ -1,0 +1,329 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/events\/event-9?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/events"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/21\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/10?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/16?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 36
+        }
+    ],
+    "uuid": [
+        {
+            "value": "4a9b67a0-1a69-4932-bf57-371ba903c837"
+        }
+    ],
+    "vid": [
+        {
+            "value": 107
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "events"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-25T00:17:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/21\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "117326cd-96ba-49f9-bf11-893e2130b87e"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/10?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/events_category"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "01aeaf08-7790-4c55-bff3-d22a0c958483"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/events\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/16?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/events_cities"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "45050026-a9d4-4ea0-90de-cc7f8384d85f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Event 9"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Event 9",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T14:34:16+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-25T00:17:53+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Event 9 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/events\/event-9",
+                "description": "Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Event 9 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/events\/event-9"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/events\/event-9",
+            "pid": 57,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Event 9",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities. Such fees generally vary from US$1,000 to US$750,000 (or the applicable currency equivalent) per issue. In certain cases<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities. Such fees generally vary from US$1,000 to US$750,000 (or the applicable currency equivalent) per issue. In certain cases<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date_interval": [
+        {
+            "value": "1995-01-01",
+            "end_value": "2001-01-01",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": " A report providing a Fitch rating is neither a prospectus nor a substitute for the information assembled, verified and presented to investors by the issuer and its agents in connection with the sale of the securities",
+            "format": "plain_text",
+            "processed": "<p>A report providing a Fitch rating is neither a prospectus nor a substitute for the information assembled, verified and presented to investors by the issuer and its agents in connection with the sale of the securities<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

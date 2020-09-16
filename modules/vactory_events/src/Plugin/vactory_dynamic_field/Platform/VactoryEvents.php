@@ -9,7 +9,7 @@ use Drupal\vactory_dynamic_field\VactoryDynamicFieldPluginBase;
  *
  * @PlatformProvider(
  *   id = "vactory_events",
- *   title = @Translation("Core Events")
+ *   title = @Translation("Events")
  * )
  */
 class VactoryEvents extends VactoryDynamicFieldPluginBase {

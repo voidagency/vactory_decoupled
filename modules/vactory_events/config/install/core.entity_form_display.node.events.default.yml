@@ -80,6 +80,12 @@ content:
     settings:
       include_locked: true
     third_party_settings: {  }
+  node_banner:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 8
@@ -146,5 +152,15 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  vcc:
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+      match_limit: 10
+    region: content
+    weight: 37
     third_party_settings: {  }
 hidden: {  }

@@ -21,10 +21,14 @@ function vactory_events_df_jsonapi_output_alter(&$content)
   if ($content['template'] === 'vactory_events:two-columns') {
     $display_id = "block_two_columns";
   }
+  else if($content['template'] === 'vactory_events:slider') {
+    $display_id = "block_slider";
+  }
 
   if (
     $content['template'] === 'vactory_events:three-columns' ||
-    $content['template'] === 'vactory_events:two-columns'
+    $content['template'] === 'vactory_events:two-columns' ||
+    $content['template'] === 'vactory_events:slider'
   ) {
     $name = "vactory_events";
 
