@@ -3,6 +3,8 @@ status: true
 dependencies:
   module:
     - node
+  config:
+    - node.type.events
 id: events_slider
 label: 'Events - Slider'
 handler: simple
@@ -22,6 +24,6 @@ entity_settings:
       insert_front: 0
 queue_settings:
   min_size: 0
-  max_size: 1
+  max_size: 3
   act_as_queue: false
   reverse: false

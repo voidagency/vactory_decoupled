@@ -296,7 +296,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 1
+          items_per_page: 3
           offset: 0
       relationships:
         entityqueue_relationship:
