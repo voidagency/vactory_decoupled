@@ -171,6 +171,11 @@ class VactoryDynamicFieldServiceEnhancer
           $value = $image_data;
         }
 
+        // Views.
+        if ($info['type'] === 'dynamic_views' && !empty($value)) {
+          $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value);
+        }
+
       } elseif (is_array($value)) {
         // Go deeper.
         $this->applyFormatters(array_merge((array)$parent_keys, [$field_key]), $settings, $value);

@@ -11,9 +11,11 @@ fields:
     label: 'Description'
     options:
       '#format': 'basic_html'
-  taxonomy:
-    type: text
-    label: 'Theme'
+  views:
+    type: dynamic_views
+    label: 'Views'
+    options:
+      '#required': TRUE
   link:
     type: url_extended
     label: 'Lien'
