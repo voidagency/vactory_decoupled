@@ -1,10 +1,9 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_tender
     - node.type.tender
-    - webform.webform.appel_d_offre
   module:
     - webform
 id: node.tender.field_tender
