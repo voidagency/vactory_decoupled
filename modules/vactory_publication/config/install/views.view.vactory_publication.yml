@@ -1,4 +1,4 @@
-langcode: en
+langcode: fr
 status: true
 dependencies:
   config:
@@ -49,7 +49,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 2
+          items_per_page: 9
           offset: 0
       style:
         type: default
@@ -218,6 +218,25 @@ display:
         operator: AND
         groups:
           1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_list:
+    display_plugin: block
+    id: block_list
+    display_title: List
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: List
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:

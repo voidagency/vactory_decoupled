@@ -2,6 +2,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - entityqueue.entity_queue.blog_threecolumns
     - entityqueue.entity_queue.blog_twocolumns
     - node.type.blog
@@ -51,12 +52,15 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 2
+          items_per_page: 9
           offset: 0
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       fields:
         title:
           id: title
@@ -217,6 +221,25 @@ display:
         operator: AND
         groups:
           1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_list:
+    display_plugin: block
+    id: block_list
+    display_title: List
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: List
+      defaults:
+        title: false
     cache_metadata:
       max-age: -1
       contexts:
