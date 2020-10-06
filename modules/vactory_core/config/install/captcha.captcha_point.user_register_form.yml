@@ -1,0 +1,6 @@
+langcode: fr
+status: true
+dependencies: {  }
+formId: user_register_form
+captchaType: default
+label: null

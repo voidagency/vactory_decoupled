@@ -1,4 +1,0 @@
-administer vactory_paragraphs_background configuration:
-  title: 'Administer vactory_paragraphs_background configuration'
-  description: 'Optional description.'
-  restrict access: true

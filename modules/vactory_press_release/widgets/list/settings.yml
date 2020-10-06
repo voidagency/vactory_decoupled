@@ -1,0 +1,10 @@
+name: 'List'
+multiple: FALSE
+category: 'Press Release'
+enabled: TRUE
+fields:
+  views:
+    type: dynamic_views
+    label: 'Views'
+    options:
+      '#required': TRUE

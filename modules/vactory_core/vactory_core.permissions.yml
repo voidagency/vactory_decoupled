@@ -1,3 +1,13 @@
 administer blocks params:
   title: 'Administer blocks params page'
   description: 'Administer the page blocks params.'
+
+administer vactory_paragraphs_background configuration:
+  title: 'Administer vactory_paragraphs_background configuration'
+  description: 'Optional description.'
+  restrict access: true
+
+administer field css class:
+  title: 'Administer field css class'
+  description: 'Permission to Assign CSS classes to the node.'
+  restrict access: TRUE

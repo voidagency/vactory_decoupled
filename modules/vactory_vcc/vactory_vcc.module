@@ -1,0 +1,202 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeTypeInterface;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function vactory_vcc_form_node_form_alter(&$form, &$form_state, $form_id)
+{
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  $type = $form_state->getFormObject()->getEntity();
+  $node_type = NodeType::load($type->bundle());
+  $isEnabled = $node_type->getThirdPartySetting('vactory_vcc', 'enabled', false);
+
+  // VCC group.
+  $form['vcc_group'] = [
+    '#type' => 'details',
+    '#title' => t('Similar Content'),
+    '#group' => 'advanced',
+    '#open' => FALSE,
+    '#access' => $isEnabled
+  ];
+
+  $form['vcc']['#group'] = 'vcc_group';
+}
+
+/**
+ * Get content type Taxonomy as array options.
+ *
+ * @param string $content_type
+ *   The content type machine_name to search its taxonomy.
+ *
+ * @return array
+ *   Array of taxonomies related to the content type.
+ */
+function _vcc_getTaxonomyList($content_type)
+{
+  $terms = [];
+  foreach (\Drupal::service('entity_field.manager')->getFieldDefinitions('node', $content_type) as $v => $item) {
+    if ($item->getSetting("target_type") === "taxonomy_term") {
+      $field_name = $item->get('field_name');
+      foreach ($item->getSetting("handler_settings")['target_bundles'] as $key => $value) {
+        $terms[$value] = [$value, $field_name];
+      }
+    }
+  }
+  return $terms;
+}
+
+/**
+ * Get Terms of a specific Taxonomy field as array options.
+ *
+ * @param string $taxonomy_field
+ *   The target taxonomy field.
+ * @param string $content_type
+ *   The target content type.
+ *
+ * @return array
+ *   Array of terms.
+ */
+function _vcc_getTermsFromTaxonomy($taxonomy_field, $content_type)
+{
+  $tid_terms = [];
+  $taxonomy = _vcc_getTaxonomyList($content_type);
+  $storage = \Drupal::service('entity_type.manager')
+    ->getStorage("taxonomy_term")->loadTree($taxonomy[$taxonomy_field][0]);
+
+  foreach ($storage as $key => $value) {
+    $tid_terms[$value->tid] = $value->name;
+  }
+  return $tid_terms;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for \Drupal\node\NodeTypeForm.
+ *
+ * Adds vcc options to the node type form.
+ */
+function vactory_vcc_form_node_type_form_alter(&$form, FormStateInterface $form_state)
+{
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  $type = $form_state->getFormObject()->getEntity();
+
+  // Get taxonomies & terms.
+  $taxonomies_list = _vcc_getTaxonomyList($type->get('type'));
+
+  // Taxonomies.
+  $taxonomy_options = ['none' => t('-- None --')];
+  foreach ($taxonomies_list as $key => $value) {
+    $taxonomy_options[$value[1]] = $value[0];
+  }
+
+  $form['vcc'] = [
+    '#type' => 'details',
+    '#title' => t('VCC settings'),
+    '#group' => 'additional_settings',
+  ];
+
+  $form['vcc']['enabled'] = [
+    '#title' => t('Enable Cross Content'),
+    '#type' => 'checkbox',
+    '#default_value' => $type->getThirdPartySetting('vactory_vcc', 'enabled', ''),
+  ];
+
+  $form['vcc']['taxonomy'] = [
+    '#title' => t('Taxonomy'),
+    '#type' => 'select',
+    '#options' => $taxonomy_options,
+    '#description' => t('By default (None) this will return all nodes. Otherwise it will check for nodes having the same term.'),
+    '#default_value' => $type->getThirdPartySetting('vactory_vcc', 'taxonomy', 'none'),
+  ];
+
+  $form['vcc']['limit'] = [
+    '#type' => 'textfield',
+    '#title' => t('Limit'),
+    '#description' => t('Select the number of node to display'),
+    '#default_value' => $type->getThirdPartySetting('vactory_vcc', 'limit', 3),
+  ];
+
+  $form['vcc']["more_link"] = [
+    '#type' => 'textfield',
+    '#title' => t('See more Link'),
+    '#description' => t('Choose the redirection link for the more Link. e.g /node/143'),
+    '#default_value' => $type->getThirdPartySetting('vactory_vcc', 'more_link', ''),
+  ];
+
+  $form['#entity_builders'][] = 'vactory_vcc_form_node_type_form_builder';
+}
+
+/**
+ * Entity builder for the node type form with vcc options.
+ */
+function vactory_vcc_form_node_type_form_builder($entity_type, NodeTypeInterface $type, &$form, FormStateInterface $form_state)
+{
+  $type->setThirdPartySetting('vactory_vcc', 'enabled', $form_state->getValue('enabled'));
+  $type->setThirdPartySetting('vactory_vcc', 'taxonomy', $form_state->getValue('taxonomy'));
+  $type->setThirdPartySetting('vactory_vcc', 'limit', $form_state->getValue('limit'));
+  $type->setThirdPartySetting('vactory_vcc', 'more_link', $form_state->getValue('more_link'));
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function vactory_vcc_entity_base_field_info(EntityTypeInterface $entity_type)
+{
+  $fields = [];
+  if ($entity_type->id() === 'node') {
+    $fields['vcc_normalized'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('VCC Normalized'))
+      ->setDescription(t('List of nids for json api.'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_vcc\Field\InternalVCCFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+
+    $fields['vcc'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Similar content'))
+      ->setSetting('target_type', 'node')
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', FALSE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setTranslatable(FALSE)
+      ->setCardinality(BaseFieldDefinition::CARDINALITY_UNLIMITED)
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ]);
+
+  }
+  return $fields;
+}
+
+/**
+ * Implements hook_entity_bundle_field_info().
+ */
+function vactory_vcc_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions)
+{
+  if (isset($base_field_definitions['vcc'])) {
+    // Add the target bundle to the vcc field. Since each bundle
+    // should reference it's own kind.
+    $base_field_definitions['vcc']->setSetting('handler_settings', ['target_bundles' => [$bundle => $bundle]]);
+    return [
+      'vcc' => $base_field_definitions['vcc'],
+    ];
+  }
+}

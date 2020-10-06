@@ -1,0 +1,5 @@
+vactory_jenkins.settings:
+  title: 'Deployments'
+  description: 'Trigger builds to jenkins.'
+  parent: system.admin_config_services
+  route_name: vactory_jenkins.deployment_form

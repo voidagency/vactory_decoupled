@@ -5,4 +5,3 @@ excluded:
   - field.storage.node.field_vactory_fax
   - field.storage.node.field_vactory_name
   - field.storage.node.field_vactory_telephone
-required: true

@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_tender_pattern
+label: 'Pathauto Content Tender Pattern'
+type: 'canonical_entities:node'
+pattern: '/appels-offres/[node:title]'
+selection_criteria:
+  ddd337e8-06e2-4e23-aa51-f90884655375:
+    id: node_type
+    bundles:
+      tender: tender
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ddd337e8-06e2-4e23-aa51-f90884655375
+selection_logic: and
+weight: -5
+relationships: {  }

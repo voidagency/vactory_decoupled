@@ -1,0 +1,322 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/blogs\/blog-2?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/blog"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/14\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 41
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f2387e88-c0a5-489a-aee2-21dfa32c37be"
+        }
+    ],
+    "vid": [
+        {
+            "value": 77
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "blog"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-24T23:23:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/14\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "9e67a0d2-834c-4f64-a88e-d823549c80ea"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/blog_category"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b1797e68-02d8-413f-991a-f82ad0dcf92c"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b44bf8a-ad52-471b-87b2-096021ba3a21"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Blog 2"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Blog 2",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T14:56:06+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-24T23:23:45+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Blog 2 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/blogs\/blog-2",
+                "description": "Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Blog 2 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/blogs\/blog-2"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/blogs\/blog-2",
+            "pid": 62,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Blog 2",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "We have updated our Terms of Use and Privacy Policies which cover all of Fitch Group's websites. Learn more.",
+            "format": "plain_text",
+            "processed": "<p>We have updated our Terms of Use and Privacy Policies which cover all of Fitch Group&#039;s websites. Learn more.<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

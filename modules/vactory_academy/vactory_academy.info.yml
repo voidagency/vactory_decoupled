@@ -3,10 +3,12 @@ description: 'Provides Academy content type and related configuration. Manage yo
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - comment
   - content_translation
   - datetime
   - entity_reference_revisions
+  - entityqueue
   - field
   - field_group
   - jsonapi_extras
@@ -23,6 +25,8 @@ dependencies:
   - taxonomy
   - text
   - user
+  - views
+  - vactory_rate
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false

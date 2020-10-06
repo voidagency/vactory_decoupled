@@ -3,6 +3,7 @@ description: 'Provides Publication content type and related configuration. Manag
 type: module
 core: 8.x
 dependencies:
+  - allowed_formats
   - content_translation
   - datetime
   - field

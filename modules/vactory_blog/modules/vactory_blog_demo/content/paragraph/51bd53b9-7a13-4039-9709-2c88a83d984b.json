@@ -1,0 +1,127 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+        }
+    },
+    "id": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "51bd53b9-7a13-4039-9709-2c88a83d984b"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 19
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_component"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T15:06:26+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "51"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_vactory_paragraphs"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "paragraph_container": [
+        {
+            "value": "narrow_width",
+            "lang": "fr"
+        }
+    ],
+    "paragraph_background_color": [
+        {
+            "name": "",
+            "color": {
+                "hexadecimal": "#FFFFFF",
+                "rgb": {
+                    "red": 255,
+                    "green": 255,
+                    "blue": "255"
+                }
+            },
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2020-06-23T15:09:47+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_vactory_component": [
+        {
+            "widget_id": "vactory_blog:three-columns",
+            "widget_data": "[{\"title\":\"Nos 3 derni\\u00e8re Blogs\",\"description\":{\"value\":\"<p>Hello World!<\\\/p>\\r\\n\",\"format\":\"basic_html\"},\"taxonomy\":\"\",\"link\":{\"title\":\"Voir toute les Blogs\",\"url\":\"\\\/node\\\/50\",\"attributes\":{\"class\":\"\",\"id\":\"\",\"target\":\"_blank\",\"rel\":\"\"}}}]",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_title": [
+        {
+            "value": "Blogs - Three Columns",
+            "lang": "fr"
+        }
+    ]
+}

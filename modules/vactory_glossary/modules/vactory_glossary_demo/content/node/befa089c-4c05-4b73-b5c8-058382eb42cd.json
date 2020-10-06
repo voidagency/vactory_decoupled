@@ -1,0 +1,255 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/glossary\/taux-dinteret?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/glossary"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/28?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 95
+        }
+    ],
+    "uuid": [
+        {
+            "value": "befa089c-4c05-4b73-b5c8-058382eb42cd"
+        }
+    ],
+    "vid": [
+        {
+            "value": 145
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "glossary"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-07-13T10:27:01+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/glossary\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/28?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/glossary_secteur"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "7edadc0a-e9a9-444b-ac56-78d6ff1ad713"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Cr\u00e9dit personnel\r\n"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Taux d'int\u00e9r\u00eat",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-07-13T01:23:18+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-07-13T10:27:01+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Taux d'int\u00e9r\u00eat | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/glossary\/taux-dinteret"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Taux d'int\u00e9r\u00eat | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/glossary\/taux-dinteret"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/glossary\/taux-dinteret",
+            "pid": 106,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Page description\r\n",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "field_body": [
+        {
+            "value": "Le taux d\u2019int\u00e9r\u00eat correspond \u00e0 un pourcentage fix\u00e9 contractuellement sur une p\u00e9riode d\u2019un an par le pr\u00eateur pour sa r\u00e9mun\u00e9ration.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+            "format": "restricted_html",
+            "processed": "<p>Le taux d\u2019int\u00e9r\u00eat correspond \u00e0 un pourcentage fix\u00e9 contractuellement sur une p\u00e9riode d\u2019un an par le pr\u00eateur pour sa r\u00e9mun\u00e9ration.<\/p>\n"
+        }
+    ]
+}

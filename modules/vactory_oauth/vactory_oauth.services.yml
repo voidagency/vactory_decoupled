@@ -1,0 +1,39 @@
+parameters:
+  vactory_oauth.scope: 'openid'
+  vactory_oauth.claims:
+    - name
+    - preferred_username
+    - email
+    - email_verified
+    - locale
+    - updated_at
+    - first_name
+    - last_name
+    - full_name
+    - avatar
+    - name_initial
+services:
+  Drupal\vactory_oauth\OpenIdConnect\UserIdentityProvider:
+    arguments: ['@entity_type.manager']
+  OpenIDConnectServer\Entities\ClaimSetEntity:
+    arguments: ['%vactory_oauth.scope%', '%vactory_oauth.claims%']
+    private: true
+  OpenIDConnectServer\ClaimExtractor:
+    arguments: [['@OpenIDConnectServer\Entities\ClaimSetEntity']]
+  Drupal\vactory_oauth\OpenIdConnect\OpenIdConnectScopeRepository:
+    public: false
+    decorates: simple_oauth.repositories.scope
+    arguments: ['@Drupal\vactory_oauth\OpenIdConnect\OpenIdConnectScopeRepository.inner']
+  Drupal\vactory_oauth\Normalizer\UserClaimsNormalizer:
+    arguments: ['@entity_type.manager', '%vactory_oauth.claims%']
+    tags:
+      - { name: normalizer, priority: 21 }
+  oauth_redirect_response_subscriber:
+    class: Drupal\vactory_oauth\EventSubscriber\RedirectResponseSubscriber
+    arguments: ['@unrouted_url_assembler', '@router.request_context', '@session']
+    tags:
+      - { name: event_subscriber }
+  vactory_oauth.route_subscriber:
+    class: Drupal\vactory_oauth\Routing\OauthRouteSubscriber
+    tags:
+      - { name: event_subscriber }

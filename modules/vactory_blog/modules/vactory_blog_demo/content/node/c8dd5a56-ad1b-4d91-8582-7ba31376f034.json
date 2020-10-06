@@ -1,0 +1,322 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/blogs\/blog-5?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/blog"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/17\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_2": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 44
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c8dd5a56-ad1b-4d91-8582-7ba31376f034"
+        }
+    ],
+    "vid": [
+        {
+            "value": 80
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "blog"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-06-24T23:33:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0add7920-c851-456c-bf89-b57b2df44f3d"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/17\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "76bbb975-8e03-403e-8827-af40c2260fd7"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/18?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/blog_category"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b1797e68-02d8-413f-991a-f82ad0dcf92c"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/blog\/field_vactory_taxonomy_2": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/21?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2b44bf8a-ad52-471b-87b2-096021ba3a21"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "Blog 5"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Blog 5",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T14:58:50+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-24T23:33:18+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Blog 5 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/blogs\/blog-5",
+                "description": "Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https:\/\/www.fitchratings.com\/site\/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the \"non-NRSROs\") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Blog 5 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/blogs\/blog-5"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https:\/\/www.fitchratings.com\/site\/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the \"non-NRSROs\") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/blogs\/blog-5",
+            "pid": 65,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Blog 5",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "drupaluser",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https:\/\/www.fitchratings.com\/site\/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the \"non-NRSROs\") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO. However, non-NRSRO personnel may participate in determining credit ratings issued by or on behalf of the NRSRO.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https:\/\/www.fitchratings.com\/site\/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the \"non-NRSROs\") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO. However, non-NRSRO personnel may participate in determining credit ratings issued by or on behalf of the NRSRO.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3",
+            "format": "plain_text",
+            "processed": "<p>Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the &quot;NRSRO&quot;). While certain of the NRSRO&#039;s credit rating subsidiaries are listed on Item 3<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

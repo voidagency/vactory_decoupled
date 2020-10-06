@@ -1,0 +1,170 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/media\/28\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/media\/document\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/document\/thumbnail": [
+            {
+                "href": "http:\/\/default\/fr\/file\/80?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/document\/field_media_document": [
+            {
+                "href": "http:\/\/default\/fr\/file\/30?_format=hal_json"
+            }
+        ]
+    },
+    "mid": [
+        {
+            "value": 28
+        }
+    ],
+    "uuid": [
+        {
+            "value": "66f4aa12-4b93-4b03-8407-452e9a278b52"
+        }
+    ],
+    "vid": [
+        {
+            "value": 19
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "document"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2020-07-21T14:21:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/media\/document\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/document\/thumbnail": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/file\/80?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d2b4712e-98f2-4a63-aef8-4a6273ad3856"
+                    }
+                ],
+                "alt": "",
+                "title": null,
+                "width": "180",
+                "height": "180"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/media\/document\/field_media_document": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/file\/30?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "78d526b1-ff80-4c02-9f02-3ae66f685eaa"
+                    }
+                ],
+                "display": null,
+                "description": null,
+                "alt": "",
+                "title": ""
+            }
+        ]
+    },
+    "name": [
+        {
+            "value": "PR-05.06.2020_AG_VA.pdf"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T14:58:27+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-23T14:58:27+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "| Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr"
+            },
+            "lang": "fr"
+        }
+    ]
+}

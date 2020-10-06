@@ -19,7 +19,7 @@
     ],
     "revision_id": [
         {
-            "value": 1
+            "value": 17
         }
     ],
     "langcode": [
@@ -72,12 +72,6 @@
             "lang": "fr"
         }
     ],
-    "revision_translation_affected": [
-        {
-            "value": true,
-            "lang": "fr"
-        }
-    ],
     "paragraph_container": [
         {
             "value": "narrow_width",
@@ -95,12 +89,6 @@
                     "blue": "255"
                 }
             },
-            "lang": "fr"
-        }
-    ],
-    "paragraph_background_parallax": [
-        {
-            "value": false,
             "lang": "fr"
         }
     ],

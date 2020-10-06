@@ -7,12 +7,40 @@
 
 use Drupal\vactory_decoupled\Plugin\Contenta\OptionalModule\AbstractOptionalModule;
 use Drupal\Core\Serialization\Yaml;
+use Drupal\language\Entity\ConfigurableLanguage;
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function vactory_decoupled_form_alter(&$form, &$form_state, $form_id)
+{
+  switch ($form_id) {
+    case 'install_configure_form':
+
+      // Pre-populate site email address.
+      $form['site_information']['site_name']['#default_value'] = 'Vactory';
+      $form['site_information']['site_mail']['#default_value'] = 'admin@void.fr';
+
+      // Pre-populate username.
+      $form['admin_account']['account']['name']['#default_value'] = 'admin';
+
+      // Pre-populate admin email.
+      $form['admin_account']['account']['mail']['#default_value'] = 'admin@void.fr';
+
+      // Disable notifications.
+      $form['update_notifications']['update_status_module']['#default_value'][1] = 0;
+      break;
+  }
+}
 
 /**
  * Implements hook_install_tasks_alter().
  */
 function vactory_decoupled_install_tasks_alter(&$tasks, $install_state)
 {
+//  $tasks['install_select_language']['display'] = FALSE;
+//  $tasks['install_select_language']['run'] = INSTALL_TASK_SKIP;
   $tasks['install_finished']['function'] = 'vactory_decoupled_after_install_finished';
 }
 
@@ -21,9 +49,21 @@ function vactory_decoupled_install_tasks_alter(&$tasks, $install_state)
  */
 function vactory_decoupled_install_tasks(&$install_state)
 {
-  $tasks['_vactory_decoupled_enable_cors'] = [
-    'display_name' => t('Enable CORS by default'),
+//  $tasks['_vactory_decoupled_enable_cors'] = [
+//    'display_name' => t('Enable CORS by default'),
+//  ];
+
+  $tasks['vactory_decoupled_configure_multilingual'] = [
+    'display_name' => t('Configure multilingual'),
+    'display' => TRUE,
+    'type' => 'batch',
   ];
+
+//  $tasks['vactory_decoupled_install_core_modules'] = [
+//    'display_name' => t('Install core modules'),
+//    'display' => TRUE,
+//    'type' => 'batch',
+//  ];
 
   $tasks['vactory_decoupled_module_configure_form'] = [
     'display_name' => t('Configure additional modules'),
@@ -38,8 +78,98 @@ function vactory_decoupled_install_tasks(&$install_state)
   return $tasks;
 }
 
+
+function vactory_decoupled_install_core_modules(array &$install_state)
+{
+  $batch = [
+    'title' => 'Install profile modules',
+    'operations' => [],
+    'error_message' => t('The installation has encountered an error.'),
+  ];
+
+  $modules = [
+    'vactory_user' => 'User'
+  ];
+  $files = \Drupal::service('extension.list.module')->getList();
+
+  // Always install required modules first. Respect the dependencies between
+  // the modules.
+  $required = [];
+  $non_required = [];
+
+  // Add modules that other modules depend on.
+  foreach ($modules as $module) {
+    if ($files[$module]->requires) {
+      $modules = array_merge($modules, array_keys($files[$module]->requires));
+    }
+  }
+  $modules = array_unique($modules);
+  foreach ($modules as $module) {
+    if (!empty($files[$module]->info['required'])) {
+      $required[$module] = $files[$module]->sort;
+    }
+    else {
+      $non_required[$module] = $files[$module]->sort;
+    }
+  }
+  arsort($required);
+  arsort($non_required);
+
+  foreach ($required + $non_required as $module => $weight) {
+    $batch['operations'][] = [
+      'vactory_install_module',
+      [$module, $files[$module]->info['name']],
+    ];
+  }
+
+  return $batch;
+}
+
+function vactory_install_module($module, $module_name, &$context)
+{
+  \Drupal::service('module_installer')->install([$module], FALSE);
+  $context['results'][] = $module;
+  $context['message'] = t('Installed %module module.', ['%module' => $module_name]);
+}
+
 /**
- * Installs the contenta_jsonapi modules.
+ * Batch job to configure multilingual components.
+ *
+ * @param array $install_state
+ *   The current install state.
+ *
+ * @return array
+ *   The batch job definition.
+ */
+function vactory_decoupled_configure_multilingual(array &$install_state)
+{
+  $batch = [];
+
+  // Add all selected languages.
+  foreach (['ar'] as $language_code) {
+    $batch['operations'][] = [
+      'vactory_configure_language_and_fetch_traslation',
+      (array)$language_code,
+    ];
+  }
+
+  return $batch;
+}
+
+
+/**
+ * Batch function to add selected languages then fetch all translation.
+ *
+ * @param string|array $language_code
+ *   Language code to install and fetch all translation.
+ */
+function vactory_configure_language_and_fetch_traslation($language_code)
+{
+  ConfigurableLanguage::createFromLangcode($language_code)->save();
+}
+
+/**
+ * Installs the vactory_decoupled modules.
  *
  * @param array $install_state
  *   The install state.

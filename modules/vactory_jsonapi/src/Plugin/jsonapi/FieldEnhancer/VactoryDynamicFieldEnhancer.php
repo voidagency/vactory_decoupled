@@ -204,6 +204,11 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
           $value = $image_data;
         }
 
+        // Views.
+        if ($info['type'] === 'dynamic_views' && !empty($value)) {
+          $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value);
+        }
+
       }
       elseif (is_array($value)) {
         // Go deeper.

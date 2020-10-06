@@ -1,0 +1,4 @@
+vactory_jenkins.admin_settings_tab:
+  route_name: vactory_jenkins.deployment_form
+  title: Deployments
+  base_route: vactory_jenkins.deployment_form

@@ -22,4 +22,3 @@ excluded:
   - core.base_field_override.taxonomy_term.tags.status
   - media.type.image
   - taxonomy.vocabulary.tags
-required: true

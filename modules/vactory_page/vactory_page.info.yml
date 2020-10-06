@@ -18,6 +18,8 @@ dependencies:
   - scheduler
   - search
   - search_api_exclude_entity
+  - simple_sitemap
   - user
+  - vactory_core
 version: 8.x-1.0
 package: Vactory

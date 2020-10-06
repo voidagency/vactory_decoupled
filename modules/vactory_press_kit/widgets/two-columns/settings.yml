@@ -1,0 +1,21 @@
+name: 'Two Columns'
+multiple: FALSE
+category: 'Press Kit'
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: 'Description'
+    options:
+      '#format': 'basic_html'
+  views:
+    type: dynamic_views
+    label: 'Views'
+    options:
+      '#required': TRUE
+  link:
+    type: url_extended
+    label: 'Lien'

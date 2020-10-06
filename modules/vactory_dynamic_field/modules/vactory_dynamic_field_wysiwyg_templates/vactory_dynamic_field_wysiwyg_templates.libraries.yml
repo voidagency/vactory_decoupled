@@ -1,6 +1,0 @@
-widget7:
-  js:
-    js/widget7.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupalSettings

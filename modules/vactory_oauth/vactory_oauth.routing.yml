@@ -1,0 +1,23 @@
+vactory_oauth.openid-jwks:
+  path: '/.well-known/openid-jwks'
+  defaults:
+    _controller: 'Drupal\vactory_oauth\Controller\WellKnownController::jwksEndpoint'
+  requirements:
+    _permission: 'access content'
+vactory_oauth.openid-configuration:
+  path: '/.well-known/openid-configuration'
+  defaults:
+    _controller: 'Drupal\vactory_oauth\Controller\WellKnownController::openidDiscovery'
+  requirements:
+    _permission: 'access content'
+vactory_oauth.userinfo:
+  path: '/userinfo'
+  defaults:
+    _controller: Drupal\vactory_oauth\Controller\UserInfo::handle
+    _title: 'OpenID Connect User Info'
+  methods: [GET]
+  requirements:
+    _role: 'authenticated'
+  options:
+    _auth: ['oauth2']
+    no_cache: TRUE

@@ -1,0 +1,421 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/academy-courses\/nodejs-expressjs-jwt-et-mongoose-par-la-pratique?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/academy"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "href": "http:\/\/default\/en\/user\/7?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "href": "http:\/\/default\/fr\/media\/30\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "href": "http:\/\/default\/fr\/media\/50\/edit?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_paragraphs": [
+            {
+                "href": "",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/7?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 19
+        }
+    ],
+    "uuid": [
+        {
+            "value": "477bd9d1-ed05-4a68-be41-b53b782c9a42"
+        }
+    ],
+    "vid": [
+        {
+            "value": 72
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "academy"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-07-29T15:35:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ce4955ad-46f8-48e4-92ec-42e6db969382"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_instructor": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/en\/user\/7?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "519b7984-4340-450b-9828-ec2c60c6e8c1"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_document": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/30\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/document"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_media_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/media\/50\/edit?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/media\/image"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b73bbb16-f84a-4d80-8b36-568aab8ab640"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_paragraphs": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "4706aeaf-ebdb-4b5e-a4e9-22d16fcf5dce"
+                    }
+                ],
+                "lang": "fr",
+                "target_revision_id": "16"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/academy\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/7?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/academy_themes"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "001d6150-efc4-4396-9007-70e3272eee57"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "instructor"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Node.js - Express.js - JWT et Mongoose par la pratique",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-22T10:59:09+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-07-29T15:35:49+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Node.js - Express.js - JWT et Mongoose par la pratique | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/academy-courses\/nodejs-expressjs-jwt-et-mongoose-par-la-pratique",
+                "description": "Dans ce cours, vous allez apprendre \u00e0 cr\u00e9er une application web \u00e0 l'aide Node.js et du framework Express.js.\u00a0"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Node.js - Express.js - JWT et Mongoose par la pratique | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/academy-courses\/nodejs-expressjs-jwt-et-mongoose-par-la-pratique"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Dans ce cours, vous allez apprendre \u00e0 cr\u00e9er une application web \u00e0 l'aide Node.js et du framework Express.js.\u00a0"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/academy-courses\/nodejs-expressjs-jwt-et-mongoose-par-la-pratique",
+            "pid": 6,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Node.js - Express.js - JWT et Mongoose par la pratique",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "ilyas",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_vactory_instructor": {
+                "id": "7",
+                "name": "sifeddine",
+                "first_name": "ILYAS",
+                "last_name": "SIFEDDINE",
+                "profession": "Formateur",
+                "about": "Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.",
+                "picture": {
+                    "_default": "http:\/\/default\/sites\/default\/files\/pictures\/2020-07\/pic%20%281%29.jpg",
+                    "_lqip": "http:\/\/default\/sites\/default\/files\/styles\/lqip\/public\/pictures\/2020-07\/pic%20%281%29.jpg",
+                    "uri": "pictures\/2020-07\/pic (1).jpg",
+                    "fid": "81",
+                    "file_name": "pic (1).jpg",
+                    "base_url": "http:\/\/default\/app-image\/"
+                }
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Dans ce cours, vous allez apprendre \u00e0 cr\u00e9er une application web \u00e0 l'aide Node.js et du framework Express.js.&nbsp;<\/p>\r\n\r\n<p>Concr\u00e8tement, vous apprendrez \u00e0 :<br \/>\r\n- cr\u00e9er une application web en quelques minutes<br \/>\r\n- comprendre les requ\u00eates que votre serveur recevra et les r\u00e9ponses qu'il enverra<br \/>\r\n- lire les param\u00e8tres pass\u00e9s dans une URL<br \/>\r\n- g\u00e9rer l'envoi de fichiers statiques&nbsp;<br \/>\r\n- utiliser un template et des \"partials\" afin de cr\u00e9er des vues<br \/>\r\n- passer des donn\u00e9es d'Express vers vos templates&nbsp;<br \/>\r\n- r\u00e9cup\u00e9rer les donn\u00e9es post\u00e9es via un formulaire<br \/>\r\n- utiliser fetch() pour poster un formulaire en AJAX<br \/>\r\n- comprendre et utiliser XMLHttpRequest lorsque vous \u00eates contraint de supporter les clients plus anciens (Internet Explorer ...)<br \/>\r\n- consommer une v\u00e9ritable API RESTful accessible publiquement (The Movie DB) afin d'acqu\u00e9rir un savoir faire qui vous servira avec de nombreuses autres APIs<br \/>\r\n- int\u00e9grer les r\u00e9sultats retourn\u00e9s par l'API dans un template en recourant uniquement \u00e0 JavaScript, afin de progresser en JavaScript \"pur\" dans sa version ES6<\/p>\r\n\r\n<p>- s\u00e9curiser vos \u00e9changes \u00e0 l'aide de JWT (mise en ligne en avril&nbsp;2017)<\/p>\r\n\r\n<p>- l'ODM (Object Document Mapper) Mongoose, qui vous permettra de persister, lire, modifier et supprimer vos donn\u00e9es dans une base MongoDB (10 vid\u00e9os ajout\u00e9es en avril 2017, 7 ajout\u00e9es en mai 2017)<br \/>\r\n- JSON Web Token (JWT) (13 vid\u00e9os&nbsp;ajout\u00e9es en avril 2017)<br \/>\r\n- les tests \u00e0 l'aide de Supertest et Mocha (prochainement)<\/p>\r\n\r\n<p>Un repo&nbsp;github comportant tout le code source est \u00e9galement fourni avec ce cours.<\/p>\r\n\r\n<p>R\u00e9investissez vos connaissances JavaScript acquises c\u00f4t\u00e9 Front dans le d\u00e9veloppement Back. M\u00eame si vous vous destinez uniquement au d\u00e9veloppement Front, comprendre la partie &nbsp;Backend&nbsp;vous permettra de collaborer plus efficacement avec un d\u00e9veloppeur Back et donc de mener \u00e0 bien vos projets.<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>Dans ce cours, vous allez apprendre \u00e0 cr\u00e9er une application web \u00e0 l'aide Node.js et du framework Express.js.\u00a0<\/p>\n<p>Concr\u00e8tement, vous apprendrez \u00e0 :<br \/>\n- cr\u00e9er une application web en quelques minutes<br \/>\n- comprendre les requ\u00eates que votre serveur recevra et les r\u00e9ponses qu'il enverra<br \/>\n- lire les param\u00e8tres pass\u00e9s dans une URL<br \/>\n- g\u00e9rer l'envoi de fichiers statiques\u00a0<br \/>\n- utiliser un template et des \"partials\" afin de cr\u00e9er des vues<br \/>\n- passer des donn\u00e9es d'Express vers vos templates\u00a0<br \/>\n- r\u00e9cup\u00e9rer les donn\u00e9es post\u00e9es via un formulaire<br \/>\n- utiliser fetch() pour poster un formulaire en AJAX<br \/>\n- comprendre et utiliser XMLHttpRequest lorsque vous \u00eates contraint de supporter les clients plus anciens (Internet Explorer ...)<br \/>\n- consommer une v\u00e9ritable API RESTful accessible publiquement (The Movie DB) afin d'acqu\u00e9rir un savoir faire qui vous servira avec de nombreuses autres APIs<br \/>\n- int\u00e9grer les r\u00e9sultats retourn\u00e9s par l'API dans un template en recourant uniquement \u00e0 JavaScript, afin de progresser en JavaScript \"pur\" dans sa version ES6<\/p>\n<p>- s\u00e9curiser vos \u00e9changes \u00e0 l'aide de JWT (mise en ligne en avril\u00a02017)<\/p>\n<p>- l'ODM (Object Document Mapper) Mongoose, qui vous permettra de persister, lire, modifier et supprimer vos donn\u00e9es dans une base MongoDB (10 vid\u00e9os ajout\u00e9es en avril 2017, 7 ajout\u00e9es en mai 2017)<br \/>\n- JSON Web Token (JWT) (13 vid\u00e9os\u00a0ajout\u00e9es en avril 2017)<br \/>\n- les tests \u00e0 l'aide de Supertest et Mocha (prochainement)<\/p>\n<p>Un repo\u00a0github comportant tout le code source est \u00e9galement fourni avec ce cours.<\/p>\n<p>R\u00e9investissez vos connaissances JavaScript acquises c\u00f4t\u00e9 Front dans le d\u00e9veloppement Back. M\u00eame si vous vous destinez uniquement au d\u00e9veloppement Front, comprendre la partie \u00a0Backend\u00a0vous permettra de collaborer plus efficacement avec un d\u00e9veloppeur Back et donc de mener \u00e0 bien vos projets.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 0,
+            "cid": 0,
+            "last_comment_timestamp": 1594941392,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_duration": [
+        {
+            "value": "6 h",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_academy_language": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_date": [
+        {
+            "value": "2020-06-27",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Devenir op\u00e9rationnel rapidement en d\u00e9veloppement JavaScript c\u00f4t\u00e9 Backend en apprenant Node.js Express.js JWT Mongoose",
+            "format": "plain_text",
+            "processed": "<p>Devenir op\u00e9rationnel rapidement en d\u00e9veloppement JavaScript c\u00f4t\u00e9 Backend en apprenant Node.js Express.js JWT Mongoose<\/p>\n",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_youtube_videos": [
+        {
+            "value": "https:\/\/www.youtube.com\/watch?v=L72fhGm1tfE"
+        }
+    ]
+}

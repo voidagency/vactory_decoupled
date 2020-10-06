@@ -8,12 +8,12 @@
         },
         "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/revision_uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/node\/vactory_news\/uid": [
             {
-                "href": "http:\/\/default\/en\/user\/1?_format=hal_json",
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
                 "lang": "fr"
             }
         ],
@@ -41,7 +41,7 @@
     ],
     "vid": [
         {
-            "value": 2
+            "value": 99
         }
     ],
     "langcode": [
@@ -57,7 +57,7 @@
     ],
     "revision_timestamp": [
         {
-            "value": "2020-06-17T20:29:29+00:00",
+            "value": "2020-07-01T17:58:41+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -66,7 +66,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -74,7 +74,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ]
             }
@@ -83,7 +83,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/en\/user\/1?_format=hal_json"
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
@@ -91,7 +91,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d7501914-4ca1-4f93-8af1-35bef377bbb2"
+                        "value": "123c786f-9534-4689-8e4c-6961d04a53a4"
                     }
                 ],
                 "lang": "fr"
@@ -133,6 +133,11 @@
             }
         ]
     },
+    "revision_log": [
+        {
+            "value": "edit content"
+        }
+    ],
     "status": [
         {
             "value": true,
@@ -154,7 +159,7 @@
     ],
     "changed": [
         {
-            "value": "2020-06-17T20:29:29+00:00",
+            "value": "2020-07-01T17:58:41+00:00",
             "lang": "fr",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -188,14 +193,40 @@
             "value": {
                 "title": "News 2 | Vactory",
                 "canonical_url": "http:\/\/default\/fr\/news\/news-2",
-                "description": "Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal."
+                "description": "<p>Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.<\/p>"
             }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "News 2 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/news\/news-2"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "<p>Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.<\/p>"
+            },
+            "lang": "fr"
         }
     ],
     "path": [
         {
             "alias": "\/news\/news-2",
-            "pid": 2,
+            "pid": 12,
             "langcode": "fr",
             "lang": "fr"
         }
@@ -225,9 +256,9 @@
     ],
     "body": [
         {
-            "value": "<p>Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.<\/p>\r\n\r\n<p>Raw denim put a bird on it master cleanse health goth, taiyaki succulents unicorn. Selvage flexitarian slow-carb banh mi farm-to-table kinfolk 3 wolf moon food truck hammock fam knausgaard air plant shaman. Fingerstache tattooed offal +1. Offal craft beer readymade, prism cloud bread intelligentsia distillery live-edge tofu echo park thundercats neutra fingerstache kinfolk. YOLO woke pok pok raw denim letterpress fam succulents sriracha 90's enamel pin salvia schlitz brooklyn.<\/p>\r\n\r\n<p>Chicharrones vinyl craft beer freegan kitsch direct trade knausgaard shaman XOXO +1. Blog kitsch activated charcoal leggings, paleo tousled occupy everyday carry succulents vaporware adaptogen master cleanse meggings blue bottle biodiesel. Echo park readymade ramps, mixtape chicharrones cornhole wayfarers raclette paleo coloring book. Salvia knausgaard beard cronut hot chicken. Neutra lo-fi locavore, coloring book ennui organic polaroid farm-to-table biodiesel.<\/p>\r\n\r\n<p>La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.<\/p>\r\n\r\n<p>Keffiyeh thundercats cardigan trust fund beard hexagon. Synth organic sartorial meditation ramps cornhole, live-edge cred authentic stumptown selvage you probably haven't heard of them blue bottle kickstarter. Viral keffiyeh master cleanse man braid cronut selfies thundercats twee kickstarter bushwick 8-bit ethical pork belly. Ramps readymade shaman, mlkshk plaid cold-pressed iPhone hella sriracha art party hoodie trust fund jianbing. Celiac tousled dreamcatcher, art party vaporware 90's live-edge iceland la croix literally aesthetic mixtape prism 8-bit cold-pressed.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Dummy text? More like dummy thicc text, amirite?<\/p>\r\n",
-            "format": "basic_html",
-            "processed": "<p>Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.<\/p>\n<p>Raw denim put a bird on it master cleanse health goth, taiyaki succulents unicorn. Selvage flexitarian slow-carb banh mi farm-to-table kinfolk 3 wolf moon food truck hammock fam knausgaard air plant shaman. Fingerstache tattooed offal +1. Offal craft beer readymade, prism cloud bread intelligentsia distillery live-edge tofu echo park thundercats neutra fingerstache kinfolk. YOLO woke pok pok raw denim letterpress fam succulents sriracha 90's enamel pin salvia schlitz brooklyn.<\/p>\n<p>Chicharrones vinyl craft beer freegan kitsch direct trade knausgaard shaman XOXO +1. Blog kitsch activated charcoal leggings, paleo tousled occupy everyday carry succulents vaporware adaptogen master cleanse meggings blue bottle biodiesel. Echo park readymade ramps, mixtape chicharrones cornhole wayfarers raclette paleo coloring book. Salvia knausgaard beard cronut hot chicken. Neutra lo-fi locavore, coloring book ennui organic polaroid farm-to-table biodiesel.<\/p>\n<p>La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.<\/p>\n<p>Keffiyeh thundercats cardigan trust fund beard hexagon. Synth organic sartorial meditation ramps cornhole, live-edge cred authentic stumptown selvage you probably haven't heard of them blue bottle kickstarter. Viral keffiyeh master cleanse man braid cronut selfies thundercats twee kickstarter bushwick 8-bit ethical pork belly. Ramps readymade shaman, mlkshk plaid cold-pressed iPhone hella sriracha art party hoodie trust fund jianbing. Celiac tousled dreamcatcher, art party vaporware 90's live-edge iceland la croix literally aesthetic mixtape prism 8-bit cold-pressed.<\/p>\n<p>\u00a0<\/p>\n<p>Dummy text? More like dummy thicc text, amirite?<\/p>\n",
+            "value": "<p>&lt;p&gt;Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Raw denim put a bird on it master cleanse health goth, taiyaki succulents unicorn. Selvage flexitarian slow-carb banh mi farm-to-table kinfolk 3 wolf moon food truck hammock fam knausgaard air plant shaman. Fingerstache tattooed offal +1. Offal craft beer readymade, prism cloud bread intelligentsia distillery live-edge tofu echo park thundercats neutra fingerstache kinfolk. YOLO woke pok pok raw denim letterpress fam succulents sriracha 90's enamel pin salvia schlitz brooklyn.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Chicharrones vinyl craft beer freegan kitsch direct trade knausgaard shaman XOXO +1. Blog kitsch activated charcoal leggings, paleo tousled occupy everyday carry succulents vaporware adaptogen master cleanse meggings blue bottle biodiesel. Echo park readymade ramps, mixtape chicharrones cornhole wayfarers raclette paleo coloring book. Salvia knausgaard beard cronut hot chicken. Neutra lo-fi locavore, coloring book ennui organic polaroid farm-to-table biodiesel.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Keffiyeh thundercats cardigan trust fund beard hexagon. Synth organic sartorial meditation ramps cornhole, live-edge cred authentic stumptown selvage you probably haven't heard of them blue bottle kickstarter. Viral keffiyeh master cleanse man braid cronut selfies thundercats twee kickstarter bushwick 8-bit ethical pork belly. Ramps readymade shaman, mlkshk plaid cold-pressed iPhone hella sriracha art party hoodie trust fund jianbing. Celiac tousled dreamcatcher, art party vaporware 90's live-edge iceland la croix literally aesthetic mixtape prism 8-bit cold-pressed.&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;&amp;nbsp;&lt;\/p&gt;<\/p>\r\n\r\n<p>&lt;p&gt;Dummy text? More like dummy thicc text, amirite?&lt;\/p&gt;<\/p>\r\n",
+            "format": "full_html",
+            "processed": "<p>&lt;p&gt;Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Raw denim put a bird on it master cleanse health goth, taiyaki succulents unicorn. Selvage flexitarian slow-carb banh mi farm-to-table kinfolk 3 wolf moon food truck hammock fam knausgaard air plant shaman. Fingerstache tattooed offal +1. Offal craft beer readymade, prism cloud bread intelligentsia distillery live-edge tofu echo park thundercats neutra fingerstache kinfolk. YOLO woke pok pok raw denim letterpress fam succulents sriracha 90's enamel pin salvia schlitz brooklyn.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Chicharrones vinyl craft beer freegan kitsch direct trade knausgaard shaman XOXO +1. Blog kitsch activated charcoal leggings, paleo tousled occupy everyday carry succulents vaporware adaptogen master cleanse meggings blue bottle biodiesel. Echo park readymade ramps, mixtape chicharrones cornhole wayfarers raclette paleo coloring book. Salvia knausgaard beard cronut hot chicken. Neutra lo-fi locavore, coloring book ennui organic polaroid farm-to-table biodiesel.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Keffiyeh thundercats cardigan trust fund beard hexagon. Synth organic sartorial meditation ramps cornhole, live-edge cred authentic stumptown selvage you probably haven't heard of them blue bottle kickstarter. Viral keffiyeh master cleanse man braid cronut selfies thundercats twee kickstarter bushwick 8-bit ethical pork belly. Ramps readymade shaman, mlkshk plaid cold-pressed iPhone hella sriracha art party hoodie trust fund jianbing. Celiac tousled dreamcatcher, art party vaporware 90's live-edge iceland la croix literally aesthetic mixtape prism 8-bit cold-pressed.&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;&amp;nbsp;&lt;\/p&gt;<\/p>\n<p>&lt;p&gt;Dummy text? More like dummy thicc text, amirite?&lt;\/p&gt;<\/p>\n",
             "summary": "",
             "lang": "fr"
         }
@@ -240,8 +271,8 @@
     ],
     "field_vactory_excerpt": [
         {
-            "value": "<p>La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.<\/p>\r\n",
-            "format": "basic_html",
+            "value": "La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.\r\n",
+            "format": "plain_text",
             "processed": "<p>La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.<\/p>\n",
             "lang": "fr"
         }
