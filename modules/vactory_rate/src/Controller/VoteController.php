@@ -184,9 +184,24 @@ class VoteController extends ControllerBase implements ContainerInjectionInterfa
    */
   public function results($entity_type_id, $entity_id) {
     $result = $this->resultManager->getResults($entity_type_id, $entity_id);
+    $current_user = $this->currentUser()->id();
+    $vote_storage = $this->entityTypeManager->getStorage('vote');
+    $vote_ids = $vote_storage->getUserVotes(
+      $current_user,
+      'fivestar',
+      $entity_type_id,
+      $entity_id
+    );
+    if (!empty($vote_ids)) {
+      foreach ($vote_ids as $vote_id) {
+        if($vote_storage->load($vote_id)->getVotedEntityId() === $entity_id)
+          $vote = $vote_storage->load($vote_id)->getValue();
+      }
+    }
+    $hasVoted = empty($vote_ids) ? false : true;
     if(empty($result))
-      return new JSONResponse(['status' => FALSE, 'message' => 'No votes found']);
-    $obj = (object) array_merge((array) ['status' => TRUE], (array) $result);
+      return new JSONResponse(['status' => FALSE, 'message' => 'No votes found', 'user' => $current_user, 'hasVoted' => $hasVoted]);
+    $obj = (object) array_merge((array) ['status' => TRUE], (array) $result, ['user' => $current_user, 'hasVoted' => $hasVoted, 'vote' => $vote]);
     return new JsonResponse($obj);
   }
 
