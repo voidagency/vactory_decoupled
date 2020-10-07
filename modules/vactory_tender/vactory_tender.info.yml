@@ -18,7 +18,6 @@ dependencies:
   - text
   - user
   - vactory_core
-  - vactory_press_kit
   - webform
 version: ' 8.x-1.0'
 package: Vactory
