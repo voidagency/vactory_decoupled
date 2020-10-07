@@ -38,7 +38,6 @@
             "drupal/core": {
                 "Issue #2996114: Argument 2 passed to {closure}() must be an instance of ResourceType, NULL given": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch",
                 "[regression] Impossible to filter for resources with an empty relationship object in JSON:API 2.x": "https://www.drupal.org/files/issues/2020-03-24/3025372-33.patch",
-                "Issue#3072076: JSON:API returns a CacheableResponseInterface instance for non-cacheable methods; causes unnecessary exceptions.": "https://www.drupal.org/files/issues/2019-08-27/3072076-20.patch",
                 "Filter editor_file_reference should produce absolute URLs": "https://gist.githubusercontent.com/Bahlaouane-Hamza/fd1279d9816588f157b592cdde84603f/raw/601af98ba1f8781bd400fd191ba1b1c5464457a4/filter_editor_file_reference-use-absolute-src.patch"
             },
             "drupal/migrate_tools": {
