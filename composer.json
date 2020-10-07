@@ -83,7 +83,7 @@
         "drupal/change_pwd_page": "^1.0",
         "drupal/coffee": "^1.0.0",
         "drupal/config_update": "^1.7",
-        "drupal/core": "^8.8.5",
+        "drupal/core": "^8.9",
         "drupal/crop": "^2.1",
         "drupal/ctools": "^3.4",
         "drupal/default_content": "^1.0.0-alpha9",
