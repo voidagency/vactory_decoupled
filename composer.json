@@ -44,9 +44,6 @@
             "drupal/migrate_file": {
                 "Use media instead of file": "https://gist.githubusercontent.com/Bahlaouane-Hamza/75c4390bc95a9a4cd4776aa8da49434b/raw/72a7c96a5d39bab68d64c397df190e50ba9e35a7/migrate-file-import-media.patch"
             },
-            "drupal/default_content": {
-                "#2698425: Do not reimport existing entities": "https://www.drupal.org/files/issues/2020-02-05/2698425--accept-content-updates--122.patch"
-            },
             "drupal/simple_oauth": {
                 "Auth revoke on profile update": "https://www.drupal.org/files/issues/simple_oauth-auth-revoke-2946882-11.patch",
                 "Disable status message: An external client application is requesting access - MAJ": "https://gist.githubusercontent.com/Bahlaouane-Hamza/b68ec4306bf953496c4063c8df1b8b96/raw/caa03490e55c136020ec615bef79d869b1a7721a/simple-oauth-status-message-external-client-app.patch"
@@ -83,7 +80,7 @@
         "drupal/core": "^8.9",
         "drupal/crop": "^2.1",
         "drupal/ctools": "^3.4",
-        "drupal/default_content": "^1.0.0-alpha9",
+        "drupal/default_content": "^2.0.0-alpha1",
         "drupal/devel": "^2.1",
         "drupal/easy_install": "^10.4.0",
         "drupal/editor_advanced_link": "^1.8.0",
