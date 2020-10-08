@@ -1,0 +1,108 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 19413f8b-c8d9-4e48-b249-3ba9506f7e3b
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Job Ads'
+  created:
+    -
+      value: 1602168746
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Job Ads | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/job-ads'
+  path:
+    -
+      alias: /job-ads
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Job ads Page'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1602168855
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e015ccc3-4555-4ede-a09e-670528d0be47
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1602168753
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_job_ads:list'
+              widget_data: '[{"views":{"views_id":"vactory_job_ads","views_display_id":"block_list","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","created":"created","field_vactory_description":"profileDescription","field_vactory_taxonomy_1":"city","field_vactory_taxonomy_2":"contract","field_vactory_taxonomy_3":"profession"},"vocabularies":{"job_ads_city":"job_ads_city","job_ads_contract":"job_ads_contract","job_ads_profession":"job_ads_profession","academy_themes":0,"blog_category":0,"glossary_secteur":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}}}]'
+          field_vactory_title:
+            -
+              value: 'Job Ads'

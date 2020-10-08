@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7bf343b5-8f04-4fcb-b2da-0bb09b1f0c1f
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    117326cd-96ba-49f9-bf11-893e2130b87e: media
+    ed7b57bf-c4d2-4ac4-984e-60e1ffaa66a2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 9'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 9'
+  created:
+    -
+      value: 1592929251
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/60'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch''s approach to ratings endorsement so that ratings produced outside the EU may be used by regulated entities within the EU for regulatory purposes, pursuant to the terms of the EU Regulation with respect to credit rating agencies, can be found on the EU Regulatory Disclosures page. The endorsement status of all International ratings is provided within the entity summary page for each rated entity and in the transaction detail pages for all structured finance transactions on the Fitch website. These disclosures are updated on a daily basis.'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch's approach to ratings endorsement so that ratings produced outside the EU may be used by regulated entities within the EU for regulatory purposes, pursuant to the terms of the EU Regulation with respect to credit rating agencies, can be found on the EU Regulatory Disclosures page. The endorsement status of all International ratings is provided within the entity summary page for each rated entity and in the transaction detail pages for all structured finance transactions on the Fitch website. These disclosures are updated on a daily basis.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '26, rue Mohamed Kamal -ex Pilote Vidal, Grand Casablanca'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role9@gmail.com
+  field_vactory_fax:
+    -
+      value: '0522 544 900'
+  field_vactory_media_image:
+    -
+      entity: 117326cd-96ba-49f9-bf11-893e2130b87e
+  field_vactory_name:
+    -
+      value: 'Role 9'
+  field_vactory_taxonomy_1:
+    -
+      entity: ed7b57bf-c4d2-4ac4-984e-60e1ffaa66a2
+  field_vactory_telephone:
+    -
+      value: '0622 544 900'

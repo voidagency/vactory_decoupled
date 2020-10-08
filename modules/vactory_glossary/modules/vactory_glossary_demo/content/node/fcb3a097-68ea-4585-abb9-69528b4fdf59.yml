@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fcb3a097-68ea-4585-abb9-69528b4fdf59
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    011bbfbd-3f20-4a5a-a002-7ac88081321a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'إعادة شراء القروض'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'إعادة شراء القروض'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'إعادة شراء القروض | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/99'
+  path:
+    -
+      alias: /glossary/aadt-shra-alqrwd
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'إعادة شراء القروض'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'يمكن أن تتمثل إعادة شراء القروض في توحيد مبلغ عدة قروض أخرى للاستهلاك في قرض واحد. بحيث تتيح للزبون خفض مبلغ أقساطه الشهرية مع تمديد مدة تسديد سلفه. ويمكن لإعادة شراء القرض أن تسمح بإعادة شراء سلف جار واحد بغية الاستفادة من تخفيض مبلغ الأقساط الشهرية الواجب تسديها وتمديد مدة القرض. كما يمكن خلال إعادة شراء القرض الرفع من المبلغ المقترض لتمويل مشروع جديد. ويؤدي خفض مبلغ الأقساط الشهرية للرفع من مدة التسديد والتكلفة الإجمالية للقرض. ويرتبط التخفيض بالمدة المتبقية للقروض التي تمت إعادة شرائها.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 011bbfbd-3f20-4a5a-a002-7ac88081321a

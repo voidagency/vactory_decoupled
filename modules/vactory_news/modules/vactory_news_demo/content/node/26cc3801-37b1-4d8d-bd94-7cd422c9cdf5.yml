@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 26cc3801-37b1-4d8d-bd94-7cd422c9cdf5
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    fcb78dda-30db-43b2-b7ff-a725f231c94b: media
+    95e44038-b0cb-4026-ae92-b408005ce5b0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 1'
+  created:
+    -
+      value: 1592425586
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 1 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-1'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: '<p>I''m baby normcore <strong>PBR&amp;B</strong> la croix subway tile iPhone, franzen mustache chicharrones mlkshk air plant. Green juice fam YOLO chambray williamsburg cornhole. Portland man braid franzen helvetica, tousled la croix sartorial fanny pack green juice snackwave taxidermy. Flexitarian you probably haven''t heard of them pug direct trade man braid, slow-carb keytar. Roof party cronut XOXO blog, letterpress irony narwhal fam typewriter quinoa succulents lyft flexitarian thundercats subway tile.</p>'
+  path:
+    -
+      alias: /news/news-1
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 1'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;I'm baby normcore &lt;strong&gt;PBR&amp;amp;B&lt;/strong&gt; la croix subway tile iPhone, franzen mustache chicharrones mlkshk air plant. Green juice fam YOLO chambray williamsburg cornhole. Portland man braid franzen helvetica, tousled la croix sartorial fanny pack green juice snackwave taxidermy. Flexitarian you probably haven't heard of them pug direct trade man braid, slow-carb keytar. Roof party cronut XOXO blog, letterpress irony narwhal fam typewriter quinoa succulents lyft flexitarian thundercats subway tile.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Ennui echo park snackwave twee, banh mi copper mug slow-carb waistcoat mumblecore tbh. Sustainable try-hard listicle, cray bicycle rights helvetica yr swag. Narwhal iceland migas woke cronut vinyl pinterest. Single-origin coffee hot chicken cardigan cold-pressed, tousled chicharrones mustache chambray jianbing.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Affogato keytar irony, next level seitan cardigan chambray kombucha you probably haven't heard of them four loko YOLO biodiesel pabst. Direct trade +1 kinfolk occupy sriracha iPhone cliche mixtape portland lyft. Irony polaroid aesthetic PBR&amp;amp;B, offal mlkshk normcore hexagon biodiesel lo-fi beard. Kinfolk art party affogato, readymade stumptown raw denim locavore. Squid before they sold out hella prism fanny pack mlkshk.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Banjo kale chips hashtag readymade kitsch. Brooklyn flexitarian trust fund, helvetica mlkshk tote bag selfies health goth. 8-bit 90's semiotics hammock photo booth direct trade gochujang. Kombucha pok pok kale chips YOLO food truck sriracha tumblr you probably haven't heard of them actually sartorial cliche kickstarter vegan normcore iceland. Echo park listicle enamel pin, church-key meggings lo-fi freegan synth irony.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Yr cronut glossier dreamcatcher, messenger bag pug authentic shaman mustache. Cred keffiyeh master cleanse organic cliche tacos, 8-bit disrupt celiac pinterest gluten-free cornhole kinfolk. Lomo letterpress lo-fi, la croix direct trade polaroid forage meh helvetica sustainable humblebrag. Vaporware messenger bag ennui, bespoke you probably haven't heard of them wayfarers gentrify chicharrones authentic art party glossier. Migas adaptogen kinfolk, wayfarers selfies jianbing letterpress chambray godard single-origin coffee whatever brunch &lt;a href=\"https://google.com\"&gt;cray&lt;/a&gt; occupy.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Dummy text? More like dummy thicc text, amirite?&lt;/p&gt;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: "Ennui echo park snackwave twee, banh mi copper mug slow-carb waistcoat mumblecore tbh. Sustainable try-hard listicle, cray bicycle rights helvetica yr swag. Narwhal iceland migas woke cronut vinyl pinterest.\r\n"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: fcb78dda-30db-43b2-b7ff-a725f231c94b
+  field_vactory_taxonomy_1:
+    -
+      entity: 95e44038-b0cb-4026-ae92-b408005ce5b0

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 511bbfe2-3d12-4ad3-be81-a4b225c849b6
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    011bbfbd-3f20-4a5a-a002-7ac88081321a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'استدانة مفرطة'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'استدانة مفرطة'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'استدانة مفرطة | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/98'
+  path:
+    -
+      alias: /glossary/astdant-mfrtt
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'استدانة مفرطة'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'يقصد بهذا المصطلح عجز شخص بنية حسنة عن الوفاء بديونه ( فواتير، قروض، إيجار...) . وبالنسبة للزبناء الذين يتعين عليهم مواجهة هذه الوضعية، تتوفر وفاسلف على هيئة تتمثل مهمتها الرئيسية في العثور على أفضل توافق ممكن من أجل تسوية وضعيتها مع مراعاة الحالة السوسيواقتصادية.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 011bbfbd-3f20-4a5a-a002-7ac88081321a

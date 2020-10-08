@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 39783797-5681-4acf-aff9-5426e68d2a42
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Remboursement anticipé'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Remboursement anticipé | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/remboursement-anticipe'
+  path:
+    -
+      alias: /glossary/remboursement-anticipe
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "On parle de remboursement anticipé lorsque l'emprunteur rembourse son crédit partiellement ou en totalité avant l'expiration de sa durée initiale. Si vous en avez les capacités financières (rentrée exceptionnelle d’argent par exemple), vous pouvez choisir de rembourser intégralement le reste de la somme empruntée, en accord avec la société de crédit.  Vous interrompez ainsi votre crédit. Vous réglez à la société de crédit : Le capital restant dû ; Les mensualités éventuellement échues et non réglées et les intérêts de retard relatifs; Les intérêts supplémentaires susceptibles d’être prélevés dans ce cas, calculés au taux dont le prêt a été assorti pour une certaine durée.\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

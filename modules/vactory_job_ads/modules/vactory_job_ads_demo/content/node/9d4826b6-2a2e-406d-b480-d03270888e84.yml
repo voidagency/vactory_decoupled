@@ -1,0 +1,148 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9d4826b6-2a2e-406d-b480-d03270888e84
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Update DF'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Jobs Ads - Blocs'
+  created:
+    -
+      value: 1593521024
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Jobs Ads - Blocs | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs-ads-blocs'
+  path:
+    -
+      alias: /jobs-ads-blocs
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Jobs Ads - Blocs'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1593524474
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fd3a653c-6233-4c6d-9394-1f4f11ea12d5
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1593523569
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_job_ads:three-columns'
+              widget_data: '[{"title":"Nos 3 derni\u00e8res annonces d''emploi","description":{"value":"<p>Job Ads<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_job_ads","views_display_id":"block_three_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","created":"created","field_vactory_description":"profileDescription","field_vactory_taxonomy_1":"city","field_vactory_taxonomy_2":"contract","field_vactory_taxonomy_3":"profession"},"vocabularies":{"academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir toutes les annonces","url":"\/node\/132","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Nos 3 dernières annonces'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 11ee81d9-70e5-4cb6-bf3c-f64474825019
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1593524126
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_job_ads:two-columns'
+              widget_data: '[{"title":"Nos 2 derni\u00e8res annonces d''emploi","description":{"value":"<p>Job Ads<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_job_ads","views_display_id":"block_two_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","created":"created","field_vactory_description":"profileDescription","field_vactory_taxonomy_1":"city","field_vactory_taxonomy_2":"contract","field_vactory_taxonomy_3":"profession"},"vocabularies":{"academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir toutes les annonces","url":"\/node\/132","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Nos 2 dernières annonces'

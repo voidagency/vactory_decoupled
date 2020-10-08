@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c15eaae0-59e5-4e8f-aec5-3ccdc92e6b10
+  bundle: image
+  default_langcode: fr
+  depends:
+    69bc104f-b164-4925-b4f6-9c4d1228c281: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bus1.jpeg
+  created:
+    -
+      value: 1593013121
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 69bc104f-b164-4925-b4f6-9c4d1228c281
+      alt: bus1
+      title: ''
+      width: 500
+      height: 333

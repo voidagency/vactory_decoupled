@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bc5201ae-2f33-4a0a-a244-0f8554739980
+  bundle: blog
+  default_langcode: fr
+  depends:
+    d820e8f8-1d43-4fbb-98d7-e717fe7534d1: media
+    b1797e68-02d8-413f-991a-f82ad0dcf92c: taxonomy_term
+    2b44bf8a-ad52-471b-87b2-096021ba3a21: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 8'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 8'
+  created:
+    -
+      value: 1592924483
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 8 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-8'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts.'
+  path:
+    -
+      alias: /blogs/blog-8
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 8'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Ultimately, the issuer and its advisers are responsible for the accuracy of the information they provide to Fitch and to the market in offering documents and other reports. In issuing its ratings and its reports, Fitch must rely on the work of experts, including independent auditors with respect to financial statements and attorneys with respect to legal and tax matters. Further, ratings and forecasts of financial and other information are inherently forward-looking and embody assumptions and predictions about future events that by their nature cannot be verified as facts. As a result, despite any verification of current facts, ratings and forecasts can be affected by future events or conditions that were not anticipated at the time a rating or forecast was issued or affirmed.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'Users of Fitch''s ratings and reports should understand that neither an enhanced factual investigation nor any third-party verification can ensure that all of the information Fitch relies on in connection with a rating or a report will be accurate and complete'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: d820e8f8-1d43-4fbb-98d7-e717fe7534d1
+  field_vactory_taxonomy_1:
+    -
+      entity: b1797e68-02d8-413f-991a-f82ad0dcf92c
+  field_vactory_taxonomy_2:
+    -
+      entity: 2b44bf8a-ad52-471b-87b2-096021ba3a21

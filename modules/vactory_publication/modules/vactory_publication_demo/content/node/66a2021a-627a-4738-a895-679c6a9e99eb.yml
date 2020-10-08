@@ -1,0 +1,108 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 66a2021a-627a-4738-a895-679c6a9e99eb
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Publications
+  created:
+    -
+      value: 1602170247
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publications | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications'
+  path:
+    -
+      alias: /publications
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Page Publications'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1602170353
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 90078c66-6d03-4ecc-ba55-c5b26d454d60
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1602170254
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_publication:list'
+              widget_data: '[{"views":{"views_id":"vactory_publication","views_display_id":"block_list","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_media_image":"image","field_vactory_media_file":"file","field_vactory_date":"date"},"vocabularies":{"publication_theme":"publication_theme","academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"tags":0,"vactory_governance_role":0,"vactory_news_theme":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}}}]'
+          field_vactory_title:
+            -
+              value: Publications

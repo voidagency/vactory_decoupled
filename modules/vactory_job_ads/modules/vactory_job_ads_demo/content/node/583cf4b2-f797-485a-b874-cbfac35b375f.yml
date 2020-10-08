@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 583cf4b2-f797-485a-b874-cbfac35b375f
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    fd74022b-fd71-4f3d-8fb4-b56597731889: taxonomy_term
+    dbbc13d2-cdf2-40c3-a53e-edb6274fdc83: taxonomy_term
+    916bb154-5c10-4304-b75b-62e93e5a4127: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Développeur Full Stack'
+  created:
+    -
+      value: 1593514612
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Développeur Full Stack | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/developpeur-full-stack'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Agence Web française basée à\_Marrakech\_recherche dans le cadre de son développement un\_Développeur\_Full Stack.\nMissions :\n\nVous serez sous la responsabilité directe du Chef de projet, vous interviendrez sur un\_projet long terme."
+  path:
+    -
+      alias: /jobs/developpeur-full-stack
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Développeur Full Stack'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Agence Web française basée à&nbsp;<strong>Marrakech</strong>&nbsp;recherche dans le cadre de son développement un&nbsp;<b>Développeur&nbsp;Full Stack</b>.</p>\r\n\r\n<p><u><strong>Missions :</strong></u></p>\r\n\r\n<ul>\r\n\t<li>Vous serez sous la responsabilité directe du Chef de projet, vous interviendrez sur un<strong>&nbsp;projet long terme.</strong></li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '39A Rue LOREM AL BIFIDUS , Résidence Espace IPSUM NN NNN Marrakech'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Une bonne compréhension de WordPress et une expérience probante sur les plugins et outils .\r\nBonne compréhension sur les technologies front-end, incluant HTML5,CSS3, jQuery.\r\nConnaissance des concepts de SEO et des bonnes pratiques en la matière."
+      format: plain_text
+  field_vactory_email:
+    -
+      value: viagroup@email.ma
+  field_vactory_taxonomy_1:
+    -
+      entity: fd74022b-fd71-4f3d-8fb4-b56597731889
+  field_vactory_taxonomy_2:
+    -
+      entity: dbbc13d2-cdf2-40c3-a53e-edb6274fdc83
+  field_vactory_taxonomy_3:
+    -
+      entity: 916bb154-5c10-4304-b75b-62e93e5a4127
+  field_vactory_telephone:
+    -
+      value: '0600000000'

@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ee1a2e85-431c-48b3-8cba-6fdb30d58acc
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    f4ce00c4-c2d3-43b0-ac4a-219d0ae3dba4: media
+    66f4aa12-4b93-4b03-8407-452e9a278b52: media
+    eabab2e2-c626-425c-b99e-c0b9c2fd9a0d: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 6'
+  created:
+    -
+      value: 1592929063
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-6'
+  path:
+    -
+      alias: /press_kit/press-kit-6
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-21'
+  field_vactory_excerpt:
+    -
+      value: 'Durch die Pandemie wird das Annecy International Animated Film Festival (internationales Animationsfilmfestival von Annecy) vom 15. bis 30. Juni online abgehalten. Um die taiwanesische Animationsbranche bestmöglich zu fördern, hat die Taiwan Creative Content Agency (TAICCA) für die Teilnahme am diesjährigen Annecy International Animated Film Festival und Annecy International Animated Film.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: f4ce00c4-c2d3-43b0-ac4a-219d0ae3dba4
+  field_vactory_media_file:
+    -
+      entity: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  field_vactory_taxonomy_1:
+    -
+      entity: eabab2e2-c626-425c-b99e-c0b9c2fd9a0d

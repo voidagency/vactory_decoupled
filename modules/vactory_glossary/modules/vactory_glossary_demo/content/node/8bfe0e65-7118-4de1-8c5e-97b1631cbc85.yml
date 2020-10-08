@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8bfe0e65-7118-4de1-8c5e-97b1631cbc85
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Relevé de compte du crédit renouvelable'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Relevé de compte du crédit renouvelable | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/releve-de-compte-du-credit-renouvelable'
+  path:
+    -
+      alias: /glossary/releve-de-compte-du-credit-renouvelable
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Le relevé de compte du crédit renouvelable est un document transmis par un organisme prêteur à son client à un intervalle de temps défini, qui montre l’ensemble des opérations réalisées. La présentation détaillée permet d’avoir une vision claire de la situation du crédit revolving d’un client. Le relevé de compte reprend l’ensemble des mouvements effectués sur le crédit renouvelable, notamment pour les opérations récurrentes liées au crédit (le montant restant dû, le montant total du prêt, le montant disponible...).\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

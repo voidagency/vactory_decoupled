@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3be601d7-da3e-4d20-b834-66f0e588bc30
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    011bbfbd-3f20-4a5a-a002-7ac88081321a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Déchéance du terme'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Déchéance du terme | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/decheance-du-terme'
+  path:
+    -
+      alias: /glossary/decheance-du-terme
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Un prêt est généralement remboursable par fractions et à périodes régulières (mensuellement dans la plupart des cas). Si les mensualités du crédit sont honorées dans le cadre légal du contrat passé, l’organisme de crédit ne peut pas demander au client de rembourser avant la date indiquée dans le contrat. Cependant, si les sommes dues ne sont pas payées aux dates prévues, il peut prononcer une déchéance du terme. En prononçant la déchéance du terme de votre emprunt, l'établissement prêteur annule les conditions du contrat; ce faisant, il met fin au prélèvement mensuel. Il peut alors exiger le remboursement du crédit en une seule fois, avant la date de fin du crédit prévue initialement, de la totalité du montant restant dû auquel s’ajoutent les intérêts et les éventuels frais.\r\n\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 011bbfbd-3f20-4a5a-a002-7ac88081321a

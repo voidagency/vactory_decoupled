@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 67e495e4-9cd3-4d75-822f-604842e843d1
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Frais de dossier'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Frais de dossier | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/frais-de-dossier'
+  path:
+    -
+      alias: /glossary/frais-de-dossier
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Frais relatifs à la constitution et à l'étude du dossier de demande de crédit de l'emprunteur. Il peuvent être fixés de manière forfaitaire ou en pourcentage du montant de crédit financé.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a04ec74e-b807-43bb-be63-90f22e8c847a
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8: taxonomy_term
+    33d38729-0ee2-4c40-9c33-e926bfa9c8aa: taxonomy_term
+    916bb154-5c10-4304-b75b-62e93e5a4127: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Développeur PHP Magento 2'
+  created:
+    -
+      value: 1593516883
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Développeur PHP Magento 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/developpeur-php-magento-2'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Participer aux études concernant\_les évolutions et les optimisations de nos sites web\_(e-commerce, site vitrine, institutionnels, applicatif métiers...)\nAssister les acteurs métiers sur les différentes phases (étude des besoins, planification, spécifications fonctionnelles)\nRédiger des spécifications techniques\nDévelopper de nouveaux modules sous Magento 2 en mode projet"
+  path:
+    -
+      alias: /jobs/developpeur-php-magento-2
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Développeur PHP Magento 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<ul>\r\n\t<li>Participer aux études concernant<strong>&nbsp;les évolutions et les optimisations de nos sites web</strong>&nbsp;(e-commerce, site vitrine, institutionnels, applicatif métiers...)</li>\r\n\t<li>Assister les acteurs métiers sur les différentes phases (étude des besoins, planification, spécifications fonctionnelles)</li>\r\n\t<li>Rédiger des spécifications techniques</li>\r\n\t<li>Développer de nouveaux modules sous Magento 2 en mode projet</li>\r\n\t<li>Réaliser de tests unitaires et participer aux recettes métiers (organisation - stratégie de recettes, constitution des campagnes de cas de tests et leurs réalisations)</li>\r\n\t<li>Échanger avec des prestataires (équipe de développement, plateforme de paiement, coffre-fort numérique)</li>\r\n\t<li>Assurer la maintenance corrective et évolutive de solutions existantes.</li>\r\n\t<li>Effectuer une veille technologique et des bonnes pratiques.</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '264 Bd dobromus 2 P2 , Rabat'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "De formation informatique, vous avez au moins 3 ans d'expériences sur Magento 2\r\nVous avez une forte culture digitale et vous êtes passionné(e) par le Web et ses technologies,\r\nSavoir utiliser GIT, Jira et Confluence."
+      format: plain_text
+  field_vactory_email:
+    -
+      value: logi@email.ma
+  field_vactory_taxonomy_1:
+    -
+      entity: cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8
+  field_vactory_taxonomy_2:
+    -
+      entity: 33d38729-0ee2-4c40-9c33-e926bfa9c8aa
+  field_vactory_taxonomy_3:
+    -
+      entity: 916bb154-5c10-4304-b75b-62e93e5a4127
+  field_vactory_telephone:
+    -
+      value: '0600008899'

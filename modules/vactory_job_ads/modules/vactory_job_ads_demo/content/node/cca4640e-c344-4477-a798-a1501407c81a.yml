@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cca4640e-c344-4477-a798-a1501407c81a
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8: taxonomy_term
+    dbbc13d2-cdf2-40c3-a53e-edb6274fdc83: taxonomy_term
+    a5b8e36e-3dc7-4f14-9108-a15d815e37cf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Chef de Projet Infrastructure'
+  created:
+    -
+      value: 1593519244
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Chef de Projet Infrastructure | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/chef-de-projet-infrastructure'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Missions :\n\nAssurer\_la bonne réalisation d’un projet d’infrastructure.\nSuivre\_\_et diriger ces projets tout au long du processus de conception, depuis le commencement, et ce, jusqu’à la livraison.\_\nDécider les différentes solutions à mettre en place, les méthodes à adopter, les tester.\_"
+  path:
+    -
+      alias: /jobs/chef-de-projet-infrastructure
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Chef de Projet Infrastructure'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p><u><strong>Missions :</strong></u></p>\r\n\r\n<ul>\r\n\t<li>Assurer&nbsp;la bonne réalisation d’un projet d’infrastructure.</li>\r\n\t<li>Suivre&nbsp;&nbsp;et diriger ces projets tout au long du processus de conception, depuis le commencement, et ce, jusqu’à la livraison.&nbsp;</li>\r\n\t<li>Décider les différentes solutions à mettre en place, les méthodes à adopter, les tester.&nbsp;</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '77H, Bd torsifum Rabat'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Un diplôme d’une école d’ingénieurs/ Gestion, commerce\r\nUne expérience minimum de 5 ans."
+      format: plain_text
+  field_vactory_email:
+    -
+      value: groups@email.me
+  field_vactory_taxonomy_1:
+    -
+      entity: cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8
+  field_vactory_taxonomy_2:
+    -
+      entity: dbbc13d2-cdf2-40c3-a53e-edb6274fdc83
+  field_vactory_taxonomy_3:
+    -
+      entity: a5b8e36e-3dc7-4f14-9108-a15d815e37cf
+  field_vactory_telephone:
+    -
+      value: '0700000000'

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 04886c8a-9428-4b1a-93d7-12205e8d3c4e
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Crédit renouvelable'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Crédit renouvelable'
+  created:
+    -
+      value: 1594603327
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Crédit renouvelable | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/credit-renouvelable'
+  path:
+    -
+      alias: /glossary/credit-renouvelable
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Crédit renouvelable'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Le crédit renouvelable ou revolving est une réserve d'argent dont le contrat de crédit est d’une durée d’un an, renouvelable. L’emprunteur dispose alors d’un capital disponible qu’il peut utiliser quand il le souhaite sur simple demande, de manière fractionnée ou pas, en fonction de ses besoins (dans la limite du montant disponible sur son crédit renouvelable et du capital attribué). Ce crédit est également appelé crédit reconstituable, car votre crédit renouvelable se reconstitue au fur et à mesure de vos remboursements, et la partie du capital ainsi remboursée redevient disponible pour financer de nouveaux projets.\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

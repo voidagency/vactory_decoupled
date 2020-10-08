@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 33d38729-0ee2-4c40-9c33-e926bfa9c8aa
+  bundle: job_ads_contract
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: CTT
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'CTT | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/taxonomy/term/38'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_created:
+    -
+      value: 1593511780

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 22e872f2-c210-43f0-bafc-4766eb3a2d4b
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Report d''échéance'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Report d''échéance | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/report-decheance'
+  path:
+    -
+      alias: /glossary/report-decheance
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Service offert à un emprunteur de reporter le paiement d’une mensualité de crédit.\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

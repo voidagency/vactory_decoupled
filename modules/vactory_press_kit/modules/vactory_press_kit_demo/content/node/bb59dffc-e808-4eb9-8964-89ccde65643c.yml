@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bb59dffc-e808-4eb9-8964-89ccde65643c
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    521bf9e1-68f0-49dc-80a9-acb5e99f18b1: media
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    eabab2e2-c626-425c-b99e-c0b9c2fd9a0d: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 4'
+  created:
+    -
+      value: 1592928171
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 4 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-4'
+  path:
+    -
+      alias: /press_kit/press-kit-4
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 4'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-24'
+  field_vactory_excerpt:
+    -
+      value: 'Prezi, a global leader in visual communication tools, today announced an integration with Microsoft Teams to launch an app for Prezi Video, its interactive video platform, now available on Microsoft AppSource. Prezi Video allows business teams, educators and students a new and simpler way to create interactive and engaging live/recorded videos in minutes, without the need for a design background or professional editing skills. '
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 521bf9e1-68f0-49dc-80a9-acb5e99f18b1
+  field_vactory_media_file:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_taxonomy_1:
+    -
+      entity: eabab2e2-c626-425c-b99e-c0b9c2fd9a0d

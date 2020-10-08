@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6447120d-afc0-4226-a41f-c5206922fda2
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    f93358a0-0a27-4fad-a565-066496ff9ca7: media
+    88290241-5789-4c32-bdbd-e97d46ce80da: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: edit
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 9'
+  created:
+    -
+      value: 1592426164
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-9'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: '<p>Etsy snackwave shabby chic locavore, pop-up ad pour-over aute enim fashion axe cold-pressed woke before they sold out. Elit selvage prism, deep v labore ad skateboard austin. Intelligentsia selfies brooklyn deep v. Laboris flexitarian et bitters irure, nostrud cillum crucifix coloring book. Keffiyeh kombucha prism pickled migas, cardigan leggings. Banjo kogi umami beard in chartreuse irony hella small batch activated charcoal iPhone heirloom flexitarian.</p>'
+  path:
+    -
+      alias: /news/news-9
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;Etsy snackwave shabby chic locavore, pop-up ad pour-over aute enim fashion axe cold-pressed woke before they sold out. Elit selvage prism, deep v labore ad skateboard austin. Intelligentsia selfies brooklyn deep v. Laboris flexitarian et bitters irure, nostrud cillum crucifix coloring book. Keffiyeh kombucha prism pickled migas, cardigan leggings. Banjo kogi umami beard in chartreuse irony hella small batch activated charcoal iPhone heirloom flexitarian.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Ramps listicle banjo freegan fanny pack incididunt organic vinyl dolore. Vexillologist banh mi woke pour-over +1 skateboard letterpress hashtag. Asymmetrical cred tousled, williamsburg austin meh flannel. Squid heirloom vexillologist DIY lorem. Chillwave skateboard typewriter, la croix ea nulla pickled banh mi tousled in hoodie dolor. Yuccie celiac pop-up street art fashion axe asymmetrical skateboard elit.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Street art sint crucifix keytar pop-up. Gluten-free master cleanse single-origin coffee unicorn offal. Street art tofu pickled biodiesel neutra gluten-free fanny pack leggings portland raw denim ut poutine pabst brooklyn. Ea chartreuse cornhole master cleanse williamsburg marfa pinterest tote bag, elit salvia.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Reprehenderit chambray incididunt brunch messenger bag skateboard butcher ex laborum narwhal schlitz. Est kale chips iceland sed brooklyn irure subway tile banh mi eiusmod narwhal butcher. Disrupt kinfolk chambray fugiat tacos pabst. Mixtape swag irure, marfa pitchfork cornhole enim pour-over. Williamsburg dolore ea humblebrag adipisicing raw denim eu blog live-edge. Id adaptogen lomo tousled mumblecore lorem keytar bicycle rights prism +1 gentrify.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Biodiesel veniam tumblr ex. Whatever shoreditch voluptate, selvage ethical irure in VHS poutine neutra prism master cleanse pok pok you probably haven't heard of them forage. Letterpress salvia marfa cillum mixtape esse, mustache sustainable cray dreamcatcher plaid DIY. Pickled umami irony tempor 8-bit keffiyeh green juice in gastropub pork belly. Craft beer pop-up keffiyeh enamel pin laborum letterpress shabby chic pariatur kitsch lo-fi chicharrones health goth.&lt;/p&gt;<br />\r\n&nbsp;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: "Street art sint crucifix keytar pop-up. Gluten-free master cleanse single-origin coffee unicorn offal. Street art tofu pickled biodiesel neutra.\r\n"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: f93358a0-0a27-4fad-a565-066496ff9ca7
+  field_vactory_taxonomy_1:
+    -
+      entity: 88290241-5789-4c32-bdbd-e97d46ce80da

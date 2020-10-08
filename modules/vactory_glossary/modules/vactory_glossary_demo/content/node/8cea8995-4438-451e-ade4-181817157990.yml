@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8cea8995-4438-451e-ade4-181817157990
+  bundle: glossary
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: Amortissement
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Amortissement
+  created:
+    -
+      value: 1594603285
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Amortissement | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/amortissement'
+  path:
+    -
+      alias: /glossary/amortissement
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: Amortissement
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "L'amortissement du crédit correspond à la partie remboursée d'une somme empruntée. La mensualité du crédit représente la somme totale à payer chaque mois pour honorer l’engagement que vous contractez en acceptant le crédit d'un organisme financier. Cette somme totale est constituée du capital et des intérêts du crédit. Le capital équivaut à la somme exacte empruntée. Ceci dit, votre organisme financier est une entreprise qui a des frais de fonctionnement et des coûts de refinancement qui sont répercutés aux clients au travers des intérêts.\r\n\r\n"
+      format: restricted_html

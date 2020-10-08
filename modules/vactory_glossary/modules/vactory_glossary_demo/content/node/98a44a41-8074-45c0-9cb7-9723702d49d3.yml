@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 98a44a41-8074-45c0-9cb7-9723702d49d3
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    7edadc0a-e9a9-444b-ac56-78d6ff1ad713: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Signature électronique'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Signature électronique | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/signature-electronique'
+  path:
+    -
+      alias: /glossary/signature-electronique
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "La signature électronique est la transposition de la signature manuscrite dans le monde du numérique. Elle permet de sécuriser et d’authentifier les engagements pris entre deux parties. La signature électronique est un outil permettant de garantir l’identité du signataire, mais également la provenance et l’intégrité d’un document. Elle certifie à l’utilisateur final que celui-ci n’a pas été modifié depuis sa création.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 7edadc0a-e9a9-444b-ac56-78d6ff1ad713

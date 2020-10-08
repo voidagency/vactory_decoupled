@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1357d550-b00c-46dd-94ea-f2007b1bcb15
+  bundle: document
+  default_langcode: fr
+  depends:
+    c23f07d2-1697-400a-96aa-06e74aee2f5f: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: financeDoc.pdf
+  created:
+    -
+      value: 1592923296
+  revision_translation_affected:
+    -
+      value: true
+  field_media_document:
+    -
+      entity: c23f07d2-1697-400a-96aa-06e74aee2f5f
+      display: false
+      description: ''

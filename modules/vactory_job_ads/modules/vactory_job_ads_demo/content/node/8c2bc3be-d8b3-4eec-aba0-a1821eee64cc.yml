@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8c2bc3be-d8b3-4eec-aba0-a1821eee64cc
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    007b8e0d-1b21-4abd-ae2c-8b59d42902ea: taxonomy_term
+    b75456d9-8abf-4d4e-aa81-c7d6593a8ca4: taxonomy_term
+    916bb154-5c10-4304-b75b-62e93e5a4127: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Développeur Front End'
+  created:
+    -
+      value: 1593518771
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Développeur Front End | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/developpeur-front-end'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Réaliser la conception technique et le développement des nouveaux produits en respectant les contraintes techniques et fonctionnelles, et en assurant une conformité vis à vis de l’architecture logicielle cible.\nEffectuer les tests nécessaires et assurer la recette fonctionnelle avec les Products Owners.\nAnalyser et corriger les anomalies détectées.\nAssister les DEVOPS à la mise en recette et production des nouveaux produits developpeur\nApporter le support technique et participer à l’amélioration continue des processus en cours. developpeur"
+  path:
+    -
+      alias: /jobs/developpeur-front-end
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Développeur Front End'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<ul>\r\n\t<li>Réaliser la conception technique et le développement des nouveaux produits en respectant les contraintes techniques et fonctionnelles, et en assurant une conformité vis à vis de l’architecture logicielle cible.</li>\r\n\t<li>Effectuer les tests nécessaires et assurer la recette fonctionnelle avec les Products Owners.</li>\r\n\t<li>Analyser et corriger les anomalies détectées.</li>\r\n\t<li>Assister les DEVOPS à la mise en recette et production des nouveaux produits developpeur</li>\r\n\t<li>Apporter le support technique et participer à l’amélioration continue des processus en cours. developpeur</li>\r\n\t<li>Appliquer les méthodes de développement AGILE.</li>\r\n\t<li>Participer aux cérémonies agile (Poker Planning, Sprint Planning, DailyScrum, Revue de Sprint, Rétrospective).</li>\r\n\t<li>Assurer un transfert des compétences techniques et fonctionnelles aux équipes internes.</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '33C Bd Arotusm, Casablanca'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Connaissance des architectures WEB et Restful;\r\nMaîtrise des langages et frameworks front end: React JS (Version HOOKS), JavaScript ;\r\nBonne connaissance des autres langages et frameworks front end : Bootstrap, Angular 6 ;\r\nBonne connaissance des langages et framework Back end JAVA, JEE, Spring ;"
+      format: plain_text
+  field_vactory_email:
+    -
+      value: recrut.lorem@email.com
+  field_vactory_taxonomy_1:
+    -
+      entity: 007b8e0d-1b21-4abd-ae2c-8b59d42902ea
+  field_vactory_taxonomy_2:
+    -
+      entity: b75456d9-8abf-4d4e-aa81-c7d6593a8ca4
+  field_vactory_taxonomy_3:
+    -
+      entity: 916bb154-5c10-4304-b75b-62e93e5a4127
+  field_vactory_telephone:
+    -
+      value: '0611111111'

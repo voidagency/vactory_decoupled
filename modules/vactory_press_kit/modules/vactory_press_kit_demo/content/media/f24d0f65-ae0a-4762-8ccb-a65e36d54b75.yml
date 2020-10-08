@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f24d0f65-ae0a-4762-8ccb-a65e36d54b75
+  bundle: image
+  default_langcode: fr
+  depends:
+    b0f42d45-9420-4c08-b674-2b2084bad02d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: bus3.jpeg
+  created:
+    -
+      value: 1593013196
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: b0f42d45-9420-4c08-b674-2b2084bad02d
+      alt: bus3
+      title: ''
+      width: 500
+      height: 333

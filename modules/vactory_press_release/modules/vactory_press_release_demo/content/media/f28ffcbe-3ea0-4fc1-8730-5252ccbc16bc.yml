@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  bundle: document
+  default_langcode: fr
+  depends:
+    0a4ef617-9bba-4f58-a4d5-ea00c451e09d: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: marketingDoc.pdf
+  created:
+    -
+      value: 1592924627
+  revision_translation_affected:
+    -
+      value: true
+  field_media_document:
+    -
+      entity: 0a4ef617-9bba-4f58-a4d5-ea00c451e09d
+      display: false
+      description: ''

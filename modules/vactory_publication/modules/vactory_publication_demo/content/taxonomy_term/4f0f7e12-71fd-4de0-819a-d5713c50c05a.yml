@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 4f0f7e12-71fd-4de0-819a-d5713c50c05a
+  bundle: publication_theme
+  default_langcode: fr
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'taxo 2'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'taxo 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/taxonomy/term/39'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_created:
+    -
+      value: 1592913380

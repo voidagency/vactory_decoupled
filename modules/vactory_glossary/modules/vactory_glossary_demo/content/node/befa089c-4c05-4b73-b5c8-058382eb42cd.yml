@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: befa089c-4c05-4b73-b5c8-058382eb42cd
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    7edadc0a-e9a9-444b-ac56-78d6ff1ad713: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Taux d''intérêt'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Taux d''intérêt | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/taux-dinteret'
+  path:
+    -
+      alias: /glossary/taux-dinteret
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Le taux d’intérêt correspond à un pourcentage fixé contractuellement sur une période d’un an par le prêteur pour sa rémunération.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 7edadc0a-e9a9-444b-ac56-78d6ff1ad713

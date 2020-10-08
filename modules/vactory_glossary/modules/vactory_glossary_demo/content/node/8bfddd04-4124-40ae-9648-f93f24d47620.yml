@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8bfddd04-4124-40ae-9648-f93f24d47620
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    7edadc0a-e9a9-444b-ac56-78d6ff1ad713: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'عرض سابق للسلف'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'عرض سابق للسلف'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'عرض سابق للسلف | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/110'
+  path:
+    -
+      alias: /glossary/rd-sabq-llslf
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'عرض سابق للسلف'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'اقتراح مكتوب لعقد، تُسلمه مؤسسة الائتمان، لإعطاء المقترض معلومات كاملة حول شروط منح العقد.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 7edadc0a-e9a9-444b-ac56-78d6ff1ad713

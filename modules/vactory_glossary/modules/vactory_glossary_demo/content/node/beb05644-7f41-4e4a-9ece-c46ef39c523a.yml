@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: beb05644-7f41-4e4a-9ece-c46ef39c523a
+  bundle: glossary
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Apport personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Apport personnel'
+  created:
+    -
+      value: 1594603186
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Apport personnel | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/apport-personnel'
+  path:
+    -
+      alias: /glossary/apport-personnel
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Apport personnel\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Somme apportée par l’acquéreur d'un véhicule. L’établissement de crédit prend cette somme en considération pour déterminer le montant du prêt qu’il peut accorder à l’acquéreur.\r\n\r\n"
+      format: restricted_html

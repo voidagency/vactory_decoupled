@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 02d519c1-404d-482a-bf75-e68d8e70623a
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    7f1a7a06-19db-4f6d-b0f2-d77abb892e38: media
+    ed7b57bf-c4d2-4ac4-984e-60e1ffaa66a2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 6'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 6'
+  created:
+    -
+      value: 1592928996
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/57'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Positive but Decreasing Investment Outperformance'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Positive but Decreasing Investment Outperformance<br />\r\nFitch has revised Wafa Gestion's score for Investment Performance to 'Consistent' from 'Strong'. While a majority of Wafa Gestion's AUM continues to perform well, the volume of assets outperforming peers on a risk-adjusted basis has reduced over the last three years to end-September 2018. Fitch estimates that around 66% of Wafa Gestion's AUM has a better Sharpe ratio (a risk-adjusted measure of performance) than peer funds; in the corresponding Lipper category average over the three years to September 2018, and 49% of Wafa Gestion's AUM has better drawdown statistics than the corresponding Lipper category over the same period.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'bd. Mokhtar Soussi, 80350 inezgane'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role6@gmail.com
+  field_vactory_fax:
+    -
+      value: '05 28 83 28 51'
+  field_vactory_media_image:
+    -
+      entity: 7f1a7a06-19db-4f6d-b0f2-d77abb892e38
+  field_vactory_name:
+    -
+      value: 'Role 6'
+  field_vactory_taxonomy_1:
+    -
+      entity: ed7b57bf-c4d2-4ac4-984e-60e1ffaa66a2
+  field_vactory_telephone:
+    -
+      value: '06 28 83 28 51'

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 76ea41dd-9149-4bba-909c-b0fdf1b837c1
+  bundle: image
+  default_langcode: fr
+  depends:
+    f32394e8-dec4-4d88-859a-2741dbaf434e: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: pub2.jpeg
+  created:
+    -
+      value: 1593011867
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: f32394e8-dec4-4d88-859a-2741dbaf434e
+      alt: publ2
+      title: ''
+      width: 500
+      height: 333

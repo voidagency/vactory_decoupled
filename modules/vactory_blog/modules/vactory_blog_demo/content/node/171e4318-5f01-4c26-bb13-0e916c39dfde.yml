@@ -1,0 +1,111 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 171e4318-5f01-4c26-bb13-0e916c39dfde
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'UPDATE DF'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Blogs
+  created:
+    -
+      value: 1602158399
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blogs | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs'
+  path:
+    -
+      alias: /blogs
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blogs page'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1602158495
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e0cd78c4-9ef2-4468-ae12-069b0d41bc1e
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1602158405
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_blog:list'
+              widget_data: '[{"views":{"views_id":"vactory_blog","views_display_id":"block_list","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_media_image":"image"},"vocabularies":{"blog_category":"blog_category","academy_themes":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}}}]'
+          field_vactory_title:
+            -
+              value: Blogs

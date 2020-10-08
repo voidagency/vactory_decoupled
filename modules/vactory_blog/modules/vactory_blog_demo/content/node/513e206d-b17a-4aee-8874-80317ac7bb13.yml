@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 513e206d-b17a-4aee-8874-80317ac7bb13
+  bundle: blog
+  default_langcode: fr
+  depends:
+    3762d1c9-45c3-498d-98df-9121ec872e46: media
+    1d42d776-5eb8-4776-acbe-864b3dd696cb: taxonomy_term
+    df44ce4c-ae3f-4c5e-934c-f76a55d1aedf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 7'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 7'
+  created:
+    -
+      value: 1592924437
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 7 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-7'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'the requirements and practices in the jurisdiction in which the rated security is offered and sold and/or the issuer is located, the availability and nature of relevant public information, access to the management of the issuer and its advisers, the availability of pre-existing third-party verifications such as audit reports, agreed-upon procedures letters, appraisals, actuarial reports, engineering reports, legal opinions and other reports provided by third parties, the availability of independent and competent third- party verification sources with respect to the particular security or in'
+  path:
+    -
+      alias: /blogs/blog-7
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 7'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>the requirements and practices in the jurisdiction in which the rated security is offered and sold and/or the issuer is located, the availability and nature of relevant public information, access to the management of the issuer and its advisers, the availability of pre-existing third-party verifications such as audit reports, agreed-upon procedures letters, appraisals, actuarial reports, engineering reports, legal opinions and other reports provided by third parties, the availability of independent and competent third- party verification sources with respect to the particular security or in the particular jurisdiction of the issuer, and a variety of other factors</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'The manner of Fitch''s factual investigation and the scope of the third-party verification it obtains will vary depending on the nature of the rated security and its issuer'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 3762d1c9-45c3-498d-98df-9121ec872e46
+  field_vactory_taxonomy_1:
+    -
+      entity: 1d42d776-5eb8-4776-acbe-864b3dd696cb
+  field_vactory_taxonomy_2:
+    -
+      entity: df44ce4c-ae3f-4c5e-934c-f76a55d1aedf

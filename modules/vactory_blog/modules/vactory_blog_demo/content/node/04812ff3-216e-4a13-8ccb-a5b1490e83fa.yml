@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 04812ff3-216e-4a13-8ccb-a5b1490e83fa
+  bundle: blog
+  default_langcode: fr
+  depends:
+    367d4d84-b202-4205-858a-fd4ba6a0362b: media
+    d024f6cd-a229-49c8-a114-56c5331e63c5: taxonomy_term
+    922fb475-e756-48bc-ac67-5b95ac2fbe51: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 3'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 3'
+  created:
+    -
+      value: 1592924216
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 3 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-3'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities. Such fees generally vary from US$1,000 to US$750,000 (or the applicable currency equivalent) per issue.'
+  path:
+    -
+      alias: /blogs/blog-3
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 3'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities. Such fees generally vary from US$1,000 to US$750,000 (or the applicable currency equivalent) per issue.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: ' Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 367d4d84-b202-4205-858a-fd4ba6a0362b
+  field_vactory_taxonomy_1:
+    -
+      entity: d024f6cd-a229-49c8-a114-56c5331e63c5
+  field_vactory_taxonomy_2:
+    -
+      entity: 922fb475-e756-48bc-ac67-5b95ac2fbe51

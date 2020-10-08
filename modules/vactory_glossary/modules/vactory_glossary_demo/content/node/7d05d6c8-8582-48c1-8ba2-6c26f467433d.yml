@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7d05d6c8-8582-48c1-8ba2-6c26f467433d
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'طلب القرض عبر الانترنت'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'طلب القرض عبر الانترنت'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'طلب القرض عبر الانترنت | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/109'
+  path:
+    -
+      alias: /glossary/tlb-alqrd-br-alantrnt
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'طلب القرض عبر الانترنت'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'تقترح شركة الائتمان عروض وحلول للقرض عبر الأنترنت. ولديكم الإمكانية للقيام سريعا بمحاكاة القرض على مختلف أنواع قروض الاستهلاك وقروض السيارة و التقدم مباشرة بعد ذلك بطلبكم للسلف عبر الأنترنت من أجل الدراسة.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

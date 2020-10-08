@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3ffdb8c6-cf74-49b0-91d6-6d62aeb38361
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    7edadc0a-e9a9-444b-ac56-78d6ff1ad713: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: دائن
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: دائن
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'دائن | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/105'
+  path:
+    -
+      alias: /glossary/dayn
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: دائن
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'شخص ذاتي أو معنوي الذي يجب دفع المال المقترض إليه. عندما يقوم شخص باقتراض مبلغ مالي لدى مؤسسة ائتمان، يعتبر مدينا ومؤسسة الائتمان هي الدائن.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 7edadc0a-e9a9-444b-ac56-78d6ff1ad713

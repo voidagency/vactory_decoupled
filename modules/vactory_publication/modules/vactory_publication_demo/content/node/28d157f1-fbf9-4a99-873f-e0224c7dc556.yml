@@ -1,0 +1,92 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 28d157f1-fbf9-4a99-873f-e0224c7dc556
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    d820e8f8-1d43-4fbb-98d7-e717fe7534d1: media
+    4f0f7e12-71fd-4de0-819a-d5713c50c05a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'publication 8'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'publication 8'
+  created:
+    -
+      value: 1592915050
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'publication 8 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-8'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "En fonction de cela, vous aurez à\_choisir entre\_télécharger un\_logiciel de traitement de texte\_gratuit ou payant. Combien coûte un logiciel de traitement de texte ? Les prix peuvent varier mais, à titre d’exemple, la suite Microsoft peut être réglée 160 euros pour une utilisation à vie (ce qui exclut les mises à jour)."
+  path:
+    -
+      alias: /publications/publication-8
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 8'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>En fonction de cela, vous aurez à&nbsp;<strong>choisir entre</strong>&nbsp;télécharger un&nbsp;<a href=\"https://www.superprof.fr/blog/les-applications-pour-rediger-sur-ordinateur/\">logiciel de traitement de texte</a><strong>&nbsp;gratuit ou payant</strong>. Combien coûte un logiciel de traitement de texte ? Les prix peuvent varier mais, à titre d’exemple, la suite Microsoft peut être réglée 160 euros pour une utilisation à vie (ce qui exclut les mises à jour).</p>\r\n\r\n<p>Cependant,&nbsp;<strong>attention à votre système d’exploitation</strong>&nbsp;: toutes les versions des logiciels de traitement de texte ne sont pas compatibles avec tous. Par exemple, les Mac OS ont un logiciel pré-installé, le Pages, mais OS X ne prend pas en charge l’ancienne version de Word,</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '1990-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'Ces fonctions sont relativement basiques et répondent à des besoins simples. Ainsi, la première étape pour choisir votre Logiciel de traitement de texte, c’est bien de définir votre usage et vos besoins.'
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: d820e8f8-1d43-4fbb-98d7-e717fe7534d1
+  field_vactory_taxonomy_1:
+    -
+      entity: 4f0f7e12-71fd-4de0-819a-d5713c50c05a

@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b4b9d1c0-b6f4-4fbc-a2d1-cc1d64eeba7e
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    fd74022b-fd71-4f3d-8fb4-b56597731889: taxonomy_term
+    dbbc13d2-cdf2-40c3-a53e-edb6274fdc83: taxonomy_term
+    c83e5a7e-3c74-4148-9440-95359a8d6ad4: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Tech Lead Frontend'
+  created:
+    -
+      value: 1593520070
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Tech Lead Frontend | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/tech-lead-frontend'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Nous sommes à la recherche d'un(e)\_Lead Développeur Front-End VueJs & Nuxt\_avec une maîtrise et bonne expérience de\_VueJS, passionné(e) par le Web et nouvelles technologies."
+  path:
+    -
+      alias: /jobs/tech-lead-frontend
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Tech Lead Frontend'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Nous sommes à la recherche d'un(e)&nbsp;<strong>Lead Développeur Front-End VueJs &amp; Nuxt</strong>&nbsp;avec une maîtrise et bonne expérience de&nbsp;VueJS, passionné(e) par le Web et nouvelles technologies.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'Z12, Bd jameafno, Marrakech'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Une maîtrise totale de VueJs, NuxtJs, Axios, VueX, NodeJs, Vuetify, Git, Webpack, ...\r\nBonnes connaissances de CI/CD, UX & UI\r\nAvoir une bonne communication et pouvoir travailler en équipe sans problèmes."
+      format: plain_text
+  field_vactory_email:
+    -
+      value: webgurus@email.ke
+  field_vactory_taxonomy_1:
+    -
+      entity: fd74022b-fd71-4f3d-8fb4-b56597731889
+  field_vactory_taxonomy_2:
+    -
+      entity: dbbc13d2-cdf2-40c3-a53e-edb6274fdc83
+  field_vactory_taxonomy_3:
+    -
+      entity: c83e5a7e-3c74-4148-9440-95359a8d6ad4
+  field_vactory_telephone:
+    -
+      value: '0588000000'

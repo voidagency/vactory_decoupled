@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8077a2de-b81a-4a54-8d47-023cbc6d9a7f
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    5edad764-10a9-4737-992c-82fd511fcc89: media
+    dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Photographie : Bases complètes pour débutants'
+  created:
+    -
+      value: 1592822429
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Photographie : Bases complètes pour débutants | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/photographie-bases-completes-pour-debutants'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Cette formation s'adresse à vous si vous vous reconnaissez dans l'une des quatre catégories ci-dessous :\n\n\nVous êtes débutant•e\_et n'avez jamais pris le temps de comprendre le fonctionnement d'un appareil photo\n\n\nVous faites déjà un peu de photo mais\_sans véritable bases théoriques\_et souhaitez améliorer vos photos\n\n\nVous êtes passionné•e avec avez\_quelques bases parfois fragiles\_et souhaitez\_valider vos connaissances"
+  path:
+    -
+      alias: /academy-courses/photographie-bases-completes-pour-debutants
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Photographie : Bases complètes pour débutants'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Cette formation s'adresse à vous si vous vous reconnaissez dans l'une des quatre catégories ci-dessous :</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Vous êtes débutant</strong>•<strong>e</strong>&nbsp;et n'avez jamais pris le temps de comprendre le fonctionnement d'un appareil photo</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Vous faites déjà un peu de photo mais&nbsp;<strong>sans véritable bases théoriques&nbsp;</strong>et souhaitez améliorer vos photos</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Vous êtes passionné•e avec avez&nbsp;<strong>quelques bases parfois fragiles</strong>&nbsp;et souhaitez&nbsp;<strong>valider vos connaissances</strong></p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Vous faites de la vidéo mais n'avez&nbsp;<strong>pas de bases en photographie</strong>&nbsp;et cela vous freine</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>Durant cette formation, vous apprendrez à&nbsp;<strong>vous servir de votre propre appareil photo</strong>&nbsp;à travers un&nbsp;<strong>programme complet</strong>, pensé et structuré dans le but de&nbsp;<strong>vous donner rapidement les outils</strong>&nbsp;nécessaires à la réalisation de photos de plus en plus belles et pertinentes.</p>\r\n\r\n<p>Vous aurez l'occasion de&nbsp;<strong>mettre en pratique</strong>&nbsp;les notions théoriques abordées à travers différents&nbsp;<strong>exercices simples et efficaces&nbsp;</strong>afin de vous permettre de&nbsp;<strong>comprendre par vous-même</strong>&nbsp;chaque notion.</p>\r\n\r\n<p>A la fin de cette formation vous saurez&nbsp;<strong>comment manipuler votre propre boîtier&nbsp;</strong>afin de le paramétrer de la bonne façon quel que soit le sujet que vous souhaitez photographier et du rendu esthétique que vous souhaitez obtenir.</p>\r\n\r\n<p>Vous comprendrez et saurez paramétrer les éléments suivants :</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>l'exposition dans tous les modes de base</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>l'ouverture du diaphragme et la profondeur de champ</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>La vitesse d'obturation et le mouvement</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>la balance des blancs</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>le mode manuel</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>les ISO</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>les collimateurs de mise au point</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>les objectifs et leurs caractéristiques</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>ou encore les modes de mesure</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>...</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p>Nous parlerons également d'histoire de la photographie afin de mieux cerner l'origine et le fonctionnement d'un appareil photo.</p>\r\n\r\n<p><strong><em>Votre appareil photo n'attend que vous !</em></strong></p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596036773
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '3 h 30 min'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-22'
+  field_vactory_excerpt:
+    -
+      value: 'Découvrez ou redécouvrez les bases complètes de la photographie. Que vous soyez totalement débutant ou déjà pratiquant.'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_media_image:
+    -
+      entity: 5edad764-10a9-4737-992c-82fd511fcc89
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f37beddb-0e6e-402a-a82c-38a6f19746c4
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594859178
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<ul>\r\n\t<li>Comprendre le fonctionnement d''un appareil photo<\/li>\r\n\t<li>Comprendre le vocabulaire ainsi que les termes techniques de la photographie<\/li>\r\n\t<li>Apprendre \u00e0 utiliser les diff\u00e9rents modes d''un appareil photo<\/li>\r\n\t<li>Comprendre et r\u00e9aliser les effets artistiques de base (profondeur de champ, flou de mouvement,...)<\/li>\r\n\t<li>Apprendre \u00e0 g\u00e9rer des situations lumineuses complexes (contre-jour, nuit,...)<\/li>\r\n\t<li>Apprendre \u00e0 r\u00e9ussir sa mise au point en toutes situations<\/li>\r\n\t<li>Apprendre les sp\u00e9cificit\u00e9s des diff\u00e9rents types d''objectifs<\/li>\r\n\t<li>S''exercer sur le terrain \u00e0 travers des exercices et d\u00e9monstrations pratiques<\/li>\r\n\t<li>Comprendre les limites de son mat\u00e9riel et devenir capable de choisir le mat\u00e9riel adapt\u00e9 \u00e0 son besoin<\/li>\r\n<\/ul>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<ul>\r\n\t<li>Il est pr\u00e9f\u00e9rable que vous disposiez d''un appareil photo proposant les modes suivants : A ou Av, S ou Tv ainsi que M (Manuel).<\/li>\r\n\t<li>Votre bo\u00eetier peut \u00eatre de type reflex, bridge, hybride ou compact expert et de n''importe quelle marque.<\/li>\r\n<\/ul>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p>Cette formation s''adresse \u00e0 vous si vous vous reconnaissez dans l''une des quatre cat\u00e9gories ci-dessous :<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p><strong>Vous \u00eates d\u00e9butant<\/strong>\u2022<strong>e<\/strong>&nbsp;et n''avez jamais pris le temps de comprendre le fonctionnement d''un appareil photo<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vous faites d\u00e9j\u00e0 un peu de photo mais&nbsp;<strong>sans v\u00e9ritable bases th\u00e9oriques&nbsp;<\/strong>et souhaitez am\u00e9liorer vos photos<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vous \u00eates passionn\u00e9\u2022e avec avez&nbsp;<strong>quelques bases parfois fragiles<\/strong>&nbsp;et souhaitez&nbsp;<strong>valider vos connaissances<\/strong><\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Vous faites de la vid\u00e9o mais n''avez&nbsp;<strong>pas de bases en photographie<\/strong>&nbsp;et cela vous freine<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>Durant cette formation, vous apprendrez \u00e0&nbsp;<strong>vous servir de votre propre appareil photo<\/strong>&nbsp;\u00e0 travers un&nbsp;<strong>programme complet<\/strong>, pens\u00e9 et structur\u00e9 dans le but de&nbsp;<strong>vous donner rapidement les outils<\/strong>&nbsp;n\u00e9cessaires \u00e0 la r\u00e9alisation de photos de plus en plus belles et pertinentes.<\/p>\r\n\r\n<p>Vous aurez l''occasion de&nbsp;<strong>mettre en pratique<\/strong>&nbsp;les notions th\u00e9oriques abord\u00e9es \u00e0 travers diff\u00e9rents&nbsp;<strong>exercices simples et efficaces&nbsp;<\/strong>afin de vous permettre de&nbsp;<strong>comprendre par vous-m\u00eame<\/strong>&nbsp;chaque notion.<\/p>\r\n\r\n<p>A la fin de cette formation vous saurez&nbsp;<strong>comment manipuler votre propre bo\u00eetier&nbsp;<\/strong>afin de le param\u00e9trer de la bonne fa\u00e7on quel que soit le sujet que vous souhaitez photographier et du rendu esth\u00e9tique que vous souhaitez obtenir.<\/p>\r\n\r\n<p>Vous comprendrez et saurez param\u00e9trer les \u00e9l\u00e9ments suivants :<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>l''exposition dans tous les modes de base<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>l''ouverture du diaphragme et la profondeur de champ<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>La vitesse d''obturation et le mouvement<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>la balance des blancs<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>le mode manuel<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>les ISO<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>les collimateurs de mise au point<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>les objectifs et leurs caract\u00e9ristiques<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>ou encore les modes de mesure<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>...<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>Nous parlerons \u00e9galement d''histoire de la photographie afin de mieux cerner l''origine et le fonctionnement d''un appareil photo.<\/p>\r\n\r\n<p><strong><em>Votre appareil photo n''attend que vous !<\/em><\/strong><\/p>\r\n\r\n<p><em>Votre formateur, Olivier<\/em><\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=a6lQZaLPsr0'

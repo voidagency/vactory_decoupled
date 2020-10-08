@@ -1,0 +1,148 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b4d869c4-6585-411e-bb17-26d99ef26c0c
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Update DF'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Academy - Blocs'
+  created:
+    -
+      value: 1592826225
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Academy - Blocs | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-blocs'
+  path:
+    -
+      alias: /academy-blocs
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Exemple de blocs de cours'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1593010459
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e170368b-f2fe-43dd-964d-5b8ed7c20354
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1592826260
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_academy:three-columns'
+              widget_data: '[{"title":"Nos 3 derniers cours","description":{"value":"<p>Academy courses<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_academy","views_display_id":"block_three_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_date":"date","field_vactory_academy_duration":"duration","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_media_image":"image"},"vocabularies":{"academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir tous les cours","url":"\/node\/131","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Nos 3 derniers cours'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0946da49-dab8-4b9d-8ca7-ee490f32a41b
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1592826429
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_academy:two-columns'
+              widget_data: '[{"title":"Nos 2 derniers cours","description":{"value":"<p>Academy courses<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_academy","views_display_id":"block_two_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_date":"date","field_vactory_academy_duration":"duration","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_media_image":"image"},"vocabularies":{"academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir tous les cours","url":"\/node\/131","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Nos 2 derniers cours'

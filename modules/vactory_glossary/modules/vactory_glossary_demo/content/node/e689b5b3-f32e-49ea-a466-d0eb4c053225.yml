@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e689b5b3-f32e-49ea-a466-d0eb4c053225
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    7edadc0a-e9a9-444b-ac56-78d6ff1ad713: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'سعر الفائدة'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'سعر الفائدة'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'سعر الفائدة | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/107'
+  path:
+    -
+      alias: /glossary/sr-alfaydt
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'سعر الفائدة'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'يوافق سعر الفائدة النسبة المئوية المحددة تعاقديا لمدة سنة واحدة من طرف المقرض كمكافأة له.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 7edadc0a-e9a9-444b-ac56-78d6ff1ad713

@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 22cfd1e9-06ed-45d8-8430-1f9053414c65
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    011bbfbd-3f20-4a5a-a002-7ac88081321a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Délai de retractation'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Délai de retractation | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/delai-de-retractation'
+  path:
+    -
+      alias: /glossary/delai-de-retractation
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Délai pendant lequel le client a la possibilité de se rétracter, c’est-à-dire, de renoncer à sa demande de crédit. En principe, ce délai de retractation de la souscription du crédit est de 7 jours à compter de la date de l’acceptation de l’offre préalable de crédit par l’emprunteur.\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 011bbfbd-3f20-4a5a-a002-7ac88081321a

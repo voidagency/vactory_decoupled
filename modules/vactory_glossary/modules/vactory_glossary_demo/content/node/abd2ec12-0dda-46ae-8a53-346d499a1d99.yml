@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: abd2ec12-0dda-46ae-8a53-346d499a1d99
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'توقيع إلكتروني'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'توقيع إلكتروني'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'توقيع إلكتروني | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/102'
+  path:
+    -
+      alias: /glossary/twqy-alktrwny
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'توقيع إلكتروني'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'التوقيع الإلكتروني هو نقل التوقيع بخط اليد إلى العالم الرقمي. ويسمح بتأمين و تأكيد التزامات الطرفين. ويعتبر التوقيع الإلكتروني أداة تسمح بضمان هوية الموقع وكذا مصدر وشمولية الوثيقة. كما يؤكد للمستخدم النهائي بأن توقيعه لم يتم تغييره منذ إحداثه.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

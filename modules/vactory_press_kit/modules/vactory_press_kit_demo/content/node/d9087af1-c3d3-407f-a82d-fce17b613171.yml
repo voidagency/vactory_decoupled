@@ -1,0 +1,148 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d9087af1-c3d3-407f-a82d-fce17b613171
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'UPDATE DF'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit - Blocs'
+  created:
+    -
+      value: 1592932555
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit - Blocs | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press-kit-blocs'
+  path:
+    -
+      alias: /press-kit-blocs
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit blocs'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1593012087
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ec3dfa95-c73a-44d8-89c1-c6aceb073c73
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1592932652
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_press_kit:three-columns'
+              widget_data: '[{"title":"Nos 3 derniers press kits","description":{"value":"<p>Press kits<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_press_kit","views_display_id":"block_three_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_media":"image","field_vactory_media_file":"file"},"vocabularies":{"academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0,"vactory_news_theme":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir tous les press kits","url":"\/node\/147","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Nos 3 derniers press kits'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c4b4a4df-5b2f-49d0-80a2-dc4e12ac91a1
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1592932795
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_press_kit:two-columns'
+              widget_data: '[{"title":"Nos 2 derniers press kits","description":{"value":"<p>Press kits<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_press_kit","views_display_id":"block_two_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_media":"image","field_vactory_media_file":"file"},"vocabularies":{"academy_themes":0,"blog_category":0,"glossary_secteur":0,"job_ads_city":0,"job_ads_contract":0,"job_ads_profession":0,"press_kit_theme":0,"publication_theme":0,"tags":0,"vactory_governance_role":0,"vactory_news_theme":0},"image_styles":{"avatar":0,"gouvernance_thumbnail":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir tous les press kits","url":"\/node\/147","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Nos 2 derniers press kits'

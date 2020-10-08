@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6e7aed4d-246d-4385-945c-f6fecf075bdc
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'لائحة جدولة الدين'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'لائحة جدولة الدين'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'لائحة جدولة الدين | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/114'
+  path:
+    -
+      alias: /glossary/layht-jdwlt-aldyn
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'لائحة جدولة الدين'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "لائحة جدولة الدين هي وثيقة تبين بتفصيل تسديد قرض ما. وعموما تقدم في أعمدتها المعلومات التالية :\r\nـ التاريخ : يتعلق الأمر بتاريخ استحقاق القرض الذي يجب فيه تسديد القسط الشهري\r\nـ الأقساط الشهرية : المبلغ الواجب أداؤه بالنسبة للشهر الموافق.\r\nويبين القسط الشهري للقرض بتفصيل إلى جانب الجزء المخصص لرأس المال وحصة الفوائد وقسط التأمين الاختياري."
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

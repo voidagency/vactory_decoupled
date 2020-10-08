@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bf36a100-8775-47b4-9f7b-2fc3a9531818
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    7f1a7a06-19db-4f6d-b0f2-d77abb892e38: media
+    01c62ae4-12eb-484c-9f03-2ac6d9d55cb9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Publication 6'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Publication 6'
+  created:
+    -
+      value: 1592914684
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publication 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-6'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'En général, une version "de premier développement", c''est à dire qui n''est pas encore fiable, possède un numéro commençant par 0. Les premières versions qui circulent d''un logiciel ou d''un document sont souvent les versions "0.9". C''est par exemple le cas de ce polycopié (la version 0.91 contient simplement des corrections orthographiques).'
+  path:
+    -
+      alias: /publications/publication-6
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>En général, une version \"de premier développement\", c'est à dire qui n'est pas encore fiable, possède un numéro commençant par 0. Les premières versions qui circulent d'un logiciel ou d'un document sont souvent les versions \"0.9\". C'est par exemple le cas de ce polycopié (la version 0.91 contient simplement des corrections orthographiques).</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_call_to_action:
+    -
+      uri: 'http://www.google.com'
+      title: 'Publication Link'
+      options: {  }
+  field_vactory_date:
+    -
+      value: '1990-01-01'
+  field_vactory_excerpt:
+    -
+      value: "Nous en sommes à la première version de ce document, qui est écrite avant même\r\nque le cours ait lieu, avant que l'interaction avec les étudiants ne vienne permettre\r\nde le faire progresser. "
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: 7f1a7a06-19db-4f6d-b0f2-d77abb892e38
+  field_vactory_taxonomy_1:
+    -
+      entity: 01c62ae4-12eb-484c-9f03-2ac6d9d55cb9

@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f24e9fe7-95d6-4ae6-aeb9-c14bfba14c43
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    f24d0f65-ae0a-4762-8ccb-a65e36d54b75: media
+    1357d550-b00c-46dd-94ea-f2007b1bcb15: media
+    94ff8e19-4c31-4322-b91f-7d6d457557a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 9'
+  created:
+    -
+      value: 1592931162
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-9'
+  path:
+    -
+      alias: /press_kit/press-kit-9
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-07-01'
+  field_vactory_excerpt:
+    -
+      value: 'he Hansa Biopharma group ("Share Rights Program 2020"), whereby not more than 36 individuals within the Hansa Biopharma group may participate. The participants will receive performance based share rights which, subject to certain conditions being met, give the right to receive ordinary shares in the Company. '
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: f24d0f65-ae0a-4762-8ccb-a65e36d54b75
+  field_vactory_media_file:
+    -
+      entity: 1357d550-b00c-46dd-94ea-f2007b1bcb15
+  field_vactory_taxonomy_1:
+    -
+      entity: 94ff8e19-4c31-4322-b91f-7d6d457557a9

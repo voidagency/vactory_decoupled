@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 924f29ce-7975-4b34-bd78-35205f77d8c1
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    007b8e0d-1b21-4abd-ae2c-8b59d42902ea: taxonomy_term
+    dbbc13d2-cdf2-40c3-a53e-edb6274fdc83: taxonomy_term
+    a5b8e36e-3dc7-4f14-9108-a15d815e37cf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Chef de Projet SIRH'
+  created:
+    -
+      value: 1593519048
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Chef de Projet SIRH | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/chef-de-projet-sirh'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Missions :\n\nLe chef de projet prendra en charge l’étape de cadrage du projet de\_la mise en place d’un outil SIRH. Il va assurer l’interface avec les filiales, l’éditeur et la maitrise d’œuvre.\n\nIl sera amené à\_:"
+  path:
+    -
+      alias: /jobs/chef-de-projet-sirh
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Chef de Projet SIRH'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p><u><strong>Missions :</strong></u></p>\r\n\r\n<ul>\r\n\t<li>Le chef de projet prendra en charge l’étape de cadrage du projet de&nbsp;<strong>la mise en place d’un outil SIRH</strong>. Il va assurer l’interface avec les filiales, l’éditeur et la maitrise d’œuvre.</li>\r\n</ul>\r\n\r\n<p><u>Il sera amené à&nbsp;:</u></p>\r\n\r\n<ul>\r\n\t<li>Fournir l’expertise métier SIRH et gestion de paie</li>\r\n\t<li>Mener les ateliers de cadrage avec les filiales, l’architecture et les différentes parties prenantes sur les projets SIRH</li>\r\n\t<li>Étudier le besoin des filiales et leurs fournir le conseil et l’expertise nécessaire pour prendre les décisions</li>\r\n\t<li>Assurer la rédaction des documents projets selon la méthodologie de gestion de projet groupe</li>\r\n\t<li>Analyser les contraintes techniques et identifier les solutions possibles</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '289 Quartier les bifidus, Casablanca'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Bonne connaissance des outils SIRH et gestion de paie\r\nExpériences réussies dans l’implémentation d’outil SIRH en mode multi sites\r\nExpertise en gestion de projet d’implémentation d’outil SIRH"
+      format: plain_text
+  field_vactory_email:
+    -
+      value: kutafuta@hotmail.com
+  field_vactory_taxonomy_1:
+    -
+      entity: 007b8e0d-1b21-4abd-ae2c-8b59d42902ea
+  field_vactory_taxonomy_2:
+    -
+      entity: dbbc13d2-cdf2-40c3-a53e-edb6274fdc83
+  field_vactory_taxonomy_3:
+    -
+      entity: a5b8e36e-3dc7-4f14-9108-a15d815e37cf
+  field_vactory_telephone:
+    -
+      value: '0600000000'

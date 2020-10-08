@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3f5b138e-a58f-4a83-ab6b-373e3ce12e4d
+  bundle: glossary
+  default_langcode: fr
+  depends:
+    011bbfbd-3f20-4a5a-a002-7ac88081321a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Crédit personnel\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Pièces justificatives'
+  created:
+    -
+      value: 1594603398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Pièces justificatives | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/pieces-justificatives'
+  path:
+    -
+      alias: /glossary/pieces-justificatives
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Page description\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Il s’agit des documents à joindre lors d’une demande de crédit afin de justifier l'identité de l'emprunteur, ses sources de revenu, charges…\r\n\r\nVous êtes Salarié du secteur public ?\r\n\r\nVous êtes client Wafasalaf :\r\n\r\n- Copie CIN\r\n\r\n- Etat d’engagement ou dernier relevé bancaire.\r\n\r\nVous n'êtes pas client Wafasalaf :\r\n\r\n- Copie CIN. \r\n\r\n- Justificatif d’adresse.\r\n\r\n- Justificatif d’identité bancaire : spécimen de chèque ou attestation de RIB ou relevé bancaire avec les 24 positions du N° du compte bancaire.\r\n\r\n- Etat d’engagement. Dernier relevé bancaire.\r\n\r\nVous êtes Salarié du secteur privé ?\r\n\r\nVous êtes client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- 1 dernier bulletin de paie. ·  \r\n\r\n- 1 dernier relevé bancaire.\r\n\r\nVous n'êtes pas client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- Justificatif d’adresse.\r\n\r\n- Justificatif d’identité bancaire : spécimen de chèque ou attestation de RIB ou relevé bancaire avec les 24 positions du N° du compte bancaire.\r\n\r\n- Attestation de travail.\r\n\r\n- 1 dernier bulletin de paie.\r\n\r\n- 2 derniers relevés bancaires.\r\n\r\nVous êtes Retraité ?\r\n\r\nVous êtes client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- 1 dernier relevé bancaire.\r\n\r\nVous n'êtes pas client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- Justificatif d’adresse.\r\n\r\n- Justificatif d’identité bancaire : spécimen de chèque ou attestation de RIB ou relevé bancaire avec les 24 positions du N° du compte bancaire.\r\n\r\n- Attestation de pension.\r\n\r\n- 2 derniers relevés bancaires.\r\n\r\nVous avez une Profession libérale ?\r\n\r\nVous êtes client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- 1 dernier relevé bancaire.\r\n\r\nVous n'êtes pas client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- Justificatif d’adresse.\r\n\r\n- Justificatif d’identité bancaire : spécimen de chèque ou attestation de RIB ou relevé bancaire avec les 24 positions du N° du compte bancaire.\r\n\r\n- Copie de la carte professionnelle.\r\n\r\n- 2 derniers relevés bancaires.\r\n\r\nVous êtes Commerçant ?\r\n\r\nVous êtes client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- Registre de commerce modèle J.\r\n\r\n- 1 dernier relevé bancaire.\r\n\r\nVous n'êtes pas client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- Justificatif d’adresse.\r\n\r\n- Justificatif d’identité bancaire : spécimen de chèque ou attestation de RIB ou relevé bancaire avec les 24 positions du N° du compte bancaire.\r\n\r\n- Registre de commerce modèle J.\r\n\r\n- 2 derniers relevés bancaires.\r\n\r\nVous êtes Artisan ?\r\n\r\nVous êtes client Wafasalaf :\r\n\r\n- Copie CIN.\r\n\r\n- Attestation d’artisanat délivrée par le ministère ou carte professionnelle.\r\n\r\n- Attestation d’inscription à la taxe professionnel.\r\n\r\n- 2 derniers relevés bancaires. Vous n'êtes pas client Wafasalaf :\r\n\r\n- Justificatif d’adresse.\r\n\r\n- Justificatif d’identité bancaire : spécimen de chèque ou attestation de RIB ou relevé bancaire avec les 24 positions du N° du compte bancaire.\r\n\r\n- Attestation d’artisanat délivrée par le ministère ou carte professionnelle.\r\n\r\n- Avis d’imposition à la taxe professionnelle ou Attestation d’inscription à la taxe professionnel.\r\n\r\n- 2 derniers relevés bancaires.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 011bbfbd-3f20-4a5a-a002-7ac88081321a

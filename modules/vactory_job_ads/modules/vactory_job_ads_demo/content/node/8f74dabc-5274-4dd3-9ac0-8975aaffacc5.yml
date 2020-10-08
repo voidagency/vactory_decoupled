@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8f74dabc-5274-4dd3-9ac0-8975aaffacc5
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    98bd6379-8abd-4740-95c6-cb170d1b0c33: taxonomy_term
+    dbbc13d2-cdf2-40c3-a53e-edb6274fdc83: taxonomy_term
+    a5b8e36e-3dc7-4f14-9108-a15d815e37cf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Chef de Projet Java Senior'
+  created:
+    -
+      value: 1593519367
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Chef de Projet Java Senior | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/chef-de-projet-java-senior'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Pour le compte de notre client, nous recrutons sur\_Tanger\_des\_Chefs de Projets Java sous contrat CDI."
+  path:
+    -
+      alias: /jobs/chef-de-projet-java-senior
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Chef de Projet Java Senior'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Pour le compte de notre client, nous recrutons sur&nbsp;<strong>Tanger</strong>&nbsp;des&nbsp;<strong>Chefs de Projets Java sous contrat CDI.</strong></p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '1A, Bd casteyijo, Tanger'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Avoir un minimum d'expérience de 6 ans,\r\nÊtre un Développeur Java à la base,\r\nAvoir au moins une expérience en tant que Chef d'une équipe de Développeurs Java,"
+      format: plain_text
+  field_vactory_email:
+    -
+      value: skyGroup@email.com
+  field_vactory_taxonomy_1:
+    -
+      entity: 98bd6379-8abd-4740-95c6-cb170d1b0c33
+  field_vactory_taxonomy_2:
+    -
+      entity: dbbc13d2-cdf2-40c3-a53e-edb6274fdc83
+  field_vactory_taxonomy_3:
+    -
+      entity: a5b8e36e-3dc7-4f14-9108-a15d815e37cf
+  field_vactory_telephone:
+    -
+      value: '0699885544'

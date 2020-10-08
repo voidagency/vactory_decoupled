@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 521bf9e1-68f0-49dc-80a9-acb5e99f18b1
+  bundle: image
+  default_langcode: fr
+  depends:
+    7a8980e7-7e87-4141-83c9-47d60864996c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: media1.jpeg
+  created:
+    -
+      value: 1593012884
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 7a8980e7-7e87-4141-83c9-47d60864996c
+      alt: media1
+      title: ''
+      width: 500
+      height: 375

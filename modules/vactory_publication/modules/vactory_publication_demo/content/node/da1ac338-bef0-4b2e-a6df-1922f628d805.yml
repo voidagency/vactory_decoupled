@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: da1ac338-bef0-4b2e-a6df-1922f628d805
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    117326cd-96ba-49f9-bf11-893e2130b87e: media
+    01c62ae4-12eb-484c-9f03-2ac6d9d55cb9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'publication 9'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Publication 9'
+  created:
+    -
+      value: 1592915210
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publication 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-9'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Ce guide, produit par\_l’Université Mount\_Royal\_et financé par le CERIC, décrit les cinq disciplines de l’informatique recensées par l’Association for Computing Machinery (ACM), et explique la correspondance entre ces disciplines et les emplois du domaine. Le guide contient aussi des renseignements sur les formations spécialisées, ainsi que des liens vers des ressources canadiennes d’information sur les professions."
+  path:
+    -
+      alias: /publications/publication-9
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Ce guide, produit par&nbsp;<a href=\"http://www.mtroyal.ca/\" rel=\"noopener noreferrer\" target=\"_blank\">l’Université Mount&nbsp;Royal</a>&nbsp;et financé par le CERIC, décrit les cinq disciplines de l’informatique recensées par l’<a href=\"https://www.acm.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Association for Computing Machinery (ACM)</a>, et explique la correspondance entre ces disciplines et les emplois du domaine. Le guide contient aussi des renseignements sur les formations spécialisées, ainsi que des liens vers des ressources canadiennes d’information sur les professions.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_call_to_action:
+    -
+      uri: 'http://www.googe.com'
+      title: 'Publication Link'
+      options: {  }
+  field_vactory_date:
+    -
+      value: '1990-12-19'
+  field_vactory_excerpt:
+    -
+      value: 'Le guide, coloré et rempli de tableaux, développe le contenu de la populaire première édition de 2017 pour répondre à ces trois questions.'
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: 117326cd-96ba-49f9-bf11-893e2130b87e
+  field_vactory_taxonomy_1:
+    -
+      entity: 01c62ae4-12eb-484c-9f03-2ac6d9d55cb9

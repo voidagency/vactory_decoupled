@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 982d1cc7-198f-46a7-ae50-9b99187af93b
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    7edadc0a-e9a9-444b-ac56-78d6ff1ad713: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'سلف قابل للاستهلاك'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'سلف قابل للاستهلاك'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'سلف قابل للاستهلاك | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/108'
+  path:
+    -
+      alias: /glossary/slf-qabl-llasthlak
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'سلف قابل للاستهلاك'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'السلف القابل للاستهلاك هو قرض يتم تسديد رأسماله خلال فترة زمنية. ويوافق استهلاك القرض الجزء الذي سيتم تسديده من الرأسمال عند كل استحقاق. ويعتبر القرض القابل للاستهلاك مهما بالنسبة للأسر الراغبة في الاعتماد على شكل من التسديد يكون صارما وموثوقا، وذلك طيلة مدة الاتفاق. وتستعمل هذه الطريقة على الخصوص بالنسبة للقروض طويلة الأمد.'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: 7edadc0a-e9a9-444b-ac56-78d6ff1ad713

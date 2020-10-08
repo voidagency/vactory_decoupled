@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f51d55e2-6a50-4611-b4f3-764bec82ba32
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    a1f9208d-605a-4873-90c4-1373fb77b32b: media
+    1357d550-b00c-46dd-94ea-f2007b1bcb15: media
+    c7bbcbbe-c841-4a7e-b0e6-e5faa6270d3f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 1'
+  created:
+    -
+      value: 1592922866
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 1 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-1'
+  path:
+    -
+      alias: /press_release/press-release-1
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 1'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-24'
+  field_vactory_excerpt:
+    -
+      value: 'ARMONK, N.Y. and WALLDORF, Germany, June 23, 2020 /PRNewswire/ -- IBM (NYSE: IBM) and SAP SE (NYSE: SAP) today announced their partnership''s next evolution, with plans to develop several new offerings designed to create a more predictable journey for businesses to become data-driven intelligent enterprises. '
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: a1f9208d-605a-4873-90c4-1373fb77b32b
+  field_vactory_media_file:
+    -
+      entity: 1357d550-b00c-46dd-94ea-f2007b1bcb15
+  field_vactory_taxonomy_1:
+    -
+      entity: c7bbcbbe-c841-4a7e-b0e6-e5faa6270d3f

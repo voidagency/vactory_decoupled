@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 43633d39-a5bd-4433-9747-aa77a00345e6
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    76bbb975-8e03-403e-8827-af40c2260fd7: media
+    4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 5'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 5'
+  created:
+    -
+      value: 1592928926
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/56'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Disciplined Risk Management\nWafa Gestion's control framework is sound, in Fitch's view, and has been strengthened over the past two years. Influence of risk and control functions over the business has been growing, in line with management's expectations. Specifically, the creation of new risk committees, the roll-out of new risk monitoring tools (particularly in credit) and wider system-based controls (notably pre-trade controls and constraints modelling) have shown that business risks are adequately addressed."
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Disciplined Risk Management<br />\r\nWafa Gestion's control framework is sound, in Fitch's view, and has been strengthened over the past two years. Influence of risk and control functions over the business has been growing, in line with management's expectations. Specifically, the creation of new risk committees, the roll-out of new risk monitoring tools (particularly in credit) and wider system-based controls (notably pre-trade controls and constraints modelling) have shown that business risks are adequately addressed.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'rue Oussama Ibn Zaid - ex Jura ang. rue d''auvergne, Grand Casablanca'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role5@gmail.com
+  field_vactory_fax:
+    -
+      value: '0522 257 716'
+  field_vactory_media_image:
+    -
+      entity: 76bbb975-8e03-403e-8827-af40c2260fd7
+  field_vactory_name:
+    -
+      value: 'Role 5'
+  field_vactory_taxonomy_1:
+    -
+      entity: 4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92
+  field_vactory_telephone:
+    -
+      value: '0622 257 716'

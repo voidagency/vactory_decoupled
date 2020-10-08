@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0a4ef617-9bba-4f58-a4d5-ea00c451e09d
+  bundle: document
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: marketingDoc.pdf
+  uri:
+    -
+      value: 'public://2020-06/marketingDoc_2.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 16590
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1592924627
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

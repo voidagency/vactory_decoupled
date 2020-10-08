@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f812ee6a-5ee1-405e-8660-67c5ccc9a8e3
+  bundle: blog
+  default_langcode: fr
+  depends:
+    34e0b3fe-a112-4d52-a861-d8abb9150e55: media
+    1d42d776-5eb8-4776-acbe-864b3dd696cb: taxonomy_term
+    df44ce4c-ae3f-4c5e-934c-f76a55d1aedf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 1'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 1'
+  created:
+    -
+      value: 1592923984
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 1 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-1'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch''s approach to ratings endorsement so that ratings produced outside the EU may be used by regulated entities within the EU for regulatory purposes, pursuant to the terms of the EU Regulation with respect to credit rating agencies, can be found on the EU Regulatory Disclosures page. The endorsement status of all International ratings is provided within the entity summary page for each rated entity and in the transaction detail pages for all structured finance transactions on the Fitch website. These disclosures are updated on a daily basis.'
+  path:
+    -
+      alias: /blogs/blog-1
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 1'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch's approach to ratings endorsement so that ratings produced outside the EU may be used by regulated entities within the EU for regulatory purposes, pursuant to the terms of the EU Regulation with respect to credit rating agencies, can be found on the EU Regulatory Disclosures page. The endorsement status of all International ratings is provided within the entity summary page for each rated entity and in the transaction detail pages for all structured finance transactions on the Fitch website. These disclosures are updated on a daily basis.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'The ratings above were solicited and assigned or maintained at the request of the rated entity/issuer or a related third party. Any exceptions follow below.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 34e0b3fe-a112-4d52-a861-d8abb9150e55
+  field_vactory_taxonomy_1:
+    -
+      entity: 1d42d776-5eb8-4776-acbe-864b3dd696cb
+  field_vactory_taxonomy_2:
+    -
+      entity: df44ce4c-ae3f-4c5e-934c-f76a55d1aedf

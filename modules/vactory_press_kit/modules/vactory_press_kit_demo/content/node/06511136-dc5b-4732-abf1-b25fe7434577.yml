@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 06511136-dc5b-4732-abf1-b25fe7434577
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    b33ba579-25e0-43e3-9a83-7437e25f66f0: media
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    060430fd-8bdc-48c9-9e9f-3bf1c8cc81a1: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 3'
+  created:
+    -
+      value: 1592927872
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 3 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-3'
+  path:
+    -
+      alias: /press_kit/press-kit-3
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 3'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-25'
+  field_vactory_excerpt:
+    -
+      value: 'Despite the adverse impact of COVID-19 on the industry, airlines are increasingly focusing on adopting next-generation digital solutions such as mobility, machine learning (ML), Big Data analytics, and artificial intelligence (AI) to identify cost-saving and revenue-generating opportunities," said Abhilash Varkey Abraham, Aerospace & Defense Research Analyst at Frost & Sullivan. '
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: b33ba579-25e0-43e3-9a83-7437e25f66f0
+  field_vactory_media_file:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_taxonomy_1:
+    -
+      entity: 060430fd-8bdc-48c9-9e9f-3bf1c8cc81a1

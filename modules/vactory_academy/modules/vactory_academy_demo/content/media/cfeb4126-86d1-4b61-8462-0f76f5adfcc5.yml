@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: cfeb4126-86d1-4b61-8462-0f76f5adfcc5
+  bundle: image
+  default_langcode: fr
+  depends:
+    0f489249-402d-4d0b-a1ff-0c95a69fc8f4: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: photo2.jpeg
+  created:
+    -
+      value: 1593008084
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 0f489249-402d-4d0b-a1ff-0c95a69fc8f4
+      alt: photo2
+      title: ''
+      width: 500
+      height: 290

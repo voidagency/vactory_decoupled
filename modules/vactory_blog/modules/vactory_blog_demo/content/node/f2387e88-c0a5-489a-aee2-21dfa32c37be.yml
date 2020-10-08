@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f2387e88-c0a5-489a-aee2-21dfa32c37be
+  bundle: blog
+  default_langcode: fr
+  depends:
+    9e67a0d2-834c-4f64-a88e-d823549c80ea: media
+    b1797e68-02d8-413f-991a-f82ad0dcf92c: taxonomy_term
+    2b44bf8a-ad52-471b-87b2-096021ba3a21: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 2'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 2'
+  created:
+    -
+      value: 1592924166
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-2'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report.'
+  path:
+    -
+      alias: /blogs/blog-2
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'We have updated our Terms of Use and Privacy Policies which cover all of Fitch Group''s websites. Learn more.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 9e67a0d2-834c-4f64-a88e-d823549c80ea
+  field_vactory_taxonomy_1:
+    -
+      entity: b1797e68-02d8-413f-991a-f82ad0dcf92c
+  field_vactory_taxonomy_2:
+    -
+      entity: 2b44bf8a-ad52-471b-87b2-096021ba3a21

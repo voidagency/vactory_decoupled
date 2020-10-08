@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a99f3d8b-0b18-456b-874a-ca566bc33fca
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    d87e68b9-eeb6-44f3-b809-df9febab6f50: media
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    5b3c92df-7831-4c4a-82cb-a8ac6eb10f93: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 10'
+  created:
+    -
+      value: 1592925330
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-10'
+  path:
+    -
+      alias: /press_release/press-release-10
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-30'
+  field_vactory_excerpt:
+    -
+      value: 'PALM BEACH, Florida, June 23, 2020 /PRNewswire/ -- The cannabis plant is made up of more than 100 unique chemical compounds, known as cannabinoids. So far, the two most common and well-known cannabinoids are tetrahydrocannabinol (THC) and cannabidiol (CBD). THC adoption is being boosted by its use in the recreational market, while CBD, thanks to its non-psychoactive nature, is quickly making its way into everything from medicines to edibles to pet food.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: d87e68b9-eeb6-44f3-b809-df9febab6f50
+  field_vactory_media_file:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_taxonomy_1:
+    -
+      entity: 5b3c92df-7831-4c4a-82cb-a8ac6eb10f93

@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 3762d1c9-45c3-498d-98df-9121ec872e46
+  bundle: image
+  default_langcode: fr
+  depends:
+    87e32141-c57d-49b4-813a-dd4cbf0834c5: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: marvin-meyer-SYTO3xs06fU-unsplash.jpg
+  created:
+    -
+      value: 1593040177
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 87e32141-c57d-49b4-813a-dd4cbf0834c5
+      alt: image
+      title: ''
+      width: 6000
+      height: 4000

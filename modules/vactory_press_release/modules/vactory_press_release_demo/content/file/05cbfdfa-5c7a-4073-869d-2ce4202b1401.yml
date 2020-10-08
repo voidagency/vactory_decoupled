@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 05cbfdfa-5c7a-4073-869d-2ce4202b1401
+  bundle: document
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: financeDoc.pdf
+  uri:
+    -
+      value: 'public://2020-06/financeDoc_0_1.pdf'
+  filemime:
+    -
+      value: application/pdf
+  filesize:
+    -
+      value: 182639
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1592924216
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

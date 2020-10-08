@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9f20b11e-2016-4f07-ad73-674e3e38f385
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    95e75485-622f-4af0-9def-b70d29fc1492: media
+    66f4aa12-4b93-4b03-8407-452e9a278b52: media
+    94ff8e19-4c31-4322-b91f-7d6d457557a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 10'
+  created:
+    -
+      value: 1592931243
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-10'
+  path:
+    -
+      alias: /press_kit/press-kit-10
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-27'
+  field_vactory_excerpt:
+    -
+      value: 'UNION, N.J., June 22, 2020 /PRNewswire/ -- Bed Bath & Beyond Inc. (Nasdaq: BBBY) today announced it has further strengthened its liquidity position by executing an $850 million three-year secured asset-based revolving credit facility (ABL Facility) with a syndicate of banks.  The ABL Facility expires in June 2023 and replaces the Company''s existing unsecured revolving credit facility allowing for borrowings up to $250 million.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 95e75485-622f-4af0-9def-b70d29fc1492
+  field_vactory_media_file:
+    -
+      entity: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  field_vactory_taxonomy_1:
+    -
+      entity: 94ff8e19-4c31-4322-b91f-7d6d457557a9

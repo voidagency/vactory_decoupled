@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 60bd7d63-567f-40de-aaeb-20565df7215c
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    cc26b409-966d-4f3f-8ad9-f7ff7942c9c7: media
+    ffc5c778-064d-486a-962a-772f2a5a40e2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: ed
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 10'
+  created:
+    -
+      value: 1592426238
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-10'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: '<p>Etsy snackwave shabby chic locavore, pop-up ad pour-over aute enim fashion axe cold-pressed woke before they sold out. Elit selvage prism, deep v labore ad skateboard austin. Intelligentsia selfies brooklyn deep v. Laboris flexitarian et bitters irure, nostrud cillum crucifix coloring book. Keffiyeh kombucha prism pickled migas, cardigan leggings. Banjo kogi umami beard in chartreuse irony hella small batch activated charcoal iPhone heirloom flexitarian.</p>'
+  path:
+    -
+      alias: /news/news-10
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;Etsy snackwave shabby chic locavore, pop-up ad pour-over aute enim fashion axe cold-pressed woke before they sold out. Elit selvage prism, deep v labore ad skateboard austin. Intelligentsia selfies brooklyn deep v. Laboris flexitarian et bitters irure, nostrud cillum crucifix coloring book. Keffiyeh kombucha prism pickled migas, cardigan leggings. Banjo kogi umami beard in chartreuse irony hella small batch activated charcoal iPhone heirloom flexitarian.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Ramps listicle banjo freegan fanny pack incididunt organic vinyl dolore. Vexillologist banh mi woke pour-over +1 skateboard letterpress hashtag. Asymmetrical cred tousled, williamsburg austin meh flannel. Squid heirloom vexillologist DIY lorem. Chillwave skateboard typewriter, la croix ea nulla pickled banh mi tousled in hoodie dolor. Yuccie celiac pop-up street art fashion axe asymmetrical skateboard elit.&lt;/p&gt;<br />\r\n&nbsp;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: "Vestibulum suscipit nulla quis orci. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Nullam accumsan lorem in dui. Phasellus accumsan cursus velit. Pellentesque commodo eros a enim.\r\n"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: cc26b409-966d-4f3f-8ad9-f7ff7942c9c7
+  field_vactory_taxonomy_1:
+    -
+      entity: ffc5c778-064d-486a-962a-772f2a5a40e2

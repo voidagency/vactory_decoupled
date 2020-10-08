@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: eafed3f4-53f5-44c2-a9a9-ff66ecaf823f
+  bundle: image
+  default_langcode: fr
+  depends:
+    290b69b8-0617-4762-93b8-586b07d97e80: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: tech1.jpeg
+  created:
+    -
+      value: 1593012687
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 290b69b8-0617-4762-93b8-586b07d97e80
+      alt: tech1
+      title: ''
+      width: 500
+      height: 333

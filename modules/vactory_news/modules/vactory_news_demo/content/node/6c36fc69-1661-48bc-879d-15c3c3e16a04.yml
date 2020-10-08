@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6c36fc69-1661-48bc-879d-15c3c3e16a04
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    fec0066a-682e-47e2-83cb-87c4399c136c: media
+    ffc5c778-064d-486a-962a-772f2a5a40e2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: edit
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 6'
+  created:
+    -
+      value: 1592425974
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-6'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: '<p>Air plant taiyaki neutra laboris succulents pok pok tbh est lo-fi. Raclette 90''s gastropub anim four dollar toast crucifix narwhal bitters distillery chicharrones. Leggings cornhole sed synth. Dolore godard et intelligentsia selvage in. 90''s narwhal deserunt enamel pin ramps.</p>'
+  path:
+    -
+      alias: /news/news-6
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;Air plant taiyaki neutra laboris succulents pok pok tbh est lo-fi. Raclette 90's gastropub anim four dollar toast crucifix narwhal bitters distillery chicharrones. Leggings cornhole sed synth. Dolore godard et intelligentsia selvage in. 90's narwhal deserunt enamel pin ramps.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Fingerstache kitsch portland offal. Pok pok blog deep v, blue bottle in cloud bread thundercats man bun 8-bit swag pariatur XOXO vape ea. Microdosing qui heirloom cloud bread chicharrones occaecat forage man braid kinfolk leggings. Thundercats DIY readymade church-key 90's dolore non la croix craft beer humblebrag salvia shaman consectetur normcore literally. Bitters artisan tote bag knausgaard commodo unicorn dolore kitsch marfa ad austin art party in. Cliche slow-carb hell of tote bag, hexagon cardigan la croix veniam etsy echo park excepteur. Authentic brooklyn shaman ipsum vinyl raclette, lorem eiusmod nisi.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Lorem affogato listicle esse cred. Umami mollit taiyaki vaporware cliche freegan labore anim aliqua mixtape fashion axe eu normcore intelligentsia fingerstache. Chambray direct trade cold-pressed dolor plaid fixie VHS. Duis qui iPhone aesthetic organic. Subway tile art party occupy offal. Godard et blog ad hella retro shabby chic selvage kinfolk yuccie.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Cray reprehenderit cillum af actually blue bottle, iceland you probably haven't heard of them eiusmod activated charcoal ex fugiat post-ironic incididunt. Vinyl nostrud bicycle rights retro PBR&amp;amp;B, exercitation prism. Meggings magna in mustache VHS subway tile fam pinterest tacos yr. Excepteur do waistcoat tilde, YOLO voluptate humblebrag disrupt magna quis vegan duis roof party. Id portland ut, enamel pin pabst nostrud hella prism esse subway tile dolore. Pabst man braid qui etsy non synth wolf vape intelligentsia YOLO meggings schlitz labore. Glossier tofu leggings incididunt venmo everyday carry cillum tempor ad.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Helvetica pariatur laborum ad esse kale chips. Occaecat butcher yuccie pinterest put a bird on it fam laboris. Tofu nulla excepteur man braid blog post-ironic vegan lomo messenger bag fam trust fund street art yr austin kombucha. Williamsburg selvage palo santo, roof party live-edge cronut esse mollit +1 ethical chicharrones. Knausgaard migas gluten-free street art jianbing air plant magna. Yuccie thundercats photo booth chia tote bag squid distillery banjo do PBR&amp;amp;B consequat bicycle rights salvia keffiyeh.&lt;/p&gt;<br />\r\n&nbsp;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: "Lorem affogato listicle esse cred. Umami mollit taiyaki vaporware cliche freegan labore anim aliqua mixtape fashion axe eu normcore intelligentsia fingerstache. Chambray direct trade cold-pressed dolor plaid fixie VHS. Duis qui iPhone aesthetic organic. Subway tile art party occupy offal. Godard et blog ad hella retro shabby chic selvage kinfolk yuccie.\r\n"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: fec0066a-682e-47e2-83cb-87c4399c136c
+  field_vactory_taxonomy_1:
+    -
+      entity: ffc5c778-064d-486a-962a-772f2a5a40e2

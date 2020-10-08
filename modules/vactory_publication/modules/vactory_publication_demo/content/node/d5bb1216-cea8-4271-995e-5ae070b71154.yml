@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d5bb1216-cea8-4271-995e-5ae070b71154
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    367d4d84-b202-4205-858a-fd4ba6a0362b: media
+    01c62ae4-12eb-484c-9f03-2ac6d9d55cb9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Publication 3'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Publication 3'
+  created:
+    -
+      value: 1592913828
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publication 3 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-3'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.'
+  path:
+    -
+      alias: /publications/publication-3
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 3'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_call_to_action:
+    -
+      uri: 'http://www.google.com'
+      title: 'Publication Link'
+      options: {  }
+  field_vactory_date:
+    -
+      value: '1990-10-01'
+  field_vactory_excerpt:
+    -
+      value: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,'
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: 367d4d84-b202-4205-858a-fd4ba6a0362b
+  field_vactory_taxonomy_1:
+    -
+      entity: 01c62ae4-12eb-484c-9f03-2ac6d9d55cb9

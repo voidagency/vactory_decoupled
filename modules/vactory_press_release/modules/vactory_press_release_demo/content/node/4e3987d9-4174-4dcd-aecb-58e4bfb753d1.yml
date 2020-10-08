@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4e3987d9-4174-4dcd-aecb-58e4bfb753d1
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    6f66a26b-e451-42e0-a0bd-cfbfac14e2ae: media
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    c7bbcbbe-c841-4a7e-b0e6-e5faa6270d3f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 2'
+  created:
+    -
+      value: 1592924025
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-2'
+  path:
+    -
+      alias: /press_release/press-release-2
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-24'
+  field_vactory_excerpt:
+    -
+      value: 'MINNEAPOLIS, June 23, 2020 /PRNewswire/ -- NUWAY®, Minnesota''s largest non-profit extended care addiction and mental healthcare treatment provider is partnering with The Center for Practice Transformation at the University of Minnesota (CPT) to study the effects of recovery housing participation on addiction treatment and mental health outcomes. '
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 6f66a26b-e451-42e0-a0bd-cfbfac14e2ae
+  field_vactory_media_file:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_taxonomy_1:
+    -
+      entity: c7bbcbbe-c841-4a7e-b0e6-e5faa6270d3f

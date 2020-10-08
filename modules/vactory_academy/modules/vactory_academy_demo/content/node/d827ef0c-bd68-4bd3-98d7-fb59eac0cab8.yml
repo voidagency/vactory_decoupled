@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d827ef0c-bd68-4bd3-98d7-fb59eac0cab8
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    36e6570c-432f-4f01-83f0-d5fc8487620c: media
+    59c533b7-a42a-4482-9f5a-59958c8afe76: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Indesign CC 2020 - MasterClass - Débutant à Intermédiaire'
+  created:
+    -
+      value: 1592825423
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Indesign CC 2020 - MasterClass - Débutant à Intermédiaire | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/indesign-cc-2020-masterclass-debutant-intermediaire'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Mise à jour CC 2020 - Retrouvez les nouveautés 2020\_(explication des nouveaux outils de CC 2019 et CC 2020)\n\nLes videos sont principalement expliquées avec CC 2018 mais cela ne change rien si vous avez CC 2019 ou CC 2020\nProfitez des mises à jour pour être toujours au plus proche des nouveautés créatives.\n\_\nDesigner Graphique depuis plus de 10 ans, j'ai entre autre\_enseigné dans des Ecoles de création graphique,\_Ecoles de Marketing et au sein de centre de Formation."
+  path:
+    -
+      alias: /academy-courses/indesign-cc-2020-masterclass-debutant-intermediaire
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Indesign CC 2020 - MasterClass - Débutant à Intermédiaire'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p><strong>Mise à jour CC 2020 - Retrouvez les nouveautés 2020&nbsp;</strong><em>(explication des nouveaux outils de CC 2019 et CC 2020)</em></p>\r\n\r\n<p><br />\r\n<em>Les videos sont principalement expliquées avec CC 2018 mais cela ne change rien si vous avez CC 2019 ou CC 2020<br />\r\nProfitez des mises à jour pour être toujours au plus proche des nouveautés créatives.</em></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Designer Graphique depuis plus de 10 ans, j'ai entre autre&nbsp;enseigné dans des Ecoles de création graphique,&nbsp;Ecoles de Marketing et au sein de centre de Formation.</p>\r\n\r\n<p>Cette formation s'adresse aussi bien à des personnes actives, indépendant, chef d'entreprise&nbsp;qu'étudiants souhaitant apprendre Indesign dans son ensemble.</p>\r\n\r\n<p>Cette&nbsp;<strong>MasterClass</strong>&nbsp;vous permet de débuter cette formation sans connaissance, juste avec votre envie d'apprendre -</p>\r\n\r\n<p>Je vais vous expliquer&nbsp;<strong>simplement mais professionnellement</strong>&nbsp;le logiciel INDESIGN de mise en page -&nbsp;</p>\r\n\r\n<p><strong>Apprentissage étape par étape des outils avec une mise en pratique de vos acquis grâce à des ateliers créatifs</strong>&nbsp;-&nbsp;</p>\r\n\r\n<p>Au fur et à mesure de la MasterClass vous allez acquérir de plus en plus de connaissances ce qui vous permettra par la suite d'être libre pour créer vous même vos visuels et autres supports de communication -&nbsp;</p>\r\n\r\n<p><strong>Gain de temps et gain d'ARGENT</strong>&nbsp;et surtout maitrise de toute la chaine de création et de réalisation -&nbsp;</p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596037091
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '10 h'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-23'
+  field_vactory_excerpt:
+    -
+      value: 'Indesign CC 2020- Carte de visite, Mise en page, Catalogue, Plaquettes, Logo, Brochure, Graphic Design, Cv, Carte visite'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_media_image:
+    -
+      entity: 36e6570c-432f-4f01-83f0-d5fc8487620c
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 111978b0-3907-4fe0-b18d-6ee4718bf7b9
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594942134
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<ul>\r\n\t<li>Utiliser les outils de Indesign<\/li>\r\n\t<li>Ajouter des photos a des mises en page<\/li>\r\n\t<li>G\u00e9nerer le texte en accord avec ses cr\u00e9ations<\/li>\r\n\t<li>Cr\u00e9er ces cartes de visites<\/li>\r\n\t<li>Cr\u00e9er flyer, couverture et visuel pour sa communication d''entreprise<\/li>\r\n\t<li>Faire des fichiers destin\u00e9s \u00e0 \u00eatre imprimer<\/li>\r\n<\/ul>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<ul>\r\n\t<li>Aucune connaissances particulieres - MasterClass commencant pour les debutants<\/li>\r\n\t<li>Avoir t\u00e9l\u00e9charg\u00e9 Indesign<\/li>\r\n<\/ul>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p><strong>Mise \u00e0 jour CC 2020 - Retrouvez les nouveaut\u00e9s 2020&nbsp;<\/strong><em>(explication des nouveaux outils de CC 2019 et CC 2020)<\/em><\/p>\r\n\r\n<p><br \/>\r\n<em>Les videos sont principalement expliqu\u00e9es avec CC 2018 mais cela ne change rien si vous avez CC 2019 ou CC 2020<br \/>\r\nProfitez des mises \u00e0 jour pour \u00eatre toujours au plus proche des nouveaut\u00e9s cr\u00e9atives.<\/em><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Designer Graphique depuis plus de 10 ans, j''ai entre autre&nbsp;enseign\u00e9 dans des Ecoles de cr\u00e9ation graphique,&nbsp;Ecoles de Marketing et au sein de centre de Formation.<\/p>\r\n\r\n<p>Cette formation s''adresse aussi bien \u00e0 des personnes actives, ind\u00e9pendant, chef d''entreprise&nbsp;qu''\u00e9tudiants souhaitant apprendre Indesign dans son ensemble.<\/p>\r\n\r\n<p>Cette&nbsp;<strong>MasterClass<\/strong>&nbsp;vous permet de d\u00e9buter cette formation sans connaissance, juste avec votre envie d''apprendre -<\/p>\r\n\r\n<p>Je vais vous expliquer&nbsp;<strong>simplement mais professionnellement<\/strong>&nbsp;le logiciel INDESIGN de mise en page -&nbsp;<\/p>\r\n\r\n<p><strong>Apprentissage \u00e9tape par \u00e9tape des outils avec une mise en pratique de vos acquis gr\u00e2ce \u00e0 des ateliers cr\u00e9atifs<\/strong>&nbsp;-&nbsp;<\/p>\r\n\r\n<p>Au fur et \u00e0 mesure de la MasterClass vous allez acqu\u00e9rir de plus en plus de connaissances ce qui vous permettra par la suite d''\u00eatre libre pour cr\u00e9er vous m\u00eame vos visuels et autres supports de communication -&nbsp;<\/p>\r\n\r\n<p><strong>Gain de temps et gain d''ARGENT<\/strong>&nbsp;et surtout maitrise de toute la chaine de cr\u00e9ation et de r\u00e9alisation -&nbsp;<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: 59c533b7-a42a-4482-9f5a-59958c8afe76
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=PYQfdcdwWzc'

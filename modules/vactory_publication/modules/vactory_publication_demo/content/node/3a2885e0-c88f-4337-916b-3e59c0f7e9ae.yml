@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3a2885e0-c88f-4337-916b-3e59c0f7e9ae
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    76bbb975-8e03-403e-8827-af40c2260fd7: media
+    4f0f7e12-71fd-4de0-819a-d5713c50c05a: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Publication 5'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Publication 5'
+  created:
+    -
+      value: 1592914017
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publication 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-5'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Start with ITIL best practices out-of-the-box and easily adapt your service management processes to match the way your teams work. Tailor service delivery to your organization’s specific needs with our rich ecosystem of integrations and marketplace apps.'
+  path:
+    -
+      alias: /publications/publication-5
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Start with ITIL best practices out-of-the-box and easily adapt your service management processes to match the way your teams work. Tailor service delivery to your organization’s specific needs with our rich ecosystem of integrations and marketplace apps.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_call_to_action:
+    -
+      uri: 'http://www.google.com'
+      title: 'Publication Link'
+      options: {  }
+  field_vactory_date:
+    -
+      value: '1990-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'Provide IT service and support without the cost and complexity of traditional ITSM solutions. Our affordable and transparent pricing lets you get started quickly and deliver value fast.'
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: 76bbb975-8e03-403e-8827-af40c2260fd7
+  field_vactory_taxonomy_1:
+    -
+      entity: 4f0f7e12-71fd-4de0-819a-d5713c50c05a

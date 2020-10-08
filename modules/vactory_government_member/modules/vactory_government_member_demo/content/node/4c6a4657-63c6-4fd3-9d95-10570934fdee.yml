@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4c6a4657-63c6-4fd3-9d95-10570934fdee
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    48697d42-a8ca-4dfd-8e50-f186d69078f1: media
+    980aaca0-1026-4d94-8698-5bf91b610276: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 4'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 4'
+  created:
+    -
+      value: 1592928771
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 4 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/55'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'The current IT platform is robust and largely built around Manar, a local third-party system, allowing timely and effective access to portfolio and trade information. Long-term projects aimed at enhancing technological connectivity with third parties and clients and upgrading data management and related reporting capabilities has continued over the past few years and are now integrated into the company''s digital strategy. Other projects being currently considered are artificial intelligence within the middle and back-office departments.'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 4'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>The current IT platform is robust and largely built around Manar, a local third-party system, allowing timely and effective access to portfolio and trade information. Long-term projects aimed at enhancing technological connectivity with third parties and clients and upgrading data management and related reporting capabilities has continued over the past few years and are now integrated into the company's digital strategy. Other projects being currently considered are artificial intelligence within the middle and back-office departments.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'hay El Oulfa, rue 176 n°28, Grp I Casablanca'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role4@gmail.com
+  field_vactory_fax:
+    -
+      value: ' 05 22 93 08 28'
+  field_vactory_media_image:
+    -
+      entity: 48697d42-a8ca-4dfd-8e50-f186d69078f1
+  field_vactory_name:
+    -
+      value: 'Roe 4'
+  field_vactory_taxonomy_1:
+    -
+      entity: 980aaca0-1026-4d94-8698-5bf91b610276
+  field_vactory_telephone:
+    -
+      value: ' 06 22 93 08 28'

@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 52e0abe9-be9f-4ed2-b4da-f5bd98881505
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    d820e8f8-1d43-4fbb-98d7-e717fe7534d1: media
+    4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 8'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 8'
+  created:
+    -
+      value: 1592929155
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 8 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/59'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Leading Moroccan Investment Manager\nCreated in 1995 and now the largest asset manager in Morocco (MAD105 billion AUM as at end-September 2018), Wafa Gestion has a long track record and strong domestic presence in all key segments of the market. Distribution relies largely on the banking network of AttijariWafa Bank, and to a lesser extent, Credit du Maroc. Wafa Gestion benefits from the support provided by its main shareholder, AttijariWafa Bank, representing 66% of capital, and from Amundi, which owns the remainder."
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 8'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Leading Moroccan Investment Manager<br />\r\nCreated in 1995 and now the largest asset manager in Morocco (MAD105 billion AUM as at end-September 2018), Wafa Gestion has a long track record and strong domestic presence in all key segments of the market. Distribution relies largely on the banking network of AttijariWafa Bank, and to a lesser extent, Credit du Maroc. Wafa Gestion benefits from the support provided by its main shareholder, AttijariWafa Bank, representing 66% of capital, and from Amundi, which owns the remainder.</p>\r\n\r\n<p>The company demonstrates sound client service practices and is making substantial investments in client engagement technology.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'bd Abdelmoumen ang. rue Ibn Kotaiba, 20390 Quartier: Derb Ghalef - France Ville'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role8@gmail.com
+  field_vactory_fax:
+    -
+      value: '05 22 99 99 07'
+  field_vactory_media_image:
+    -
+      entity: d820e8f8-1d43-4fbb-98d7-e717fe7534d1
+  field_vactory_name:
+    -
+      value: 'Role 8'
+  field_vactory_taxonomy_1:
+    -
+      entity: 4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92
+  field_vactory_telephone:
+    -
+      value: '06 22 99 99 07'

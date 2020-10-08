@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d0c94723-3df8-4e27-84d2-704beb63b285
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    76ea41dd-9149-4bba-909c-b0fdf1b837c1: media
+    1357d550-b00c-46dd-94ea-f2007b1bcb15: media
+    5b3c92df-7831-4c4a-82cb-a8ac6eb10f93: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 8'
+  created:
+    -
+      value: 1592925142
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 8 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-8'
+  path:
+    -
+      alias: /press_release/press-release-8
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 8'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: 'ROCKVILLE, Md., June 23, 2020 /PRNewswire/ -- All four sectors of the U.S. pet industry—pet food, non-food pet supplies, veterinary services, and non-medical pet services—have been challenged by the coronavirus pandemic, whose economic downdraft may continue to be felt for years after the immediate medical crisis is past. Even so, due to regulatory restrictions and social distancing, pet services rather than pet products are bearing the brunt of the blow.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 76ea41dd-9149-4bba-909c-b0fdf1b837c1
+  field_vactory_media_file:
+    -
+      entity: 1357d550-b00c-46dd-94ea-f2007b1bcb15
+  field_vactory_taxonomy_1:
+    -
+      entity: 5b3c92df-7831-4c4a-82cb-a8ac6eb10f93

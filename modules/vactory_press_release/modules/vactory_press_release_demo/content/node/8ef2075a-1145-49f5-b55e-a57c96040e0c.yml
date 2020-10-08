@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8ef2075a-1145-49f5-b55e-a57c96040e0c
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    b2f35ade-acee-4219-a890-e5a768e8b646: media
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    5b3c92df-7831-4c4a-82cb-a8ac6eb10f93: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 7'
+  created:
+    -
+      value: 1592924784
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 7 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-7'
+  path:
+    -
+      alias: /press_release/press-release-7
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 7'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-24'
+  field_vactory_excerpt:
+    -
+      value: 'An unusual period in history, the coronavirus pandemic has unleashed a series of unprecedented events affecting every industry. The Software market will be reset to a new normal which going forwards in a post COVID-19 era will be continuously redefined and redesigned. Staying on top of trends and accurate analysis is paramount now more than ever to manage uncertainty, change and continuously adapt to new and evolving market conditions.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: b2f35ade-acee-4219-a890-e5a768e8b646
+  field_vactory_media_file:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_taxonomy_1:
+    -
+      entity: 5b3c92df-7831-4c4a-82cb-a8ac6eb10f93

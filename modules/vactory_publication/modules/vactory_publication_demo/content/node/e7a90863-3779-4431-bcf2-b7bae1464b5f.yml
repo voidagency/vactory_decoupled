@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e7a90863-3779-4431-bcf2-b7bae1464b5f
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    3762d1c9-45c3-498d-98df-9121ec872e46: media
+    7cdd7648-826d-4172-b0f7-00712699a2a7: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Publication 7'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Publication 7'
+  created:
+    -
+      value: 1592914844
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publication 7 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-7'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "This module provides the ability to add exportable blocks with custom text.\nIt differs from core's\_Custom Block\_module in that way that this module only provides a plugin from where to create configuration instances. It also only provides one input field for inserting some custom text / markup using a certain filter format, while\_Custom Block\_offers you to arbitrarily attach fields."
+  path:
+    -
+      alias: /publications/publication-7
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 7'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>This module provides the ability to add exportable blocks with custom text.</p>\r\n\r\n<p>It differs from core's&nbsp;<em>Custom Block</em>&nbsp;module in that way that this module only provides a plugin from where to create configuration instances. It also only provides one input field for inserting some custom text / markup using a certain filter format, while&nbsp;<em>Custom Block</em>&nbsp;offers you to arbitrarily attach fields.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_call_to_action:
+    -
+      uri: 'http://www.google.com'
+      title: 'Publication Link'
+      options: {  }
+  field_vactory_date:
+    -
+      value: '1990-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'This guide gives you a detailed picture of Drupal concepts, helping you to understand the framework behind Drupal and assisting you in determining if Drupal is a good fit for your project.'
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: 3762d1c9-45c3-498d-98df-9121ec872e46
+  field_vactory_taxonomy_1:
+    -
+      entity: 7cdd7648-826d-4172-b0f7-00712699a2a7

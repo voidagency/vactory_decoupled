@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c8dd5a56-ad1b-4d91-8582-7ba31376f034
+  bundle: blog
+  default_langcode: fr
+  depends:
+    76bbb975-8e03-403e-8827-af40c2260fd7: media
+    b1797e68-02d8-413f-991a-f82ad0dcf92c: taxonomy_term
+    2b44bf8a-ad52-471b-87b2-096021ba3a21: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 5'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 5'
+  created:
+    -
+      value: 1592924330
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-5'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the "NRSRO"). While certain of the NRSRO''s credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https://www.fitchratings.com/site/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the "non-NRSROs") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO.'
+  path:
+    -
+      alias: /blogs/blog-5
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https://www.fitchratings.com/site/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the \"non-NRSROs\") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO. However, non-NRSRO personnel may participate in determining credit ratings issued by or on behalf of the NRSRO.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the "NRSRO"). While certain of the NRSRO''s credit rating subsidiaries are listed on Item 3'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 76bbb975-8e03-403e-8827-af40c2260fd7
+  field_vactory_taxonomy_1:
+    -
+      entity: b1797e68-02d8-413f-991a-f82ad0dcf92c
+  field_vactory_taxonomy_2:
+    -
+      entity: 2b44bf8a-ad52-471b-87b2-096021ba3a21

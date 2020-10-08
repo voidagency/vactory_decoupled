@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 11b6e0c3-efef-4d66-8608-4ff688c13142
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    0c7c2631-0354-4784-957e-2d0bac2c606b: media
+    ffc5c778-064d-486a-962a-772f2a5a40e2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: edit
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 7'
+  created:
+    -
+      value: 1592426041
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 7 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-7'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "<p>Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.</p>\n<p>In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.</p>"
+  path:
+    -
+      alias: /news/news-7
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 7'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem. Vivamus euismod mauris. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Etiam iaculis nunc ac metus. Duis leo.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;In ac felis quis tortor malesuada pretium. Nam adipiscing. Praesent adipiscing. Curabitur suscipit suscipit tellus. Fusce egestas elit eget lorem.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aliquam erat volutpat. Nam commodo suscipit quam. Phasellus ullamcorper ipsum rutrum nunc. Cras non dolor.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Curabitur suscipit suscipit tellus. Curabitur ullamcorper ultricies nisi. Sed a libero. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Quisque malesuada placerat nisl. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.&lt;/p&gt;<br />\r\n&nbsp;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: "Fusce ac felis sit amet ligula pharetra condimentum. Phasellus nec sem in justo pellentesque facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Cras varius. Phasellus a est.\r\n"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 0c7c2631-0354-4784-957e-2d0bac2c606b
+  field_vactory_taxonomy_1:
+    -
+      entity: ffc5c778-064d-486a-962a-772f2a5a40e2

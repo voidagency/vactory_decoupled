@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9ec093e3-7774-44eb-995d-71373c5388f1
+  bundle: publication
+  default_langcode: fr
+  depends:
+    33ba65ee-9739-41b0-866c-418bb28c5b55: media
+    673c1991-c70e-4e10-9910-f886a711deed: media
+    7cdd7648-826d-4172-b0f7-00712699a2a7: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Publication 10'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Publication 10'
+  created:
+    -
+      value: 1592915398
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Publication 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/publications/publication-10'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'La plupart du temps, l’informaticien n’a pas a interagir directement avec le matériel. Pour traiter avec les composants, tous les ordinateurs disposent d’une couche logicielle appelée système d’exploitation. Cette couche est en charge de faire la passerelle entre l’informaticien, ses outils, les programmes qu’il développe et, les composants et leur fonctionnement.'
+  path:
+    -
+      alias: /publications/publication-10
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Publication 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>La plupart du temps, l’informaticien n’a pas a interagir directement avec le matériel. Pour traiter avec les composants, tous les ordinateurs disposent d’une couche logicielle appelée système d’exploitation. Cette couche est en charge de faire la passerelle entre l’informaticien, ses outils, les programmes qu’il développe et, les composants et leur fonctionnement.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_call_to_action:
+    -
+      uri: 'http://www.google.com'
+      title: 'Publication Link'
+      options: {  }
+  field_vactory_date:
+    -
+      value: '1990-01-01'
+  field_vactory_excerpt:
+    -
+      value: "Le fonctionnement d’un ordinateur est basé sur une architecture matérielle (processeur, support de\r\nstockage, interfaces utilisateurs, connexion, . . .) dont le fonctionnement est soumis aux lois de la physique"
+      format: plain_text
+  field_vactory_media_file:
+    -
+      entity: 33ba65ee-9739-41b0-866c-418bb28c5b55
+  field_vactory_media_image:
+    -
+      entity: 673c1991-c70e-4e10-9910-f886a711deed
+  field_vactory_taxonomy_1:
+    -
+      entity: 7cdd7648-826d-4172-b0f7-00712699a2a7

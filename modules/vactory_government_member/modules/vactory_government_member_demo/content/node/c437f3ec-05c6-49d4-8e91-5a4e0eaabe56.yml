@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c437f3ec-05c6-49d4-8e91-5a4e0eaabe56
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    673c1991-c70e-4e10-9910-f886a711deed: media
+    980aaca0-1026-4d94-8698-5bf91b610276: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 10'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 10'
+  created:
+    -
+      value: 1592929318
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/61'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report.'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report. The rating does not address the risk of loss due to risks other than credit risk, unless such risk is specifically mentioned. Fitch is not engaged in the offer or sale of any security. All Fitch reports have shared authorship. Individuals identified in a Fitch report were involved in, but are not solely responsible for, the opinions stated therein. The individuals are named for contact purposes only. A report providing a Fitch rating is neither a prospectus nor a substitute for the information assembled, verified and presented to investors by the issuer and its agents in connection with the sale of the securities.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'cite Marrakech, bloc 7 ElAlia, Grand Casablanca'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role10@gmail.com
+  field_vactory_fax:
+    -
+      value: '05 28 83 28 51'
+  field_vactory_media_image:
+    -
+      entity: 673c1991-c70e-4e10-9910-f886a711deed
+  field_vactory_name:
+    -
+      value: 'Role 10'
+  field_vactory_taxonomy_1:
+    -
+      entity: 980aaca0-1026-4d94-8698-5bf91b610276
+  field_vactory_telephone:
+    -
+      value: '06 28 83 28 51'

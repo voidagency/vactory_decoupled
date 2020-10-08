@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c775f815-51be-4cf0-9562-107373d6845f
+  bundle: blog
+  default_langcode: fr
+  depends:
+    48697d42-a8ca-4dfd-8e50-f186d69078f1: media
+    1d42d776-5eb8-4776-acbe-864b3dd696cb: taxonomy_term
+    df44ce4c-ae3f-4c5e-934c-f76a55d1aedf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 4'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 4'
+  created:
+    -
+      value: 1592924270
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 4 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-4'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Due to the relative efficiency of electronic publishing and distribution, Fitch research may be available to electronic subscribers up to three days earlier than to print subscribers.\nFor Australia, New Zealand, Taiwan and South Korea only: Fitch Australia Pty Ltd holds an Australian financial services license (AFS license no. 337123) which authorizes it to provide credit ratings to wholesale clients only. Credit ratings information published by Fitch is not intended to be used by persons who are retail clients within the meaning of the Corporations Act 2001"
+  path:
+    -
+      alias: /blogs/blog-4
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 4'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Due to the relative efficiency of electronic publishing and distribution, Fitch research may be available to electronic subscribers up to three days earlier than to print subscribers.</p>\r\n\r\n<p>For Australia, New Zealand, Taiwan and South Korea only: Fitch Australia Pty Ltd holds an Australian financial services license (AFS license no. 337123) which authorizes it to provide credit ratings to wholesale clients only. Credit ratings information published by Fitch is not intended to be used by persons who are retail clients within the meaning of the Corporations Act 2001</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'Such fees are expected to vary from US$10,000 to US$1,500,000 (or the applicable currency equivalent). The assignment, publication'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 48697d42-a8ca-4dfd-8e50-f186d69078f1
+  field_vactory_taxonomy_1:
+    -
+      entity: 1d42d776-5eb8-4776-acbe-864b3dd696cb
+  field_vactory_taxonomy_2:
+    -
+      entity: df44ce4c-ae3f-4c5e-934c-f76a55d1aedf

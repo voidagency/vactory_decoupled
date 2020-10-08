@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1c054096-a467-480f-aea4-f4bd29bedafe
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_4.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 588975
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593018696
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

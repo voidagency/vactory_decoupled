@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b615740f-2f67-4090-886e-d1ec2987a682
+  bundle: blog
+  default_langcode: fr
+  depends:
+    117326cd-96ba-49f9-bf11-893e2130b87e: media
+    d024f6cd-a229-49c8-a114-56c5331e63c5: taxonomy_term
+    922fb475-e756-48bc-ac67-5b95ac2fbe51: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 9'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 9'
+  created:
+    -
+      value: 1592924542
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-9'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "as happened earlier with\_emailing.[1]\_This makes texting a quick and easy way to communicate with friends, family and colleagues, including in contexts where a\_call\_would be impolite or inappropriate (e.g., calling very late at night or when one knows the other person is busy with family or work activities)."
+  path:
+    -
+      alias: /blogs/blog-9
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>as happened earlier with&nbsp;<a href=\"https://en.wikipedia.org/wiki/Email\" title=\"Email\">emailing</a>.<sup id=\"cite_ref-1\"><a href=\"https://en.wikipedia.org/wiki/Text_messaging#cite_note-1\">[1]</a></sup>&nbsp;This makes texting a quick and easy way to communicate with friends, family and colleagues, including in contexts where a&nbsp;<a href=\"https://en.wikipedia.org/wiki/Telephone_call\" title=\"Telephone call\">call</a>&nbsp;would be impolite or inappropriate (e.g., calling very late at night or when one knows the other person is busy with family or work activities). Like e-mail and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Voicemail\" title=\"Voicemail\">voicemail</a>&nbsp;and unlike calls (in which the caller hopes to speak directly with the recipient), texting does not require the caller and recipient to both be free at the same moment; this permits communication even between busy individuals.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'Text messages are used for personal, family, business and social purposes. Governmental and non-governmental organizations use text messaging for communication between colleagues. In the 2010s, the sending of short informal messages has become an accepted part of many cultures'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 117326cd-96ba-49f9-bf11-893e2130b87e
+  field_vactory_taxonomy_1:
+    -
+      entity: d024f6cd-a229-49c8-a114-56c5331e63c5
+  field_vactory_taxonomy_2:
+    -
+      entity: 922fb475-e756-48bc-ac67-5b95ac2fbe51

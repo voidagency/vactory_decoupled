@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  bundle: document
+  default_langcode: fr
+  depends:
+    b93dc058-d8a0-4dba-b31d-8c14f6533a14: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'Les prophètes de l’effondrement à l’assaut des librairies.pdf'
+  created:
+    -
+      value: 1592924070
+  revision_translation_affected:
+    -
+      value: true
+  field_media_document:
+    -
+      entity: b93dc058-d8a0-4dba-b31d-8c14f6533a14
+      display: false
+      description: ''

@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4d0451de-4c07-4731-a62c-be144083f571
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    f5673640-d6de-4fa6-aac0-368edad6bbfd: media
+    66f4aa12-4b93-4b03-8407-452e9a278b52: media
+    060430fd-8bdc-48c9-9e9f-3bf1c8cc81a1: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 2'
+  created:
+    -
+      value: 1592927554
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-2'
+  path:
+    -
+      alias: /press_kit/press-kit-2
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-25'
+  field_vactory_excerpt:
+    -
+      value: 'Analysis of the Global Airline IT Market, Forecast to 2025, finds that the increasing expectations of passengers are compelling airlines to embrace digital enablers and propelling a digital transformation journey that will fundamentally change traditional airline information technology (IT) strategies. Impacted by the COVID-19 pandemic, the airline IT market is estimated to generate a revenue of $20.74 billion by 2025, compared to $21.20 billion in 2019'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: f5673640-d6de-4fa6-aac0-368edad6bbfd
+  field_vactory_media_file:
+    -
+      entity: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  field_vactory_taxonomy_1:
+    -
+      entity: 060430fd-8bdc-48c9-9e9f-3bf1c8cc81a1

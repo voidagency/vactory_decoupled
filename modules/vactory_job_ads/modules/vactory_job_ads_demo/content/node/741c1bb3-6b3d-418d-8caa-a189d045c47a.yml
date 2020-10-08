@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 741c1bb3-6b3d-418d-8caa-a189d045c47a
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    007b8e0d-1b21-4abd-ae2c-8b59d42902ea: taxonomy_term
+    33d38729-0ee2-4c40-9c33-e926bfa9c8aa: taxonomy_term
+    c83e5a7e-3c74-4148-9440-95359a8d6ad4: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Tech Lead'
+  created:
+    -
+      value: 1593519714
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Tech Lead | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/tech-lead'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Si vous êtes un(e) ingénieur(e) plein(e) de talents, geek dans l'âme, White Hat dans l'esprit, et que vous souhaitez rejoindre une très prometteuse startup marocaine, alors continuez à lire ceci !\nNous sommes une jeune entreprise Casablancaise, spécialisée dans\_le développement de solutions innovantes\_autour des données (collecte, stockage, et analyse). Nous donnons libre cours à notre imagination et créativité afin de concevoir et mettre en place des systèmes à la pointe de la technologie."
+  path:
+    -
+      alias: /jobs/tech-lead
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Tech Lead'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Si vous êtes un(e) ingénieur(e) plein(e) de talents, geek dans l'âme, White Hat dans l'esprit, et que vous souhaitez rejoindre une très prometteuse startup marocaine, alors continuez à lire ceci !</p>\r\n\r\n<p>Nous sommes une jeune entreprise Casablancaise, spécialisée dans<strong>&nbsp;le développement de solutions innovantes</strong>&nbsp;autour des données (collecte, stockage, et analyse). Nous donnons libre cours à notre imagination et créativité afin de concevoir et mettre en place des systèmes à la pointe de la technologie.</p>\r\n\r\n<p>Dans le cadre du développement d'un logiciel de collecte et d'analyse de données à l'échelle internationale, nous sommes à la recherche d'un(e)<strong>&nbsp;ingénieur(e) senior avec un minimum de 3 ans d'expérience</strong>, qui répond aux critères suivants :</p>\r\n\r\n<ul>\r\n\t<li>Expertise en technologie Java/J2EE</li>\r\n\t<li>Expertise en technologies Web : HTML / Javascript / CSS</li>\r\n\t<li>Administration des systèmes Linux</li>\r\n\t<li>Gestion de projet et sens des responsabilités</li>\r\n\t<li>Passionné de nouvelles technologies, specialitement, la big data, data mining, data scraping</li>\r\n</ul>\r\n\r\n<p><u>Ce qui fera la différence :</u></p>\r\n\r\n<ul>\r\n\t<li>Maîtrise des environnements de virtualisation Docker ou Kubernetes</li>\r\n\t<li>Expérience en DevOps</li>\r\n\t<li>Expérience en Selenium WebDriver</li>\r\n\t<li>White Hat</li>\r\n\t<li>Perfectionniste.</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '159 Bd artdunord, Casablanca'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Expertise en technologie Java/J2EE\r\nExpertise en technologies Web : HTML / Javascript / CSS\r\nAdministration des systèmes Linux"
+      format: plain_text
+  field_vactory_email:
+    -
+      value: digiGR@gmail.com
+  field_vactory_taxonomy_1:
+    -
+      entity: 007b8e0d-1b21-4abd-ae2c-8b59d42902ea
+  field_vactory_taxonomy_2:
+    -
+      entity: 33d38729-0ee2-4c40-9c33-e926bfa9c8aa
+  field_vactory_taxonomy_3:
+    -
+      entity: c83e5a7e-3c74-4148-9440-95359a8d6ad4
+  field_vactory_telephone:
+    -
+      value: '0522000000'

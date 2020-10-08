@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 477bd9d1-ed05-4a68-be41-b53b782c9a42
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    b73bbb16-f84a-4d80-8b36-568aab8ab640: media
+    001d6150-efc4-4396-9007-70e3272eee57: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Node.js - Express.js - JWT et Mongoose par la pratique'
+  created:
+    -
+      value: 1592823549
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Node.js - Express.js - JWT et Mongoose par la pratique | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/nodejs-expressjs-jwt-et-mongoose-par-la-pratique'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Dans ce cours, vous allez apprendre à créer une application web à l'aide Node.js et du framework Express.js.\_"
+  path:
+    -
+      alias: /academy-courses/nodejs-expressjs-jwt-et-mongoose-par-la-pratique
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Node.js - Express.js - JWT et Mongoose par la pratique'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Dans ce cours, vous allez apprendre à créer une application web à l'aide Node.js et du framework Express.js.&nbsp;</p>\r\n\r\n<p>Concrètement, vous apprendrez à :<br />\r\n- créer une application web en quelques minutes<br />\r\n- comprendre les requêtes que votre serveur recevra et les réponses qu'il enverra<br />\r\n- lire les paramètres passés dans une URL<br />\r\n- gérer l'envoi de fichiers statiques&nbsp;<br />\r\n- utiliser un template et des \"partials\" afin de créer des vues<br />\r\n- passer des données d'Express vers vos templates&nbsp;<br />\r\n- récupérer les données postées via un formulaire<br />\r\n- utiliser fetch() pour poster un formulaire en AJAX<br />\r\n- comprendre et utiliser XMLHttpRequest lorsque vous êtes contraint de supporter les clients plus anciens (Internet Explorer ...)<br />\r\n- consommer une véritable API RESTful accessible publiquement (The Movie DB) afin d'acquérir un savoir faire qui vous servira avec de nombreuses autres APIs<br />\r\n- intégrer les résultats retournés par l'API dans un template en recourant uniquement à JavaScript, afin de progresser en JavaScript \"pur\" dans sa version ES6</p>\r\n\r\n<p>- sécuriser vos échanges à l'aide de JWT (mise en ligne en avril&nbsp;2017)</p>\r\n\r\n<p>- l'ODM (Object Document Mapper) Mongoose, qui vous permettra de persister, lire, modifier et supprimer vos données dans une base MongoDB (10 vidéos ajoutées en avril 2017, 7 ajoutées en mai 2017)<br />\r\n- JSON Web Token (JWT) (13 vidéos&nbsp;ajoutées en avril 2017)<br />\r\n- les tests à l'aide de Supertest et Mocha (prochainement)</p>\r\n\r\n<p>Un repo&nbsp;github comportant tout le code source est également fourni avec ce cours.</p>\r\n\r\n<p>Réinvestissez vos connaissances JavaScript acquises côté Front dans le développement Back. Même si vous vous destinez uniquement au développement Front, comprendre la partie &nbsp;Backend&nbsp;vous permettra de collaborer plus efficacement avec un développeur Back et donc de mener à bien vos projets.</p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596036949
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '6 h'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-27'
+  field_vactory_excerpt:
+    -
+      value: 'Devenir opérationnel rapidement en développement JavaScript côté Backend en apprenant Node.js Express.js JWT Mongoose'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_media_image:
+    -
+      entity: b73bbb16-f84a-4d80-8b36-568aab8ab640
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4706aeaf-ebdb-4b5e-a4e9-22d16fcf5dce
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594941221
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<p>Apr\u00e8s avoir termin\u00e9 ce cours, les \u00e9tudiants sauront cr\u00e9er une application web \u00e0 l''aide de Node.js et Express.js et la s\u00e9curiser \u00e0 la l\u2019aide de JWT (JSON Web Token). Notamment cr\u00e9er plusieurs pages, naviguer d''une page \u00e0 l''autre, cr\u00e9er des formulaires et poster des donn\u00e9es, effectuer des requ\u00eates vers des API REST, et \u00e0 faire du CRUD vers une base MongoDB \u00e0 l''aide de Mongoose.<\/p>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<p>Les participants de ce cours doivent avoir de bonnes notions de JavaScript et de HTML<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p>Dans ce cours, vous allez apprendre \u00e0 cr\u00e9er une application web \u00e0 l''aide Node.js et du framework Express.js.&nbsp;<\/p>\r\n\r\n<p>Concr\u00e8tement, vous apprendrez \u00e0 :<br \/>\r\n- cr\u00e9er une application web en quelques minutes<br \/>\r\n- comprendre les requ\u00eates que votre serveur recevra et les r\u00e9ponses qu''il enverra<br \/>\r\n- lire les param\u00e8tres pass\u00e9s dans une URL<br \/>\r\n- g\u00e9rer l''envoi de fichiers statiques&nbsp;<br \/>\r\n- utiliser un template et des \"partials\" afin de cr\u00e9er des vues<br \/>\r\n- passer des donn\u00e9es d''Express vers vos templates&nbsp;<br \/>\r\n- r\u00e9cup\u00e9rer les donn\u00e9es post\u00e9es via un formulaire<br \/>\r\n- utiliser fetch() pour poster un formulaire en AJAX<br \/>\r\n- comprendre et utiliser XMLHttpRequest lorsque vous \u00eates contraint de supporter les clients plus anciens (Internet Explorer ...)<br \/>\r\n- consommer une v\u00e9ritable API RESTful accessible publiquement (The Movie DB) afin d''acqu\u00e9rir un savoir faire qui vous servira avec de nombreuses autres APIs<br \/>\r\n- int\u00e9grer les r\u00e9sultats retourn\u00e9s par l''API dans un template en recourant uniquement \u00e0 JavaScript, afin de progresser en JavaScript \"pur\" dans sa version ES6<\/p>\r\n\r\n<p>- s\u00e9curiser vos \u00e9changes \u00e0 l''aide de JWT (mise en ligne en avril&nbsp;2017)<\/p>\r\n\r\n<p>- l''ODM (Object Document Mapper) Mongoose, qui vous permettra de persister, lire, modifier et supprimer vos donn\u00e9es dans une base MongoDB (10 vid\u00e9os ajout\u00e9es en avril 2017, 7 ajout\u00e9es en mai 2017)<br \/>\r\n- JSON Web Token (JWT) (13 vid\u00e9os&nbsp;ajout\u00e9es en avril 2017)<br \/>\r\n- les tests \u00e0 l''aide de Supertest et Mocha (prochainement)<\/p>\r\n\r\n<p>Un repo&nbsp;github comportant tout le code source est \u00e9galement fourni avec ce cours.<\/p>\r\n\r\n<p>R\u00e9investissez vos connaissances JavaScript acquises c\u00f4t\u00e9 Front dans le d\u00e9veloppement Back. M\u00eame si vous vous destinez uniquement au d\u00e9veloppement Front, comprendre la partie &nbsp;Backend&nbsp;vous permettra de collaborer plus efficacement avec un d\u00e9veloppeur Back et donc de mener \u00e0 bien vos projets.<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: 001d6150-efc4-4396-9007-70e3272eee57
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=L72fhGm1tfE'

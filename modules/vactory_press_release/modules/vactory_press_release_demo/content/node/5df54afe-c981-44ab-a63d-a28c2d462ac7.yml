@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5df54afe-c981-44ab-a63d-a28c2d462ac7
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    44fdbe81-f26a-4592-87ae-920bef337a38: media
+    b86af2cd-819f-4f80-b3e6-4ce076ded4c5: media
+    c7bbcbbe-c841-4a7e-b0e6-e5faa6270d3f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 3'
+  created:
+    -
+      value: 1592924160
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 3 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-3'
+  path:
+    -
+      alias: /press_release/press-release-3
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 3'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-24'
+  field_vactory_excerpt:
+    -
+      value: 'BOSTON, June 23, 2020 /PRNewswire/ -- Santander Bank today announced that its Commercial Banking division acted as joint lead arranger for a $175 million term loan and $50 million revolver to Purolite Corporation ("Purolite") to facilitate additional spending on capital projects and enhance liquidity. The deal will enable Purolite, the second largest international manufacturer of ion-exchange resins, to replenish its previous senior secured facility and maintain the rate of its business growth.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 44fdbe81-f26a-4592-87ae-920bef337a38
+  field_vactory_media_file:
+    -
+      entity: b86af2cd-819f-4f80-b3e6-4ce076ded4c5
+  field_vactory_taxonomy_1:
+    -
+      entity: c7bbcbbe-c841-4a7e-b0e6-e5faa6270d3f

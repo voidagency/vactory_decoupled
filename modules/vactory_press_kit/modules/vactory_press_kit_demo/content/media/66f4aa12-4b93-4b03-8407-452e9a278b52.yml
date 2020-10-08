@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  bundle: document
+  default_langcode: fr
+  depends:
+    78d526b1-ff80-4c02-9f02-3ae66f685eaa: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: PR-05.06.2020_AG_VA.pdf
+  created:
+    -
+      value: 1592924307
+  revision_translation_affected:
+    -
+      value: true
+  field_media_document:
+    -
+      entity: 78d526b1-ff80-4c02-9f02-3ae66f685eaa
+      display: false
+      description: ''

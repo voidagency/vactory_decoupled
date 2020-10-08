@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 318baefa-898d-4c1d-8a59-e880e7732eb5
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    4d1f82a5-833c-47b6-bd45-923f9b34639f: media
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    eabab2e2-c626-425c-b99e-c0b9c2fd9a0d: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 5'
+  created:
+    -
+      value: 1592928718
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-5'
+  path:
+    -
+      alias: /press_kit/press-kit-5
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-30'
+  field_vactory_excerpt:
+    -
+      value: 'Send useful async updates: Through the Prezi Video app, business teams, educators, and students can quickly share interactive video updates that help increase engagement and collaboration. Teachers can record brief videos to introduce information through direct instruction, explain assignments, virtual read alouds for remote'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 4d1f82a5-833c-47b6-bd45-923f9b34639f
+  field_vactory_media_file:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_taxonomy_1:
+    -
+      entity: eabab2e2-c626-425c-b99e-c0b9c2fd9a0d

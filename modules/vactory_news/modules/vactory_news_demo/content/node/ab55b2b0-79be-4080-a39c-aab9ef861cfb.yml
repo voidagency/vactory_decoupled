@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ab55b2b0-79be-4080-a39c-aab9ef861cfb
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    d4b96a83-0341-42f3-b4c5-9654cb2d2c4e: media
+    95e44038-b0cb-4026-ae92-b408005ce5b0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 2'
+  created:
+    -
+      value: 1592425709
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-2'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: '<p>Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.</p>'
+  path:
+    -
+      alias: /news/news-2
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;Echo park artisan everyday carry, street art bushwick meggings tofu raclette. Coloring book portland sartorial pabst affogato williamsburg. Venmo pour-over roof party bushwick. Pug hell of la croix blog aesthetic. Vinyl portland food truck, lumbersexual ethical leggings prism shabby chic ramps irony meh 3 wolf moon pug hoodie. Austin actually skateboard pinterest kickstarter lumbersexual succulents slow-carb cold-pressed craft beer hot chicken kale chips narwhal.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Raw denim put a bird on it master cleanse health goth, taiyaki succulents unicorn. Selvage flexitarian slow-carb banh mi farm-to-table kinfolk 3 wolf moon food truck hammock fam knausgaard air plant shaman. Fingerstache tattooed offal +1. Offal craft beer readymade, prism cloud bread intelligentsia distillery live-edge tofu echo park thundercats neutra fingerstache kinfolk. YOLO woke pok pok raw denim letterpress fam succulents sriracha 90's enamel pin salvia schlitz brooklyn.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Chicharrones vinyl craft beer freegan kitsch direct trade knausgaard shaman XOXO +1. Blog kitsch activated charcoal leggings, paleo tousled occupy everyday carry succulents vaporware adaptogen master cleanse meggings blue bottle biodiesel. Echo park readymade ramps, mixtape chicharrones cornhole wayfarers raclette paleo coloring book. Salvia knausgaard beard cronut hot chicken. Neutra lo-fi locavore, coloring book ennui organic polaroid farm-to-table biodiesel.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Keffiyeh thundercats cardigan trust fund beard hexagon. Synth organic sartorial meditation ramps cornhole, live-edge cred authentic stumptown selvage you probably haven't heard of them blue bottle kickstarter. Viral keffiyeh master cleanse man braid cronut selfies thundercats twee kickstarter bushwick 8-bit ethical pork belly. Ramps readymade shaman, mlkshk plaid cold-pressed iPhone hella sriracha art party hoodie trust fund jianbing. Celiac tousled dreamcatcher, art party vaporware 90's live-edge iceland la croix literally aesthetic mixtape prism 8-bit cold-pressed.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Dummy text? More like dummy thicc text, amirite?&lt;/p&gt;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: "La croix iceland narwhal jean shorts. Taxidermy microdosing gluten-free typewriter street art, raw denim craft beer hoodie kombucha fashion axe seitan hammock. Sriracha ethical shabby chic slow-carb. Butcher af beard lomo hella austin subway tile kombucha ugh celiac humblebrag. Green juice sartorial dreamcatcher, hashtag pour-over chillwave semiotics heirloom actually retro.\r\n"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: d4b96a83-0341-42f3-b4c5-9654cb2d2c4e
+  field_vactory_taxonomy_1:
+    -
+      entity: 95e44038-b0cb-4026-ae92-b408005ce5b0

@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 28d2895c-1eea-4de5-a810-7ae844007e2b
+  bundle: glossary
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Assurance crédit\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Assurance crédit'
+  created:
+    -
+      value: 1594603131
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Assurance crédit | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/glossary/assurance-credit'
+  path:
+    -
+      alias: /glossary/assurance-credit
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: "Assurance crédit\r\n"
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: "Le contrat d’assurance de crédit est passé entre un organisme prêteur et son client lors de la demande de financement. Selon les termes signés, le capital restant dû sera pris en charge en cas d’aléas de la vie du bénéficiaire : décès, invalidité, incapacité de travail perte d’emploi, etc. Les remboursements seront directement versés par l’assureur à l’organisme prêteur. L’assurance de crédit a deux objectifs principaux. Le premier pour le consommateur : il lui garantit, selon les termes signés, la prise en charge de chaque mensualité du crédit, sans avoir à demander de l’argent à ses proches ni devoir contracter un autre prêt. Le second est pour l’établissement financier : il est sûr de récupérer la somme prêtée.\r\n\r\n"
+      format: restricted_html

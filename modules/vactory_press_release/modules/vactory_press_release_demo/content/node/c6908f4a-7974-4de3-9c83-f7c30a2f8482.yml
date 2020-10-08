@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c6908f4a-7974-4de3-9c83-f7c30a2f8482
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    82b4795e-1f78-4be7-a688-dfcb51918a04: media
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    06e8b325-7eab-4f8b-8ecb-9b1030872d4e: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 5'
+  created:
+    -
+      value: 1592924487
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-5'
+  path:
+    -
+      alias: /press_release/press-release-5
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-30'
+  field_vactory_excerpt:
+    -
+      value: 'Brands can input media spend and platform-reported last-touch metrics for Facebook, Search and YouTube into the calculator to observe how their current portfolio view would change if incrementality were applied. The tool was designed to educate users by comparing their last-touch publisher-reported metrics to incremental metrics. The output delivers an incrementality score and suggested action based on the inputs.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 82b4795e-1f78-4be7-a688-dfcb51918a04
+  field_vactory_media_file:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_taxonomy_1:
+    -
+      entity: 06e8b325-7eab-4f8b-8ecb-9b1030872d4e

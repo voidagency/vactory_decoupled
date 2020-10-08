@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: db071480-4215-4e2b-9226-d729cf628bd5
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    c15eaae0-59e5-4e8f-aec5-3ccdc92e6b10: media
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    94ff8e19-4c31-4322-b91f-7d6d457557a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 7'
+  created:
+    -
+      value: 1592930025
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 7 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-7'
+  path:
+    -
+      alias: /press_kit/press-kit-7
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 7'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-25'
+  field_vactory_excerpt:
+    -
+      value: 'The Annual General Meeting resolved to adopt the income statement and balance sheet, consolidated income statement and balance sheet for 2019. Furthermore, it was resolved that the Company''s results shall be carried forward and thus no dividend will be distributed. The Annual General Meeting also resolved to discharge the members of the'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: c15eaae0-59e5-4e8f-aec5-3ccdc92e6b10
+  field_vactory_media_file:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_taxonomy_1:
+    -
+      entity: 94ff8e19-4c31-4322-b91f-7d6d457557a9

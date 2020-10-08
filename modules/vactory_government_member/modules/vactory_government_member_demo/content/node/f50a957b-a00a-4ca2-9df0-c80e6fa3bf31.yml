@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f50a957b-a00a-4ca2-9df0-c80e6fa3bf31
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    9e67a0d2-834c-4f64-a88e-d823549c80ea: media
+    4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 2'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 2'
+  created:
+    -
+      value: 1592928613
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/53'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Wafa Gestion's 'Excellent (mar)' rating is based on the following category scores: Investment Process: Excellent\nInvestment Resources: Excellent\nRisk Management: Excellent\nInvestment Performance: Consistent (from Strong) Company and Client Servicing: Excellent\nRobust Investment Process\nIt is Fitch's view that Wafa Gestion's investment processes are well-designed and implemented in a disciplined manner. Wafa Gestion follows mainly traditional, benchmark-oriented fixed-income strategies"
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Wafa Gestion's 'Excellent (mar)' rating is based on the following category scores: Investment Process: Excellent<br />\r\nInvestment Resources: Excellent<br />\r\nRisk Management: Excellent</p>\r\n\r\n<p>Investment Performance: Consistent (from Strong) Company and Client Servicing: Excellent</p>\r\n\r\n<p>Robust Investment Process<br />\r\nIt is Fitch's view that Wafa Gestion's investment processes are well-designed and implemented in a disciplined manner. Wafa Gestion follows mainly traditional, benchmark-oriented fixed-income strategies</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'bd Jabal Alatlas, lotiss. Laïmoune Casablanca'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role2@gmail.com
+  field_vactory_fax:
+    -
+      value: '05 22 89 66 11'
+  field_vactory_media_image:
+    -
+      entity: 9e67a0d2-834c-4f64-a88e-d823549c80ea
+  field_vactory_name:
+    -
+      value: 'Role 2'
+  field_vactory_taxonomy_1:
+    -
+      entity: 4e22a6d4-7f4e-4c56-b75e-fd3acecdfc92
+  field_vactory_telephone:
+    -
+      value: '06 22 89 66 11'

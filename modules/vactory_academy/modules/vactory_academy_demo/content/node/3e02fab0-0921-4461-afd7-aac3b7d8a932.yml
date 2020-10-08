@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3e02fab0-0921-4461-afd7-aac3b7d8a932
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    66f4aa12-4b93-4b03-8407-452e9a278b52: media
+    b5685a45-2321-4487-a88c-4c2ff8ced9e1: media
+    59c533b7-a42a-4482-9f5a-59958c8afe76: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'The complete AutoCAD 2018-21 course'
+  created:
+    -
+      value: 1592825128
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'The complete AutoCAD 2018-21 course | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/complete-autocad-2018-21-course'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "This is the only course you will ever need to learn AutoCAD right from scratch.\nMajor Highlights of The Course\n\n\nMost comprehensive AutoCAD\_course online with 184 video lectures\n\n\nAll lesson files included for download\n\n\nSelf-assessment quizzes and Practice drawings at the end of every section\n\n\n150 AutoCAD command list and AutoCAD quizzes eBook included\n\n\nNew features of AutoCAD 2018, 19, 20 and 2021 version included\n\n\nTaught by certified AutoCAD professional"
+  path:
+    -
+      alias: /academy-courses/complete-autocad-2018-21-course
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'The complete AutoCAD 2018-21 course'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>This is the only course you will ever need to learn AutoCAD right from scratch.</p>\r\n\r\n<p><strong>Major Highlights of The Course</strong></p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Most comprehensive AutoCAD&nbsp;course online with 184 video lectures</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>All lesson files included for download</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Self-assessment quizzes and Practice drawings at the end of every section</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>150 AutoCAD command list and AutoCAD quizzes eBook included</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>New features of AutoCAD 2018, 19, 20 and 2021 version included</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Taught by certified AutoCAD professional</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Extra practice drawings and projects at the end of the course</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>An overview of AutoCAD for Mac is included</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Auto-generated closed captioning in more than 6 languages (generated&nbsp;by Udemy)</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p><strong>What is this course all about?</strong></p>\r\n\r\n<p>This course is a full-length AutoCAD 2018, 19, 20 and 2021 learning package&nbsp;which contains almost all of the topics that you will ever need to work with this software. The course is designed for a beginner as well as seasoned users.</p>\r\n\r\n<p>A beginner can start learning the software right from scratch by following the course along just from lecture one. A seasoned AutoCAD user will also find this course very comprehensive and they can choose the topics they want to learn about skipping the basics.</p>\r\n\r\n<p><strong>Project-oriented course</strong></p>\r\n\r\n<p>The course lessons are mostly project-oriented and most of the tools and commands are taught with their real-world applications. Each module ends with a practical question which is related to the course and students are encouraged to answer the questions before moving further.</p>\r\n\r\n<p><strong>Drawings for practice</strong></p>\r\n\r\n<p>Apart from module end questions this course also contains a complete section dedicated to \"practice drawings\" and projects like floor plan, circuit diagram and other.</p>\r\n\r\n<p><strong>Instructor support for questions&nbsp;</strong></p>\r\n\r\n<p>I understand that students will have questions related to the course and its necessary also for a healthy learning process hence I encourage students to ask their questions related to the course in the Q&amp;A section of the course.&nbsp;I answer each and every question as soon as possible and so far I have answered every single course-related&nbsp;questions from students on Udemy Q&amp;A section.</p>\r\n\r\n<p>If you are still thinking whether you should enrol or not then I encourage you to watch some of the preview videos and test the waters before you actually enrol in the course and even after enrolling if you feel that this course failed to meet your expectations then you can always ask for a refund within 30 days of purchase.</p>\r\n\r\n<p><strong>Pre-requisites</strong></p>\r\n\r\n<p>You need to have access to AutoCAD software (student, trial or commercial version) for this course. This course can be used with AutoCAD&nbsp;LT as well.</p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596037070
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '18 h 30 min'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-22'
+  field_vactory_excerpt:
+    -
+      value: 'A complete course for learning AutoCAD from scratch to professional level'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  field_vactory_media_image:
+    -
+      entity: b5685a45-2321-4487-a88c-4c2ff8ced9e1
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1427f42d-10dc-4237-ada0-f0640f656d18
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594941949
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<p>Ma\u00eetriser en int\u00e9gralit\u00e9 le logiciel AutoCAD<\/p>\r\n\r\n<p>Concevoir des dossiers de plans<\/p>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<p>Connaissance de l''environnement Windows ou Mac<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p>This is the only course you will ever need to learn AutoCAD right from scratch.<\/p>\r\n\r\n<p><strong>Major Highlights of The Course<\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>Most comprehensive AutoCAD&nbsp;course online with 184 video lectures<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>All lesson files included for download<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Self-assessment quizzes and Practice drawings at the end of every section<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>150 AutoCAD command list and AutoCAD quizzes eBook included<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>New features of AutoCAD 2018, 19, 20 and 2021 version included<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Taught by certified AutoCAD professional<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Extra practice drawings and projects at the end of the course<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>An overview of AutoCAD for Mac is included<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Auto-generated closed captioning in more than 6 languages (generated&nbsp;by Udemy)<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p><strong>What is this course all about?<\/strong><\/p>\r\n\r\n<p>This course is a full-length AutoCAD 2018, 19, 20 and 2021 learning package&nbsp;which contains almost all of the topics that you will ever need to work with this software. The course is designed for a beginner as well as seasoned users.<\/p>\r\n\r\n<p>A beginner can start learning the software right from scratch by following the course along just from lecture one. A seasoned AutoCAD user will also find this course very comprehensive and they can choose the topics they want to learn about skipping the basics.<\/p>\r\n\r\n<p><strong>Project-oriented course<\/strong><\/p>\r\n\r\n<p>The course lessons are mostly project-oriented and most of the tools and commands are taught with their real-world applications. Each module ends with a practical question which is related to the course and students are encouraged to answer the questions before moving further.<\/p>\r\n\r\n<p><strong>Drawings for practice<\/strong><\/p>\r\n\r\n<p>Apart from module end questions this course also contains a complete section dedicated to \"practice drawings\" and projects like floor plan, circuit diagram and other.<\/p>\r\n\r\n<p><strong>Instructor support for questions&nbsp;<\/strong><\/p>\r\n\r\n<p>I understand that students will have questions related to the course and its necessary also for a healthy learning process hence I encourage students to ask their questions related to the course in the Q&amp;A section of the course.&nbsp;I answer each and every question as soon as possible and so far I have answered every single course-related&nbsp;questions from students on Udemy Q&amp;A section.<\/p>\r\n\r\n<p>If you are still thinking whether you should enrol or not then I encourage you to watch some of the preview videos and test the waters before you actually enrol in the course and even after enrolling if you feel that this course failed to meet your expectations then you can always ask for a refund within 30 days of purchase.<\/p>\r\n\r\n<p><strong>Pre-requisites<\/strong><\/p>\r\n\r\n<p>You need to have access to AutoCAD software (student, trial or commercial version) for this course. This course can be used with AutoCAD&nbsp;LT as well.<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: 59c533b7-a42a-4482-9f5a-59958c8afe76
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=5-czOygSuKY'

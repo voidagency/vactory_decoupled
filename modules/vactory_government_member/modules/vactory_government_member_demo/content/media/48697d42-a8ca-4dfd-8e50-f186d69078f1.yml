@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 48697d42-a8ca-4dfd-8e50-f186d69078f1
+  bundle: image
+  default_langcode: fr
+  depends:
+    1c054096-a467-480f-aea4-f4bd29bedafe: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg
+  created:
+    -
+      value: 1593018696
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 1c054096-a467-480f-aea4-f4bd29bedafe
+      alt: image
+      title: ''
+      width: 4076
+      height: 2712

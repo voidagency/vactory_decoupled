@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c9f5bed0-5e20-4f27-a158-59717c0f0360
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    dc14cd0c-9b70-47cb-8766-34b196cd6f22: media
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    5b3c92df-7831-4c4a-82cb-a8ac6eb10f93: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 9'
+  created:
+    -
+      value: 1592925272
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-9'
+  path:
+    -
+      alias: /press_release/press-release-9
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-25'
+  field_vactory_excerpt:
+    -
+      value: 'Pet adoption has been notably high for "other" types of pets partly because of a multiple-pet-ownership trend. There''s no under-appreciation of dogs or cats afoot: among recent pet adopters, 90% have a pet dog, compared with 75% of pet owners overall, and 70% have a cat, compared with 56% of pet owners overall. But other types of pet have garnered more share of the limelight as pet-loving households added to their menageries.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: dc14cd0c-9b70-47cb-8766-34b196cd6f22
+  field_vactory_media_file:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_taxonomy_1:
+    -
+      entity: 5b3c92df-7831-4c4a-82cb-a8ac6eb10f93

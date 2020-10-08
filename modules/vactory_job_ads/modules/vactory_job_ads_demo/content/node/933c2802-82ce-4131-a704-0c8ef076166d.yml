@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 933c2802-82ce-4131-a704-0c8ef076166d
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8: taxonomy_term
+    33d38729-0ee2-4c40-9c33-e926bfa9c8aa: taxonomy_term
+    c83e5a7e-3c74-4148-9440-95359a8d6ad4: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Engineering Product Leader'
+  created:
+    -
+      value: 1593520647
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Engineering Product Leader | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/engineering-product-leader'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "We are hiring for Rabat Engineering Center an\_Engineering Product Leader\_to lead new project & launches. Looking for an experienced Engineer, ideally with an Embedded Systems background, fluent English speaking and electronic knowledge.\_\_\nMain missions:"
+  path:
+    -
+      alias: /jobs/engineering-product-leader
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Engineering Product Leader'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>We are hiring for Rabat Engineering Center an<strong>&nbsp;Engineering Product Leader</strong>&nbsp;to lead new project &amp; launches. Looking for an experienced Engineer, ideally with an Embedded Systems background, fluent English speaking and electronic knowledge.&nbsp;&nbsp;</p>\r\n\r\n<p><u><strong>Main missions:</strong></u></p>\r\n\r\n<ul>\r\n\t<li>Developing and delivering cost competitive designs on time, on budget, on quality target, meeting the customer requirements (Flawless Product Development and Launch).&nbsp;</li>\r\n\t<li>Leading the Product Engineering for RFQs and awarded projects through development, launch and serial production following LPMP and APQP.&nbsp;&nbsp;</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '222 Bd Yasamin, Rabat'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Engineering customer interface. \r\nEngineering project timing and execution\r\nLeading technical evaluation of product changes (ECR, PCR,…). "
+      format: plain_text
+  field_vactory_email:
+    -
+      value: autogroup@email.ma
+  field_vactory_taxonomy_1:
+    -
+      entity: cd63b2f2-bca0-4a9b-b059-9a0ad8ecbbe8
+  field_vactory_taxonomy_2:
+    -
+      entity: 33d38729-0ee2-4c40-9c33-e926bfa9c8aa
+  field_vactory_taxonomy_3:
+    -
+      entity: c83e5a7e-3c74-4148-9440-95359a8d6ad4
+  field_vactory_telephone:
+    -
+      value: '020000000'

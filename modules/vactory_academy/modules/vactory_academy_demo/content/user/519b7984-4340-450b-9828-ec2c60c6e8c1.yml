@@ -1,0 +1,81 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  default_langcode: en
+  depends:
+    8d412a8a-9102-43cb-a5a2-2439b71d2474: file
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: john.doe
+  mail:
+    -
+      value: john.doe@void.fr
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1596036501
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: john.doe@void.fr
+  roles:
+    -
+      target_id: vactory_academy_instructor
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'john.doe | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/user/7'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: Vactory
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 1
+  field_about:
+    -
+      value: 'Donec sodales sagittis magna.. Donec id justo. Ut non enim eleifend felis pretium feugiat. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui. Cum sociis natoque penatibus et magnis.'
+  field_first_name:
+    -
+      value: John
+  field_last_name:
+    -
+      value: Doe
+  field_profession:
+    -
+      value: Formateur
+  user_picture:
+    -
+      entity: 8d412a8a-9102-43cb-a5a2-2439b71d2474
+      alt: ''
+      title: ''
+      width: 1080
+      height: 1080

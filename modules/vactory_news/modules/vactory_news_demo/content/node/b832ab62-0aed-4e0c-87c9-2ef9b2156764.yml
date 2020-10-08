@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b832ab62-0aed-4e0c-87c9-2ef9b2156764
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    0a495181-7f15-4cc3-b7c9-65e4509f2fbc: media
+    95e44038-b0cb-4026-ae92-b408005ce5b0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: edit
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 5'
+  created:
+    -
+      value: 1592425906
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-5'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: '<p>I''m baby meggings hot chicken letterpress franzen, mixtape mumblecore stumptown yr. Kogi disrupt gentrify swag, locavore lo-fi keffiyeh pug health goth seitan fashion axe bespoke waistcoat tofu. Intelligentsia godard master cleanse vape tumblr. Jianbing plaid artisan, gentrify forage meggings vexillologist af banjo actually. Adaptogen la croix chicharrones, slow-carb chia austin small batch flannel plaid post-ironic twee kickstarter. Migas polaroid chia, DIY put a bird on it activated charcoal kogi marfa semiotics.</p>'
+  path:
+    -
+      alias: /news/news-5
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>&lt;p&gt;I'm baby meggings hot chicken letterpress franzen, mixtape mumblecore stumptown yr. Kogi disrupt gentrify swag, locavore lo-fi keffiyeh pug health goth seitan fashion axe bespoke waistcoat tofu. Intelligentsia godard master cleanse vape tumblr. Jianbing plaid artisan, gentrify forage meggings vexillologist af banjo actually. Adaptogen la croix chicharrones, slow-carb chia austin small batch flannel plaid post-ironic twee kickstarter. Migas polaroid chia, DIY put a bird on it activated charcoal kogi marfa semiotics.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Health goth activated charcoal migas literally, roof party hexagon live-edge tattooed vegan raclette ugh actually. Asymmetrical pabst PBR&amp;amp;B DIY. 3 wolf moon ugh cronut chicharrones gentrify iPhone palo santo scenester kitsch messenger bag dreamcatcher. Tumeric swag bitters green juice poutine narwhal.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Twee artisan cardigan, kickstarter lo-fi ethical keffiyeh vape post-ironic tumeric disrupt selvage. Vaporware cray cloud bread, freegan wayfarers raclette PBR&amp;amp;B woke heirloom butcher jianbing stumptown actually kickstarter. Chicharrones cloud bread artisan subway tile, street art VHS food truck bespoke air plant literally affogato coloring book squid austin tumeric. Mumblecore pickled twee crucifix viral ethical tacos hell of fam. Pitchfork yuccie 3 wolf moon air plant seitan photo booth aesthetic glossier typewriter cray.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Mustache seitan iceland, mlkshk pickled poutine gochujang waistcoat hashtag jianbing. Hot chicken tofu truffaut, kitsch 8-bit gochujang chia mustache kickstarter paleo synth. Locavore next level stumptown mixtape asymmetrical. Raclette tumeric twee put a bird on it. Forage selfies plaid farm-to-table, meh single-origin coffee pabst pok pok thundercats gastropub. Etsy food truck narwhal neutra sartorial kombucha hashtag 8-bit vexillologist ramps shoreditch.&lt;/p&gt;</p>\r\n\r\n<p>&lt;p&gt;Sustainable craft beer green juice affogato. Kickstarter wolf semiotics succulents polaroid sriracha vinyl. Heirloom cloud bread gastropub, pork belly taxidermy seitan iceland. Prism snackwave drinking vinegar sustainable. Tote bag listicle blue bottle tbh. Twee freegan direct trade glossier narwhal pinterest sartorial hell of.&lt;/p&gt;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: 'Sustainable craft beer green juice affogato. Kickstarter wolf semiotics succulents polaroid sriracha vinyl. Heirloom cloud bread gastropub, pork belly taxidermy seitan iceland.&nbsp;'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 0a495181-7f15-4cc3-b7c9-65e4509f2fbc
+  field_vactory_taxonomy_1:
+    -
+      entity: 95e44038-b0cb-4026-ae92-b408005ce5b0

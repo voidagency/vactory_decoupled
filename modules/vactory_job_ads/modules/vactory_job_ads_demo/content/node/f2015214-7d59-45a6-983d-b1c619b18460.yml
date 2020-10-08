@@ -1,0 +1,99 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f2015214-7d59-45a6-983d-b1c619b18460
+  bundle: job_ads
+  default_langcode: fr
+  depends:
+    fd74022b-fd71-4f3d-8fb4-b56597731889: taxonomy_term
+    b75456d9-8abf-4d4e-aa81-c7d6593a8ca4: taxonomy_term
+    a5b8e36e-3dc7-4f14-9108-a15d815e37cf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'demo content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Chef de projet'
+  created:
+    -
+      value: 1593519530
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Chef de projet | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/jobs/chef-de-projet'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Offrir l’expertise technique et fonctionnel sur les outils de gestion de centre de relation client\nMener des ateliers de cadrage avec les filiales et la région\nAssurer les travaux de rédaction et production des livrables\nEtudier les contraintes techniques des filiales et proposer les solutions adéquates\nEtudier les prérequis techniques du projet"
+  path:
+    -
+      alias: /jobs/chef-de-projet
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Chef de projet'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<ul>\r\n\t<li>Offrir l’expertise technique et fonctionnel sur les outils de gestion de centre de relation client</li>\r\n\t<li>Mener des ateliers de cadrage avec les filiales et la région</li>\r\n\t<li>Assurer les travaux de rédaction et production des livrables</li>\r\n\t<li>Etudier les contraintes techniques des filiales et proposer les solutions adéquates</li>\r\n\t<li>Etudier les prérequis techniques du projet</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '444 Bd Guelzium, Marrakech'
+      format: plain_text
+  field_vactory_description:
+    -
+      value: "Maîtrise de l’organisation et de la conduite de réunions\r\nMaîtrise de la rédaction et de la cartographie des processus\r\nAnglais courant : échanges à l’écrit et à l’oral"
+      format: plain_text
+  field_vactory_email:
+    -
+      value: xyzTech@email.me
+  field_vactory_taxonomy_1:
+    -
+      entity: fd74022b-fd71-4f3d-8fb4-b56597731889
+  field_vactory_taxonomy_2:
+    -
+      entity: b75456d9-8abf-4d4e-aa81-c7d6593a8ca4
+  field_vactory_taxonomy_3:
+    -
+      entity: a5b8e36e-3dc7-4f14-9108-a15d815e37cf
+  field_vactory_telephone:
+    -
+      value: '0500000000'

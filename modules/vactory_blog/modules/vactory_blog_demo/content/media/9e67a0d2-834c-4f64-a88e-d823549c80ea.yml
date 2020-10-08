@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9e67a0d2-834c-4f64-a88e-d823549c80ea
+  bundle: image
+  default_langcode: fr
+  depends:
+    c0dbb313-2ba5-4609-af30-abe218f9fb15: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg
+  created:
+    -
+      value: 1593014687
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: c0dbb313-2ba5-4609-af30-abe218f9fb15
+      alt: image
+      title: ''
+      width: 5760
+      height: 3840

@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5439c984-6ec4-4211-a4c1-f1628acfa09d
+  bundle: press_kit
+  default_langcode: fr
+  depends:
+    3f829dd9-2853-44e6-9a36-a3d90c0a14ec: media
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    94ff8e19-4c31-4322-b91f-7d6d457557a9: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press kit 8'
+  created:
+    -
+      value: 1592930897
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press kit 8 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_kit/press-kit-8'
+  path:
+    -
+      alias: /press_kit/press-kit-8
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press kit 8'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-27'
+  field_vactory_excerpt:
+    -
+      value: 'the Board and SEK 300,000 each to the other Board members. It was further resolved that the remuneration to the chairman of the Audit Committee should be SEK 75,000 and SEK 40,000 to each other member in the Audit Committee, SEK 40,000 to the chairman of the Remuneration Committee and SEK 25,000 to each other member in the Remuneration Committee, and SEK 25,000 to each board member in the Scientific Committee. It was further'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 3f829dd9-2853-44e6-9a36-a3d90c0a14ec
+  field_vactory_media_file:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_taxonomy_1:
+    -
+      entity: 94ff8e19-4c31-4322-b91f-7d6d457557a9

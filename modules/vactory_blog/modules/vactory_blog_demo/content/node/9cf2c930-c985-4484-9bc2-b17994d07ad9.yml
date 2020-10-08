@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9cf2c930-c985-4484-9bc2-b17994d07ad9
+  bundle: blog
+  default_langcode: fr
+  depends:
+    7f1a7a06-19db-4f6d-b0f2-d77abb892e38: media
+    d024f6cd-a229-49c8-a114-56c5331e63c5: taxonomy_term
+    922fb475-e756-48bc-ac67-5b95ac2fbe51: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 6'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 6'
+  created:
+    -
+      value: 1592924383
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-6'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch conducts a reasonable investigation of the factual information relied upon by it in accordance with its ratings methodology, and obtains reasonable verification of that information from independent sources, to the extent such sources are available for a given security or in a given jurisdiction.'
+  path:
+    -
+      alias: /blogs/blog-6
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch conducts a reasonable investigation of the factual information relied upon by it in accordance with its ratings methodology, and obtains reasonable verification of that information from independent sources, to the extent such sources are available for a given security or in a given jurisdiction. The manner of Fitch's factual investigation and the scope of the third-party verification it obtains will vary depending on the nature of the rated security and its issuer, the requirements and practices in the jurisdiction in which the rated security is offered and sold and/or the issuer is located, the availability and nature of relevant public information</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: 'in whole or in part is prohibited except by permission. All rights reserved. In issuing and maintaining its ratings and in making other reports (including forecast information), Fitch relies on factual information it receives from issuers and underwriters and from other sources Fitch believes to be credible.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 7f1a7a06-19db-4f6d-b0f2-d77abb892e38
+  field_vactory_taxonomy_1:
+    -
+      entity: d024f6cd-a229-49c8-a114-56c5331e63c5
+  field_vactory_taxonomy_2:
+    -
+      entity: 922fb475-e756-48bc-ac67-5b95ac2fbe51

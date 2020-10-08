@@ -1,0 +1,89 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1512a2cb-717c-46d0-ae1c-fa62081d0246
+  bundle: blog
+  default_langcode: fr
+  depends:
+    673c1991-c70e-4e10-9910-f886a711deed: media
+    1d42d776-5eb8-4776-acbe-864b3dd696cb: taxonomy_term
+    df44ce4c-ae3f-4c5e-934c-f76a55d1aedf: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Blog 10'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Blog 10'
+  created:
+    -
+      value: 1592924631
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Blog 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/blogs/blog-10'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Le système GNU-Linux est la rencontre d’une technologie, le noyau Linux et d’une philosophie de développement et de diffusion. C’est un système au développement collaboratif (par une communauté) qui est distribué librement et permet l’utilisation de tous les logiciels libres développés pour son architecture. É Le noyau Linux est historiquement une version libre du système UNIX développé initialement par le Finlandais Linus Torvalds à partir du début des années 1990.'
+  path:
+    -
+      alias: /blogs/blog-10
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Blog 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Le système GNU-Linux est la rencontre d’une technologie, le noyau Linux et d’une philosophie de développement et de diffusion. C’est un système au développement collaboratif (par une communauté) qui est distribué librement et permet l’utilisation de tous les logiciels libres développés pour son architecture. É Le noyau Linux est historiquement une version libre du système UNIX développé initialement par le Finlandais Linus Torvalds à partir du début des années 1990. É Le projet GNU est celui du développement collaboratif et libre d’un système d’exploitation libre initié par Richard Stallman en 1983.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_excerpt:
+    -
+      value: "Depuis une dizaine d’année, Linux et Windows ont beaucoup évolué. La plupart des distributions Linux\r\nproposent des systèmes d’installation automatisés, des outils de bureautique ressemblant aux suites\r\ncommerciales. Il bénéficie en outre d’une sécurité accrue à l’heure des virus et autres failles de sécurité.\r\nWindows propose de plus en plus de fonctionnalités empruntées à Linux."
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 673c1991-c70e-4e10-9910-f886a711deed
+  field_vactory_taxonomy_1:
+    -
+      entity: 1d42d776-5eb8-4776-acbe-864b3dd696cb
+  field_vactory_taxonomy_2:
+    -
+      entity: df44ce4c-ae3f-4c5e-934c-f76a55d1aedf

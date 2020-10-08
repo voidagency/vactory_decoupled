@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f6181370-7f22-4e48-8867-47893ec4e64f
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    2b8b5d5a-26cf-4065-89f2-03dbed8ca455: media
+    cfeb4126-86d1-4b61-8462-0f76f5adfcc5: media
+    dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Maîtriser le montage Vidéo avec Adobe Première CC'
+  created:
+    -
+      value: 1592823018
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Maîtriser le montage Vidéo avec Adobe Première CC | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/maitriser-le-montage-video-avec-adobe-premiere-cc'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Vous\_cherchez un logiciel de montage, ou vous voulez tout simplement\_apprendre à utiliser\_ce formidable outil d’édition vidéo qu’est première pro CC\_2017\_alors cette formation est pour vous\_!\nPremière pro est un logiciel très puissant qui peut paraître complexe, mais il n’en est rien."
+  path:
+    -
+      alias: /academy-courses/maitriser-le-montage-video-avec-adobe-premiere-cc
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Maîtriser le montage Vidéo avec Adobe Première CC'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Vous&nbsp;<strong>cherchez un logiciel de montage</strong>, ou vous voulez tout simplement&nbsp;<strong>apprendre à utiliser</strong>&nbsp;ce formidable outil d’édition vidéo qu’est première pro CC&nbsp;2017<strong>&nbsp;alors cette formation est pour vous&nbsp;!</strong></p>\r\n\r\n<p><strong>Première pro est un logiciel très puissant qui peut paraître complexe, mais il n’en est rien.</strong></p>\r\n\r\n<p>Dans cette formation sur&nbsp;<strong>les fondamentaux d’adobe Première</strong>, nous étudierons les fonctionnalités de montage qui servent à la plupart des projets, allant de l'importation des médias à l'export de séquence, en passant par la création de titre, de générique, de sous titres, la retouche audio, la création d'animations ou l'ajout d'effets et la correction colorimétrique.</p>\r\n\r\n<p><strong>Le but de ce cours n'est pas ici de présenter la totalité des fonctionnalités, car elles sont très nombreuses</strong>&nbsp;et vous risqueriez de vous lasser, mais de vous&nbsp;donner les outils pour réaliser&nbsp;<strong>un montage de qualité professionnelle&nbsp;et les connaissances pour aller ensuite plus loin par vous-même.</strong></p>\r\n\r\n<p>Enfin, cette formation sera également l'occasion d'utiliser certaines des&nbsp;<strong>nouveautés de Première&nbsp;Pro CC&nbsp;</strong>offrant une&nbsp;ergonomie&nbsp;et des performances améliorées : les nouveaux raccourcis clavier,&nbsp;la refonte du panneau Montage, ou bien encore les outils de tracking&nbsp;etc...</p>\r\n\r\n<p>Pour en&nbsp;<strong>savoir plus sur le contenu de la formation</strong>&nbsp;je vous propose de consulter le plan de cours et les vidéos de&nbsp;<strong>preview en libre accès.</strong></p>\r\n\r\n<p>Alors&nbsp;<strong>si vous voulez monter des films</strong>&nbsp;de qualité&nbsp;et&nbsp;<strong>vous amuser avec vos images</strong>, je vous donne rendez-vous dans la première partie de ce cours.</p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596036808
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '7 h 30 min'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-24'
+  field_vactory_excerpt:
+    -
+      value: 'Monter vos clips, films, effets spéciaux, grâce a Adobe Première PRO CC'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: 2b8b5d5a-26cf-4065-89f2-03dbed8ca455
+  field_vactory_media_image:
+    -
+      entity: cfeb4126-86d1-4b61-8462-0f76f5adfcc5
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 19da6efa-69ca-4d4a-9e67-9aaf27ba870d
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594940698
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<ul>\r\n\t<li>Comprendre le fonctionnement d''un appareil photo<\/li>\r\n\t<li>Comprendre le vocabulaire ainsi que les termes techniques de la photographie<\/li>\r\n\t<li>Apprendre \u00e0 utiliser les diff\u00e9rents modes d''un appareil photo<\/li>\r\n\t<li>Comprendre et r\u00e9aliser les effets artistiques de base (profondeur de champ, flou de mouvement,...)<\/li>\r\n\t<li>Apprendre \u00e0 g\u00e9rer des situations lumineuses complexes (contre-jour, nuit,...)<\/li>\r\n\t<li>Apprendre \u00e0 r\u00e9ussir sa mise au point en toutes situations<\/li>\r\n\t<li>Apprendre les sp\u00e9cificit\u00e9s des diff\u00e9rents types d''objectifs<\/li>\r\n\t<li>S''exercer sur le terrain \u00e0 travers des exercices et d\u00e9monstrations pratiques<\/li>\r\n<\/ul>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<ul>\r\n\t<li>Il est pr\u00e9f\u00e9rable que vous disposiez d''un appareil photo proposant les modes suivants : A ou Av, S ou Tv ainsi que M (Manuel).<\/li>\r\n\t<li>Votre bo\u00eetier peut \u00eatre de type reflex, bridge, hybride ou compact expert et de n''importe quelle marque.<\/li>\r\n<\/ul>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p>Vous&nbsp;<strong>cherchez un logiciel de montage<\/strong>, ou vous voulez tout simplement&nbsp;<strong>apprendre \u00e0 utiliser<\/strong>&nbsp;ce formidable outil d\u2019\u00e9dition vid\u00e9o qu\u2019est premi\u00e8re pro CC&nbsp;2017<strong>&nbsp;alors cette formation est pour vous&nbsp;!<\/strong><\/p>\r\n\r\n<p><strong>Premi\u00e8re pro est un logiciel tr\u00e8s puissant qui peut para\u00eetre complexe, mais il n\u2019en est rien.<\/strong><\/p>\r\n\r\n<p>Dans cette formation sur&nbsp;<strong>les fondamentaux d\u2019adobe Premi\u00e8re<\/strong>, nous \u00e9tudierons les fonctionnalit\u00e9s de montage qui servent \u00e0 la plupart des projets, allant de l''importation des m\u00e9dias \u00e0 l''export de s\u00e9quence, en passant par la cr\u00e9ation de titre, de g\u00e9n\u00e9rique, de sous titres, la retouche audio, la cr\u00e9ation d''animations ou l''ajout d''effets et la correction colorim\u00e9trique.<\/p>\r\n\r\n<p><strong>Le but de ce cours n''est pas ici de pr\u00e9senter la totalit\u00e9 des fonctionnalit\u00e9s, car elles sont tr\u00e8s nombreuses<\/strong>&nbsp;et vous risqueriez de vous lasser, mais de vous&nbsp;donner les outils pour r\u00e9aliser&nbsp;<strong>un montage de qualit\u00e9 professionnelle&nbsp;et les connaissances pour aller ensuite plus loin par vous-m\u00eame.<\/strong><\/p>\r\n\r\n<p>Enfin, cette formation sera \u00e9galement l''occasion d''utiliser certaines des&nbsp;<strong>nouveaut\u00e9s de Premi\u00e8re&nbsp;Pro CC&nbsp;<\/strong>offrant une&nbsp;ergonomie&nbsp;et des performances am\u00e9lior\u00e9es : les nouveaux raccourcis clavier,&nbsp;la refonte du panneau Montage, ou bien encore les outils de tracking&nbsp;etc...<\/p>\r\n\r\n<p>Pour en&nbsp;<strong>savoir plus sur le contenu de la formation<\/strong>&nbsp;je vous propose de consulter le plan de cours et les vid\u00e9os de&nbsp;<strong>preview en libre acc\u00e8s.<\/strong><\/p>\r\n\r\n<p>Alors&nbsp;<strong>si vous voulez monter des films<\/strong>&nbsp;de qualit\u00e9&nbsp;et&nbsp;<strong>vous amuser avec vos images<\/strong>, je vous donne rendez-vous dans la premi\u00e8re partie de ce cours.<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=jdN-Rs-3uok'

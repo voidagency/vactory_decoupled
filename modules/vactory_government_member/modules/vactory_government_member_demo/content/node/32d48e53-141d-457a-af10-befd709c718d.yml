@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 32d48e53-141d-457a-af10-befd709c718d
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    367d4d84-b202-4205-858a-fd4ba6a0362b: media
+    ed7b57bf-c4d2-4ac4-984e-60e1ffaa66a2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 3'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 3'
+  created:
+    -
+      value: 1592928701
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 3 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/54'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Broad Depth of Resources, Notably in IT\nExperienced, skilled and well-staffed teams are maintained throughout the organisation, with additional hires in progress to match business growth. Staff specialisation has been increasing as assets under management (AUM) grow and strategies become more differentiated, particularly in equities and multi- assets. Turnover remains low with replacement hires made where staff has been promoted internally. Wafa Gestion expanded its staff base in 2018 with the addition of a trading desk."
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 3'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Broad Depth of Resources, Notably in IT<br />\r\nExperienced, skilled and well-staffed teams are maintained throughout the organisation, with additional hires in progress to match business growth. Staff specialisation has been increasing as assets under management (AUM) grow and strategies become more differentiated, particularly in equities and multi- assets. Turnover remains low with replacement hires made where staff has been promoted internally. Wafa Gestion expanded its staff base in 2018 with the addition of a trading desk.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: 'route de Nouasseur - r.s. 114, Casablanca Technopa, Grand Casablanca'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role3@gmail.com
+  field_vactory_fax:
+    -
+      value: '0522 217 901'
+  field_vactory_media_image:
+    -
+      entity: 367d4d84-b202-4205-858a-fd4ba6a0362b
+  field_vactory_name:
+    -
+      value: 'Role 3'
+  field_vactory_taxonomy_1:
+    -
+      entity: ed7b57bf-c4d2-4ac4-984e-60e1ffaa66a2
+  field_vactory_telephone:
+    -
+      value: '0622 217 901'

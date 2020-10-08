@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 849d4f47-acb4-465f-a2af-e210bf6b4a26
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    a9168937-2991-4fac-89c4-47f3c436bb39: media
+    f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc: media
+    06e8b325-7eab-4f8b-8ecb-9b1030872d4e: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 6'
+  created:
+    -
+      value: 1592924693
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-6'
+  path:
+    -
+      alias: /press_release/press-release-6
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-21'
+  field_vactory_excerpt:
+    -
+      value: 'NEW YORK, June 23, 2020 /PRNewswire/ -- Nielsen announced today that its Local People Meter (LPM) market service and Set Meter measurement services in 19 of 31 U.S. Set Meter markets have been granted continued accreditation by the Media Rating Council (MRC).* This marks a significant achievement for Nielsen because these services now include Portable People Meter (PPM) measurement.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: a9168937-2991-4fac-89c4-47f3c436bb39
+  field_vactory_media_file:
+    -
+      entity: f28ffcbe-3ea0-4fc1-8730-5252ccbc16bc
+  field_vactory_taxonomy_1:
+    -
+      entity: 06e8b325-7eab-4f8b-8ecb-9b1030872d4e

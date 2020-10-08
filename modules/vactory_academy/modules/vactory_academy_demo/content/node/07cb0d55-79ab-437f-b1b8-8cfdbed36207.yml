@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 07cb0d55-79ab-437f-b1b8-8cfdbed36207
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    66f4aa12-4b93-4b03-8407-452e9a278b52: media
+    1ddf33b0-2d95-4223-999e-3a14e0b8c9a2: media
+    dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Maîtrisez votre DSLR et Mirrorless en mode vidéo'
+  created:
+    -
+      value: 1592823256
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Maîtrisez votre DSLR et Mirrorless en mode vidéo | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/maitrisez-votre-dslr-et-mirrorless-en-mode-video'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Vous êtes photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vidéo ?\nVous avez peut-être envie de commencer à faire de la vidéo plus sérieusement ?\_De\_réaliser\_des reportages de mariage, des corporates et films d’entreprise\_ou encore, \_des clip vidéo d’artistes?"
+  path:
+    -
+      alias: /academy-courses/maitrisez-votre-dslr-et-mirrorless-en-mode-video
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Maîtrisez votre DSLR et Mirrorless en mode vidéo'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p><strong><strong>Vous êtes photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vidéo ?</strong></strong></p>\r\n\r\n<p><strong><strong>Vous avez peu</strong><strong>t-</strong><strong>être envie de commencer à faire de la vidéo plus sérieusement ?&nbsp;</strong><strong>De</strong><strong>&nbsp;réalise</strong><strong>r</strong><strong>&nbsp;des reportages de mariage, des corporates et films d’entreprise&nbsp;</strong><strong>ou encore, &nbsp;</strong><strong>des clip vidéo d’artistes?</strong></strong></p>\r\n\r\n<p><strong><strong>Cette formation est&nbsp;</strong><strong>faite</strong><strong>&nbsp;pour vous !</strong></strong></p>\r\n\r\n<p><strong><strong>Je suis photographe depuis plus de 20 ans, et d</strong><strong>è</strong><strong>s que le premier appareil photo nous à permis de filmer, je me suis lancé dans l’aventure.</strong></strong></p>\r\n\r\n<p><strong><strong>Je partagerai donc avec vous ici, mon expérience, et&nbsp;</strong><strong>démystifierai</strong><strong>&nbsp;pour vous toutes les notions spécifiques à la vidéo.</strong></strong></p>\r\n\r\n<p><strong><strong>Qu’est-ce que la cadence d’enregistrement ?</strong></strong></p>\r\n\r\n<p><strong><strong>La résolution en vidéo ?</strong></strong></p>\r\n\r\n<p><strong><strong>Le bitrate ?</strong></strong></p>\r\n\r\n<p><strong><strong>La compression Long GOP, IPB ou ALL-I ?</strong></strong></p>\r\n\r\n<p><strong><strong>Qu’est ce qu’un profil d’images “ plat “ ou flat profile en anglais ?</strong></strong></p>\r\n\r\n<p><strong><strong>Quels accessoires utiliser en vidéo ?</strong></strong></p>\r\n\r\n<p><strong><strong>La vidéo&nbsp;</strong><strong>a</strong><strong>&nbsp;</strong><strong>s</strong><strong>es spécificités et nous verrons tout cela ensemble.</strong></strong></p>\r\n\r\n<p><strong><strong>Toutes ces notions et bien d’autres encore seront passées en revu</strong><strong>e</strong><strong>&nbsp;dans cette formation, et toutes ces notions vous suivront encore longtemps …&nbsp;</strong><strong>av</strong><strong>ec l’appareil&nbsp;</strong><strong>photo&nbsp;</strong><strong>que vous utilisez aujourd’hui ou celui que vous aurez dans un an, ou cinq ans.</strong></strong></p>\r\n\r\n<p><strong><strong>Un groupe Facebook fermé, réserv</strong><strong>é</strong><strong>&nbsp;aux apprenants ayant suivis cette formation sera ouvert, nous pourrons nous y retrouver pour y discuter, échang</strong><strong>er</strong><strong>&nbsp;des idées, poser des questions précises sur des projets que vous pourriez avoir, poster nos vidéos … bre</strong><strong>f</strong><strong>, alle</strong><strong>r</strong><strong>&nbsp;plus loin, ensemble.</strong></strong></p>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596036924
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '3 h 30 min'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-23'
+  field_vactory_excerpt:
+    -
+      value: 'Créez vos vidéos en filmant avec votre appareil photo reflex, mirrorless, grâce à ce guide complet pour débutant!'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  field_vactory_media_image:
+    -
+      entity: 1ddf33b0-2d95-4223-999e-3a14e0b8c9a2
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: caabceef-a7e8-436f-a329-66af5e22d9b4
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594941026
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<ul>\r\n\t<li>Vous ma\u00eetriserez le mode d''enregistrement vid\u00e9o de votre appareil photo de A \u00e0 Z !<\/li>\r\n\t<li>Vous saurez utiliser les param\u00e8tres propres \u00e0 l''enregistrement de s\u00e9quences vid\u00e9os avec un DSLR ou un appareil photo mirrorless<\/li>\r\n\t<li>Vous comprendrez et saurez ma\u00eetriser les termes Codec, bitrate, cadence d''enregistrement.. Indispensables pour cr\u00e9er vos vid\u00e9o<\/li>\r\n\t<li>Vous pourrez compl\u00e9ter votre \u00e9quipement en DSLR video avec les accessoires dont vous pourriez avoir besoin en toute connaissance de cause gr\u00e2ce \u00e0 mes conseils<\/li>\r\n\t<li>Vous aurez construit des fondations solides en vid\u00e9o qui vous suivront quelque soit la cam\u00e9ra utilis\u00e9es dans le futur<\/li>\r\n\t<li>Vous vous sentirez apte \u00e0 passer \u00e0 l''action, m\u00eame pour r\u00e9pondre \u00e0 une premi\u00e8re commande client en vid\u00e9o<\/li>\r\n<\/ul>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<ul>\r\n\t<li>Vous devez avoir des bases de photographie<\/li>\r\n\t<li>Vous devez avoir un appareil photo capable de filmer en mode vid\u00e9o<\/li>\r\n<\/ul>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p><strong><strong>Vous \u00eates photographe et avez envie de tourner le bouton de votre appareil photo sur le mode vid\u00e9o ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Vous avez peu<\/strong><strong>t-<\/strong><strong>\u00eatre envie de commencer \u00e0 faire de la vid\u00e9o plus s\u00e9rieusement ?&nbsp;<\/strong><strong>De<\/strong><strong>&nbsp;r\u00e9alise<\/strong><strong>r<\/strong><strong>&nbsp;des reportages de mariage, des corporates et films d\u2019entreprise&nbsp;<\/strong><strong>ou encore, &nbsp;<\/strong><strong>des clip vid\u00e9o d\u2019artistes?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Cette formation est&nbsp;<\/strong><strong>faite<\/strong><strong>&nbsp;pour vous !<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Je suis photographe depuis plus de 20 ans, et d<\/strong><strong>\u00e8<\/strong><strong>s que le premier appareil photo nous \u00e0 permis de filmer, je me suis lanc\u00e9 dans l\u2019aventure.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Je partagerai donc avec vous ici, mon exp\u00e9rience, et&nbsp;<\/strong><strong>d\u00e9mystifierai<\/strong><strong>&nbsp;pour vous toutes les notions sp\u00e9cifiques \u00e0 la vid\u00e9o.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Qu\u2019est-ce que la cadence d\u2019enregistrement ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>La r\u00e9solution en vid\u00e9o ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Le bitrate ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>La compression Long GOP, IPB ou ALL-I ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Qu\u2019est ce qu\u2019un profil d\u2019images \u201c plat \u201c ou flat profile en anglais ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Quels accessoires utiliser en vid\u00e9o ?<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>La vid\u00e9o&nbsp;<\/strong><strong>a<\/strong><strong>&nbsp;<\/strong><strong>s<\/strong><strong>es sp\u00e9cificit\u00e9s et nous verrons tout cela ensemble.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Toutes ces notions et bien d\u2019autres encore seront pass\u00e9es en revu<\/strong><strong>e<\/strong><strong>&nbsp;dans cette formation, et toutes ces notions vous suivront encore longtemps \u2026&nbsp;<\/strong><strong>av<\/strong><strong>ec l\u2019appareil&nbsp;<\/strong><strong>photo&nbsp;<\/strong><strong>que vous utilisez aujourd\u2019hui ou celui que vous aurez dans un an, ou cinq ans.<\/strong><\/strong><\/p>\r\n\r\n<p><strong><strong>Un groupe Facebook ferm\u00e9, r\u00e9serv<\/strong><strong>\u00e9<\/strong><strong>&nbsp;aux apprenants ayant suivis cette formation sera ouvert, nous pourrons nous y retrouver pour y discuter, \u00e9chang<\/strong><strong>er<\/strong><strong>&nbsp;des id\u00e9es, poser des questions pr\u00e9cises sur des projets que vous pourriez avoir, poster nos vid\u00e9os \u2026 bre<\/strong><strong>f<\/strong><strong>, alle<\/strong><strong>r<\/strong><strong>&nbsp;plus loin, ensemble.<\/strong><\/strong><\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: dbbe4ae3-dfb9-444b-8f24-2ac9ff07b57d
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=6_B8pVoANyY'

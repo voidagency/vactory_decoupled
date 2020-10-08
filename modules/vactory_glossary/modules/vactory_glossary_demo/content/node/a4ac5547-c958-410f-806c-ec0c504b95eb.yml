@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a4ac5547-c958-410f-806c-ec0c504b95eb
+  bundle: glossary
+  default_langcode: ar
+  depends:
+    f392e21c-9867-471d-9f33-8b2a659415d3: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'مقتطف حساب القرض المتجدد'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'مقتطف حساب القرض المتجدد'
+  created:
+    -
+      value: 1595950497
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'مقتطف حساب القرض المتجدد | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/116'
+  path:
+    -
+      alias: /glossary/mqttf-hsab-alqrd-almtjdd
+      langcode: ar
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'مقتطف حساب القرض المتجدد'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_body:
+    -
+      value: 'يعتبر مقتطف حساب القرض المتجدد وثيقة توجه من طرف الهيئة المقرضة لزبونها في فترات زمنية محددة والذي يوضح جميع العمليات المنجزة. ويسمح التقديم التفصيلي بالتوفر على رؤية واضحة لوضعية السلف المتجدد للزبون. ويستعرض مقتطف الحساب كافة الحركات المنجزة على الحساب المتجدد، لاسيما بالنسبة للعمليات المتكررة المتعلقة بالقرض ( المبلغ المتبقي المستحق، المبلغ الإجمالي للقرض، المبلغ المتوفر...).'
+      format: restricted_html
+  field_vactory_taxonomy_1:
+    -
+      entity: f392e21c-9867-471d-9f33-8b2a659415d3

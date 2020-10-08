@@ -1,0 +1,97 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 960f673e-7bfe-4ef3-9c39-ba9db8a7cf6e
+  bundle: vactory_government_member
+  default_langcode: fr
+  depends:
+    34e0b3fe-a112-4d52-a861-d8abb9150e55: media
+    980aaca0-1026-4d94-8698-5bf91b610276: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Government 1'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Government 1'
+  created:
+    -
+      value: 1592928458
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Government 1 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/node/52'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'The rating reflects a leading, well-staffed asset manager, with well-established and disciplined investment processes. The rating also factors in a sound operational platform, and a rigorous compliance and control environment, which help support the company''s clients and product types.'
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Government 1'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>The rating reflects a leading, well-staffed asset manager, with well-established and disciplined investment processes. The rating also factors in a sound operational platform, and a rigorous compliance and control environment, which help support the company's clients and product types.</p>\r\n\r\n<p>Investment performance remains broadly healthy; however, the amount of funds outperforming peers on a risk-adjusted basis has declined, leading Fitch to revise the Investment Performance score to 'Consistent' from 'Strong'. This change does not affect the overall rating due to Wafa Gestion's continued strength in all other scoring areas and the low weight Fitch assigns to the Investment Performance category in its rating framework.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_address:
+    -
+      value: '55, bd Mohammed V Beni Mellal'
+      format: plain_text
+  field_vactory_email:
+    -
+      value: Role1@gmail.com
+  field_vactory_fax:
+    -
+      value: '05 23 48 77 77'
+  field_vactory_media_image:
+    -
+      entity: 34e0b3fe-a112-4d52-a861-d8abb9150e55
+  field_vactory_name:
+    -
+      value: 'Role 1'
+  field_vactory_taxonomy_1:
+    -
+      entity: 980aaca0-1026-4d94-8698-5bf91b610276
+  field_vactory_telephone:
+    -
+      value: '06 23 48 77 77'

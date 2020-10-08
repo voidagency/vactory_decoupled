@@ -1,0 +1,88 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: fa57ad5b-904b-4acb-b947-25aa06ee666d
+  bundle: vactory_news
+  default_langcode: fr
+  depends:
+    6a81e32b-650c-4239-ab83-6aa704745324: media
+    95e44038-b0cb-4026-ae92-b408005ce5b0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: edit
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'News 4'
+  created:
+    -
+      value: 1592425834
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'News 4 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/news/news-4'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.\nPraesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi."
+  path:
+    -
+      alias: /news/news-4
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'News 4'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Etiam rhoncus. Nullam accumsan lorem in dui. Fusce commodo aliquam arcu. In hac habitasse platea dictumst.</p>\r\n\r\n<p>Praesent vestibulum dapibus nibh. Aenean viverra rhoncus pede. Fusce fermentum. Cras non dolor. Quisque ut nisi.</p>\r\n\r\n<p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Suspendisse feugiat. Ut tincidunt tincidunt erat. Suspendisse feugiat.</p>\r\n\r\n<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In consectetuer turpis ut velit. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Fusce vulputate eleifend sapien. Vivamus laoreet.</p>"
+      format: full_html
+      summary: ''
+  field_vactory_date:
+    -
+      value: '2020-06-17'
+  field_vactory_excerpt:
+    -
+      value: 'Praesent nec nisl a purus blandit viverra. Phasellus tempus. Nam at tortor in tellus interdum sagittis. Curabitur nisi. Praesent blandit laoreet nibh.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 6a81e32b-650c-4239-ab83-6aa704745324
+  field_vactory_taxonomy_1:
+    -
+      entity: 95e44038-b0cb-4026-ae92-b408005ce5b0

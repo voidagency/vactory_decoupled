@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d820e8f8-1d43-4fbb-98d7-e717fe7534d1
+  bundle: image
+  default_langcode: fr
+  depends:
+    018edf9a-34ac-40dc-ba29-2048590081c9: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: nikita-kachanovsky-bLY5JqP_Ldw-unsplash.jpg
+  created:
+    -
+      value: 1593040210
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 018edf9a-34ac-40dc-ba29-2048590081c9
+      alt: image
+      title: ''
+      width: 3761
+      height: 5713

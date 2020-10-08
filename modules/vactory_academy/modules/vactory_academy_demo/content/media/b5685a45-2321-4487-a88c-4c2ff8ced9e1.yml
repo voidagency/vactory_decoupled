@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b5685a45-2321-4487-a88c-4c2ff8ced9e1
+  bundle: image
+  default_langcode: fr
+  depends:
+    8dc8aa23-9457-4672-9691-fc956bd19d4c: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: design1.jpeg
+  created:
+    -
+      value: 1593009099
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 8dc8aa23-9457-4672-9691-fc956bd19d4c
+      alt: des1
+      title: ''
+      width: 500
+      height: 333

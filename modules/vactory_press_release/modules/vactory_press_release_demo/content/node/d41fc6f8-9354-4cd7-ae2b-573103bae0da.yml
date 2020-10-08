@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d41fc6f8-9354-4cd7-ae2b-573103bae0da
+  bundle: press_release
+  default_langcode: fr
+  depends:
+    5c33a22a-9cfc-41df-a2f7-9c75bd729370: media
+    66f4aa12-4b93-4b03-8407-452e9a278b52: media
+    06e8b325-7eab-4f8b-8ecb-9b1030872d4e: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'edit content'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Press release 4'
+  created:
+    -
+      value: 1592924279
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Press release 4 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/press_release/press-release-4'
+  path:
+    -
+      alias: /press_release/press-release-4
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Press release 4'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_vactory_date:
+    -
+      value: '2020-06-25'
+  field_vactory_excerpt:
+    -
+      value: 'SANTA MONICA, Calif., June 23, 2020 /PRNewswire/ -- Measured, the most trusted technology for independent media incrementality measurement, today announced the availability of a free Incrementality Calculator for marketers to understand the potential impact of shifting advertising budgets across online and offline media channels.'
+      format: plain_text
+  field_vactory_media:
+    -
+      entity: 5c33a22a-9cfc-41df-a2f7-9c75bd729370
+  field_vactory_media_file:
+    -
+      entity: 66f4aa12-4b93-4b03-8407-452e9a278b52
+  field_vactory_taxonomy_1:
+    -
+      entity: 06e8b325-7eab-4f8b-8ecb-9b1030872d4e

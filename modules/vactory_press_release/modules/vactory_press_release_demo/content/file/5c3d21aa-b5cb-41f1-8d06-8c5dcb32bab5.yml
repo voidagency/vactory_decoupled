@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5c3d21aa-b5cb-41f1-8d06-8c5dcb32bab5
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: generic.png
+  uri:
+    -
+      value: 'public://media-icons/generic/generic.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 3900
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1602157737
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 1
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9f466892-7761-4a50-b818-a91d3690f7ed
+  bundle: academy
+  default_langcode: fr
+  depends:
+    519b7984-4340-450b-9828-ec2c60c6e8c1: user
+    b86af2cd-819f-4f80-b3e6-4ce076ded4c5: media
+    4225c7e8-4ed9-4df8-965f-4aad71fe8dc8: media
+    001d6150-efc4-4396-9007-70e3272eee57: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: instructor
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'React - The Complete Guide (incl Hooks, React Router, Redux)'
+  created:
+    -
+      value: 1592823989
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'React - The Complete Guide (incl Hooks, React Router, Redux) | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/academy-courses/react-complete-guide-incl-hooks-react-router-redux'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "This course is fully up-to-date with the latest version of React and includes React Hooks! Of course it will be kept up-to-date in the future\_:-)\n---\nWhat's this course about?\nLearn React or dive deeper into it.\_Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course:\_The Burger Builder!\nMore details please!"
+  path:
+    -
+      alias: /academy-courses/react-complete-guide-incl-hooks-react-router-redux
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'React - The Complete Guide (incl Hooks, React Router, Redux)'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p><strong>This course is fully up-to-date with the latest version of React and includes React Hooks! Of course it will be kept up-to-date in the future&nbsp;:-)</strong></p>\r\n\r\n<p>---</p>\r\n\r\n<p><strong>What's this course about?</strong></p>\r\n\r\n<p>Learn React or dive deeper into it.&nbsp;Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course:&nbsp;The Burger Builder!</p>\r\n\r\n<p><strong>More details please!</strong></p>\r\n\r\n<p>JavaScript is the&nbsp;<strong>major driver</strong>&nbsp;of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.</p>\r\n\r\n<p>But using JavaScript&nbsp;<strong>can be challenging</strong>&nbsp;- it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.</p>\r\n\r\n<p><strong>React to the rescue!&nbsp;</strong></p>\r\n\r\n<p><strong>React is all about components</strong>&nbsp;- basically custom HTML&nbsp;elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.</p>\r\n\r\n<p>Need to display a list of users in your app?&nbsp;It's as simple as creating a \"User\"&nbsp;component and outputting it as often as needed.</p>\r\n\r\n<p>This course will&nbsp;<strong>start at the very basics</strong>&nbsp;and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way&nbsp;<strong>from basic to advanced</strong>. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux.&nbsp;</p>\r\n\r\n<p>By the end of the course, you can build amazing React (single page)&nbsp;applications!</p>\r\n\r\n<p>A detailed list with the course content can be found below.</p>\r\n\r\n<p><strong>Who's teaching you in this course?</strong></p>\r\n\r\n<p>My name is Maximilian Schwarzmüller, I'm a freelance web developer and worked with React in many projects. I'm also a 5-star rated instructor here on Udemy. I&nbsp;cover React's most popular alternatives - Vue and Angular - as well as many other topics. I know what I'm talking about and I&nbsp;know where the pain points can be found.</p>\r\n\r\n<p>It's my goal to get you started with React as quick as possible and ensure your success. But I don't just focus on students getting started. I want everyone to benefit from my courses, that's why we'll dive deeply into React and why I&nbsp;made sure to also share knowledge that's helpful to&nbsp;advanced React developers.&nbsp;</p>\r\n\r\n<p><strong>Is this course for you?</strong></p>\r\n\r\n<p>This course is for you if ...</p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>...you're just getting started with frontend/&nbsp;JavaScript development and only got the JS&nbsp;basics set (no prior React or other framework experience is required!)</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>...you're experienced with Angular or Vue but want to dive into React</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>...know the React basics but want to refresh them and/ or dive deeper</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>...already worked quite a bit with React but want to dive deeper and see it all come together in a bigger app</p>\r\n\t</li>\r\n</ul>\r\n\r\n<p><strong>What should you bring to succeed in that course?</strong></p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>HTML + CSS&nbsp;+ JavaScript knowledge is required. You don't need to be an expert but the basics need to be set</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>NO&nbsp;advanced JavaScript knowledge is required, though you'll be able to move even quicker through the course if you know next-gen JavaScript features like ES6 Arrow functions.<strong>&nbsp;A short refresher about the most important next-gen features is provided in the course though.</strong></p>\r\n\t</li>\r\n</ul>\r\n\r\n<p><strong>What's inside the course?</strong></p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>The \"What\", \"Why\"&nbsp;and \"How\"</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>React Basics (Base features, syntax and concepts)</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Managing state with class-based components and React Hooks</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>How to output lists and conditional content</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Styling of React components</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>A deep dive into the internals of React and advanced component features</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>How to access Http content from within React apps (AJAX)</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Redux,&nbsp;Redux, Redux ... from basics to advanced!</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Forms and form validation in React apps</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Authentication</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>An introduction to unit testing</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>An introduction to Next.js</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>React app deployment instructions</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>...and much more!</p>\r\n\t</li>\r\n</ul>\r\n"
+      format: full_html
+      summary: ''
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1596037006
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_vactory_academy_duration:
+    -
+      value: '40 h 30 min'
+  field_vactory_academy_language:
+    -
+      value: fr
+  field_vactory_date:
+    -
+      value: '2020-06-26'
+  field_vactory_excerpt:
+    -
+      value: 'Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!'
+      format: plain_text
+  field_vactory_instructor:
+    -
+      entity: 519b7984-4340-450b-9828-ec2c60c6e8c1
+  field_vactory_media_document:
+    -
+      entity: b86af2cd-819f-4f80-b3e6-4ce076ded4c5
+  field_vactory_media_image:
+    -
+      entity: 4225c7e8-4ed9-4df8-965f-4aad71fe8dc8
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: af66bf58-a18e-4737-8bdf-76b558e58642
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1594941662
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_core_ui:accordion'
+              widget_data: '{"extra_field":{"title":"Ce que vous apprendrez","intro":{"value":"<ul>\r\n\t<li>Cr\u00e9er une application ou un site React.js de A \u00e0 Z.<\/li>\r\n\t<li>Comprendre les Components React.js et \u00e9crire en JSX.<\/li>\r\n\t<li>Cr\u00e9er et maintenir les States d''une application.<\/li>\r\n\t<li>Faire passer des donn\u00e9es entre plusieurs parties d''un site web<\/li>\r\n\t<li>Faire persister des donn\u00e9es gr\u00e2ce au localStorage.<\/li>\r\n\t<li>Stocker des informations dans une base de donn\u00e9es avec Firebase.<\/li>\r\n\t<li>Cr\u00e9er un code lisible et maintenable.<\/li>\r\n\t<li>Naviguer d''une URL \u00e0 une autre en utilisant React Router 4.<\/li>\r\n<\/ul>\r\n","format":"full_html"}},"0":{"title":"Pr\u00e9requis","description":{"value":"<ul>\r\n\t<li>Les bases de JavaScript (boucle, condition, fonction...).<\/li>\r\n\t<li>Les bases du HTML et du CSS.<\/li>\r\n\t<li>Etre capable de penser un peu diff\u00e9remment car React.js ne ressemble \u00e0 rien de ce qu''on peut voir habituellement en d\u00e9veloppement web.<\/li>\r\n<\/ul>\r\n","format":"full_html"},"_weight":"1"},"1":{"title":"Description","description":{"value":"<p><strong>This course is fully up-to-date with the latest version of React and includes React Hooks! Of course it will be kept up-to-date in the future&nbsp;:-)<\/strong><\/p>\r\n\r\n<p>---<\/p>\r\n\r\n<p><strong>What''s this course about?<\/strong><\/p>\r\n\r\n<p>Learn React or dive deeper into it.&nbsp;Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course:&nbsp;The Burger Builder!<\/p>\r\n\r\n<p><strong>More details please!<\/strong><\/p>\r\n\r\n<p>JavaScript is the&nbsp;<strong>major driver<\/strong>&nbsp;of modern web applications since it''s the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You''ll be able to achieve mobile-app like user experiences in the web.<\/p>\r\n\r\n<p>But using JavaScript&nbsp;<strong>can be challenging<\/strong>&nbsp;- it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.<\/p>\r\n\r\n<p><strong>React to the rescue!&nbsp;<\/strong><\/p>\r\n\r\n<p><strong>React is all about components<\/strong>&nbsp;- basically custom HTML&nbsp;elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.<\/p>\r\n\r\n<p>Need to display a list of users in your app?&nbsp;It''s as simple as creating a \"User\"&nbsp;component and outputting it as often as needed.<\/p>\r\n\r\n<p>This course will&nbsp;<strong>start at the very basics<\/strong>&nbsp;and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we''ll go all the way&nbsp;<strong>from basic to advanced<\/strong>. We''ll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux.&nbsp;<\/p>\r\n\r\n<p>By the end of the course, you can build amazing React (single page)&nbsp;applications!<\/p>\r\n\r\n<p>A detailed list with the course content can be found below.<\/p>\r\n\r\n<p><strong>Who''s teaching you in this course?<\/strong><\/p>\r\n\r\n<p>My name is Maximilian Schwarzm\u00fcller, I''m a freelance web developer and worked with React in many projects. I''m also a 5-star rated instructor here on Udemy. I&nbsp;cover React''s most popular alternatives - Vue and Angular - as well as many other topics. I know what I''m talking about and I&nbsp;know where the pain points can be found.<\/p>\r\n\r\n<p>It''s my goal to get you started with React as quick as possible and ensure your success. But I don''t just focus on students getting started. I want everyone to benefit from my courses, that''s why we''ll dive deeply into React and why I&nbsp;made sure to also share knowledge that''s helpful to&nbsp;advanced React developers.&nbsp;<\/p>\r\n\r\n<p><strong>Is this course for you?<\/strong><\/p>\r\n\r\n<p>This course is for you if ...<\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>...you''re just getting started with frontend\/&nbsp;JavaScript development and only got the JS&nbsp;basics set (no prior React or other framework experience is required!)<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>...you''re experienced with Angular or Vue but want to dive into React<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>...know the React basics but want to refresh them and\/ or dive deeper<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>...already worked quite a bit with React but want to dive deeper and see it all come together in a bigger app<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p><strong>What should you bring to succeed in that course?<\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>HTML + CSS&nbsp;+ JavaScript knowledge is required. You don''t need to be an expert but the basics need to be set<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>NO&nbsp;advanced JavaScript knowledge is required, though you''ll be able to move even quicker through the course if you know next-gen JavaScript features like ES6 Arrow functions.<strong>&nbsp;A short refresher about the most important next-gen features is provided in the course though.<\/strong><\/p>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p><strong>What''s inside the course?<\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>\r\n\t<p>The \"What\", \"Why\"&nbsp;and \"How\"<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>React Basics (Base features, syntax and concepts)<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Managing state with class-based components and React Hooks<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>How to output lists and conditional content<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Styling of React components<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>A deep dive into the internals of React and advanced component features<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>How to access Http content from within React apps (AJAX)<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Redux,&nbsp;Redux, Redux ... from basics to advanced!<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Forms and form validation in React apps<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>Authentication<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>An introduction to unit testing<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>An introduction to Next.js<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>React app deployment instructions<\/p>\r\n\t<\/li>\r\n\t<li>\r\n\t<p>...and much more!<\/p>\r\n\t<\/li>\r\n<\/ul>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: Paragraphs
+  field_vactory_taxonomy_1:
+    -
+      entity: 001d6150-efc4-4396-9007-70e3272eee57
+  field_vactory_youtube_videos:
+    -
+      value: 'https://www.youtube.com/watch?v=UtIOMUQ7nWM'

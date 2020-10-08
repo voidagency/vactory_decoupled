@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7feba75a-4f0f-4585-a0d1-21096d22b2c3
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: you-x-ventures-Oalh2MojUuk-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/you-x-ventures-Oalh2MojUuk-unsplash_4.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 742886
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593040266
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'
