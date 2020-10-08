@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 847dc00e-4a73-4101-b318-638f9fd1d3f5
+  bundle: events
+  default_langcode: fr
+  depends:
+    34e0b3fe-a112-4d52-a861-d8abb9150e55: media
+    63cdebae-7855-4098-80ec-b28549208762: taxonomy_term
+    7b822c1f-4aa5-457d-8139-f39032511919: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 1'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 1'
+  created:
+    -
+      value: 1592922183
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 1 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-1'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "En premier lieu il a eu recours à des techniques élaborées en utilisant des doigts. Ensuite il a utilisé des cailloux qui plus tard prendront la forme de jetons qui sont à l'origine des calculs écrits.\nEn 1623 William Schickard invente la première machine à calculer. En 1642 Blaise Pascal invente une machine arithmétique appelez\_la Pascaline.\nEn 1673 Gottfried Wilhelmy ajoute à\_la Pascaline\_la multiplication et la division.\nEn 1834 Charles Babbage invente la machine différence, qui permet d'évaluer certaines fonctions."
+  path:
+    -
+      alias: /events/event-1
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 1'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>En premier lieu il a eu recours à des techniques élaborées en utilisant des doigts. Ensuite il a utilisé des cailloux qui plus tard prendront la forme de jetons qui sont à l'origine des calculs écrits.<br />\r\nEn 1623 William Schickard invente la première machine à calculer. En 1642 Blaise Pascal invente une machine arithmétique appelez&nbsp;la Pascaline.<br />\r\nEn 1673 Gottfried Wilhelmy ajoute à&nbsp;la Pascaline&nbsp;la multiplication et la division.<br />\r\nEn 1834 Charles Babbage invente la machine différence, qui permet d'évaluer certaines fonctions.<br />\r\nEn 1837 il définit les grands principes d'une machine à calculer programmable.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '1990-01-01'
+      end_value: '2000-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'L''histoire de l''ordinateur provient du fait que l''homme a toujours cherché à améliorer sa façon de calculer pour limiter ses erreurs et de pouvoir gagner en temps.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 34e0b3fe-a112-4d52-a861-d8abb9150e55
+  field_vactory_taxonomy_1:
+    -
+      entity: 63cdebae-7855-4098-80ec-b28549208762
+  field_vactory_taxonomy_2:
+    -
+      entity: 7b822c1f-4aa5-457d-8139-f39032511919

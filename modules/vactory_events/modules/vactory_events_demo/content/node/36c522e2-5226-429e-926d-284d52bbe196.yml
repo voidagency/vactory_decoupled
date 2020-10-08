@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 36c522e2-5226-429e-926d-284d52bbe196
+  bundle: events
+  default_langcode: fr
+  depends:
+    9e67a0d2-834c-4f64-a88e-d823549c80ea: media
+    14d8b861-af97-4980-8269-e360546e842d: taxonomy_term
+    32360ab0-4850-4191-8497-5abb13ad497e: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 2'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 2'
+  created:
+    -
+      value: 1592922232
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 2 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-2'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: "Les mémoires encore appelées unités de stockage, est un dispositif électronique qui permet d'enregistrer, de conserver et de restituer les informations, chaque mémoire est caractérisée par sa capacité maximale et son temps d'accès.\nLa capacité de la mémoire est la taille ou le volume d'information que contient cette mémoire.\n\_"
+  path:
+    -
+      alias: /events/event-2
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 2'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Les mémoires encore appelées unités de stockage, est un dispositif électronique qui permet d'enregistrer, de conserver et de restituer les informations, chaque mémoire est caractérisée par sa capacité maximale et son temps d'accès.<br />\r\nLa capacité de la mémoire est la taille ou le volume d'information que contient cette mémoire.<br />\r\n&nbsp;</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '1999-01-01'
+      end_value: '2012-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'Ce sont ceux qui utilise l''information dans un domaine autre que l''information, exemple: les agents de télécommunication, les ingénieurs système, les ingénieurs réseaux, les ingénieurs logiciels, les administrateurs de base de données, les enseignants.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 9e67a0d2-834c-4f64-a88e-d823549c80ea
+  field_vactory_taxonomy_1:
+    -
+      entity: 14d8b861-af97-4980-8269-e360546e842d
+  field_vactory_taxonomy_2:
+    -
+      entity: 32360ab0-4850-4191-8497-5abb13ad497e

@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6522d10f-a0ad-414c-b446-66cf8f0e7aff
+  bundle: events
+  default_langcode: fr
+  depends:
+    48697d42-a8ca-4dfd-8e50-f186d69078f1: media
+    63cdebae-7855-4098-80ec-b28549208762: taxonomy_term
+    7b822c1f-4aa5-457d-8139-f39032511919: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 4'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 4'
+  created:
+    -
+      value: 1592922420
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 4 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-4'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Wafa Gestion''s control framework is sound, in Fitch''s view, and has been strengthened over the past two years. Influence of risk and control functions over the business has been growing, in line with management''s expectations. Specifically, the creation of new risk committees, the roll-out of new risk monitoring tools (particularly in credit) and wider system-based controls (notably pre-trade controls and constraints modelling) have shown that business risks are adequately addressed.'
+  path:
+    -
+      alias: /events/event-4
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 4'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Wafa Gestion's control framework is sound, in Fitch's view, and has been strengthened over the past two years. Influence of risk and control functions over the business has been growing, in line with management's expectations. Specifically, the creation of new risk committees, the roll-out of new risk monitoring tools (particularly in credit) and wider system-based controls (notably pre-trade controls and constraints modelling) have shown that business risks are adequately addressed.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '2018-01-01'
+      end_value: '2030-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'Wafa Gestion''s control framework is sound, in Fitch''s view, and has been strengthened over the past two years. Influence of risk and control functions over the business has been growing'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 48697d42-a8ca-4dfd-8e50-f186d69078f1
+  field_vactory_taxonomy_1:
+    -
+      entity: 63cdebae-7855-4098-80ec-b28549208762
+  field_vactory_taxonomy_2:
+    -
+      entity: 7b822c1f-4aa5-457d-8139-f39032511919

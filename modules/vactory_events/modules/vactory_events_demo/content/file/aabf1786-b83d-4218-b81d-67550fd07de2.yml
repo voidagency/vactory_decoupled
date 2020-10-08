@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: aabf1786-b83d-4218-b81d-67550fd07de2
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: kevin-bhagat-zNRITe8NPqY-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/kevin-bhagat-zNRITe8NPqY-unsplash_7.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2131063
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593040142
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

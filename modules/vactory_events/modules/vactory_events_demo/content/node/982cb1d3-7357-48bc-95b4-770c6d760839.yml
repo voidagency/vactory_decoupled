@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 982cb1d3-7357-48bc-95b4-770c6d760839
+  bundle: events
+  default_langcode: fr
+  depends:
+    d820e8f8-1d43-4fbb-98d7-e717fe7534d1: media
+    14d8b861-af97-4980-8269-e360546e842d: taxonomy_term
+    32360ab0-4850-4191-8497-5abb13ad497e: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 8'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 8'
+  created:
+    -
+      value: 1592922768
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 8 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-8'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report.'
+  path:
+    -
+      alias: /events/event-8
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 8'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch does not represent or warrant that the report or any of its contents will meet any of the requirements of a recipient of the report. A Fitch rating is an opinion as to the creditworthiness of a security. This opinion and reports made by Fitch are based on established criteria and methodologies that Fitch is continuously evaluating and updating. Therefore, ratings and reports are the collective work product of Fitch and no individual, or group of individuals, is solely responsible for a rating or a report. The rating does not address the risk of loss due to risks other than credit risk, unless such risk is specifically mentioned. Fitch is not engaged in the offer or sale of any security.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '2011-10-01'
+      end_value: '2013-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'The company demonstrates sound client service practices and is making substantial investments in client engagement technology.'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: d820e8f8-1d43-4fbb-98d7-e717fe7534d1
+  field_vactory_taxonomy_1:
+    -
+      entity: 14d8b861-af97-4980-8269-e360546e842d
+  field_vactory_taxonomy_2:
+    -
+      entity: 32360ab0-4850-4191-8497-5abb13ad497e

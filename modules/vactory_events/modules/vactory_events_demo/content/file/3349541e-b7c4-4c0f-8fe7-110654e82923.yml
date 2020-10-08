@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3349541e-b7c4-4c0f-8fe7-110654e82923
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: christin-hume-Hcfwew744z4-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/christin-hume-Hcfwew744z4-unsplash_7.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 3453733
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593018652
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 91d920e6-9b27-4e3c-a7ee-fda5e33375c9
+  bundle: events
+  default_langcode: fr
+  depends:
+    7f1a7a06-19db-4f6d-b0f2-d77abb892e38: media
+    01aeaf08-7790-4c55-bff3-d22a0c958483: taxonomy_term
+    45050026-a9d4-4ea0-90de-cc7f8384d85f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 6'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 6'
+  created:
+    -
+      value: 1592922582
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 6 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-6'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch assigns a score of ''Strong'' for investment performance only in circumstances in which all risk-adjusted measures demonstrate very high outperformance compared with peers''. Larger managers in Fitch''s rated universe, such as Wafa Gestion, tend to have scores of ''Consistent'' for Investment Performance, reflecting that the breadth of investment funds or mandates typically corresponds to a breadth of realised investment performance that is closer overall to peer averages.'
+  path:
+    -
+      alias: /events/event-6
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 6'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch assigns a score of 'Strong' for investment performance only in circumstances in which all risk-adjusted measures demonstrate very high outperformance compared with peers'. Larger managers in Fitch's rated universe, such as Wafa Gestion, tend to have scores of 'Consistent' for Investment Performance, reflecting that the breadth of investment funds or mandates typically corresponds to a breadth of realised investment performance that is closer overall to peer averages.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '2000-01-01'
+      end_value: '2009-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'Fitch assigns a score of ''Strong'' for investment performance only in circumstances in which all risk-adjusted measures demonstrate very high outperformance compared with peers'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 7f1a7a06-19db-4f6d-b0f2-d77abb892e38
+  field_vactory_taxonomy_1:
+    -
+      entity: 01aeaf08-7790-4c55-bff3-d22a0c958483
+  field_vactory_taxonomy_2:
+    -
+      entity: 45050026-a9d4-4ea0-90de-cc7f8384d85f

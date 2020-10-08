@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 76bbb975-8e03-403e-8827-af40c2260fd7
+  bundle: image
+  default_langcode: fr
+  depends:
+    afeb325b-ea29-4922-a736-de138e362de8: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: hunters-race-MYbhN8KaaEc-unsplash.jpg
+  created:
+    -
+      value: 1593040095
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: afeb325b-ea29-4922-a736-de138e362de8
+      alt: image
+      title: ''
+      width: 5066
+      height: 3377

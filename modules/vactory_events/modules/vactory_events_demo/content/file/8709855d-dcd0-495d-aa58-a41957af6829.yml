@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8709855d-dcd0-495d-aa58-a41957af6829
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: stil-flRm0z3MEoA-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/stil-flRm0z3MEoA-unsplash_7.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1132501
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593040240
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

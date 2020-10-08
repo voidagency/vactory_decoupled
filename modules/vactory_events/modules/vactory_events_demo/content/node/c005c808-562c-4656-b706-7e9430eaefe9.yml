@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c005c808-562c-4656-b706-7e9430eaefe9
+  bundle: events
+  default_langcode: fr
+  depends:
+    673c1991-c70e-4e10-9910-f886a711deed: media
+    63cdebae-7855-4098-80ec-b28549208762: taxonomy_term
+    7b822c1f-4aa5-457d-8139-f39032511919: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 10'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 10'
+  created:
+    -
+      value: 1592922917
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 10 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-10'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the "NRSRO"). While certain of the NRSRO''s credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https://www.fitchratings.com/site/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the "non-NRSROs") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO.'
+  path:
+    -
+      alias: /events/event-10
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 10'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch Ratings, Inc. is registered with the U.S. Securities and Exchange Commission as a Nationally Recognized Statistical Rating Organization (the \"NRSRO\"). While certain of the NRSRO's credit rating subsidiaries are listed on Item 3 of Form NRSRO and as such are authorized to issue credit ratings on behalf of the NRSRO (see https://www.fitchratings.com/site/regulatory), other credit rating subsidiaries are not listed on Form NRSRO (the \"non-NRSROs\") and therefore credit ratings issued by those subsidiaries are not issued on behalf of the NRSRO. However, non-NRSRO personnel may participate in determining credit ratings issued by or on behalf of the NRSRO.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '2018-01-01'
+      end_value: '2020-03-01'
+  field_vactory_excerpt:
+    -
+      value: 'For Australia, New Zealand, Taiwan and South Korea only: Fitch Australia Pty Ltd holds an Australian financial services license (AFS license no. 337123) which authorizes it to provide credit ratings to wholesale clients only'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 673c1991-c70e-4e10-9910-f886a711deed
+  field_vactory_taxonomy_1:
+    -
+      entity: 63cdebae-7855-4098-80ec-b28549208762
+  field_vactory_taxonomy_2:
+    -
+      entity: 7b822c1f-4aa5-457d-8139-f39032511919

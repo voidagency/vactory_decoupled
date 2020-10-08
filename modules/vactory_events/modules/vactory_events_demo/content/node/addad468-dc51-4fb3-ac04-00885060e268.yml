@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: addad468-dc51-4fb3-ac04-00885060e268
+  bundle: events
+  default_langcode: fr
+  depends:
+    76bbb975-8e03-403e-8827-af40c2260fd7: media
+    14d8b861-af97-4980-8269-e360546e842d: taxonomy_term
+    32360ab0-4850-4191-8497-5abb13ad497e: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 5'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 5'
+  created:
+    -
+      value: 1592922501
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 5 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-5'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Fitch has revised Wafa Gestion''s score for Investment Performance to ''Consistent'' from ''Strong''. While a majority of Wafa Gestion''s AUM continues to perform well, the volume of assets outperforming peers on a risk-adjusted basis has reduced over the last three years to end-September 2018.'
+  path:
+    -
+      alias: /events/event-5
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 5'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Fitch has revised Wafa Gestion's score for Investment Performance to 'Consistent' from 'Strong'. While a majority of Wafa Gestion's AUM continues to perform well, the volume of assets outperforming peers on a risk-adjusted basis has reduced over the last three years to end-September 2018. Fitch estimates that around 66% of Wafa Gestion's AUM has a better Sharpe ratio (a risk-adjusted measure of performance) than peer funds; in the corresponding Lipper category average over the three years to September 2018, and 49% of Wafa Gestion's AUM has better drawdown statistics than the corresponding Lipper category over the same period.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '1997-01-01'
+      end_value: '2006-01-01'
+  field_vactory_excerpt:
+    -
+      value: "Positive but Decreasing Investment Outperformance\r\nFitch has revised Wafa Gestion's score for Investment Performance to 'Consistent' from 'Strong'. While a majority of Wafa Gestion's AUM continues to perform well"
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 76bbb975-8e03-403e-8827-af40c2260fd7
+  field_vactory_taxonomy_1:
+    -
+      entity: 14d8b861-af97-4980-8269-e360546e842d
+  field_vactory_taxonomy_2:
+    -
+      entity: 32360ab0-4850-4191-8497-5abb13ad497e

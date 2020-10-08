@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e89a9103-7c98-44b3-9589-c5408d38f7c0
+  bundle: events
+  default_langcode: fr
+  depends:
+    367d4d84-b202-4205-858a-fd4ba6a0362b: media
+    01aeaf08-7790-4c55-bff3-d22a0c958483: taxonomy_term
+    45050026-a9d4-4ea0-90de-cc7f8384d85f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 3'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 3'
+  created:
+    -
+      value: 1592922317
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 3 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-3'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Investment performance remains broadly healthy; however, the amount of funds outperforming peers on a risk-adjusted basis has declined, leading Fitch to revise the Investment Performance score to ''Consistent'' from ''Strong''. This change does not affect the overall rating due to Wafa Gestion''s continued strength in all other scoring areas and the low weight Fitch assigns to the Investment Performance category in its rating framework.'
+  path:
+    -
+      alias: /events/event-3
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 3'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Investment performance remains broadly healthy; however, the amount of funds outperforming peers on a risk-adjusted basis has declined, leading Fitch to revise the Investment Performance score to 'Consistent' from 'Strong'. This change does not affect the overall rating due to Wafa Gestion's continued strength in all other scoring areas and the low weight Fitch assigns to the Investment Performance category in its rating framework.</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '2012-01-01'
+      end_value: '2020-01-01'
+  field_vactory_excerpt:
+    -
+      value: 'Le disque dur est un ensemble de disques rigides superposés pouvant tourner au tour d''un même axe, il est constitué également d''un moteur d''entraînement des disques, des bras mobiles portant les têtes de lecture écriture. '
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 367d4d84-b202-4205-858a-fd4ba6a0362b
+  field_vactory_taxonomy_1:
+    -
+      entity: 01aeaf08-7790-4c55-bff3-d22a0c958483
+  field_vactory_taxonomy_2:
+    -
+      entity: 45050026-a9d4-4ea0-90de-cc7f8384d85f

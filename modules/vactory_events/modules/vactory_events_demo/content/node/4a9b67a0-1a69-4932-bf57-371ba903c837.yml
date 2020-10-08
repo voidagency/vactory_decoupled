@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 4a9b67a0-1a69-4932-bf57-371ba903c837
+  bundle: events
+  default_langcode: fr
+  depends:
+    117326cd-96ba-49f9-bf11-893e2130b87e: media
+    01aeaf08-7790-4c55-bff3-d22a0c958483: taxonomy_term
+    45050026-a9d4-4ea0-90de-cc7f8384d85f: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Event 9'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event 9'
+  created:
+    -
+      value: 1592922856
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Event 9 | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events/event-9'
+    -
+      tag: meta
+      attributes:
+        name: description
+        content: 'Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities.'
+  path:
+    -
+      alias: /events/event-9
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Event 9'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  body:
+    -
+      value: "<p>Ratings may be changed or withdrawn at any time for any reason in the sole discretion of Fitch. Fitch does not provide investment advice of any sort. Ratings are not a recommendation to buy, sell, or hold any security. Ratings do not comment on the adequacy of market price, the suitability of any security for a particular investor, or the tax-exempt nature or taxability of payments made in respect to any security. Fitch receives fees from issuers, insurers, guarantors, other obligors, and underwriters for rating securities. Such fees generally vary from US$1,000 to US$750,000 (or the applicable currency equivalent) per issue. In certain cases</p>\r\n"
+      format: full_html
+      summary: ''
+  field_vactory_date_interval:
+    -
+      value: '1995-01-01'
+      end_value: '2001-01-01'
+  field_vactory_excerpt:
+    -
+      value: ' A report providing a Fitch rating is neither a prospectus nor a substitute for the information assembled, verified and presented to investors by the issuer and its agents in connection with the sale of the securities'
+      format: plain_text
+  field_vactory_media_image:
+    -
+      entity: 117326cd-96ba-49f9-bf11-893e2130b87e
+  field_vactory_taxonomy_1:
+    -
+      entity: 01aeaf08-7790-4c55-bff3-d22a0c958483
+  field_vactory_taxonomy_2:
+    -
+      entity: 45050026-a9d4-4ea0-90de-cc7f8384d85f

@@ -1,0 +1,148 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bfacd7df-fabf-4b59-a682-14b62de454e0
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'UPDATE DF'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Events - Blocs'
+  created:
+    -
+      value: 1592923138
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Events - Blocs | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events-blocs'
+  path:
+    -
+      alias: /events-blocs
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Exemple de blocs de Events'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1593044337
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 73750f5a-4f54-4777-ad18-0fce3e8f6d9a
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1592923169
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_events:three-columns'
+              widget_data: '[{"title":"Nos 3 derni\u00e8re Events","description":{"value":"<p>Hello World!<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_events","views_display_id":"block_three_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_date_interval":"dateInterval","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_taxonomy_2":"city","field_vactory_media_image":"image"},"vocabularies":{"events_category":0,"events_cities":0},"image_styles":{"avatar":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir toute les Events","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Events - Three Columns'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9b4f488d-27b2-4dca-ba8c-aef088d24baa
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1592923240
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_events:two-columns'
+              widget_data: '[{"title":"Nos 2 derni\u00e8re Events","description":{"value":"<p>Hello World!<\/p>\r\n","format":"basic_html"},"views":{"views_id":"vactory_events","views_display_id":"block_two_columns","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_date_interval":"dateInterval","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_taxonomy_2":"city","field_vactory_media_image":"image"},"vocabularies":{"events_category":0,"events_cities":0},"image_styles":{"avatar":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}},"link":{"title":"Voir toute les Events","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Events - Two Columns'

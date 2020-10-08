@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c0dbb313-2ba5-4609-af30-abe218f9fb15
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/carl-heyerdahl-KE0nC8-58MQ-unsplash_7.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2554467
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593014687
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

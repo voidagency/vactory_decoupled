@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 319486e3-0918-49c8-8fcc-8db935b42ebe
+  bundle: image
+  default_langcode: fr
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg
+  uri:
+    -
+      value: 'public://2020-06/alex-kotliarskyi-QBpZGqEMsKg-unsplash_7.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2907236
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1593014585
+  path:
+    -
+      alias: ''
+      langcode: fr
+      pathauto: 0
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/accueil'

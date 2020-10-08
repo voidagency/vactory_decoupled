@@ -1,0 +1,108 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0accfd48-3d08-47ce-8e29-f7d59dd2a702
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Events
+  created:
+    -
+      value: 1602177475
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Events | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/events'
+  path:
+    -
+      alias: /events
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'Page Events'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1602177574
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: fabdb6eb-32c2-4233-8f66-3a74f0a85e75
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1602177483
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_events:list'
+              widget_data: '[{"views":{"views_id":"vactory_events","views_display_id":"block_list","limit":"","args":"","fields":{"id":"id","uuid":"key","title":"title","url":"url","field_vactory_date_interval":"dateInterval","field_vactory_excerpt":"excerpt","field_vactory_taxonomy_1":"category","field_vactory_taxonomy_2":"city","field_vactory_media_image":"image"},"vocabularies":{"events_category":"events_category","events_cities":"events_cities"},"image_styles":{"avatar":0,"large":0,"linkit_result_thumbnail":0,"lqip":0,"media_library":0,"medium":0,"thumbnail":0}}}]'
+          field_vactory_title:
+            -
+              value: Events

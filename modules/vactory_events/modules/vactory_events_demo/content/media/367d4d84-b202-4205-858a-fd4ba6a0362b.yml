@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 367d4d84-b202-4205-858a-fd4ba6a0362b
+  bundle: image
+  default_langcode: fr
+  depends:
+    3349541e-b7c4-4c0f-8fe7-110654e82923: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: christin-hume-Hcfwew744z4-unsplash.jpg
+  created:
+    -
+      value: 1593018652
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: 3349541e-b7c4-4c0f-8fe7-110654e82923
+      alt: image
+      title: ''
+      width: 5616
+      height: 3744
