@@ -59,6 +59,9 @@
             },
             "drupal/user_registrationpassword": {
                 "#3079693: Mail body should preserve markup.": "https://gist.githubusercontent.com/Bahlaouane-Hamza/a2e174d726c91613bd213ceb5b8fd6e4/raw/373f2fe9bc1e6c206d484ff88c654fc29da25c13/3079693-mail-body-preserve-markup.patch"
+            },
+            "drupal/default_content": {
+                "#2698425: Do not reimport existing entities.": "https://www.drupal.org/files/issues/2020-09-02/default_content-integrity_constrait_violation-3162987-2.patch"
             }
         }
     },
