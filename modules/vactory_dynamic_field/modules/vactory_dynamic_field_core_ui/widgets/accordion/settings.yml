@@ -13,7 +13,6 @@ fields:
     label: 'Description'
     options:
       '#format': 'full_html'
-      '#required': TRUE
 extra_fields:
   title:
     type: text
@@ -23,5 +22,4 @@ extra_fields:
     label: 'Introduction'
     options:
       '#format': 'full_html'
-      '#required': TRUE
 
