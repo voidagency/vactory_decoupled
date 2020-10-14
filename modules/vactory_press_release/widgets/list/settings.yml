@@ -8,3 +8,17 @@ fields:
     label: 'Views'
     options:
       '#required': TRUE
+      '#default_value':
+        views_id: vactory_press_release
+        views_display_id: block_list
+        fields:
+          id: id
+          uuid: key
+          title: title
+          url: url
+          field_vactory_excerpt: excerpt
+          field_vactory_taxonomy_1: category
+          field_vactory_media: image
+          field_vactory_media_file: file
+        vocabularies:
+          press_release_theme: press_release_theme

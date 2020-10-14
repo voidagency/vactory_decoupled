@@ -8,3 +8,20 @@ fields:
     label: 'Views'
     options:
       '#required': TRUE
+      '#default_value':
+        views_id: vactory_job_ads
+        views_display_id: block_list
+        fields:
+          id: id
+          uuid: key
+          title: title
+          url: url
+          created: created
+          field_vactory_description: profileDescription
+          field_vactory_taxonomy_1: city
+          field_vactory_taxonomy_2: contract
+          field_vactory_taxonomy_3: profession
+        vocabularies:
+          job_ads_city: job_ads_city
+          job_ads_contract: job_ads_contract
+          job_ads_profession: job_ads_profession

@@ -16,6 +16,18 @@ fields:
     label: 'Views'
     options:
       '#required': TRUE
+      '#default_value':
+        views_id: vactory_gouvernance
+        views_display_id: block_tabs
+        fields:
+          id: id
+          uuid: key
+          title: title
+          url: url
+          field_vactory_taxonomy_1: role
+          field_vactory_media_image: image
+        vocabularies:
+          vactory_governance_role: vactory_governance_role
   link:
     type: url_extended
     label: 'Lien'

@@ -16,6 +16,19 @@ fields:
     label: 'Views'
     options:
       '#required': TRUE
+      '#default_value':
+        views_id: vactory_publication
+        views_display_id: block_two_columns
+        fields:
+          id: id
+          uuid: key
+          title: title
+          url: url
+          field_vactory_excerpt: excerpt
+          field_vactory_taxonomy_1: category
+          field_vactory_media: image
+          field_vactory_media_file: file
+          field_vactory_date: date
   link:
     type: url_extended
     label: 'Lien'

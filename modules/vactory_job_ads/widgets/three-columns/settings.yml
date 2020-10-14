@@ -16,6 +16,19 @@ fields:
     label: 'Views'
     options:
       '#required': TRUE
+      '#default_value':
+        views_id: vactory_job_ads
+        views_display_id: block_three_columns
+        fields:
+          id: id
+          uuid: key
+          title: title
+          url: url
+          created: created
+          field_vactory_description: profileDescription
+          field_vactory_taxonomy_1: city
+          field_vactory_taxonomy_2: contract
+          field_vactory_taxonomy_3: profession
   link:
     type: url_extended
     label: 'Lien'
