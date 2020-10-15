@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_cta
+    - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+  module:
+    - link
+id: paragraph.vactory_paragraph_multi_template.field_paragraphs_cta
+field_name: field_paragraphs_cta
+entity_type: paragraph
+bundle: vactory_paragraph_multi_template
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

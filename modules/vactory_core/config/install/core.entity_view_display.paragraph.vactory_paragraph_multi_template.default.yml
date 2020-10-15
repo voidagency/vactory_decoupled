@@ -4,11 +4,13 @@ dependencies:
   config:
     - field.field.paragraph.vactory_paragraph_multi_template.field_multi_paragraph_type
     - field.field.paragraph.vactory_paragraph_multi_template.field_paragraph_introduction
+    - field.field.paragraph.vactory_paragraph_multi_template.field_paragraphs_cta
     - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_paragraph_tab
     - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_title
     - paragraphs.paragraphs_type.vactory_paragraph_multi_template
   module:
     - entity_reference_revisions
+    - link
     - options
 id: paragraph.vactory_paragraph_multi_template.default
 targetEntityType: paragraph
@@ -28,6 +30,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_paragraphs_cta:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_vactory_paragraph_tab:
     type: entity_reference_revisions_entity_view
