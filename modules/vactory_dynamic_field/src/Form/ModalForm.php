@@ -536,11 +536,11 @@ class ModalForm extends FormBase {
       ];
 
       // Auto populate fields.
-      $form['auto_populate'] = [
-        '#type'        => 'checkbox',
-        '#title'       => $this->t('Auto populate'),
-        '#description' => $this->t('Set default content for this template.'),
-      ];
+//      $form['auto_populate'] = [
+//        '#type'        => 'checkbox',
+//        '#title'       => $this->t('Auto populate'),
+//        '#description' => $this->t('Set default content for this template.'),
+//      ];
     }
     else {
       // Templates with thumbnails select mode.
@@ -548,11 +548,11 @@ class ModalForm extends FormBase {
         '#type' => 'horizontal_tabs',
       ];
       // Auto populate fields.
-      $form['templates_tabs']['auto_populate'] = [
-        '#type'        => 'checkbox',
-        '#title'       => $this->t('Auto populate'),
-        '#description' => $this->t('Set default content for the selected template.'),
-      ];
+//      $form['templates_tabs']['auto_populate'] = [
+//        '#type'        => 'checkbox',
+//        '#title'       => $this->t('Auto populate'),
+//        '#description' => $this->t('Set default content for the selected template.'),
+//      ];
 
       foreach ($widgets_list as $category => $widgets) {
         if (empty($category)) {
@@ -567,13 +567,13 @@ class ModalForm extends FormBase {
             $form['templates_tabs'][$category]['#weight'] = 99;
           }
         }
-        $form['templates_tabs'][$category]['search'] = [
-          '#type' => 'textfield',
-          '#attributes' => [
-            'placeholder' => t('Search for a template...'),
-            'class' => ['template-filter'],
-          ],
-        ];
+//        $form['templates_tabs'][$category]['search'] = [
+//          '#type' => 'textfield',
+//          '#attributes' => [
+//            'placeholder' => t('Search for a template...'),
+//            'class' => ['template-filter'],
+//          ],
+//        ];
         $options = [];
         foreach ($widgets as $widget_id => $widget) {
           $undefined_screenshot = drupal_get_path('module', 'vactory_dynamic_field') . '/images/undefined-screenshot.jpg';
@@ -668,24 +668,24 @@ class ModalForm extends FormBase {
       return (new AjaxResponse())->addCommand(new ReplaceCommand('#' . ModalEnum::FORM_WIDGET_SELECTOR_AJAX_WRAPPER, $form));
     }
     // Check if auto populate is checked.
-    if ($form_state->getValue('auto_populate') == 1) {
-      $widget_id = $this->widget;
-      $isDummy = json_encode(['auto-populate' => TRUE]);
-      // Pass the selection to the field widget based on the current widget ID.
-      $response = new AjaxResponse();
-      $response->addCommand(new InvokeCommand("[data-dynamic-widget-value=\"$this->fieldId\"]", 'val', [$isDummy]))
-        ->addCommand(new InvokeCommand("[data-dynamic-widget-id=\"$this->fieldId\"]", 'val', [$widget_id]))
-        ->addCommand(new CloseDialogCommand(ModalEnum::MODAL_SELECTOR, FALSE));
-      if ($this->cardinality == 1) {
-        $response->addCommand(new InvokeCommand("[data-dynamic-widget-update=\"$this->fieldId\"]", 'trigger', ['mousedown']));
-      }
-      else {
-        // Case multiple values.
-        $response->addCommand(new InvokeCommand("#" . $this->wrapperId, 'addClass', ['update-templates-deltas']));
-      }
-
-      return $response;
-    }
+//    if ($form_state->getValue('auto_populate') == 1) {
+//      $widget_id = $this->widget;
+//      $isDummy = json_encode(['auto-populate' => TRUE]);
+//      // Pass the selection to the field widget based on the current widget ID.
+//      $response = new AjaxResponse();
+//      $response->addCommand(new InvokeCommand("[data-dynamic-widget-value=\"$this->fieldId\"]", 'val', [$isDummy]))
+//        ->addCommand(new InvokeCommand("[data-dynamic-widget-id=\"$this->fieldId\"]", 'val', [$widget_id]))
+//        ->addCommand(new CloseDialogCommand(ModalEnum::MODAL_SELECTOR, FALSE));
+//      if ($this->cardinality == 1) {
+//        $response->addCommand(new InvokeCommand("[data-dynamic-widget-update=\"$this->fieldId\"]", 'trigger', ['mousedown']));
+//      }
+//      else {
+//        // Case multiple values.
+//        $response->addCommand(new InvokeCommand("#" . $this->wrapperId, 'addClass', ['update-templates-deltas']));
+//      }
+//
+//      return $response;
+//    }
     return $form;
   }
 

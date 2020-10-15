@@ -60,6 +60,7 @@ dependencies:
   - mailsystem
   - media
   - media_library
+  - media_library_form_element
   - menu_link_attributes
   - menu_ui
   - metatag

@@ -65,7 +65,7 @@
                 "#2698425: Do not reimport existing entities.": "https://www.drupal.org/files/issues/2020-09-02/default_content-integrity_constrait_violation-3162987-2.patch"
             },
             "drupal/media_library_form_element": {
-                "Fixing multiple modals closing": "https://gist.githubusercontent.com/Bahlaouane-Hamza/a2f813dd507804e30c4e555e6af9b3c8/raw/cb366c8cb131536c104c7dc691c8b6b49e2297c3/media_library_form_element--multiple-modals-closing.patch"
+                "Fixing multiple modals closing": "https://gist.githubusercontent.com/Bahlaouane-Hamza/e956616f7a0680a572837af0df0a7d28/raw/a8050f4c72ac4c7abb11deb05182fb06eebb22a5/media_library_form_element--multiple-modals-closing.patch"
             }
         }
     },
