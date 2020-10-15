@@ -29,7 +29,6 @@ dependencies:
   - improved_multi_select
   - language
   - link
-  - link_target
   - linkit
   - locale
   - login_security
@@ -48,7 +47,6 @@ dependencies:
   - pathauto
   - recaptcha
   - scheduler
-  - search
   - search_api
   - search_api_db
   - search_api_exclude_entity

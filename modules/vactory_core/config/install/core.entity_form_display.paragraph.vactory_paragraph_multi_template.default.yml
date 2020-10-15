@@ -4,13 +4,11 @@ dependencies:
   config:
     - field.field.paragraph.vactory_paragraph_multi_template.field_multi_paragraph_type
     - field.field.paragraph.vactory_paragraph_multi_template.field_paragraph_introduction
-    - field.field.paragraph.vactory_paragraph_multi_template.field_paragraphs_cta
     - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_paragraph_tab
     - field.field.paragraph.vactory_paragraph_multi_template.field_vactory_title
     - paragraphs.paragraphs_type.vactory_paragraph_multi_template
   module:
     - field_group
-    - link_target
     - media_library
     - paragraphs
 third_party_settings:
@@ -18,13 +16,14 @@ third_party_settings:
     group_apparence:
       children:
         - paragraph_identifier
+        - field_multi_paragraph_type
         - paragraph_container
         - paragraph_css_class
         - paragraph_background_color
         - paragraph_background_image
         - paragraph_section
       parent_name: ''
-      weight: 5
+      weight: 7
       format_type: details
       format_settings:
         id: ''
@@ -46,36 +45,27 @@ content:
     type: options_buttons
     region: content
   field_paragraph_introduction:
-    weight: 1
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_paragraphs_cta:
-    weight: 4
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-      link_target: ''
-    third_party_settings: {  }
-    type: link_target_field_widget
-    region: content
   field_vactory_paragraph_tab:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 6
     settings:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: vactory_paragraph_tab
     third_party_settings: {  }
     region: content
   field_vactory_title:
-    weight: 0
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -128,7 +118,7 @@ content:
     region: content
     third_party_settings: {  }
   translation:
-    weight: 6
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
