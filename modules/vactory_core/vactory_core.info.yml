@@ -27,6 +27,7 @@ dependencies:
   - filter
   - image
   - improved_multi_select
+  - jsonapi_extras
   - language
   - link
   - linkit
@@ -47,6 +48,7 @@ dependencies:
   - pathauto
   - recaptcha
   - scheduler
+  - search
   - search_api
   - search_api_db
   - search_api_exclude_entity

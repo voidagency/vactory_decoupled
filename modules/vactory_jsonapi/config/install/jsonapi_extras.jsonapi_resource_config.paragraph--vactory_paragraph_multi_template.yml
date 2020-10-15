@@ -2,11 +2,11 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.vactory_paragraph_tab
-id: paragraph--vactory_paragraph_tab
+    - paragraphs.paragraphs_type.vactory_paragraph_multi_template
+id: paragraph--vactory_paragraph_multi_template
 disabled: false
-path: paragraph/vactory_paragraph_tab
-resourceType: paragraph--vactory_paragraph_tab
+path: paragraph/vactory_paragraph_multi_template
+resourceType: paragraph--vactory_paragraph_multi_template
 resourceFields:
   id:
     fieldName: id
@@ -146,11 +146,29 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  field_tab_templates:
-    fieldName: field_tab_templates
-    publicName: field_tab_templates
+  field_multi_paragraph_type:
+    fieldName: field_multi_paragraph_type
+    publicName: field_multi_paragraph_type
     enhancer:
-      id: vactory_dynamic_field
+      id: ''
+    disabled: false
+  field_paragraph_introduction:
+    fieldName: field_paragraph_introduction
+    publicName: field_paragraph_introduction
+    enhancer:
+      id: ''
+    disabled: false
+  field_paragraphs_cta:
+    fieldName: field_paragraphs_cta
+    publicName: field_paragraphs_cta
+    enhancer:
+      id: vactory_link
+    disabled: false
+  field_vactory_paragraph_tab:
+    fieldName: field_vactory_paragraph_tab
+    publicName: field_vactory_paragraph_tab
+    enhancer:
+      id: ''
     disabled: false
   field_vactory_title:
     fieldName: field_vactory_title

@@ -11,7 +11,7 @@ id: paragraph.vactory_paragraph_multi_template.field_vactory_paragraph_tab
 field_name: field_vactory_paragraph_tab
 entity_type: paragraph
 bundle: vactory_paragraph_multi_template
-label: Tabs
+label: Paragraphs
 description: ''
 required: false
 translatable: true
@@ -26,9 +26,6 @@ settings:
     target_bundles_drag_drop:
       vactory_component:
         weight: 6
-        enabled: false
-      vactory_paragraph_block:
-        weight: 7
         enabled: false
       vactory_paragraph_multi_template:
         weight: 8
