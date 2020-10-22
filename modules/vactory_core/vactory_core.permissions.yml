@@ -11,3 +11,8 @@ administer field css class:
   title: 'Administer field css class'
   description: 'Permission to Assign CSS classes to the node.'
   restrict access: TRUE
+
+administer field node settings:
+  title: 'Administer node settings'
+  description: 'Administer the node settings params.'
+  restrict access: TRUE
