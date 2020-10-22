@@ -1,0 +1,9 @@
+name: Vactory Widgets UI
+description: 'Our custom widgets.'
+type: module
+core: 8.x
+dependencies:
+  - vactory_dynamic_field
+version: 8.x-1.0
+package: Project
+core_incompatible: false

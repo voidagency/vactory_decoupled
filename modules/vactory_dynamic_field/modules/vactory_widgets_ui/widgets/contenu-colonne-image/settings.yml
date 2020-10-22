@@ -1,0 +1,47 @@
+name: "Contenu en colonne avec image"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
+  colCount:
+    type: select
+    label: 'Nombres des cols'
+    options:
+      "#required": TRUE
+      '#options':
+        - '2': '2'
+        - '3': '3'
+        - '4': '4'
+  centercontent:
+    type: checkbox
+    label: "Centrer le contenu"
+  activeBorder:
+    type: checkbox
+    label: "Activer le border"
+fields:
+  pictoImg:
+    type: image
+    label: "image"
+  pictoImg_alt:
+    type: "text"
+    label: "text alternative de l'image"
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+  link:
+    type: url_extended
+    label: "Lien"
+
+
+
