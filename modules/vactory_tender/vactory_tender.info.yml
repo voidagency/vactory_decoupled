@@ -5,6 +5,7 @@ core: 8.x
 dependencies:
   - content_translation
   - datetime
+  - entityqueue
   - field
   - jsonapi_extras
   - language
@@ -18,6 +19,7 @@ dependencies:
   - text
   - user
   - vactory_core
+  - views
   - webform
 version: ' 8.x-1.0'
 package: Vactory
