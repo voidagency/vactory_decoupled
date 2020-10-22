@@ -170,6 +170,20 @@ function vactory_core_form_node_form_alter(&$form, FormStateInterface $form_stat
   if (isset($form['path']['widget'][0])) {
     $form['path']['widget'][0]['#open'] = FALSE;
   }
+
+  // Node Settings.
+  if (isset($form['node_settings'])) {
+    $form['node_settings_group'] = [
+      '#type'        => 'details',
+      '#title'       => t('Node settings'),
+      '#group'       => 'advanced',
+      '#open'        => FALSE,
+      '#access'      => \Drupal::currentUser()
+        ->hasPermission('administer field node settings'),
+      '#attributes'  => ['class' => ['node-settings-form']],
+    ];
+    $form['node_settings']['#group'] = 'node_settings_group';
+  }
 }
 
 /**
@@ -194,6 +208,23 @@ function vactory_core_entity_base_field_info(EntityTypeInterface $entity_type) {
     $fields['node_summary'] = BaseFieldDefinition::create('string_long')
       ->setLabel(t('Page description'))
       ->setDescription(t('Briefly describe your page.'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDefaultValue('')
+      ->setRequired(TRUE)
+      ->setDisplayOptions('form', [
+        'type'     => 'string_textarea',
+        'weight'   => 1,
+        'settings' => [
+          'rows' => 4,
+        ],
+      ])
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+
+    $fields['node_settings'] = BaseFieldDefinition::create('string_long')
+      ->setLabel(t('Node Settings'))
+      ->setDescription(t('Add extra parameters in JSON Format : { "isHomePage": true, "taxonomy": 4, "limit": 6 }'))
       ->setRevisionable(TRUE)
       ->setTranslatable(TRUE)
       ->setDefaultValue('')
