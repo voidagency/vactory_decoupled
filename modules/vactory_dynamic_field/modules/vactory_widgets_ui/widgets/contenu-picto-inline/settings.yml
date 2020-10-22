@@ -9,18 +9,20 @@ extra_fields:
   intro:
     type: textarea
     label: "Introduction"
-  colCount:
-    type: select
-    label: 'Nombres des cols'
-    options:
-      "#required": TRUE
-      '#options':
-        - '2': '2'
-        - '3': '3'
-        - '4': '4'
-  centercontent:
-    type: checkbox
-    label: "Centrer le contenu avec la picto"
+  group_options:
+    g_title: "Options"
+    colCount:
+      type: select
+      label: 'Nombres des cols'
+      options:
+        "#required": TRUE
+        '#options':
+          - '2': '2'
+          - '3': '3'
+          - '4': '4'
+    centercontent:
+      type: checkbox
+      label: "Centrer le contenu avec la picto"
 fields:
   imgUrl:
     type: image

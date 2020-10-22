@@ -9,12 +9,14 @@ extra_fields:
   intro:
     type: textarea
     label: "Introduction"
-  centercontent:
-    type: checkbox
-    label: "Centrer le contenu"
-  activeBorder:
-    type: checkbox
-    label: "Activer le border"
+  group_options:
+    g_title: "Options"
+    centercontent:
+      type: checkbox
+      label: "Centrer le contenu"
+    activeBorder:
+      type: checkbox
+      label: "Activer le border"
 fields:
   imgUrl:
     type: image
