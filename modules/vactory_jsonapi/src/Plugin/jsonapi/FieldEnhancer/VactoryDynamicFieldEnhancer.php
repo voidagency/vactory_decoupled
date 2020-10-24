@@ -4,7 +4,9 @@ namespace Drupal\vactory_jsonapi\Plugin\jsonapi\FieldEnhancer;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\Url;
+use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\jsonapi_extras\Plugin\ResourceFieldEnhancerBase;
 use Drupal\media\Entity\Media;
@@ -204,7 +206,25 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
           $value = $image_data;
         }
 
-        // Views.
+        // Document media.
+        if ($info['type'] === 'file' && !empty($value)) {
+          $media = Media::load($value);
+          if ($media) {
+            $fid = (int) $media->get('field_media_document')->getString();
+            $file = File::load($fid);
+            if ($file) {
+              $uri = $file->getFileUri();
+              $value = [
+                '_default' => file_create_url($uri),
+                'uri' => StreamWrapperManager::getTarget($uri),
+                'fid' => $media->id(),
+                'file_name' => $media->label(),
+              ];
+            }
+          }
+        }
+
+          // Views.
         if ($info['type'] === 'dynamic_views' && !empty($value)) {
           $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value);
         }

@@ -2,7 +2,9 @@
 
 namespace Drupal\vactory_jsonapi\Plugin\jsonapi;
 
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\Url;
+use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\media\Entity\Media;
 use Drupal\Component\Utility\NestedArray;
@@ -169,6 +171,24 @@ class VactoryDynamicFieldServiceEnhancer
             }
           }
           $value = $image_data;
+        }
+
+        // Document media.
+        if ($info['type'] === 'file' && !empty($value)) {
+          $media = Media::load($value);
+          if ($media) {
+            $fid = (int) $media->get('field_media_document')->getString();
+            $file = File::load($fid);
+            if ($file) {
+              $uri = $file->getFileUri();
+              $value = [
+                '_default' => file_create_url($uri),
+                'uri' => StreamWrapperManager::getTarget($uri),
+                'fid' => $media->id(),
+                'file_name' => $media->label(),
+              ];
+            }
+          }
         }
 
         // Views.
