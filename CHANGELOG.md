@@ -9,6 +9,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ```bash
 $ drush fr -y vactory_page
+$ drush pmu -y search
 ```
 
 ### Bug Fixes
@@ -18,6 +19,11 @@ $ drush fr -y vactory_page
 ### Other Changes
 
 * **Vactory Page:** Display paragraphs ([eb0d34b](https://github.com/voidagency/vactory_decoupled/commit/69210f7d2bcc69f6a8f236988e5bac58f1f0c772))
+
+### BREAKING CHANGES
+
+* Removed search core module which was never used ([cfdbf96](https://github.com/voidagency/vactory_decoupled/commit/cfdbf96ab41078e5ea5aca4638e38a6bf11fed7d))
+
 
 # 1.0.2 (2020-10-24)
 
