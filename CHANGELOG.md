@@ -8,6 +8,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Upgrade
 
 ```bash
+$ drush updb -y
 $ drush fr -y vactory_page
 $ drush pmu -y search
 $ drush en -y vactory_widgets_ui
@@ -16,6 +17,7 @@ $ drush en -y vactory_widgets_ui
 ### Bug Fixes
 
 * **Dynamic Field:** Render dynamic_views form element ([69210f7](https://github.com/voidagency/vactory_decoupled/commit/eb0d34b324530f161df9886f89e83a6fcf4f3382))
+* **Core:** node_settings field should not be required. ([02d7c25](https://github.com/voidagency/vactory_decoupled/commit/02d7c259b450843d74b1382240a09dad57343bdd))
 
 ### New Features
 
