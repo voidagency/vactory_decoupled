@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# Dev (xxxx-xx-xx)
+
+### Upgrade
+
+```bash
+$ drush fr -y vactory_page
+```
+
+### Bug Fixes
+
+* **Dynamic Field:** Render dynamic_views form element ([69210f7](https://github.com/voidagency/vactory_decoupled/commit/eb0d34b324530f161df9886f89e83a6fcf4f3382))
+
+### Other Changes
+
+* **Vactory Page:** Display paragraphs ([eb0d34b](https://github.com/voidagency/vactory_decoupled/commit/69210f7d2bcc69f6a8f236988e5bac58f1f0c772))
+
 # 1.0.2 (2020-10-24)
 
 ### Upgrade
