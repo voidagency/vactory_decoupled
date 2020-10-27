@@ -10,11 +10,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ```bash
 $ drush fr -y vactory_page
 $ drush pmu -y search
+$ drush en -y vactory_widgets_ui #(optional)
 ```
 
 ### Bug Fixes
 
 * **Dynamic Field:** Render dynamic_views form element ([69210f7](https://github.com/voidagency/vactory_decoupled/commit/eb0d34b324530f161df9886f89e83a6fcf4f3382))
+
+### New Features
+
+* **Dynamic Field:** Introduced vactory_widgets_ui, a sub-module which contain a helpful list of new widgets ([0f48c33](https://github.com/voidagency/vactory_decoupled/commit/0f48c33f24cb40b9a71c1299ea57cefe8545fcf7))
 
 ### Other Changes
 
@@ -23,7 +28,6 @@ $ drush pmu -y search
 ### BREAKING CHANGES
 
 * Removed search core module which was never used ([cfdbf96](https://github.com/voidagency/vactory_decoupled/commit/cfdbf96ab41078e5ea5aca4638e38a6bf11fed7d))
-
 
 # 1.0.2 (2020-10-24)
 
