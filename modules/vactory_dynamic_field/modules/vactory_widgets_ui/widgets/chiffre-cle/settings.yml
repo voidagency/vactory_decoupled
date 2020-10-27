@@ -24,6 +24,8 @@ fields:
   number:
     type: text
     label: "Number"
+    options:
+      '#required': true
   word_before:
     type: text
     label: "Le mots avant le nombre"

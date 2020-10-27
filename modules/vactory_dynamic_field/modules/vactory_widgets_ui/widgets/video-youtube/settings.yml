@@ -1,22 +1,7 @@
 name: "Video youtube"
-multiple: TRUE
+multiple: FALSE
 category: 'Content'
 enabled: TRUE
-extra_fields:
-  group_options:
-    g_title: "Options"
-    colCount:
-      type: select
-      label: 'Nombres des cols'
-      options:
-        "#required": TRUE
-        '#options':
-          - '2': '2'
-          - '3': '3'
-          - '4': '4'
-    centercontent:
-      type: checkbox
-      label: "Centrer le contenu avec la picto"
 fields:
   group_options:
     g_title: "Options"
@@ -29,6 +14,9 @@ fields:
   image:
     type: image
     label: "image de video youtube"
+  image_alt:
+    type: text
+    label: "Text alternative de l'image"
   videoId:
     type: text
     label: "Video youtube Id"

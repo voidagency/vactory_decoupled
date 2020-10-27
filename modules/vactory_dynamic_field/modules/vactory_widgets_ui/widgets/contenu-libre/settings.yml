@@ -8,5 +8,6 @@ fields:
     label: "Description"
     options:
       '#format': full_html
+      '#required': TRUE
 
 
