@@ -1,0 +1,39 @@
+name: "Chiffre clé"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
+  group_options:
+    g_title: "Options"
+    colCount:
+      type: select
+      label: 'Nombres des cols'
+      options:
+        "#required": TRUE
+        '#options':
+          - '2': '2'
+          - '3': '3'
+          - '4': '4'
+fields:
+  number:
+    type: text
+    label: "Number"
+  word_before:
+    type: text
+    label: "Le mots avant le nombre"
+  word_after:
+    type: text
+    label: "Le mots apres le nombre"
+  description:
+    type: text
+    label: "Description"
+
+
+
+

@@ -1,0 +1,46 @@
+name: "Video youtube"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  group_options:
+    g_title: "Options"
+    colCount:
+      type: select
+      label: 'Nombres des cols'
+      options:
+        "#required": TRUE
+        '#options':
+          - '2': '2'
+          - '3': '3'
+          - '4': '4'
+    centercontent:
+      type: checkbox
+      label: "Centrer le contenu avec la picto"
+fields:
+  group_options:
+    g_title: "Options"
+    isPopUp:
+      type: checkbox
+      label: "Video youtube in popUp"
+    hideImage:
+      type: checkbox
+      label: "Afficher video youtube en load sans image"
+  image:
+    type: image
+    label: "image de video youtube"
+  videoId:
+    type: text
+    label: "Video youtube Id"
+    options:
+      '#required': TRUE
+      '#description': '<b><i class="link">How ?</i></b><br><b>URL Example</b>: https://www.youtube.com/watch?v=BZDyr2OpWBU <br> <b>Value to insert</b>: BZDyr2OpWBU'
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+
+
+
+

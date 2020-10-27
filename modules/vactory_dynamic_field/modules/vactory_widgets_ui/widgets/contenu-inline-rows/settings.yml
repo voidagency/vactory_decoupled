@@ -1,0 +1,37 @@
+name: "contenu en rows avec image, description et lien"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  group_options:
+    g_title: "Options"
+    inversed:
+      type: checkbox
+      label: "Inverse template"
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
+fields:
+  pictoImg:
+    type: image
+    label: "image"
+  pictoImg_alt:
+    type: "text"
+    label: "text alternative de l'image"
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+  link:
+    type: url_extended
+    label: "Lien"
+
+
+
