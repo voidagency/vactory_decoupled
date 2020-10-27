@@ -1,0 +1,34 @@
+name: "Video youtube"
+multiple: FALSE
+category: 'Content'
+enabled: TRUE
+fields:
+  group_options:
+    g_title: "Options"
+    isPopUp:
+      type: checkbox
+      label: "Video youtube in popUp"
+    hideImage:
+      type: checkbox
+      label: "Afficher video youtube en load sans image"
+  image:
+    type: image
+    label: "image de video youtube"
+  image_alt:
+    type: text
+    label: "Text alternative de l'image"
+  videoId:
+    type: text
+    label: "Video youtube Id"
+    options:
+      '#required': TRUE
+      '#description': '<b><i class="link">How ?</i></b><br><b>URL Example</b>: https://www.youtube.com/watch?v=BZDyr2OpWBU <br> <b>Value to insert</b>: BZDyr2OpWBU'
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+
+
+
+

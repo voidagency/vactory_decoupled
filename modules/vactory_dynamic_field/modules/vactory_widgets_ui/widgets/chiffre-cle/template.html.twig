@@ -1,0 +1,26 @@
+<div>
+  {% if extra_fields.bigTitle is not empty %}
+    <h2>{{ extra_fields.bigTitle }}</h2>
+  {% endif %}
+  {% if extra_fields.intro is not empty %}
+    <p>{{ extra_field.intro }}</p>
+  {% endif %}
+  {% for item in content %}
+    <div>
+      <p>
+        {% if item.word_before is not empty %}
+          <span>{{ item.word_before }}</span>
+        {% endif %}
+        {% if item.number is not empty %}
+          <span>{{ item.number }}</span>
+        {% endif %}
+        {% if item.word_after is not empty %}
+          <span>{{ item.word_after }}</span>
+        {% endif %}
+      </p>
+      {% if item.description %}
+        <p>{{ item.description }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

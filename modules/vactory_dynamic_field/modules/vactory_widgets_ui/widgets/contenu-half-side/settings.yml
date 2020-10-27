@@ -1,0 +1,25 @@
+name: "Contenu en half gauche/Droite"
+multiple: false
+category: 'Content'
+enabled: TRUE
+fields:
+  title:
+    type: text
+    label: 'Titre'
+  description:
+    type: textarea
+    label: "Description"
+  link:
+    type: url_extended
+    label: "Lien"
+  group_options:
+    g_title: "Options"
+    inversed:
+      type: checkbox
+      label: 'inverse template'
+    centercontent:
+      type: checkbox
+      label: "Centrer le contenu"
+
+
+

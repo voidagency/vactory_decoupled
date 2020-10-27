@@ -1,0 +1,40 @@
+name: "Contenu avec image en mosaique"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
+  group_options:
+    g_title: "Options"
+    centercontent:
+      type: checkbox
+      label: "Centrer le contenu"
+    activeBorder:
+      type: checkbox
+      label: "Activer le border"
+fields:
+  imgUrl:
+    type: image
+    label: "image"
+  pictoImg_alt:
+    type: "text"
+    label: "text alternative de l'image"
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+  link:
+    type: url_extended
+    label: "Lien"
+
+
+

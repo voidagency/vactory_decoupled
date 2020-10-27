@@ -1,0 +1,13 @@
+name: "Contenu libre"
+multiple: false
+category: 'Content'
+enabled: TRUE
+fields:
+  content:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+      '#required': TRUE
+
+
