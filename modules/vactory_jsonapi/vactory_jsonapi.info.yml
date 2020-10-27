@@ -23,7 +23,7 @@ dependencies:
   - paragraphs
   - path_alias
   - pathauto
-  - search
+#  - search
   - search_api
   - shortcut
   - simple_oauth

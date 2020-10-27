@@ -16,7 +16,7 @@ dependencies:
   - path
   - pathauto
   - scheduler
-  - search
+#  - search
   - search_api_exclude_entity
   - simple_sitemap
   - user

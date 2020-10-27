@@ -48,7 +48,7 @@ dependencies:
   - pathauto
   - recaptcha
   - scheduler
-  - search
+#  - search
   - search_api
   - search_api_db
   - search_api_exclude_entity
