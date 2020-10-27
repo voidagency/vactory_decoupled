@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# Dev (2020-xx-xx)
+
+### Bug Fixes
+
+* **Events:** Missing template.html.twig ([034a55d](https://github.com/voidagency/vactory_decoupled/commit/034a55dc736e67998e5024f1cf7bfc88a7280ce9))
+
 # 1.0.3 (2020-10-27)
 
 ### Upgrade
