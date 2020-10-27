@@ -1,0 +1,9 @@
+name: 'Vactory Widgets UI - Default content demo'
+type: module
+hidden: TRUE
+description: 'Vactory Widgets UI default content.'
+package: Vactory
+core: 8.x
+dependencies:
+  - default_content:default_content
+  - vactory_widgets_ui
