@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# Dev (xxxx-xx-xx)
+# 1.0.3 (2020-10-27)
 
 ### Upgrade
 
