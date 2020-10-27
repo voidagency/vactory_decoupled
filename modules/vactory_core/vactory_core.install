@@ -31,3 +31,16 @@ function vactory_core_update_8001() {
   \Drupal::entityDefinitionUpdateManager()
     ->installFieldStorageDefinition('node_settings', 'node', 'node', $storage_definition);
 }
+
+/**
+ * node_settings field should not be required.
+ */
+function vactory_core_update_8002() {
+  $definition_manager = \Drupal::entityDefinitionUpdateManager();
+  /** @var \Drupal\Core\Field\BaseFieldDefinition $storage_definition */
+  $storage_definition = $definition_manager->getFieldStorageDefinition('node_settings', 'node');
+  if ($storage_definition) {
+    $storage_definition->setRequired(FALSE);
+    \Drupal::entityDefinitionUpdateManager()->updateFieldStorageDefinition($storage_definition);
+  }
+}
