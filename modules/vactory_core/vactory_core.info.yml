@@ -67,6 +67,7 @@ dependencies:
   - user
   - vactory_dynamic_field
   - vactory_dynamic_field_core_ui
+  - vactory_widgets_ui
   - views
   - warmer
 version: 8.x-1.0
