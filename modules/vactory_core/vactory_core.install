@@ -17,7 +17,7 @@ function vactory_core_update_8001() {
     ->setRevisionable(TRUE)
     ->setTranslatable(TRUE)
     ->setDefaultValue('')
-    ->setRequired(TRUE)
+    ->setRequired(FALSE)
     ->setDisplayOptions('form', [
       'type'     => 'string_textarea',
       'weight'   => 1,

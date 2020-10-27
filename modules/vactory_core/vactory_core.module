@@ -228,7 +228,7 @@ function vactory_core_entity_base_field_info(EntityTypeInterface $entity_type) {
       ->setRevisionable(TRUE)
       ->setTranslatable(TRUE)
       ->setDefaultValue('')
-      ->setRequired(TRUE)
+      ->setRequired(FALSE)
       ->setDisplayOptions('form', [
         'type'     => 'string_textarea',
         'weight'   => 1,
