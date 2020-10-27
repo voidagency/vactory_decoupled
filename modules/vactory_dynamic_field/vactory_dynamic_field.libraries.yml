@@ -54,12 +54,5 @@ dynamic.form_modal:
     theme:
       css/form-modal.css: {}
   dependencies:
-    - dynamic.libraries.jquery.select2
+    - vactory_dynamic_field/dynamic.libraries.jquery.select2
 
-pop_in:
-  js:
-    js/pop-in.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupalSettingss
-    - core/jquery.cookie

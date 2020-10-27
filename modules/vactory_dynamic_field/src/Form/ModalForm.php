@@ -146,7 +146,9 @@ class ModalForm extends FormBase {
       $widget_data = $this->widgetData;
 
       // This will get removed by usort.
-      unset($this->widgetData['extra_field']);
+      if (isset($this->widgetData['extra_field'])) {
+        unset($this->widgetData['extra_field']);
+      }
 
       // Fallback for existing templates.
       // Which don't have _weight field yet.
@@ -163,7 +165,9 @@ class ModalForm extends FormBase {
       });
 
       // Restore extra_field.
-      $this->widgetData['extra_field'] = $widget_data['extra_field'];
+      if (isset($widget_data['extra_field'])) {
+        $this->widgetData['extra_field'] = $widget_data['extra_field'];
+      }
 
       if (array_key_exists('extra_field', $widget_data)) {
         unset($widget_data['extra_field']);

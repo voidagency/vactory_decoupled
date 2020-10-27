@@ -45,12 +45,12 @@ trait FormWidgetTrait {
 
     if (in_array($type, ['image', 'file'])) {
       $default_options = [
-        '#type' => 'managed_file',
+        '#type' => 'media_library',
       ];
 
-      $element_info = \Drupal::service('element_info')->getInfo('managed_file');
+      /*$element_info = \Drupal::service('element_info')->getInfo('managed_file');
       $default_options['#process'] = $element_info['#process'];
-      $default_options['#process'][] = [get_class($this), 'processFile'];
+      $default_options['#process'][] = [get_class($this), 'processFile'];*/
     }
 
     if ($type === 'image') {
@@ -66,6 +66,7 @@ trait FormWidgetTrait {
     if ($type === 'file') {
       $default_options =
         [
+          '#allowed_bundles' => ['document'],
           '#upload_location'   => 'public://widgets/files',
           '#upload_validators' => [
             'file_validate_extensions' => ['pdf doc docx txt'],

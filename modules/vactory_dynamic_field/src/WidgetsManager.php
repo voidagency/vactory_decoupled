@@ -178,26 +178,7 @@ class WidgetsManager extends DefaultPluginManager implements WidgetsManagerInter
       }
     }
 
-    $widgets_alter = $widgets;
-    unset($widgets_alter['Froala']);
-    unset($widgets_alter['Content']);
-    if (!isset($widgets['Froala'])) {
-      $widgets['Froala'] = [];
-    }
-    $widgets_alter['Content'] = array_merge($widgets['Content'], $widgets['Froala']);
-
-    foreach ($widgets_alter as $catgeory => &$items) {
-      $id = 1;
-      foreach ($items as &$item) {
-        $old_name = $item['name'];
-        $new_name = preg_replace('/([0-9]+) - /', '', $old_name);
-
-        $item['name'] = $id . ' - ' . $new_name;
-        $id++;
-      }
-    }
-
-    return $widgets_alter;
+    return $widgets;
   }
 
   /**

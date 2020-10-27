@@ -48,7 +48,7 @@ dependencies:
   - pathauto
   - recaptcha
   - scheduler
-  - search
+#  - search
   - search_api
   - search_api_db
   - search_api_exclude_entity
@@ -67,6 +67,7 @@ dependencies:
   - user
   - vactory_dynamic_field
   - vactory_dynamic_field_core_ui
+  - vactory_widgets_ui
   - views
   - warmer
 version: 8.x-1.0
