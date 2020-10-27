@@ -10,7 +10,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ```bash
 $ drush fr -y vactory_page
 $ drush pmu -y search
-$ drush en -y vactory_widgets_ui #(optional)
+$ drush en -y vactory_widgets_ui
 ```
 
 ### Bug Fixes
