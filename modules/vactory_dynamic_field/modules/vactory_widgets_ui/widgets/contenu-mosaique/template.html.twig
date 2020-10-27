@@ -8,12 +8,6 @@
   <div>
     {% for item in content %}
       <div>
-        {% if item.imgUrl.0 is defined %}
-          {% set image_uri = (item.imgUrl.0 is defined) ? get_image(item.imgUrl.0) : '' %}
-          {% set fluid_image = file_url(image_uri) %}
-          {% set image_alt = (item.pictoImg_alt is not empty) ? item.pictoImg_alt : '' %}
-          <img src="{{ fluid_image }}" alt="{{ image_alt }}">
-        {% endif %}
         {% if item.title is not empty %}
           <h3>{{ item.title }}</h3>
         {% endif %}

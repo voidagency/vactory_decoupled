@@ -1,10 +1,4 @@
 <div>
-  {% if content.0.image.0 is defined %}
-    {% set image_uri = (content.0.image.0 is defined) ? get_image(content.0.image.0) : '' %}
-    {% set fluid_image = file_url(image_uri) %}
-    {% set image_alt = (content.0.image_alt is not empty) ? content.0.pictoImg_alt : '' %}
-    <img src="{{ fluid_image }}" alt="{{ image_alt }}">
-  {% endif %}
   {% if content.0.videoId is not empty %}
     <p>{{ "https://www.youtube.com/watch?v=BZDyr2OpWBU" ~ content.0.videoId }}</p>
   {% endif %}
