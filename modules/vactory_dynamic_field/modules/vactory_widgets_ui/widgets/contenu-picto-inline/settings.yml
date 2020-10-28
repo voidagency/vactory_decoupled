@@ -3,12 +3,6 @@ multiple: TRUE
 category: 'Content'
 enabled: TRUE
 extra_fields:
-  bigTitle:
-    type: text
-    label: 'Big title'
-  intro:
-    type: textarea
-    label: "Introduction"
   group_options:
     g_title: "Options"
     colCount:
@@ -23,6 +17,12 @@ extra_fields:
     centercontent:
       type: checkbox
       label: "Centrer le contenu avec la picto"
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
 fields:
   imgUrl:
     type: image

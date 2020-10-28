@@ -3,23 +3,6 @@ multiple: false
 category: 'Content'
 enabled: TRUE
 fields:
-  imgUrl:
-    type: image
-    label: "image"
-  pictoImg_alt:
-    type: "text"
-    label: "text alternative de l'image"
-  title:
-    type: text
-    label: "Titre"
-  description:
-    type: text_format
-    label: "Description"
-    options:
-      '#format': full_html
-  link:
-    type: url_extended
-    label: "Lien"
   group_options:
     g_title: "Options"
     activeBorder:
@@ -40,6 +23,23 @@ fields:
           - '3': '1/4'
           - '4': '1/3'
           - '6': '1/2'
+  imgUrl:
+    type: image
+    label: "image"
+  pictoImg_alt:
+    type: "text"
+    label: "text alternative de l'image"
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+  link:
+    type: url_extended
+    label: "Lien"
 
 
 
