@@ -10,7 +10,7 @@ default:
       target_id: 1
   revision_log:
     -
-      value: 'the page demo contains listing of all widgets of module Vactory Widgets UI'
+      value: revison
   status:
     -
       value: true
@@ -64,7 +64,7 @@ default:
     -
       status: 0
       cid: 0
-      last_comment_timestamp: 1603877841
+      last_comment_timestamp: 1603879831
       last_comment_name: ''
       last_comment_uid: 1
       comment_count: 0
@@ -260,9 +260,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           paragraph_container:
             -
               value: narrow_width
@@ -297,9 +294,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           paragraph_container:
             -
               value: narrow_width
@@ -334,9 +328,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           paragraph_container:
             -
               value: narrow_width
@@ -371,9 +362,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           paragraph_container:
             -
               value: narrow_width
@@ -411,9 +399,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           paragraph_container:
             -
               value: narrow_width
@@ -463,7 +448,7 @@ default:
           field_vactory_component:
             -
               widget_id: 'vactory_widgets_ui:contenu-libre'
-              widget_data: '[{"content":{"value":"<p>this is the heading 2<\/p>\r\n\r\n<p>this is text&nbsp;Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p>this is the heading 3<\/p>\r\n\r\n<p>this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p><a href=\"\/node\/1\">this is link<\/a><\/p>\r\n","format":"full_html"}}]'
+              widget_data: '[{"content":{"value":"<h2>This is heading 2 normal<\/h2>\r\n\r\n<h2><em>this is the heading 2 italic<\/em><\/h2>\r\n\r\n<h2><u>this is the heading 2 underline<\/u><\/h2>\r\n\r\n<h2><s><em>this is the heading 2 line thought<\/em><\/s><\/h2>\r\n\r\n<h2 class=\"text-align-center\">this is the heading 2 center<\/h2>\r\n\r\n<h2 class=\"text-align-right\">this is the heading 2 text right<\/h2>\r\n\r\n<p class=\"text-align-center\">Text center this is text&nbsp;Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<h3>this is the heading 3<\/h3>\r\n\r\n<p>text left this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p class=\"text-align-justify\">text left this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p class=\"text-align-right\">text right&nbsp;this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p><em>text left italic this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/em><\/p>\r\n\r\n<p><s>text left line tought this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/s><\/p>\r\n\r\n<p><u>text left underlline&nbsp;this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/u><\/p>\r\n\r\n<p><strong>text left Bold this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/strong><\/p>\r\n\r\n<p><s><u><em><strong>text left Bold line tought line underline italic this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/strong><\/em><\/u><\/s><\/p>\r\n\r\n<p><a class=\"primary\" href=\"\/node\/1\">this is link<\/a><\/p>\r\n","format":"full_html"}}]'
           field_vactory_title:
             -
               value: 'Contenu libre'
