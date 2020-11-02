@@ -1,0 +1,15 @@
+{% for item in content %}
+  {% if item.title is not empty %}
+  <div>{{item.title}}</div>
+  {% endif %}
+  {% if item.description is not empty %}
+  <div>{{ item.description.value }}</div>
+  {% endif %}
+{% endfor %}
+
+{% if extra_fields.title is not empty %}
+  <h6>{{ extra_fields.title }}</h6>
+{% endif %}
+{% if extra_fields.intro is not empty %}
+  <div>{{ extra_fields.intro.value }}</div>
+{% endif %}
