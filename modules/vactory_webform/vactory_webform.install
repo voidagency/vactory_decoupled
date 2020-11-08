@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install file.
+ */
+
+use \Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function vactory_webform_install()
+{
+  // Grant the "view media" permission to all users by default.
+  if (\Drupal::moduleHandler()->moduleExists('user')) {
+    user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['access any webform configuration']);
+    user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['access any webform configuration']);
+  }
+}
