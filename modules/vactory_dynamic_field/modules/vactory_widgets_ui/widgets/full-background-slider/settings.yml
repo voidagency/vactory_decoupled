@@ -2,13 +2,6 @@ name: "Full background slider"
 multiple: TRUE
 category: 'Content'
 enabled: TRUE
-extra_fields:
-  bigTitle:
-    type: text
-    label: 'Big title'
-  intro:
-    type: textarea
-    label: "Introduction"
 fields:
   imageUrl:
     type: image
