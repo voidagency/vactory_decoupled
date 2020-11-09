@@ -1,0 +1,41 @@
+name: "Full background slider"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
+fields:
+  imageUrl:
+    type: image
+    label: "image"
+  image_alt:
+    type: "text"
+    label: "text alternative de l'image"
+  videoId:
+    type: text
+    label: 'Video ID'
+    options:
+      '#description': '<b><i class="link">How ?</i></b><br><b>URL Example</b>: https://www.youtube.com/watch?v=BZDyr2OpWBU <br> <b>Value to insert</b>: BZDyr2OpWBU'
+  videoBackground:
+    type: checkbox
+    label: 'Mettre video en background'
+  title:
+    type: text
+    label: "Titre"
+  description:
+    type: text_format
+    label: "Description"
+    options:
+      '#format': full_html
+  link:
+    type: url_extended
+    label: 'Lien'
+
+
+
+

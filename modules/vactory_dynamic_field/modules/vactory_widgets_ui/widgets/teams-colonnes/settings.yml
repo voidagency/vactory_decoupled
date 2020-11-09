@@ -1,0 +1,44 @@
+name: "Teams en colonne"
+multiple: TRUE
+category: 'Content'
+enabled: TRUE
+extra_fields:
+  group_options:
+    g_title: "Options"
+    colCount:
+      type: select
+      label: 'Nombres des cols'
+      options:
+        "#required": TRUE
+        '#options':
+          - '2': '2'
+          - '3': '3'
+          - '4': '4'
+    image_cyrcle:
+      type: checkbox
+      label: "image en cyrcle"
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
+fields:
+  imageUrl:
+    type: image
+    label: "image"
+  image_alt:
+    type: "text"
+    label: "text alternative de l'image"
+  name:
+    type: text
+    label: "Nom complet"
+  role:
+    type: text
+    label: "Rôle"
+  description:
+    type: textarea
+    label: "Description"
+
+
+

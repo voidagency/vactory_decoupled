@@ -1,0 +1,28 @@
+<div>
+  {% if extra_fields.bigTitle is not empty %}
+    <h2>{{ extra_fields.bigTitle }}</h2>
+  {% endif %}
+  {% if extra_fields.intro is not empty %}
+    <p>{{ extra_fields.intro }}</p>
+  {% endif %}
+
+  <div>
+    {% for item in content %}
+      <div>
+        {% if item.image_alt is not empty %}
+          <p>{{ item.image_alt }}</p>
+        {% endif %}
+        {% if item.name is not empty %}
+          <h3>{{ item.name }}</h3>
+        {% endif %}
+        {% if item.role is not empty %}
+          <p>{{ item.role }}</p>
+        {% endif %}
+        {% if item.description is not empty %}
+          <p>{{ item.description.value|raw }}</p>
+        {% endif %}
+      </div>
+
+    {% endfor %}
+  </div>
+</div>

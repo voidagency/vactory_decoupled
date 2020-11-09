@@ -10,7 +10,7 @@ default:
       target_id: 1
   revision_log:
     -
-      value: revison
+      value: "Décrivez brièvement les modifications apportées.\r\n"
   status:
     -
       value: true
@@ -170,7 +170,7 @@ default:
           field_vactory_component:
             -
               widget_id: 'vactory_widgets_ui:chiffre-cle'
-              widget_data: '{"extra_field":{"group_options":{"colCount":"3"},"bigTitle":"intro Lorem ipsum dolor sit, amet.","intro":"introduction Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, condimentum cum leo nec mollis augue ornare turpis, cursus rutrum orci himenaeos nullam primis vivamus."},"0":{"number":"100","word_before":"N\u00b0","word_after":"","description":"First Lorem ipsum dolor.","_weight":"1"},"1":{"number":"93","word_before":"","word_after":"%","description":"Second","_weight":"2"},"2":{"number":"18","word_before":"","word_after":"","description":"Third Lorem ipsum dolor.","_weight":"3"}}'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3"},"bigTitle":"intro Lorem ipsum dolor sit, amet.","intro":"introduction Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, condimentum cum leo nec mollis augue ornare turpis, cursus rutrum orci himenaeos nullam primis vivamus."},"0":{"number":"100","word_before":"N\u00b0","word_after":"","description":"First Lorem ipsum dolor.","_weight":"1"},"1":{"number":"93","word_before":"","word_after":"%","description":"Second","_weight":"2"},"2":{"number":"18","word_before":"","word_after":"","description":"Third Lorem ipsum dolor.","_weight":"3"},"3":{"number":"984","word_before":"","word_after":"","description":"Lorem ipsum dolor","_weight":"4"}}'
           field_vactory_title:
             -
               value: 'Chiffre clé'
@@ -433,9 +433,6 @@ default:
           behavior_settings:
             -
               value: {  }
-          revision_translation_affected:
-            -
-              value: true
           paragraph_container:
             -
               value: narrow_width
@@ -452,3 +449,182 @@ default:
           field_vactory_title:
             -
               value: 'Contenu libre'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: af109c8d-0f6e-4f0e-8437-e55dc0800e3b
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604327735
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:teams-colonnes'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3","image_cyrcle":1},"bigTitle":"this is the introduction","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit primis nam, sodales ad velit dictumst urna est penatibus vulputate feugiat libero, posuere fames orci torquent habitasse aptent per interdum. Mus justo hac augue sed, dignissim at."},"0":{"imageUrl":{"fa77591c9a29e3ff3ad76740ee0e5a63":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Mustapha Boukali","role":"Developpeur Front End","description":"Lorem ipsum dolor sit amet","_weight":"1"},"1":{"imageUrl":{"fdd636db3413ed15581c2282e01028d1":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams2","name":"Firstname Lastname","role":"Cadre at agency","description":"Lorem ipsum dolor sit amet","_weight":"2"},"2":{"imageUrl":{"fef25353aeb4606cf744bd7e5909263b":{"selection":[{"remove_button":"Retirer","target_id":"18","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams3","name":"Pr\u00e9nom Nom","role":"President de societ\u00e9","description":"Lorem ipsum dolor sit amet","_weight":"3"}}'
+          field_vactory_title:
+            -
+              value: 'Teams en colonnes'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4fadaa9b-8d85-4b39-a8a0-3a5b81517b57
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604333226
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:teams-colonnes-inline'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2"},"bigTitle":"the is the intro title","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit urna ac phasellus convallis, inceptos purus dictumst nibh conubia vehicula primis libero lobortis turpis. Dignissim ultricies fermentum felis taciti at sollicitudin nunc, leo consequat tempus integer in."},"0":{"imageUrl":{"fae91a49d9002a4a8dfd78f595cd555c":{"selection":[{"remove_button":"Retirer","target_id":"8","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Mustapha boukali","role":"Developpeur Front End","description":"Developpeur Front End chez void Agency","_weight":"1"},"1":{"imageUrl":{"fc06155a34531adf4e5fcf34981ce8d7":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt 3","name":"FirstName LastName","role":"The R\u00f4le ","description":"Lorem ipsum dolor","_weight":"2"},"2":{"imageUrl":{"f52cf80d35889fbae72e67ec8faec605":{"selection":[{"remove_button":"Retirer","target_id":"19","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt 3","name":"Nom Pr\u00e9nom","role":"The CEO Factory","description":"Lorem ipsum dolor","_weight":"3"}}'
+          field_vactory_title:
+            -
+              value: 'Teams en colonnes en inline'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7021693e-4c2e-47a1-a184-3140604055d7
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604915616
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:testimonials-colonne'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","inversed":0},"bigTitle":"Lorem ipsum dolor sit.","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla, id nisl placerat taciti porta sociosqu duis nunc magna, inceptos vestibulum rutrum aenean at in leo."},"0":{"imageUrl":{"f5ad0de3e0dda1936a701c8e105772b6":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Steve jobs","role":"CEO Apple","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"imageUrl":{"fb67f3443454cfb4a5df2b44e2fc2896":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","name":"Elon Mask","role":"CEO x-space","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Testimonials en colonnes'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 83b8fd09-878c-479d-be0f-c55f4381d6db
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604915814
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:testimonials-inline'
+              widget_data: '{"extra_field":{"group_options":{"inversed":0},"bigTitle":"Lorem ipsum dolor sit.","intro":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!\r\n\r\n"},"0":{"imageUrl":{"fbafe5a73f20cb025d558673ccf9dc3c":{"selection":[{"remove_button":"Retirer","target_id":"8","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","name":"Steve jobs","role":"CEO Apple","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"imageUrl":{"f702b26f72c074f235f0f61dda02c1be":{"selection":[{"remove_button":"Retirer","target_id":"3","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","name":"Mehdi Najeddine","role":"CEO VOID","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Testimonials en inline'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 62b5dc7d-9a4c-433c-9188-fac4a58a92e8
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604915928
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: no_container
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:full-background-slider'
+              widget_data: '{"extra_field":{"bigTitle":"","intro":""},"0":{"imageUrl":{"f6d62d04cb2c8e000e621102d5fb90bb":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","videoId":"BZDyr2OpWBU","videoBackground":1,"title":"This is the title","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nec praesent nostra auctor blandit habitasse varius, orci purus hac convallis habitant posuere.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"imageUrl":{"f16543a26fef6350f54b39d2cf0701d9":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","videoId":"","videoBackground":0,"title":"Second Lorem ipsum dolor.","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nec praesent nostra auctor blandit habitasse varius, orci purus hac convallis habitant posuere.<\/p>\r\n","format":"full_html"},"link":{"title":"Lire la suite","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Full background slider'
