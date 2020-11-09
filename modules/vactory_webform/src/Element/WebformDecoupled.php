@@ -38,12 +38,42 @@ class WebformDecoupled extends FormElement
    */
   public static function processElement(array &$element, FormStateInterface $form_state, array &$complete_form)
   {
-    $element['webform_id'] = [
+    $has_access = \Drupal::currentUser()
+      ->hasPermission('administer webform_decoupled props');
+    $element['#tree'] = TRUE;
+
+    $element['id'] = [
       '#type' => 'select',
       '#required' => TRUE,
       '#title' => t('Webform'),
       '#options' => self::getWebforms(),
       '#default_value' => $element['#default_value']['webform_id'] ?? '',
+    ];
+
+    $element['component'] = [
+      '#type' => 'textfield',
+      '#title' => t('Component'),
+      '#description' => t('A react component to pass in data to.'),
+      '#default_value' => $element['#default_value']['component'] ?? '',
+      '#access' => $has_access,
+    ];
+
+    $element['style'] = [
+      '#type' => 'textarea',
+      '#title' => t('Style'),
+      '#description' => t('A style Object used for theming.'),
+      '#default_value' => $element['#default_value']['style'] ?? '',
+      '#attributes' => array('dir' => 'ltr'),
+      '#access' => $has_access,
+    ];
+
+    $element['buttons'] = [
+      '#type' => 'textarea',
+      '#title' => t('Buttons'),
+      '#description' => t('A style Object used for theming.'),
+      '#default_value' => $element['#default_value']['buttons'] ?? '',
+      '#attributes' => array('dir' => 'ltr'),
+      '#access' => $has_access,
     ];
 
     return $element;
@@ -54,11 +84,20 @@ class WebformDecoupled extends FormElement
    */
   public static function validateElement(&$element, FormStateInterface $form_state, &$form)
   {
-    $webform_id = $element['webform_id']['#value'];
+    $webform_id = $element['id']['#value'];
+    $style = $element['style']['#value'];
     $webform = Webform::load($webform_id);
     if (!$webform) {
-      $form_state->setError($element['webform_id'], t("Webform ID @webform_id is not valid.", ['@webform_id' => $webform_id]));
+      $form_state->setError($element['id'], t("Webform ID @webform_id is not valid.", ['@webform_id' => $webform_id]));
     }
+
+    if (!empty($style)) {
+      @json_decode($style);
+      if (json_last_error() !== JSON_ERROR_NONE) {
+        $form_state->setError($element['style'], t("Style field is not a valid JSON object."));
+      }
+    }
+
   }
 
   /**

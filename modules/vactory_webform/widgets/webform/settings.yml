@@ -3,16 +3,11 @@ multiple: FALSE
 category: 'Formulaires'
 enabled: TRUE
 fields:
-  webform_id:
+  webform:
     type: webform_decoupled
     label: 'Formulaire'
     options:
       '#required': TRUE
-  style:
-    type: textarea
-    label: "Style"
-    options:
-      '#description': 'Objet JSON pour theming.'
 extra_fields:
   title:
     type: text

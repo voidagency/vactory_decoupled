@@ -100,6 +100,12 @@ class Webform
     (isset($item['#description']) && !is_null($item['#description'])) ? $properties['helperText'] = (string)t($item['#description']) : NULL;
     (isset($item['#readonly']) && !is_null($item['#readonly'])) ? $properties['readOnly'] = $item['#readonly'] : NULL;
     (isset($htmlInputTypes[$type]) && !is_null($htmlInputTypes[$type])) ? $properties['htmlInputType'] = $htmlInputTypes[$type] : NULL;
+    (isset($item['#options']) && !is_null($item['#options'])) ? $properties['options'] = $this->formatOptions($item['#options'] ?? []) : NULL;
+    (isset($item['#empty_option']) && !is_null($item['#empty_option'])) ? $properties['emptyOption'] = (string)t($item['#empty_option']) : NULL;
+    (isset($item['#empty_value']) && !is_null($item['#empty_value'])) ? $properties['emptyValue'] = $item['#empty_value'] : NULL;
+    (isset($item['#options_display']) && !is_null($item['#options_display'])) ? $properties['optionsDisplay'] = $item['#options_display'] : NULL;
+    (isset($item['#options_all']) && !is_null($item['#options_all'])) ? $properties['optionsAll'] = $item['#options_all'] : NULL;
+    (isset($item['#options_none']) && !is_null($item['#options_none'])) ? $properties['optionsNone'] = $item['#options_none'] : NULL;
 
     if (isset($item['#required'])) {
       $properties['validation']['required'] = TRUE;
@@ -130,7 +136,6 @@ class Webform
       }
     }
 
-
     if ($type === 'webform_email_confirm') {
       foreach ($items as $key => $element) {
         if (isset($element['#type']) && $element['#type'] === 'email') {
@@ -143,37 +148,62 @@ class Webform
       }
     }
 
-    if ($ui_type === 'select') {
-      (isset($item['#options']) && !is_null($item['#options'])) ? $properties['options'] = $item['#options'] : NULL;
-      (isset($item['#empty_option']) && !is_null($item['#empty_option'])) ? $properties['emptyOption'] = (string)t($item['#empty_option']) : NULL;
-      (isset($item['#empty_value']) && !is_null($item['#empty_value'])) ? $properties['emptyValue'] = $item['#empty_value'] : NULL;
-    }
-
-    if ($ui_type === 'radios') {
-      (isset($item['#options']) && !is_null($item['#options'])) ? $properties['options'] = $item['#options'] : NULL;
-      (isset($item['#options_display']) && !is_null($item['#options_display'])) ? $properties['optionsDisplay'] = $item['#options_display'] : NULL;
-    }
-
-    if ($ui_type === 'checkboxes') {
-      (isset($item['#options']) && !is_null($item['#options'])) ? $properties['options'] = $item['#options'] : NULL;
-      (isset($item['#options_display']) && !is_null($item['#options_display'])) ? $properties['optionsDisplay'] = $item['#options_display'] : NULL;
-      (isset($item['#options_all']) && !is_null($item['#options_all'])) ? $properties['optionsAll'] = $item['#options_all'] : NULL;
-      (isset($item['#options_none']) && !is_null($item['#options_none'])) ? $properties['optionsNone'] = $item['#options_none'] : NULL;
-    }
-
     if ($type === 'webform_term_select') {
       if (empty($item['#vocabulary'])) {
         $properties['options'] = [];
       }
 
       if (!empty($element['#breadcrumb'])) {
-        $properties['options'] = static::getOptionsBreadcrumb($item, '');
+        $properties['options'] = $this->formatOptions(static::getOptionsBreadcrumb($item, ''));
       } else {
-        $properties['options'] = static::getOptionsTree($item, '');
+        $properties['options'] = $this->formatOptions(static::getOptionsTree($item, ''));
       }
     }
 
+    if (
+      isset($properties['emptyOption']) &&
+      !empty($properties['emptyOption']) &&
+      !empty($properties['options'])
+    ) {
+      $emptyOption = [
+        'label' => $properties['emptyOption'],
+        'value' => ''
+      ];
+
+      if (
+        isset($properties['emptyValue']) &&
+        !empty($properties['emptyValue'])
+      ) {
+        $emptyOption['value'] = $properties['emptyValue'];
+      }
+
+      array_unshift($properties['options'], $emptyOption);
+    }
+
+    if ($type === 'captcha') {
+      $properties['validation']['required'] = TRUE;
+    }
+
     return $properties;
+  }
+
+  /**
+   * @param $items
+   * @param bool $reverse
+   * @return array
+   */
+  private function formatOptions($items, $reverse = FALSE)
+  {
+    $options = [];
+
+    foreach ($items as $value => $label) {
+      array_push($options, [
+        'value' => $value,
+        'label' => $label,
+      ]);
+    }
+
+    return $options;
   }
 
 
