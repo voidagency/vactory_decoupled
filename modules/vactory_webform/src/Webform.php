@@ -4,6 +4,7 @@ namespace Drupal\vactory_webform;
 
 
 use Drupal\webform\Element\WebformTermReferenceTrait;
+use Drupal\webform\Entity\WebformSubmission;
 
 /**
  * Simplifies the process of generating an API version of a webform.
@@ -14,6 +15,8 @@ class Webform
 {
   use WebformTermReferenceTrait;
 
+  protected $webform;
+
   /**
    * Return the requested entity as an structured array.
    *
@@ -23,8 +26,8 @@ class Webform
    */
   public function normalize($webform_id)
   {
-    $webform = \Drupal\webform\Entity\Webform::load($webform_id);
-    $elements = $webform->getElementsInitialized();
+    $this->webform = \Drupal\webform\Entity\Webform::load($webform_id);
+    $elements = $this->webform->getElementsInitialized();
     return $this->itemsToSchema($elements);
   }
 
@@ -42,7 +45,7 @@ class Webform
       if ($key === 'actions') {
         continue;
       }
-      $schema[$key] = $this->itemToUiSchema($items, $item);
+      $schema[$key] = $this->itemToUiSchema($key, $item, $items);
     }
 
     return $schema;
@@ -51,11 +54,12 @@ class Webform
   /**
    * Creates a UI Schema out of a Webform Item.
    *
-   * @param $items
+   * @param $field_name
    * @param $item
+   * @param $items
    * @return array
    */
-  private function itemToUiSchema($items, $item)
+  private function itemToUiSchema($field_name, $item, $items)
   {
     $properties = [];
     if (isset($item['#required']) || isset($item['#pattern'])) {
@@ -85,6 +89,8 @@ class Webform
       'webform_buttons' => 'checkboxes',
       'webform_buttons_other' => 'checkboxes',
       'webform_checkboxes_other' => 'checkboxes',
+      'webform_document_file' => 'upload',
+      'webform_image_file' => 'upload',
     ];
 
     $htmlInputTypes = [
@@ -184,6 +190,42 @@ class Webform
       $properties['validation']['required'] = TRUE;
     }
 
+    if ($ui_type === 'upload') {
+      $element = $this->webform->getElement($field_name);
+      $webform_submission = WebformSubmission::create([
+        'webform_id' => $this->webform->id(),
+      ]);
+      // Prepare upload location and validators for the element
+      $element_plugin = $this->getElementPlugin($element);
+      $element_plugin->prepare($element, $webform_submission);
+
+      $properties['isMultiple'] = isset($item['#multiple']);
+      if (isset($item['#multiple']) && is_integer($item['#multiple'])) {
+        $properties['validation']['maxFiles'] = $item['#multiple'];
+      }
+
+      if (isset($item['#max_filesize'])) {
+        $properties['validation']['maxSizeBytes'] = 1024 * 1024 * intval($item['#max_filesize']);
+        $properties['maxSizeMb'] = intval($item['#max_filesize']);
+      }
+
+      if (
+        isset($element['#upload_validators']) &&
+        isset($element['#upload_validators']['file_validate_extensions'][0])
+      ) {
+        $field_extensions = $element['#upload_validators']['file_validate_extensions'][0];
+        $extensions = explode(" ", $field_extensions);
+        $doted_extensions = [];
+        foreach ($extensions as $ext) {
+          array_push($doted_extensions, "." . $ext);
+        }
+        $filenamed_extensions = join(",", $doted_extensions);
+        $properties['validation']['extensions'] = $filenamed_extensions;
+        $properties['extensionsClean'] = $field_extensions;
+      }
+
+    }
+
     return $properties;
   }
 
@@ -204,6 +246,26 @@ class Webform
     }
 
     return $options;
+  }
+
+  /**
+   * Loads the webform element plugin for the provided element.
+   *
+   * @param array $element
+   *   The element for which to get the plugin.
+   *
+   * @return \Drupal\Core\Render\Element\ElementInterface
+   * @throws \Drupal\Component\Plugin\Exception\PluginException
+   */
+  protected function getElementPlugin(array $element)
+  {
+    /** @var \Drupal\Core\Render\ElementInfoManager $plugin_manager */
+    $plugin_manager = \Drupal::service('plugin.manager.webform.element');
+    $plugin_definition = $plugin_manager->getDefinition($element['#type']);
+
+    $element_plugin = $plugin_manager->createInstance($element['#type'], $plugin_definition);
+
+    return $element_plugin;
   }
 
 

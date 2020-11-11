@@ -126,6 +126,7 @@
         "drupal/password_policy": "^3.0@beta",
         "drupal/pathauto": "^1.8.0",
         "drupal/rate": "^1.0@alpha",
+        "drupal/restui": "^1.18",
         "drupal/recaptcha": "^2.5",
         "drupal/scheduler": "^1.3.0",
         "drupal/search_api": "^1.17.0",

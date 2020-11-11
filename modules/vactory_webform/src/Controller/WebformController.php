@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\vactory_jsonapi\Controller;
+namespace Drupal\vactory_webform\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\webform\Entity\Webform;
@@ -58,7 +58,6 @@ class WebformController extends ControllerBase {
       'webform_id'  => $webform_data['webform_id'],
     ];
 
-    // @todo: do data post here
     $values['data'] = $webform_data;
 
     // Don't submit webform ID.
