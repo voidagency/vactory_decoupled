@@ -1,0 +1,28 @@
+name: Forum
+type: module
+core: 8.x
+version: 8.x-1.0
+package: Vactory
+dependencies:
+  - allowed_formats
+  - comment
+  - content_translation
+  - field
+  - jsonapi_extras
+  - language
+  - media_library
+  - menu_ui
+  - metatag
+  - node
+  - options
+  - path
+  - pathauto
+  - scheduler
+  - taxonomy
+  - text
+  - user
+  - vactory_banner
+  - vactory_core
+  - vactory_vcc
+  - views
+description: 'Provides Forum content type and related configuration. Manage your Forum content.'

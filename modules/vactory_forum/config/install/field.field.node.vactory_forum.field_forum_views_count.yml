@@ -1,0 +1,22 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forum_views_count
+    - node.type.vactory_forum
+id: node.vactory_forum.field_forum_views_count
+field_name: field_forum_views_count
+entity_type: node
+bundle: vactory_forum
+label: 'Views count'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

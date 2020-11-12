@@ -1,0 +1,25 @@
+name: 'Listing'
+multiple: FALSE
+category: 'Forum'
+enabled: TRUE
+fields:
+  views:
+    type: dynamic_views
+    label: 'Views'
+    options:
+      '#required': TRUE
+      '#default_value':
+        views_id: vactory_forum
+        views_display_id: block_listing
+        fields:
+          id: id
+          uuid: key
+          title: title
+          url: url
+          field_vactory_excerpt: excerpt
+          field_vactory_taxonomy_1: section
+          field_forum_status: status
+          field_forum_views_count: views
+          changed: last_contribution
+        vocabularies:
+          forum_section: forum_section

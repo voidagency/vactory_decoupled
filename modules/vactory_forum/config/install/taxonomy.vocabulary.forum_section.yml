@@ -1,0 +1,7 @@
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Forum - Section'
+vid: forum_section
+description: ''
+weight: 0

@@ -1,0 +1,113 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
+use Drupal\Core\Url;
+use Drupal\media\Entity\Media;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_df_jsonapi_output_alter().
+ */
+function vactory_forum_df_jsonapi_output_alter(&$content)
+{
+  $display_id = "block_list";
+
+  if ($content['template'] === 'vactory_forum:list') {
+    $name = "vactory_forum";
+
+    $taxonomy_id = $content['components'][0]['taxonomy'];
+
+    $limit = $content['components'][0]['limit'];
+
+    $image_app_base_url = Url::fromUserInput('/app-image/')
+      ->setAbsolute()->toString();
+    $lqipImageStyle = \Drupal\image\Entity\ImageStyle::load('lqip');
+
+    $view = Views::getView($name);
+    if (!$view || !$view->access($display_id)) {
+      $content['data'] = [];
+      return;
+    }
+
+    $view->setDisplay($display_id);
+    
+    if (!empty($taxonomy_id)) {
+      $view->setArguments([$taxonomy_id]);
+    }
+
+    //
+    $view->execute();
+    $count = count( $view->result );
+
+    $content['components'][0]['show_link'] = $count > $limit ? TRUE : FALSE;;
+    //
+    
+    $view = Views::getView($name);
+    if (!$view || !$view->access($display_id)) {
+      $content['data'] = [];
+      return;
+    }
+
+    $view->setDisplay($display_id);
+    
+    if (!empty($taxonomy_id)) {
+      $view->setArguments([$taxonomy_id]);
+    }
+
+    if (!empty($limit)) {
+      $view->setItemsPerPage(intval($limit));
+    }
+
+    //et puis refaire execute pour ajouter 'limit' dans le resultat
+    $view->preExecute();
+    $view->execute();
+    $result = $view->result;
+
+    $nodes = [];
+    foreach ($result as $row) {
+      $node = $row->_entity;
+      $node = \Drupal::service('entity.repository')
+        ->getTranslationFromContext($node);
+
+      $categories = [];
+      $themes = $node->get('field_vactory_taxonomy_1');
+      foreach ($themes as $theme) {
+        array_push($categories, $theme->entity->label());
+      }
+
+      $revisions = \Drupal::entityTypeManager()->getStorage('node')->revisionIds($node);
+      $contributions = count($revisions);
+
+      $last_revision_date = date('d F Y H:i',$node->get('changed')->getValue()[0]["value"]);
+      if ($node->isDefaultRevision() == TRUE) {
+        $last_revision_id = end($revisions);
+        if ($node->getRevisionId() != $last_revision_id) {
+          $last_revision = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($last_revision_id);
+          $last_revision_date = date('d F Y H:i',$last_revision->get('changed')->getValue()[0]["value"]);
+        }
+      }
+
+
+      array_push($nodes, [
+        "key" => $node->uuid(),
+        "title" => $node->label(),
+        "url" => $node->toUrl()->toString(),
+        "section" => $categories,
+        "excerpt" => $node->get('field_vactory_excerpt')->getValue(),
+        "status" => $node->get('field_forum_status')->getValue()[0]["value"],
+        "views" => $node->get('field_forum_views_count')->getValue()[0]["value"],
+        "contributions" => $contributions,
+        "last_contribution" => $last_revision_date,
+      ]);
+    }
+
+    $content['data'] = $nodes;
+  }
+
+}

@@ -1,0 +1,18 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forum_icone
+    - node.type.vactory_forum
+id: node.vactory_forum.field_forum_icone
+field_name: field_forum_icone
+entity_type: node
+bundle: vactory_forum
+label: Icône
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
