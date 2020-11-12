@@ -47,8 +47,6 @@ class WebformFileUploadResource extends FileUploadResource {
    *   Throws HttpException in case of error.
    */
   public function post(Request $request, $webform_id, $field_name, $placeholder = '') {
-    sleep(5);
-
     // Check for a valid webform.
     $webform = Webform::load($webform_id);
     if (!$webform) {
