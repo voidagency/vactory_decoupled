@@ -47,14 +47,6 @@ vactory_jsonapi.menus:
   requirements:
     _permission: 'access content'
 
-vactory_jsonapi.webform:
-  path: '/_webform'
-  defaults:
-    _controller: '\Drupal\vactory_jsonapi\Controller\WebformController::index'
-  methods: [POST]
-  requirements:
-    _permission: 'access content'
-
 vactory_jsonapi.search:
   path: '/_search'
   defaults:
