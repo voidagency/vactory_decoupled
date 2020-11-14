@@ -81,9 +81,9 @@ class VactoryDynamicFormatter extends FormatterBase {
     $request = \Drupal::request();
 //    $amp_context = \Drupal::service('router.amp_context');
 
-    if ($request->isXmlHttpRequest()) {
-      return [];
-    }
+//    if ($request->isXmlHttpRequest()) {
+//      return [];
+//    }
 
     $elements = [];
 
