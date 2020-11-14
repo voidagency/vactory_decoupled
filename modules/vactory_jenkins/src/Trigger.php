@@ -19,7 +19,8 @@ use Drupal\Core\Site\Settings;
 /**
  * Class Trigger.
  */
-class Trigger {
+class Trigger
+{
 
   use MessengerTrait;
   use StringTranslationTrait;
@@ -112,7 +113,8 @@ class Trigger {
     EntityTypeManager $entityTypeManager,
     CacheTagsInvalidatorInterface $cacheTagInvalidator,
     EventDispatcherInterface $event_dispatcher
-  ) {
+  )
+  {
     $this->configFactory = $configFactory;
     $this->httpClient = $httpClient;
     $this->currentUser = $currentUser;
@@ -128,14 +130,16 @@ class Trigger {
   /**
    * Triggers all environments that are marked to fire on cron.
    */
-  public function deployFrontendCron() {
+  public function deployFrontendCron()
+  {
     $this->deployByDeploymentStrategy(self::DEPLOYMENT_STRATEGY_CRON);
   }
 
   /**
    * Triggers all environments that are marked to fire on entity update.
    */
-  public function deployFrontendEntityUpdate() {
+  public function deployFrontendEntityUpdate()
+  {
     $this->deployByDeploymentStrategy(self::DEPLOYMENT_STRATEGY_ENTITYSAVE);
   }
 
@@ -145,14 +149,15 @@ class Trigger {
    * @param string $strategy
    *   The type of deployment strategy.
    */
-  private function deployByDeploymentStrategy(string $strategy) {
+  private function deployByDeploymentStrategy(string $strategy)
+  {
     try {
       $this->triggerBuild();
     } catch (\Exception $e) {
       $this->messenger()
         ->addWarning($this->t('Could not trigger deployments with strategy @strategy. Error message: @error', [
           '@strategy' => $strategy,
-          '@error'    => $e->getMessage(),
+          '@error' => $e->getMessage(),
         ]));
     }
   }
@@ -163,14 +168,16 @@ class Trigger {
    * @return bool
    *   Boolean value.
    */
-  private function isValidUser() {
+  private function isValidUser()
+  {
     return $this->currentUser->hasPermission('trigger jenkins deployments');
   }
 
   /**
    * Trigger a deployment.
    */
-  public function triggerBuild() {
+  public function triggerBuild()
+  {
     try {
       $response = $this->triggerWebHook();
       if ($response->getStatusCode() == 201) {
@@ -178,8 +185,7 @@ class Trigger {
         $this->deployLogger->setLastDeployTime();
         $this->messenger()
           ->addMessage($this->t('Deployment triggered'));
-      }
-      else {
+      } else {
         $this->messenger()
           ->addWarning($response->getReasonPhrase());
       }
@@ -204,7 +210,8 @@ class Trigger {
    *
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
-  private function triggerWebHook() {
+  private function triggerWebHook()
+  {
     $webhook_url = Settings::get('DEPLOY_WEBHOOK_URL', FALSE);
 
     $response = $this->httpClient->request(
@@ -218,11 +225,12 @@ class Trigger {
   /**
    * Get build status.
    *
-   * @throws \GuzzleHttp\Exception\GuzzleException
+   * @param $webhook_url
+   * @return array
+   * @throws GuzzleException
    */
-  public function getLastBuildStatus() {
-    $webhook_url = Settings::get('DEPLOY_WEBHOOK_LAST_BUILD_URL', FALSE);
-
+  public function getLastBuildStatus($webhook_url)
+  {
     $response = $this->httpClient->request(
       'GET',
       $webhook_url
@@ -235,8 +243,8 @@ class Trigger {
       $content = json_decode($bodyContent, TRUE);
 
       $status = [
-        'name'      => $content['fullDisplayName'],
-        'status'    => $content['result'],
+        'name' => $content['fullDisplayName'],
+        'status' => $content['result'],
         'timestamp' => $content['timestamp'],
       ];
     }
@@ -244,5 +252,27 @@ class Trigger {
     return $status;
   }
 
+  /**
+   * Get build errors.
+   *
+   * @param $webhook_url
+   * @return string
+   * @throws GuzzleException
+   */
+  public function getLastBuildLog($webhook_url)
+  {
+    $response = $this->httpClient->request(
+      'GET',
+      $webhook_url
+    );
+
+    $status = '';
+
+    if ($response->getStatusCode() === 200) {
+      $status = $response->getBody()->getContents();
+    }
+
+    return $status;
+  }
 
 }
