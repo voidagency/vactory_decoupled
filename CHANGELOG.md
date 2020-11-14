@@ -6,10 +6,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 # 1.0.4 (2020-11-14)
 
 ### Upgrade
+```bash
 $ drush en webform_ui rest restui
 $ drush cr
 $ drush vactory_webform
-
+```
 ### Bug Fixes
 
 * **Events:** Missing template.html.twig ([034a55d](https://github.com/voidagency/vactory_decoupled/commit/034a55dc736e67998e5024f1cf7bfc88a7280ce9))
