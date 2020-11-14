@@ -3,11 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# Dev (2020-xx-xx)
+# 1.0.4 (2020-11-14)
 
 ### Bug Fixes
 
 * **Events:** Missing template.html.twig ([034a55d](https://github.com/voidagency/vactory_decoupled/commit/034a55dc736e67998e5024f1cf7bfc88a7280ce9))
+* **Core:** All content modules dump data into their corresponding template.html.twig > allowing us to index their content in search API  ([b7f8a4c](https://github.com/voidagency/vactory_decoupled/commit/b7f8a4c92e93eeedb458efe1d3533fdd02b3c2c9))
+* **Dynamic Field:** g_title key should not be considered as a field ([1490635](https://github.com/voidagency/vactory_decoupled/commit/1490635f101f47e6d30c33e35d93549750c3d371))
+* **Dynamic Field:** Removed use of isXmlHttpRequest as it blocked Search API. ([5376f46](https://github.com/voidagency/vactory_decoupled/commit/5376f4629ca6eead0df00be97d10a01b02047802))
+
+### New Features
+
+* **Core:** New module ([Vactory Webform](https://github.com/voidagency/vactory_decoupled/tree/master/modules/vactory_webform))
+* **Core:** Add string context and location filters to the translate interface ([42e3cb0](https://github.com/voidagency/vactory_decoupled/commit/42e3cb09dca73bd9c1a08e018d48b8a532360849))
+* **Core:** Added Jenkins Build Log to /admin/deployment & Improved messages ([5ec309d](https://github.com/voidagency/vactory_decoupled/commit/5ec309deb72ad6d95b67d31973f6ada95d6a5c07))
 
 # 1.0.3 (2020-10-27)
 
