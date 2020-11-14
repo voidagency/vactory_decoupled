@@ -50,14 +50,6 @@ class WebformDecoupled extends FormElement
       '#default_value' => $element['#default_value']['webform_id'] ?? '',
     ];
 
-    $element['component'] = [
-      '#type' => 'textfield',
-      '#title' => t('Component'),
-      '#description' => t('A react component to pass in data to.'),
-      '#default_value' => $element['#default_value']['component'] ?? '',
-      '#access' => $has_access,
-    ];
-
     $element['style'] = [
       '#type' => 'textarea',
       '#title' => t('Style'),
