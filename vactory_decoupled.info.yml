@@ -112,6 +112,7 @@ dependencies:
   - views
   - paragraphs
   - webform
+  - webform_ui
 
 install:
   - vactory_core
