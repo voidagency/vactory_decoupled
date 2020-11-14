@@ -57,6 +57,22 @@ function _vactory_webform_importTranslation()
       ],
     ],
     [
+      'label' => 'Webform: Le champ "{{fieldName}}" est requis.',
+      'translations' => [
+        'fr' => 'Le champ "{{fieldName}}" est requis.',
+        'en' => 'The field "{{fieldName}}" is required.',
+        'ar' => 'الحقل "{{fieldName}}" مطلوب.',
+      ],
+    ],
+    [
+      'label' => 'Webform: Le champ "{{fieldName}}" est invalid.',
+      'translations' => [
+        'fr' => 'Le champ "{{fieldName}}" est invalid.',
+        'en' => 'Le champ "{{fieldName}}" est invalid.',
+        'ar' => 'الحقل "{{fieldName}}" غير صالح.',
+      ],
+    ],
+    [
       'label' => 'webform:Des fichiers sont en cours de transfert.',
       'translations' => [
         'fr' => 'Des fichiers sont en cours de transfert.',
