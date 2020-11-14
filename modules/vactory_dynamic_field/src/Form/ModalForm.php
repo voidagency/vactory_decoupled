@@ -244,6 +244,10 @@ class ModalForm extends FormBase {
           ];
 
           foreach ($field as $field_key => $field_info) {
+            if ($field_key == 'g_title') {
+              continue;
+            }
+
             $element_type = $field_info['type'];
             $element_label = t('@field_label', ['@field_label' => $field_info['label']]);
             $element_default_value = (isset($this->widgetData['extra_field'][$field_id][$field_key])) ? $this->widgetData['extra_field'][$field_id][$field_key] : NULL;
