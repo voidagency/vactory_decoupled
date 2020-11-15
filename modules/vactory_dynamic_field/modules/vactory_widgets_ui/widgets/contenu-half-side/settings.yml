@@ -3,6 +3,14 @@ multiple: false
 category: 'Content'
 enabled: TRUE
 fields:
+  group_options:
+    g_title: "Options"
+    inversed:
+      type: checkbox
+      label: 'inverse template'
+    centercontent:
+      type: checkbox
+      label: "Centrer le contenu"
   title:
     type: text
     label: 'Titre'
@@ -12,14 +20,6 @@ fields:
   link:
     type: url_extended
     label: "Lien"
-  group_options:
-    g_title: "Options"
-    inversed:
-      type: checkbox
-      label: 'inverse template'
-    centercontent:
-      type: checkbox
-      label: "Centrer le contenu"
 
 
 

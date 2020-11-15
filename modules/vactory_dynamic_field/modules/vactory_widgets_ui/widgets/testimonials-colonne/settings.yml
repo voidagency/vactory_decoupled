@@ -1,4 +1,4 @@
-name: "Contenu en colonne encadré"
+name: "Testimonials en colonnes"
 multiple: TRUE
 category: 'Content'
 enabled: TRUE
@@ -13,10 +13,9 @@ extra_fields:
         '#options':
           - '2': '2'
           - '3': '3'
-          - '4': '4'
-    centercontent:
+    inversed:
       type: checkbox
-      label: "Centrer le contenu"
+      label: "Inversed template"
   bigTitle:
     type: text
     label: 'Big title'
@@ -24,23 +23,23 @@ extra_fields:
     type: textarea
     label: "Introduction"
 fields:
-  pictoImg:
+  imageUrl:
     type: image
     label: "image"
-  pictoImg_alt:
+  image_alt:
     type: "text"
     label: "text alternative de l'image"
-  title:
+  name:
     type: text
-    label: "Titre"
+    label: "Nom complet"
+  role:
+    type: text
+    label: "Rôle"
   description:
     type: text_format
     label: "Description"
     options:
       '#format': full_html
-  link:
-    type: url_extended
-    label: "Lien"
 
 
 

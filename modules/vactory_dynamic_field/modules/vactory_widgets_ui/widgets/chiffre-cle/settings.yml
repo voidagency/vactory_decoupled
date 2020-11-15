@@ -3,12 +3,6 @@ multiple: TRUE
 category: 'Content'
 enabled: TRUE
 extra_fields:
-  bigTitle:
-    type: text
-    label: 'Big title'
-  intro:
-    type: textarea
-    label: "Introduction"
   group_options:
     g_title: "Options"
     colCount:
@@ -20,6 +14,12 @@ extra_fields:
           - '2': '2'
           - '3': '3'
           - '4': '4'
+  bigTitle:
+    type: text
+    label: 'Big title'
+  intro:
+    type: textarea
+    label: "Introduction"
 fields:
   number:
     type: text

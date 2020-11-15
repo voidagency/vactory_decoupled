@@ -1,0 +1,1035 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ac76f0cf-ff6a-43fa-88dd-a3fcca4fa93a
+  bundle: vactory_page
+  default_langcode: fr
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: "Décrivez brièvement les modifications apportées.\r\n"
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Widgets ui demo'
+  created:
+    -
+      value: 1603875365
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  metatag_normalized:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: 'Widgets ui demo | Vactory'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/fr/widgets-ui-demo'
+  path:
+    -
+      alias: /widgets-ui-demo
+      langcode: fr
+      pathauto: 1
+  node_banner_disabled:
+    -
+      value: false
+  node_summary:
+    -
+      value: 'the page demo contains listing of all widgets of module Vactory Widgets UI'
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  comment:
+    -
+      status: 0
+      cid: 0
+      last_comment_timestamp: 1603879831
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_exclude_from_search:
+    -
+      value: false
+  field_vactory_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5f776273-3833-4a94-9953-4f1ea141aba6
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603875485
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-inline'
+              widget_data: '[{"group_options":{"activeBorder":0,"activeBorderImage":0,"inversed":0,"colCount":"4"},"imgUrl":{"f713b315fc1a315b19ba7750676152f7":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"image alt of contenu en inline","title":"Contenu en inline","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit dui, vitae aliquet habitasse mauris parturient nisi turpis dis nisl, ad sociis fringilla massa tortor natoque risus. Aliquam vel nulla tempor etiam blandit congue placerat, nisl<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Contenu en inline'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2cbdc6cf-873c-4d35-b540-e26170c65690
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604940808
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-inline'
+              widget_data: '[{"group_options":{"activeBorder":1,"activeBorderImage":0,"inversed":1,"colCount":"3"},"imgUrl":{"f713b315fc1a315b19ba7750676152f7":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"image alt of contenu en inline","title":"Contenu en inline","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit dui, vitae aliquet habitasse mauris parturient nisi turpis dis nisl, ad sociis fringilla massa tortor natoque risus. Aliquam vel nulla tempor etiam blandit congue placerat, nisl<\/p>\r\n","format":"full_html"},"link":{"title":"Lire la suite","url":"\/node\/27","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Contenu en inline V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7196ca6f-0035-47d3-8a03-fdb1d7addbbb
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603875743
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-colonne-image'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3","centercontent":0,"activeBorder":0},"bigTitle":"Contenu en colonne avec image","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit placerat, mollis libero porttitor venenatis tempus praesent nam sollicitudin, sociis hendrerit fusce aptent fames enim netus. Dictumst varius maecenas montes condimentum commodo aenean, pharetra ridiculus dignissim elementum tristique tincidunt orci, vehicula dis accumsan quisque nascetur. Donec blandit quis justo lacus erat vehicula tortor, curabitur habitasse lobortis aenean mauris enim risus, nostra maecenas ullamcorper rutrum commodo eu."},"0":{"pictoImg":{"f390c33320731fa81dc0a9843c8c05b1":{"selection":[{"remove_button":"Retirer","target_id":"6","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"First Lorem ipsum dolor.","description":{"value":"<p>First Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis hendrerit porta libero taciti suscipit, non ad pretium sagittis aliquam quis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"pictoImg":{"fe5caad80f68e3abdc4814626ba065ad":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"Second Lorem ipsum dolor.","description":{"value":"<p>Second Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis hendrerit porta libero taciti suscipit, non ad pretium sagittis aliquam quis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"},"2":{"pictoImg":{"f4f53acebd5fa46ef203506cdc6053eb":{"selection":[{"remove_button":"Retirer","target_id":"5","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"Third Lorem ipsum dolor.","description":{"value":"<p>Third Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis hendrerit porta libero taciti suscipit, non ad pretium sagittis aliquam quis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"3"},"3":{"pictoImg":{"ff95d0e102991b02a7d98ba78ad71ff7":{"selection":[{"remove_button":"Retirer","target_id":"4","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"Foorth Lorem ipsum dolor.","description":{"value":"<p>Foorth Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis hendrerit porta libero taciti suscipit, non ad pretium sagittis aliquam quis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"4"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu en colonne avec image'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0a18f58a-ea1d-4d94-a737-69615ea50bcc
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604940953
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-colonne-image'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","centercontent":1,"activeBorder":1},"bigTitle":"Contenu en colonne avec image V2","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit placerat, mollis libero porttitor venenatis tempus praesent nam sollicitudin, sociis hendrerit fusce aptent fames enim netus. Dictumst varius maecenas montes condimentum commodo aenean, pharetra ridiculus dignissim elementum tristique tincidunt orci, vehicula dis accumsan quisque nascetur. Donec blandit quis justo lacus erat vehicula tortor, curabitur habitasse lobortis aenean mauris enim risus, nostra maecenas ullamcorper rutrum commodo eu."},"0":{"pictoImg":{"f390c33320731fa81dc0a9843c8c05b1":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"First Lorem ipsum dolor.","description":{"value":"<p>First Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis hendrerit porta libero taciti suscipit, non ad pretium sagittis aliquam quis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"pictoImg":{"fe5caad80f68e3abdc4814626ba065ad":{"selection":[{"remove_button":"Retirer","target_id":"8","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"Second Lorem ipsum dolor.","description":{"value":"<p>Second Lorem ipsum dolor sit amet consectetur adipiscing elit, mollis hendrerit porta libero taciti suscipit, non ad pretium sagittis aliquam quis.<\/p>\r\n","format":"full_html"},"link":{"title":"","url":"","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu en colonne avec image V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d0187c68-6053-408f-8026-ef637816ff2b
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603876565
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:chiffre-cle'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3"},"bigTitle":"Chiffre cl\u00e9","intro":"introduction Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, condimentum cum leo nec mollis augue ornare turpis, cursus rutrum orci himenaeos nullam primis vivamus."},"0":{"number":"100","word_before":"N\u00b0","word_after":"","description":"First Lorem ipsum dolor.","_weight":"1"},"1":{"number":"93","word_before":"","word_after":"%","description":"Second","_weight":"2"},"2":{"number":"18","word_before":"","word_after":"","description":"Third Lorem ipsum dolor.","_weight":"3"},"3":{"number":"984","word_before":"","word_after":"","description":"Lorem ipsum dolor","_weight":"4"}}'
+          field_vactory_title:
+            -
+              value: 'Chiffre clé'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2932cdb2-46d7-440d-b0d3-b240a647a51e
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603876706
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-colonne-picto'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","centercontent":1},"bigTitle":"Contenu en colonne avec picto","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit velit ante, venenatis class urna blandit non dictum rutrum facilisi metus, ut diam arcu vitae penatibus a felis consequat."},"0":{"pictoImg":{"fa5dbb607ff05075b9451d01a9f1584b":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"First Lorem ipsum.","description":{"value":"<p>First&nbsp;Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ligula mi etiam, porta imperdiet laoreet nec bibendum natoque ornare montes felis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"pictoImg":{"fd086553a526901918bc9a7267e8e704":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"second Lorem ipsum.","title":"second Lorem ipsum.","description":{"value":"<p>Second Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ligula mi etiam, porta imperdiet laoreet nec bibendum natoque ornare montes felis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"},"2":{"pictoImg":{"fe1ea4f29df39b300213cb4620136c5e":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"image alt","title":"Third Lorem ipsum.","description":{"value":"<p>Third Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ligula mi etiam, porta imperdiet laoreet nec bibendum natoque ornare montes felis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"3"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu en colonne avec picto'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4de07be8-a498-4586-8dcd-6815d0dae2a7
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604941176
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-colonne-picto'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3","centercontent":0},"bigTitle":"Contenu en colonne avec picto V2","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit velit ante, venenatis class urna blandit non dictum rutrum facilisi metus, ut diam arcu vitae penatibus a felis consequat."},"0":{"pictoImg":{"fa5dbb607ff05075b9451d01a9f1584b":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"First Lorem ipsum.","description":{"value":"<p>First&nbsp;Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ligula mi etiam, porta imperdiet laoreet nec bibendum natoque ornare montes felis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"pictoImg":{"fd086553a526901918bc9a7267e8e704":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"second Lorem ipsum.","title":"second Lorem ipsum.","description":{"value":"<p>Second Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ligula mi etiam, porta imperdiet laoreet nec bibendum natoque ornare montes felis.<\/p>\r\n","format":"full_html"},"link":{"title":"Lire la suite","url":"\/node\/3","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu en colonne avec picto V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f2e9b701-8db1-4b68-b2f2-21dbb96def22
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603877602
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-picto-inline'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","centercontent":1},"bigTitle":"contenu avec picto en inline","intro":"Introduction Lorem ipsum dolor sit amet consectetur adipiscing elit parturient, facilisi sagittis vitae scelerisque curabitur tempus taciti aptent placerat, odio magnis metus convallis elementum primis dignissim."},"0":{"imgUrl":{"f5b54c213e56b222a6329c060579da00":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"first Lorem ipsum dolor.","description":{"value":"<p>First&nbsp;Lorem ipsum dolor sit amet consectetur, adipiscing elit magna facilisis gravida, proin nostra egestas ultrices.<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"imgUrl":{"f8dddc33475e5b1b107c0f6dea98ff71":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Second Lorem ipsum dolor.","title":"Second Lorem ipsum dolor.","description":{"value":"<p>Second Lorem ipsum dolor sit amet consectetur, adipiscing elit magna facilisis gravida, proin nostra egestas ultrices.<\/p>\r\n","format":"full_html"},"_weight":"2"},"2":{"imgUrl":{"fb9c1909380435982cfdc6ecf29d219e":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"third Lorem ipsum","title":"Third Lorem ipsum","description":{"value":"<p>Third Lorem ipsum dolor sit amet consectetur, adipiscing elit magna facilisis gravida, proin nostra egestas ultrices.<\/p>\r\n","format":"full_html"},"_weight":"3"},"3":{"imgUrl":{"f8b24b7c5e523fa9086ebd960f352e17":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Foorth Lorem ipsum","title":"Foorth Lorem ipsum","description":{"value":"<p>Foorth Lorem ipsum dolor sit amet consectetur, adipiscing elit magna facilisis gravida, proin nostra egestas ultrices.<\/p>\r\n","format":"full_html"},"_weight":"4"}}'
+          field_vactory_title:
+            -
+              value: 'contenu avec picto en inline'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ef7aa793-8c10-45e2-818d-3b11360d1942
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603877856
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:video-youtube'
+              widget_data: '[{"group_options":{"isPopUp":0,"hideImage":0},"image":{"fd524e169b03f264056de300f1d79168":{"selection":[{"remove_button":"Retirer","target_id":"19","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","videoId":"iVeKFdnANa8","description":{"value":"<p>Video youtube Lorem ipsum dolor sit amet consectetur adipiscing elit ante, aliquam vivamus sociis hac massa fusce habitasse, phasellus dapibus condimentum integer lectus augue vehicula. Arcu suspendisse magna torquent bibendum leo pellentesque, mollis feugiat viverra nec. Nascetur erat praesent congue donec ac, cum lacinia placerat nam tempus libero, rutrum sociosqu lobortis etiam.<\/p>\r\n","format":"full_html"}}]'
+          field_vactory_title:
+            -
+              value: 'Video youtube'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 39a8085d-a15d-4b4d-a0f0-9d471b1b4f9f
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604941857
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:video-youtube'
+              widget_data: '[{"group_options":{"isPopUp":1,"hideImage":0},"image":{"fd524e169b03f264056de300f1d79168":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","videoId":"iVeKFdnANa8","description":{"value":"<p>Video youtube onPopUp Lorem ipsum dolor sit amet consectetur adipiscing elit ante, aliquam vivamus sociis hac massa fusce habitasse, phasellus dapibus condimentum integer lectus augue vehicula. Arcu suspendisse magna torquent bibendum leo pellentesque, mollis feugiat viverra nec. Nascetur erat praesent congue donec ac, cum lacinia placerat nam tempus libero, rutrum sociosqu lobortis etiam.&nbsp;Video youtube Lorem ipsum dolor sit amet consectetur adipiscing elit ante, aliquam vivamus sociis hac massa fusce habitasse, phasellus dapibus condimentum integer lectus augue vehicula. Arcu suspendisse magna torquent bibendum leo pellentesque, mollis feugiat viverra nec. Nascetur erat praesent congue donec ac, cum lacinia placerat nam tempus libero, rutrum sociosqu lobortis etiam.<\/p>\r\n","format":"full_html"}}]'
+          field_vactory_title:
+            -
+              value: 'Video youtube on popup'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f71d61d8-931f-47dd-ba28-a656c0f6ac63
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604941962
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:video-youtube'
+              widget_data: '[{"group_options":{"isPopUp":0,"hideImage":1},"image":{"fd524e169b03f264056de300f1d79168":{"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"","videoId":"BZDyr2OpWBU","description":{"value":"<p>Video youtube on load Lorem ipsum dolor sit amet consectetur adipiscing elit ante, aliquam vivamus sociis hac massa fusce habitasse, phasellus dapibus condimentum integer lectus augue vehicula. Arcu suspendisse magna torquent bibendum leo pellentesque, mollis feugiat viverra nec. Nascetur erat praesent congue donec ac, cum lacinia placerat nam tempus libero, rutrum sociosqu lobortis etiam.&nbsp;Video youtube Lorem ipsum dolor sit amet consectetur adipiscing elit ante, aliquam vivamus sociis hac massa fusce habitasse, phasellus dapibus condimentum integer lectus augue vehicula. Arcu suspendisse magna torquent bibendum leo pellentesque, mollis feugiat viverra nec. Nascetur erat praesent congue donec ac, cum lacinia placerat nam tempus libero, rutrum sociosqu lobortis etiam.<\/p>\r\n","format":"full_html"}}]'
+          field_vactory_title:
+            -
+              value: 'Video Youtube on load'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c2e6f50a-f320-4bb0-b1b1-2bed78717d53
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603877959
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-mosaique'
+              widget_data: '{"extra_field":{"group_options":{"centercontent":0,"activeBorder":0},"bigTitle":"Contenu avec image en mosaique","intro":"Intro Lorem ipsum dolor sit amet consectetur, adipiscing elit rutrum aliquet curabitur, vivamus facilisis interdum nisi. Suspendisse commodo placerat gravida potenti est penatibus lobortis venenatis velit justo, libero cursus semper at faucibus lacinia torquent maecenas ultricies. Dui dictum scelerisque dapibus metus magnis, luctus pulvinar duis aptent litora, integer ullamcorper sociis taciti."},"0":{"imgUrl":{"fec22d056eaa4966bb2ca60130bd3364":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Rodmap","title":"Roadmap board","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit, tortor commodo fermentum nullam posuere non montes nunc vitae, eleifend semper etiam luctus mollis aenean mattis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"imgUrl":{"fb9a76328e5137af5ece7adf1616f50d":{"selection":[{"remove_button":"Retirer","target_id":"6","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Programming on mac","title":"Programming Drupal","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit, tortor commodo fermentum nullam posuere non montes nunc vitae, eleifend semper etiam luctus mollis aenean mattis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"},"2":{"imgUrl":{"f71105782d6416899be5e7182b00fa9f":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Factory Meeting ","title":"Factory Meeting ","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit, tortor commodo fermentum nullam posuere non montes nunc vitae, eleifend semper etiam luctus mollis aenean mattis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"3"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu avec image en mosaique'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4c4626a5-a225-4638-b98a-ed266a7d3aa9
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604942066
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-mosaique'
+              widget_data: '{"extra_field":{"group_options":{"centercontent":1,"activeBorder":1},"bigTitle":"Contenu avec image en mosaique V2","intro":"Intro Lorem ipsum dolor sit amet consectetur, adipiscing elit rutrum aliquet curabitur, vivamus facilisis interdum nisi. Suspendisse commodo placerat gravida potenti est penatibus lobortis venenatis velit justo, libero cursus semper at faucibus lacinia torquent maecenas ultricies. Dui dictum scelerisque dapibus metus magnis, luctus pulvinar duis aptent litora, integer ullamcorper sociis taciti."},"0":{"imgUrl":{"fec22d056eaa4966bb2ca60130bd3364":{"selection":[{"remove_button":"Retirer","target_id":"6","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Rodmap","title":"Roadmap board","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit, tortor commodo fermentum nullam posuere non montes nunc vitae, eleifend semper etiam luctus mollis aenean mattis.<\/p>\r\n","format":"full_html"},"link":{"title":"Lire la suite","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"imgUrl":{"fb9a76328e5137af5ece7adf1616f50d":{"selection":[{"remove_button":"Retirer","target_id":"3","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Programming Drupal","title":"Programming on Drupal","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit, tortor commodo fermentum nullam posuere non montes nunc vitae, eleifend semper etiam luctus mollis aenean mattis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu avec image en mosaique V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: c0aa86d1-1a03-41b3-bc07-e26bf81c4344
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603878186
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-colonne-encadre'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3","centercontent":1},"bigTitle":"Contenu en colonne encadr\u00e9","intro":"Intro Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit neque accumsan non semper vivamus, placerat hac iaculis arcu aenean leo fusce eros fermentum mollis augue."},"0":{"pictoImg":{"f1b66fec3c5497986f3a39507209c686":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Lorem ipsum dolor.","title":"First picto Encadre","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, aliquam fusce dignissim quisque erat pretium nullam torquent, semper diam mauris felis maecenas elementum.<\/p>\r\n","format":"full_html"},"link":{"title":"Tout atributes","url":"\/node\/1","attributes":{"class":"url-extended-class","id":"url_extended_id","target":"_blank","rel":"url_extended_rel"}},"_weight":"1"},"1":{"pictoImg":{"f80147868b897882c7efe7dd6bbfb6c3":{"selection":[{"remove_button":"Retirer","target_id":"21","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"the second title","title":"Second picto Encadre","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, aliquam fusce dignissim quisque erat pretium nullam torquent, semper diam mauris felis maecenas elementum.<\/p>\r\n","format":"full_html"},"link":{"title":"Lire plus","url":"\/node\/3","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Contenu en colonne encadré'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a103fe71-0316-4c74-82f0-ea2701747443
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603879181
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          paragraph_background_color:
+            -
+              value: red
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-half-side'
+              widget_data: '[{"group_options":{"inversed":0,"centercontent":0},"title":"Contenu en half gauche\/Droite","description":"Lorem ipsum dolor sit amet consectetur adipiscing elit nisi, per eget odio parturient class curabitur dictumst placerat, feugiat donec habitasse lectus habitant morbi malesuada.","link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Contenu en half gauche/Droite'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 22116472-2d2b-4184-bc0d-e878acaa8025
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604942481
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          paragraph_background_color:
+            -
+              value: blue
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-half-side'
+              widget_data: '[{"group_options":{"inversed":1,"centercontent":1},"title":"Contenu en half gauche\/Droite V2","description":"Lorem ipsum dolor sit amet consectetur adipiscing elit nisi, per eget odio parturient class curabitur dictumst placerat, feugiat donec habitasse lectus habitant morbi malesuada.","link":{"title":"Lire la suite","url":"\/","attributes":{"class":"","id":"","target":"_blank","rel":""}}}]'
+          field_vactory_title:
+            -
+              value: 'Contenu en half gauche/Droite V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: ad752b4a-6d14-44a7-9c6e-2e1f1a76580a
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603879276
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-inline-rows'
+              widget_data: '{"extra_field":{"group_options":{"inversed":0},"bigTitle":"contenu en rows avec image, description et lien","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis litora ad tempor nam, justo ultricies eget congue interdum praesent dictum est fusce velit purus."},"0":{"pictoImg":{"f0e3b984522d22f0d68860c26d8448df":{"selection":[{"remove_button":"Retirer","target_id":"22","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Pair programming","title":"Pair programming","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit cras tortor at himenaeos, torquent lobortis malesuada leo sagittis. Vestibulum sed etiam lacinia inceptos senectus magnis id, molestie fringilla luctus praesent maecenas quisque vivamus, platea diam mollis augue arcu in. Sociis natoque semper rhoncus urna, blandit iaculis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"pictoImg":{"f6b87cb51727266cef9f6e8d829ab066":{"selection":[{"remove_button":"Retirer","target_id":"23","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"programming teams","title":"programming teams","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit cras tortor at himenaeos, torquent lobortis malesuada leo sagittis. Vestibulum sed etiam lacinia inceptos senectus magnis id, molestie fringilla luctus praesent maecenas quisque vivamus, platea diam mollis augue arcu in. Sociis natoque semper rhoncus urna, blandit iaculis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'contenu en rows avec image, description et lien'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4652e069-7b79-409c-b6a0-abbe1611f553
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604942589
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-inline-rows'
+              widget_data: '{"extra_field":{"group_options":{"inversed":1},"bigTitle":"contenu en rows avec image, description et lien V2","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis litora ad tempor nam, justo ultricies eget congue interdum praesent dictum est fusce velit purus."},"0":{"pictoImg":{"f0e3b984522d22f0d68860c26d8448df":{"selection":[{"remove_button":"Retirer","target_id":"23","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"Pair programming","title":"Pair programming","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit cras tortor at himenaeos, torquent lobortis malesuada leo sagittis. Vestibulum sed etiam lacinia inceptos senectus magnis id, molestie fringilla luctus praesent maecenas quisque vivamus, platea diam mollis augue arcu in. Sociis natoque semper rhoncus urna, blandit iaculis.<\/p>\r\n","format":"full_html"},"link":{"title":"Lire la suite","url":"\/","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"pictoImg":{"f6b87cb51727266cef9f6e8d829ab066":{"selection":[{"remove_button":"Retirer","target_id":"23","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"pictoImg_alt":"programming teams","title":"programming teams","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing, elit cras tortor at himenaeos, torquent lobortis malesuada leo sagittis. Vestibulum sed etiam lacinia inceptos senectus magnis id, molestie fringilla luctus praesent maecenas quisque vivamus, platea diam mollis augue arcu in. Sociis natoque semper rhoncus urna, blandit iaculis.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/3","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'contenu en rows avec image, description et lien V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b9113e2c-5310-45bd-8939-ad737ed2ea0e
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1603879504
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:contenu-libre'
+              widget_data: '[{"content":{"value":"<h2 class=\"text-align-center\">Contenu libre<\/h2>\r\n\r\n<h2>This is heading 2 normal<\/h2>\r\n\r\n<h2><em>this is the heading 2 italic<\/em><\/h2>\r\n\r\n<h2><u>this is the heading 2 underline<\/u><\/h2>\r\n\r\n<h2><s><em>this is the heading 2 line thought<\/em><\/s><\/h2>\r\n\r\n<h2 class=\"text-align-center\">this is the heading 2 center<\/h2>\r\n\r\n<h2 class=\"text-align-right\">this is the heading 2 text right<\/h2>\r\n\r\n<p class=\"text-align-center\">Text center this is text&nbsp;Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<h3>this is the heading 3<\/h3>\r\n\r\n<p>text left this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p class=\"text-align-justify\">text left this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p class=\"text-align-right\">text right&nbsp;this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/p>\r\n\r\n<p><em>text left italic this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/em><\/p>\r\n\r\n<p><s>text left line tought this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/s><\/p>\r\n\r\n<p><u>text left underlline&nbsp;this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/u><\/p>\r\n\r\n<p><strong>text left Bold this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/strong><\/p>\r\n\r\n<p><s><u><em><strong>text left Bold line tought line underline italic this is the textLorem ipsum dolor sit amet consectetur adipiscing elit dictumst nunc viverra, tempor eleifend ornare mus tortor nibh eget venenatis velit, rutrum facilisis etiam inceptos dapibus vehicula per tincidunt eu. Lobortis commodo proin blandit, habitant mollis.<\/strong><\/em><\/u><\/s><\/p>\r\n\r\n<p><a class=\"primary\" href=\"\/node\/1\">this is link<\/a><\/p>\r\n","format":"full_html"}}]'
+          field_vactory_title:
+            -
+              value: 'Contenu libre'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: af109c8d-0f6e-4f0e-8437-e55dc0800e3b
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604327735
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:teams-colonnes'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3","image_cyrcle":1},"bigTitle":"Teams en colonne","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit primis nam, sodales ad velit dictumst urna est penatibus vulputate feugiat libero, posuere fames orci torquent habitasse aptent per interdum. Mus justo hac augue sed, dignissim at."},"0":{"imageUrl":{"fa77591c9a29e3ff3ad76740ee0e5a63":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Mustapha Boukali","role":"Developpeur Front End","description":"Lorem ipsum dolor sit amet","_weight":"1"},"1":{"imageUrl":{"fdd636db3413ed15581c2282e01028d1":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams2","name":"Firstname Lastname","role":"Cadre at agency","description":"Lorem ipsum dolor sit amet","_weight":"2"},"2":{"imageUrl":{"fef25353aeb4606cf744bd7e5909263b":{"selection":[{"remove_button":"Retirer","target_id":"18","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams3","name":"Pr\u00e9nom Nom","role":"President de societ\u00e9","description":"Lorem ipsum dolor sit amet","_weight":"3"}}'
+          field_vactory_title:
+            -
+              value: 'Teams en colonnes'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b89f2c53-52da-4e20-98cd-37b8409f765d
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604942818
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:teams-colonnes'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"3","image_cyrcle":0},"bigTitle":"Teams en colonne V2","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit primis nam, sodales ad velit dictumst urna est penatibus vulputate feugiat libero, posuere fames orci torquent habitasse aptent per interdum. Mus justo hac augue sed, dignissim at."},"0":{"imageUrl":{"fa77591c9a29e3ff3ad76740ee0e5a63":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Mustapha Boukali","role":"Developpeur Front End","description":"Lorem ipsum dolor sit amet","_weight":"1"},"1":{"imageUrl":{"fdd636db3413ed15581c2282e01028d1":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"Firstname Lastname","name":"Firstname Lastname","role":"Cadre at agency","description":"Lorem ipsum dolor sit amet","_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Teams en colonnes V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 4fadaa9b-8d85-4b39-a8a0-3a5b81517b57
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604333226
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:teams-colonnes-inline'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","activeBorder":0},"bigTitle":"Teams en colonnes en inline","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit urna ac phasellus convallis, inceptos purus dictumst nibh conubia vehicula primis libero lobortis turpis. Dignissim ultricies fermentum felis taciti at sollicitudin nunc, leo consequat tempus integer in."},"0":{"imageUrl":{"fae91a49d9002a4a8dfd78f595cd555c":{"selection":[{"remove_button":"Retirer","target_id":"8","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Mustapha boukali","role":"Developpeur Front End","description":"Developpeur Front End chez void Agency","_weight":"1"},"1":{"imageUrl":{"fc06155a34531adf4e5fcf34981ce8d7":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt 3","name":"FirstName LastName","role":"The R\u00f4le ","description":"Lorem ipsum dolor","_weight":"2"},"2":{"imageUrl":{"f52cf80d35889fbae72e67ec8faec605":{"selection":[{"remove_button":"Retirer","target_id":"19","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt 3","name":"Nom Pr\u00e9nom","role":"The CEO Factory","description":"Lorem ipsum dolor","_weight":"3"}}'
+          field_vactory_title:
+            -
+              value: 'Teams en colonnes en inline'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1c249772-ea7a-4ea6-82bd-0759ec817752
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604942974
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:teams-colonnes-inline'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","activeBorder":1},"bigTitle":"Teams en colonnes en inline V2","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit urna ac phasellus convallis, inceptos purus dictumst nibh conubia vehicula primis libero lobortis turpis. Dignissim ultricies fermentum felis taciti at sollicitudin nunc, leo consequat tempus integer in."},"0":{"imageUrl":{"fae91a49d9002a4a8dfd78f595cd555c":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Mustapha boukali","role":"Developpeur Front End","description":"Developpeur Front End chez void Agency","_weight":"1"},"1":{"imageUrl":{"fc06155a34531adf4e5fcf34981ce8d7":{"selection":[{"remove_button":"Retirer","target_id":"4","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"FirstName LastName","name":"FirstName LastName","role":"The R\u00f4le ","description":"Lorem ipsum dolor","_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Teams en colonnes en inline V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: d9584aea-684f-4c3b-ad90-a9d486083ec8
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604943111
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:testimonials-colonne'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","inversed":1},"bigTitle":"Testimonials en colonnes V2","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla, id nisl placerat taciti porta sociosqu duis nunc magna, inceptos vestibulum rutrum aenean at in leo."},"0":{"imageUrl":{"f5ad0de3e0dda1936a701c8e105772b6":{"selection":[{"remove_button":"Retirer","target_id":"11","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"Steve jobs","name":"Steve jobs","role":"CEO Apple","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"imageUrl":{"fb67f3443454cfb4a5df2b44e2fc2896":{"selection":[{"remove_button":"Retirer","target_id":"4","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"Elon Mask","name":"Elon Mask","role":"CEO x-space","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Testimonials en colonnes V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7021693e-4c2e-47a1-a184-3140604055d7
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604915616
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:testimonials-colonne'
+              widget_data: '{"extra_field":{"group_options":{"colCount":"2","inversed":0},"bigTitle":"Testimonials en colonnes","intro":"Lorem ipsum dolor sit amet consectetur adipiscing elit fringilla, id nisl placerat taciti porta sociosqu duis nunc magna, inceptos vestibulum rutrum aenean at in leo."},"0":{"imageUrl":{"f5ad0de3e0dda1936a701c8e105772b6":{"selection":[{"remove_button":"Retirer","target_id":"9","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","name":"Steve jobs","role":"CEO Apple","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"imageUrl":{"fb67f3443454cfb4a5df2b44e2fc2896":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","name":"Elon Mask","role":"CEO x-space","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Testimonials en colonnes'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 83b8fd09-878c-479d-be0f-c55f4381d6db
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604915814
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:testimonials-inline'
+              widget_data: '{"extra_field":{"group_options":{"inversed":0},"bigTitle":"Testimonials en inline","intro":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!\r\n\r\n"},"0":{"imageUrl":{"fbafe5a73f20cb025d558673ccf9dc3c":{"selection":[{"remove_button":"Retirer","target_id":"8","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","name":"Steve jobs","role":"CEO Apple","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"1"},"1":{"imageUrl":{"f702b26f72c074f235f0f61dda02c1be":{"selection":[{"remove_button":"Retirer","target_id":"3","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","name":"Mehdi Najeddine","role":"CEO VOID","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Testimonials en inline'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5ba3521e-42a7-4966-a379-09c359630e04
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604943279
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: narrow_width
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:testimonials-inline'
+              widget_data: '{"extra_field":{"group_options":{"inversed":1},"bigTitle":"Testimonials en inline V2","intro":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!\r\n"},"0":{"imageUrl":{"fbafe5a73f20cb025d558673ccf9dc3c":{"selection":[{"remove_button":"Retirer","target_id":"18","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"Steve jobs","name":"Steve jobs","role":"CEO Apple","description":{"value":"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at corporis, culpa dignissimos error explicabo incidunt inventore ipsa ipsum laborum maiores molestiae nihil nostrum possimus quaerat quia recusandae totam voluptatum!<\/p>\r\n","format":"full_html"},"_weight":"1"}}'
+          field_vactory_title:
+            -
+              value: 'Testimonials en inline V2'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 62b5dc7d-9a4c-433c-9188-fac4a58a92e8
+          bundle: vactory_component
+          default_langcode: fr
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1604915928
+          behavior_settings:
+            -
+              value: {  }
+          paragraph_container:
+            -
+              value: no_container
+          content_translation_source:
+            -
+              value: und
+          content_translation_outdated:
+            -
+              value: false
+          field_vactory_component:
+            -
+              widget_id: 'vactory_widgets_ui:full-background-slider'
+              widget_data: '{"extra_field":{"bigTitle":"","intro":""},"0":{"imageUrl":{"f6d62d04cb2c8e000e621102d5fb90bb":{"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt teams 1","videoId":"BZDyr2OpWBU","videoBackground":1,"title":"This is the title","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nec praesent nostra auctor blandit habitasse varius, orci purus hac convallis habitant posuere.<\/p>\r\n","format":"full_html"},"link":{"title":"En savoir plus","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"1"},"1":{"imageUrl":{"f16543a26fef6350f54b39d2cf0701d9":{"selection":[{"remove_button":"Retirer","target_id":"10","weight":"0"}],"open_button":"Ajouter un m\u00e9dia","media_library_selection":"","media_library_update_widget":"Mettre \u00e0 jour le widget"}},"image_alt":"image alt","videoId":"","videoBackground":0,"title":"Second Lorem ipsum dolor.","description":{"value":"<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, nec praesent nostra auctor blandit habitasse varius, orci purus hac convallis habitant posuere.<\/p>\r\n","format":"full_html"},"link":{"title":"Lire la suite","url":"\/node\/1","attributes":{"class":"","id":"","target":"_blank","rel":""}},"_weight":"2"}}'
+          field_vactory_title:
+            -
+              value: 'Full background slider'
