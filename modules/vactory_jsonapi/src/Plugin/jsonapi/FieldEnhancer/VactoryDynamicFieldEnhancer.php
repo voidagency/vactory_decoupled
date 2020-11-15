@@ -193,13 +193,19 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
           if (isset($value[$key]['selection'])) {
             foreach ($value[$key]['selection'] as $media) {
               $file = Media::load($media['target_id']);
-              $uri = $file->thumbnail->entity->getFileUri();
-              $image_item['_default'] = file_create_url($uri);
-              $image_item['_lqip'] = $this->imageStyles['lqip']->buildUrl($uri);
-              $image_item['uri'] = file_uri_target($uri);
-              $image_item['fid'] = $file->thumbnail->entity->fid->value;
-              $image_item['file_name'] = $file->label();
-              $image_item['base_url'] = $image_app_base_url;
+              if ($file) {
+                $uri = $file->thumbnail->entity->getFileUri();
+                $image_item['_default'] = file_create_url($uri);
+                $image_item['_lqip'] = $this->imageStyles['lqip']->buildUrl($uri);
+                $image_item['uri'] = file_uri_target($uri);
+                $image_item['fid'] = $file->thumbnail->entity->fid->value;
+                $image_item['file_name'] = $file->label();
+                $image_item['base_url'] = $image_app_base_url;
+              }
+              else {
+                $image_item['_error'] = 'Media file ID: ' . $media['target_id'] . ' Not Found';
+              }
+
               $image_data[] = $image_item;
             }
           }
