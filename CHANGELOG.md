@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.5 (2020-11-15)
+
+### Bug Fixes
+
+* **Dynamic Field:** Check for media file ([206a547](https://github.com/voidagency/vactory_decoupled/commit/206a5470cd17d4a883b914cb4068002c98100ed1))
+* **Core:** A feature revert on `vactory_core` should not override reCaptcha & SwiftMailer settings ([128d17c](https://github.com/voidagency/vactory_decoupled/commit/128d17c1772b03c734c083ee78e0a92d5aa90090))
+
+### New Features
+
+* **DF:** Dump data in `vactory_widgets_ui` templates for search index ([0c8675b](https://github.com/voidagency/vactory_decoupled/commit/0c8675b261bcb8793e8e6ae7e63c3f9de2b9d3e9))
+
 # 1.0.4 (2020-11-14)
 
 ### Upgrade
