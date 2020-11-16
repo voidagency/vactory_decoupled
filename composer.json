@@ -111,7 +111,7 @@
         "drupal/login_security": "^1.5",
         "drupal/mailchimp": "^1.11",
         "drupal/mailsystem": "^4.3",
-        "drupal/media_library_form_element": "2.0.0",
+        "drupal/media_library_form_element": "^2.0",
         "drupal/memcache": "^2.0",
         "drupal/memcache_storage": "^1.0@beta",
         "drupal/menu_item_extras": "^2.11",
