@@ -32,6 +32,9 @@ fields:
     use_breadcrumb:
       type: checkbox
       label: "Afficher Le fil d'Ariane"
+    use_as_title:
+      type: checkbox
+      label: "Afficher comme titre"
     description:
       type: text_format
       label: 'Description'
