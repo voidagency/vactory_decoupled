@@ -3,6 +3,7 @@
 namespace Drupal\vactory_webform\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Url;
 use Drupal\webform\Entity\Webform;
 use Drupal\webform\WebformInterface;
 use Drupal\webform\WebformSubmissionForm;
@@ -10,19 +11,21 @@ use Drupal\webform\WebformSubmissionInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
-class WebformController extends ControllerBase {
+class WebformController extends ControllerBase
+{
 
   /**
    * {@inheritdoc}
    */
-  public function index(Request $request) {
+  public function index(Request $request)
+  {
     $webform_data = $request->request->all();
 
     // Basic check for webform ID.
     if (empty($webform_data['webform_id'])) {
       return new JsonResponse([
         'error' => [
-          'code'    => '400',
+          'code' => '400',
           'message' => 'Missing webform id',
         ],
       ], 400);
@@ -48,14 +51,14 @@ class WebformController extends ControllerBase {
 
     // Convert to webform values format.
     $values = [
-      'in_draft'    => FALSE,
-      'uid'         => \Drupal::currentUser()->id(),
-      'uri'         => '/_webform/submit' . $webform_data['webform_id'],
+      'in_draft' => FALSE,
+      'uid' => \Drupal::currentUser()->id(),
+      'uri' => '/_webform/submit' . $webform_data['webform_id'],
       'entity_type' => $entity_type,
-      'entity_id'   => $entity_id,
+      'entity_id' => $entity_id,
       // Check if remote IP address should be stored.
       'remote_addr' => $webform->hasRemoteAddr() ? $request->getClientIp() : '',
-      'webform_id'  => $webform_data['webform_id'],
+      'webform_id' => $webform_data['webform_id'],
     ];
 
     $values['data'] = $webform_data;
@@ -83,11 +86,10 @@ class WebformController extends ControllerBase {
     // Check if submit was successful.
     if ($webform_submission instanceof WebformSubmissionInterface) {
       return new JsonResponse([
-        'sid'      => $webform_submission->id(),
+        'sid' => $webform_submission->id(),
         'settings' => self::getWhitelistedSettings($webform),
       ]);
-    }
-    else {
+    } else {
       // Return validation errors.
       return new JsonResponse([
         'error' => $webform_submission,
@@ -95,7 +97,8 @@ class WebformController extends ControllerBase {
     }
   }
 
-  static private function getWhitelistedSettings(WebformInterface $webform) {
+  static private function getWhitelistedSettings(WebformInterface $webform)
+  {
     $whitelist = [
       'confirmation_url',
       'confirmation_type',
@@ -103,8 +106,20 @@ class WebformController extends ControllerBase {
       'confirmation_title',
     ];
 
+    $settings = $webform->getSettings();
+    if (isset($settings['confirmation_url'])) {
+      $front_uri = \Drupal::config('system.site')->get('page.front');
+      if ($front_uri === $settings['confirmation_url']) {
+        $settings['confirmation_url'] = Url::fromRoute('<front>')->toString();
+      } else {
+        $settings['confirmation_url'] = Url::fromUserInput($settings['confirmation_url'])
+          ->toString();
+      }
+      $settings['confirmation_url'] = str_replace('/backend', '', $settings['confirmation_url']);
+    }
+
     return array_intersect_key(
-      $webform->getSettings(),
+      $settings,
       array_flip($whitelist)
     );
   }
