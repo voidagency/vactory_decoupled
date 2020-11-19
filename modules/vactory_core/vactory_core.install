@@ -6,11 +6,14 @@
  */
 
 use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
 
 /**
  * Add node_settings field.
  */
-function vactory_core_update_8001() {
+function vactory_core_update_8001()
+{
   $storage_definition = BaseFieldDefinition::create('string_long')
     ->setLabel(t('Node Settings'))
     ->setDescription(t('Add extra parameters in JSON Format : { "isHomePage": true, "taxonomy": 4, "limit": 6 }'))
@@ -19,8 +22,8 @@ function vactory_core_update_8001() {
     ->setDefaultValue('')
     ->setRequired(FALSE)
     ->setDisplayOptions('form', [
-      'type'     => 'string_textarea',
-      'weight'   => 1,
+      'type' => 'string_textarea',
+      'weight' => 1,
       'settings' => [
         'rows' => 4,
       ],
@@ -35,7 +38,8 @@ function vactory_core_update_8001() {
 /**
  * node_settings field should not be required.
  */
-function vactory_core_update_8002() {
+function vactory_core_update_8002()
+{
   $definition_manager = \Drupal::entityDefinitionUpdateManager();
   /** @var \Drupal\Core\Field\BaseFieldDefinition $storage_definition */
   $storage_definition = $definition_manager->getFieldStorageDefinition('node_settings', 'node');
@@ -43,4 +47,86 @@ function vactory_core_update_8002() {
     $storage_definition->setRequired(FALSE);
     \Drupal::entityDefinitionUpdateManager()->updateFieldStorageDefinition($storage_definition);
   }
+}
+
+/**
+ * Change field_paragraph_introduction type from string_long to text_long.
+ */
+function vactory_core_update_8003()
+{
+  $database = \Drupal::database();
+  $entityType = 'paragraph';
+  $fieldName = 'field_paragraph_introduction';
+  $table = $entityType . '__' . $fieldName;
+  $currentRows = NULL;
+  $newFieldsList = [];
+  $fieldStorage = FieldStorageConfig::loadByName($entityType, $fieldName);
+
+  if (is_null($fieldStorage)) {
+    return;
+  }
+
+  // Get all current data from DB.
+  if ($database->schema()->tableExists($table)) {
+    // The table data to restore after the update is completed.
+    $currentRows = $database->select($table, 'n')
+      ->fields('n')
+      ->execute()
+      ->fetchAll();
+  }
+
+  // Use existing field config for new field.
+  foreach ($fieldStorage->getBundles() as $bundle => $label) {
+    $field = FieldConfig::loadByName($entityType, $bundle, $fieldName);
+    $newField = $field->toArray();
+    $newField['field_type'] = 'text_long';
+    $newField['settings'] = [];
+    $newFieldsList[] = $newField;
+  }
+
+  // Deleting field storage which will also delete bundles(fields).
+  $newFieldStorage = $fieldStorage->toArray();
+  $newFieldStorage['type'] = 'text_long';
+  $newFieldStorage['settings'] = [];
+
+  $fieldStorage->delete();
+
+  // Purge field data now to allow new field and field_storage with same name
+  // to be created.
+  field_purge_batch(40);
+
+  // Create new field storage.
+  $newFieldStorage = FieldStorageConfig::create($newFieldStorage);
+  $newFieldStorage->save();
+
+  // Create new fields.
+  foreach ($newFieldsList as $nfield) {
+    $nfieldConfig = FieldConfig::create($nfield);
+    $nfieldConfig->save();
+  }
+
+  // Restore existing data in new table.
+  if (!is_null($currentRows)) {
+    foreach ($currentRows as $row) {
+      $database->insert($table)
+        ->fields((array)$row)
+        ->execute();
+    }
+  }
+}
+
+/**
+ * Change field_paragraph_introduction weight & display.
+ */
+function vactory_core_update_8004()
+{
+  /** @var \Drupal\Core\Entity\EntityDisplayRepositoryInterface $display_repository */
+  $display_repository = \Drupal::service('entity_display.repository');
+  $display_repository
+    ->getFormDisplay('paragraph', 'vactory_paragraph_multi_template')
+    ->setComponent('field_paragraph_introduction', [
+      'type' => 'text_textarea',
+      'weight' => 1
+    ])
+    ->save();
 }
