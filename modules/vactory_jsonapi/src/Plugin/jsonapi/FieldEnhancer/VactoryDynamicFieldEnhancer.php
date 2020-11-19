@@ -201,6 +201,7 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
                 $image_item['fid'] = $file->thumbnail->entity->fid->value;
                 $image_item['file_name'] = $file->label();
                 $image_item['base_url'] = $image_app_base_url;
+                $image_item['meta'] = $file->get('field_media_image')->first()->getValue();
               }
               else {
                 $image_item['_error'] = 'Media file ID: ' . $media['target_id'] . ' Not Found';

@@ -52,7 +52,6 @@ class VactoryFileImageEnhancer extends ResourceFieldEnhancerBase implements Cont
    * {@inheritdoc}
    */
   protected function doUndoTransform($data, Context $context) {
-    //    var_dump($data);
     if (isset($data['value']) && !empty($data['value'])) {
       $origin_uri = $data['value'];
 
@@ -74,6 +73,7 @@ class VactoryFileImageEnhancer extends ResourceFieldEnhancerBase implements Cont
         'fid'       => $media->id(),
         'file_name' => $media->label(),
         'base_url'  => $image_app_base_url,
+        'meta' => $media->getAllMetadata()
       ];
 
 //      $data['value'] = file_create_url($data['value']);
