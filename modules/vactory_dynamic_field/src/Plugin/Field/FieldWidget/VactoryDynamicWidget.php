@@ -142,7 +142,6 @@ class VactoryDynamicWidget extends WidgetBase implements ContainerFactoryPluginI
       'entity_type_id' => $entity_type_id,
       'field_id' => $field_name . $id_suffix,
       'widget_id' => $widget_id,
-      'widget_data' => $widget_data,
       'wrapper_id' => $wrapper_id,
       'cardinality' => $cardinality,
     ];
