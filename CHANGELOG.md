@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.6 (2020-11-20)
+
+### Upgrade
+```bash
+$ drush updb
+$ drush fr -y vactory_core
+```
+
+### Bug Fixes
+
+* **Webform:** Format webform submission URL ([fba1198](https://github.com/voidagency/vactory_decoupled/commit/fba119825ae5194c6df25083f770490337a590f5))
+* **DF:** Request-URI too long ([582307e](https://github.com/voidagency/vactory_decoupled/commit/582307e0b61408de27304e77c85b131a1f728de2))
+
+### Breaking
+
+* **Core:** Paragraphs Template Multiple Introduction field using text_long instead of string_long ([6a7960b](https://github.com/voidagency/vactory_decoupled/commit/6a7960bd0fd525177a360eefdc20689d6b1b2e9e))
+
+### New Features
+
+* **JSON:API:** Image fields are now exposing their respective width and height ([b3264d5](https://github.com/voidagency/vactory_decoupled/commit/b3264d5e1849b519ffc0d91fac9edaacbc7eb5a0))
+
 # 1.0.5 (2020-11-15)
 
 ### Bug Fixes
