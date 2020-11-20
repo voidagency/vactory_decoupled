@@ -124,6 +124,19 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
       ->setDisplayConfigurable('view', FALSE);
   }
 
+  if ($entity_type->id() === 'node') {
+    $fields['internal_blocks'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Node Region Blocks'))
+      ->setDescription(t('Defined blocks per node'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_jsonapi\Plugin\Field\InternalNodeEntityBlocksFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+  }
+
   return $fields;
 }
 
