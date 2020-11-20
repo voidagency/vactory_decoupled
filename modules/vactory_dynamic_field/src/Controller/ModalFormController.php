@@ -51,7 +51,7 @@ class ModalFormController extends ControllerBase {
 
     // Add an AJAX command to open a modal dialog with the form as the content.
     $response->addCommand(new OpenDialogCommand(ModalEnum::MODAL_SELECTOR, 'Template', $modal_form, [
-      'width' => '90%',
+      'width' => '95%',
       'modal' => TRUE,
     ]));
 
