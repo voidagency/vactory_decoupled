@@ -167,7 +167,6 @@ class ViewsToApi
         continue;
       }
 
-      // @todo: what about file ?
       if ($field_type === 'entity_reference' && $field_storage_definition->getSettings()['target_type'] == 'media') {
         $mid = $node->get($field_name)->getString();
         $result[$output_field_name] = NULL;
@@ -191,7 +190,7 @@ class ViewsToApi
             $fileResult['fid'] = $fid;
             $fileResult['file_name'] = $media->label();
             $fileResult['base_url'] = $image_app_base_url;
-            $fileResult['meta'] = $file->get('field_media_image')->first()->getValue();
+            $fileResult['meta'] = $media->get('field_media_image')->first()->getValue();
 
             foreach ($appliedImageStyle as $imageStyle) {
               $fileResult[$imageStyle->id()] = $imageStyle->buildUrl($uri);
