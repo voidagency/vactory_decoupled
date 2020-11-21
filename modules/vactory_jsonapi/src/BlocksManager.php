@@ -3,40 +3,17 @@
 namespace Drupal\vactory_jsonapi;
 
 use Drupal\block\BlockRepositoryInterface;
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
 use Drupal\Core\Block\BlockManagerInterface;
 use Drupal\Core\Condition\ConditionAccessResolverTrait;
 use Drupal\Core\Condition\ConditionPluginCollection;
-use Drupal\Core\DependencyInjection\ContainerBuilder;
-use Drupal\Core\DependencyInjection\ContainerNotInitializedException;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Executable\ExecutableManagerInterface;
 use Drupal\Core\Theme\ThemeManagerInterface;
+use Drupal\jsonapi_extras\EntityToJsonApi;
 use Drupal\node\Entity\Node;
-
-// @todo: verify weight & order of blocks.
-// @todo: verify i18n
-
-// web/core/modules/system/src/Plugin/Condition/RequestPath.php
-// web/core/tests/Drupal/KernelTests/Core/Plugin/Condition/RequestPathTest.php
-// web/core/modules/node/src/Plugin/Condition/NodeType.php
-// web/core/modules/node/tests/src/Kernel/NodeConditionTest.php
-//     $manager = $this->container->get('plugin.manager.condition');
-// web/core/modules/block/src/Entity/Block.php
-
-
-/*
- *     $container = \Drupal::hasContainer() ? \Drupal::getContainer() : new ContainerBuilder();
-
- * try {
-      $container = \Drupal::getContainer();
-    }
-    catch (ContainerNotInitializedException $e) {
-      $container = new ContainerBuilder();
-    }
-    $container->set('keyvalue', $key_value_factory);
-    \Drupal::setContainer($container);
- *
- *
- * */
 
 /**
  * {@inheritdoc}
@@ -48,23 +25,37 @@ class BlocksManager
   /**
    * Drupal\Core\Block\BlockManagerInterface definition.
    *
-   * @var \Drupal\Core\Block\BlockManagerInterface
+   * @var BlockManagerInterface
    */
   protected $pluginManagerBlock;
 
   /**
    * Drupal\Core\Theme\ThemeManagerInterface definition.
    *
-   * @var \Drupal\Core\Theme\ThemeManagerInterface
+   * @var ThemeManagerInterface
    */
   protected $themeManager;
 
   /**
    * The entity type manager.
    *
-   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   * @var EntityTypeManagerInterface
    */
   protected $entityTypeManager;
+
+  /**
+   * The condition plugin manager.
+   *
+   * @var ExecutableManagerInterface
+   */
+  protected $conditionPluginManager;
+
+  /**
+   * The JSON:API version generator of an entity..
+   *
+   * @var EntityToJsonApi
+   */
+  protected $entityToJsonApi;
 
   /**
    * {@inheritdoc}
@@ -72,20 +63,32 @@ class BlocksManager
   public function __construct(
     BlockManagerInterface $block_manager,
     ThemeManagerInterface $theme_manager,
-    EntityTypeManagerInterface $entity_type_manager
+    EntityTypeManagerInterface $entity_type_manager,
+    ExecutableManagerInterface $condition_plugin_manager,
+    EntityToJsonApi $entity_to_jsonapi
   )
   {
     $this->pluginManagerBlock = $block_manager;
     $this->themeManager = $theme_manager;
     $this->entityTypeManager = $entity_type_manager;
+    $this->conditionPluginManager = $condition_plugin_manager;
+    $this->entityToJsonApi = $entity_to_jsonapi;
   }
 
   public function getBlocksByNode($nid)
   {
-    $blocks = $this->getThemeBlocks();
-    $visible_blocks = $this->getVisibleBlocks($blocks, $nid);
+    $blocks = [];
+    try {
+      $blocks = $this->getThemeBlocks();
+    } catch (InvalidPluginDefinitionException $e) {
+    } catch (PluginNotFoundException $e) {
+    }
 
-    return $visible_blocks;
+    usort($blocks, function ($item1, $item2) {
+      return $item1['weight'] <=> $item2['weight'];
+    });
+
+    return $this->getVisibleBlocks($blocks, $nid);
   }
 
   /**
@@ -126,8 +129,8 @@ class BlocksManager
    * @return array
    *   Blocks array.
    *
-   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
-   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   * @throws InvalidPluginDefinitionException
+   * @throws PluginNotFoundException
    */
   protected function getThemeBlocks()
   {
@@ -140,7 +143,7 @@ class BlocksManager
 
     $blocksManager = $this->entityTypeManager->getStorage('block');
     $theme = $this->themeManager->getActiveTheme()->getName();
-    $conditionPluginManager = \Drupal::service('plugin.manager.condition'); // @todo: move this.
+    $conditionPluginManager = $this->conditionPluginManager;
     $regions = system_region_list($theme, BlockRepositoryInterface::REGIONS_VISIBLE);
 
     $blocks_list = [];
@@ -149,6 +152,7 @@ class BlocksManager
         [
           'theme' => $theme,
           'region' => $key,
+          'status' => 1,
         ]
       );
 
@@ -158,7 +162,6 @@ class BlocksManager
       }
     }
 
-    // @todo: get content here.
     $blocks = array_map(function ($block) use ($conditionPluginManager) {
       $visibility = $block->getVisibility();
 
@@ -176,11 +179,68 @@ class BlocksManager
         'region' => $block->getRegion(),
         'plugin' => $block->getPluginId(),
         'weight' => $block->getWeight(),
+        'content' => $this->getContent($block->getPluginId()),
         'visibilityConditions' => $visibilityCollection,
       ];
     }, $blocks_list);
 
     return $blocks;
+  }
+
+  /**
+   * @param string $plugin
+   *
+   * @return array
+   *
+   * @throws InvalidPluginDefinitionException
+   * @throws PluginNotFoundException
+   */
+  protected function getContent(string $plugin)
+  {
+    $data = [];
+
+    if (strpos($plugin, ':') !== FALSE) {
+      list($plugin_type, $plugin_uuid) = explode(':', $plugin);
+      if ($plugin_type === 'block_content') {
+        $data = $this->getContentBlock($plugin_uuid);
+      }
+    }
+
+    return $data;
+  }
+
+  /**
+   * Content block entity.
+   *
+   * @param string $uuid
+   *   Content block UUID.
+   *
+   * @return EntityInterface
+   *   Content block entity.
+   *
+   * @throws InvalidPluginDefinitionException
+   * @throws PluginNotFoundException
+   */
+  private function getContentBlock(string $uuid)
+  {
+    $contentBlock = $this->entityTypeManager
+      ->getStorage('block_content')
+      ->loadByProperties(['uuid' => $uuid]);
+
+    if (!empty($contentBlock)) {
+      if (is_array($contentBlock)) {
+        $contentBlock = reset($contentBlock);
+        try {
+          $contentBlock = $this->entityToJsonApi
+            ->normalize($contentBlock)['data']['attributes']['field_dynamic_block_components'];
+        } catch (\Exception $e) {
+          \Drupal::logger('vactory_jsonapi')->error('Block @block_id not found', ['@block_id' => $uuid]);
+        }
+      }
+      return $contentBlock;
+    }
+
+    return NULL;
   }
 
 }
