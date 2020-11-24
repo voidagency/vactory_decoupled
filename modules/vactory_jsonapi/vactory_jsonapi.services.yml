@@ -9,3 +9,6 @@ services:
   vactory_jsonapi.breadcrumb.generate:
     class: Drupal\vactory_jsonapi\Breadcrumb
     arguments: ['@vactory_jsonapi.breadcrumb.default', '@database', '@router.no_access_checks', '@entity.repository']
+  vactory_jsonapi.blocksManager:
+    class: Drupal\vactory_jsonapi\BlocksManager
+    arguments: ['@plugin.manager.block', '@theme.manager', '@entity_type.manager', '@plugin.manager.condition', '@jsonapi_extras.entity.to_jsonapi']

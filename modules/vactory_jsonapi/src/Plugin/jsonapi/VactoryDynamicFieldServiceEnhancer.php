@@ -167,6 +167,9 @@ class VactoryDynamicFieldServiceEnhancer
               $image_item['fid'] = $file->thumbnail->entity->fid->value;
               $image_item['file_name'] = $file->label();
               $image_item['base_url'] = $image_app_base_url;
+              if (!empty($file->get('field_media_image')->getValue())) {
+                $image_item['meta'] = $file->get('field_media_image')->first()->getValue();
+              }
               $image_data[] = $image_item;
             }
           }
