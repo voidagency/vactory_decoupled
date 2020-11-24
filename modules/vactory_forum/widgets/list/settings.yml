@@ -15,3 +15,11 @@ fields:
   link:
     type: url_extended
     label: 'Lien'
+  is_listing:
+    type: select
+    label: 'Is listing'
+    options:
+      '#required': TRUE
+      '#options':
+        - 'false': 'False'
+        - 'true': 'True'

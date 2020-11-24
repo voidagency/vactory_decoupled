@@ -44,8 +44,8 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
     //
     $view->execute();
     $count = count( $view->result );
-
-    $content['components'][0]['show_link'] = $count > $limit ? TRUE : FALSE;;
+    $is_listing = $content['components'][0]['is_listing'];
+    $content['components'][0]['show_link'] = ($count > $limit) && $is_listing == "false" ? TRUE : FALSE;
     //
     
     $view = Views::getView($name);
@@ -68,7 +68,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
     $view->preExecute();
     $view->execute();
     $result = $view->result;
-
+    $content['components'][0]['data_count'] = count($result);
     $nodes = [];
     foreach ($result as $row) {
       $node = $row->_entity;
@@ -81,19 +81,10 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
         array_push($categories, $theme->entity->label());
       }
 
-      $revisions = \Drupal::entityTypeManager()->getStorage('node')->revisionIds($node);
-      $contributions = count($revisions);
-
-      $last_revision_date = date('d F Y H:i',$node->get('changed')->getValue()[0]["value"]);
-      if ($node->isDefaultRevision() == TRUE) {
-        $last_revision_id = end($revisions);
-        if ($node->getRevisionId() != $last_revision_id) {
-          $last_revision = \Drupal::entityTypeManager()->getStorage('node')->loadRevision($last_revision_id);
-          $last_revision_date = date('d F Y H:i',$last_revision->get('changed')->getValue()[0]["value"]);
-        }
-      }
-
-
+      $comments = $node->get('comment')->getValue()[0];
+      $contributions = $comments['comment_count'];
+      $last_contribution = $contributions > 0 ? date('d F Y H:i', $comments['last_comment_timestamp']) : null;
+      
       array_push($nodes, [
         "key" => $node->uuid(),
         "title" => $node->label(),
@@ -103,7 +94,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
         "status" => $node->get('field_forum_status')->getValue()[0]["value"],
         "views" => $node->get('field_forum_views_count')->getValue()[0]["value"],
         "contributions" => $contributions,
-        "last_contribution" => $last_revision_date,
+        "last_contribution" => $last_contribution,
       ]);
     }
 
