@@ -1,0 +1,363 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/forum\/pedagogie-financiere?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_forum"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 4
+        }
+    ],
+    "uuid": [
+        {
+            "value": "736ae0ea-6718-4336-9ded-2ef4875b7cf1"
+        }
+    ],
+    "vid": [
+        {
+            "value": 16
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_forum"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-11T00:31:27+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/forum_section"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "61945c71-13d8-468d-8e21-59fc4d7478c9"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "maj"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "P\u00e9dagogie financi\u00e8re",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:40:33+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-11T00:31:27+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "P\u00e9dagogie financi\u00e8re | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/forum\/pedagogie-financiere",
+                "description": "Vous craignez les difficult\u00e9s financi\u00e8res? Vous voulez savoir quels sont les risques financiers que vous pouvez rencontrez? Vous cherchez \u00e0 pr\u00e9servez l'\u00e9quilibre entre vos revenus et vos d\u00e9penses?\nNotre conseiller est l\u00e0 pour r\u00e9pondre \u00e0 toutes les questions que vous pouvez vous poser.\n\u0647\u0644 \u062a\u062e\u0634\u0648\u0646 \u0627\u0644\u0635\u0639\u0648\u0628\u0627\u062a \u0627\u0644\u0645\u0627\u0644\u064a\u0629\u061f \u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u064a \u0642\u062f \u062a\u0648\u0627\u062c\u0647\u0648\u0646\u0647\u0627\u061f \u0647\u0644 \u062a\u0628\u062d\u062a\u0648\u0646 \u0639\u0644\u0649 \u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0628\u064a\u0646 \u062f\u062e\u0644\u0643\u0645 \u0648\u0646\u0641\u0642\u0627\u062a\u0643\u0645\u061f\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0645\u0648\u062c\u0648\u062f \u0644\u0644\u0625\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u0623\u064a \u0623\u0633\u0626\u0644\u0629 \u0642\u062f \u062a\u0643\u0648\u0646 \u0644\u062f\u064a\u0643\u0645"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "P\u00e9dagogie financi\u00e8re | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/forum\/pedagogie-financiere"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Vous craignez les difficult\u00e9s financi\u00e8res? Vous voulez savoir quels sont les risques financiers que vous pouvez rencontrez? Vous cherchez \u00e0 pr\u00e9servez l'\u00e9quilibre entre vos revenus et vos d\u00e9penses?\nNotre conseiller est l\u00e0 pour r\u00e9pondre \u00e0 toutes les questions que vous pouvez vous poser.\n\u0647\u0644 \u062a\u062e\u0634\u0648\u0646 \u0627\u0644\u0635\u0639\u0648\u0628\u0627\u062a \u0627\u0644\u0645\u0627\u0644\u064a\u0629\u061f \u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u064a \u0642\u062f \u062a\u0648\u0627\u062c\u0647\u0648\u0646\u0647\u0627\u061f \u0647\u0644 \u062a\u0628\u062d\u062a\u0648\u0646 \u0639\u0644\u0649 \u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0628\u064a\u0646 \u062f\u062e\u0644\u0643\u0645 \u0648\u0646\u0641\u0642\u0627\u062a\u0643\u0645\u061f\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0645\u0648\u062c\u0648\u062f \u0644\u0644\u0625\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u0623\u064a \u0623\u0633\u0626\u0644\u0629 \u0642\u062f \u062a\u0643\u0648\u0646 \u0644\u062f\u064a\u0643\u0645"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/forum\/pedagogie-financiere",
+            "pid": 15,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "P\u00e9dagogie financi\u00e8re",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_editeur": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_expert": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "Vous craignez les difficult\u00e9s financi\u00e8res? Vous voulez savoir quels sont les risques financiers que vous pouvez rencontrez? Vous cherchez \u00e0 pr\u00e9servez l'\u00e9quilibre entre vos revenus et vos d\u00e9penses?\r\nNotre conseiller est l\u00e0 pour r\u00e9pondre \u00e0 toutes les questions que vous pouvez vous poser.\r\n\u0647\u0644 \u062a\u062e\u0634\u0648\u0646 \u0627\u0644\u0635\u0639\u0648\u0628\u0627\u062a \u0627\u0644\u0645\u0627\u0644\u064a\u0629\u061f \u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u064a \u0642\u062f \u062a\u0648\u0627\u062c\u0647\u0648\u0646\u0647\u0627\u061f \u0647\u0644 \u062a\u0628\u062d\u062a\u0648\u0646 \u0639\u0644\u0649 \u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0628\u064a\u0646 \u062f\u062e\u0644\u0643\u0645 \u0648\u0646\u0641\u0642\u0627\u062a\u0643\u0645\u061f\r\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0645\u0648\u062c\u0648\u062f \u0644\u0644\u0625\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u0623\u064a \u0623\u0633\u0626\u0644\u0629 \u0642\u062f \u062a\u0643\u0648\u0646 \u0644\u062f\u064a\u0643\u0645",
+            "format": "plain_text",
+            "processed": "<p>Vous craignez les difficult\u00e9s financi\u00e8res? Vous voulez savoir quels sont les risques financiers que vous pouvez rencontrez? Vous cherchez \u00e0 pr\u00e9servez l&#039;\u00e9quilibre entre vos revenus et vos d\u00e9penses?<br \/>\nNotre conseiller est l\u00e0 pour r\u00e9pondre \u00e0 toutes les questions que vous pouvez vous poser.<br \/>\n\u0647\u0644 \u062a\u062e\u0634\u0648\u0646 \u0627\u0644\u0635\u0639\u0648\u0628\u0627\u062a \u0627\u0644\u0645\u0627\u0644\u064a\u0629\u061f \u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0627\u0644\u0645\u0627\u0644\u064a\u0629 \u0627\u0644\u062a\u064a \u0642\u062f \u062a\u0648\u0627\u062c\u0647\u0648\u0646\u0647\u0627\u061f \u0647\u0644 \u062a\u0628\u062d\u062a\u0648\u0646 \u0639\u0644\u0649 \u0627\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0627\u0644\u062a\u0648\u0627\u0632\u0646 \u0628\u064a\u0646 \u062f\u062e\u0644\u0643\u0645 \u0648\u0646\u0641\u0642\u0627\u062a\u0643\u0645\u061f<br \/>\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0645\u0648\u062c\u0648\u062f \u0644\u0644\u0625\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u0623\u064a \u0623\u0633\u0626\u0644\u0629 \u0642\u062f \u062a\u0643\u0648\u0646 \u0644\u062f\u064a\u0643\u0645<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 2,
+            "cid": 0,
+            "last_comment_timestamp": 1605051727,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_forum_status": [
+        {
+            "value": "open",
+            "lang": "fr"
+        }
+    ],
+    "field_forum_views_count": [
+        {
+            "value": 24,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Vous craignez les difficult\u00e9s financi\u00e8res? Vous voulez savoir quels sont les risques financiers que...",
+            "format": "plain_text",
+            "processed": "<p>Vous craignez les difficult\u00e9s financi\u00e8res? Vous voulez savoir quels sont les risques financiers que...<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

@@ -1,0 +1,282 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/forum?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/field_vactory_paragraphs": [
+            {
+                "href": ""
+            },
+            {
+                "href": ""
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 10
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ab742d15-1081-43fc-b399-62c03f14d061"
+        }
+    ],
+    "vid": [
+        {
+            "value": 56
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-12-08T16:18:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/field_vactory_paragraphs": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "ec73eaec-6618-44d0-bf90-1434de584cb6"
+                    }
+                ],
+                "target_revision_id": "35"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6ea0c96d-19c8-4fd5-94d2-3a3dce6e386e"
+                    }
+                ],
+                "target_revision_id": "36"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "maj"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Forum",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T09:31:33+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-12-08T16:18:36+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Forum | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/forum"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Forum | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/forum"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/forum",
+            "pid": 18,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Forum",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 0,
+            "cid": 0,
+            "last_comment_timestamp": 1605087166,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_exclude_from_search": [
+        {
+            "value": false
+        }
+    ]
+}

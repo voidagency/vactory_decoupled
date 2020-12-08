@@ -1,0 +1,363 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/forum\/etude-de-marche-drast-alswq?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_forum"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1ef4bd24-58ee-46bb-a71a-d1c0cd5bc196"
+        }
+    ],
+    "vid": [
+        {
+            "value": 18
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_forum"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-11T00:32:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/forum_section"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "61945c71-13d8-468d-8e21-59fc4d7478c9"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "maj"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Etude de march\u00e9 - \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:37:22+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-11T00:32:06+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Etude de march\u00e9 - \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/forum\/etude-de-marche-drast-alswq",
+                "description": "Vous voulez savoir en quoi consiste une \u00e9tude de march\u00e9? Quels sont ses objectifs ? Et quels sont les diff\u00e9rents types d'\u00e9tudes de march\u00e9?\nVous voulez r\u00e9aliser une \u00e9tude de march\u00e9 pour votre projet et vous voulez savoir comment faire?\nC'est le meilleur endroit pour poser toutes vos interrogations.\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f \u0645\u0627 \u0647\u064a \u0627\u0647\u062f\u0627\u0641\u0647\u0627\u061f \u0648\u0645\u0627 \u0647\u064a \u0627\u0644\u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0644\u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0625\u062c\u0631\u0627\u0621 \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642 \u0644\u0645\u0634\u0631\u0648\u0639\u0643\u0645 \u0648\u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0643\u064a\u0641\u061f\n\u0647\u0630\u0627 \u0647\u0648 \u0623\u0641\u0636\u0644 \u0645\u0643\u0627\u0646 \u0644\u0637\u0631\u062d \u062c\u0645\u064a\u0639 \u0623\u0633\u0626\u0644\u062a\u0643\u0645"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Etude de march\u00e9 - \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/forum\/etude-de-marche-drast-alswq"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Vous voulez savoir en quoi consiste une \u00e9tude de march\u00e9? Quels sont ses objectifs ? Et quels sont les diff\u00e9rents types d'\u00e9tudes de march\u00e9?\nVous voulez r\u00e9aliser une \u00e9tude de march\u00e9 pour votre projet et vous voulez savoir comment faire?\nC'est le meilleur endroit pour poser toutes vos interrogations.\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f \u0645\u0627 \u0647\u064a \u0627\u0647\u062f\u0627\u0641\u0647\u0627\u061f \u0648\u0645\u0627 \u0647\u064a \u0627\u0644\u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0644\u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0625\u062c\u0631\u0627\u0621 \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642 \u0644\u0645\u0634\u0631\u0648\u0639\u0643\u0645 \u0648\u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0643\u064a\u0641\u061f\n\u0647\u0630\u0627 \u0647\u0648 \u0623\u0641\u0636\u0644 \u0645\u0643\u0627\u0646 \u0644\u0637\u0631\u062d \u062c\u0645\u064a\u0639 \u0623\u0633\u0626\u0644\u062a\u0643\u0645"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/forum\/etude-de-marche-drast-alswq",
+            "pid": 17,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Etude de march\u00e9 - \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_editeur": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_expert": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "Vous voulez savoir en quoi consiste une \u00e9tude de march\u00e9? Quels sont ses objectifs ? Et quels sont les diff\u00e9rents types d'\u00e9tudes de march\u00e9?\r\nVous voulez r\u00e9aliser une \u00e9tude de march\u00e9 pour votre projet et vous voulez savoir comment faire?\r\nC'est le meilleur endroit pour poser toutes vos interrogations.\r\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f \u0645\u0627 \u0647\u064a \u0627\u0647\u062f\u0627\u0641\u0647\u0627\u061f \u0648\u0645\u0627 \u0647\u064a \u0627\u0644\u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0644\u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f\r\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0625\u062c\u0631\u0627\u0621 \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642 \u0644\u0645\u0634\u0631\u0648\u0639\u0643\u0645 \u0648\u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0643\u064a\u0641\u061f\r\n\u0647\u0630\u0627 \u0647\u0648 \u0623\u0641\u0636\u0644 \u0645\u0643\u0627\u0646 \u0644\u0637\u0631\u062d \u062c\u0645\u064a\u0639 \u0623\u0633\u0626\u0644\u062a\u0643\u0645",
+            "format": "plain_text",
+            "processed": "<p>Vous voulez savoir en quoi consiste une \u00e9tude de march\u00e9? Quels sont ses objectifs ? Et quels sont les diff\u00e9rents types d&#039;\u00e9tudes de march\u00e9?<br \/>\nVous voulez r\u00e9aliser une \u00e9tude de march\u00e9 pour votre projet et vous voulez savoir comment faire?<br \/>\nC&#039;est le meilleur endroit pour poser toutes vos interrogations.<br \/>\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0645\u0627 \u0647\u064a \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f \u0645\u0627 \u0647\u064a \u0627\u0647\u062f\u0627\u0641\u0647\u0627\u061f \u0648\u0645\u0627 \u0647\u064a \u0627\u0644\u0623\u0646\u0648\u0627\u0639 \u0627\u0644\u0645\u062e\u062a\u0644\u0641\u0629 \u0644\u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642\u061f<br \/>\n\u0647\u0644 \u062a\u0631\u064a\u062f\u0648\u0646 \u0625\u062c\u0631\u0627\u0621 \u062f\u0631\u0627\u0633\u0629 \u0627\u0644\u0633\u0648\u0642 \u0644\u0645\u0634\u0631\u0648\u0639\u0643\u0645 \u0648\u062a\u0631\u064a\u062f\u0648\u0646 \u0623\u0646 \u062a\u0639\u0631\u0641\u0648\u0627 \u0643\u064a\u0641\u061f<br \/>\n\u0647\u0630\u0627 \u0647\u0648 \u0623\u0641\u0636\u0644 \u0645\u0643\u0627\u0646 \u0644\u0637\u0631\u062d \u062c\u0645\u064a\u0639 \u0623\u0633\u0626\u0644\u062a\u0643\u0645<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 2,
+            "cid": 0,
+            "last_comment_timestamp": 1605051541,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_forum_status": [
+        {
+            "value": "open",
+            "lang": "fr"
+        }
+    ],
+    "field_forum_views_count": [
+        {
+            "value": 500,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Vous voulez savoir en quoi consiste une \u00e9tude de march\u00e9? Quels sont ses objectifs ? Et quels sont...",
+            "format": "plain_text",
+            "processed": "<p>Vous voulez savoir en quoi consiste une \u00e9tude de march\u00e9? Quels sont ses objectifs ? Et quels sont...<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

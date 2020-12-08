@@ -12,10 +12,13 @@ settings:
   allowed_values:
     -
       value: open
-      label: open
+      label: Ouvert
     -
       value: closed
-      label: closed
+      label: Fermé
+    -
+      value: archived
+      label: Archivé
   allowed_values_function: ''
 module: options
 locked: false

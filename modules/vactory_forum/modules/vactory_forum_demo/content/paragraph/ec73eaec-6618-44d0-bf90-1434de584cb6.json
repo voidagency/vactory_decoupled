@@ -1,0 +1,113 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+        }
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ec73eaec-6618-44d0-bf90-1434de584cb6"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 35
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_component"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T09:36:40+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "10"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_vactory_paragraphs"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "paragraph_container": [
+        {
+            "value": "narrow_width",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2020-11-24T08:29:05+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_vactory_component": [
+        {
+            "widget_id": "vactory_forum:list",
+            "widget_data": "[{\"title\":\"DISCUTER AVEC NOS CONSEILLERS\",\"taxonomy\":\"1\",\"limit\":\"5\",\"link\":{\"title\":\"Lire plus de discussions\",\"url\":\"\\\/node\\\/29\",\"attributes\":{\"class\":\"\",\"id\":\"\",\"target\":\"_blank\",\"rel\":\"\"}},\"is_listing\":\"false\"}]",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_title": [
+        {
+            "value": "DISCUTER AVEC NOS CONSEILLERS",
+            "lang": "fr"
+        }
+    ]
+}

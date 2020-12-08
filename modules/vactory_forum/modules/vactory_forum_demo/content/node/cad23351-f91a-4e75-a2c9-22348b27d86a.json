@@ -1,0 +1,263 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/discuter-avec-nos-conseillers?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/field_vactory_paragraphs": [
+            {
+                "href": ""
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 29
+        }
+    ],
+    "uuid": [
+        {
+            "value": "cad23351-f91a-4e75-a2c9-22348b27d86a"
+        }
+    ],
+    "vid": [
+        {
+            "value": 54
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-24T08:34:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_page\/field_vactory_paragraphs": [
+            {
+                "_links": {
+                    "self": {
+                        "href": ""
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "48d202e7-63a0-42bd-85a0-1a44b60ba544"
+                    }
+                ],
+                "target_revision_id": "33"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "maj"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Discuter avec nos conseillers",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-12T00:11:29+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-24T08:34:57+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Discuter avec nos conseillers | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/discuter-avec-nos-conseillers"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Discuter avec nos conseillers | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/discuter-avec-nos-conseillers"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/discuter-avec-nos-conseillers",
+            "pid": 33,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "DISCUTER AVEC NOS CONSEILLERS",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 0,
+            "cid": 0,
+            "last_comment_timestamp": 1605140961,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_exclude_from_search": [
+        {
+            "value": false
+        }
+    ]
+}

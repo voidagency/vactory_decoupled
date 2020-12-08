@@ -84,9 +84,7 @@ resourceFields:
     fieldName: changed
     publicName: changed
     enhancer:
-      id: date_time_from_string
-      settings:
-        dateTimeFormat: 'd F Y H:i'
+      id: ''
     disabled: false
   promote:
     fieldName: promote
@@ -134,7 +132,7 @@ resourceFields:
     fieldName: path
     publicName: path
     enhancer:
-      id: ''
+      id: vactory_link
     disabled: false
   publish_on:
     fieldName: publish_on
@@ -181,6 +179,12 @@ resourceFields:
   node_summary:
     fieldName: node_summary
     publicName: node_summary
+    enhancer:
+      id: ''
+    disabled: false
+  node_settings:
+    fieldName: node_settings
+    publicName: node_settings
     enhancer:
       id: ''
     disabled: false

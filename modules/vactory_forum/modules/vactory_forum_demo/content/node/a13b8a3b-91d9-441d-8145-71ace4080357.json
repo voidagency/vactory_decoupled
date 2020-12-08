@@ -1,0 +1,363 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/forum\/marketing?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_forum"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a13b8a3b-91d9-441d-8145-71ace4080357"
+        }
+    ],
+    "vid": [
+        {
+            "value": 13
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_forum"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-11T00:30:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/forum_section"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "61945c71-13d8-468d-8e21-59fc4d7478c9"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "maj"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Marketing",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:56:43+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-11T00:30:36+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Marketing | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/forum\/marketing",
+                "description": "Il existe plusieurs d\u00e9finitions du \"Marketing\", peu importe celle que vous choisissez, Il reste indispensable au d\u00e9veloppement de votre TPE. Le Marketing assure la satisfaction de vos clients et ainsi la rentabilit\u00e9 et la p\u00e9r\u00e9nit\u00e9 de votre projet.\nNotre conseill\u00e8re pourra r\u00e9pondre \u00e0 toutes vos questions et vous expliquer pourquoi le Marketing devrait \u00eatre positionn\u00e9 au coeur de votre strat\u00e9gie."
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Marketing | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/forum\/marketing"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Il existe plusieurs d\u00e9finitions du \"Marketing\", peu importe celle que vous choisissez, Il reste indispensable au d\u00e9veloppement de votre TPE. Le Marketing assure la satisfaction de vos clients et ainsi la rentabilit\u00e9 et la p\u00e9r\u00e9nit\u00e9 de votre projet.\nNotre conseill\u00e8re pourra r\u00e9pondre \u00e0 toutes vos questions et vous expliquer pourquoi le Marketing devrait \u00eatre positionn\u00e9 au coeur de votre strat\u00e9gie."
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/forum\/marketing",
+            "pid": 12,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Marketing",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_editeur": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_expert": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "Il existe plusieurs d\u00e9finitions du \"Marketing\", peu importe celle que vous choisissez, Il reste indispensable au d\u00e9veloppement de votre TPE. Le Marketing assure la satisfaction de vos clients et ainsi la rentabilit\u00e9 et la p\u00e9r\u00e9nit\u00e9 de votre projet.\r\nNotre conseill\u00e8re pourra r\u00e9pondre \u00e0 toutes vos questions et vous expliquer pourquoi le Marketing devrait \u00eatre positionn\u00e9 au coeur de votre strat\u00e9gie.\r\n\r\n\u0647\u0646\u0627\u0643 \u0639\u062f\u0629 \u062a\u0639\u0627\u0631\u064a\u0641 \u0644\u0644\u062a\u0633\u0648\u064a\u0642\u060c \u0623\u064a\u0627\u064b \u0643\u0627\u0646 \u0627\u0644\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u062f\u064a \u062a\u062e\u062a\u0627\u0631\u0648\u0646\u060c \u0641\u0627\u0646 \u0627\u0644\u062a\u0633\u0648\u064a\u0642 \u064a\u0636\u0644 \u0636\u0631\u0648\u0631\u064a\u0627\u064b \u0644\u062a\u0637\u0648\u064a\u0631 \u0645\u0642\u0627\u0648\u0644\u062a\u0643\u0645 \u0627\u0644\u0635\u063a\u0631\u0649.\r\n\u0627\u0644\u062a\u0633\u0648\u064a\u0642 \u064a\u0636\u0645\u0646 \u0627\u0631\u0636\u0627\u0621 \u0639\u0645\u0644\u0627\u0626\u0643\u0645 \u0648\u0628\u0627\u0644\u062a\u0627\u0644\u064a \u0631\u0628\u062d\u064a\u0629 \u0648\u0627\u0633\u062a\u062f\u0627\u0645\u0629 \u0645\u0634\u0631\u0648\u0639\u0643.\r\n\u0633\u064a\u0643\u0648\u0646 \u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0642\u0627\u062f\u0631\u0627\u064b \u0639\u0644\u0649 \u0627\u0644\u0627\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u062c\u0645\u064a\u0639 \u0627\u0633\u0626\u0644\u062a\u0643\u0645 \u0648\u0634\u0631\u062d \u0644\u0645\u0627\u062f\u0627 \u064a\u062c\u0628 \u0648\u0636\u0639 \u0627\u0644\u062a\u0633\u0648\u064a\u0642 \u0641\u064a \u0642\u0644\u0628 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u062a\u0643\u0645.",
+            "format": "plain_text",
+            "processed": "<p>Il existe plusieurs d\u00e9finitions du &quot;Marketing&quot;, peu importe celle que vous choisissez, Il reste indispensable au d\u00e9veloppement de votre TPE. Le Marketing assure la satisfaction de vos clients et ainsi la rentabilit\u00e9 et la p\u00e9r\u00e9nit\u00e9 de votre projet.<br \/>\nNotre conseill\u00e8re pourra r\u00e9pondre \u00e0 toutes vos questions et vous expliquer pourquoi le Marketing devrait \u00eatre positionn\u00e9 au coeur de votre strat\u00e9gie.<\/p>\n<p>\u0647\u0646\u0627\u0643 \u0639\u062f\u0629 \u062a\u0639\u0627\u0631\u064a\u0641 \u0644\u0644\u062a\u0633\u0648\u064a\u0642\u060c \u0623\u064a\u0627\u064b \u0643\u0627\u0646 \u0627\u0644\u062a\u0639\u0631\u064a\u0641 \u0627\u0644\u062f\u064a \u062a\u062e\u062a\u0627\u0631\u0648\u0646\u060c \u0641\u0627\u0646 \u0627\u0644\u062a\u0633\u0648\u064a\u0642 \u064a\u0636\u0644 \u0636\u0631\u0648\u0631\u064a\u0627\u064b \u0644\u062a\u0637\u0648\u064a\u0631 \u0645\u0642\u0627\u0648\u0644\u062a\u0643\u0645 \u0627\u0644\u0635\u063a\u0631\u0649.<br \/>\n\u0627\u0644\u062a\u0633\u0648\u064a\u0642 \u064a\u0636\u0645\u0646 \u0627\u0631\u0636\u0627\u0621 \u0639\u0645\u0644\u0627\u0626\u0643\u0645 \u0648\u0628\u0627\u0644\u062a\u0627\u0644\u064a \u0631\u0628\u062d\u064a\u0629 \u0648\u0627\u0633\u062a\u062f\u0627\u0645\u0629 \u0645\u0634\u0631\u0648\u0639\u0643.<br \/>\n\u0633\u064a\u0643\u0648\u0646 \u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0642\u0627\u062f\u0631\u0627\u064b \u0639\u0644\u0649 \u0627\u0644\u0627\u062c\u0627\u0628\u0629 \u0639\u0644\u0649 \u062c\u0645\u064a\u0639 \u0627\u0633\u0626\u0644\u062a\u0643\u0645 \u0648\u0634\u0631\u062d \u0644\u0645\u0627\u062f\u0627 \u064a\u062c\u0628 \u0648\u0636\u0639 \u0627\u0644\u062a\u0633\u0648\u064a\u0642 \u0641\u064a \u0642\u0644\u0628 \u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u062a\u0643\u0645.<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 2,
+            "cid": 0,
+            "last_comment_timestamp": 1605052663,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_forum_status": [
+        {
+            "value": "closed",
+            "lang": "fr"
+        }
+    ],
+    "field_forum_views_count": [
+        {
+            "value": 8,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Il existe plusieurs d\u00e9finitions du \"Marketing\", peu importe celle que vous choisissez, Il reste...",
+            "format": "plain_text",
+            "processed": "<p>Il existe plusieurs d\u00e9finitions du &quot;Marketing&quot;, peu importe celle que vous choisissez, Il reste...<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}
