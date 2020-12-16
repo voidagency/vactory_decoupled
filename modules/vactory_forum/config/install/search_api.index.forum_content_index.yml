@@ -1,0 +1,193 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.comment
+    - field.storage.node.field_forum_editeur
+    - field.storage.node.field_forum_expert
+    - field.storage.node.field_forum_status
+    - field.storage.node.field_vactory_excerpt
+    - search_api.server.default_server
+  module:
+    - node
+    - search_api
+    - search_api_exclude_entity
+id: forum_content_index
+name: 'Forum content index'
+description: 'Default content index created for Vactory Forum'
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  comment:
+    label: Commentaire
+    datasource_id: 'entity:node'
+    property_path: comment
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.comment
+  field_forum_editeur:
+    label: Editeur
+    datasource_id: 'entity:node'
+    property_path: field_forum_editeur
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_forum_editeur
+  field_forum_expert:
+    label: Expert
+    datasource_id: 'entity:node'
+    property_path: field_forum_expert
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_forum_expert
+  field_forum_status:
+    label: 'forum status'
+    datasource_id: 'entity:node'
+    property_path: field_forum_status
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_forum_status
+  field_vactory_excerpt:
+    label: Introduction
+    datasource_id: 'entity:node'
+    property_path: field_vactory_excerpt
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_vactory_excerpt
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          vactory_forum: ''
+  status:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - vactory_forum
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields:
+      - field_vactory_excerpt
+      - rendered_item
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: false
+    fields:
+      - rendered_item
+    title: false
+    alt: false
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -50
+      preprocess_query: -46
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -47
+      preprocess_query: -47
+  language_with_fallback: {  }
+  rendered_item: {  }
+  search_api_exclude_entity_processor:
+    fields:
+      node: {  }
+  tokenizer:
+    all_fields: false
+    fields:
+      - rendered_item
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -49
+      preprocess_query: -49
+  transliteration:
+    all_fields: false
+    fields:
+      - field_vactory_excerpt
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: default_server
