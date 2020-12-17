@@ -1,0 +1,8 @@
+name: 'Forum - Default content demo'
+type: module
+hidden: TRUE
+description: 'Forum default content.'
+package: Vactory
+core: 8.x
+dependencies:
+  - default_content:default_content
