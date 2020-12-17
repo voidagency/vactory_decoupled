@@ -111,11 +111,11 @@ resourceFields:
       id: ''
     disabled: false
   revision_translation_affected:
+    disabled: true
     fieldName: revision_translation_affected
     publicName: revision_translation_affected
     enhancer:
       id: ''
-    disabled: false
   metatag:
     disabled: true
     fieldName: metatag
@@ -153,23 +153,23 @@ resourceFields:
       id: ''
     disabled: false
   node_banner:
+    disabled: true
     fieldName: node_banner
     publicName: node_banner
     enhancer:
       id: ''
-    disabled: false
   node_banner_disabled:
+    disabled: true
     fieldName: node_banner_disabled
     publicName: node_banner_disabled
     enhancer:
       id: ''
-    disabled: false
   internal_node_banner:
+    disabled: true
     fieldName: internal_node_banner
     publicName: internal_node_banner
     enhancer:
       id: ''
-    disabled: false
   node_class:
     fieldName: node_class
     publicName: node_class
@@ -200,6 +200,12 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
+  internal_blocks:
+    disabled: true
+    fieldName: internal_blocks
+    publicName: internal_blocks
+    enhancer:
+      id: ''
   vcc_normalized:
     fieldName: vcc_normalized
     publicName: vcc_normalized
@@ -213,17 +219,17 @@ resourceFields:
       id: ''
     disabled: false
   content_translation_source:
+    disabled: true
     fieldName: content_translation_source
     publicName: content_translation_source
     enhancer:
       id: ''
-    disabled: false
   content_translation_outdated:
+    disabled: true
     fieldName: content_translation_outdated
     publicName: content_translation_outdated
     enhancer:
       id: ''
-    disabled: false
   body:
     fieldName: body
     publicName: body
@@ -238,37 +244,37 @@ resourceFields:
     disabled: false
   field_forum_editeur:
     fieldName: field_forum_editeur
-    publicName: field_forum_editeur
+    publicName: editor
     enhancer:
       id: ''
     disabled: false
   field_forum_expert:
     fieldName: field_forum_expert
-    publicName: field_forum_expert
+    publicName: expert
     enhancer:
       id: ''
     disabled: false
   field_forum_icone:
     fieldName: field_forum_icone
-    publicName: field_forum_icone
+    publicName: forum_icon
     enhancer:
       id: ''
     disabled: false
   field_forum_status:
     fieldName: field_forum_status
-    publicName: field_forum_status
+    publicName: status
     enhancer:
       id: ''
     disabled: false
   field_forum_views_count:
     fieldName: field_forum_views_count
-    publicName: field_forum_views_count
+    publicName: views_count
     enhancer:
       id: ''
     disabled: false
   field_vactory_excerpt:
     fieldName: field_vactory_excerpt
-    publicName: field_vactory_excerpt
+    publicName: excerpt
     enhancer:
       id: ''
     disabled: false
@@ -286,7 +292,7 @@ resourceFields:
     disabled: false
   field_vactory_taxonomy_1:
     fieldName: field_vactory_taxonomy_1
-    publicName: field_vactory_taxonomy_1
+    publicName: category
     enhancer:
       id: ''
     disabled: false
