@@ -41,12 +41,10 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       $view->setArguments([$taxonomy_id]);
     }
 
-    //
     $view->execute();
     $count = count( $view->result );
     $is_listing = $content['components'][0]['is_listing'];
     $content['components'][0]['show_link'] = ($count > $limit) && $is_listing == "false" ? TRUE : FALSE;
-    //
     
     $view = Views::getView($name);
     if (!$view || !$view->access($display_id)) {
@@ -64,7 +62,6 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       $view->setItemsPerPage(intval($limit));
     }
 
-    //et puis refaire execute pour ajouter 'limit' dans le resultat
     $view->preExecute();
     $view->execute();
     $result = $view->result;
@@ -83,7 +80,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
 
       $comments = $node->get('comment')->getValue()[0];
       $contributions = $comments['comment_count'];
-      $last_contribution = $contributions > 0 ? date('d F Y H:i', $comments['last_comment_timestamp']) : null;
+      $last_contribution = $contributions > 0 ? $comments['last_comment_timestamp'] : null;
       
       array_push($nodes, [
         "key" => $node->uuid(),
