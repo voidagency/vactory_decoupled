@@ -66,7 +66,7 @@ vactory_jsonapi.search:
   options:
     _is_jsonapi: 1
 
-vactory_jsonapi.forum_search:
+vactory_forum.forum_search:
   path: '/_search/forum'
   defaults:
     _controller: '\Drupal\vactory_forum\Controller\ForumSearchController::index'
@@ -76,6 +76,14 @@ vactory_jsonapi.forum_search:
     _permission: 'access content'
   options:
     _is_jsonapi: 1
+
+vactory_forum.views_count:
+  path: '/_updateNodeViewsCount'
+  defaults:
+    _controller: '\Drupal\vactory_forum\Controller\ViewsCountController::index'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
 
 vactory_jsonapi.import_translation:
   path: 'admin/config/regional/translate/import_frontend'
