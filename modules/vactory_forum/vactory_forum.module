@@ -43,8 +43,9 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
 
     $view->execute();
     $count = count( $view->result );
-    $is_listing = $content['components'][0]['is_listing'];
-    $content['components'][0]['show_link'] = ($count > $limit) && $is_listing == "false" ? TRUE : FALSE;
+    $is_listing = $content['components'][0]['is_listing'] == 1 ? TRUE : FALSE;
+    $content['components'][0]['is_listing'] = $is_listing;
+    $content['components'][0]['show_link'] = ($count > $limit) && $is_listing == TRUE ? TRUE : FALSE;
     
     $view = Views::getView($name);
     if (!$view || !$view->access($display_id)) {
@@ -62,10 +63,11 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       $view->setItemsPerPage(intval($limit));
     }
 
+    $view->get_total_rows = TRUE;
     $view->preExecute();
     $view->execute();
     $result = $view->result;
-    $content['components'][0]['data_count'] = count($result);
+    $content['components'][0]['data_count'] = $view->total_rows;
     $nodes = [];
     foreach ($result as $row) {
       $node = $row->_entity;
@@ -87,7 +89,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
         "title" => $node->label(),
         "url" => $node->toUrl()->toString(),
         "section" => $categories,
-        "excerpt" => $node->get('field_vactory_excerpt')->getValue(),
+        "excerpt" => $node->get('field_vactory_excerpt')->getValue()[0],
         "status" => $node->get('field_forum_status')->getValue()[0]["value"],
         "views" => $node->get('field_forum_views_count')->getValue()[0]["value"],
         "contributions" => $contributions,
@@ -95,7 +97,18 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       ]);
     }
 
-    $content['data'] = $nodes;
+
+    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('forum_section', 0, NULL, TRUE);
+
+    foreach ($terms as $term) {
+      $all_categories[] = [
+        'name' => $term->label(),
+        'id' => $term->id(),
+      ];
+    }
+
+    $content['data']['nodes'] = $nodes;
+    $content['data']['all_categories'] = $all_categories;
   }
 
 }
