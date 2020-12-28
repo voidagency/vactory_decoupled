@@ -16,8 +16,8 @@ third_party_settings:
         - paragraph_identifier
         - paragraph_container
         - paragraph_css_class
-        - paragraph_background_color
         - paragraph_background_image
+        - paragraph_style
         - paragraph_section
       parent_name: ''
       weight: 5
@@ -64,7 +64,7 @@ content:
     third_party_settings: {  }
   paragraph_background_image:
     type: media_library_widget
-    weight: 5
+    weight: 4
     region: content
     settings:
       media_types: {  }
@@ -97,6 +97,14 @@ content:
       size: 60
       placeholder: ''
     weight: 6
+    region: content
+    third_party_settings: {  }
+  paragraph_style:
+    type: string_textarea
+    weight: 5
+    settings:
+      rows: 4
+      placeholder: ''
     region: content
     third_party_settings: {  }
   translation:

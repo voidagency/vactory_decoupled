@@ -54,6 +54,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  paragraph_style:
+    type: string_textfield
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
   translation:
     weight: 3
     region: content
