@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.7 (2021-01-29)
+
+### Bug Fixes
+
+* **DF:** Images meta data ([1cc833c](https://github.com/voidagency/vactory_decoupled/commit/1cc833cce1c4f3915b7e1bd6fc939a18f667ce65))
+
+### New Features
+
+* **Core:** Blocks per region ([PR-60](https://github.com/voidagency/vactory_decoupled/pull/60))
+
 # 1.0.6 (2020-11-20)
 
 ### Upgrade
