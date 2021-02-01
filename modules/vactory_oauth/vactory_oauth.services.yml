@@ -37,3 +37,8 @@ services:
     class: Drupal\vactory_oauth\Routing\OauthRouteSubscriber
     tags:
       - { name: event_subscriber }
+  vactory_oauth.security_subscriber:
+    class: Drupal\vactory_oauth\EventSubscriber\SecurityEventSubscriber
+    arguments: ['@config.factory']
+    tags:
+      - { name: event_subscriber }
