@@ -158,7 +158,8 @@
         "drupal/openapi_ui_redoc": "^1.0.0-rc3",
         "drupal/warmer": "^2.0",
         "symfony/finder": "~3.4",
-        "steverhoades/oauth2-openid-connect-server": "^1.2"
+        "steverhoades/oauth2-openid-connect-server": "^1.2",
+        "drupal/sendinblue": "^1.8"
     },
     "config": {
         "process-timeout": 0

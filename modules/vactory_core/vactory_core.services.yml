@@ -11,3 +11,7 @@ services:
     class: Drupal\vactory_core\EventSubscriber\RemoveXGeneratorResponseHeader
     tags:
       - { name: event_subscriber }
+  vactory_core.url_resolver:
+    class: Drupal\vactory_core\UrlResolver
+    arguments: ['@config.factory']
+
