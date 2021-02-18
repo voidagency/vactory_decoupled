@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.8 (2021-02-18)
+
+### Bug Fixes
+
+* **Core:** Make node revision log message optional ([PR-63](https://github.com/voidagency/vactory_decoupled/pull/63))
+
+### New Features
+
+* **Forum:** New feature module ([PR-59](https://github.com/voidagency/vactory_decoupled/pull/59))
+* **Sendinblue:** Exposed an endpoint API for adding new subscribers to sendinblue ([PR-64](https://github.com/voidagency/vactory_decoupled/pull/64))
+* **Core:** URL Resolver service which allow converting URI's to URL's ([330e3b](https://github.com/voidagency/vactory_decoupled/commit/330e3b7cd0792f86a79d4cc9d16868520e0b4791))
+
+### Other Changes
+
+* **Core:** Upgrade contrib modules to latest available ([PR-65](https://github.com/voidagency/vactory_decoupled/pull/65))
+
+
 # 1.0.7 (2021-01-29)
 
 ### Bug Fixes
