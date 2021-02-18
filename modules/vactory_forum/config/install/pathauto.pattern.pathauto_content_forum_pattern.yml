@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content_forum_pattern
+label: 'Pathauto Content Forum Pattern'
+type: 'canonical_entities:node'
+pattern: '/forum/[node:title]'
+selection_criteria:
+  a6feeb07-de8c-4d40-8431-8fea18f4ed29:
+    id: node_type
+    bundles:
+      vactory_forum: vactory_forum
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a6feeb07-de8c-4d40-8431-8fea18f4ed29
+selection_logic: and
+weight: -5
+relationships: {  }

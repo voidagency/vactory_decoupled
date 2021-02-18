@@ -1,0 +1,114 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
+use Drupal\Core\Url;
+use Drupal\media\Entity\Media;
+use Drupal\views\Views;
+
+/**
+ * Implements hook_df_jsonapi_output_alter().
+ */
+function vactory_forum_df_jsonapi_output_alter(&$content)
+{
+  $display_id = "block_list";
+
+  if ($content['template'] === 'vactory_forum:list') {
+    $name = "vactory_forum";
+
+    $taxonomy_id = $content['components'][0]['taxonomy'];
+
+    $limit = $content['components'][0]['limit'];
+
+    $image_app_base_url = Url::fromUserInput('/app-image/')
+      ->setAbsolute()->toString();
+    $lqipImageStyle = \Drupal\image\Entity\ImageStyle::load('lqip');
+
+    $view = Views::getView($name);
+    if (!$view || !$view->access($display_id)) {
+      $content['data'] = [];
+      return;
+    }
+
+    $view->setDisplay($display_id);
+    
+    if (!empty($taxonomy_id)) {
+      $view->setArguments([$taxonomy_id]);
+    }
+
+    $view->execute();
+    $count = count( $view->result );
+    $is_listing = $content['components'][0]['is_listing'] == 1 ? TRUE : FALSE;
+    $content['components'][0]['is_listing'] = $is_listing;
+    $content['components'][0]['show_link'] = ($count > $limit) && $is_listing == TRUE ? TRUE : FALSE;
+    
+    $view = Views::getView($name);
+    if (!$view || !$view->access($display_id)) {
+      $content['data'] = [];
+      return;
+    }
+
+    $view->setDisplay($display_id);
+    
+    if (!empty($taxonomy_id)) {
+      $view->setArguments([$taxonomy_id]);
+    }
+
+    if (!empty($limit)) {
+      $view->setItemsPerPage(intval($limit));
+    }
+
+    $view->get_total_rows = TRUE;
+    $view->preExecute();
+    $view->execute();
+    $result = $view->result;
+    $content['components'][0]['data_count'] = $view->total_rows;
+    $nodes = [];
+    foreach ($result as $row) {
+      $node = $row->_entity;
+      $node = \Drupal::service('entity.repository')
+        ->getTranslationFromContext($node);
+
+      $categories = [];
+      $themes = $node->get('field_vactory_taxonomy_1');
+      foreach ($themes as $theme) {
+        array_push($categories, $theme->entity->label());
+      }
+
+      $comments = $node->get('comment')->getValue()[0];
+      $contributions = $comments['comment_count'];
+      $last_contribution = $contributions > 0 ? $comments['last_comment_timestamp'] : null;
+      
+      array_push($nodes, [
+        "key" => $node->uuid(),
+        "title" => $node->label(),
+        "url" => $node->toUrl()->toString(),
+        "section" => $categories,
+        "excerpt" => $node->get('field_vactory_excerpt')->getValue()[0],
+        "status" => $node->get('field_forum_status')->getValue()[0]["value"],
+        "views" => $node->get('field_forum_views_count')->getValue()[0]["value"],
+        "contributions" => $contributions,
+        "last_contribution" => $last_contribution,
+      ]);
+    }
+
+
+    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('forum_section', 0, NULL, TRUE);
+
+    foreach ($terms as $term) {
+      $all_categories[] = [
+        'name' => $term->label(),
+        'id' => $term->id(),
+      ];
+    }
+
+    $content['data']['nodes'] = $nodes;
+    $content['data']['all_categories'] = $all_categories;
+  }
+
+}

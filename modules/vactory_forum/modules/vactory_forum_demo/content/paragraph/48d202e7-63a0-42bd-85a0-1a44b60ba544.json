@@ -1,0 +1,119 @@
+{
+    "_links": {
+        "self": {
+            "href": ""
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/paragraph\/vactory_component"
+        }
+    },
+    "id": [
+        {
+            "value": 53
+        }
+    ],
+    "uuid": [
+        {
+            "value": "48d202e7-63a0-42bd-85a0-1a44b60ba544"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 33
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_component"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-23T16:49:32+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "parent_id": [
+        {
+            "value": "29"
+        }
+    ],
+    "parent_type": [
+        {
+            "value": "node"
+        }
+    ],
+    "parent_field_name": [
+        {
+            "value": "field_vactory_paragraphs"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "paragraph_container": [
+        {
+            "value": "narrow_width",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "content_translation_changed": [
+        {
+            "value": "2020-11-24T08:34:57+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "field_vactory_component": [
+        {
+            "widget_id": "vactory_forum:list",
+            "widget_data": "[{\"title\":\"Discuter avec nos conseillers\",\"taxonomy\":\"1\",\"limit\":\"\",\"link\":{\"title\":\"\",\"url\":\"\",\"attributes\":{\"class\":\"\",\"id\":\"\",\"target\":\"_blank\",\"rel\":\"\"}},\"is_listing\":\"true\"}]",
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_title": [
+        {
+            "value": "Discuter avec nos conseillers",
+            "lang": "fr"
+        }
+    ]
+}

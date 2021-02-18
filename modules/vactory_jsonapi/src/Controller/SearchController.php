@@ -105,6 +105,11 @@ class SearchController extends ControllerBase
     return $results;
   }
 
+  protected function getSearchMachineName()
+  {
+    return 'default_content_index';
+  }
+
   /**
    * @param $searchTerm
    * @param int $pager
@@ -120,7 +125,7 @@ class SearchController extends ControllerBase
   {
     $index = $this->entityTypeManager->getStorage('search_api_index');
     $language = $this->languageManager->getCurrentLanguage()->getId();
-    $search_api_index = $index->load('default_content_index');
+    $search_api_index = $index->load($this->getSearchMachineName());
     $pager = max([0, $pager - 1]);
     $limit = $limit < 0 || $limit > 50 ? 10 : $limit;
 

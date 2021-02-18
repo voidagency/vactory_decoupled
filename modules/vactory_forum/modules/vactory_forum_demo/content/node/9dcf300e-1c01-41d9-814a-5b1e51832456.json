@@ -1,0 +1,363 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/fr\/forum\/comptabilite-almhasbt?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/vactory_forum"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "href": "http:\/\/default\/fr\/user\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json",
+                "lang": "fr"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 8
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9dcf300e-1c01-41d9-814a-5b1e51832456"
+        }
+    ],
+    "vid": [
+        {
+            "value": 12
+        }
+    ],
+    "langcode": [
+        {
+            "value": "fr",
+            "lang": "fr"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "vactory_forum"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-11T00:30:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_editeur": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_forum_expert": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "67c4cf40-a71d-44e7-be6b-a39271ae8e4f"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/vactory_forum\/field_vactory_taxonomy_1": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/fr\/taxonomy\/term\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/forum_section"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "61945c71-13d8-468d-8e21-59fc4d7478c9"
+                    }
+                ],
+                "lang": "fr"
+            }
+        ]
+    },
+    "revision_log": [
+        {
+            "value": "maj"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "title": [
+        {
+            "value": "Comptabilit\u00e9 - \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629",
+            "lang": "fr"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:58:24+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-11T00:30:18+00:00",
+            "lang": "fr",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "fr"
+        }
+    ],
+    "metatag": [
+        {
+            "value": {
+                "title": "Comptabilit\u00e9 - \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629 | Vactory",
+                "canonical_url": "http:\/\/default\/fr\/forum\/comptabilite-almhasbt",
+                "description": "Qu'est-ce que la Comptabilit\u00e9 ? Comment est elle organis\u00e9e ?\nVous n'arrivez pas \u00e0 g\u00e9rer votre comptabilit\u00e9? Cela vous para\u00eet difficile?\nNotre conseiller expert en comptabilit\u00e9 est l\u00e0 pour vous expliquer son int\u00e9r\u00eat et toutes les astuces pour r\u00e9ussire \u00e0 tenir une bonne comptabilt\u00e9.\n\u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629\u061f \u0643\u064a\u0641 \u064a\u062a\u0645 \u062a\u0646\u0638\u064a\u0645\u0647\u0627\u061f \u0644\u0627 \u064a\u0645\u0643\u0646\u0643\u0645 \u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a\u0643\u0645\u061f \u0647\u0644 \u0647\u0630\u0627 \u0635\u0639\u0628 \u0639\u0644\u064a\u0643\u0645\u061f\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0627\u0644\u062e\u0628\u064a\u0631 \u0641\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629 \u0645\u0648\u062c\u0648\u062f \u0644\u0634\u0631\u062d \u0627\u0644\u0647\u062f\u0641 \u0645\u0646\u0647\u0627 \u0648\u062c\u0645\u064a\u0639 \u0627\u0644\u0646\u0635\u0627\u0626\u062d \u0644\u0644\u0646\u062c\u0627\u062d \u0641\u064a \u0627\u0644\u0627\u062d\u062a\u0641\u0627\u0638 \u0628\u062d\u0633\u0627\u0628\u0627\u062a \u062c\u064a\u062f\u0629"
+            }
+        }
+    ],
+    "metatag_normalized": [
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "title",
+                "content": "Comptabilit\u00e9 - \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629 | Vactory"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "link",
+            "attributes": {
+                "rel": "canonical",
+                "href": "http:\/\/default\/fr\/forum\/comptabilite-almhasbt"
+            },
+            "lang": "fr"
+        },
+        {
+            "tag": "meta",
+            "attributes": {
+                "name": "description",
+                "content": "Qu'est-ce que la Comptabilit\u00e9 ? Comment est elle organis\u00e9e ?\nVous n'arrivez pas \u00e0 g\u00e9rer votre comptabilit\u00e9? Cela vous para\u00eet difficile?\nNotre conseiller expert en comptabilit\u00e9 est l\u00e0 pour vous expliquer son int\u00e9r\u00eat et toutes les astuces pour r\u00e9ussire \u00e0 tenir une bonne comptabilt\u00e9.\n\u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629\u061f \u0643\u064a\u0641 \u064a\u062a\u0645 \u062a\u0646\u0638\u064a\u0645\u0647\u0627\u061f \u0644\u0627 \u064a\u0645\u0643\u0646\u0643\u0645 \u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a\u0643\u0645\u061f \u0647\u0644 \u0647\u0630\u0627 \u0635\u0639\u0628 \u0639\u0644\u064a\u0643\u0645\u061f\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0627\u0644\u062e\u0628\u064a\u0631 \u0641\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629 \u0645\u0648\u062c\u0648\u062f \u0644\u0634\u0631\u062d \u0627\u0644\u0647\u062f\u0641 \u0645\u0646\u0647\u0627 \u0648\u062c\u0645\u064a\u0639 \u0627\u0644\u0646\u0635\u0627\u0626\u062d \u0644\u0644\u0646\u062c\u0627\u062d \u0641\u064a \u0627\u0644\u0627\u062d\u062a\u0641\u0627\u0638 \u0628\u062d\u0633\u0627\u0628\u0627\u062a \u062c\u064a\u062f\u0629"
+            },
+            "lang": "fr"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/forum\/comptabilite-almhasbt",
+            "pid": 11,
+            "langcode": "fr",
+            "lang": "fr"
+        }
+    ],
+    "node_banner_disabled": [
+        {
+            "value": false
+        }
+    ],
+    "node_summary": [
+        {
+            "value": "Comptabilit\u00e9 - \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629",
+            "lang": "fr"
+        }
+    ],
+    "internal_user": [
+        {
+            "revision_uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "uid": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_editeur": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            },
+            "field_forum_expert": {
+                "id": "1",
+                "name": "admin",
+                "first_name": "",
+                "last_name": "",
+                "profession": "",
+                "about": "",
+                "picture": null
+            }
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und",
+            "lang": "fr"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false,
+            "lang": "fr"
+        }
+    ],
+    "body": [
+        {
+            "value": "Qu'est-ce que la Comptabilit\u00e9 ? Comment est elle organis\u00e9e ?\r\nVous n'arrivez pas \u00e0 g\u00e9rer votre comptabilit\u00e9? Cela vous para\u00eet difficile?\r\nNotre conseiller expert en comptabilit\u00e9 est l\u00e0 pour vous expliquer son int\u00e9r\u00eat et toutes les astuces pour r\u00e9ussire \u00e0 tenir une bonne comptabilt\u00e9.\r\n\u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629\u061f \u0643\u064a\u0641 \u064a\u062a\u0645 \u062a\u0646\u0638\u064a\u0645\u0647\u0627\u061f \u0644\u0627 \u064a\u0645\u0643\u0646\u0643\u0645 \u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a\u0643\u0645\u061f \u0647\u0644 \u0647\u0630\u0627 \u0635\u0639\u0628 \u0639\u0644\u064a\u0643\u0645\u061f\r\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0627\u0644\u062e\u0628\u064a\u0631 \u0641\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629 \u0645\u0648\u062c\u0648\u062f \u0644\u0634\u0631\u062d \u0627\u0644\u0647\u062f\u0641 \u0645\u0646\u0647\u0627 \u0648\u062c\u0645\u064a\u0639 \u0627\u0644\u0646\u0635\u0627\u0626\u062d \u0644\u0644\u0646\u062c\u0627\u062d \u0641\u064a \u0627\u0644\u0627\u062d\u062a\u0641\u0627\u0638 \u0628\u062d\u0633\u0627\u0628\u0627\u062a \u062c\u064a\u062f\u0629",
+            "format": "plain_text",
+            "processed": "<p>Qu&#039;est-ce que la Comptabilit\u00e9 ? Comment est elle organis\u00e9e ?<br \/>\nVous n&#039;arrivez pas \u00e0 g\u00e9rer votre comptabilit\u00e9? Cela vous para\u00eet difficile?<br \/>\nNotre conseiller expert en comptabilit\u00e9 est l\u00e0 pour vous expliquer son int\u00e9r\u00eat et toutes les astuces pour r\u00e9ussire \u00e0 tenir une bonne comptabilt\u00e9.<br \/>\n\u0645\u0627 \u0647\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629\u061f \u0643\u064a\u0641 \u064a\u062a\u0645 \u062a\u0646\u0638\u064a\u0645\u0647\u0627\u061f \u0644\u0627 \u064a\u0645\u0643\u0646\u0643\u0645 \u0625\u062f\u0627\u0631\u0629 \u062d\u0633\u0627\u0628\u0627\u062a\u0643\u0645\u061f \u0647\u0644 \u0647\u0630\u0627 \u0635\u0639\u0628 \u0639\u0644\u064a\u0643\u0645\u061f<br \/>\n\u0645\u0633\u062a\u0634\u0627\u0631\u0646\u0627 \u0627\u0644\u062e\u0628\u064a\u0631 \u0641\u064a \u0627\u0644\u0645\u062d\u0627\u0633\u0628\u0629 \u0645\u0648\u062c\u0648\u062f \u0644\u0634\u0631\u062d \u0627\u0644\u0647\u062f\u0641 \u0645\u0646\u0647\u0627 \u0648\u062c\u0645\u064a\u0639 \u0627\u0644\u0646\u0635\u0627\u0626\u062d \u0644\u0644\u0646\u062c\u0627\u062d \u0641\u064a \u0627\u0644\u0627\u062d\u062a\u0641\u0627\u0638 \u0628\u062d\u0633\u0627\u0628\u0627\u062a \u062c\u064a\u062f\u0629<\/p>\n",
+            "summary": "",
+            "lang": "fr"
+        }
+    ],
+    "comment": [
+        {
+            "status": 2,
+            "cid": 0,
+            "last_comment_timestamp": 1605052761,
+            "last_comment_name": null,
+            "last_comment_uid": 1,
+            "comment_count": 0,
+            "lang": "fr"
+        }
+    ],
+    "field_forum_status": [
+        {
+            "value": "open",
+            "lang": "fr"
+        }
+    ],
+    "field_forum_views_count": [
+        {
+            "value": 1,
+            "lang": "fr"
+        }
+    ],
+    "field_vactory_excerpt": [
+        {
+            "value": "Qu'est-ce que la Comptabilit\u00e9 ? Comment est elle organis\u00e9e ?\r\nVous n'arrivez pas \u00e0 g\u00e9rer votre...",
+            "format": "plain_text",
+            "processed": "<p>Qu&#039;est-ce que la Comptabilit\u00e9 ? Comment est elle organis\u00e9e ?<br \/>\nVous n&#039;arrivez pas \u00e0 g\u00e9rer votre...<\/p>\n",
+            "lang": "fr"
+        }
+    ]
+}

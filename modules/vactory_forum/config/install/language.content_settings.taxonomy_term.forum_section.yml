@@ -1,0 +1,10 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forum_section
+id: taxonomy_term.forum_section
+target_entity_type_id: taxonomy_term
+target_bundle: forum_section
+default_langcode: site_default
+language_alterable: false

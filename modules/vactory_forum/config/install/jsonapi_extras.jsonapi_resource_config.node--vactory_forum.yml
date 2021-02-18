@@ -1,0 +1,298 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.vactory_forum
+id: node--vactory_forum
+disabled: false
+path: node/vactory_forum
+resourceType: node--vactory_forum
+resourceFields:
+  nid:
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  vid:
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: vactory_langcode
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  revision_timestamp:
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+    disabled: false
+  revision_uid:
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+    disabled: false
+  revision_log:
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+  title:
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+  changed:
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+    disabled: false
+  promote:
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+    disabled: false
+  sticky:
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  revision_default:
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+    disabled: false
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  metatag:
+    disabled: true
+    fieldName: metatag
+    publicName: metatag
+    enhancer:
+      id: ''
+  metatag_normalized:
+    fieldName: metatag_normalized
+    publicName: metatag_normalized
+    enhancer:
+      id: ''
+    disabled: false
+  path:
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: vactory_link
+    disabled: false
+  publish_on:
+    fieldName: publish_on
+    publicName: publish_on
+    enhancer:
+      id: ''
+    disabled: false
+  unpublish_on:
+    fieldName: unpublish_on
+    publicName: unpublish_on
+    enhancer:
+      id: ''
+    disabled: false
+  menu_link:
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+    disabled: false
+  node_banner:
+    disabled: true
+    fieldName: node_banner
+    publicName: node_banner
+    enhancer:
+      id: ''
+  node_banner_disabled:
+    disabled: true
+    fieldName: node_banner_disabled
+    publicName: node_banner_disabled
+    enhancer:
+      id: ''
+  internal_node_banner:
+    disabled: true
+    fieldName: internal_node_banner
+    publicName: internal_node_banner
+    enhancer:
+      id: ''
+  node_class:
+    fieldName: node_class
+    publicName: node_class
+    enhancer:
+      id: ''
+    disabled: false
+  node_summary:
+    fieldName: node_summary
+    publicName: node_summary
+    enhancer:
+      id: ''
+    disabled: false
+  node_settings:
+    fieldName: node_settings
+    publicName: node_settings
+    enhancer:
+      id: ''
+    disabled: false
+  node_body_class:
+    fieldName: node_body_class
+    publicName: node_body_class
+    enhancer:
+      id: ''
+    disabled: false
+  internal_user:
+    fieldName: internal_user
+    publicName: internal_user
+    enhancer:
+      id: ''
+    disabled: false
+  internal_blocks:
+    disabled: true
+    fieldName: internal_blocks
+    publicName: internal_blocks
+    enhancer:
+      id: ''
+  vcc_normalized:
+    fieldName: vcc_normalized
+    publicName: vcc_normalized
+    enhancer:
+      id: ''
+    disabled: false
+  vcc:
+    fieldName: vcc
+    publicName: vcc
+    enhancer:
+      id: ''
+    disabled: false
+  content_translation_source:
+    disabled: true
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: true
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  body:
+    fieldName: body
+    publicName: body
+    enhancer:
+      id: ''
+    disabled: false
+  comment:
+    fieldName: comment
+    publicName: comment
+    enhancer:
+      id: ''
+    disabled: false
+  field_forum_editeur:
+    fieldName: field_forum_editeur
+    publicName: editor
+    enhancer:
+      id: ''
+    disabled: false
+  field_forum_expert:
+    fieldName: field_forum_expert
+    publicName: expert
+    enhancer:
+      id: ''
+    disabled: false
+  field_forum_icone:
+    fieldName: field_forum_icone
+    publicName: forum_icon
+    enhancer:
+      id: ''
+    disabled: false
+  field_forum_status:
+    fieldName: field_forum_status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  field_forum_views_count:
+    fieldName: field_forum_views_count
+    publicName: views_count
+    enhancer:
+      id: ''
+    disabled: false
+  field_vactory_excerpt:
+    fieldName: field_vactory_excerpt
+    publicName: excerpt
+    enhancer:
+      id: ''
+    disabled: false
+  field_vactory_media_document:
+    fieldName: field_vactory_media_document
+    publicName: field_vactory_media_document
+    enhancer:
+      id: ''
+    disabled: false
+  field_vactory_meta_tags:
+    fieldName: field_vactory_meta_tags
+    publicName: field_vactory_meta_tags
+    enhancer:
+      id: vactory_metatag
+    disabled: false
+  field_vactory_taxonomy_1:
+    fieldName: field_vactory_taxonomy_1
+    publicName: category
+    enhancer:
+      id: ''
+    disabled: false
