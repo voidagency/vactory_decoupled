@@ -1,0 +1,6 @@
+vactory_sendinblue.api:
+  path: '/_sendinblue'
+  defaults:
+    _controller: 'Drupal\vactory_sendinblue\Controller\ApiController::send'
+  requirements:
+    _permission: 'access content'
