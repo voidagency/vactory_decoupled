@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.9 (2021-02-18)
+
+### Bug Fixes
+
+* **Forum:** Fix routing ([516f68](https://github.com/voidagency/vactory_decoupled/commit/516f68d758d56fe5dac13c1d4321ed4834bf8da6))
+
 # 1.0.8 (2021-02-18)
 
 ### Bug Fixes
