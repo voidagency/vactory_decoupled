@@ -166,7 +166,8 @@ class ApiController extends ControllerBase
 
     $response = [
       'status' => 'success',
-      'email' => $email
+      'email' => $email,
+      'messages' => $settings['subscription']['messages']
     ];
 
     if ($email_confirmation) {
