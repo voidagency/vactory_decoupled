@@ -65,7 +65,7 @@ class SecurityEventSubscriber implements EventSubscriberInterface
     $response = $event->getResponse();
 
     if (
-      strpos($request->getRequestUri(), '/user/login') !== false &&
+      strpos($request->getRequestUri(), '/user/login') !== false ||
       strpos($request->getRequestUri(), '/oauth/authorize') !== false) {
       $response->headers->remove('X-Frame-Options');
     }
