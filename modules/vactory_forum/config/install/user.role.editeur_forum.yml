@@ -1,0 +1,8 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: editeur_forum
+label: 'Éditeur Forum'
+weight: 7
+is_admin: null
+permissions: {  }

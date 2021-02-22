@@ -1,31 +1,31 @@
 name: Forum
 type: module
-core: 8.x
 version: 8.x-1.0
 package: Vactory
 dependencies:
-  - allowed_formats
-  - comment
-  - content_translation
-  - field
-  - jsonapi_extras
-  - language
-  - media_library
-  - menu_ui
-  - metatag
-  - node
-  - options
-  - path
-  - pathauto
-  - scheduler
-  - search_api
-  - search_api_exclude_entity
-  - taxonomy
-  - text
-  - user
-  - vactory_banner
-  - vactory_core
-  - vactory_search
-  - vactory_vcc
-  - views
+  - 'allowed_formats:allowed_formats'
+  - 'drupal:comment'
+  - 'drupal:content_translation'
+  - 'drupal:field'
+  - 'drupal:language'
+  - 'drupal:media_library'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:options'
+  - 'drupal:path'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'jsonapi_extras:jsonapi_extras'
+  - 'metatag:metatag'
+  - 'pathauto:pathauto'
+  - 'scheduler:scheduler'
+  - 'search_api:search_api'
+  - 'search_api_exclude_entity:search_api_exclude_entity'
+  - 'vactory_banner:vactory_banner'
+  - 'vactory_core:vactory_core'
+  - 'vactory_search:vactory_search'
+  - 'vactory_vcc:vactory_vcc'
 description: 'Provides Forum content type and related configuration. Manage your Forum content.'
+core_version_requirement: '^8.9 || ^9'
