@@ -17,9 +17,16 @@ default_value_callback: ''
 settings:
   handler: 'default:user'
   handler_settings:
-    include_anonymous: true
+    include_anonymous: false
     filter:
-      type: _none
+      type: role
+      role:
+        editeur_forum: editeur_forum
+        master: '0'
+        webmaster: '0'
+        super_administrateur: '0'
+        openid: '0'
+        expert_forum: '0'
     target_bundles: null
     sort:
       field: _none
