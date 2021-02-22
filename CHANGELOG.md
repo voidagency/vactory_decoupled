@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+# 1.0.10 (2021-02-22)
+
+### Bug Fixes
+
+* **Auth:** Fix routing ([PR-66](https://github.com/voidagency/vactory_decoupled/pull/66))
+* **Forum:** Fix fields order, mapping & added roles ([PR-67](https://github.com/voidagency/vactory_decoupled/pull/67))
+
 # 1.0.9 (2021-02-18)
 
 ### Bug Fixes
