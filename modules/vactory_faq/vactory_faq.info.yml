@@ -1,0 +1,21 @@
+name: FAQ
+description: 'Manage FAQ content. '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:content_translation'
+  - 'drupal:field'
+  - 'drupal:language'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:taxonomy'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'faqfield:faqfield'
+  - 'scheduler:scheduler'
+  - 'vactory_banner:vactory_banner'
+  - 'vactory_core:vactory_core'
+  - 'vactory_vcc:vactory_vcc'
+version: 8.x-1.0
+package: Vactory
