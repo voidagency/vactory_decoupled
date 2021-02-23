@@ -107,7 +107,7 @@ class WebformController extends ControllerBase
     ];
 
     $settings = $webform->getSettings();
-    if (isset($settings['confirmation_url'])) {
+    if (isset($settings['confirmation_url']) && !empty($settings['confirmation_url'])) {
       $front_uri = \Drupal::config('system.site')->get('page.front');
       if ($front_uri === $settings['confirmation_url']) {
         $settings['confirmation_url'] = Url::fromRoute('<front>')->toString();
