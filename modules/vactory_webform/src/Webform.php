@@ -91,6 +91,8 @@ class Webform
       'webform_checkboxes_other' => 'checkboxes',
       'webform_document_file' => 'upload',
       'webform_image_file' => 'upload',
+      'date' => 'date',
+      'webform_time' => 'time',
     ];
 
     $htmlInputTypes = [
