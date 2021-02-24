@@ -304,6 +304,11 @@ class ViewsToApi
         continue;
       }
 
+      if ($field_type === 'faqfield') {
+        $result[$output_field_name] = $node->get($field_name)->getValue();
+        continue;
+      }
+
       $result[$output_field_name] = $node->get($field_name)->getString();
     }
 

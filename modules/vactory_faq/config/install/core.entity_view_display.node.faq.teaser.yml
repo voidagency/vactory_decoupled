@@ -1,0 +1,25 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faq.field_questions
+    - field.field.node.faq.field_vactory_taxonomy_1
+    - node.type.faq
+  module:
+    - user
+id: node.faq.teaser
+targetEntityType: node
+bundle: faq
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_questions: true
+  field_vactory_taxonomy_1: true
+  langcode: true
+  search_api_excerpt: true
