@@ -100,12 +100,12 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
         "title" => $node->label(),
         "url" => $node->toUrl()->toString(),
         "section" => $categories,
-        "excerpt" => $node->get('field_vactory_excerpt')->getString(),
+        "excerpt" => $node->get('field_vactory_excerpt')->first()->getValue()['value'],
         "status" => $node->get('field_forum_status')->getValue()[0]["value"],
         "views" => $node->get('field_forum_views_count')->getValue()[0]["value"],
         "contributions" => $contributions,
         "last_contribution" => $last_contribution,
-        "date" => $node->field_vactory_date->date->getTimestamp(),
+        "date" => $node->get('field_vactory_date')->getString(),
         "author" => $author_name
       ]);
     }
