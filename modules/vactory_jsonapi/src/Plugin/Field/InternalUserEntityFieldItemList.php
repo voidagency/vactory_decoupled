@@ -74,11 +74,23 @@ class InternalUserEntityFieldItemList extends FieldItemList
         ];
       }
 
+      $user_fullname = $user->getUserName();
+      $author_first_name = $user->get('field_first_name')->getString();
+      $author_last_name = $user->get('field_last_name')->getString();
+
+      if (!empty($author_first_name)) {
+        $user_fullname = $author_first_name;
+      }
+      if (!empty($author_first_name) && !empty($author_last_name)) {
+        $user_fullname = $author_first_name . ' ' . $author_last_name;
+      }
+
       $value[$name] = [
         'id' => $user->id(),
         'name' => $user->getUsername(),
         'first_name' => $user->get('field_first_name')->getString(),
         'last_name' => $user->get('field_last_name')->getString(),
+        'full_name' => $user_fullname,
         'profession' => $user->get('field_profession')->getString(),
         'about' => $user->get('field_about')->getString(),
         'picture' => $image_value,
