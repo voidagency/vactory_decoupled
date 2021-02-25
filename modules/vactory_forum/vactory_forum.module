@@ -36,7 +36,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
     }
 
     $view->setDisplay($display_id);
-    
+
     if (!empty($taxonomy_id)) {
       $view->setArguments([$taxonomy_id]);
     }
@@ -46,7 +46,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
     $is_listing = $content['components'][0]['is_listing'] == 1 ? TRUE : FALSE;
     $content['components'][0]['is_listing'] = $is_listing;
     $content['components'][0]['show_link'] = ($count > $limit) && $is_listing == TRUE ? TRUE : FALSE;
-    
+
     $view = Views::getView($name);
     if (!$view || !$view->access($display_id)) {
       $content['data'] = [];
@@ -54,7 +54,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
     }
 
     $view->setDisplay($display_id);
-    
+
     if (!empty($taxonomy_id)) {
       $view->setArguments([$taxonomy_id]);
     }
@@ -83,17 +83,30 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       $comments = $node->get('comment')->getValue()[0];
       $contributions = $comments['comment_count'];
       $last_contribution = $contributions > 0 ? $comments['last_comment_timestamp'] : null;
-      
+
+      $author_name = $node->field_forum_editeur->entity->getUserName();
+      $author_first_name = $node->field_forum_editeur->entity->get('field_first_name')->getString();
+      $author_last_name = $node->field_forum_editeur->entity->get('field_last_name')->getString();
+
+      if (!empty($author_first_name)) {
+        $author_name = $author_first_name;
+      }
+      if (!empty($author_first_name) && !empty($author_last_name)) {
+        $author_name = $author_first_name . ' ' . $author_last_name;
+      }
+
       array_push($nodes, [
         "key" => $node->uuid(),
         "title" => $node->label(),
         "url" => $node->toUrl()->toString(),
         "section" => $categories,
-        "excerpt" => $node->get('field_vactory_excerpt')->getValue()[0],
+        "excerpt" => $node->get('field_vactory_excerpt')->getString(),
         "status" => $node->get('field_forum_status')->getValue()[0]["value"],
         "views" => $node->get('field_forum_views_count')->getValue()[0]["value"],
         "contributions" => $contributions,
         "last_contribution" => $last_contribution,
+        "date" => $node->field_vactory_date->date->getTimestamp(),
+        "author" => $author_name
       ]);
     }
 

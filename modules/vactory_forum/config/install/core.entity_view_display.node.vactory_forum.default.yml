@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.vactory_forum.field_forum_icone
     - field.field.node.vactory_forum.field_forum_status
     - field.field.node.vactory_forum.field_forum_views_count
+    - field.field.node.vactory_forum.field_vactory_date
     - field.field.node.vactory_forum.field_vactory_excerpt
     - field.field.node.vactory_forum.field_vactory_media_document
     - field.field.node.vactory_forum.field_vactory_meta_tags
@@ -17,6 +18,7 @@ dependencies:
     - node.type.vactory_forum
   module:
     - comment
+    - datetime
     - metatag
     - options
     - text
@@ -81,6 +83,15 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_vactory_date:
+    weight: 112
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_vactory_excerpt:
     weight: 107

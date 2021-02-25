@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.vactory_forum.field_forum_icone
     - field.field.node.vactory_forum.field_forum_status
     - field.field.node.vactory_forum.field_forum_views_count
+    - field.field.node.vactory_forum.field_vactory_date
     - field.field.node.vactory_forum.field_vactory_excerpt
     - field.field.node.vactory_forum.field_vactory_media_document
     - field.field.node.vactory_forum.field_vactory_meta_tags
@@ -43,6 +44,7 @@ hidden:
   field_forum_icone: true
   field_forum_status: true
   field_forum_views_count: true
+  field_vactory_date: true
   field_vactory_excerpt: true
   field_vactory_media_document: true
   field_vactory_meta_tags: true

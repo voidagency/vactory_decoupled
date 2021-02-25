@@ -6,6 +6,7 @@ dependencies:
   - 'allowed_formats:allowed_formats'
   - 'drupal:comment'
   - 'drupal:content_translation'
+  - 'drupal:datetime'
   - 'drupal:field'
   - 'drupal:language'
   - 'drupal:media_library'

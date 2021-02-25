@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.vactory_forum.field_forum_icone
     - field.field.node.vactory_forum.field_forum_status
     - field.field.node.vactory_forum.field_forum_views_count
+    - field.field.node.vactory_forum.field_vactory_date
     - field.field.node.vactory_forum.field_vactory_excerpt
     - field.field.node.vactory_forum.field_vactory_media_document
     - field.field.node.vactory_forum.field_vactory_meta_tags
@@ -16,6 +17,7 @@ dependencies:
     - node.type.vactory_forum
   module:
     - comment
+    - datetime
     - media_library
     - metatag
     - path
@@ -61,7 +63,7 @@ content:
     type: options_select
     region: content
   field_forum_icone:
-    weight: 22
+    weight: 23
     settings:
       size: 60
       placeholder: ''
@@ -69,10 +71,16 @@ content:
     type: string_textfield
     region: content
   field_forum_status:
-    weight: 20
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_vactory_date:
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_vactory_excerpt:
     weight: 14
@@ -83,14 +91,14 @@ content:
     type: text_textarea
     region: content
   field_vactory_media_document:
-    weight: 21
+    weight: 22
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
   field_vactory_meta_tags:
-    weight: 23
+    weight: 24
     settings:
       sidebar: true
     third_party_settings: {  }
