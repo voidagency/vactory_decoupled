@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.11 (2021-02-24)
+
+### Bug Fixes
+
+* **Webform:** Confirmation URL ([db47ff](https://github.com/voidagency/vactory_decoupled/commit/db47ff14614f50a78c85a9a05e4158e929ff8645))
+* **Webform:** Added date time fields ([PR-69](https://github.com/voidagency/vactory_decoupled/pull/69))
+
+### New Features
+
+* **FAQ:** New feature module ([PR-68](https://github.com/voidagency/vactory_decoupled/pull/68))
 
 # 1.0.10 (2021-02-22)
 
