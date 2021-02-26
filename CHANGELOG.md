@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.12 (2021-02-26)
+
+### Bug Fixes
+
+* **Forum:** Missing date field ([ca3182](https://github.com/voidagency/vactory_decoupled/commit/ca31825c4b322bf9866ec3d0a1d9a08402413291))
+
+* **Forum:** Format values ([da8ad9](https://github.com/voidagency/vactory_decoupled/commit/da8ad9c14345ff739465035083d1fa7ce05a917d))
+
+
+### Other Changes
+
+* **Core:** Internal user fullname. ([55e9f8](https://github.com/voidagency/vactory_decoupled/commit/55e9f81429bd0e43859e38ebb6d793c07db2a0a4))
+
+* **Core:** Node comment internal field. ([aeca86](https://github.com/voidagency/vactory_decoupled/commit/aeca86d0013e640be02621979f813e4f43e67d6f))
+
 # 1.0.11 (2021-02-24)
 
 ### Bug Fixes
