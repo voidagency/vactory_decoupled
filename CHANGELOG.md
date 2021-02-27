@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+# 1.0.13 (2021-02-27)
+
+### Bug Fixes
+
+* **DF:** Views dynamic field value override ([7ac0e9e](https://github.com/voidagency/vactory_decoupled/commit/7ac0e9e57ea67aaa90ba4ed809c2eb8191e3ce54))
+
+
 # 1.0.12 (2021-02-26)
 
 ### Bug Fixes
