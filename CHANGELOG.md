@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.15 (2021-02-28)
+
+### New Features
+
+* **Mailchimp:** Mailchimp support ([PR-70](https://github.com/voidagency/vactory_decoupled/pull/70))
+
 # 1.0.14 (2021-02-28)
 
 ### Bug Fixes
