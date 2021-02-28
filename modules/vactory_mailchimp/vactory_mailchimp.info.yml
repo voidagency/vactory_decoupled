@@ -1,0 +1,9 @@
+name: Mailchimp
+type: module
+description: 'Webservice API for mailchimp'
+package: Vactory
+core: 8.x
+dependencies:
+  - mailchimp
+  - vactory_core
+version: 8.x-1.0
