@@ -97,7 +97,7 @@ function vactory_oauth_login_perform_redirect($trigger, AccountInterface $accoun
   // Only redirect users with only 1 role (authenticated).
   if (
     $destination &&
-    count($roles) === 1 && in_array("authenticated", $roles)
+    in_array("authenticated", $roles)
   ) {
     $destination .= '/signin/';
     $response = new RedirectResponse($destination);
