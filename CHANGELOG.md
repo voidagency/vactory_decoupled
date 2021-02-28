@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.14 (2021-02-28)
+
+### Bug Fixes
+
+* **Oauth:** Redirect no matter the role of the user ([e9c6a70](https://github.com/voidagency/vactory_decoupled/commit/e9c6a70154db35f70d5e39a8f5642ac6732a3892))
+
+
 
 # 1.0.13 (2021-02-27)
 
