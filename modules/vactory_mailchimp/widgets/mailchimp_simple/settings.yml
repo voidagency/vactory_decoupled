@@ -3,7 +3,7 @@ multiple: FALSE
 category: 'Mailchimp'
 enabled: TRUE
 fields:
-  webform:
+  mailchimp_list:
     type: mailchimp_decoupled
     label: 'Mailchimp'
     options:
