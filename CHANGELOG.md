@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.16 (2021-03-01)
+
+### New Features
+
+* **Keycloak:** Social Auth Keycloak ([PR-71](https://github.com/voidagency/vactory_decoupled/pull/71))
+
 # 1.0.15 (2021-02-28)
 
 ### New Features
