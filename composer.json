@@ -160,7 +160,8 @@
         "symfony/finder": "~3.4",
         "steverhoades/oauth2-openid-connect-server": "^1.2",
         "drupal/sendinblue": "^1.8",
-        "drupal/faqfield": "^7.0"
+        "drupal/faqfield": "^7.0",
+        "pviojo/oauth2-keycloak": "^2.0"
     },
     "config": {
         "process-timeout": 0
