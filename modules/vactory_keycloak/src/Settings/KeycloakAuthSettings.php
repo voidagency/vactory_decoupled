@@ -38,6 +38,13 @@ class KeycloakAuthSettings extends SettingsBase implements KeycloakAuthSettingsI
   protected $appClientSecret;
 
   /**
+   * Application email domain.
+   *
+   * @var string
+   */
+  protected $appEmailDomain;
+
+  /**
    * The default access token.
    *
    * @var string
@@ -89,6 +96,16 @@ class KeycloakAuthSettings extends SettingsBase implements KeycloakAuthSettingsI
       $this->appClientSecret = $this->config->get('app_client_secret');
     }
     return $this->appClientSecret;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getEmailDomain() {
+    if (!$this->appEmailDomain) {
+      $this->appEmailDomain = $this->config->get('email_domain');
+    }
+    return $this->appEmailDomain;
   }
 
 }

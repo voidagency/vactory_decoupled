@@ -40,4 +40,13 @@ interface KeycloakAuthSettingsInterface {
   public function getAppClientSecret();
 
 
+  /**
+   * Gets the application email domain.
+   *
+   * @return string
+   *   The application email domain.
+   */
+  public function getEmailDomain();
+
+
 }

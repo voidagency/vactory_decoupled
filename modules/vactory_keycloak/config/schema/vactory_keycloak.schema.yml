@@ -20,3 +20,6 @@ vactory_keycloak.settings:
     redirect_uri:
       type: string
       label: 'Redirect URI'
+    email_domain:
+      type: string
+      label: 'Email domain'

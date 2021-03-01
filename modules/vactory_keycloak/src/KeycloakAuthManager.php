@@ -5,6 +5,7 @@ namespace Drupal\vactory_keycloak;
 use Drupal\Core\Config\ConfigFactory;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\social_auth\AuthManager\OAuth2Manager;
+use Drupal\vactory_keycloak\Provider\KeycloakResourceOwner;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 
 /**
@@ -49,9 +50,8 @@ class KeycloakAuthManager extends OAuth2Manager {
    * {@inheritdoc}
    */
   public function getUserInfo() {
-    if (!$this->user) {
-      $this->user = $this->client->getResourceOwner($this->getAccessToken());
-    }
+    $user = $this->client->getResourceOwner($this->getAccessToken());
+    $this->user = new KeycloakResourceOwner($user->toArray(), $this->settings->get('email_domain'));
 
     return $this->user;
   }

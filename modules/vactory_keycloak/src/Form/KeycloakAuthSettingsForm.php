@@ -113,6 +113,14 @@ class KeycloakAuthSettingsForm extends SocialAuthSettingsForm {
       '#default_value' => $config->get('app_client_secret'),
     ];
 
+    $form['kc_settings']['email_domain'] = [
+      '#type' => 'textfield',
+      '#required' => TRUE,
+      '#title' => $this->t('App email domain'),
+      '#description' => $this->t('Used to generate a custom hash email for users who don\'t have an email in KeyCloak.'),
+      '#default_value' => $config->get('email_domain'),
+    ];
+
     $form['kc_settings']['oauth_redirect_url'] = [
       '#type' => 'textfield',
       '#disabled' => TRUE,
@@ -121,13 +129,13 @@ class KeycloakAuthSettingsForm extends SocialAuthSettingsForm {
       '#default_value' => Url::fromRoute('vactory_keycloak.callback')->setAbsolute()->toString(),
     ];
 
-    $form['ck_settings']['advanced'] = [
+    $form['kc_settings']['advanced'] = [
       '#type' => 'details',
       '#title' => $this->t('Advanced settings'),
       '#open' => FALSE,
     ];
 
-    $form['ck_settings']['advanced']['scopes'] = [
+    $form['kc_settings']['advanced']['scopes'] = [
       '#type' => 'textarea',
       '#title' => $this->t('Scopes for API call'),
       '#default_value' => $config->get('scopes'),
@@ -158,6 +166,7 @@ class KeycloakAuthSettingsForm extends SocialAuthSettingsForm {
       ->set('app_client_secret', $values['app_client_secret'])
       ->set('oauth_redirect_url', $values['oauth_redirect_url'])
       ->set('scopes', $values['scopes'])
+      ->set('email_domain', $values['email_domain'])
       ->save();
 
     parent::submitForm($form, $form_state);

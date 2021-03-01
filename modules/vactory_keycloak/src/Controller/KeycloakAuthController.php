@@ -76,26 +76,16 @@ class KeycloakAuthController extends OAuth2ControllerBase {
       return $redirect;
     }
 
-    /* @var \pviojo\OAuth2\Client\Provider\KeycloakResourceOwner|null $profile */
+    /* @var \Drupal\vactory_keycloak\Provider\KeycloakResourceOwner|null $profile */
     $profile = $this->processCallback();
 
     // If authentication was successful.
     if ($profile) {
-
-      // Check for email.
-      // @todo: we do not always have an email
-      // @todo: generate a custom one for this case.
-      if (!$profile->getEmail()) {
-        $this->messenger->addError($this->t('Keycloak authentication failed. This site requires permission to get your email address.'));
-
-        return $this->redirect('user.login');
-      }
-
       // If user information could be retrieved.
       return $this->userAuthenticator->authenticateUser($profile->getName(),
-                                                        $profile->getEmail(),
-                                                        $profile->getId(),
-                                                        $this->providerManager->getAccessToken());
+        $profile->getEmail(),
+        $profile->getId(),
+        $this->providerManager->getAccessToken());
     }
 
     return $this->redirect('user.login');
