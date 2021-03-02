@@ -4,15 +4,15 @@
  * @file
  * Contain related hooks.
  */
-use Drupal\core\Site\Settings;
 
+use Drupal\core\Site\Settings;
 
 /**
  * Implements HOOK_ckeditor_css_alter().
  */
 function vactory_ckeditor_ckeditor_css_alter(&$css, $editor) {
-  $frontend_url = Settings::get('BASE_FRONTEND_URL', NULL);
-  if ( $frontend_url ) {
-    $css[] = $frontend_url . '/styles.min.css';
+  $ckeditor_stylesheet_url = Settings::get('CKEDITOR_STYLESHEET_URL', NULL);
+  if ( $ckeditor_stylesheet_url ) {
+    $css[] = $ckeditor_stylesheet_url;
   }
 }

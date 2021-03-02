@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the vactory_ckeditor module.
+ */
+
+use Drupal\core\Site\Settings;
+
+/**
+ * Implements hook_requirements().
+ */
+function vactory_ckeditor_requirements($phase) {
+  $requirements = [];
+  $ckeditor_stylesheet_url = Settings::get('CKEDITOR_STYLESHEET_URL', NULL);
+
+  if ($phase == 'runtime' && !$ckeditor_stylesheet_url) {
+    $requirements['vactory_ckeditor'] = [
+      'title' => t('Feuille de style CKEDITOR'),
+      'description' => t('CKEDITOR_STYLESHEET_URL is missing, please add $settings[\'CKEDITOR_STYLESHEET_URL\'] = \'https://domain.com/styles.min.css\' to your settings.php'),
+      'severity' => REQUIREMENT_WARNING,
+    ];
+  }
+
+  return $requirements;
+}
+
