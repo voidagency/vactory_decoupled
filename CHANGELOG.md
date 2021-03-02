@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.18 (2021-03-02)
+
+### New Features
+
+* **Vactory CKEDITOR:** Adds a CKEDITOR_STYLESHEET_URL settings to link frontend stylesheet with ckeditor ([PR-73](https://github.com/voidagency/vactory_decoupled/pull/73))
+
 # 1.0.17 (2021-03-02)
 
 ### Bug Fixes
