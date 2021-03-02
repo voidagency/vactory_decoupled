@@ -1,0 +1,9 @@
+name: 'Vactory CKEditor'
+description: 'Provides Vactory CKEditor configuration. Manage your Vactory CKEditor style.'
+type: module
+core: 8.x
+dependencies:
+  - ckeditor
+version: 8.x-1.0
+package: Vactory
+core_incompatible: false
