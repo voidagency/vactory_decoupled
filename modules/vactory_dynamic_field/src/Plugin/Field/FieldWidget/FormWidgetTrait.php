@@ -8,6 +8,7 @@ use Drupal\Component\Utility\NestedArray;
 use Drupal\Core\Language\LanguageInterface;
 use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
+use Drupal\taxonomy\Entity\Term;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\Core\Entity\Entity\EntityFormDisplay;
@@ -114,7 +115,14 @@ trait FormWidgetTrait {
 
     // Entity autocomplete default value.
     if ($type === 'entity_autocomplete') {
-      $default_value = !empty($default_value) ? Node::load($default_value) : NULL;
+      $loaded_entity = $default_value;
+      if ($options['#target_type'] === 'taxonomy_term') {
+        $loaded_entity = Term::load($default_value);
+      }
+      else if ($options['#target_type'] === 'node') {
+        $loaded_entity = Node::load($default_value);
+      }
+      $default_value = !empty($default_value) ? $loaded_entity : NULL;
       $element['#default_value'] = $default_value;
     }
 
