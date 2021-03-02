@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.19 (2021-03-02)
+
+### New Features
+
+* **Vactory CKEDITOR:** Custom settings plugins + added #app to iframe body, which is used by Tailwind. ([13702dd](https://github.com/voidagency/vactory_decoupled/commit/13702dd982982a4e8b0fc43d402e76d122e0dc48))
+
+
 # 1.0.18 (2021-03-02)
 
 ### New Features
