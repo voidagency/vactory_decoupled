@@ -16,3 +16,10 @@ function vactory_ckeditor_ckeditor_css_alter(&$css, $editor) {
     $css[] = $ckeditor_stylesheet_url;
   }
 }
+
+/**
+ * Implements HOOK_ckeditor_plugin_info_alter().
+ */
+function vactory_ckeditor_ckeditor_plugin_info_alter(array &$plugins) {
+  $plugins['internal']['class'] = 'Drupal\vactory_ckeditor\Plugins\CKEditorPlugin\CustomInternal';
+}
