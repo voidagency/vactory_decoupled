@@ -9,6 +9,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **Core:** Fallback to empty array on blockmanager when no node is passed. ([d4b236](https://github.com/voidagency/vactory_decoupled/commit/d4b23615792d77741a8adae5007d6a78e71d7a7ed))
 
+* **VCC:** VCC latest bundle override all others. ([e56b4e](https://github.com/voidagency/vactory_decoupled/commit/e56b4ee3ed29cb9df98bf77ce6b5a21253968d7f))
+
 * **Forum:** Removed roles restriction & updated listing per page. ([0179b1](https://github.com/voidagency/vactory_decoupled/commit/0179b1f400f0401b89f3955c36971947f209b16b))
 
 # 1.0.21 (2021-03-04)
