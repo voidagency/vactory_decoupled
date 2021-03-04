@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.20 (2021-03-04)
+
+### Bug Fixes
+
+* **Core:** ViewsToApi should include uuid for taxonomies ([e54c2f](https://github.com/voidagency/vactory_decoupled/commit/e54c2f137ede28a5592fb2f821c5c5c639202f6d))
+
+* **Forum:** Applied hook_entity_field_access to allow authentified users to set uid ([6aac95](https://github.com/voidagency/vactory_decoupled/commit/6aac95b909ff2c00754660f3ef25d88d3fc7fba7))
+
+### BREAKING CHANGES
+
+* **Core:** Applied reCaptcha to all nodes creation > you will need to enable "skip CAPTCHA" permissions ([934b514](https://github.com/voidagency/vactory_decoupled/commit/934b51490cd6eccc2bd1d2351e05d3db66ddf4d9))
+
 # 1.0.19 (2021-03-02)
 
 ### New Features
