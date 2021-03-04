@@ -334,6 +334,7 @@ class ViewsToApi
       foreach ($terms as $term) {
         array_push($result[$vid], [
           'id' => $term->id(),
+          'uuid' => $term->uuid(),
           'label' => $term->label(),
         ]);
       }
