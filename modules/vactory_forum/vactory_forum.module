@@ -5,12 +5,12 @@
  * Contain related hooks.
  */
 
-use Drupal\Component\Utility\UrlHelper;
-use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\Url;
-use Drupal\media\Entity\Media;
 use Drupal\views\Views;
-
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Field\FieldItemListInterface;
+use Drupal\Core\Session\AccountInterface;
 /**
  * Implements hook_df_jsonapi_output_alter().
  */
@@ -117,6 +117,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       $all_categories[] = [
         'name' => $term->label(),
         'id' => $term->id(),
+        'uuid' => $term->uuid(),
       ];
     }
 
@@ -124,4 +125,30 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
     $content['data']['all_categories'] = $all_categories;
   }
 
+}
+
+
+/**
+ * Implements hook_entity_field_access().
+ */
+function vactory_forum_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
+  $fields = ['name', 'uid'];
+
+  if ( in_array($field_definition->getName(), $fields)
+    && $operation == 'edit'
+  ) {
+    return AccessResult::allowedIfHasPermission($account, 'create vactory_forum content');
+  }
+  return AccessResult::neutral();
+}
+
+/**
+ * Implements hook_entity_field_access_alter().
+ */
+function vactory_forum_entity_field_access_alter(array &$grants, array $context) {
+  $field = $context['field_definition']->getName();
+  $fields = ['name', 'uid'];
+  if (in_array($field, $fields) && $context['operation'] == 'edit') {
+    $grants[':default'] = AccessResult::allowedIfHasPermission($context['account'], 'create vactory_forum content');
+  }
 }
