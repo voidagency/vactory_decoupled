@@ -2,6 +2,9 @@
 
 namespace Drupal\vactory_jsonapi\Plugin\Validation\Constraint;
 
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
+use Drupal\Core\Session\AccountInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use ReCaptcha\ReCaptcha;
@@ -16,7 +19,33 @@ require_once 'modules/contrib/recaptcha' . '/src/ReCaptcha/RequestMethod/Drupal8
 /**
  * Validates the Recaptcha constraint.
  */
-class RecaptchaValidator extends ConstraintValidator {
+class RecaptchaValidator extends ConstraintValidator implements ContainerInjectionInterface {
+
+  /**
+   * The current user.
+   *
+   * @var \Drupal\Core\Session\AccountInterface
+   */
+  protected $currentUser;
+
+  /**
+   * Creates a new RecaptchaValidator instance.
+   *
+   * @param \Drupal\Core\Session\AccountInterface $current_user
+   *   The current user.
+   */
+  public function __construct(AccountInterface $current_user) {
+    $this->currentUser = $current_user;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('current_user')
+    );
+  }
 
   /**
    * {@inheritdoc}
@@ -24,6 +53,7 @@ class RecaptchaValidator extends ConstraintValidator {
   public function validate($items, Constraint $constraint) {
     $request = \Drupal::request();
     $method = strtoupper($request->getMethod());
+    $is_admin = $this->currentUser->hasPermission('skip CAPTCHA');
 
     if (in_array($method, [
       'GET',
@@ -31,7 +61,7 @@ class RecaptchaValidator extends ConstraintValidator {
       'CONNECT',
       'TRACE',
       'OPTIONS',
-    ], TRUE)) {
+    ], TRUE) || $is_admin) {
       return;
     }
     $raw_data = $request->getContent();

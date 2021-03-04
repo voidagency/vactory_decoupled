@@ -160,4 +160,5 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
  */
 function vactory_jsonapi_entity_type_alter(array &$entity_types) {
   $entity_types['comment']->addConstraint('jsonapi_recaptcha');
+  $entity_types['node']->addConstraint('jsonapi_recaptcha');
 }
