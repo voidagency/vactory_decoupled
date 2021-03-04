@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.21 (2021-03-04)
+
+### Other changes
+
+* **Forum:** Added all text formats & updated roles permissions ([9b1e57](https://github.com/voidagency/vactory_decoupled/commit/9b1e57f9d2941b72f3efd7c0908ec7344ec46c9a))
+
 # 1.0.20 (2021-03-04)
 
 ### Bug Fixes
