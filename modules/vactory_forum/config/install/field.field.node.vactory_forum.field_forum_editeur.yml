@@ -19,14 +19,7 @@ settings:
   handler_settings:
     include_anonymous: false
     filter:
-      type: role
-      role:
-        editeur_forum: editeur_forum
-        master: '0'
-        webmaster: '0'
-        super_administrateur: '0'
-        openid: '0'
-        expert_forum: '0'
+      type: _none
     target_bundles: null
     sort:
       field: _none

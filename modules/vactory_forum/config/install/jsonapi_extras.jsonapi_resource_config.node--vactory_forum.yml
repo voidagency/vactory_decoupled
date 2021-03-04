@@ -116,6 +116,12 @@ resourceFields:
     publicName: revision_translation_affected
     enhancer:
       id: ''
+  moderation_state:
+    fieldName: moderation_state
+    publicName: moderation_state
+    enhancer:
+      id: ''
+    disabled: false
   metatag:
     disabled: true
     fieldName: metatag
@@ -153,23 +159,23 @@ resourceFields:
       id: ''
     disabled: false
   node_banner:
-    disabled: true
     fieldName: node_banner
     publicName: node_banner
     enhancer:
       id: ''
+    disabled: false
   node_banner_disabled:
-    disabled: true
     fieldName: node_banner_disabled
     publicName: node_banner_disabled
     enhancer:
       id: ''
+    disabled: false
   internal_node_banner:
-    disabled: true
     fieldName: internal_node_banner
     publicName: internal_node_banner
     enhancer:
       id: ''
+    disabled: false
   node_class:
     fieldName: node_class
     publicName: node_class
@@ -201,11 +207,17 @@ resourceFields:
       id: ''
     disabled: false
   internal_blocks:
-    disabled: true
     fieldName: internal_blocks
     publicName: internal_blocks
     enhancer:
       id: ''
+    disabled: false
+  internal_comment:
+    fieldName: internal_comment
+    publicName: internal_comment
+    enhancer:
+      id: ''
+    disabled: false
   vcc_normalized:
     fieldName: vcc_normalized
     publicName: vcc_normalized
@@ -269,6 +281,12 @@ resourceFields:
   field_forum_views_count:
     fieldName: field_forum_views_count
     publicName: views_count
+    enhancer:
+      id: ''
+    disabled: false
+  field_vactory_date:
+    fieldName: field_vactory_date
+    publicName: field_vactory_date
     enhancer:
       id: ''
     disabled: false
