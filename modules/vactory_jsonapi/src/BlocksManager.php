@@ -78,6 +78,11 @@ class BlocksManager
   public function getBlocksByNode($nid)
   {
     $blocks = [];
+
+    if (!$nid) {
+      return $blocks;
+    }
+
     try {
       $blocks = $this->getThemeBlocks();
     } catch (InvalidPluginDefinitionException $e) {
