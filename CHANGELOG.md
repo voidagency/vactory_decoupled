@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.22 (2021-03-04)
+
+### Bug Fixes
+
+* **Core:** Fallback to empty array on blockmanager when no node is passed. ([d4b236](https://github.com/voidagency/vactory_decoupled/commit/d4b23615792d77741a8adae5007d6a78e71d7a7ed))
+
+* **Forum:** Removed roles restriction & updated listing per page. ([0179b1](https://github.com/voidagency/vactory_decoupled/commit/0179b1f400f0401b89f3955c36971947f209b16b))
+
 # 1.0.21 (2021-03-04)
 
 ### Other changes
