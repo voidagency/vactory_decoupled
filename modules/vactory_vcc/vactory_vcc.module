@@ -164,24 +164,6 @@ function vactory_vcc_entity_base_field_info(EntityTypeInterface $entity_type)
       ->setTargetEntityTypeId($entity_type->id())
       ->setDisplayConfigurable('form', FALSE)
       ->setDisplayConfigurable('view', FALSE);
-
-    $fields['vcc'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Similar content'))
-      ->setSetting('target_type', 'node')
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', FALSE)
-      ->setTargetEntityTypeId($entity_type->id())
-      ->setTranslatable(FALSE)
-      ->setCardinality(BaseFieldDefinition::CARDINALITY_UNLIMITED)
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => '',
-        ],
-      ]);
-
   }
   return $fields;
 }
@@ -191,12 +173,26 @@ function vactory_vcc_entity_base_field_info(EntityTypeInterface $entity_type)
  */
 function vactory_vcc_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions)
 {
-  if (isset($base_field_definitions['vcc'])) {
-    // Add the target bundle to the vcc field. Since each bundle
-    // should reference it's own kind.
-    $base_field_definitions['vcc']->setSetting('handler_settings', ['target_bundles' => [$bundle => $bundle]]);
-    return [
-      'vcc' => $base_field_definitions['vcc'],
-    ];
+  if ($entity_type->id() == 'node') {
+    $type = NodeType::load($bundle);
+    $fields = [];
+    $fields['vcc'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Similar content'))
+      ->setSetting('target_type', 'node')
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', FALSE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setTranslatable(FALSE)
+      ->setCardinality($type->getThirdPartySetting('vactory_vcc', 'limit', 3))
+      ->setSetting('handler_settings', ['target_bundles' => [$bundle => $bundle]])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ]);
+    return $fields;
   }
 }
