@@ -17,23 +17,25 @@ use Drupal\views\Views;
  *
  * @api
  */
-class ViewsToApi
-{
+class ViewsToApi {
 
   const RESERVED_FIELDS = ['url', 'id'];
 
   protected $siteConfig;
+
   protected $dateFormatter;
+
   protected $dateFormats;
 
   /**
    * {@inheritdoc}
    */
-  public function __construct()
-  {
+  public function __construct() {
     $this->siteConfig = \Drupal::config('system.site');
     $this->dateFormatter = \Drupal::service('date.formatter');
-    $this->dateFormats = \Drupal::entityTypeManager()->getStorage('date_format')->loadMultiple();
+    $this->dateFormats = \Drupal::entityTypeManager()
+      ->getStorage('date_format')
+      ->loadMultiple();
   }
 
   /**
@@ -41,18 +43,60 @@ class ViewsToApi
    *
    * @param array $config
    *   The Config settings; see FormElement("dynamic_views")
+   *
    * @return array
    *   The JSON structure of the requested resource.
    *
    */
-  public function normalize(array $config)
-  {
+  public function normalize(array $config) {
     $nodes = [];
     $views_name = $config['views_id'];
     $views_display = $config['views_display_id'];
     $views_items_per_page = $config['limit'];
     $views_args = $config['args'];
     $exposed_vocabularies = $config['vocabularies'];
+
+    // Override args using filters.
+    if (
+      isset($config['filters']) &&
+      !empty($config['filters']) &&
+      is_array($config['filters'])
+    ) {
+      $args_filters = [];
+      $is_filters_null = empty(array_filter($config['filters'], function ($a) {
+        return $a !== NULL;
+      }));
+
+      if (!$is_filters_null) {
+        foreach ($config['filters'] as $key => $filter) {
+          if (is_array($filter)) {
+            $entity_ids = array_map(function (array $item) {
+              return $item['target_id'];
+            }, $filter);
+            // @todo: Saisir plusieurs valeurs sous la forme 1+2+3 (pour OR) ou 1,2,3 (pour AND).
+            // @todo: need OR & AND between two filters or more. > https://www.drupal.org/project/views_contextual_filters_or
+            $condition = "+"; // OR by default.
+            //            if (
+            //              isset($config['condition_filters'][$key]) &&
+            //              !empty($config['condition_filters'][$key])
+            //            ) {
+            //              $condition = $config['condition_filters'][$key] === 'AND' ? ',' : '+';
+            //            }
+
+            $rule = join($condition, $entity_ids);
+            array_push($args_filters, $rule);
+          }
+          else {
+            if (!$filter) {
+              $filter = 'all';
+            }
+            array_push($args_filters, $filter);
+          }
+        }
+
+        $views_args = $args_filters;
+      }
+    }
 
     $view = Views::getView($views_name);
     $view->get_total_rows = TRUE;
@@ -73,13 +117,13 @@ class ViewsToApi
 
     if (is_string($views_display)) {
       $view->setDisplay($views_display);
-    } else {
+    }
+    else {
       $view->initDisplay();
     }
 
     $view->preExecute();
     $view->execute();
-
 
     $result = $view->result;
 
@@ -98,7 +142,7 @@ class ViewsToApi
     return [
       'nodes' => $nodes,
       'count' => $view->total_rows,
-      'exposed' => $this->getExposedTerms($exposed_vocabularies)
+      'exposed' => $this->getExposedTerms($exposed_vocabularies),
     ];
   }
 
@@ -107,13 +151,13 @@ class ViewsToApi
    *    The Node.
    * @param array $config
    *    Views form element config.
+   *
    * @return array
    *    Normalized data.
    *
    * @throws EntityMalformedException
    */
-  protected function normalizeNode(NodeInterface $node, array $config = [])
-  {
+  protected function normalizeNode(NodeInterface $node, array $config = []) {
     $fields = $config['fields'];
     $imageStyles = $config['image_styles'];
 
@@ -129,10 +173,11 @@ class ViewsToApi
 
     foreach ($fields as $field_name => $output_field_name) {
       if (!$node->hasField($field_name) && !in_array($field_name, self::RESERVED_FIELDS)) {
-        \Drupal::logger('vactory_dynamic_field')->warning('Could not find %field_name field in content type %content_type in form element dynamic_views. You may have entered wrong fields names in the DF.', [
-          '%field_name' => $field_name,
-          '%content_type' => $node->bundle()
-        ]);
+        \Drupal::logger('vactory_dynamic_field')
+          ->warning('Could not find %field_name field in content type %content_type in form element dynamic_views. You may have entered wrong fields names in the DF.', [
+            '%field_name' => $field_name,
+            '%content_type' => $node->bundle(),
+          ]);
         continue;
       }
 
@@ -162,7 +207,8 @@ class ViewsToApi
             '#format' => $text_field_data[0]['format'],
           ];
 
-          $result[$output_field_name] = (string)\Drupal::service('renderer')->renderPlain($build);
+          $result[$output_field_name] = (string) \Drupal::service('renderer')
+            ->renderPlain($build);
         }
         continue;
       }
@@ -172,7 +218,7 @@ class ViewsToApi
         $result[$output_field_name] = NULL;
 
         if (!empty($mid)) {
-          $mid = (int)$mid;
+          $mid = (int) $mid;
           $media = Media::load($mid);
 
           if (
@@ -190,7 +236,9 @@ class ViewsToApi
             $fileResult['fid'] = $fid;
             $fileResult['file_name'] = $media->label();
             $fileResult['base_url'] = $image_app_base_url;
-            $fileResult['meta'] = $media->get('field_media_image')->first()->getValue();
+            $fileResult['meta'] = $media->get('field_media_image')
+              ->first()
+              ->getValue();
 
             foreach ($appliedImageStyle as $imageStyle) {
               $fileResult[$imageStyle->id()] = $imageStyle->buildUrl($uri);
@@ -202,9 +250,11 @@ class ViewsToApi
           if (
             $media &&
             $media->bundle() === 'document' &&
-            isset($media->get('field_media_document')->getValue()[0]['target_id'])
+            isset($media->get('field_media_document')
+                ->getValue()[0]['target_id'])
           ) {
-            $fid = $media->get('field_media_document')->getValue()[0]['target_id'];
+            $fid = $media->get('field_media_document')
+              ->getValue()[0]['target_id'];
             $file = File::load($fid);
             $uri = $file->getFileUri();
 
@@ -239,11 +289,14 @@ class ViewsToApi
         if (isset($link_value[0]['uri']) && !empty($link_value[0]['uri'])) {
           if (UrlHelper::isExternal($link_value[0]['uri'])) {
             $result[$output_field_name]['url'] = $link_value[0]['uri'];
-          } else {
+          }
+          else {
             $front_uri = $this->siteConfig->get('page.front');
             if ($front_uri === $link_value[0]['uri']) {
-              $result[$output_field_name]['url'] = Url::fromRoute('<front>')->toString();
-            } else {
+              $result[$output_field_name]['url'] = Url::fromRoute('<front>')
+                ->toString();
+            }
+            else {
               $result[$output_field_name]['url'] = Url::fromUri($link_value[0]['uri'])
                 ->toString();
             }
@@ -294,11 +347,13 @@ class ViewsToApi
         ];
 
         if (isset($node->get($field_name)->getValue()[0]['value'])) {
-          $result[$output_field_name]['date_start'] = $node->get($field_name)->getValue()[0]['value'];
+          $result[$output_field_name]['date_start'] = $node->get($field_name)
+            ->getValue()[0]['value'];
         }
 
         if (isset($node->get($field_name)->getValue()[0]['end_value'])) {
-          $result[$output_field_name]['date_end'] = $node->get($field_name)->getValue()[0]['end_value'];
+          $result[$output_field_name]['date_end'] = $node->get($field_name)
+            ->getValue()[0]['end_value'];
         }
 
         continue;
@@ -316,13 +371,12 @@ class ViewsToApi
     return $result;
   }
 
-  protected function getExposedTerms(array $vocabularies)
-  {
+  protected function getExposedTerms(array $vocabularies) {
     $result = [];
 
     $entityTypeManager = \Drupal::service('entity_type.manager');
     $taxonomyTermStorage = $entityTypeManager->getStorage('taxonomy_term');
-    $bundles = (array)$vocabularies;
+    $bundles = (array) $vocabularies;
     $bundles = array_filter($bundles, function ($value) {
       return $value != '0';
     });
