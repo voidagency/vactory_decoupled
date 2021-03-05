@@ -1,0 +1,4 @@
+administer field views dynamic field settings:
+  title: 'Administer views dynamic field'
+  description: 'Administer views dynamic field like args, fields, exposed terms & image styles.'
+  restrict access: TRUE

@@ -11,16 +11,14 @@ use Drupal\views\Views;
  *
  * @FormElement("dynamic_views")
  */
-class DynamicViews extends FormElement
-{
+class DynamicViews extends FormElement {
 
   const DELIMITER = ',';
 
   /**
    * {@inheritDoc}
    */
-  public function getInfo()
-  {
+  public function getInfo() {
     $class = get_class($this);
 
     return [
@@ -38,15 +36,20 @@ class DynamicViews extends FormElement
   /**
    * Element process callback.
    */
-  public static function processElement(array &$element, FormStateInterface $form_state, array &$complete_form)
-  {
+  public static function processElement(array &$element, FormStateInterface $form_state, array &$complete_form) {
     $element['#tree'] = TRUE;
+
+    $has_access = \Drupal::currentUser()
+      ->hasPermission('administer field views dynamic field settings');
 
     $element['views_id'] = [
       '#type' => 'textfield',
       '#required' => TRUE,
       '#title' => t('View ID'),
       '#default_value' => $element['#default_value']['views_id'] ?? '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
 
     $element['views_display_id'] = [
@@ -54,19 +57,90 @@ class DynamicViews extends FormElement
       '#required' => TRUE,
       '#title' => t('View Display ID'),
       '#default_value' => $element['#default_value']['views_display_id'] ?? '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
 
     $element['limit'] = [
       '#type' => 'number',
       '#title' => t('Limit'),
       '#default_value' => $element['#default_value']['limit'] ?? '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
+
+    if (isset($element['args_filters']) && is_array($element['args_filters'])) {
+      $element['filters'] = [
+        '#type' => 'details',
+        '#title' => t('Filtres'),
+        '#open' => TRUE,
+      ];
+
+      /*$element['condition_filters'] = [
+        '#type' => 'details',
+        '#title' => t('Conditions des filtres'),
+        '#open' => false,
+      ];*/
+
+      foreach ($element['args_filters'] as $key => $filter) {
+        if ($filter['type'] === 'taxonomy') {
+          $filter_default_value = NULL;
+          if (
+            isset($element['#default_value']['filters'][$key]) &&
+            !empty($element['#default_value']['filters'][$key])
+          ) {
+            if (is_array($element['#default_value']['filters'][$key])) {
+              $entity_ids = array_map(function (array $item) {
+                return $item['target_id'];
+              }, $element['#default_value']['filters'][$key]);
+              $filter_default_value = \Drupal::entityTypeManager()
+                ->getStorage('taxonomy_term')
+                ->loadMultiple($entity_ids);
+            }
+            else {
+              $filter_default_value = \Drupal::entityTypeManager()
+                ->getStorage('taxonomy_term')
+                ->load($element['#default_value']['filters'][$key]);
+            }
+          }
+          $element['filters'][$key] = [
+            '#title' => $filter['label'],
+            '#type' => 'entity_autocomplete',
+            '#target_type' => 'taxonomy_term',
+            '#default_value' => $filter_default_value,
+            '#selection_settings' => [
+              'target_bundles' => [$filter['bundle']],
+            ],
+            '#tags' => TRUE,
+          ];
+
+          /*if ($filter['multiple']) {
+            $query_condition_value = $element['#default_value']['condition_filters'][$key] ?: 'OR';
+            $element['condition_filters'][$key] = [
+              '#title' => t('Condition pour @title', ['@title' => $filter['label']]),
+              '#type' => 'radios',
+              '#options' => [
+                'AND' => t('AND'),
+                'OR' => t('OR'),
+              ],
+              '#default_value' => $query_condition_value,
+            ];
+          }*/
+
+        }
+      }
+    }
 
     $element['args'] = [
       '#type' => 'textfield',
       '#title' => t('Args'),
       '#description' => t('Provide a comma separated list of arguments to pass to the view.'),
       '#default_value' => $element['#default_value']['args'] ? self::convertArraytoCommaValue($element['#default_value']['args']) : '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
 
     $element['fields'] = [
@@ -75,6 +149,9 @@ class DynamicViews extends FormElement
       '#title' => t('Fields'),
       '#description' => self::allowedValuesDescription(),
       '#default_value' => $element['#default_value']['fields'] ? self::allowedValuesString($element['#default_value']['fields']) : '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
 
     $element['vocabularies'] = [
@@ -83,6 +160,12 @@ class DynamicViews extends FormElement
       '#description' => t('Terms in these vocabularies will be exposed by the API.'),
       '#options' => self::getVocabularyBundles(),
       '#default_value' => $element['#default_value']['vocabularies'] ?? '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
+      '#attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
 
     $element['image_styles'] = [
@@ -91,6 +174,12 @@ class DynamicViews extends FormElement
       '#description' => t('Image styles to be applied on image fields.'),
       '#options' => self::getImageStyles(),
       '#default_value' => $element['#default_value']['image_styles'] ?? '',
+      '#wrapper_attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
+      '#attributes' => [
+        'style' => $has_access ? NULL : 'display:none',
+      ],
     ];
 
     return $element;
@@ -99,8 +188,7 @@ class DynamicViews extends FormElement
   /**
    * Form element validate callback.
    */
-  public static function validateElement(&$element, FormStateInterface $form_state, &$form)
-  {
+  public static function validateElement(&$element, FormStateInterface $form_state, &$form) {
     $views_name = $element['views_id']['#value'];
     $views_display_name = $element['views_display_id']['#value'];
     $fields = $element['fields']['#value'];
@@ -117,8 +205,7 @@ class DynamicViews extends FormElement
   /**
    * {@inheritdoc}
    */
-  public static function valueCallback(&$element, $input, FormStateInterface $form_state)
-  {
+  public static function valueCallback(&$element, $input, FormStateInterface $form_state) {
     if ($input !== FALSE && $input !== NULL) {
       // Upon save convert comma separated to array.
       if (isset($input['args']) && !empty($input['args'])) {
@@ -144,8 +231,6 @@ class DynamicViews extends FormElement
 
         $input['fields'] = $values;
       }
-
-
     }
 
     return is_array($input) ? $input : $element['#default_value'];
@@ -155,13 +240,13 @@ class DynamicViews extends FormElement
    * Convert array to comma separated string.
    *
    * @param array $values
+   *
    * @return string
    */
-  protected static function convertArraytoCommaValue($values)
-  {
+  protected static function convertArraytoCommaValue($values) {
     $values = array_map(static function ($item): ?string {
       return $item ?? NULL;
-    }, (array)$values);
+    }, (array) $values);
     $values = array_filter($values);
 
     return implode(self::DELIMITER, $values);
@@ -174,13 +259,13 @@ class DynamicViews extends FormElement
    * @param array $values
    *   An array of values, where array keys are values and array values are
    *   labels.
+   *
    * @return string
    *   The string representation of the $values array:
    *    - Values are separated by a carriage return.
    *    - Each value is in the format "value|label" or "value".
    */
-  protected static function allowedValuesString($values)
-  {
+  protected static function allowedValuesString($values) {
     $lines = [];
     foreach ($values as $key => $value) {
       $lines[] = "$key|$value";
@@ -192,8 +277,7 @@ class DynamicViews extends FormElement
   /**
    * {@inheritdoc}
    */
-  protected static function allowedValuesDescription()
-  {
+  protected static function allowedValuesDescription() {
     $description = '<p>' . t('The possible values this field can contain. Enter one value per line, in the format key|label.');
     $description .= '<br/>' . t('The key is the stored value, and must be numeric. The label will be used in displayed values and edit forms.');
     $description .= '</p>';
@@ -207,10 +291,10 @@ class DynamicViews extends FormElement
    * @return array
    *   The taxonomy terms bundle list.
    */
-  protected static function getVocabularyBundles(): array
-  {
+  protected static function getVocabularyBundles(): array {
     $bundle_options = [];
-    $bundles = \Drupal::service('entity_type.bundle.info')->getBundleInfo('taxonomy_term');
+    $bundles = \Drupal::service('entity_type.bundle.info')
+      ->getBundleInfo('taxonomy_term');
     foreach ($bundles as $bundle_id => $bundle) {
       $bundle_options[$bundle_id] = $bundle['label'];
     }
@@ -224,10 +308,11 @@ class DynamicViews extends FormElement
    * @return array
    *   The image styles list.
    */
-  protected static function getImageStyles(): array
-  {
+  protected static function getImageStyles(): array {
     $bundle_options = [];
-    $styles = \Drupal::entityTypeManager()->getStorage('image_style')->loadMultiple();
+    $styles = \Drupal::entityTypeManager()
+      ->getStorage('image_style')
+      ->loadMultiple();
 
     foreach ($styles as $style_id => $style) {
       $bundle_options[$style_id] = $style->label();
