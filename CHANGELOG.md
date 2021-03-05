@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.23 (2021-03-05)
+
+### New Features
+
+* **DF:** Exposed filters on DF views. ([PR-74](https://github.com/voidagency/vactory_decoupled/pull/74))
+
 # 1.0.22 (2021-03-04)
 
 ### Bug Fixes
