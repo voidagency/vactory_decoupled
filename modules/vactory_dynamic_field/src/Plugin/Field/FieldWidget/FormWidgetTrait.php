@@ -116,12 +116,22 @@ trait FormWidgetTrait {
     // Entity autocomplete default value.
     if ($type === 'entity_autocomplete') {
       $loaded_entity = $default_value;
-      if ($options['#target_type'] === 'taxonomy_term') {
-        $loaded_entity = Term::load($default_value);
+
+      if (is_array($default_value)) {
+        $entity_ids = array_map(function (array $item) {
+          return $item['target_id'];
+        }, $default_value);
+
+        $loaded_entity = \Drupal::entityTypeManager()
+          ->getStorage($options['#target_type'])
+          ->loadMultiple($entity_ids);
       }
-      else if ($options['#target_type'] === 'node') {
-        $loaded_entity = Node::load($default_value);
+      else {
+        $loaded_entity = \Drupal::entityTypeManager()
+          ->getStorage($options['#target_type'])
+          ->load($default_value);
       }
+
       $default_value = !empty($default_value) ? $loaded_entity : NULL;
       $element['#default_value'] = $default_value;
     }
