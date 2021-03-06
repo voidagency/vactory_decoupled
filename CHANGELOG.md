@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.24 (2021-03-06)
+
+### Bug Fixes
+
+* **DF:** Handle multiple values in entity_autocomplete. ([cde1d2b](https://github.com/voidagency/vactory_decoupled/commit/cde1d2b784d61e76cfad071ef0b7070165076791))
+
 # 1.0.23 (2021-03-05)
 
 ### New Features
