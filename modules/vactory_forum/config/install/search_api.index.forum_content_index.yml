@@ -1,5 +1,5 @@
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - field.storage.node.body
@@ -175,6 +175,7 @@ processor_settings:
     weights:
       preprocess_index: -49
       preprocess_query: -49
+    ignored: ._-
   transliteration:
     all_fields: false
     fields:
