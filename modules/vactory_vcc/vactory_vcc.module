@@ -176,23 +176,26 @@ function vactory_vcc_entity_bundle_field_info(EntityTypeInterface $entity_type, 
   if ($entity_type->id() == 'node') {
     $type = NodeType::load($bundle);
     $fields = [];
-    $fields['vcc'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Similar content'))
-      ->setSetting('target_type', 'node')
-      ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', FALSE)
-      ->setTargetEntityTypeId($entity_type->id())
-      ->setTranslatable(FALSE)
-      ->setCardinality($type->getThirdPartySetting('vactory_vcc', 'limit', 3))
-      ->setSetting('handler_settings', ['target_bundles' => [$bundle => $bundle]])
-      ->setDisplayOptions('form', [
-        'type' => 'entity_reference_autocomplete',
-        'settings' => [
-          'match_operator' => 'CONTAINS',
-          'size' => '60',
-          'placeholder' => '',
-        ],
-      ]);
+    if ($type->getThirdPartySetting('vactory_vcc', 'enabled')) {
+      $fields['vcc'] = BaseFieldDefinition::create('entity_reference')
+        ->setLabel(t('Similar content'))
+        ->setSetting('target_type', 'node')
+        ->setDisplayConfigurable('form', TRUE)
+        ->setDisplayConfigurable('view', FALSE)
+        ->setTargetEntityTypeId($entity_type->id())
+        ->setTranslatable(FALSE)
+        ->setCardinality($type->getThirdPartySetting('vactory_vcc', 'limit', 3))
+        ->setSetting('handler_settings', ['target_bundles' => [$bundle => $bundle]])
+        ->setDisplayOptions('form', [
+          'type' => 'entity_reference_autocomplete',
+          'settings' => [
+            'match_operator' => 'CONTAINS',
+            'size' => '60',
+            'placeholder' => '',
+          ],
+        ]);
+    }
+
     return $fields;
   }
 }
