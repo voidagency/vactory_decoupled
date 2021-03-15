@@ -75,8 +75,8 @@ class UrlExtendedElement extends FormElement {
       '#type' => 'select',
       '#title' => t('Link Target'),
       '#options' => [
-        '_blank' => 'Load in a new window (_blank)',
         '_self' => 'Load in the same frame as it was clicked (_self)',
+        '_blank' => 'Load in a new window (_blank)',
         '_parent' => 'Load in the parent frameset (_parent)',
         '_top' => 'Load in the full body of the window (_top)',
         'framename' => 'Load in a named frame (framename)',
