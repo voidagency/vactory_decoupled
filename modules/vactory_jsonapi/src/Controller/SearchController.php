@@ -139,6 +139,43 @@ class SearchController extends ControllerBase
     $query->sort('search_api_relevance', 'DESC');
 
     $results = $query->execute();
+    
+    //Add keywords to frequent_searches
+    $search_limit = 1000;
+    $search_controller = \Drupal::service('vactory_frequent_searches.frequent_searches_controller');
+    $originalKeys = $query->getOriginalKeys();
+    $lowerOriginalKeys = mb_strtolower($originalKeys);
+    // Delete white spaces.
+    $keywords = trim($lowerOriginalKeys);
+    // Delete double with spaces.
+    $output = preg_replace('!\s+!', ' ', $keywords);
+    $update_frequent_search = true;
+    // To avoid to insert empty keywords value into database.
+    if (!empty($output)) {
+      // Check if we have already this keywords at db.
+      $is_exist_keyword = $search_controller->isExistsKeyword($output, $search_api_index->id(), $language);
+      if (!$is_exist_keyword) {
+        if ((int) $results->getResultCount() > 0) {
+          if ($search_controller->getCountOfKeywords() >= $search_limit) {
+            $update_frequent_search = false;
+          }
+        }
+        else {
+          if ($search_controller->getCountOfKeywordsWithoutResults() >= $search_limit) {
+            $update_frequent_search = false;
+          }
+        }
+        if($update_frequent_search){
+          $count = (count($results->getResultItems()) > 0) ? 1 : 0;
+          $search_controller->addKeywordToDatabasa($output, $count, $language, $search_api_index->id(), (int) $results->getResultCount());
+        }
+      }
+      else {
+        // In case of the existing of the keywords, we update the count.
+        $search_controller->updateKeyword($output, $language, (int) $results->getResultCount(), $search_api_index->id());
+      }
+    }
+    //
     return $this->normalizer($results->getResultItems(), $includeSummary, $results->getResultCount());
   }
 
