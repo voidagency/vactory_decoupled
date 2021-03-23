@@ -4,6 +4,7 @@ namespace Drupal\vactory_dynamic_field\Element;
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element\FormElement;
+use Drupal\entityqueue\Entity\EntityQueue;
 use Drupal\views\Views;
 
 /**
@@ -41,6 +42,8 @@ class DynamicViews extends FormElement {
 
     $has_access = \Drupal::currentUser()
       ->hasPermission('administer field views dynamic field settings');
+    $has_access_administer_entityqueue = \Drupal::currentUser()
+      ->hasPermission('administer entityqueue');
 
     $element['views_id'] = [
       '#type' => 'textfield',
@@ -143,6 +146,21 @@ class DynamicViews extends FormElement {
       ],
     ];
 
+    $element['entity_queue'] = [
+      '#type' => 'select',
+      '#description' => t('Use an already made queue or prefiltered one to load the nodes you need. <em>Choosing a queue will ignore the filters above.</em> '),
+      '#title' => t('Entity Queue'),
+      '#empty_option' => t('- Select -'),
+      '#options' => self::getEntityQueues(),
+      '#default_value' => $element['#default_value']['entity_queue'] ? $element['#default_value']['entity_queue'] : '',
+      '#wrapper_attributes' => [
+        'style' => $has_access_administer_entityqueue ? NULL : 'display:none',
+      ],
+      '#attributes' => [
+        'style' => $has_access_administer_entityqueue ? NULL : 'display:none',
+      ],
+    ];
+
     $element['fields'] = [
       '#type' => 'textarea',
       '#required' => TRUE,
@@ -191,6 +209,7 @@ class DynamicViews extends FormElement {
   public static function validateElement(&$element, FormStateInterface $form_state, &$form) {
     $views_name = $element['views_id']['#value'];
     $views_display_name = $element['views_display_id']['#value'];
+    $views_entity_queue = $element['entity_queue']['#value'];
     $fields = $element['fields']['#value'];
     $view = Views::getView($views_name);
     if (!$view) {
@@ -200,6 +219,49 @@ class DynamicViews extends FormElement {
     if ($view && !$view->access($views_display_name)) {
       $form_state->setError($element['views_display_id'], t("Views Display ID @views_display_id is not valid.", ['@views_display_id' => $views_display_name]));
     }
+
+    if (is_string($views_display_name)) {
+      $view->setDisplay($views_display_name);
+    }
+    else {
+      $view->initDisplay();
+    }
+
+    // Check if the view has an entity queue relationship.
+    if (!empty($views_entity_queue)) {
+      $views_relationships = $view->getDisplay()->getOption('relationships');
+      $views_relationships = array_map(function ($relationship) {
+        return $relationship['plugin_id'] === 'entity_queue';
+      }, $views_relationships);
+
+      if (count($views_relationships) <= 0) {
+        $form_state->setError($element['entity_queue'], t("The selected view display <em>@views_display_id</em> has no relationships for entity queue. Either unselect the entity queue field or add entity queue relationship to your view display.", ['@views_display_id' => $views_display_name]));
+      }
+
+      $queue = EntityQueue::load($views_entity_queue);
+      $queue_settings = $queue->getEntitySettings();
+      $queue_bundles = $queue_settings['handler_settings']['target_bundles'];
+      $type_bundles = [];
+      $filters = $view->display_handler->getOption('filters');
+      foreach ($filters as $filter) {
+        if ($filter['plugin_id'] !== 'bundle') {
+          continue;
+        }
+
+        $type_bundles = $filter['value'];
+        break;
+      }
+
+      $views_type_matches_queue_type = array_intersect_assoc($queue_bundles, $type_bundles);
+      if (empty($views_type_matches_queue_type)) {
+        $form_state->setError($element['entity_queue'], t("The selected entity queue <em>@selected_queue</em> is not valid for the selected view <em>@selected_view / @selected_view_display</em>. Please make sure that <em>Content type</em> set for this entity queue is the same as bundle type used in the view.", [
+          '@selected_queue' => $views_entity_queue,
+          '@selected_view' => $views_name,
+          '@selected_view_display' => $views_display_name,
+        ]));
+      }
+    }
+
   }
 
   /**
@@ -284,6 +346,28 @@ class DynamicViews extends FormElement {
     return $description;
   }
 
+  /**
+   * The entity queue list to use in options.
+   *
+   * @return array
+   *   The entity queue list.
+   */
+  protected static function getEntityQueues(): array {
+    $options = [];
+    $storage = \Drupal::entityTypeManager()->getStorage('entity_queue');
+
+    $queue_ids = $storage->getQuery()
+      ->condition('status', TRUE)
+      ->execute();
+
+    $queues = $storage->loadMultiple($queue_ids);
+
+    foreach ($queues as $queue) {
+      $options[$queue->id()] = $queue->label();
+    }
+
+    return $options;
+  }
 
   /**
    * The taxonomy terms bundle list to use in checkboxes options.
