@@ -43,11 +43,44 @@ class FrequentSearchesController extends ControllerBase {
    * Fetch Only Searches with results From the database.
    */
   public function fetchKeywordsWithResultsFromDatabase($limit = NULL) {
-    $query = "SELECT * FROM vactory_frequent_searches where total_results > 0 AND language = '" . $this->langcode ."' ORDER BY numfound DESC";
-    if (isset($limit)) {
+    $query = "SELECT * FROM vactory_frequent_searches where total_results > 0 AND language = :lang ORDER BY numfound DESC";
+    if (isset($limit) && filter_var($limit, FILTER_VALIDATE_INT)) {
       $query = $query . " LIMIT " . $limit;
     }
-    $searches = $this->database->query($query);
+    $searches = $this->database->query($query, [
+      ':lang' => $this->langcode
+      ]);
+    if (isset($searches) and !empty($searches)) {
+      $result = [];
+      foreach ($searches as $key => $search) {
+        $result[$key]['id'] = $search->qid;
+        $result[$key]['s_name'] = $search->s_name;
+        $result[$key]['numfound'] = $search->numfound;
+        $result[$key]['keywords'] = $search->keywords;
+        $result[$key]['language'] = $search->language;
+        $result[$key]['timestamp'] = $search->timestamp;
+        $result[$key]['i_name'] = $search->i_name;
+        $result[$key]['total_results'] = $search->total_results;
+      }
+      return $result;
+    }
+    else {
+      return [];
+    }
+  }
+
+  /**
+   * Fetch Only Searches with results From the database filtered by search index
+   */
+   public function fetchKeywordsWithResultsFromDatabaseBySearchIndex($search_index, $limit = NULL) {
+    $query = "SELECT * FROM vactory_frequent_searches where total_results > 0 AND language = :lang AND i_name = :s_index ORDER BY numfound DESC";
+    if (isset($limit) && filter_var($limit, FILTER_VALIDATE_INT)) {
+      $query = $query . " LIMIT " . $limit;
+    }
+    $searches = $this->database->query($query, [
+      ':lang' => $this->langcode,
+      ':s_index' => $search_index
+      ]);
     if (isset($searches) and !empty($searches)) {
       $result = [];
       foreach ($searches as $key => $search) {
@@ -71,11 +104,13 @@ class FrequentSearchesController extends ControllerBase {
    * Fetch Only Searches without results From the database.
    */
   public function fetchKeywordsWithNoResultsFromDatabase($limit = NULL) {
-    $query = "SELECT * FROM vactory_frequent_searches where total_results = 0 AND language = '" . $this->langcode ."' ORDER BY numfound DESC";
-    if (isset($limit)) {
+    $query = "SELECT * FROM vactory_frequent_searches where total_results = 0 AND language = :lang ORDER BY numfound DESC";
+    if (isset($limit) && filter_var($limit, FILTER_VALIDATE_INT)) {
       $query = $query . " LIMIT " . $limit;
     }
-    $searches = $this->database->query($query);
+    $searches = $this->database->query($query, [
+      ':lang' => $this->langcode
+      ]);
     if (isset($searches) and !empty($searches)) {
       $result = [];
       foreach ($searches as $key => $search) {
@@ -207,4 +242,41 @@ class FrequentSearchesController extends ControllerBase {
     }
   }
 
+  /**
+   * Add/Update frequent searches.
+   */
+  public function updateFrequentSearches($query, $results, $index, $language) {
+    //Add keywords to frequent_searches
+    $search_limit = 1000;
+    $originalKeys = $query->getOriginalKeys();
+    $lowerOriginalKeys = mb_strtolower($originalKeys);
+    // Delete white spaces.
+    $keywords = trim($lowerOriginalKeys);
+    // Delete double with spaces.
+    $output = preg_replace('!\s+!', ' ', $keywords);
+    $update_frequent_search = true;
+    // To avoid to insert empty keywords value into database.
+    if (!empty($output)) {
+      // Check if we have already this keywords at db.
+      $is_exist_keyword = $this->isExistsKeyword($output, $index->id(), $language);
+      if (!$is_exist_keyword) {
+        if ((int) $results->getResultCount() > 0) {
+          if ($this->getCountOfKeywords() >= $search_limit) {
+            return;
+          }
+        }
+        else {
+          if ($this->getCountOfKeywordsWithoutResults() >= $search_limit) {
+            return;
+          }
+        }
+        $count = (count($results->getResultItems()) > 0) ? 1 : 0;
+        $this->addKeywordToDatabasa($output, $count, $language, $index->id(), (int) $results->getResultCount());
+      }
+      else {
+        // In case of the existing of the keywords, we update the count.
+        $this->updateKeyword($output, $language, (int) $results->getResultCount(), $index->id());
+      }
+    }
+  }
 }
