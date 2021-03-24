@@ -55,6 +55,7 @@ class ViewsToApi {
     $views_items_per_page = $config['limit'];
     $views_args = $config['args'];
     $exposed_vocabularies = $config['vocabularies'];
+    $entity_queue = $config['entity_queue'];
 
     // Override args using filters.
     if (
@@ -107,7 +108,8 @@ class ViewsToApi {
 
     $view->setDisplay($views_display);
 
-    if (is_array($views_args) && !empty($views_args)) {
+    // Ignore arguments if we have an entity queue.
+    if (is_array($views_args) && !empty($views_args) && empty($entity_queue)) {
       $view->setArguments($views_args);
     }
 
@@ -120,6 +122,21 @@ class ViewsToApi {
     }
     else {
       $view->initDisplay();
+    }
+
+    // Override entity queue relationships.
+    if (!empty($entity_queue)) {
+      $views_relationships = $view->getDisplay()->getOption('relationships');
+      $relationships = [];
+      foreach ($views_relationships as $id => $relationship) {
+        if ($relationship['plugin_id'] === 'entity_queue') {
+          $relationship['required'] = TRUE;
+          $relationship['limit_queue'] = $entity_queue;
+        }
+
+        $relationships[$id] = $relationship;
+      }
+      $view->getDisplay()->overrideOption('relationships', $relationships);
     }
 
     $view->preExecute();
