@@ -138,6 +138,9 @@ class VactoryDynamicFieldServiceEnhancer
             }
             $value['url'] = str_replace('/backend', '', $value['url']);
           }
+
+          // Check for external links.
+          $value['is_external'] = UrlHelper::isExternal($value['url']);
         }
 
         // Text Preprocessor.

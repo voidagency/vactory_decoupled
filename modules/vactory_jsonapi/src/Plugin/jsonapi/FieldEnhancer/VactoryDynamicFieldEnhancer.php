@@ -171,6 +171,9 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
             }
             $value['url'] = str_replace('/backend', '', $value['url']);
           }
+
+          // Check for external links.
+          $value['is_external'] = UrlHelper::isExternal($value['url']);
         }
 
         // Text Preprocessor.
