@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.25 (2021-03-xx)
+
+### Bug Fixes
+
+* **VCC:** VCC field base should only be added when enabled. ([58c5ff](https://github.com/voidagency/vactory_decoupled/commit/58c5ff9bace2b025bac4acb7d18da0d2d3c07d9c))
+* **DF:** URL target option should not default to "_blank" but "_self". ([d8b5cd0](https://github.com/voidagency/vactory_decoupled/commit/d8b5cd075222549f0edc3b17749cd9dafc8e35cf))
+
+### New Features
+
+* **Frequent Search:** Track search keywords. ([PR-81](https://github.com/voidagency/vactory_decoupled/pull/81))
+* **DF:** Added entity queue to views element. ([PR-82](https://github.com/voidagency/vactory_decoupled/pull/82))
+
+### Other changes
+
+* **Core:** Added Slug for taxonomies. ([PR-84](https://github.com/voidagency/vactory_decoupled/pull/84))
+* **Core:** Added is_external prop to links. ([PR-83](https://github.com/voidagency/vactory_decoupled/pull/83)) + ([49f3cd](https://github.com/voidagency/vactory_decoupled/commit/49f3cd15a6adb28342da61a1af14ef435306056c))
+
+
 # 1.0.24 (2021-03-06)
 
 ### Bug Fixes
@@ -20,9 +38,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **Core:** Fallback to empty array on blockmanager when no node is passed. ([d4b236](https://github.com/voidagency/vactory_decoupled/commit/d4b23615792d77741a8adae5007d6a78e71d7a7ed))
-
 * **VCC:** VCC latest bundle override all others. ([e56b4e](https://github.com/voidagency/vactory_decoupled/commit/e56b4ee3ed29cb9df98bf77ce6b5a21253968d7f))
-
 * **Forum:** Removed roles restriction & updated listing per page. ([0179b1](https://github.com/voidagency/vactory_decoupled/commit/0179b1f400f0401b89f3955c36971947f209b16b))
 
 # 1.0.21 (2021-03-04)
@@ -36,7 +52,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **Core:** ViewsToApi should include uuid for taxonomies ([e54c2f](https://github.com/voidagency/vactory_decoupled/commit/e54c2f137ede28a5592fb2f821c5c5c639202f6d))
-
 * **Forum:** Applied hook_entity_field_access to allow authentified users to set uid ([6aac95](https://github.com/voidagency/vactory_decoupled/commit/6aac95b909ff2c00754660f3ef25d88d3fc7fba7))
 
 ### BREAKING CHANGES
@@ -80,28 +95,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **Oauth:** Redirect no matter the role of the user ([e9c6a70](https://github.com/voidagency/vactory_decoupled/commit/e9c6a70154db35f70d5e39a8f5642ac6732a3892))
 
-
-
 # 1.0.13 (2021-02-27)
 
 ### Bug Fixes
 
 * **DF:** Views dynamic field value override ([7ac0e9e](https://github.com/voidagency/vactory_decoupled/commit/7ac0e9e57ea67aaa90ba4ed809c2eb8191e3ce54))
 
-
 # 1.0.12 (2021-02-26)
 
 ### Bug Fixes
 
 * **Forum:** Missing date field ([ca3182](https://github.com/voidagency/vactory_decoupled/commit/ca31825c4b322bf9866ec3d0a1d9a08402413291))
-
 * **Forum:** Format values ([da8ad9](https://github.com/voidagency/vactory_decoupled/commit/da8ad9c14345ff739465035083d1fa7ce05a917d))
-
 
 ### Other Changes
 
 * **Core:** Internal user fullname. ([55e9f8](https://github.com/voidagency/vactory_decoupled/commit/55e9f81429bd0e43859e38ebb6d793c07db2a0a4))
-
 * **Core:** Node comment internal field. ([aeca86](https://github.com/voidagency/vactory_decoupled/commit/aeca86d0013e640be02621979f813e4f43e67d6f))
 
 # 1.0.11 (2021-02-24)
@@ -143,7 +152,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Other Changes
 
 * **Core:** Upgrade contrib modules to latest available ([PR-65](https://github.com/voidagency/vactory_decoupled/pull/65))
-
 
 # 1.0.7 (2021-01-29)
 
