@@ -27,8 +27,8 @@ third_party_settings:
   vactory_banner:
     banner: null
   vactory_vcc:
-    enabled: 0
-    taxonomy: none
+    enabled: 1
+    taxonomy: field_vactory_taxonomy_1
     limit: '3'
     more_link: ''
 name: Forum
