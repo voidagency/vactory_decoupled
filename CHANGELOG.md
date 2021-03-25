@@ -8,19 +8,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **VCC:** VCC field base should only be added when enabled. ([58c5ff](https://github.com/voidagency/vactory_decoupled/commit/58c5ff9bace2b025bac4acb7d18da0d2d3c07d9c))
-
 * **DF:** URL target option should not default to "_blank" but "_self". ([d8b5cd0](https://github.com/voidagency/vactory_decoupled/commit/d8b5cd075222549f0edc3b17749cd9dafc8e35cf))
 
 ### New Features
 
 * **Frequent Search:** Track search keywords. ([PR-81](https://github.com/voidagency/vactory_decoupled/pull/81))
-
 * **DF:** Added entity queue to views element. ([PR-82](https://github.com/voidagency/vactory_decoupled/pull/82))
 
 ### Other changes
 
 * **Core:** Added Slug for taxonomies. ([PR-84](https://github.com/voidagency/vactory_decoupled/pull/84))
-
 * **Core:** Added is_external prop to links. ([PR-83](https://github.com/voidagency/vactory_decoupled/pull/83)) + ([49f3cd](https://github.com/voidagency/vactory_decoupled/commit/49f3cd15a6adb28342da61a1af14ef435306056c))
 
 
