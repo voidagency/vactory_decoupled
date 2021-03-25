@@ -14,4 +14,5 @@ services:
   vactory_core.url_resolver:
     class: Drupal\vactory_core\UrlResolver
     arguments: ['@config.factory']
-
+  vactory_core.slug_manager:
+    class: Drupal\vactory_core\SlugManager

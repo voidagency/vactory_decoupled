@@ -150,6 +150,19 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
       ->setDisplayConfigurable('view', FALSE);
   }
 
+  if ($entity_type->id() === 'taxonomy_term') {
+    $fields['slug'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Term slug'))
+      ->setDescription(t('Term slug'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_jsonapi\Plugin\Field\InternalTermEntitySlugFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+  }
+
   return $fields;
 }
 
