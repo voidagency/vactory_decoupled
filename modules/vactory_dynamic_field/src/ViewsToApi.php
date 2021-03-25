@@ -393,6 +393,7 @@ class ViewsToApi {
 
     $entityTypeManager = \Drupal::service('entity_type.manager');
     $taxonomyTermStorage = $entityTypeManager->getStorage('taxonomy_term');
+    $slugManager = \Drupal::service('vactory_core.slug_manager');
     $bundles = (array) $vocabularies;
     $bundles = array_filter($bundles, function ($value) {
       return $value != '0';
@@ -406,6 +407,7 @@ class ViewsToApi {
         array_push($result[$vid], [
           'id' => $term->id(),
           'uuid' => $term->uuid(),
+          'slug' => $slugManager->taxonomy2Slug($term),
           'label' => $term->label(),
         ]);
       }
