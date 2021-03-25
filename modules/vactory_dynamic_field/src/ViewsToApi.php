@@ -56,6 +56,7 @@ class ViewsToApi {
     $views_args = $config['args'];
     $exposed_vocabularies = $config['vocabularies'];
     $entity_queue = $config['entity_queue'];
+    $entityRepository = \Drupal::service('entity.repository');
 
     // Override args using filters.
     if (
@@ -147,7 +148,7 @@ class ViewsToApi {
     foreach ($result as $row) {
       /** @var NodeInterface $node */
       $node = $row->_entity;
-      $node = \Drupal::service('entity.repository')
+      $node = $entityRepository
         ->getTranslationFromContext($node);
       try {
         $normalized_node = $this->normalizeNode($node, $config);
@@ -394,6 +395,7 @@ class ViewsToApi {
     $entityTypeManager = \Drupal::service('entity_type.manager');
     $taxonomyTermStorage = $entityTypeManager->getStorage('taxonomy_term');
     $slugManager = \Drupal::service('vactory_core.slug_manager');
+    $entityRepository = \Drupal::service('entity.repository');
     $bundles = (array) $vocabularies;
     $bundles = array_filter($bundles, function ($value) {
       return $value != '0';
@@ -404,6 +406,8 @@ class ViewsToApi {
       $terms = $taxonomyTermStorage->loadTree($vid, 0, NULL, TRUE);
       $result[$vid] = [];
       foreach ($terms as $term) {
+        $term = $entityRepository
+          ->getTranslationFromContext($term);
         array_push($result[$vid], [
           'id' => $term->id(),
           'uuid' => $term->uuid(),
