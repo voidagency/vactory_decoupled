@@ -139,6 +139,12 @@ class SearchController extends ControllerBase
     $query->sort('search_api_relevance', 'DESC');
 
     $results = $query->execute();
+    
+    if (\Drupal::moduleHandler()->moduleExists('vactory_frequent_searches')) {
+      \Drupal::service('vactory_frequent_searches.frequent_searches_controller')
+        ->updateFrequentSearches($query, $results, $search_api_index, $language);
+    }
+
     return $this->normalizer($results->getResultItems(), $includeSummary, $results->getResultCount());
   }
 
