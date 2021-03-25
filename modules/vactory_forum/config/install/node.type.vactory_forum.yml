@@ -29,7 +29,7 @@ third_party_settings:
   vactory_vcc:
     enabled: 1
     taxonomy: field_vactory_taxonomy_1
-    limit: '3'
+    limit: '1'
     more_link: ''
 name: Forum
 type: vactory_forum
