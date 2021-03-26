@@ -88,6 +88,12 @@ class UrlExtendedElement extends FormElement {
       '#title' => t('Link rel'),
       '#default_value' => isset($default_values['attributes']['rel']) ? $default_values['attributes']['rel'] : '',
     ];
+    $element['attributes']['path_terms'] = [
+      '#type' => 'textfield',
+      '#title' => t('Link path terms'),
+      '#description' => t('Extra path terms. E.g <em>/all/18</em> or <em>/15/18</em>.'),
+      '#default_value' => isset($default_values['attributes']['path_terms']) ? $default_values['attributes']['path_terms'] : '',
+    ];
 
     return $element;
   }

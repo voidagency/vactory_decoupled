@@ -14,6 +14,7 @@ use Shaper\Util\Context;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\UrlHelper;
+use Drupal\taxonomy\Entity\Term;
 
 /**
  * Use for Dynamic Field field value.
@@ -170,6 +171,28 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
                 ->toString();
             }
             $value['url'] = str_replace('/backend', '', $value['url']);
+          }
+
+          // URL Parts.
+          if (isset($value['attributes']['path_terms']) && !empty($value['attributes']['path_terms'])) {
+            $entityRepository = \Drupal::service('entity.repository');
+            $slugManager = \Drupal::service('vactory_core.slug_manager');
+
+            $path_terms = $value['attributes']['path_terms'];
+            $path_terms_parts = explode("/", $path_terms);
+            $path_group = [];
+
+            foreach ($path_terms_parts as $part) {
+              if (intval($part) !== 0) {
+                $term = Term::load(intval($part));
+                $term = $entityRepository
+                  ->getTranslationFromContext($term);
+                $part = $slugManager->taxonomy2Slug($term);
+              }
+              array_push($path_group, $part);
+            }
+            $value['url'] .= join('/', $path_group);
+            unset($value['attributes']['path_terms']);
           }
 
           // Check for external links.
