@@ -55,7 +55,7 @@ class ViewsToApi {
     $views_items_per_page = $config['limit'];
     $views_args = $config['args'];
     $exposed_vocabularies = $config['vocabularies'];
-    $entity_queue = $config['entity_queue'];
+    $entity_queue = $config['entity_queue'] ?? [];
     $entityRepository = \Drupal::service('entity.repository');
 
     // Override args using filters.
