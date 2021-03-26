@@ -112,11 +112,17 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
 
 
     $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('forum_section', 0, NULL, TRUE);
+    $slugManager = \Drupal::service('vactory_core.slug_manager');
+    $entityRepository = \Drupal::service('entity.repository');
 
     foreach ($terms as $term) {
+      $term = $entityRepository
+        ->getTranslationFromContext($term);
+
       $all_categories[] = [
         'name' => $term->label(),
         'id' => $term->id(),
+        'slug' => $slugManager->taxonomy2Slug($term),
         'uuid' => $term->uuid(),
       ];
     }
