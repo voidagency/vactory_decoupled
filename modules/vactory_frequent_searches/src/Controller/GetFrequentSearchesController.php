@@ -23,14 +23,17 @@ class GetFrequentSearchesController extends ControllerBase {
   public function index(Request $request) {
     $search_index = $request->query->get('index');
     $limit = $request->query->get('limit');
+    $language = $request->query->get('lang');
     $keywords = [];
+    if (!isset($limit) || !filter_var($limit, FILTER_VALIDATE_INT) || $limit > 20)
+      $limit = 20;
     if (empty($search_index)) {
       $keywords = \Drupal::service('vactory_frequent_searches.frequent_searches_controller')
-        ->fetchKeywordsWithResultsFromDatabase($limit);
+        ->fetchFrequentSearches($limit, $language);
     }
     else{
       $keywords = \Drupal::service('vactory_frequent_searches.frequent_searches_controller')
-        ->fetchKeywordsWithResultsFromDatabaseBySearchIndex($search_index, $limit);
+        ->fetchFrequentSearchesBySearchIndex($search_index, $limit, $language);
     }
     $count = count($keywords);
     return new JsonResponse([

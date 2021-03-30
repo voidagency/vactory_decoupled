@@ -70,15 +70,45 @@ class FrequentSearchesController extends ControllerBase {
   }
 
   /**
+   * Fetch Only Searches with results From the database.
+   */
+  public function fetchFrequentSearches($limit = NULL, $language = NULL) {
+    $query = "SELECT * FROM vactory_frequent_searches where total_results > 0 AND language = :lang ORDER BY numfound DESC";
+    if (isset($limit) && filter_var($limit, FILTER_VALIDATE_INT)) {
+      $query = $query . " LIMIT " . $limit;
+    }
+    $searches = $this->database->query($query, [
+      ':lang' => $language
+      ]);
+    if (isset($searches) and !empty($searches)) {
+      $result = [];
+      foreach ($searches as $key => $search) {
+        $result[$key]['id'] = $search->qid;
+        $result[$key]['s_name'] = $search->s_name;
+        $result[$key]['numfound'] = $search->numfound;
+        $result[$key]['keywords'] = $search->keywords;
+        $result[$key]['language'] = $search->language;
+        $result[$key]['timestamp'] = $search->timestamp;
+        $result[$key]['i_name'] = $search->i_name;
+        $result[$key]['total_results'] = $search->total_results;
+      }
+      return $result;
+    }
+    else {
+      return [];
+    }
+  }
+
+  /**
    * Fetch Only Searches with results From the database filtered by search index
    */
-   public function fetchKeywordsWithResultsFromDatabaseBySearchIndex($search_index, $limit = NULL) {
+   public function fetchFrequentSearchesBySearchIndex($search_index, $limit = NULL, $language = NULL) {
     $query = "SELECT * FROM vactory_frequent_searches where total_results > 0 AND language = :lang AND i_name = :s_index ORDER BY numfound DESC";
     if (isset($limit) && filter_var($limit, FILTER_VALIDATE_INT)) {
       $query = $query . " LIMIT " . $limit;
     }
     $searches = $this->database->query($query, [
-      ':lang' => $this->langcode,
+      ':lang' => $language,
       ':s_index' => $search_index
       ]);
     if (isset($searches) and !empty($searches)) {
