@@ -150,6 +150,27 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
       ->setDisplayConfigurable('view', FALSE);
   }
 
+  if ($entity_type->id() === 'node') {
+    $fields['internal_breadcrumb'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Node breadcrumb'))
+      ->setDescription(t('Defined breadcrumb per node'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_jsonapi\Plugin\Field\InternalNodeEntityBreadcrumbFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+//      ->setDisplayOptions('view', [
+//        'label' => 'hidden',
+//        'type' => 'hidden',
+//        'weight' => 0,
+//      ])
+//      ->setDisplayOptions('form', ['type' => 'hidden'])
+//      ->setDisplayConfigurable('form', TRUE)
+//      ->setDisplayConfigurable('view', TRUE)
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+  }
+
   if ($entity_type->id() === 'taxonomy_term') {
     $fields['slug'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Term slug'))
@@ -165,6 +186,17 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
 
   return $fields;
 }
+
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ *
+ * Make sure the standard formatter for string can be used for the current
+ * map internal_breadcrumb computed field. for debug.
+ */
+/*function vactory_jsonapi_field_formatter_info_alter(array &$info) {
+  $info['text_default']['field_types'][] = 'map';
+}*/
 
 /**
  * Implements hook_entity_type_alter().
