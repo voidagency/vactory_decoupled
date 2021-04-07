@@ -33,6 +33,10 @@ class InternalNodeEntityBreadcrumbFieldItemList extends FieldItemList {
       return;
     }
 
+    if ($entity->isNew()) {
+      return;
+    }
+
     // Attempt to grab links from menu.
     $links = $this->getFromMenu($entity);
 
