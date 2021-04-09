@@ -1,0 +1,6 @@
+name: 'Vactory Redirect'
+description: 'Le module Redirect permet de manipuler les règles de redirection.'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Vactory
