@@ -1,0 +1,18 @@
+vactory_redirect.admin_settings:
+  path: '/admin/config/content/vactory-redirect'
+  defaults:
+    _form: '\Drupal\vactory_redirect\Form\VactoryRedirectSettingsForm'
+    _title: 'Vactory Redirect Settings'
+  requirements:
+    _permission: 'access content'
+
+
+
+vactory_redirect.get_redirections:
+  path: 'vapi/redirections'
+  defaults:
+    _controller: '\Drupal\vactory_redirect\Controller\RedirectController::index'
+    _disable_route_normalizer: 'TRUE'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
