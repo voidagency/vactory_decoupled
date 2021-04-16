@@ -258,6 +258,7 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
 
           // Views.
         if ($info['type'] === 'dynamic_views' && !empty($value)) {
+          $value = array_merge($value, $info['options']['#default_value']);
           $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value);
         }
 
