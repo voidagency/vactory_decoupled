@@ -26,6 +26,11 @@ class InternalTermEntitySlugFieldItemList extends FieldItemList
     if (!in_array($entity_type, ['taxonomy_term'])) {
       return;
     }
+
+    if ($entity->isNew()) {
+      return;
+    }
+
     $entityRepository = \Drupal::service('entity.repository');
     $slugManager = \Drupal::service('vactory_core.slug_manager');
 
