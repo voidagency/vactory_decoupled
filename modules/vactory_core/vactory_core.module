@@ -87,6 +87,11 @@ function vactory_core_token_info() {
     'description' => t('The description of the current page.'),
   ];
 
+  $tokens['node_path'] = [
+    'name'        => t('Node path'),
+    'description' => t('The path of the current page.'),
+  ];
+
   return [
     'types'  => $types,
     'tokens' => [
@@ -114,6 +119,11 @@ function vactory_core_tokens($type, $tokens, array $data, array $options, Bubble
         case 'node_summary':
           $value = (isset($data['node']) && $data['node']->get('node_summary')->first() && isset($data['node']->get('node_summary')->first()->getValue()['value'])) ? $data['node']->get('node_summary')->first()->getValue()['value'] : '';
           $replacements[$original] = $value;
+          break;
+
+        case 'node_path':
+          $value = (isset($data['node']) && isset($data['node']->get('nid')->value)) ? \Drupal::service('path_alias.manager')->getAliasByPath('/node/' . $data['node']->get('nid')->value, $data['node']->language()->getId()) : '';
+          $replacements[$original] = $data['node']->language()->getId() . $value;
           break;
 
         case 'frontend_url':
