@@ -144,21 +144,18 @@ class VactoryDynamicFieldServiceEnhancer
           if (isset($value['attributes']['path_terms']) && !empty($value['attributes']['path_terms'])) {
             $entityRepository = \Drupal::service('entity.repository');
             $slugManager = \Drupal::service('vactory_core.slug_manager');
-
             $path_terms = $value['attributes']['path_terms'];
-            $path_terms_parts = explode("/", $path_terms);
-            $path_group = [];
 
-            foreach ($path_terms_parts as $part) {
-              if (intval($part) !== 0) {
-                $term = Term::load(intval($part));
+            $value['url'] .= preg_replace_callback(
+              '/(\d+)/i',
+              function ($matches) use ($entityRepository, $slugManager)  {
+                $term = Term::load(intval($matches[0]));
                 $term = $entityRepository
                   ->getTranslationFromContext($term);
-                $part = $slugManager->taxonomy2Slug($term);
-              }
-              array_push($path_group, $part);
-            }
-            $value['url'] .= join('/', $path_group);
+                return $slugManager->taxonomy2Slug($term);
+              },
+              $path_terms
+            );
             unset($value['attributes']['path_terms']);
           }
 
@@ -222,6 +219,7 @@ class VactoryDynamicFieldServiceEnhancer
 
         // Views.
         if ($info['type'] === 'dynamic_views' && !empty($value)) {
+          $value = array_merge($value, $info['options']['#default_value']);
           $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value);
         }
 

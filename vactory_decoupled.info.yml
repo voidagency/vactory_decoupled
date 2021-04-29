@@ -119,6 +119,7 @@ install:
   - vactory_jsonapi
   - vactory_jenkins
   - vactory_search
+  - vactory_frequent_searches
   - vactory_user
   - vactory_page
   - vactory_page_listing

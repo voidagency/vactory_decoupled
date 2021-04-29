@@ -64,6 +64,7 @@ class VactoryDynamicFormatter extends FormatterBase {
         }
         // Views.
         if ($info['type'] === 'dynamic_views' && !empty($value)) {
+          $value = array_merge($value, $info['options']['#default_value']);
           $value = \Drupal::service('vactory.views.to_api')->normalize($value);
         }
       }
