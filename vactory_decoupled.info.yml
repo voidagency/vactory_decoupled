@@ -127,6 +127,7 @@ install:
   - vactory_oauth
   - vactory_oauth_login
   - vactory_webform
+  - vactory_ckeditor
 
 themes:
   - stable
