@@ -178,7 +178,7 @@ function vactory_vcc_entity_bundle_field_info(EntityTypeInterface $entity_type, 
   if ($entity_type->id() == 'node') {
     $type = NodeType::load($bundle);
     $fields = [];
-    if ($type->getThirdPartySetting('vactory_vcc', 'enabled')) {
+    if ($type && $type->getThirdPartySetting('vactory_vcc', 'enabled')) {
       $fields['vcc'] = BaseFieldDefinition::create('entity_reference')
         ->setLabel(t('Similar content'))
         ->setSetting('target_type', 'node')
