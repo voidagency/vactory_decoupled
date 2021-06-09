@@ -321,14 +321,17 @@ function vactory_core_entity_base_field_info(EntityTypeInterface $entity_type) {
         'weight' => 45,
       ]);
 
-    $fields['paragraph_background_color'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Color'))
-      ->setDescription(t('Set a background color.'))
+    $fields['paragraph_style'] = BaseFieldDefinition::create('string_long')
+      ->setLabel(t('Style'))
+      ->setDescription(t('Add valid JSON to merge it with the Paragraph style prop'))
       ->setRevisionable(TRUE)
-      ->setTranslatable(TRUE)
+      ->setTranslatable(FALSE)
       ->setDisplayOptions('form', [
         'type'   => 'string_textfield',
-        'weight' => 45,
+        'weight' => 4,
+        'settings' => [
+          'rows' => 4,
+        ],
       ])
       ->setDisplayConfigurable('form', TRUE);
 

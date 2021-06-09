@@ -130,3 +130,26 @@ function vactory_core_update_8004()
     ])
     ->save();
 }
+
+/**
+ * Add paragraph_style field.
+ */
+function vactory_core_update_8005()
+{
+  $storage_definition = BaseFieldDefinition::create('string_long')
+    ->setLabel(t('Style'))
+    ->setDescription(t('Add valid JSON to merge it with the Paragraph style prop'))
+    ->setRevisionable(TRUE)
+    ->setTranslatable(FALSE)
+    ->setDisplayOptions('form', [
+      'type'   => 'string_textfield',
+      'weight' => 4,
+      'settings' => [
+        'rows' => 4,
+      ],
+    ])
+    ->setDisplayConfigurable('form', TRUE);
+
+  \Drupal::entityDefinitionUpdateManager()
+    ->installFieldStorageDefinition('paragraph_style', 'paragraph', 'paragraph', $storage_definition);
+}
