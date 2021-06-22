@@ -114,6 +114,7 @@ class QuizElement extends FormElement {
           '#value' => "delete item",
           '#attributes' => ['class' => ['id-label-delete-item-submit']],
           '#submit' => [[static::class, 'deleteItemSubmit']],
+          '#limit_validation_errors' => [],
           '#ajax' => [
             'callback' => [static::class, 'addMoreAjax'],
             'wrapper' => $wrapper_id,

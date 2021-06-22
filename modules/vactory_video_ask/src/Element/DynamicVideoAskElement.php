@@ -48,7 +48,7 @@ class DynamicVideoAskElement extends FormElement {
    * Video Ask form element process callback.
    */
   public static function processDynamicVideoAsk(&$element, FormStateInterface $form_state, &$form) {
-    $default_value = isset($element['#default_value']) ? $element['#default_value'] : '';
+    $default_value = isset($element['#default_value']['screen_details']) ? $element['#default_value']['screen_details'] : '';
     $parents = $element['#parents'];
     $id_prefix = implode('-', $parents);
     $wrapper_id = Html::getUniqueId($id_prefix . '-add-more-wrapper');
@@ -61,7 +61,6 @@ class DynamicVideoAskElement extends FormElement {
       ];
       static::setElementState($parents, $form_state, $element_state);
     }
-
     $max = $element_state['items_count'];
 
     $element['screen'] = [
@@ -86,7 +85,6 @@ class DynamicVideoAskElement extends FormElement {
     ];
 
     $user_input_values = $form_state->getUserInput();
-
     for ($i = 0, $j = 0; $i <= $max; $i++) {
       $screen_to_delete = isset($element_state['video_ask'][$i]['screen_to_delete']) ? $element_state['video_ask'][$i]['screen_to_delete'] : NULL;
       if (isset($screen_to_delete) && (int) $screen_to_delete == $i) {
@@ -121,7 +119,7 @@ class DynamicVideoAskElement extends FormElement {
 
       $background_wrapper = 'background_layout_selector_' . $i;
 
-      $element['screen_details'][$i]['Layout'] = [
+      $element['screen_details'][$i]['layout'] = [
         '#type' => 'details',
         '#title' => t('Layout'),
         '#collapsible' => TRUE,
@@ -130,17 +128,18 @@ class DynamicVideoAskElement extends FormElement {
         '#prefix' => "<div id='$background_wrapper'>",
         '#suffix' => "</div>",
       ];
-      $element['screen_details'][$i]['Layout']['background'] = [
+      $element['screen_details'][$i]['layout']['background'] = [
         '#type' => 'select',
-        '#title' => t('Layout'),
+        '#title' => t('Layout ' . $i),
         '#options' => $background_options,
+        //'#name' => 'select_layout_bg_' . $i,
         '#ajax' => [
           'callback' => [static::class, 'onChangeLayout'],
           'wrapper' => $background_wrapper,
         ],
-        '#default_value' => (isset($user_input_values[$i]['Layout']['background']) && !empty($user_input_values[$i]['Layout']['background'])) ?
-        $user_input_values[$i]['Layout']['background'] : ((isset($default_value[$i]['Layout']['background']) && !empty($default_value[$i]['Layout']['background']))
-            ? $default_value[$i]['Layout']['background'] : '-1'),
+        '#default_value' => (isset($user_input_values[$i]['layout']['background']) && !empty($user_input_values[$i]['layout']['background'])) ?
+        $user_input_values[$i]['layout']['background'] : ((isset($default_value[$i]['layout']['background']) && !empty($default_value[$i]['layout']['background']))
+            ? $default_value[$i]['layout']['background'] : '-1'),
       ];
 
       $element['update_background_' . $i] = [
@@ -154,17 +153,18 @@ class DynamicVideoAskElement extends FormElement {
           'callback' => [static::class, 'updateWidgetLayoutBackground'],
           'wrapper'  => $background_wrapper,
           'event'    => 'click',
+          'id' => $i,
         ],
-        '#limit_validation_errors' => [$element['#array_parents']],
+        '#limit_validation_errors' => [],
         '#submit' => [[static::class, 'updateItemsLayoutBackground']],
       ];
 
       $bg_selected = isset($element_state['video_ask'][$i]['selected_layout']) ? $element_state['video_ask'][$i]['selected_layout'] :
-        (isset($default_value[$i]['response']) && !empty($default_value[$i]['Layout']) ? $default_value[$i]['Layout']['background'] : []);
+        (isset($default_value[$i]['response']) && !empty($default_value[$i]['layout']) ? $default_value[$i]['layout']['background'] : []);
       if (!empty($bg_selected)) {
         switch ($bg_selected) {
           case 'image':
-            $element['screen_details'][$i]['Layout']['image'] = [
+            $element['screen_details'][$i]['layout']['image'] = [
               '#type' => 'media_library',
               '#title' => t('Image'),
               '#allowed_bundles' => ['image'],
@@ -174,33 +174,32 @@ class DynamicVideoAskElement extends FormElement {
                 'file_validate_size' => [25600000],
               ],
               '#upload_location' => 'public://locator/vactory_video_ask',
-              '#default_value' => (isset($user_input_values[$i]['Layout']['image']) && !empty($user_input_values[$i]['Layout']['image'])) ?
-              $user_input_values[$i]['Layout']['image']['media_library_selection'] : ((isset($default_value[$i]['Layout']['image']) && !empty($default_value[$i]['Layout']['image']))
-              ? $default_value[$i]['Layout']['image']['id'] : NULL),
+              '#default_value' => (isset($user_input_values[$i]['layout']['image']) && !empty($user_input_values[$i]['layout']['image'])) ?
+              $user_input_values[$i]['layout']['image']['media_library_selection'] : ((isset($default_value[$i]['layout']['image']) && !empty($default_value[$i]['layout']['image']))
+              ? $default_value[$i]['layout']['image']['id'] : NULL),
             ];
             break;
 
           case 'video':
-            $element['screen_details'][$i]['Layout']['url'] = [
+            $element['screen_details'][$i]['layout']['url'] = [
               '#type' => 'textfield',
               '#title' => t('Vidéo url'),
               '#required' => TRUE,
-              '#default_value' => (isset($user_input_values[$i]['Layout']['url']) && !empty($user_input_values[$i]['Layout']['url'])) ?
-              $user_input_values[$i]['Layout']['url'] : ((isset($default_value[$i]['Layout']['url']) && !empty($default_value[$i]['Layout']['url']))
-                ? $default_value[$i]['Layout']['url'] : ''),
+              '#default_value' => (isset($user_input_values[$i]['layout']['url']) && !empty($user_input_values[$i]['layout']['url'])) ?
+              $user_input_values[$i]['layout']['url'] : ((isset($default_value[$i]['layout']['url']) && !empty($default_value[$i]['layout']['url']))
+                ? $default_value[$i]['layout']['url'] : ''),
             ];
             break;
 
         }
       }
-      $element['screen_details'][$i]['Layout']['text'] = [
+      $element['screen_details'][$i]['layout']['text'] = [
         '#type' => 'text_format',
         '#title' => t('Text'),
         '#format' => 'full_html',
-        '#required' => TRUE,
-        '#default_value' => (isset($user_input_values[$i]['Layout']['text']) && !empty($user_input_values[$i]['Layout']['text'])) ?
-        $user_input_values[$i]['Layout']['text']['value'] : ((isset($default_value[$i]['Layout']['text']) && !empty($default_value[$i]['Layout']['text']))
-          ? $default_value[$i]['Layout']['text']['value'] : ''),
+        '#default_value' => (isset($user_input_values[$i]['layout']['text']) && !empty($user_input_values[$i]['layout']['text'])) ?
+        $user_input_values[$i]['layout']['text']['value'] : ((isset($default_value[$i]['layout']['text']) && !empty($default_value[$i]['layout']['text']))
+          ? $default_value[$i]['layout']['text']['value'] : ''),
       ];
 
       $response_wrapper = 'response_layout_selector_' . $i;
@@ -240,7 +239,7 @@ class DynamicVideoAskElement extends FormElement {
           'wrapper'  => $response_wrapper,
           'event'    => 'click',
         ],
-        '#limit_validation_errors' => [$element['#array_parents']],
+        '#limit_validation_errors' => [],
         '#submit' => [[static::class, 'updateItemsTypeResponse']],
       ];
       $type_response_selected = isset($element_state['video_ask'][$i]['response_type']) ? $element_state['video_ask'][$i]['response_type'] : (isset($default_value[$i]['response']) && !empty($default_value[$i]['response']) ? $default_value[$i]['response']['type_response'] : []);
@@ -290,7 +289,7 @@ class DynamicVideoAskElement extends FormElement {
           'wrapper' => $wrapper_id,
           'event'    => 'click',
         ],
-        '#limit_validation_errors' => [$element['#array_parents']],
+        '#limit_validation_errors' => [],
         '#submit' => [[static::class, 'updateScreensAfterDelete']],
       ];
       $j++;
@@ -356,7 +355,7 @@ class DynamicVideoAskElement extends FormElement {
   public static function onChangeLayout(array $form, FormStateInterface $form_state) {
     $select = $form_state->getTriggeringElement();
     preg_match_all('!\d+!', $select['#name'], $matches);
-    $i = $matches[0][0];
+    $i = $matches[0][1];
     $response = new AjaxResponse();
     $response->addCommand(new InvokeCommand("[name=update_background_$i]", 'trigger', ['click']));
     return $response;
@@ -368,7 +367,7 @@ class DynamicVideoAskElement extends FormElement {
   public static function onChangeResponseType(array $form, FormStateInterface $form_state) {
     $select = $form_state->getTriggeringElement();
     preg_match_all('!\d+!', $select['#name'], $matches);
-    $i = $matches[0][0];
+    $i = $matches[0][1];
     $response = new AjaxResponse();
     $response->addCommand(new InvokeCommand("[name=update_type_response_$i]", 'trigger', ['click']));
     return $response;
@@ -390,7 +389,7 @@ class DynamicVideoAskElement extends FormElement {
    * Dynamic video ask form element validate callback.
    */
   public static function validateDynamicVideoAsk(&$element, FormStateInterface $form_state, &$form) {
-    $values = $form_state->getValues();
+    $values = $form_state->getValue($element['#parents'])['screen_details'];
     foreach ($values as $key => $value) {
       if (!is_numeric($key)) {
         unset($values[$key]);
@@ -399,8 +398,8 @@ class DynamicVideoAskElement extends FormElement {
         if (array_key_exists('remove_screen', $values[$key])) {
           unset($values[$key]['remove_screen']);
         }
-        if (array_key_exists('update_background', $values[$key]['Layout'])) {
-          unset($values[$key]['Layout']['update_background']);
+        if (array_key_exists('update_background', $values[$key]['layout'])) {
+          unset($values[$key]['layout']['update_background']);
         }
         if (array_key_exists('update_type_response', $values[$key]['response'])) {
           unset($values[$key]['response']['update_type_response']);
@@ -430,10 +429,10 @@ class DynamicVideoAskElement extends FormElement {
       }
 
       // Load image.
-      if (isset($values[$key]['Layout']) && !empty($values[$key]['Layout'])) {
-        $bg = $values[$key]['Layout']['background'];
+      if (isset($values[$key]['layout']) && !empty($values[$key]['layout'])) {
+        $bg = $values[$key]['layout']['background'];
         if ($bg == 'image') {
-          $mid = $values[$key]['Layout']['image'];
+          $mid = $values[$key]['layout']['image'];
           if (isset($mid) && !empty($mid)) {
             $media = Media::load($mid);
             if (isset($media) && !empty($media)) {
@@ -446,14 +445,14 @@ class DynamicVideoAskElement extends FormElement {
                 'id' => $mid,
                 'url' => $url,
               ];
-              $values[$key]['Layout']['image'] = $image;
+              $values[$key]['layout']['image'] = $image;
             }
           }
         }
       }
     }
     $values = array_values($values);
-    $form_state->setValues($values);
+    $form_state->setValue($element['#parents'], ['screen_details' => $values]);
   }
 
   /**
@@ -466,7 +465,7 @@ class DynamicVideoAskElement extends FormElement {
     $element_state = static::getElementState($parents, $form_state);
     preg_match_all('!\d+!', $button['#name'], $matches);
     $i = $matches[0][0];
-    $element_state['video_ask'][$i]['selected_layout'] = $element['screen_details'][$i]['Layout']['background']['#value'];
+    $element_state['video_ask'][$i]['selected_layout'] = $element['screen_details'][$i]['layout']['background']['#value'];
     static::setElementState($parents, $form_state, $element_state);
     $form_state->setRebuild();
   }
@@ -479,7 +478,7 @@ class DynamicVideoAskElement extends FormElement {
     $element = NestedArray::getValue($form, array_slice($button['#array_parents'], 0, -1));
     preg_match_all('!\d+!', $button['#name'], $matches);
     $i = $matches[0][0];
-    return $element['screen_details'][$i]['Layout'];
+    return $element['screen_details'][$i]['layout'];
   }
 
   /**
