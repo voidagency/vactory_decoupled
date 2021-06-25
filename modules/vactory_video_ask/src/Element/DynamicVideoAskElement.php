@@ -114,8 +114,73 @@ class DynamicVideoAskElement extends FormElement {
         '#title' => t('Id screen'),
         '#required' => TRUE,
         '#default_value' => (isset($user_input_values[$i]['id']) && !empty($user_input_values[$i]['id'])) ?
-        $user_input_values[$i]['id'] : ((isset($default_value[$i]['id']) && !empty($default_value[$i]['id'])) ? $default_value[$i]['id'] : ''),
+        $user_input_values[$i]['id'] : ((isset($default_value[$i]['id']) && !empty($default_value[$i]['id'])) ? $default_value[$i]['id'] : 'screen_'.($i+1)),
       ];
+
+      $quiz_wrapper = "quiz_group_selector_".$i;
+
+      $element['screen_details'][$i]['quiz'] = [
+        '#type' => 'details',
+        '#title' => t('Quiz'),
+        '#collapsible' => TRUE,
+        '#collapsed' => TRUE,
+        '#open' => TRUE,
+        '#prefix' => "<div id='$quiz_wrapper'>",
+        '#suffix' => "</div>",
+      ];
+
+      $element['screen_details'][$i]['quiz']['part_of_quiz'] = [
+        '#type' => 'checkbox',
+        '#title' => t('Fait partie d\'un quiz'),
+        '#required' => FALSE,
+        '#return_value' => TRUE,
+        '#ajax' => [
+          'callback' => [static::class, 'onChangeQuiz'],
+          'wrapper' => $quiz_wrapper,
+        ],
+        '#default_value' => (isset($user_input_values[$i]['quiz']['part_of_quiz']) && !empty($user_input_values[$i]['quiz']['part_of_quiz'])) ?
+          $user_input_values[$i]['quiz']['part_of_quiz'] : ((isset($default_value[$i]['quiz']['part_of_quiz']) && !empty($default_value[$i]['quiz']['part_of_quiz'])) ? $default_value[$i]['quiz']['part_of_quiz'] : FALSE),
+      ];
+
+
+      $element['update_quiz_details_' . $i] = [
+        '#type'                    => 'submit',
+        '#value'                   => t('Update Quiz widget'),
+        '#name' => 'update_quiz_details_' . $i,
+        '#attributes' => [
+          'style' => ['display:none;'],
+        ],
+        '#ajax'                    => [
+          'callback' => [static::class, 'updateQuizWidget'],
+          'wrapper'  => $quiz_wrapper,
+          'event'    => 'click',
+          'id' => $i,
+        ],
+        '#limit_validation_errors' => [],
+        '#submit' => [[static::class, 'updateItemsQuiz']],
+      ];
+
+      $is_part_of_quiz = isset($element_state['video_ask'][$i]['quiz']['part_of_quiz']) ? $element_state['video_ask'][$i]['quiz']['part_of_quiz'] :
+        (isset($default_value[$i]['quiz']['part_of_quiz']) && !empty($default_value[$i]['quiz']['part_of_quiz']) ? $default_value[$i]['quiz']['part_of_quiz'] : FALSE);
+
+      if ($is_part_of_quiz) {
+        $element['screen_details'][$i]['quiz']['quiz_id'] = [
+          '#type' => 'textfield',
+          '#title' => t('Id unique de quiz'),
+          '#required' => TRUE,
+          '#default_value' => (isset($user_input_values[$i]['quiz']['quiz_id']) && !empty($user_input_values[$i]['quiz']['quiz_id'])) ?
+            $user_input_values[$i]['quiz']['quiz_id'] : ((isset($default_value[$i]['quiz']['quiz_id']) && !empty($default_value[$i]['quiz']['quiz_id'])) ? $default_value[$i]['quiz']['quiz_id'] : "quiz_".$i),
+        ];
+
+
+        $element['screen_details'][$i]['quiz']['quiz_index'] = [
+          '#type' => 'number',
+          '#title' => t('Index of this question in quiz'),
+          '#required' => TRUE,
+          '#default_value' => (isset($user_input_values[$i]['quiz']['quiz_index']) && !empty($user_input_values[$i]['quiz']['quiz_index'])) ?
+            $user_input_values[$i]['quiz']['quiz_index'] : ((isset($default_value[$i]['quiz']['quiz_index']) && !empty($default_value[$i]['quiz']['quiz_index'])) ? $default_value[$i]['quiz']['quiz_index'] : ""),
+        ];
+      }
 
       $background_wrapper = 'background_layout_selector_' . $i;
 
@@ -360,6 +425,17 @@ class DynamicVideoAskElement extends FormElement {
     $response->addCommand(new InvokeCommand("[name=update_background_$i]", 'trigger', ['click']));
     return $response;
   }
+  /**
+   * On change quiz function.
+   */
+  public static function onChangeQuiz(array $form, FormStateInterface $form_state) {
+    $select = $form_state->getTriggeringElement();
+    preg_match_all('!\d+!', $select['#name'], $matches);
+    $i = $matches[0][1];
+    $response = new AjaxResponse();
+    $response->addCommand(new InvokeCommand("[name=update_quiz_details_$i]", 'trigger', ['click']));
+    return $response;
+  }
 
   /**
    * On change response type.
@@ -471,6 +547,21 @@ class DynamicVideoAskElement extends FormElement {
   }
 
   /**
+   * Update quiz details callback.
+   */
+  public static function updateItemsQuiz(array $form, FormStateInterface $form_state) {
+    $button = $form_state->getTriggeringElement();
+    $element = NestedArray::getValue($form, array_slice($button['#array_parents'], 0, -1));
+    $parents = $element['#parents'];
+    $element_state = static::getElementState($parents, $form_state);
+    preg_match_all('!\d+!', $button['#name'], $matches);
+    $i = $matches[0][0];
+    $element_state['video_ask'][$i]['quiz']['part_of_quiz'] = $element['screen_details'][$i]['quiz']['part_of_quiz']['#value'];
+    static::setElementState($parents, $form_state, $element_state);
+    $form_state->setRebuild();
+  }
+
+  /**
    * Update widget layout background callback.
    */
   public static function updateWidgetLayoutBackground(array $form, FormStateInterface $form_state) {
@@ -479,6 +570,17 @@ class DynamicVideoAskElement extends FormElement {
     preg_match_all('!\d+!', $button['#name'], $matches);
     $i = $matches[0][0];
     return $element['screen_details'][$i]['layout'];
+  }
+
+  /**
+   * Update widget quiz callback.
+   */
+  public static function updateQuizWidget(array $form, FormStateInterface $form_state) {
+    $button = $form_state->getTriggeringElement();
+    $element = NestedArray::getValue($form, array_slice($button['#array_parents'], 0, -1));
+    preg_match_all('!\d+!', $button['#name'], $matches);
+    $i = $matches[0][0];
+    return $element['screen_details'][$i]['quiz'];
   }
 
   /**
