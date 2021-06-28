@@ -40,12 +40,18 @@ class ButtonResponseElement extends FormElement {
    * Button response form element process callback.
    */
   public static function processButton(&$element, FormStateInterface $form_state, &$form) {
-    $default_value = isset($element['#default_value']) && !empty($element['#default_value']) ? $element['#default_value'] : '';
+    $default_values = isset($element['#default_value']) ? $element['#default_value'] : NULL;
+    
     $element['label'] = [
       '#type' => 'textfield',
       '#title' => t('Label'),
       '#required' => TRUE,
-      '#default_value' => $default_value,
+      '#default_value' => isset($default_values['label']) && !empty($default_values['label']) ? $default_values['label'] : '',
+    ];
+    $element['goto'] = [
+      '#type' => 'textfield',
+      '#title' => t('Go to'),
+      '#default_value' => isset($default_values['goto']) && !empty($default_values['goto']) ? $default_values['goto'] : '',
     ];
 
     return $element;

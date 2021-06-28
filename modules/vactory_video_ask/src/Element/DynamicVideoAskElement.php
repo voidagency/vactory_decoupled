@@ -133,7 +133,6 @@ class DynamicVideoAskElement extends FormElement {
         '#type' => 'checkbox',
         '#title' => t('Fait partie d\'un quiz'),
         '#required' => FALSE,
-        '#return_value' => TRUE,
         '#ajax' => [
           'callback' => [static::class, 'onChangeQuiz'],
           'wrapper' => $quiz_wrapper,
@@ -315,7 +314,7 @@ class DynamicVideoAskElement extends FormElement {
               '#type' => 'video_ask_button',
               '#title' => t('Button Response'),
               '#button_id' => $i,
-              '#default_value' => isset($default_value[$i]['response']['settings']['label']) && !empty($default_value[$i]['response']['settings']['label']) ? $default_value[$i]['response']['settings']['label'] : [],
+              '#default_value' => isset($default_value[$i]['response']['settings']) && !empty($default_value[$i]['response']['settings']) ? $default_value[$i]['response']['settings'] : [],
             ];
             break;
 
