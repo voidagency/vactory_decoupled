@@ -56,7 +56,7 @@ class IdLabelElement extends FormElement {
     $element_state = static::getElementState($parents, $form_state);
     if ($element_state === NULL) {
       $element_state = [
-        'items_count' => !empty($default_value) ? count($default_value) - 1 : 0,
+        'items_count' => !empty($default_values) ? count($default_values) - 1 : 0,
       ];
       static::setElementState($parents, $form_state, $element_state);
     }
