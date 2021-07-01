@@ -1,0 +1,14 @@
+.remove-setting-submit {
+  position: absolute;
+  right: 1%;
+}
+
+.remove-element-submit input{
+  color: red;
+}
+
+.remove-setting-submit input, .remove-setting-submit input:hover {
+  color: red;
+  background: white;
+  border-color: red;
+}

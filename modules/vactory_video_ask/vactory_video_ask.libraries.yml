@@ -1,0 +1,5 @@
+video-ask-form:
+  version: 1.x
+  css:
+    theme:
+      css/video_ask_form.css: {}
