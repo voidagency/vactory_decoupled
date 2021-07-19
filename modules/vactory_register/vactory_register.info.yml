@@ -1,0 +1,6 @@
+name: vactory_register
+type: module
+description: The description.
+package: Custom
+core: 8.x
+configure: vactory_register.admin_settings

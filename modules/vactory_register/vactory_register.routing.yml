@@ -1,0 +1,7 @@
+vactory_register.admin_settings:
+  path: '/admin/config/vactory_register'
+  defaults:
+    _form: '\Drupal\vactory_register\Form\RegisterConfigForm'
+    _title: 'Vactory Register Settings'
+  requirements:
+    _permission: 'administer site configuration'

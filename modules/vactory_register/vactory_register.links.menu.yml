@@ -1,0 +1,6 @@
+vactory_register.admin_settings:
+  title: 'Vactory Register Config'
+  description: 'Fields to display in register from.'
+  route_name: vactory_register.admin_settings
+  parent: user.admin_index
+  weight: 10

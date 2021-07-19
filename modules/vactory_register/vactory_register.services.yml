@@ -1,0 +1,5 @@
+services:
+  route_subscriber:
+    class: Drupal\vactory_register\Routing\RouteSubscriber
+    tags:
+      - {name: event_subscriber }
