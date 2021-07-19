@@ -17,12 +17,6 @@ function vactory_register_theme($existing, $type, $theme, $path) {
         'form_register' => NULL,
         'extension' => NULL
       ],
-      'vactory_register_form_tabs' => [
-        'template' => 'tabs',
-        'variables' => [
-          'form_register_override' => NULL,
-        ],
-      ],
     ],
   ];
 }
