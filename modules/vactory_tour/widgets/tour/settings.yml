@@ -1,0 +1,17 @@
+name: "Tour"
+multiple: TRUE
+category: 'Navigation'
+enabled: TRUE
+fields:
+  selector:
+    type: text
+    label: "Selector"
+    options:
+      '#required': true
+  content:
+    type: text_format
+    label: 'Content'
+    options:
+        '#format': 'full_html'
+        '#description': 'Contenu type WYSIWYG.'
+        '#required': true
