@@ -1,0 +1,6 @@
+vactory_redirect.admin_settings:
+  title: 'Vactory Redirect Settings'
+  description: 'Upload redirect file (.csv).'
+  route_name: vactory_redirect.admin_settings
+  parent: system.admin_config_content
+  weight: 15
