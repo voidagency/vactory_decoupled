@@ -1,8 +1,9 @@
-jQuery(document).ready(function ($) {
-    $('#vactory_icon_picker').fontIconPicker(
-        {
-            // emptyIcon: false,
-            // emptyIconValue: 'none'
-        }
-    ); // Load with default options
-});
+(function ($, Drupal) {
+  Drupal.behaviors.vactoryIcons = {
+    attach: function attach(context) {
+      $(context).find('select.vactory--icon-picker').once('vactoryIconPicker').each(function (index, value) {
+         $(value).fontIconPicker();
+      });
+    }
+  };
+})(jQuery, Drupal);

@@ -1,9 +1,8 @@
 vactory_icon.fonticonpicker:
   version: 1.0
   js:
-    libraries/fontIconPicker/js/jquery-1.12.4.min.js: {}
-    libraries/fontIconPicker/js/init-picker.js: {}
     libraries/fontIconPicker/js/jquery.fonticonpicker.min.js: {}
+    libraries/fontIconPicker/js/init-picker.js: { }
   css:
     theme:
       libraries/fontIconPicker/css/base/jquery.fonticonpicker.min.css: {}
