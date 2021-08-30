@@ -1,0 +1,3 @@
+manage redirects settings:
+  title: 'Manage redirects settings.'
+  restrict access: true

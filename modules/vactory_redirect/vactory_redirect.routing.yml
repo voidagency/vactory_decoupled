@@ -4,9 +4,7 @@ vactory_redirect.admin_settings:
     _form: '\Drupal\vactory_redirect\Form\VactoryRedirectSettingsForm'
     _title: 'Vactory Redirect Settings'
   requirements:
-    _permission: 'access content'
-
-
+    _permission: 'manage redirects settings'
 
 vactory_redirect.get_redirections:
   path: 'vapi/redirections'
