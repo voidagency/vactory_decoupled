@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# 1.0.25 (2021-03-xx)
+# 1.0.26 (2021-08-31)
+
+### New Features
+* **Tour:** Onboarding guided tours. ([PR-92](https://github.com/voidagency/vactory_decoupled/pull/92))
+* **Redirect:** Provides the ability to create manual redirects. ([PR-91](https://github.com/voidagency/vactory_decoupled/pull/91))
+* **Icons:** Provides functionality for adding https://icomoon.io icon packages to Drupal and exposing them for use via FAPI & Field Widgets. ([PR-89](https://github.com/voidagency/vactory_decoupled/pull/89))
+* **Dynamic Field:** Added entity queue to views element. ([PR-82](https://github.com/voidagency/vactory_decoupled/pull/82))
+* **Dynamic Field:** Path Parts. ([PR-85](https://github.com/voidagency/vactory_decoupled/pull/85))
+* **Search:** Added limit & lang query params. ([PR-86](https://github.com/voidagency/vactory_decoupled/pull/86))
+* **JSON API:** Breadcrumb field. ([PR-87](https://github.com/voidagency/vactory_decoupled/pull/87))
+
+# 1.0.25 (2021-06-15)
 
 ### Bug Fixes
 
@@ -14,6 +25,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **Frequent Search:** Track search keywords. ([PR-81](https://github.com/voidagency/vactory_decoupled/pull/81))
 * **DF:** Added entity queue to views element. ([PR-82](https://github.com/voidagency/vactory_decoupled/pull/82))
+* **Tokens:** Added node_path > The path of the current page. ([PR-93](https://github.com/voidagency/vactory_decoupled/pull/93))
 
 ### Other changes
 
