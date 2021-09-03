@@ -183,6 +183,9 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
               '/(\d+)/i',
               function ($matches) use ($entityRepository, $slugManager)  {
                 $term = Term::load(intval($matches[0]));
+                if (!$term) {
+                  return NULL;
+                }
                 $term = $entityRepository
                   ->getTranslationFromContext($term);
                 return $slugManager->taxonomy2Slug($term);
