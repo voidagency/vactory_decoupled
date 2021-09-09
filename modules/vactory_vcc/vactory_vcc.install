@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Install file.
+ */
+
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+
+/**
+ * Move vcc field to hook_entity_base_field_info.
+ */
+function vactory_vcc_update_8001()
+{
+  $storage_definition = BaseFieldDefinition::create('entity_reference')
+    ->setLabel(t('Similar content'))
+    ->setSetting('target_type', 'node')
+    ->setDisplayConfigurable('form', TRUE)
+    ->setDisplayConfigurable('view', FALSE)
+    ->setTargetEntityTypeId('node')
+    ->setTranslatable(FALSE)
+    ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+    ->setDisplayOptions('form', [
+      'type' => 'vcc_entity_reference_autocomplete',
+      'settings' => [
+        'match_operator' => 'CONTAINS',
+        'size' => '60',
+        'placeholder' => '',
+      ],
+    ]);
+
+  \Drupal::entityDefinitionUpdateManager()
+    ->installFieldStorageDefinition('vcc', 'node', 'node', $storage_definition);
+}
