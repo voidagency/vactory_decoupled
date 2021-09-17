@@ -27,6 +27,7 @@ class VactoryIconPicker extends FormElement
         [$class, 'processVactoryIconPicker'],
       ],
       '#theme' => 'select',
+      '#theme_wrappers' => ['form_element'],
     ];
   }
 
