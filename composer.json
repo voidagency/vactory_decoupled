@@ -51,7 +51,8 @@
                 "Disable status message: An external client application is requesting access - MAJ": "https://gist.githubusercontent.com/Bahlaouane-Hamza/b68ec4306bf953496c4063c8df1b8b96/raw/caa03490e55c136020ec615bef79d869b1a7721a/simple-oauth-status-message-external-client-app.patch"
             },
             "drupal/metatag": {
-                "Issue #2945817: Support JSON API, REST, GraphQL and custom normalizations": "https://www.drupal.org/files/issues/2020-02-29/2945817-93.patch"
+                "Issue #2945817: Support JSON API, REST, GraphQL and custom normalizations": "https://www.drupal.org/files/issues/2020-02-29/2945817-93.patch",
+                "All rendering must happen in a render context to prevent early rendering.": "https://gist.githubusercontent.com/voidagency/4df686cbbb62b6ddd554aa4ecf51d8f3/raw/899ce6ed3ddd732a36a0183cd77fbb988376ee9b/metatag--all-rendering-must-happen-in-a-render-context.patch"
             },
             "drupal/file_entity": {
                 "File rest upload PluginNotFoundException": "https://www.drupal.org/files/issues/2018-07-11/file-rest-upload-pluginnotfoundexception-error-2959947-8.patch"
