@@ -1,0 +1,6 @@
+services:
+  vactory_oauth_login.user_login_subscriber:
+    class: Drupal\vactory_oauth_login\EventSubscriber\UserLoginSubscriber
+    arguments: [ '@current_user' ]
+    tags:
+      - { name: event_subscriber }
