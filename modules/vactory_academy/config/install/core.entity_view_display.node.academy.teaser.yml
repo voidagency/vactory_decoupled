@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.academy.body
     - field.field.node.academy.comment
+    - field.field.node.academy.field_academy_quiz
     - field.field.node.academy.field_vactory_academy_duration
     - field.field.node.academy.field_vactory_academy_language
     - field.field.node.academy.field_vactory_date
@@ -40,6 +41,7 @@ content:
     region: content
 hidden:
   comment: true
+  field_academy_quiz: true
   field_vactory_academy_duration: true
   field_vactory_academy_language: true
   field_vactory_date: true

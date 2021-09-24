@@ -1,0 +1,9 @@
+vactory_quiz.answers_modal_form:
+  path: '/admin/config/quiz-answers-modal-form'
+  defaults:
+    _title: 'Quiz Answers Modal Form'
+    _controller: '\Drupal\vactory_quiz\Controller\QuizAnswersModalFormController::openAnswersModalForm'
+  requirements:
+    _access: 'TRUE'
+  options:
+    _admin_route: TRUE

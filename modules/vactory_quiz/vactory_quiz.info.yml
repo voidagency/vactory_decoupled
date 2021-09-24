@@ -1,0 +1,8 @@
+name: Vactory Quiz
+description: Provides Quiz content type & quiz question custom field type
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Vactory
+dependencies:
+  - multiple_fields_remove_button

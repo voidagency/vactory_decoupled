@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.academy.body
     - field.field.node.academy.comment
+    - field.field.node.academy.field_academy_quiz
     - field.field.node.academy.field_vactory_academy_duration
     - field.field.node.academy.field_vactory_academy_language
     - field.field.node.academy.field_vactory_date
@@ -71,6 +72,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_academy_quiz:
+    weight: 37
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_vactory_academy_duration:
     weight: 15
     settings:
