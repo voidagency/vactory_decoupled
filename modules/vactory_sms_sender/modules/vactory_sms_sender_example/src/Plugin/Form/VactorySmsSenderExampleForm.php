@@ -53,7 +53,7 @@ class VactorySmsSenderExampleForm extends FormBase {
       \Drupal::messenger()->addStatus($this->t('SMS has been sent successfully'));
     }
     else {
-      \Drupal::messenger()->addStatus($this->t('An error occured while sending SMS, please check <a href="/admin/reports/dblog">Drupal recent logs</a> page for more details.'));
+      \Drupal::messenger()->addError($this->t('An error has been occured while sending SMS, please check <a href="/admin/reports/dblog">Drupal recent logs</a> page for more details.'));
     }
   }
 
