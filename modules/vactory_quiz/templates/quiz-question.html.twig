@@ -1,0 +1,6 @@
+<div>
+  <h6>{{ question.number }}) {{ question.value }}</h6>
+  {% for answer in question.answers %}
+    <p>{{ answer.answer_id }}. {{ answer.answer }}</p>
+  {% endfor %}
+</div>

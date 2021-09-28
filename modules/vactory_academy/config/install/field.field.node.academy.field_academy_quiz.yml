@@ -1,0 +1,27 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academy_quiz
+    - node.type.academy
+    - node.type.vactory_quiz
+id: node.academy.field_academy_quiz
+field_name: field_academy_quiz
+entity_type: node
+bundle: academy
+label: Quiz
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vactory_quiz: vactory_quiz
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

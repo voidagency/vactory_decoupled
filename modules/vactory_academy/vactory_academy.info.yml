@@ -27,6 +27,7 @@ dependencies:
   - user
   - views
   - vactory_rate
+  - vactory_quiz
 version: 8.x-1.0
 package: Vactory
 core_incompatible: false
