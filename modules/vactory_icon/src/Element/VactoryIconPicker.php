@@ -47,6 +47,7 @@ class VactoryIconPicker extends FormElement
     $element['#default_value'] = !empty($element['#default_value']) ? 'icon-' . $element['#default_value'] : $element['#default_value'];
     // workaround for setting the default selected value
     $element['#value'] = $element['#default_value'];
+    $element['#options'][''] = '';
     // $icons = array('');
 
     $json_file = \Drupal::service('file_system')->realpath("public://vactory_icon/selection.json");
