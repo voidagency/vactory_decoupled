@@ -4,6 +4,8 @@ namespace Drupal\vactory_jsonapi\Plugin\Field;
 
 use Drupal\Core\Field\FieldItemList;
 use Drupal\Core\Link;
+use Drupal\Core\Render\RenderContext;
+use Drupal\Core\Render\RendererInterface;
 use Drupal\Core\TypedData\ComputedItemListTrait;
 use Drupal\node\Entity\Node;
 
@@ -59,16 +61,21 @@ class InternalNodeEntityBreadcrumbFieldItemList extends FieldItemList {
     // Format items.
     $breadcrumbs_data = [];
     /* @var \Drupal\Core\Link $link */
-    foreach ($links as $link) {
-      $text = $link->getText();
-      $url = $link->getUrl()->toString();
-      $url = str_replace('/backend', '', $url);
+    $renderer = \Drupal::service('renderer');
+    assert($renderer instanceof RendererInterface);
+    $breadcrumbs_data = $renderer->executeInRenderContext(new RenderContext(), static function () use ($links, $breadcrumbs_data) {
+      foreach ($links as $link) {
+        $text = $link->getText();
+        $url = $link->getUrl()->toString();
+        $url = str_replace('/backend', '', $url);
 
-      array_push($breadcrumbs_data, [
-        'url'  => $url,
-        'text' => $text,
-      ]);
-    }
+        array_push($breadcrumbs_data, [
+          'url'  => $url,
+          'text' => $text,
+        ]);
+      }
+      return $breadcrumbs_data;
+    });
 
     $this->list[0] = $this->createItem(0, $breadcrumbs_data);
   }
