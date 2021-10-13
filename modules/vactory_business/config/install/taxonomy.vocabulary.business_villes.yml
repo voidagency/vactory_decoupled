@@ -1,7 +1,0 @@
-langcode: fr
-status: true
-dependencies: {  }
-name: 'Business - Villes'
-vid: business_villes
-description: 'Utiliser ce vocabulaire pour ajouter des pays business'
-weight: 0

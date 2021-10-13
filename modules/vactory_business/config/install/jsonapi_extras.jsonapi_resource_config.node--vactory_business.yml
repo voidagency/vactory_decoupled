@@ -30,7 +30,7 @@ resourceFields:
     fieldName: langcode
     publicName: langcode
     enhancer:
-      id: ''
+      id: vactory_langcode
     disabled: false
   type:
     fieldName: type
@@ -132,7 +132,7 @@ resourceFields:
     fieldName: path
     publicName: path
     enhancer:
-      id: ''
+      id: vactory_link
     disabled: false
   publish_on:
     fieldName: publish_on
@@ -254,6 +254,12 @@ resourceFields:
     enhancer:
       id: vactory_pays
     disabled: false
+  field_business_specialisations:
+    fieldName: field_business_specialisations
+    publicName: field_business_specialisations
+    enhancer:
+      id: ''
+    disabled: false
   field_business_users:
     fieldName: field_business_users
     publicName: field_business_users
@@ -305,6 +311,12 @@ resourceFields:
   field_vactory_date:
     fieldName: field_vactory_date
     publicName: field_vactory_date
+    enhancer:
+      id: ''
+    disabled: false
+  field_vactory_telephone:
+    fieldName: field_vactory_telephone
+    publicName: field_vactory_telephone
     enhancer:
       id: ''
     disabled: false

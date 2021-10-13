@@ -1,4 +1,4 @@
-name: Vactory Business
+name: 'Vactory Business'
 description: 'Provides Business content type'
 type: module
 core_version_requirement: '^8.9 || ^9'
@@ -16,6 +16,7 @@ dependencies:
   - 'drupal:text'
   - 'drupal:user'
   - 'jsonapi_extras:jsonapi_extras'
+  - 'pathauto:pathauto'
   - 'scheduler:scheduler'
   - 'social_media_links:social_media_links_field'
   - 'vactory_banner:vactory_banner'
