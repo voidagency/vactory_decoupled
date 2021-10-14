@@ -1,0 +1,21 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_business_pays
+    - node.type.vactory_business
+  module:
+    - address
+id: node.vactory_business.field_business_pays
+field_name: field_business_pays
+entity_type: node
+bundle: vactory_business
+label: Pays
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+field_type: address_country

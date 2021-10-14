@@ -163,7 +163,8 @@
         "drupal/sendinblue": "^1.8",
         "drupal/faqfield": "^7.0",
         "pviojo/oauth2-keycloak": "^2.0",
-        "drupal/multiple_fields_remove_button": "^1.0@alpha"
+        "drupal/multiple_fields_remove_button": "^1.0@alpha",
+        "drupal/social_media_links": "^2.8"
     },
     "config": {
         "process-timeout": 0
