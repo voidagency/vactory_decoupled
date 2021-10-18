@@ -10,7 +10,7 @@ class VactorySmsSenderService {
   /**
    * Send SMS Message callback.
    */
-  public function sendSms($to, $message) {
+  public function sendSms($to, $message, $allowThrowingExceptions = FALSE) {
     $client = \Drupal::httpClient();
 
     // Get module configuration.
@@ -69,6 +69,9 @@ class VactorySmsSenderService {
     catch (\Exception $e) {
       \Drupal::logger('vactory_sms_sender')
         ->error("Erreur lors de l'envoi de SMS : " . $e->getMessage());
+      if ($allowThrowingExceptions) {
+        throw $e;
+      }
     }
 
     return FALSE;

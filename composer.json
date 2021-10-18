@@ -68,6 +68,9 @@
             },
             "drupal/media_library_form_element": {
                 "Fixing multiple modals closing": "https://gist.githubusercontent.com/Bahlaouane-Hamza/e956616f7a0680a572837af0df0a7d28/raw/a8050f4c72ac4c7abb11deb05182fb06eebb22a5/media_library_form_element--multiple-modals-closing.patch"
+            },
+            "drupal/swiftmailer": {
+                "Swiftmailer fix renderPlan method cli breaks": "https://gist.githubusercontent.com/b-khouy/8ba9095843d940892c5bf51a6f0a2fe4/raw/3c27d958614ac8ed4d7907221291aa0cd244acb4/swiftmailer-prevent-cli-commands-break.patch"
             }
         }
     },
