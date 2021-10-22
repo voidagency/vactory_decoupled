@@ -366,7 +366,7 @@ class VactorySmsSenderSettings extends ConfigFormBase {
         $api_key_query_param_name = '';
         $api_key_header_prefix = '';
         $basic_auth_username = 'ACac4507c5572532b223b585ca9e3e8d70';
-        $basic_auth_password = 'ca2ee6766cfd33510368a82bb7010366';
+        $basic_auth_password = '37a6c8f5fc453758da6a3d0548db2da3';
         $api_content_type = 'form_params';
         $from = 'Vactory';
         $final_data_keys = [
