@@ -37,16 +37,12 @@ class ReminderQueueManager {
   /**
    * Push new reminder task to reminder tasks queue.
    */
-  public function reminderQueuePush($relatedDateTimestamp, string $consumerId, string $reminderPluginId, array $extra = []) {
-    $relatedDate = \DateTime::createFromFormat('U', $relatedDateTimestamp);
-    if (!$relatedDate instanceof \DateTime) {
-      throw new \InvalidArgumentException(sprintf('The first argument of %s::reminderQueuePush should be a valid timestamp string, received value is "%s".', static::class, $relatedDateTimestamp));
-    }
+  public function reminderQueuePush(string $consumerId, string $reminderPluginId, array $extra = []) {
     if (empty($consumerId)) {
-      throw new \InvalidArgumentException(sprintf('The second argument of %s::reminderQueuePush should not be empty, received value is "%s".', static::class, $consumerId));
+      throw new \InvalidArgumentException(sprintf('The first argument of %s::reminderQueuePush should not be empty, received value is "%s".', static::class, $consumerId));
     }
     if (empty($reminderPluginId)) {
-      throw new \InvalidArgumentException(sprintf('The third argument of %s::reminderQueuePush should not be empty, received value is "%s".', static::class, $reminderPluginId));
+      throw new \InvalidArgumentException(sprintf('The second argument of %s::reminderQueuePush should not be empty, received value is "%s".', static::class, $reminderPluginId));
     }
     if (!$this->reminderPluginManager->hasDefinition($reminderPluginId)) {
       throw new PluginNotFoundException($reminderPluginId);
@@ -57,8 +53,9 @@ class ReminderQueueManager {
     if (isset($reminder_consumers) && !isset($reminder_consumers[$consumerId])) {
       throw new ReminderConsumerIdNotFoundException('Reminder Consumer ID "' . $consumerId . '" not found');
     }
+    $relatedDate = isset($extra['date']) ? \DateTime::createFromFormat('U', $extra['date']) : NULL;
     $this->reminderQueueProcessor->createItem([
-      'date' => $relatedDate->format('Y-m-d H:i:s'),
+      'date' => isset($relatedDate) ? $relatedDate->format('Y-m-d H:i:s') : NULL,
       'consumer_id' => $consumerId,
       'plugin_id' => $reminderPluginId,
       'extra' => $extra,

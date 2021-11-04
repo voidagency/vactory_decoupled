@@ -59,7 +59,7 @@ class ReminderQueueProcessor extends QueueWorkerBase implements ContainerFactory
    * {@inheritdoc}
    */
   public function processItem($data) {
-    if (!isset($data['date']) || !isset($data['consumer_id']) || !isset($data['plugin_id'])) {
+    if (!isset($data['consumer_id']) || !isset($data['plugin_id'])) {
       throw new \Exception('The queue is broken.');
     }
     // Get consumer related date interval from module settings.
@@ -70,7 +70,7 @@ class ReminderQueueProcessor extends QueueWorkerBase implements ContainerFactory
     }
     $send_at = $reminder_consumers[$data['consumer_id']];
     $plugin = $this->getPlugin($data['plugin_id']);
-    if ($this->isDateTimeApproaching($data['date'], $send_at)) {
+    if ($this->isDateTimeApproaching($data, $send_at)) {
       $plugin->processItem($data);
     }
     else {
@@ -81,7 +81,33 @@ class ReminderQueueProcessor extends QueueWorkerBase implements ContainerFactory
   /**
    * {@inheritdoc}
    */
-  private function isDateTimeApproaching($start_date, $relative_unit = '-1 hour') {
+  private function isDateTimeApproaching($data, $relative_unit = '-1 hour') {
+    if (
+      !isset($data['date']) &&
+      (
+        !isset($data['extra']['entity_type']) ||
+        !isset($data['extra']['entity_id']) ||
+        !isset($data['extra']['date_field_name'])
+      )
+    ) {
+      // No date neither entity date field infos are given.
+      throw new \Exception('date or entity_type|entity_id|date_field_name params are missing');
+    }
+    $start_date = isset($data['date']) ? $data['date'] : '';
+    if (empty($start_date)) {
+      $entity_type = $data['extra']['entity_type'];
+      $entity_id = $data['extra']['entity_id'];
+      $field_name = $data['extra']['date_field_name'];
+      $entity = \Drupal::entityTypeManager()->getStorage($entity_type)
+        ->load($entity_id);
+      if ($entity) {
+        $start_date = $entity->get($field_name)->value;
+      }
+      if (empty($entity) || empty($start_date)) {
+        // Entity/date field not found case.
+        throw new \Exception(sprintf('No entity with id "%s" has been founded or date field "%s" is unknown or null', $entity_id, $field_name));
+      }
+    }
     $origin = new \DateTime($start_date);
     $currentTime = time();
     $date_begin = strtotime($relative_unit, $origin->getTimestamp());
