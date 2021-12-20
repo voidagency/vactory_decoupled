@@ -14,4 +14,3 @@ dependencies:
   - 'drupal:user'
   - 'multiple_fields_remove_button:multiple_fields_remove_button'
   - 'scheduler:scheduler'
-  - 'vactory_vcc:vactory_vcc'

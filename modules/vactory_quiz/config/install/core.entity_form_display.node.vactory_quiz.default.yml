@@ -13,7 +13,6 @@ dependencies:
     - scheduler
     - text
     - vactory_quiz
-    - vactory_vcc
 id: node.vactory_quiz.default
 targetEntityType: node
 bundle: vactory_quiz
@@ -116,15 +115,5 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  vcc:
-    type: vcc_entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      size: '60'
-      placeholder: ''
-      match_limit: 10
-    region: content
-    weight: 38
     third_party_settings: {  }
 hidden: {  }
