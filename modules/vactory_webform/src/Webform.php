@@ -93,6 +93,7 @@ class Webform
       'webform_image_file' => 'upload',
       'date' => 'date',
       'webform_time' => 'time',
+      'processed_text' => 'rawhtml',
     ];
 
     $htmlInputTypes = [
@@ -226,6 +227,12 @@ class Webform
         $properties['extensionsClean'] = $field_extensions;
       }
 
+    }
+
+    if ($ui_type === 'rawhtml') {
+      $properties['html'] = $item['#text'];
+      $properties['format'] = $item['#format'];
+      $properties['attributes'] = $item['#wrapper_attributes'];
     }
 
     return $properties;
