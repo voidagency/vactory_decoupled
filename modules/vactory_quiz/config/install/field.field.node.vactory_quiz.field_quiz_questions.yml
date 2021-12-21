@@ -4,11 +4,11 @@ dependencies:
   config:
     - field.storage.node.field_quiz_questions
     - node.type.vactory_quiz
-  module:
-    - vactory_quiz
   enforced:
     module:
       - vactory_quiz
+  module:
+    - vactory_quiz
 id: node.vactory_quiz.field_quiz_questions
 field_name: field_quiz_questions
 entity_type: node
