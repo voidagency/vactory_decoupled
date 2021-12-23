@@ -14,11 +14,14 @@ dependencies:
     - field.field.node.vactory_business.field_taille_entreprise
     - field.field.node.vactory_business.field_vactory_address
     - field.field.node.vactory_business.field_vactory_date
+    - field.field.node.vactory_business.field_vactory_image
     - field.field.node.vactory_business.field_vactory_telephone
+    - image.style.thumbnail
     - node.type.vactory_business
   module:
     - address
     - datetime
+    - image
     - path
     - scheduler
     - social_media_links_field
@@ -124,6 +127,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_vactory_image:
+    weight: 38
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_vactory_telephone:
     weight: 23
