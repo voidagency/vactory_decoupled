@@ -38,7 +38,8 @@
             "drupal/core": {
                 "Issue #2996114: Argument 2 passed to {closure}() must be an instance of ResourceType, NULL given": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch",
                 "Nested Paragraphs create multiple drag handles": "https://www.drupal.org/files/issues/2020-05-28/3092181-87-89x.patch",
-                "#2123543 Add string context and location filters to the translate interface": "https://www.drupal.org/files/issues/2020-10-20/2123543-8.9.x-69.patch"
+                "#2123543 Add string context and location filters to the translate interface": "https://www.drupal.org/files/issues/2020-10-20/2123543-8.9.x-69.patch",
+                "modules/jsonapi: Fix response generation when uploading a file with file_entity module enabled": "https://gist.githubusercontent.com/isifeddi/f4c91cfb79a788397e4ca52a17a30d91/raw/78d63bb2f1690fc8bf0dba9964a0db72858bfe4a/core-jsonapi-file-entity-upload-response.patch"
             },
             "drupal/migrate_tools": {
                 "Issue #3099611: Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
