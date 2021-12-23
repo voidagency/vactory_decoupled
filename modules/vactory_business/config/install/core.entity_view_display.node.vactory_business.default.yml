@@ -14,11 +14,13 @@ dependencies:
     - field.field.node.vactory_business.field_taille_entreprise
     - field.field.node.vactory_business.field_vactory_address
     - field.field.node.vactory_business.field_vactory_date
+    - field.field.node.vactory_business.field_vactory_image
     - field.field.node.vactory_business.field_vactory_telephone
     - node.type.vactory_business
   module:
     - address
     - datetime
+    - image
     - social_media_links_field
     - text
     - user
@@ -121,6 +123,15 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_vactory_image:
+    weight: 117
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_vactory_telephone:
     weight: 113

@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.vactory_business.field_taille_entreprise
     - field.field.node.vactory_business.field_vactory_address
     - field.field.node.vactory_business.field_vactory_date
+    - field.field.node.vactory_business.field_vactory_image
     - field.field.node.vactory_business.field_vactory_telephone
     - node.type.vactory_business
   module:
@@ -50,6 +51,7 @@ hidden:
   field_taille_entreprise: true
   field_vactory_address: true
   field_vactory_date: true
+  field_vactory_image: true
   field_vactory_telephone: true
   langcode: true
   search_api_excerpt: true
