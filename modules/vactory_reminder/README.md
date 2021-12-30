@@ -124,24 +124,37 @@ The module settings form is accessible under `/admin/config/vactory-reminder`
 ## Add a reminder task to queue
 The module expose a service to add new tasks to reminder queue:
 
-    // The related date in timestamp.
-    $related_date = time();
     // Reminder consumer ID (This will be used to get date interval from
     // module settings), based on above example the date interval is +1 hour.
     $consumer_id = 'vactory_academy_inscription_mail';
     // Reminder plugin ID.
     $plugin_id = 'mail';
-    // Extra data (Reminder plugin params).
-    $extra = [
+    // Extra data example with an exact date case.
+    $extra_with_date_exact = [
+      'date' => time(),
       'subject' => 'Reminder Example',
       'email' => 'b.khouy@void.fr',
       'message' => 'Hello Brahim, this mail Has been sent one hour after being
                     added to queue',
     ];
+
+    // Extra data example with date depending on an entity date field.
+    $extra_with_date_exact = [
+      'entity_type' => 'node',
+      'entity_id' => 2,
+      'date_field_name' => 'field_vactory_date',
+      'subject' => 'Reminder Example',
+      'email' => 'b.khouy@void.fr',
+      'message' => 'Hello Brahim, this mail Has been sent one hour after being added to queue - :date at :hour',
+      'message_date_params' => [
+        ':date' => 'd/m/Y',
+        ':hour' => 'H\hi'
+      ]
+    ];
+
     // Create a reminder (Add to reminder queue).
     $reminder_manager = Drupal::service('vactory_reminder.queue.manager');
     $reminder_manager->reminderQueuePush(
-      $related_date,
       $consumer_id,
       $plugin_id,
       $extra
