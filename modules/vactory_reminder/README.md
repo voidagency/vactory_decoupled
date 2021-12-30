@@ -145,8 +145,11 @@ The module expose a service to add new tasks to reminder queue:
       'date_field_name' => 'field_vactory_date',
       'subject' => 'Reminder Example',
       'email' => 'b.khouy@void.fr',
-      'message' => 'Hello Brahim, this mail Has been sent one hour after being
-      added to queue',
+      'message' => 'Hello Brahim, this mail Has been sent one hour after being added to queue - :date at :hour',
+      'message_date_params' => [
+        ':date' => 'd/m/Y',
+        ':hour' => 'H\hi'
+      ]
     ];
 
     // Create a reminder (Add to reminder queue).
