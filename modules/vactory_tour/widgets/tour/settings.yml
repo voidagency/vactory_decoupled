@@ -2,6 +2,57 @@ name: "Tour"
 multiple: TRUE
 category: 'Navigation'
 enabled: TRUE
+extra_fields:
+  group_tours_options:
+    g_title: 'Tours Options'
+    nextButton:
+      type: text
+      label: 'Next button text'
+    prevButton:
+      type: text
+      label: 'Previous button text'
+    startAt:
+      type: number
+      label: 'Step number to start with'
+      options:
+        '#min': 0
+        '#description': 'A step number is the step order number starting by 1'
+    scrollDuration:
+      type: number
+      label: 'Step number to start with'
+      options:
+        '#min': 1
+        '#description': 'Smooth scroll duration when positioning the target element in milliseconds'
+    rounded:
+      type: number
+      label: 'Border radius'
+      options:
+        '#min': 1
+        '#description': 'Beautify helper + mask with border-radius (in px)'
+    showButtons:
+      type: checkbox
+      label: 'Show helper navigation buttons'
+    showNumber:
+      type: checkbox
+      label: 'Show helper number badge'
+    showNavigation:
+      type: checkbox
+      label: 'Show helper navigation dots'
+    showNavigationNumber:
+      type: checkbox
+      label: 'Show number when hovers on each navigation dots'
+    disableInteraction:
+      type: checkbox
+      label: 'Disable interact with highlighted elements'
+    disableDotsNavigation:
+      type: checkbox
+      label: "Isn't possible to interact with helper dots"
+    disableKeyboardNavigation:
+      type: checkbox
+      label: 'Disable keyboard navigation'
+    closeWithMask:
+      type: checkbox
+      label: 'Close clicking the mask'
 fields:
   selector:
     type: text
@@ -12,6 +63,6 @@ fields:
     type: text_format
     label: 'Content'
     options:
-        '#format': 'full_html'
-        '#description': 'Contenu type WYSIWYG.'
-        '#required': true
+      '#format': 'full_html'
+      '#description': 'Contenu type WYSIWYG.'
+      '#required': true
