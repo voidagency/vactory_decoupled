@@ -25,7 +25,6 @@ class WebformForm extends FormBase
   {
     $d = \Drupal::service('vactory.webform.normalizer');
     $a = $d->normalize('contact');
-    dpm($a);
 
     $form['webform'] = [
       '#type' => 'webform_decoupled',

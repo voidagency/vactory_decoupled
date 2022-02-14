@@ -3,6 +3,8 @@
 namespace Drupal\vactory_webform\Plugin\rest\resource;
 
 use Drupal\Component\Utility\Bytes;
+use Drupal\Component\Utility\Environment;
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
 use Drupal\file\Plugin\rest\resource\FileUploadResource;
 use Drupal\webform\Entity\Webform;
@@ -73,7 +75,7 @@ class WebformFileUploadResource extends FileUploadResource {
       $destination = $element['#upload_location'];
 
       // Check the destination file path is writable.
-      if (!file_prepare_directory($destination, FILE_CREATE_DIRECTORY)) {
+      if (!\Drupal::service('file_system')->prepareDirectory($destination, FileSystemInterface::CREATE_DIRECTORY)) {
         throw new HttpException(500, 'Destination file path is not writable');
       }
 
@@ -92,7 +94,7 @@ class WebformFileUploadResource extends FileUploadResource {
       $temp_file_path = $this->streamUploadData();
 
       // This will take care of altering $file_uri if a file already exists.
-      file_unmanaged_prepare($temp_file_path, $file_uri);
+      \Drupal::service('file_system')->getDestinationFilename($temp_file_path, $file_uri);
 
       // Lock based on the prepared file URI.
       $lock_id = $this->generateLockIdFromFileUri($file_uri);
@@ -118,7 +120,7 @@ class WebformFileUploadResource extends FileUploadResource {
       // Move the file to the correct location after validation. Use
       // FILE_EXISTS_ERROR as the file location has already been determined above
       // in file_unmanaged_prepare().
-      if (!file_unmanaged_move($temp_file_path, $file_uri, FILE_EXISTS_ERROR)) {
+      if (!\Drupal::service('file_system')->move($temp_file_path, $file_uri, FileSystemInterface::EXISTS_ERROR)) {
         throw new HttpException(500, 'Temporary file could not be moved to file location');
       }
 
@@ -158,9 +160,9 @@ class WebformFileUploadResource extends FileUploadResource {
     ];
 
     // Cap the upload size according to the PHP limit.
-    $max_filesize = Bytes::toInt(file_upload_max_size());
+    $max_filesize = Bytes::toNumber(Environment::getUploadMaxSize());
     if (!empty($element["#max_filesize"])) {
-      $max_filesize = min($max_filesize, Bytes::toInt($element['#max_filesize'] * 1024 * 1024));
+      $max_filesize = min($max_filesize, Bytes::toNumber($element['#max_filesize'] * 1024 * 1024));
     }
 
     // There is always a file size limit due to the PHP server limit.

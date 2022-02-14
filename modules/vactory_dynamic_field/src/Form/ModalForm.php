@@ -6,6 +6,8 @@ use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\Ajax\CloseDialogCommand;
 use Drupal\Core\Ajax\InvokeCommand;
 use Drupal\Core\Entity\EntityFieldManager;
+use Drupal\Core\Extension\ExtensionPathResolver;
+use Drupal\Core\File\FileUrlGeneratorInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Ajax\AjaxResponse;
@@ -88,6 +90,20 @@ class ModalForm extends FormBase {
   protected $isDropdownSelectMode;
 
   /**
+   * Extension path resolver service.
+   *
+   * @var \Drupal\Core\Extension\ExtensionPathResolver
+   */
+  protected $extensionPathResolver;
+
+  /**
+   * File url generator service.
+   *
+   * @var \Drupal\Core\File\FileUrlGeneratorInterface
+   */
+  //protected $fileUrlGenerator;
+
+  /**
    * Constructs a new ExampleConfigEntityExternalForm.
    *
    * @param \Drupal\vactory_dynamic_field\WidgetsManagerInterface $widgets_manager
@@ -95,10 +111,17 @@ class ModalForm extends FormBase {
    * @param \Drupal\Core\Entity\EntityFieldManager $entity_field_manager
    *   The entity field manager.
    */
-  public function __construct(WidgetsManagerInterface $widgets_manager, EntityFieldManager $entity_field_manager) {
+  public function __construct(
+    WidgetsManagerInterface $widgets_manager,
+    EntityFieldManager $entity_field_manager,
+    ExtensionPathResolver $extensionPathResolver
+    //FileUrlGeneratorInterface $fileUrlGenerator
+  ) {
     $this->widgetsManager = $widgets_manager;
     $this->entityFieldManager = $entity_field_manager;
     $this->isDropdownSelectMode = \Drupal::config('vactory_dynamic_field.settings')->get('is_dropdown_select_templates');
+    $this->extensionPathResolver = $extensionPathResolver;
+    //$this->fileUrlGenerator = $fileUrlGenerator;
   }
 
   /**
@@ -107,7 +130,9 @@ class ModalForm extends FormBase {
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('vactory_dynamic_field.vactory_provider_manager'),
-      $container->get('entity_field.manager')
+      $container->get('entity_field.manager'),
+      $container->get('extension.path.resolver')
+      //$container->get('file_url_generator')
     );
   }
 
@@ -584,11 +609,11 @@ class ModalForm extends FormBase {
 //        ];
         $options = [];
         foreach ($widgets as $widget_id => $widget) {
-          $undefined_screenshot = drupal_get_path('module', 'vactory_dynamic_field') . '/images/undefined-screenshot.jpg';
+          $undefined_screenshot = $this->extensionPathResolver->getPath('module', 'vactory_dynamic_field') . '/images/undefined-screenshot.jpg';
           $widget_preview = [
             '#theme' => 'vactory_dynamic_select_template',
             '#content' => [
-              'screenshot_url' => !empty($widget['screenshot']) ? $widget['screenshot'] : file_create_url($undefined_screenshot),
+              'screenshot_url' => !empty($widget['screenshot']) ? $widget['screenshot'] : $this->fileUrlGenerator->generateAbsoluteString($undefined_screenshot),
               'name' => $widget['name'],
             ],
           ];

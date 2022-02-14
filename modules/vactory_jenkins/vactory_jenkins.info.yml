@@ -3,5 +3,6 @@ type: module
 description: Triggers a build hook on Jenkins.
 package: Vactory
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - vactory_core

@@ -65,7 +65,7 @@ class InternalUserEntityFieldItemList extends FieldItemList
         $uri = $file_entity->getFileUri();
 
         $image_value = [
-          '_default' => file_create_url($uri),
+          '_default' => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
           '_lqip' => $lqipImageStyle->buildUrl($uri),
           'uri' => StreamWrapperManager::getTarget($uri),
           'fid' => $file_entity->id(),

@@ -2,6 +2,7 @@ name: 'Press Release'
 description: 'Provides Press Release type de contenu and related configuration. Gérez le contenu de vos communiqués de presse.'
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - allowed_formats
   - content_translation

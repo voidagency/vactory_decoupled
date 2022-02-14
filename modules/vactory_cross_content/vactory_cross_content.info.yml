@@ -1,6 +1,7 @@
 name: 'Cross Content'
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 description: 'Contenu similaire.'
 package: Vactory
 dependencies:

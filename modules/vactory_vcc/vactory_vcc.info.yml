@@ -1,7 +1,7 @@
 name: VCC
 description: 'Similair content.'
 type: module
-core: 8.x
+core_version_requirement: '^8.9 || ^9'
 dependencies:
   - vactory_core
   - content_translation

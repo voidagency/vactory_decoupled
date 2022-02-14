@@ -3,6 +3,7 @@
 namespace Drupal\vactory_forum\Plugin\vactory_dynamic_field\Platform;
 
 use Drupal\vactory_dynamic_field\VactoryDynamicFieldPluginBase;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * A DF provider plugin.
@@ -12,12 +13,23 @@ use Drupal\vactory_dynamic_field\VactoryDynamicFieldPluginBase;
  *   title = @Translation("Forum")
  * )
  */
-class VactoryForum extends VactoryDynamicFieldPluginBase
-{
+class VactoryForum extends VactoryDynamicFieldPluginBase {
 
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, $widgetsPath)
-  {
-    parent::__construct($configuration, $plugin_id, $plugin_definition, drupal_get_path('module', 'vactory_forum') . '/widgets');
+  /**
+   * Extension path resolver service.
+   *
+   * @var \Drupal\Core\Extension\ExtensionPathResolver
+   */
+  protected $extensionPathResolver;
+
+  /**
+   * {@inheritDoc }
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    $instance = parent::create($container, $configuration, $plugin_id, $plugin_definition);
+    $instance->extensionPathResolver = $container->get('extension.path.resolver');
+    $instance->setWidgetsPath($instance->extensionPathResolver->getPath('module', 'vactory_forum') . '/widgets');
+    return $instance;
   }
 
 }

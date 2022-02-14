@@ -101,7 +101,6 @@ class MenuItems extends MenuItemsBase {
       $result[] = $simplifiedLink;
     }
 
-//    dpm($result);
     return $result;
   }
 

@@ -2,6 +2,7 @@ name: Publication
 description: 'Provides Publication content type and related configuration. Manage your publications content.'
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - allowed_formats
   - content_translation

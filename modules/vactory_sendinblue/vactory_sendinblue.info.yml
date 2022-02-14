@@ -2,7 +2,7 @@ name: Sendinblue
 type: module
 description: 'Webservice API for sendinblue'
 package: Vactory
-core: 8.x
+core_version_requirement: '^8.9 || ^9'
 dependencies:
   - sendinblue
   - vactory_core

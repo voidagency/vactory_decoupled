@@ -2,6 +2,7 @@ name: Glossary
 description: 'Provides Glossary content type and related configuration. Gérer le contenu de vos événements .'
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - content_translation
   - datetime_range
