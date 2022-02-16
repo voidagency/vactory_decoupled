@@ -84,7 +84,7 @@ function vactory_forum_df_jsonapi_output_alter(&$content)
       $contributions = $comments['comment_count'];
       $last_contribution = $contributions > 0 ? $comments['last_comment_timestamp'] : null;
 
-      $author_name = $node->field_forum_editeur->entity->getUserName();
+      $author_name = $node->field_forum_editeur->entity->getDisplayName();
       $author_first_name = $node->field_forum_editeur->entity->get('field_first_name')->getString();
       $author_last_name = $node->field_forum_editeur->entity->get('field_last_name')->getString();
 

@@ -36,13 +36,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Issue #2996114: Argument 2 passed to {closure}() must be an instance of ResourceType, NULL given": "https://www.drupal.org/files/issues/2020-02-11/2996114-124.patch",
-                "Nested Paragraphs create multiple drag handles": "https://www.drupal.org/files/issues/2020-05-28/3092181-87-89x.patch",
-                "#2123543 Add string context and location filters to the translate interface": "https://www.drupal.org/files/issues/2020-10-20/2123543-8.9.x-69.patch",
+                "#2123543 Add string context and location filters to the translate interface": "https://www.drupal.org/files/issues/2021-05-28/drupal-n2123543-71.patch",
                 "modules/jsonapi: Fix response generation when uploading a file with file_entity module enabled": "https://gist.githubusercontent.com/isifeddi/f4c91cfb79a788397e4ca52a17a30d91/raw/78d63bb2f1690fc8bf0dba9964a0db72858bfe4a/core-jsonapi-file-entity-upload-response.patch"
-            },
-            "drupal/migrate_tools": {
-                "Issue #3099611: Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
             },
             "drupal/migrate_file": {
                 "Use media instead of file": "https://gist.githubusercontent.com/Bahlaouane-Hamza/75c4390bc95a9a4cd4776aa8da49434b/raw/72a7c96a5d39bab68d64c397df190e50ba9e35a7/migrate-file-import-media.patch"
@@ -57,9 +52,6 @@
             },
             "drupal/file_entity": {
                 "File rest upload PluginNotFoundException": "https://www.drupal.org/files/issues/2018-07-11/file-rest-upload-pluginnotfoundexception-error-2959947-8.patch"
-            },
-            "drupal/coffee": {
-                "Issue #3128583: Could not load data": "https://gist.githubusercontent.com/Bahlaouane-Hamza/64899f332eb63cb701d5ed6473aa6442/raw/e8fec693f1f462c47e3de3f8cc85fefc8628c4ce/coffee-subfolder-3128583.patch"
             },
             "drupal/user_registrationpassword": {
                 "#3079693: Mail body should preserve markup.": "https://gist.githubusercontent.com/Bahlaouane-Hamza/a2e174d726c91613bd213ceb5b8fd6e4/raw/373f2fe9bc1e6c206d484ff88c654fc29da25c13/3079693-mail-body-preserve-markup.patch"
