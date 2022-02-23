@@ -1,0 +1,48 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_help_template
+    - node.type.vactory_video_help
+  module:
+    - vactory_dynamic_field
+id: node.vactory_video_help.field_video_help_template
+field_name: field_video_help_template
+entity_type: node
+bundle: vactory_video_help
+label: Template
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    tpe_academy: 0
+    dam_guides_pratiques: 0
+    dam_modeles_de_documents: 0
+    dam_news: 0
+    dam_sites_informations: 0
+    dam_statut_juridique: 0
+    dam_videotheque: 0
+    tpe_annuaire_agences: 0
+    tpe_appointments: 0
+    tpe_basedoc: 0
+    tpe_borne: 0
+    tpe_formation: 0
+    tpe_forum: 0
+    tpe_mon_projet: 0
+    tpe_testimonial: 0
+    tpe_widgets_ui: 0
+    vactory_academy: 0
+    vactory_agenda: 0
+    vactory_banner: 0
+    vactory_core_ui: 0
+    vactory_forum: 0
+    vactory_locator: 0
+    vactory_news: 0
+    simulateur_widgets: 0
+    vactory_tour: 0
+    vactory_webform: 0
+    vactory_widgets_ui: 0
+field_type: field_wysiwyg_dynamic
