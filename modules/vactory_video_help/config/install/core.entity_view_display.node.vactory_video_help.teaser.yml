@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vactory_video_help.field_video_help_template
+    - node.type.vactory_video_help
+  module:
+    - user
+id: node.vactory_video_help.teaser
+targetEntityType: node
+bundle: vactory_video_help
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_video_help_template: true
+  langcode: true
+  search_api_excerpt: true

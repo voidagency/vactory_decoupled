@@ -1,0 +1,274 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.vactory_video_help
+id: node--vactory_video_help
+disabled: false
+path: node/vactory_video_help
+resourceType: node--vactory_video_help
+resourceFields:
+  nid:
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    disabled: true
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  revision_timestamp:
+    disabled: true
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: true
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: true
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+  title:
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    disabled: true
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: true
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: true
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: true
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  internal_ratings:
+    fieldName: internal_ratings
+    publicName: internal_ratings
+    enhancer:
+      id: ''
+    disabled: false
+  base_doc_content:
+    fieldName: base_doc_content
+    publicName: base_doc_content
+    enhancer:
+      id: ''
+    disabled: false
+  legacy_id:
+    fieldName: legacy_id
+    publicName: legacy_id
+    enhancer:
+      id: ''
+    disabled: false
+  metatag:
+    disabled: true
+    fieldName: metatag
+    publicName: metatag
+    enhancer:
+      id: ''
+  metatag_normalized:
+    fieldName: metatag_normalized
+    publicName: metatag_normalized
+    enhancer:
+      id: ''
+    disabled: false
+  path:
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+    disabled: false
+  publish_on:
+    disabled: true
+    fieldName: publish_on
+    publicName: publish_on
+    enhancer:
+      id: ''
+  unpublish_on:
+    disabled: true
+    fieldName: unpublish_on
+    publicName: unpublish_on
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: true
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  borne_internal_breadcrumb:
+    fieldName: borne_internal_breadcrumb
+    publicName: borne_internal_breadcrumb
+    enhancer:
+      id: ''
+    disabled: false
+  node_banner:
+    fieldName: node_banner
+    publicName: node_banner
+    enhancer:
+      id: ''
+    disabled: false
+  node_banner_disabled:
+    fieldName: node_banner_disabled
+    publicName: node_banner_disabled
+    enhancer:
+      id: ''
+    disabled: false
+  internal_node_banner:
+    fieldName: internal_node_banner
+    publicName: internal_node_banner
+    enhancer:
+      id: ''
+    disabled: false
+  node_class:
+    fieldName: node_class
+    publicName: node_class
+    enhancer:
+      id: ''
+    disabled: false
+  node_summary:
+    disabled: true
+    fieldName: node_summary
+    publicName: node_summary
+    enhancer:
+      id: ''
+  node_settings:
+    fieldName: node_settings
+    publicName: node_settings
+    enhancer:
+      id: ''
+    disabled: false
+  node_body_class:
+    fieldName: node_body_class
+    publicName: node_body_class
+    enhancer:
+      id: ''
+    disabled: false
+  internal_user:
+    fieldName: internal_user
+    publicName: internal_user
+    enhancer:
+      id: ''
+    disabled: false
+  internal_blocks:
+    fieldName: internal_blocks
+    publicName: internal_blocks
+    enhancer:
+      id: ''
+    disabled: false
+  internal_comment:
+    fieldName: internal_comment
+    publicName: internal_comment
+    enhancer:
+      id: ''
+    disabled: false
+  internal_breadcrumb:
+    fieldName: internal_breadcrumb
+    publicName: internal_breadcrumb
+    enhancer:
+      id: ''
+    disabled: false
+  vcc_normalized:
+    fieldName: vcc_normalized
+    publicName: vcc_normalized
+    enhancer:
+      id: ''
+    disabled: false
+  vcc:
+    fieldName: vcc
+    publicName: vcc
+    enhancer:
+      id: ''
+    disabled: false
+  content_translation_source:
+    disabled: true
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: true
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  field_video_help_template:
+    fieldName: field_video_help_template
+    publicName: field_video_help_template
+    enhancer:
+      id: ''
+    disabled: false

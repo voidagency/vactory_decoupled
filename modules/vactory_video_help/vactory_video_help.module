@@ -1,0 +1,152 @@
+<?php
+
+/**
+ * @file
+ * Contain related hooks.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
+use Drupal\node\Entity\NodeType;
+use Drupal\node\NodeTypeInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function vactory_video_help_form_node_form_alter(&$form, &$form_state, $form_id)
+{
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  $type = $form_state->getFormObject()->getEntity();
+  $node_type = NodeType::load($type->bundle());
+  $is_enabled_for_type = $node_type->getThirdPartySetting('vactory_video_help', 'is_enabled_for_type');
+  $default_video_help_id = (!empty($type->get('node_video_help')->getString())) ? $type->get('node_video_help')->getString() : $node_type->getThirdPartySetting('vactory_video_help', 'video_help');
+  $form_ids = ['node_vactory_video_help_edit_form', 'node_vactory_video_help_form'];
+
+  // Video help group.
+  $form['node_video_help_group'] = [
+    '#type' => 'details',
+    '#title' => t('Video help settings'),
+    '#description' => t('Create Video help for this node.'),
+    '#group' => 'advanced',
+    '#open' => FALSE,
+  ];
+
+  $form['node_video_help']['#group'] = 'node_video_help_group';
+  $form['node_video_help_disabled']['#group'] = 'node_video_help_group';
+
+  if (!$is_enabled_for_type) {
+    $form['node_video_help_group']['#access'] = FALSE;
+  }
+
+  if ($default_video_help_id) {
+    $form['node_video_help']['widget']['#default_value'] = $default_video_help_id;
+  }
+
+  if (in_array($form_id, $form_ids)) {
+    // Hide Video help as it is not used by this content type.
+    $form['node_video_help_group']['#access'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for \Drupal\node\NodeTypeForm.
+ *
+ * Adds Video help options to the node type form.
+ */
+function vactory_video_help_form_node_type_form_alter(&$form, FormStateInterface $form_state)
+{
+  /** @var \Drupal\node\NodeTypeInterface $type */
+  $type = $form_state->getFormObject()->getEntity();
+
+  $is_enabled = $type->getThirdPartySetting('vactory_video_help', 'is_enabled_for_type');
+  $default_video_help_id = $type->getThirdPartySetting('vactory_video_help', 'video_help');
+  $default_video_help = Node::load($default_video_help_id);
+
+  $form['video_help'] = [
+    '#type' => 'details',
+    '#title' => t('Video help settings'),
+    '#group' => 'additional_settings',
+  ];
+
+  $form['video_help']['is_enabled_for_type'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Enable'),
+    '#description' => t('Enable Video help for this type.'),
+    '#default_value' => $is_enabled,
+  ];
+
+  $form['video_help']['default'] = [
+    '#type' => 'entity_autocomplete',
+    '#target_type' => 'node',
+    '#title' => t('Default Video help'),
+    '#description' => t('Choose the Video help item to be the default for a new node in the content authoring form.'),
+    '#default_value' => $default_video_help,
+    '#selection_settings' => array(
+      'target_bundles' => array('vactory_video_help'),
+    ),
+  ];
+
+  $form['#entity_builders'][] = 'vactory_video_help_form_node_type_form_builder';
+}
+
+/**
+ * Entity builder for the node type form with video_help options.
+ */
+function vactory_video_help_form_node_type_form_builder($entity_type, NodeTypeInterface $type, &$form, FormStateInterface $form_state)
+{
+  $type->setThirdPartySetting('vactory_video_help', 'video_help', $form_state->getValue('default'));
+  $type->setThirdPartySetting('vactory_video_help', 'is_enabled_for_type', $form_state->getValue('is_enabled_for_type'));
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function vactory_video_help_entity_base_field_info(EntityTypeInterface $entity_type)
+{
+  $fields = [];
+  if ($entity_type->id() === 'node') {
+    $fields['node_video_help'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Video help'))
+      ->setDescription(t('The Video help to be used for this node.'))
+      ->setSetting('target_type', 'node')
+      ->setSetting('handler_settings', ['target_bundles' => ['vactory_video_help' => 'vactory_video_help']])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', FALSE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayOptions('form', [
+        'type' => 'options_select',
+        'weight' => 0,
+      ]);
+
+    $fields['node_video_help_disabled'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Désactiver'))
+      ->setDefaultValue(FALSE)
+      ->setDisplayOptions('form', [
+        'type' => 'boolean_checkbox',
+        'settings' => [
+          'display_label' => TRUE,
+        ],
+        'weight' => 34,
+      ])
+      ->setDisplayOptions('view', [
+        'region' => 'hidden',
+      ])
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setTranslatable(false)
+      ->setDisplayConfigurable('form', FALSE);
+
+    $fields['internal_node_video_help'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Video help'))
+      ->setDescription(t('The Video help to be used for this node.'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_video_help\Field\InternalVideoHelpEntityFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+  }
+  return $fields;
+}
