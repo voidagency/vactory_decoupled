@@ -6,10 +6,26 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 # 1.0.27 (2022-02-28)
 
 ### New Features
+* **Video Help:** Like banner but for help videos. ([PR-123](https://github.com/voidagency/vactory_decoupled/pull/123))
+* **Reminder:** Queue based reminder. ([PR-112](https://github.com/voidagency/vactory_decoupled/pull/112))
+* **Fiche Business:** Fiche business module. ([PR-111](https://github.com/voidagency/vactory_decoupled/pull/111))
+* **Quizz:** Quizz module. ([PR-107](https://github.com/voidagency/vactory_decoupled/pull/107))
+* **SMS Sender:** SMS module. ([PR-108](https://github.com/voidagency/vactory_decoupled/pull/108))
+* **Action:** Module Action. ([PR-100](https://github.com/voidagency/vactory_decoupled/pull/100))
+* **VCC:** Autocomplete widget. ([PR-101](https://github.com/voidagency/vactory_decoupled/pull/101))
 
 ### Bug Fixes
+* **Core:** Fix JSON:API Upload issues. ([PR-116](https://github.com/voidagency/vactory_decoupled/pull/116))
+* **Auth:** Redirect already logged in users. ([PR-106](https://github.com/voidagency/vactory_decoupled/pull/106))
+* **Icon:** Remove icon- form iconPicker value. ([PR-105](https://github.com/voidagency/vactory_decoupled/pull/105))
+* **Dynamic Field:** Accessing taxonomy that does not exist. ([PR-99](https://github.com/voidagency/vactory_decoupled/pull/99))
+* **Icon:** vactoryIcon element theme_wrapper. ([PR-104](https://github.com/voidagency/vactory_decoupled/pull/104))
 
 ### Other changes
+* **Tour:** Update DF logic. ([PR-120](https://github.com/voidagency/vactory_decoupled/pull/120))
+* **Fiche Business:** Added Image field ([PR-117](https://github.com/voidagency/vactory_decoupled/pull/117))
+* **Quizz:** Enabled Translation ([PR-114](https://github.com/voidagency/vactory_decoupled/pull/114))
+* **Quizz:** Added History support. ([PR-110](https://github.com/voidagency/vactory_decoupled/pull/110))
 
 # 1.0.26 (2021-08-31)
 
