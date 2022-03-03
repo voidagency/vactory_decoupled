@@ -46,7 +46,7 @@ class MediaVideoElement extends FormElement {
     $element['video'] = [
       '#type' => 'media_library',
       '#title' => t('Video'),
-      '#allowed_bundles' => ['video'],
+      '#allowed_bundles' => ['remote_cloudinary_video'],
       '#required' => TRUE,
       '#default_value' => (isset($video_value) && !empty($video_value)) ?
               $video_value : NULL
@@ -64,7 +64,7 @@ class MediaVideoElement extends FormElement {
     if (isset($mid) && !empty($mid)) {
       $media = Media::load($mid);
       if (isset($media) && !empty($media)) {
-        $fid = $media->field_media_video_file->target_id;
+        $fid = $media->field_cloudinary_video->target_id;
         $file = File::load($fid);
         $file->setPermanent();
         $file->save();
