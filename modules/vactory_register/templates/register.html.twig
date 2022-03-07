@@ -1,0 +1,18 @@
+{% include '@vactory_theme/block/login-links.html.twig' %}
+
+<form {{attributes.addClass('auth-box') }} method={{form_register['#method']}} action="/fr/user/register">
+  {{ form_register.form_build_id }}
+  {{ form_register.form_token }}
+  {{ form_register.form_id }}
+
+
+  {% for field in extension %}
+    {{ form_register[field] }}
+  {% endfor %} 
+
+  {{ form_register.tos }}
+  {{ form_register.actions.submit }} 
+</form>
+
+
+ 
