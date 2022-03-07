@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.0.28 (2022-03-07)
+### New Features
+* **Core:** Upgrade to D9. ([PR-122](https://github.com/voidagency/vactory_decoupled/pull/122))
+
+### Other changes
+* **Video Help:** Added support for cloudinary. ([PR-124](https://github.com/voidagency/vactory_decoupled/pull/124))
+
 # 1.0.27 (2022-02-28)
 
 ### New Features
