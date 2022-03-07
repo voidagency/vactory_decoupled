@@ -1,7 +1,7 @@
 name: Tender
 description: 'Provides Tender content type and related configuration. Manage your call for tenders content.'
 type: module
-core: 8.x
+core_version_requirement: '^8.9 || ^9'
 dependencies:
   - content_translation
   - datetime

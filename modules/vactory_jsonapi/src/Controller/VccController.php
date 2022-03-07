@@ -63,9 +63,9 @@ class VccController extends ControllerBase {
   protected $router;
 
   /**
-   * Drupal\Core\Path\AliasManagerInterface definition.
+   * \Drupal\path_alias\AliasManagerInterface definition.
    *
-   * @var \Drupal\Core\Path\AliasManagerInterface
+   * @var \Drupal\path_alias\AliasManagerInterface
    */
   protected $pathAliasManager;
 
@@ -81,7 +81,7 @@ class VccController extends ControllerBase {
     $instance->themeManager = $container->get('theme.manager');
     $instance->pathMatcher = $container->get('path.matcher');
     $instance->router = $container->get('router.no_access_checks');
-    $instance->pathAliasManager = $container->get('path.alias_manager');
+    $instance->pathAliasManager = $container->get('path_alias.manager');
     return $instance;
   }
 

@@ -4,6 +4,7 @@ hidden: TRUE
 description: 'Vactory Widgets UI default content.'
 package: Vactory
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - default_content:default_content
   - vactory_widgets_ui

@@ -1,7 +1,7 @@
 name: Webform Decoupled
 description: 'Decoupled Webform.'
 type: module
-core: 8.x
+core_version_requirement: '^8.9 || ^9'
 dependencies:
   - webform
   - jsonapi_extras

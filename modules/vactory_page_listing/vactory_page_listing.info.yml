@@ -2,6 +2,7 @@ name: 'Page Listing'
 description: 'Provides Page Listing type de contenu and related configuration.'
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: Vactory
 dependencies:
   - vactory_core

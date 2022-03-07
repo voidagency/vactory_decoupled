@@ -67,7 +67,12 @@ use Drupal\user\UserInterface;
  *     "collection" = "/admin/structure/locator_entity",
  *   },
  *   bundle_entity_type = "locator_entity_type",
- *   field_ui_base_route = "entity.locator_entity_type.edit_form"
+ *   field_ui_base_route = "entity.locator_entity_type.edit_form",
+ *   revision_metadata_keys = {
+ *     "revision_user" = "revision_user",
+ *     "revision_created" = "revision_created",
+ *     "revision_log_message" = "revision_log",
+ *   }
  * )
  */
 class LocatorEntity extends RevisionableContentEntityBase implements LocatorEntityInterface {

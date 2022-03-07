@@ -3,6 +3,7 @@ type: module
 description: Enhance simple_oauth module to our needs.
 package: Vactory
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - user
   - consumers

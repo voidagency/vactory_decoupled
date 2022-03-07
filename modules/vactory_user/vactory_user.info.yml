@@ -2,7 +2,7 @@ name: User
 type: module
 description: 'Handle user forms & profiles.'
 package: Vactory
-core: 8.x
+core_version_requirement: '^8.9 || ^9'
 dependencies:
   - better_passwords
   - content_translation

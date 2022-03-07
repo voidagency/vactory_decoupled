@@ -10,12 +10,6 @@ use Symfony\Component\Validator\ConstraintValidator;
 use ReCaptcha\ReCaptcha;
 use ReCaptcha\RequestMethod\Drupal8Post;
 
-require_once 'modules/contrib/recaptcha' . '/recaptcha-php/src/ReCaptcha/ReCaptcha.php';
-require_once 'modules/contrib/recaptcha' . '/recaptcha-php/src/ReCaptcha/RequestMethod.php';
-require_once 'modules/contrib/recaptcha' . '/recaptcha-php/src/ReCaptcha/RequestParameters.php';
-require_once 'modules/contrib/recaptcha' . '/recaptcha-php/src/ReCaptcha/Response.php';
-require_once 'modules/contrib/recaptcha' . '/src/ReCaptcha/RequestMethod/Drupal8Post.php';
-
 /**
  * Validates the Recaptcha constraint.
  */

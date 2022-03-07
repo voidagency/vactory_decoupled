@@ -65,7 +65,7 @@ class InternalUserEntityFieldItemList extends FieldItemList
         $uri = $file_entity->getFileUri();
 
         $image_value = [
-          '_default' => file_create_url($uri),
+          '_default' => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
           '_lqip' => $lqipImageStyle->buildUrl($uri),
           'uri' => StreamWrapperManager::getTarget($uri),
           'fid' => $file_entity->id(),
@@ -74,7 +74,7 @@ class InternalUserEntityFieldItemList extends FieldItemList
         ];
       }
 
-      $user_fullname = $user->getUserName();
+      $user_fullname = $user->getDisplayName();
       $author_first_name = $user->get('field_first_name')->getString();
       $author_last_name = $user->get('field_last_name')->getString();
 
@@ -87,7 +87,7 @@ class InternalUserEntityFieldItemList extends FieldItemList
 
       $value[$name] = [
         'id' => $user->id(),
-        'name' => $user->getUsername(),
+        'name' => $user->getDisplayName(),
         'first_name' => $user->get('field_first_name')->getString(),
         'last_name' => $user->get('field_last_name')->getString(),
         'full_name' => $user_fullname,

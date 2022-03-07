@@ -3,6 +3,7 @@ type: module
 description: 'Webservice API for mailchimp'
 package: Vactory
 core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - mailchimp
   - vactory_core

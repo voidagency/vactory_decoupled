@@ -68,7 +68,7 @@ class VactoryFileDocumentEnhancer extends ResourceFieldEnhancerBase implements C
       $uri = $media->getFileUri();
 
       $data['value'] = [
-        '_default' => file_create_url($uri),
+        '_default' => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
         'uri' => StreamWrapperManager::getTarget($uri),
         'fid' => $media->id(),
         'file_name' => $media->label(),

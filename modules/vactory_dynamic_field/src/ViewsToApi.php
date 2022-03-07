@@ -248,7 +248,7 @@ class ViewsToApi {
             $file = File::load($fid);
             $uri = $file->getFileUri();
             $fileResult = [];
-            $fileResult['_default'] = file_create_url($uri);
+            $fileResult['_default'] = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
             $fileResult['_lqip'] = $lqipImageStyle->buildUrl($uri);
             $fileResult['uri'] = StreamWrapperManager::getTarget($uri);
             $fileResult['fid'] = $fid;
@@ -277,7 +277,7 @@ class ViewsToApi {
             $uri = $file->getFileUri();
 
             $fileResult = [
-              '_default' => file_create_url($uri),
+              '_default' => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
               'uri' => StreamWrapperManager::getTarget($uri),
               'fid' => $fid,
               'file_name' => $media->label(),

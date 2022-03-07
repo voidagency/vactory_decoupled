@@ -3,6 +3,7 @@ type: module
 description: Wysiwyg Dynamic Field.
 package: Vactory
 core: 8.x
+core_version_requirement: ^8 || ^9
 configure: vactory_dynamic_field.settings_form
 dependencies:
   - field_group

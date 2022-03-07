@@ -4,6 +4,7 @@ namespace Drupal\vactory_jsonapi\Plugin\jsonapi\FieldEnhancer;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\Url;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\jsonapi_extras\Plugin\ResourceFieldEnhancerBase;
@@ -67,16 +68,16 @@ class VactoryFileImageEnhancer extends ResourceFieldEnhancerBase implements Cont
       $uri = $media->getFileUri();
 
       $data['value'] = [
-        '_default'  => file_create_url($uri),
+        '_default'  => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
         '_lqip'     => $lqipImageStyle->buildUrl($uri),
-        'uri'       => file_uri_target($uri),
+        'uri'       => StreamWrapperManager::getTarget($uri),
         'fid'       => $media->id(),
         'file_name' => $media->label(),
         'base_url'  => $image_app_base_url,
         'meta' => $media->getAllMetadata()
       ];
 
-//      $data['value'] = file_create_url($data['value']);
+//      $data['value'] = \Drupal::service('file_url_generator')->generateAbsoluteString($data['value']);
     }
     return $data;
   }

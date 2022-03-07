@@ -184,9 +184,9 @@ class VactoryDynamicFieldServiceEnhancer
             foreach ($value[$key]['selection'] as $media) {
               $file = Media::load($media['target_id']);
               $uri = $file->thumbnail->entity->getFileUri();
-              $image_item['_default'] = file_create_url($uri);
+              $image_item['_default'] = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
               $image_item['_lqip'] = $this->imageStyles['lqip']->buildUrl($uri);
-              $image_item['uri'] = file_uri_target($uri);
+              $image_item['uri'] = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
               $image_item['fid'] = $file->thumbnail->entity->fid->value;
               $image_item['file_name'] = $file->label();
               $image_item['base_url'] = $image_app_base_url;
@@ -208,7 +208,7 @@ class VactoryDynamicFieldServiceEnhancer
             if ($file) {
               $uri = $file->getFileUri();
               $value = [
-                '_default' => file_create_url($uri),
+                '_default' => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
                 'uri' => StreamWrapperManager::getTarget($uri),
                 'fid' => $media->id(),
                 'file_name' => $media->label(),
