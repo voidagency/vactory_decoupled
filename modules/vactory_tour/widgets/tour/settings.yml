@@ -1,58 +1,42 @@
-name: "Tour"
+name: "Guided Tour"
 multiple: TRUE
 category: 'Navigation'
 enabled: TRUE
 extra_fields:
   group_tours_options:
-    g_title: 'Tours Options'
-    nextButton:
-      type: text
-      label: 'Next button text'
-    prevButton:
+    g_title: 'Tour Options'
+    showNTimes:
+      type: number
+      label: Number of times the tour should be shown
+      options:
+        '#description': set to 0 to always show the tour on each visit
+    delay:
+      type: number
+      label: 'Number of seconds to delay starting the tour'
+    prevButtonText:
       type: text
       label: 'Previous button text'
-    startAt:
-      type: number
-      label: 'Step number to start with'
-      options:
-        '#min': 0
-        '#description': 'A step number is the step order number starting by 1'
-    scrollDuration:
-      type: number
-      label: 'Step number to start with'
-      options:
-        '#min': 1
-        '#description': 'Smooth scroll duration when positioning the target element in milliseconds'
-    rounded:
-      type: number
-      label: 'Border radius'
-      options:
-        '#min': 1
-        '#description': 'Beautify helper + mask with border-radius (in px)'
-    showButtons:
+    nextButtonText:
+      type: text
+      label: 'Next button text'
+    closeWithMask:
       type: checkbox
-      label: 'Show helper navigation buttons'
-    showNumber:
+      label: 'Close on click on the mask'
+    showCloseButton:
       type: checkbox
-      label: 'Show helper number badge'
-    showNavigation:
+      label: 'Show Close button'
+    showPrevNextButtons:
       type: checkbox
-      label: 'Show helper navigation dots'
-    showNavigationNumber:
+      label: 'Show Prev Next buttons'
+    showBadge:
       type: checkbox
-      label: 'Show number when hovers on each navigation dots'
-    disableInteraction:
+      label: 'Show a badge with the number of the current step'
+    showDots:
       type: checkbox
-      label: 'Disable interact with highlighted elements'
-    disableDotsNavigation:
-      type: checkbox
-      label: "Isn't possible to interact with helper dots"
+      label: 'Show navigation dots'
     disableKeyboardNavigation:
       type: checkbox
       label: 'Disable keyboard navigation'
-    closeWithMask:
-      type: checkbox
-      label: 'Close clicking the mask'
 fields:
   selector:
     type: text
@@ -64,5 +48,4 @@ fields:
     label: 'Content'
     options:
       '#format': 'full_html'
-      '#description': 'Contenu type WYSIWYG.'
       '#required': true
