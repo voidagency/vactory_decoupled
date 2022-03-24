@@ -13,7 +13,7 @@ function vactory_content_feedback_entity_base_field_info(EntityTypeInterface $en
   if ($entity_type->id() === 'node') {
     $fields['content_feedback_settings'] = BaseFieldDefinition::create('map')
       ->setLabel(t('Content feedback settings'))
-      ->setDescription(t('Defined breadcrumb per borne node'))
+      ->setDescription(t('Defined content feedback settings per enabled node types'))
       ->setTranslatable(FALSE)
       ->setClass('\Drupal\vactory_content_feedback\Plugin\Field\ContentFeedbackSettings')
       ->setComputed(TRUE)
