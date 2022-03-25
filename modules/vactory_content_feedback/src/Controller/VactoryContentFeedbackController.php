@@ -2,78 +2,44 @@
 
 namespace Drupal\vactory_content_feedback\Controller;
 
-use Drupal\Core\Database\Connection;
-use Drupal\Core\Controller\ControllerBase;
 use Drupal\admin_feedback\Controller\AdminFeedbackController;
-use Drupal\Core\Language\LanguageManagerInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * The VactoryContentFeedbackController class.
  */
-class VactoryContentFeedbackController extends ControllerBase {
+class VactoryContentFeedbackController extends AdminFeedbackController {
 
   /**
-   * The Database Connection object.
-   *
-   * @var \Drupal\Core\Database\Connection
+   * Function for updating rows in database.
    */
-  protected $database;
+  public function updateFeedback($feedback_id = NULL, $feedback_message = NULL) {
+    if (!empty($feedback_id)) {
+      $feedback_id = base64_decode($feedback_id);
+    }
 
-  /**
-   * The RequestStack object.
-   *
-   * @var \Symfony\Component\HttpFoundation\RequestStack
-   */
-  protected $requestStack;
-
-  /**
-   * The LanguageManager object.
-   *
-   * @var \Drupal\Core\Language\LanguageManager
-   */
-  protected $languageManager;
-
-  /**
-   * Event Dispatcher Service.
-   *
-   * @var \Symfony\Component\EventDispatcher\EventDispatcherInterface
-   */
-  protected $eventDispatcher;
-
-  /**
-   * {@inheritdoc}
-   */
-  public static function create(ContainerInterface $container) {
-    return new static(
-      $container->get('database'),
-      $container->get('request_stack'),
-      $container->get('language_manager'),
-      $container->get('event_dispatcher')
-    );
+    if ($feedback_message != NULL && !empty($feedback_message)) {
+      try {
+        $affected_rows = $this->database->update('admin_feedback')
+          ->fields([
+            'feedback_message' => $feedback_message,
+          ])
+          ->condition('id', $feedback_id)
+          ->execute();
+        return $affected_rows;
+      }catch (\Exception $e) {
+        \Drupal::logger('vactory_content_feedback')->error($e->getMessage());
+        return null;
+      }
+    }
   }
-
-  /**
-   * Construct an AdminFeedbackController object.
-   */
-  public function __construct(Connection $database, RequestStack $requestStack, LanguageManagerInterface $languageManager, EventDispatcherInterface $eventDispatcher) {
-    $this->database = $database;
-    $this->requestStack = $requestStack;
-    $this->languageManager = $languageManager;
-    $this->eventDispatcher = $eventDispatcher;
-  }
-
-  
 
   /**
    * @param Request $request
    * @return JsonResponse
    */
-  public function updateFeedback(Request $request) {
+  public function index(Request $request) {
     $data = json_decode($request->getContent());
 
     // Basic check for Feedback ID.
@@ -92,13 +58,21 @@ class VactoryContentFeedbackController extends ControllerBase {
     $feedback_id = $data->feedback_id;
     $feedback_message = $data->feedback_message;
 
-    $feedback_controller_obj = new AdminFeedbackController($this->database, $this->requestStack, $this->languageManager, $this->eventDispatcher);
-    $feedback_controller_obj->updateFeedback($feedback_id, $feedback_message);
+    $result = $this->updateFeedback($feedback_id, $feedback_message);
 
-    return new JsonResponse([
-      'status' => TRUE,
-      'messages' => $this->t('Feedback updated successfully')
-    ], 200);
+    if($result){
+      return new JsonResponse([
+        'status' => TRUE,
+        'messages' => $this->t('Feedback updated successfully')
+      ], 200);
+    }
+    else{
+      return new JsonResponse([
+        'status' => FALSE,
+        'messages' => $this->t('Error updating feedback')
+      ], 400);
+    }
+
   }
 
 }
