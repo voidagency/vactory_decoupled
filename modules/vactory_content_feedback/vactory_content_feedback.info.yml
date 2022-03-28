@@ -1,0 +1,7 @@
+name: 'Vactory Content Feedback'
+description: 'Provides admin feedback configuration and adds endpoint to update a feedback'
+type: module
+dependencies:
+  - 'drupal:admin_feedback'
+core_version_requirement: '^8.9 || ^9'
+package: Vactory

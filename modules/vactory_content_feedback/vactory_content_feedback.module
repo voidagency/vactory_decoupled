@@ -1,0 +1,27 @@
+<?php
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function vactory_content_feedback_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = [];
+
+  if ($entity_type->id() === 'node') {
+    $fields['content_feedback_settings'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Content feedback settings'))
+      ->setDescription(t('Defined content feedback settings per enabled node types'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_content_feedback\Plugin\Field\ContentFeedbackSettings')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
+  }
+
+  return $fields;
+}
