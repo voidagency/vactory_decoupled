@@ -37,7 +37,7 @@ class ContentFeedbackSettings extends FieldItemList {
       return;
 
     // Get Admin Feedback configuration
-    $feedback_config = \Drupal::config("admin_feedback.settings")->getRawData();
+    $feedback_config = \Drupal::config("admin_feedback.settings")->getOriginal();
 
     $result = $feedback_config;
 
