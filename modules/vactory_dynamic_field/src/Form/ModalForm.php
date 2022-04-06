@@ -101,7 +101,7 @@ class ModalForm extends FormBase {
    *
    * @var \Drupal\Core\File\FileUrlGeneratorInterface
    */
-  //protected $fileUrlGenerator;
+  protected $fileUrlGenerator;
 
   /**
    * Constructs a new ExampleConfigEntityExternalForm.
@@ -114,14 +114,14 @@ class ModalForm extends FormBase {
   public function __construct(
     WidgetsManagerInterface $widgets_manager,
     EntityFieldManager $entity_field_manager,
-    ExtensionPathResolver $extensionPathResolver
-    //FileUrlGeneratorInterface $fileUrlGenerator
+    ExtensionPathResolver $extensionPathResolver,
+    FileUrlGeneratorInterface $fileUrlGenerator
   ) {
     $this->widgetsManager = $widgets_manager;
     $this->entityFieldManager = $entity_field_manager;
     $this->isDropdownSelectMode = \Drupal::config('vactory_dynamic_field.settings')->get('is_dropdown_select_templates');
     $this->extensionPathResolver = $extensionPathResolver;
-    //$this->fileUrlGenerator = $fileUrlGenerator;
+    $this->fileUrlGenerator = $fileUrlGenerator;
   }
 
   /**
@@ -131,8 +131,8 @@ class ModalForm extends FormBase {
     return new static(
       $container->get('vactory_dynamic_field.vactory_provider_manager'),
       $container->get('entity_field.manager'),
-      $container->get('extension.path.resolver')
-      //$container->get('file_url_generator')
+      $container->get('extension.path.resolver'),
+      $container->get('file_url_generator')
     );
   }
 
