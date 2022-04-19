@@ -39,6 +39,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  node_video_help:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
