@@ -94,6 +94,7 @@ function vactory_oauth_login_perform_redirect($trigger, AccountInterface $accoun
   $roles = $account->getRoles();
   $destination = Settings::get('BASE_FRONTEND_URL');
 
+  $middleware = \Drupal::service('http_middleware.redirect_after_login');
   // Only redirect users with only 1 role (authenticated).
   if (
     $destination &&
@@ -101,6 +102,6 @@ function vactory_oauth_login_perform_redirect($trigger, AccountInterface $accoun
   ) {
     $destination .= '/signin/';
     $response = new RedirectResponse($destination);
-    $response->send();
+    $middleware->setRedirectResponse($response);
   }
 }
