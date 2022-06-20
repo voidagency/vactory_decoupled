@@ -4,3 +4,8 @@ services:
     arguments: [ '@current_user' ]
     tags:
       - { name: event_subscriber }
+
+  http_middleware.redirect_after_login:
+    class: Drupal\vactory_oauth_login\RedirectMiddleware
+    tags:
+      - { name: http_middleware}
