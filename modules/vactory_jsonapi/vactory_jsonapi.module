@@ -148,6 +148,17 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
       ->setTargetEntityTypeId($entity_type->id())
       ->setDisplayConfigurable('form', FALSE)
       ->setDisplayConfigurable('view', FALSE);
+
+    $fields['internal_extra'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Node extra'))
+      ->setDescription(t('Extra data per node'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_jsonapi\Plugin\Field\InternalNodeEntityExtraFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
   }
 
   if ($entity_type->id() === 'node') {
