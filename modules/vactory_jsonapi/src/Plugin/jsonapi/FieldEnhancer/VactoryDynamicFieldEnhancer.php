@@ -15,6 +15,9 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Cache\Cache;
+use Drupal\Core\Cache\CacheableMetadata;
+use Drupal\serialization\Normalizer\CacheableNormalizerInterface;
 
 /**
  * Use for Dynamic Field field value.
@@ -57,6 +60,8 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
 
   protected $siteConfig;
 
+  protected $cacheability;
+
   /**
    * {@inheritdoc}
    */
@@ -86,6 +91,10 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
    * {@inheritdoc}
    */
   protected function doUndoTransform($data, Context $context) {
+    /** @var \Drupal\Core\Cache\CacheableMetadata $cacheability */
+    $cacheability = (object) $context[CacheableNormalizerInterface::SERIALIZATION_CONTEXT_CACHEABILITY];
+    $this->cacheability = $cacheability;
+    
     if (isset($data['widget_data']) && !empty($data['widget_data'])) {
       $widget_id = $data['widget_id'];
       $widget_data = json_decode($data['widget_data'], TRUE);
@@ -137,6 +146,9 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
 
       $data['widget_data'] = json_encode($content);
     }
+
+    // Restore cache.
+    $context[CacheableNormalizerInterface::SERIALIZATION_CONTEXT_CACHEABILITY] = $this->cacheability;
 
     return $data;
   }
@@ -220,6 +232,10 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
             foreach ($value[$key]['selection'] as $media) {
               $file = Media::load($media['target_id']);
               if ($file) {
+                // Add cache.
+                $cacheTags = Cache::mergeTags($this->cacheability->getCacheTags(), $file->getCacheTags());
+                $this->cacheability->setCacheTags($cacheTags);
+
                 $uri = $file->thumbnail->entity->getFileUri();
                 $image_item['_default'] = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
                 $image_item['_lqip'] = $this->imageStyles['lqip']->buildUrl($uri);
@@ -245,9 +261,17 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
         if ($info['type'] === 'file' && !empty($value)) {
           $media = Media::load($value);
           if ($media) {
+            // Add cache.
+            $cacheTags = Cache::mergeTags($this->cacheability->getCacheTags(), $media->getCacheTags());
+            $this->cacheability->setCacheTags($cacheTags);
+
             $fid = (int) $media->get('field_media_document')->getString();
             $file = File::load($fid);
             if ($file) {
+              // Add cache.
+              $cacheTags = Cache::mergeTags($this->cacheability->getCacheTags(), $file->getCacheTags());
+              $this->cacheability->setCacheTags($cacheTags);
+
               $uri = $file->getFileUri();
               $value = [
                 '_default' => \Drupal::service('file_url_generator')->generateAbsoluteString($uri),
@@ -262,9 +286,23 @@ class VactoryDynamicFieldEnhancer extends ResourceFieldEnhancerBase implements C
           // Views.
         if ($info['type'] === 'dynamic_views' && !empty($value)) {
           $value = array_merge($value, $info['options']['#default_value']);
-          $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value);
+          $value['data'] = \Drupal::service('vactory.views.to_api')->normalize($value, TRUE);
+
+          // Add cache.
+          $cacheTags = Cache::mergeTags($this->cacheability->getCacheTags(), $value['data']['cache_tags']);
+          $this->cacheability->setCacheTags($cacheTags);
+          unset($value['data']['cache_tags']);
         }
 
+        if ($info['type'] === 'webform_decoupled' && !empty($value)) {
+          $webform_id = $value['id'];
+          $value['elements'] = \Drupal::service('vactory.webform.normalizer')->normalize($webform_id);
+          $formCacheTags = \Drupal::service('vactory.webform.normalizer')->getCacheTags($webform_id);
+
+          // Add cache.
+          $cacheTags = Cache::mergeTags($this->cacheability->getCacheTags(), $formCacheTags);
+          $this->cacheability->setCacheTags($cacheTags);
+        }
       }
       elseif (is_array($value)) {
         // Go deeper.

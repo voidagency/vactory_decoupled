@@ -48,7 +48,7 @@ class ViewsToApi {
    *   The JSON structure of the requested resource.
    *
    */
-  public function normalize(array $config) {
+  public function normalize(array $config, bool $withCacheTags = FALSE) {
     $nodes = [];
     $views_name = $config['views_id'];
     $views_display = $config['views_display_id'];
@@ -157,11 +157,17 @@ class ViewsToApi {
       }
     }
 
-    return [
+    $returnValue = [
       'nodes' => $nodes,
       'count' => $view->total_rows,
       'exposed' => $this->getExposedTerms($exposed_vocabularies),
     ];
+
+    if ($withCacheTags) {
+      $returnValue['cache_tags'] = $view->getCacheTags();
+    }
+
+    return $returnValue;
   }
 
   /**

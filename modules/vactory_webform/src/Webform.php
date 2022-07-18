@@ -270,5 +270,9 @@ class Webform
     return $element_plugin;
   }
 
+  public function getCacheTags($webform_id)
+  {
+    return \Drupal\webform\Entity\Webform::load($webform_id)->getCacheTags();
+  }
 
 }
