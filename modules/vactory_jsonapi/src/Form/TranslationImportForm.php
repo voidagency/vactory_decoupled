@@ -15,6 +15,11 @@ class TranslationImportForm extends ConfigFormBase
 {
 
   /**
+   * frontend context name
+   */
+  protected $contextName = '_FRONTEND';
+
+  /**
    * Gets the configuration names that will be editable.
    *
    * @return array
@@ -79,10 +84,10 @@ class TranslationImportForm extends ConfigFormBase
   {
     // Find existing source string.
     $storage = \Drupal::service('locale.storage');
-    $string = $storage->findString(array('source' => $source_string));
+    $string = $storage->findString(array('source' => $source_string, 'context' => $this->contextName));
     if (is_null($string)) {
       $string = new SourceString();
-      $string->context = '_FRONTEND';
+      $string->context = $this->contextName;
       $string->setString($source_string);
       $string->setStorage($storage);
       $string->save();
