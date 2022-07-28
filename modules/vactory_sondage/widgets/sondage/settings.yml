@@ -1,0 +1,5 @@
+name: "Sondage"
+multiple: FALSE
+category: 'TPE - Miscs'
+enabled: TRUE
+fields:
