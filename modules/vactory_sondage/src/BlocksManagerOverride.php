@@ -90,7 +90,7 @@ class BlocksManagerOverride extends BlocksManager {
           if (is_array($contentBlock)) {
             $contentBlock = reset($contentBlock);
             if($contentBlock->bundle() === "vactory_sondage"){
-              $themeBlock['content']['widget_data'] = [
+              $themeBlock['content']['widget_data'] = json_encode([
                 'uuid' => $plugin_uuid,
                 // 'description' => $contentBlock->body->value,
                 // 'status' => $contentBlock->field_sondage_status->value,
@@ -98,7 +98,7 @@ class BlocksManagerOverride extends BlocksManager {
                 // 'options' => $contentBlock->field_sondage_options->getValue(),
                 // 'close_date' => $contentBlock->field_sondage_close_date->value,
                 // 'results' => $contentBlock->field_sondage_results->getValue(),
-              ];
+              ]);
             }
           }
         }

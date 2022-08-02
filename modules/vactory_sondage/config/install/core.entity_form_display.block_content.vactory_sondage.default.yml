@@ -4,18 +4,20 @@ dependencies:
   config:
     - block_content.type.vactory_sondage
     - field.field.block_content.vactory_sondage.body
+    - field.field.block_content.vactory_sondage.field_dynamic_block_components
     - field.field.block_content.vactory_sondage.field_sondage_close_date
     - field.field.block_content.vactory_sondage.field_sondage_options
     - field.field.block_content.vactory_sondage.field_sondage_question
     - field.field.block_content.vactory_sondage.field_sondage_results
     - field.field.block_content.vactory_sondage.field_sondage_status
-  enforced:
-    module:
-      - vactory_sondage
   module:
     - datetime
     - text
+    - vactory_dynamic_field
     - vactory_sondage
+  enforced:
+    module:
+      - vactory_sondage
 id: block_content.vactory_sondage.default
 targetEntityType: block_content
 bundle: vactory_sondage
@@ -32,39 +34,45 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 4
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_dynamic_block_components:
+    type: field_wysiwyg_dynamic_widget
+    weight: 26
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_sondage_close_date:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
     type: datetime_default
+    weight: 5
     region: content
-  field_sondage_options:
-    weight: 8
     settings: {  }
     third_party_settings: {  }
+  field_sondage_options:
     type: vactory_sondage_option_widget
+    weight: 8
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_sondage_question:
+    type: string_textfield
     weight: 7
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_sondage_status:
+    type: options_select
     weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   info:
     type: string_textfield
     weight: 0

@@ -1,5 +1,5 @@
 name: "Sondage"
 multiple: FALSE
-category: 'TPE - Miscs'
+category: 'Sondage'
 enabled: TRUE
 fields:

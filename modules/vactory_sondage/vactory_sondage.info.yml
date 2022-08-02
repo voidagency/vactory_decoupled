@@ -15,4 +15,5 @@ dependencies:
   - 'drupal:path'
   - 'drupal:text'
   - 'drupal:user'
-  - vactory_reminder
+  - 'vactory_dynamic_field:vactory_dynamic_field'
+  - 'vactory_reminder:vactory_reminder'

@@ -12,7 +12,6 @@ use Drupal\Core\TypedData\DataDefinition;
  * @FieldType(
  *   id="vactory_sondage_option",
  *   label=@Translation("Sondage Option"),
- *   default_formatter="vactory_sondage_option_formatter",
  *   default_widget="vactory_sondage_option_widget"
  * )
  */
