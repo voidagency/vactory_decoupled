@@ -21,9 +21,9 @@ class SondageApiController extends ControllerBase {
     $blockContent = reset($blockContent);
     if(!$blockContent)
       return new JsonResponse([
-        'resources' => $this->t('Invalid block id'),
-        'status'    => 404,
-      ]);
+        'status' => FALSE,
+        'message' => $this->t('Invalid block id'),
+      ], 404);
 
     $description = $blockContent->body->value;
     $question = $blockContent->field_sondage_question->value;
@@ -101,9 +101,9 @@ class SondageApiController extends ControllerBase {
     $blockContent = reset($blockContent);
     if(!$blockContent)
       return new JsonResponse([
-        'resources' => $this->t('Invalid block id'),
-        'status'    => 404,
-      ]);
+        'status' => FALSE,
+        'message' => $this->t('Invalid block id'),
+      ], 404);
     $post_data = json_decode( $request->getContent(),TRUE);
     if(!isset($post_data['option_value']))
       return new JsonResponse([
