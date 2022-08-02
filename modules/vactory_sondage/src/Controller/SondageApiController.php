@@ -45,7 +45,7 @@ class SondageApiController extends ControllerBase {
       ], $statistics);
       return new JsonResponse([
         'status' => TRUE,
-        'ressource' => $pollData,
+        'data' => $pollData,
       ]);
     }
 
@@ -88,7 +88,7 @@ class SondageApiController extends ControllerBase {
     ];
     return new JsonResponse([
       'status' => TRUE,
-      'ressource' => $pollData
+      'data' => $pollData
     ]);
   }
 
@@ -131,7 +131,7 @@ class SondageApiController extends ControllerBase {
     $options_statistics = \Drupal::service('vactory_sondage.manager')->getStatistics($blockContent);
     return new JsonResponse([
       'status' => TRUE,
-      'ressource' => $options_statistics,
+      'data' => $options_statistics,
     ]);
   }
 
