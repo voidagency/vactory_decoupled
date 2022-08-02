@@ -26,8 +26,9 @@ class SondageManager {
     $sondage_results = isset($sondage_results) && !empty($sondage_results) ? $sondage_results : '[]';
     $sondage_results = json_decode($sondage_results, TRUE);
     $sondage_options = $sondage->get('field_sondage_options')->getValue();
-    $all_votters = $sondage_results['all_votters'];
+    $all_votters = $sondage_results ? $sondage_results['all_votters'] : [];
     unset($sondage_results['all_votters']);
+    $is_closed = $this->isSondageClosed($sondage);
     $options = [];
     foreach ($sondage_results as $key => $result) {
       $sondage_option = array_filter($sondage_options, function ($option) use ($key) {
@@ -37,7 +38,6 @@ class SondageManager {
       $percentage = intval(round(($result['count'] / count($all_votters)) * 100));
       $type = isset($sondage_option['option_text']) && !empty($sondage_option['option_text']) ? 'text' : '';
       $type = isset($sondage_option['option_image']) && !empty($sondage_option['option_image']) ? 'image' : $type;
-      $is_closed = $this->isSondageClosed($sondage);
       $options[$key] = [
         'type' => $type,
         'percentage' => $percentage . '%',

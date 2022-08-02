@@ -35,7 +35,7 @@ class SondageApiController extends ControllerBase {
     $storage_results = $blockContent->get('field_sondage_results')->value;
     $storage_results = isset($storage_results) && !empty($storage_results) ? $storage_results : '[]';
     $storage_results = json_decode($storage_results, TRUE);
-    $hasVoted = in_array($current_user->id(), $storage_results['all_votters']);
+    $hasVoted = $storage_results ? in_array($current_user->id(), $storage_results['all_votters']) : false;
     if ((!empty($storage_results) && $hasVoted) || $is_closed) {
       $statistics = \Drupal::service('vactory_sondage.manager')->getStatistics($blockContent);
       $pollData = array_merge([
