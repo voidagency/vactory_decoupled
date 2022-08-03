@@ -17,6 +17,15 @@ class SondageApiController extends ControllerBase {
    * {@inheritdoc}
    */
   public function checkPoll($block_uuid) {
+
+    $current_user = \Drupal::currentUser();
+    $roles = $current_user->getRoles();
+    if(!in_array("authenticated", $roles))
+      return new JsonResponse([
+        'status' => FALSE,
+        'message' => $this->t('Unauthorized user'),
+      ], 401);
+
     $blockContent = \Drupal::entityTypeManager()->getStorage('block_content')->loadByProperties(['uuid' => $block_uuid]);
     $blockContent = reset($blockContent);
     if(!$blockContent)
@@ -30,8 +39,7 @@ class SondageApiController extends ControllerBase {
     $sondage_options = $blockContent->field_sondage_options->getValue();
     $is_closed = \Drupal::service('vactory_sondage.manager')->isSondageClosed($blockContent);
     $close_date = $blockContent->field_sondage_close_date->value;
-
-    $current_user = \Drupal::currentUser();
+    
     $storage_results = $blockContent->get('field_sondage_results')->value;
     $storage_results = isset($storage_results) && !empty($storage_results) ? $storage_results : '[]';
     $storage_results = json_decode($storage_results, TRUE);
@@ -96,6 +104,14 @@ class SondageApiController extends ControllerBase {
    * Posts items in agenda.
    */
   public function postPollAnswer($block_uuid, Request $request) {
+    $current_user = \Drupal::currentUser();
+    $roles = $current_user->getRoles();
+    if(!in_array("authenticated", $roles))
+      return new JsonResponse([
+        'status' => FALSE,
+        'message' => $this->t('Unauthorized user'),
+      ], 401);
+
     //get block content
     $blockContent = \Drupal::entityTypeManager()->getStorage('block_content')->loadByProperties(['uuid' => $block_uuid]);
     $blockContent = reset($blockContent);
@@ -117,7 +133,6 @@ class SondageApiController extends ControllerBase {
         'message' => $this->t('Invalid option'),
       ], 400);
 
-    $current_user = \Drupal::currentUser();
     $voted_option_value = $post_data["option_value"];
     $storage_results = $blockContent->get('field_sondage_results')->value;
     $storage_results = isset($storage_results) && !empty($storage_results) ? $storage_results : '[]';
