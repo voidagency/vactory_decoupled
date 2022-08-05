@@ -64,6 +64,9 @@
             },
             "drupal/swiftmailer": {
                 "Swiftmailer fix renderPlan method cli breaks": "https://gist.githubusercontent.com/b-khouy/8ba9095843d940892c5bf51a6f0a2fe4/raw/3c27d958614ac8ed4d7907221291aa0cd244acb4/swiftmailer-prevent-cli-commands-break.patch"
+            },
+            "drupal/jsonapi_cross_bundles": {
+                "Compatibility with jsonapi_extras": "https://git.drupalcode.org/issue/jsonapi_cross_bundles-3070430/-/commit/880b1b132e34b3841505096e1d3f1fbe1d36031b.diff"
             }
         }
     },
@@ -146,7 +149,7 @@
         "drupal/views_bulk_operations": "^3.6",
         "drupal/views_data_export": "^1.0@beta",
         "drupal/webform": "^6.1",
-        "drupal/jsonapi_extras": "^3.16",
+        "drupal/jsonapi_extras": "^3.21",
         "drupal/jsonapi_boost": "^2.0",
         "drupal/openapi": "^2.0.0-rc3",
         "drupal/openapi_jsonapi": "^2.0@rc",
@@ -160,7 +163,8 @@
         "pviojo/oauth2-keycloak": "^2.0",
         "drupal/multiple_fields_remove_button": "^1.0@alpha",
         "drupal/social_media_links": "^2.8",
-        "drupal/admin_feedback": "^2.2"
+        "drupal/admin_feedback": "^2.2",
+        "drupal/jsonapi_cross_bundles": "^1.0"
     },
     "config": {
         "process-timeout": 0
