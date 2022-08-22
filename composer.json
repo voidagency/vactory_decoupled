@@ -164,7 +164,6 @@
         "drupal/multiple_fields_remove_button": "^1.0@alpha",
         "drupal/social_media_links": "^2.8",
         "drupal/admin_feedback": "^2.2",
-        "drupal/decoupled_router": "^2.0",
         "drupal/jsonapi_cross_bundles": "^1.0"
     },
     "config": {
