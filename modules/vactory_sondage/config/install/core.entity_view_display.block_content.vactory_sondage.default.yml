@@ -1,0 +1,35 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.vactory_sondage
+    - field.field.block_content.vactory_sondage.body
+    - field.field.block_content.vactory_sondage.field_dynamic_block_components
+    - field.field.block_content.vactory_sondage.field_sondage_close_date
+    - field.field.block_content.vactory_sondage.field_sondage_options
+    - field.field.block_content.vactory_sondage.field_sondage_question
+    - field.field.block_content.vactory_sondage.field_sondage_results
+    - field.field.block_content.vactory_sondage.field_sondage_status
+  module:
+    - vactory_dynamic_field
+id: block_content.vactory_sondage.default
+targetEntityType: block_content
+bundle: vactory_sondage
+mode: default
+content:
+  field_dynamic_block_components:
+    type: field_wysiwyg_dynamic_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_sondage_close_date: true
+  field_sondage_options: true
+  field_sondage_question: true
+  field_sondage_results: true
+  field_sondage_status: true
+  langcode: true
+  search_api_excerpt: true

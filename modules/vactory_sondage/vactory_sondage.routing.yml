@@ -1,0 +1,20 @@
+vactory_sondage.get:
+  path: '/api/sondage/getPoll/{block_uuid}'
+  defaults:
+    _controller: '\Drupal\vactory_sondage\Controller\SondageApiController::checkPoll'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['oauth2']
+    _is_jsonapi: 1
+vactory_sondage.post:
+  path: '/api/sondage/postAnswer/{block_uuid}'
+  defaults:
+    _controller: '\Drupal\vactory_sondage\Controller\SondageApiController::postPollAnswer'
+  methods:  [POST]
+  requirements:
+    _permission: 'access content'
+  options:
+    _auth: ['oauth2']
+    _is_jsonapi: 1
