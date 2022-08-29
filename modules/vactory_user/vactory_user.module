@@ -62,3 +62,27 @@ function vactory_user_form_alter(&$form, FormStateInterface $form_state, $form_i
   }
 
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function vactory_user_form_user_pass_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#validate'][] = '_vactory_user_pass_validate';
+}
+
+/**
+ * Reset password form custom validate.
+ */
+function _vactory_user_pass_validate($form, FormStateInterface $form_state) {
+  $form_errors = $form_state->getErrors();
+  if (isset($form_errors['name'])) {
+    unset($form_errors['name']);
+    $form_state->clearErrors();
+    if (!empty($form_errors)) {
+      foreach ($form_errors as $name => $message) {
+        $form_state->setErrorByName($name, $message);
+      }
+    }
+  }
+}
+
