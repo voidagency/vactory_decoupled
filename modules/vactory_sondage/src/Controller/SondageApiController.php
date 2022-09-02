@@ -50,6 +50,7 @@ class SondageApiController extends ControllerBase {
         'description' => $description,
         'question' => $question,
         'close_date' => $close_date,
+        'has_voted' => $hasVoted
       ], $statistics);
       return new JsonResponse([
         'status' => TRUE,
