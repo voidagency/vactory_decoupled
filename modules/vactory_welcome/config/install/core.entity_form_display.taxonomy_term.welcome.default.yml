@@ -6,7 +6,7 @@ dependencies:
     - taxonomy.vocabulary.welcome
   module:
     - path
-    - textfield_counter
+    - text
     - time_range
 id: taxonomy_term.welcome.default
 targetEntityType: taxonomy_term
@@ -14,17 +14,12 @@ bundle: welcome
 mode: default
 content:
   description:
-    type: text_textarea_with_counter
+    type: text_textarea
     weight: 2
     region: content
     settings:
       rows: 5
       placeholder: ''
-      maxlength: 0
-      counter_position: after
-      js_prevent_submit: true
-      count_html_characters: true
-      textcount_status_message: 'Maxlength: <span class="maxlength_count">@maxlength</span><br />Used: <span class="current_count">@current_length</span><br />Remaining: <span class="remaining_count">@remaining_count</span>'
     third_party_settings: {  }
   field_time_range_v:
     type: time_range
