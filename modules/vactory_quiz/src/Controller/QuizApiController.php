@@ -43,6 +43,7 @@ class QuizApiController extends ControllerBase  {
           'time' =>  \Drupal::time()->getCurrentTime(),
         ])
         ->execute();
+        \Drupal::moduleHandler()->invokeAll('vactory_quiz_history_insert', [$req]);
         return new JsonResponse([
           'message' => $this->t('Saved'),
           'status' => TRUE,
