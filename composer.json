@@ -37,7 +37,7 @@
         "patches": {
             "drupal/core": {
                 "#2123543 Add string context and location filters to the translate interface": "https://www.drupal.org/files/issues/2021-05-28/drupal-n2123543-71.patch",
-                "modules/jsonapi: Fix response generation when uploading a file with file_entity module enabled": "https://gist.githubusercontent.com/isifeddi/f4c91cfb79a788397e4ca52a17a30d91/raw/78d63bb2f1690fc8bf0dba9964a0db72858bfe4a/core-jsonapi-file-entity-upload-response.patch"
+                "modules/jsonapi: Fix response generation when uploading a file with file_entity module enabled": "https://gist.githubusercontent.com/isifeddi/f4c91cfb79a788397e4ca52a17a30d91/raw/f03a82a10b7bb228616687990aeadc1f7e820388/core-jsonapi-file-entity-upload-response.patch"
             },
             "drupal/migrate_file": {
                 "Use media instead of file": "https://gist.githubusercontent.com/Bahlaouane-Hamza/75c4390bc95a9a4cd4776aa8da49434b/raw/72a7c96a5d39bab68d64c397df190e50ba9e35a7/migrate-file-import-media.patch"
