@@ -178,6 +178,7 @@ function vactory_vcc_entity_base_field_info(EntityTypeInterface $entity_type)
       ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
       ->setDisplayOptions('form', [
         'type' => 'vcc_entity_reference_autocomplete',
+        'weight' => -3,
         'settings' => [
           'match_operator' => 'CONTAINS',
           'size' => '60',
