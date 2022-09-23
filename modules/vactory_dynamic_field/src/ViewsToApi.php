@@ -189,6 +189,7 @@ class ViewsToApi {
     $image_app_base_url = Url::fromUserInput('/app-image/')
       ->setAbsolute()->toString();
     $lqipImageStyle = ImageStyle::load('lqip');
+    $entityRepository = \Drupal::service('entity.repository');
 
     $appliedImageStyle = [];
     if (!empty($imageStyles)) {
@@ -298,10 +299,11 @@ class ViewsToApi {
 
       if ($field_type === 'entity_reference' && $field_storage_definition->getSettings()['target_type'] == 'taxonomy_term') {
         $result[$output_field_name] = NULL;
-        if (!empty($node->get($field_name)->getString()) && $node->get($field_name)->entity ) {
+        if (!empty($node->get($field_name)->getString()) && $termEntity = $node->get($field_name)->entity ) {
+          $termEntity = $entityRepository->getTranslationFromContext($termEntity);
           $result[$output_field_name] = [
-            'id' => $node->get($field_name)->entity->id(),
-            'label' => $node->get($field_name)->entity->label(),
+            'id' => $termEntity->id(),
+            'label' => $termEntity->label(),
           ];
         }
         continue;
