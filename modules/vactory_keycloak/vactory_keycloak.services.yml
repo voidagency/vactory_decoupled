@@ -4,3 +4,9 @@ services:
     arguments:
       - '@config.factory'
       - '@logger.factory'
+  vactory_keycloak.event_subscriber:
+    class: Drupal\vactory_keycloak\EventSubscriber\SocialAuthSubscriber
+    arguments:
+      - '@messenger'
+    tags:
+      - { name: 'event_subscriber' }
