@@ -66,10 +66,12 @@ class KeycloakAuthManager extends OAuth2Manager {
     if ($extra_scopes) {
       $scopes = array_merge($scopes, explode(',', $extra_scopes));
     }
+    $locale = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
     // Returns the URL where user will be redirected.
     return $this->client->getAuthorizationUrl([
       'scope' => $scopes,
+      'kc_locale' => $locale
     ]);
   }
 
