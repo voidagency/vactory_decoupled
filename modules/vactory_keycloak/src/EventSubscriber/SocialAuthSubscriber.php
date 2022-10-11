@@ -69,14 +69,9 @@ class SocialAuthSubscriber implements EventSubscriberInterface {
     $response = $client->request("GET", $endpoint, $options);
     $data = json_decode($response->getBody());
     // $user_data = $user->toArray();
-    $userFields['field_first_name'] = $data->customer_name;
-    // var_dump($data);
-    // var_dump($userFields);
-    // var_dump($event->getPluginId());
+    $userFields['field_last_name'] = $data->customer_name;
 
     $event->setUserFields($userFields);
-    // exit;
-
     // Adds a prefix with the implementer id on username.
     // $user->setUsername($event->getPluginId() . ' ' . $user->getDisplayName())->save();
   }
