@@ -49,12 +49,11 @@ class UserLoginSubscriber implements EventSubscriberInterface
   public function onKernelRequest(FilterResponseEvent $event)
   {
     $request = $event->getRequest();
-    $route_name = RouteMatch::createFromRequest($request)->getRouteName();
+    // $route_name = RouteMatch::createFromRequest($request)->getRouteName();
     $redirect_url = NULL;
 
     if
     ($this->account->isAuthenticated() &&
-      $route_name === 'user.login' &&
       $request->get('auth') === "true") {
       $redirect_url = Settings::get('BASE_FRONTEND_URL');
       $redirect_url .= '/signin/';

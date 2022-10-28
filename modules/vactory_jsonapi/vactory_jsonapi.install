@@ -4,3 +4,25 @@
  * @file
  * Install, update and uninstall functions for vactory_jsonapi.
  */
+
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+ * Add internal_extra field.
+ */
+function vactory_jsonapi_update_9002()
+{
+  $storage_definition = BaseFieldDefinition::create('map')
+    ->setLabel(t('Node extra'))
+    ->setDescription(t('Extra data per node'))
+    ->setTranslatable(FALSE)
+    ->setClass('\Drupal\vactory_jsonapi\Plugin\Field\InternalNodeEntityExtraFieldItemList')
+    ->setComputed(TRUE)
+    ->setReadOnly(TRUE)
+    ->setTargetEntityTypeId('node')
+    ->setDisplayConfigurable('form', FALSE)
+    ->setDisplayConfigurable('view', FALSE);
+
+  \Drupal::entityDefinitionUpdateManager()
+    ->installFieldStorageDefinition('internal_extra', 'node', 'node', $storage_definition);
+}

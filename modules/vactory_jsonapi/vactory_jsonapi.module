@@ -8,6 +8,7 @@
 use Drupal\Core\Entity\ContentEntityFormInterface;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Site\Settings;
 use Drupal\Core\Url;
 use Drupal\Core\Field\BaseFieldDefinition;
@@ -15,11 +16,20 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\node\Entity\Node;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
+use Drupal\Component\Utility\UrlHelper;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Exception\ServerException;
+use Drupal\menu_item_extras\Entity\MenuItemExtrasMenuLinkContent;
+
 /**
  * Implements hook_form_alter().
  */
 function vactory_jsonapi_form_alter(&$form, FormStateInterface $form_state, $form_id)
 {
+  if ($form_id === 'locale_translate_edit_form') {
+    $form['#submit'][] = 'clear_next_cache_translation';
+  }
+
   $form_object = $form_state->getFormObject();
   if (!($form_object instanceof ContentEntityFormInterface)) {
     return;
@@ -148,6 +158,17 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
       ->setTargetEntityTypeId($entity_type->id())
       ->setDisplayConfigurable('form', FALSE)
       ->setDisplayConfigurable('view', FALSE);
+
+    $fields['internal_extra'] = BaseFieldDefinition::create('map')
+      ->setLabel(t('Node extra'))
+      ->setDescription(t('Extra data per node'))
+      ->setTranslatable(FALSE)
+      ->setClass('\Drupal\vactory_jsonapi\Plugin\Field\InternalNodeEntityExtraFieldItemList')
+      ->setComputed(TRUE)
+      ->setReadOnly(TRUE)
+      ->setTargetEntityTypeId($entity_type->id())
+      ->setDisplayConfigurable('form', FALSE)
+      ->setDisplayConfigurable('view', FALSE);
   }
 
   if ($entity_type->id() === 'node') {
@@ -206,4 +227,145 @@ function vactory_jsonapi_entity_base_field_info(EntityTypeInterface $entity_type
 function vactory_jsonapi_entity_type_alter(array &$entity_types) {
   $entity_types['comment']->addConstraint('jsonapi_recaptcha');
   $entity_types['node']->addConstraint('jsonapi_recaptcha');
+}
+
+
+/**
+ * Implements hook_entity_update().
+ * Clear drupal cache => clear frontend cache.
+ */
+function vactory_decoupled_cache_flush() {
+  clear_next_cache();
+}
+
+function clear_next_cache_translation(&$form, FormStateInterface $form_state) {
+  $query = [
+    'invalidate'  => 'translations',
+  ];
+  clear_next_cache($query);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function vactory_decoupled_entity_update(EntityInterface $entity) {
+  static $loaded;
+
+  // @todo: do we need to keep going in this function ?
+  // Updating a node will also update menu ?
+  if ($entity instanceof Node && !$entity->isNew()) {
+      $query = get_node_info($entity);
+      clear_next_cache($query);
+  }
+
+  if ($entity instanceof MenuItemExtrasMenuLinkContent && !isset($loaded)) {
+      $loaded = 1;
+      clear_next_cache([
+        'menu'       => $entity->bundle(),
+        'invalidate' => 'menu',
+      ]);
+  }
+  else if ($entity instanceof Drupal\system\Entity\Menu) {
+    clear_next_cache([
+      'menu'       => $entity->id(),
+      'invalidate' => 'menu',
+    ]);
+  }
+}
+
+
+/**
+ * Implements hook_entity_predelete().
+ */
+function vactory_decoupled_entity_predelete(EntityInterface $entity) {
+  if ($entity instanceof Node) {
+    $query = get_node_info($entity);
+    clear_next_cache($query);
+  }
+}
+
+function get_node_info($entity) {
+  $nid = $entity->id();
+  $langcode = $entity->language()->getId();
+  // $alias = \Drupal::service('path_alias.manager')
+  //   ->getAliasByPath('/node/' . $nid);
+  // @todo: if no alias fall back to /node/id
+
+  return $query = [
+    'id'         => $nid,
+    'langcode'   => $langcode,
+    // 'alias'      => $alias,
+    'invalidate' => 'node',
+  ];
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function vactory_decoupled_entity_delete(EntityInterface $entity) {
+  if ($entity instanceof MenuItemExtrasMenuLinkContent) {
+    $query = [
+      'menu'       => $entity->bundle(),
+      'invalidate' => 'menu',
+    ];
+    clear_next_cache($query);
+  }
+}
+
+/**
+ * @param array $query
+ * Clears frontend cache.
+ *
+ * @return bool
+ */
+function clear_next_cache($query = []) {
+
+  $front_end_url = Settings::get('FRONTEND_URL');
+  $cache_secret = Settings::get('FRONTEND_CACHE_KEY');
+
+  if (!isset($front_end_url) || $front_end_url == '') {
+    \Drupal::logger('clear_next_cache')
+      ->error('FRONTEND_URL env variable is undefined');
+    return FALSE;
+  }
+
+  if (!isset($cache_secret) || $cache_secret == '') {
+    \Drupal::logger('clear_next_cache')
+      ->error('FRONTEND_CACHE_KEY env variable is undefined');
+    return FALSE;
+  }
+
+  $endpoint = '/api/cache/clear';
+
+  $query_str = $query === [] ? '' : '?' . UrlHelper::buildQuery($query);
+
+  $success_msg = $query == [] ? 'Next Cache Cleared' : 'Next Cache Cleared for ' . print_r($query, TRUE);
+  $error_msg = $query == [] ? 'Cannot Clear Next Cache' : 'Cannot Clear Next Cache for ' . print_r($query, TRUE);
+
+  $client = \Drupal::httpClient();
+
+  try {
+    $request = $client->get($front_end_url . $endpoint . $query_str, [
+      "headers" => [
+        "x-cache-secret" => $cache_secret,
+      ],
+    ]);
+
+    if ($request->getStatusCode() == 200) {
+      \Drupal::logger('clear_next_cache')->info($success_msg);
+      return TRUE;
+    }
+    else {
+      \Drupal::logger('clear_next_cache')->warning($error_msg);
+      return FALSE;
+    }
+
+  } catch (ServerException $e) {
+    \Drupal::logger('clear_next_cache')->warning('ServerException: '.$error_msg);
+    return FALSE;
+  } catch (RequestException $e) {
+    dpm($e);
+    \Drupal::logger('clear_next_cache')->warning('RequestException: '.$error_msg);
+    return FALSE;
+  }
 }
