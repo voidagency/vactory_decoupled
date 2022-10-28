@@ -5,3 +5,12 @@ services:
   vactory_reminder.queue.manager:
     class: Drupal\vactory_reminder\Services\ReminderQueueManager
     arguments: ['@queue', '@plugin.manager.reminder']
+  vactory_reminder.commander:
+    class: \Drupal\vactory_reminder\Commands\VactoryRunReminderQueueCommand
+    arguments:
+      - '@config.factory'
+      - '@account_switcher'
+      - '@queue'
+      - '@plugin.manager.queue_worker'
+      - '@lock'
+      - '@logger.factory'
