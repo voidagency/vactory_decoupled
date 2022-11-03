@@ -253,10 +253,10 @@ function vactory_decoupled_entity_update(EntityInterface $entity) {
 
   // @todo: do we need to keep going in this function ?
   // Updating a node will also update menu ?
-  if ($entity instanceof Node && !$entity->isNew()) {
-      $query = get_node_info($entity);
-      clear_next_cache($query);
-  }
+  // if ($entity instanceof Node && !$entity->isNew()) {
+  //     $query = get_node_info($entity);
+  //     clear_next_cache($query);
+  // }
 
   if ($entity instanceof MenuItemExtrasMenuLinkContent && !isset($loaded)) {
       $loaded = 1;
@@ -364,7 +364,7 @@ function clear_next_cache($query = []) {
     \Drupal::logger('clear_next_cache')->warning('ServerException: '.$error_msg);
     return FALSE;
   } catch (RequestException $e) {
-    dpm($e);
+    //dpm($e);
     \Drupal::logger('clear_next_cache')->warning('RequestException: '.$error_msg);
     return FALSE;
   }

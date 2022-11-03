@@ -8,7 +8,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use ReCaptcha\ReCaptcha;
-use ReCaptcha\RequestMethod\Drupal8Post;
+// use ReCaptcha\RequestMethod\Drupal8Post;
+use ReCaptcha\RequestMethod\CurlPost;
 
 /**
  * Validates the Recaptcha constraint.
@@ -88,7 +89,8 @@ class RecaptchaValidator extends ConstraintValidator implements ContainerInjecti
     $config = \Drupal::config('recaptcha.settings');
     $recaptcha_secret_key = $config->get('secret_key');
     // Use Drupal::httpClient() to circumvent all issues with the Google library.
-    $recaptcha = new ReCaptcha($recaptcha_secret_key, new Drupal8Post());
+    // $recaptcha = new ReCaptcha($recaptcha_secret_key, new Drupal8Post());
+    $recaptcha = new ReCaptcha($recaptcha_secret_key, new CurlPost());
 
     // Ensures the hostname matches. Required if "Domain Name Validation" is
     // disabled for credentials.
