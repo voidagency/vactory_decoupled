@@ -349,6 +349,8 @@ function clear_next_cache($query = []) {
       "headers" => [
         "x-cache-secret" => $cache_secret,
       ],
+      'verify' => false,
+      'proxy' => '',
     ]);
 
     if ($request->getStatusCode() == 200) {
