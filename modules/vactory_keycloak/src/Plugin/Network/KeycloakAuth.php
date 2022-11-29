@@ -72,7 +72,7 @@ class KeycloakAuth extends NetworkBase implements KeycloakAuthInterface {
         'timeout' => 0,
         //'verify' => false,
         'proxy' => '',
-        'cert' => '/etc/ssl/certs/openid/openidselfcare.crt',
+        'cert' => '/etc/ssl/certs/openidselfcare.crt',
         ])
       ]);
     }
