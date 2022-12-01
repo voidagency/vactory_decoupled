@@ -69,10 +69,10 @@ class KeycloakAuth extends NetworkBase implements KeycloakAuthInterface {
 
       return new Keycloak($league_settings, [
         'httpClient' => new HttpClient([
-        'timeout' => 0,
-        //'verify' => false,
-        'proxy' => '',
-        'cert' => '/etc/ssl/certs/openidselfcare.crt',
+          'timeout' => 0,
+          'verify' => '/etc/ssl/certs/openidselfcare.crt',
+          //'verify' => false,
+          'proxy' => '',
         ])
       ]);
     }
