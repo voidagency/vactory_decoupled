@@ -8,6 +8,7 @@ use Drupal\social_auth\Plugin\Network\NetworkBase;
 use Drupal\vactory_keycloak\Settings\KeycloakAuthSettings;
 use pviojo\OAuth2\Client\Provider\Keycloak;
 use GuzzleHttp\Client as HttpClient;
+use Drupal\Core\Site\Settings;
 
 /**
  * Defines a Network Plugin for Social Auth Keycloak.
@@ -67,14 +68,15 @@ class KeycloakAuth extends NetworkBase implements KeycloakAuthInterface {
        */
       \Drupal::moduleHandler()->alter('keycloak_client_settings', $league_settings);
 
+      $verify = Settings::get('OID_CRT') ? Settings::get('OID_CRT') : false;
+      $options = [
+        'timeout' => 0,
+        'debug' => true,
+        'verify' => $verify,
+        'proxy' => '',
+      ];
       return new Keycloak($league_settings, [
-        'httpClient' => new HttpClient([
-          'timeout' => 0,
-          'debug' => true,
-          'verify' => '/etc/ssl/certs/openidselfcare.crt',
-          //'verify' => false,
-          'proxy' => '',
-        ])
+        'httpClient' => new HttpClient($options)
       ]);
     }
 
