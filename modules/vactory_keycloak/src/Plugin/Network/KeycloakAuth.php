@@ -69,11 +69,12 @@ class KeycloakAuth extends NetworkBase implements KeycloakAuthInterface {
       \Drupal::moduleHandler()->alter('keycloak_client_settings', $league_settings);
 
       $verify = Settings::get('OID_CRT') ? Settings::get('OID_CRT') : false;
+      $proxy = Settings::get('PROXY_URL') ? ['https' => Settings::get('PROXY_URL')] : '';
       $options = [
         'timeout' => 0,
         'debug' => true,
         'verify' => $verify,
-        'proxy' => '',
+        'proxy' => $proxy,
       ];
       return new Keycloak($league_settings, [
         'httpClient' => new HttpClient($options)
