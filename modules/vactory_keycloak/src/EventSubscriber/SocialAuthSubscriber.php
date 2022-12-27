@@ -58,12 +58,13 @@ class SocialAuthSubscriber implements EventSubscriberInterface {
 
     $endpoint = Settings::get('SELFCARE_API_URL') . '/v1/profiles/me';
     $client = \Drupal::httpClient();
+    $proxy = Settings::get('PROXY_URL') ? ['https' => Settings::get('PROXY_URL')] : '';
     $options = [
       'headers' => [
         'Authorization' => 'Bearer ' . $event->getSocialAuthUser()->getToken(),
       ],
       'verify' => false,
-      'proxy' => ''
+      'proxy' => $proxy,
     ];
 
     $response = $client->request("GET", $endpoint, $options);
