@@ -343,12 +343,15 @@ function clear_next_cache($query = []) {
   $error_msg = $query == [] ? 'Cannot Clear Next Cache' : 'Cannot Clear Next Cache for ' . print_r($query, TRUE);
 
   $client = \Drupal::httpClient();
+  $headers = [
+    "x-cache-secret" => $cache_secret,
+  ];
+  if(getenv("BASIC_AUTH"))
+    $headers["Authorization"] = 'Basic ' . getenv("BASIC_AUTH");
 
   try {
     $request = $client->get($front_end_url . $endpoint . $query_str, [
-      "headers" => [
-        "x-cache-secret" => $cache_secret,
-      ],
+      "headers" => $headers,
       'verify' => false,
       'proxy' => '',
     ]);
