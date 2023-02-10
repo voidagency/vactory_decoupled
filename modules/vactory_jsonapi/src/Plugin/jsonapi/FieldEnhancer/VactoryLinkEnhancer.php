@@ -92,6 +92,10 @@ class VactoryLinkEnhancer extends ResourceFieldEnhancerBase implements Container
       $data['langcode'] =  $this->language;
     }
     $data['is_external'] = (isset($data['uri']) && !empty($data['uri'])) ? UrlHelper::isExternal($data['uri']) : false;
+    //Use url property for external links as well
+    if($data['is_external']) {
+      $data['url'] = $data['uri'];
+    }
 
     return $data;
   }
