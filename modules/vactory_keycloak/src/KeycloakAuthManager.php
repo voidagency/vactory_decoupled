@@ -71,7 +71,7 @@ class KeycloakAuthManager extends OAuth2Manager {
     // Returns the URL where user will be redirected.
     return $this->client->getAuthorizationUrl([
       'scope' => $scopes,
-      'kc_locale' => $locale
+      'ui_locales' => $locale === "ar" ? "arabe" : $locale
     ]);
   }
 
