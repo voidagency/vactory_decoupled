@@ -130,9 +130,16 @@ class RateVote {
 
         return ['status' => TRUE, 'message' => 'Your vote was added.'];
       }
-      // Otherwise, inform user of previous vote.
-      else
-        return ['status' => FALSE, 'message' => 'You are not allowed to vote multiple times.'];
+      // If user has already voted, modify the existing vote.
+      else {
+        /** @var \Drupal\votingapi\VoteInterface $vote */
+        $vote = $vote_storage->load(reset($vote_ids));
+        $vote->setValue($value);
+        $vote->save();
+        $this->resultManager->recalculateResults($entity_type_id, $entity_id, $vote_type_id);
+
+        return ['status' => TRUE, 'message' => 'Your vote was modified.'];
+      }
     }
   }
 
