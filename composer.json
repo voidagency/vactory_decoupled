@@ -63,9 +63,6 @@
             },
             "drupal/swiftmailer": {
                 "Swiftmailer fix renderPlan method cli breaks": "https://gist.githubusercontent.com/b-khouy/8ba9095843d940892c5bf51a6f0a2fe4/raw/3c27d958614ac8ed4d7907221291aa0cd244acb4/swiftmailer-prevent-cli-commands-break.patch"
-            },
-            "drupal/jsonapi_cross_bundles": {
-                "Compatibility with jsonapi_extras": "https://git.drupalcode.org/issue/jsonapi_cross_bundles-3070430/-/commit/880b1b132e34b3841505096e1d3f1fbe1d36031b.diff"
             }
         }
     },
